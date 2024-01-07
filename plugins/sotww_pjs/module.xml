@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module sdkVersion="3.6d">
+    <!--"id" identifica seu plug-in de forma global. Deve ser exclusivo, conter apenas caracteres alfanuméricos, underlines, pontos e deve conter pelo menos 5 caracteres e um máximo de 40. Depois de definir o ID, você não deve alterá-lo ;)-->
+    <id>br.com.czagalo_sotWW_pjs</id>
+    <!--"version" é a versão do seu plugin. Quando você lança uma nova versão do seu módulo, altere aqui =)-->
+    <version>1.0</version>
+    <info lang="pt-BR">
+        <!--Informações do plugin na língua "pt-BR". Você pode ter várias tags "info", uma para cada tradução que quiser.-->
+        <name>SotWW - Quick Play</name>
+        <description>Ficha de Personagem para teste do Quick Play do RPG Shadow of the Weird Wizard</description>
+        <author>Célio Zagalo</author>
+        <site>https://github.com/czagalo</site>
+        <contact>E-Mail: acazagalo@gmail.com, Instagram: @czagalo</contact>
+    </info>
+</module>

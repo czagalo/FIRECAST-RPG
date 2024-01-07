@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<form formType="sheetTemplate" dataType="br.com.czagalo_Weird_Wizard" title="Shadow of the Weird Wizard" name="frmFichaWW">
+    <import file="01/01.lfm"/>
+    <!--layout left="0" top="0" width="340" height="340">
+        <image left="0" top="0" width="340" height="340" url="01/fundo_tela_01.png"/>
+    </layout-->
+</form>
