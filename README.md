@@ -5,9 +5,9 @@ Este repositório contém plugins de fichas de personagens para a plataforma Fir
 # Plugins
 ## Os plugins disponíveis neste repositório são:
 
-    - sotww_pjs: Ficha de personagem para o Quick Play do RPG Shadow of the Weird Wizard, baseado num modelo compartilhado no site ( https://pt.scribd.com/document/668278230/Shadow-of-the-Weird-WIzard-Character-Sheet ).
-    - sotww_pdm: Ficha de Monstros e PDMs para os Sábios do RPG Shadow of the Weird Wizard, com rolagens de dados automatizadas.
-    - Shadow of the Weird Wizard: Em fase inicial de desenvolvimento - Ficha de personagens e pdms do RPG Shadow of the Weird Wizard, com um desing mais atrativo e rolagens de dados automatizadas. 
+    - Shadow of the Weird Wizard: Ficha de personagens para o RPG Shadow of the Weird Wizard, com um desing mais atrativo e rolagens de dados automatizadas.
+    - sotww_pjs: (OBSOLETO) Ficha de personagem para o Quick Play do RPG Shadow of the Weird Wizard, baseado num modelo compartilhado no site ( https://pt.scribd.com/document/668278230/Shadow-of-the-Weird-WIzard-Character-Sheet ).
+    - sotww_pdm: (OBSOLETO) Ficha de Monstros e PDMs para os Sábios do RPG Shadow of the Weird Wizard, com rolagens de dados automatizadas. 
 
 ## Instalação
 Para instalar os plugins, siga estas etapas:
@@ -18,6 +18,10 @@ Para instalar os plugins, siga estas etapas:
 
 ## Autor
 Os plugins foram desenvolvidos por Célio Zagalo.
+
+## Imagens
+Algumas imagens utilizadas foram printadas diretamente do livro Shadow of the Weird Wizard para ajudar na divulgação deste RPG aqui no Brasil.
+As imagens restantes foram coletadas do site (https://pixabay.com/)
 
 ## Licença
 Os plugins são distribuídos sob a licença CC BY.
