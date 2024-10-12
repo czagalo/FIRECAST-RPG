@@ -13898,7 +13898,11 @@ local function constructNew_frmWeirdWizard()
 
     obj._e_event28 = obj.edit1:addEventListener("onUserChange",
         function ()
-            if sheet.vidaAtual == nil then
+            if sheet.Dano == nil then
+                                                      sheet.Dano = 0
+                                                end
+            
+                                                if sheet.vidaAtual == nil then
                                                       sheet.vidaAtual = 0
                                                 end
         end);

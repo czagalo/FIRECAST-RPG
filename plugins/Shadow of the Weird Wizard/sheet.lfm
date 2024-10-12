@@ -403,6 +403,10 @@
                               fontSize="25" fontStyle="bold" transparent="true" horzTextAlign="center"
                               min="0" max="999">
                               <event name="onUserChange">
+                                    if sheet.Dano == nil then
+                                          sheet.Dano = 0
+                                    end
+
                                     if sheet.vidaAtual == nil then
                                           sheet.vidaAtual = 0
                                     end
