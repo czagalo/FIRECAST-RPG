@@ -13424,7 +13424,9 @@ local function constructNew_frmWeirdWizard()
 
             aflicoes = (debilitado) + (amedrontado) + (atordoado) + (cego) + (enfraquecido) + (envenenado) + (revesCombate)
 
-            if string.sub(modificador, 1, 1) == "+" then
+            if tonumber(modificador) ~= nil then
+                  modificador = tonumber(modificador)
+            elseif string.sub(modificador, 1, 1) == "+" then
                   modificador = tonumber(string.sub(modificador, 2))
             else
                   modificador = tonumber(string.sub(modificador, 2)) * -1
@@ -13494,7 +13496,9 @@ local function constructNew_frmWeirdWizard()
 
             aflicoes = (debilitado) + (amedrontado) + (atordoado) + (cego) + (enfraquecido) + (envenenado) + (revesCombate)
 
-            if string.sub(modificador, 1, 1) == "+" then
+            if tonumber(modificador) ~= nil then
+                  modificador = tonumber(modificador)
+            elseif string.sub(modificador, 1, 1) == "+" then
                   modificador = tonumber(string.sub(modificador, 2))
             else
                   modificador = tonumber(string.sub(modificador, 2)) * -1
@@ -13564,7 +13568,9 @@ local function constructNew_frmWeirdWizard()
 
             aflicoes = (debilitado) + (amedrontado) + (atordoado) + (cego) + (confuso) + (envenenado) + (revesCombate)
 
-            if string.sub(modificador, 1, 1) == "+" then
+            if tonumber(modificador) ~= nil then
+                  modificador = tonumber(modificador)
+            elseif string.sub(modificador, 1, 1) == "+" then
                   modificador = tonumber(string.sub(modificador, 2))
             else
                   modificador = tonumber(string.sub(modificador, 2)) * -1
@@ -13634,7 +13640,9 @@ local function constructNew_frmWeirdWizard()
 
             aflicoes = (debilitado) + (amedrontado) + (atordoado) + (cego) + (confuso) + (envenenado) + (revesCombate)
 
-            if string.sub(modificador, 1, 1) == "+" then
+            if tonumber(modificador) ~= nil then
+                  modificador = tonumber(modificador)
+            elseif string.sub(modificador, 1, 1) == "+" then
                   modificador = tonumber(string.sub(modificador, 2))
             else
                   modificador = tonumber(string.sub(modificador, 2)) * -1
