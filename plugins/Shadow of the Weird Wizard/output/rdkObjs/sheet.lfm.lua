@@ -13184,9 +13184,9 @@ local function constructNew_frmWeirdWizard()
 
     obj.label245 = GUI.fromHandle(_obj_newObject("label"));
     obj.label245:setParent(obj.popFrmPrincipal);
-    obj.label245:setLeft(661);
+    obj.label245:setLeft(658);
     obj.label245:setTop(532);
-    obj.label245:setText("Blindada");
+    obj.label245:setText("Armadura");
     obj.label245:setFontSize(14);
     obj.label245:setFontColor("#D5D5D5");
     obj.label245:setName("label245");

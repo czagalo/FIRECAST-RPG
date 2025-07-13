@@ -7026,7 +7026,7 @@
       <rectangle left="737" top="518" width="45" height="45" color="#D5D5D5" 
             xradius="20" yradius="20" cornerType="round" strokeColor="#49244F"  
             strokeSize="3"/>
-      <label left="661" top="532" text="Blindada" fontSize="14" fontColor="#D5D5D5"/>
+      <label left="658" top="532" text="Armadura" fontSize="14" fontColor="#D5D5D5"/>
       <edit field="frmDefesaBlin" left="745" top="525" width="28" fontColor="#49244F" type="number" 
             min="0" max="35" transparent="true" horzTextAlign="center"/>
       <!-- Vida -->
