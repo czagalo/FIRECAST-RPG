@@ -160,7 +160,7 @@
                         <!-- Aprendiz -->
                         <rectangle left="370" top="425" width="425" height="40" color="#49244F"/>
                         <label left="525" top="435" width="100" fontSize="20" horzTextAlign="center" 
-                              text="Aprendiz" fontStyle="bold"/>
+                              text="Novato" fontStyle="bold"/>
                         <label field="Aprendiz" left="250" top="450" width="650" height="60" fontSize="18" 
                               horzTextAlign="center" fontColor="black"/>
                               <dataLink field="frmAprendiz">
@@ -362,15 +362,26 @@
                                           sheet.Velocidade = sheet.frmVelocidade
                                     </event>
                               </dataLink>
-                        <!-- Defesa -->
+                        <!-- Defesas -->
                         <label left="145" top="535" width="280" fontSize="20" horzTextAlign="center" 
-                              text="Defesa" fontStyle="bold"/>
+                              text="Defesas" fontStyle="bold"/>
                         <rectangle left="210" top="560" width="150" height="1" color="#D5D5D5"/>
-                        <label field="Defesa" left="259" top="583" width="50" fontSize="24" horzTextAlign="center" 
-                              fontStyle="bold"/>
+                        <rectangle left="210" top="580" width="50" height="1" color="#D5D5D5"/>
+                        <rectangle left="310" top="580" width="50" height="1" color="#D5D5D5"/>
+                        <label field="Defesa" left="259" top="570" width="50" fontSize="18" horzTextAlign="center"/>
                               <dataLink field="frmDefesa">
                                     <event name="onChange">
                                           sheet.Defesa = sheet.frmDefesa
+                                    </event>
+                              </dataLink>
+                        <rectangle left="258" top="592" width="55" height="55" color="#D5D5D5" 
+                              xradius="27" yradius="27" cornerType="round" strokeColor="#49244F"  
+                              strokeSize="3"/>
+                        <label field="DefesaBlindada" left="260" top="610" width="50" fontSize="26" horzTextAlign="center" 
+                              fontStyle="bold" fontColor="#49244F"/>
+                              <dataLink field="frmDefesaBlin">
+                                    <event name="onChange">
+                                          sheet.DefesaBlindada = sheet.frmDefesaBlin
                                     </event>
                               </dataLink>
                         <!-- Sorte -->
@@ -498,9 +509,9 @@
                         <label left="310" top="60" width="180" fontSize="24" horzTextAlign="center" 
                               text="COMBATE" fontColor="#49244F" fontStyle="bold"/>
                         
-                        <!-- Dano Extra -->
-                        <label left="570" top="62" width="180" fontSize="20" horzTextAlign="center" 
-                              text="Dano Extra:" fontColor="#49244F" fontStyle="bold"/>
+                        <!-- Bônus de Dano -->
+                        <label left="555" top="62" width="180" fontSize="20" horzTextAlign="center" 
+                              text="Bônus de Dano:" fontColor="#49244F" fontStyle="bold"/>
                         <rectangle left="719" top="82" width="60" height="1" color="#49244F"/>
                         <edit left="719" top="55" width="60" horzTextAlign="center" field="totalDanoExtra"
                               transparent="true" fontColor="#49244F" fontSize="18"/>
@@ -581,7 +592,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma01, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma01, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma01, 3, 3), "%d") == nil and #sheet.danoArma01 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma01, 1, 1)..string.sub(sheet.danoArma01, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -591,7 +602,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma01, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma01, 2, 2), "%d") == nil and #sheet.danoArma01 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma01, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -600,7 +611,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -635,7 +646,7 @@
                               field="atributoArma01" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 01 -->
                         <rectangle left="546" top="145" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="149" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="149" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma01" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 01 -->
@@ -768,7 +779,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma02, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma02, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma02, 3, 3), "%d") == nil and #sheet.danoArma02 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma02, 1, 1)..string.sub(sheet.danoArma02, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -778,7 +789,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma02, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma02, 2, 2), "%d") == nil and #sheet.danoArma02 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma02, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -787,7 +798,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -822,7 +833,7 @@
                               field="atributoArma02" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 02 -->
                         <rectangle left="546" top="270" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="274" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="274" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma02" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 02 -->
@@ -955,7 +966,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma03, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma03, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma03, 3, 3), "%d") == nil and #sheet.danoArma03 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma03, 1, 1)..string.sub(sheet.danoArma03, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -965,7 +976,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma03, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma03, 2, 2), "%d") == nil and #sheet.danoArma03 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma03, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -974,7 +985,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -1009,7 +1020,7 @@
                               field="atributoArma03" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 03 -->
                         <rectangle left="546" top="396" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="399" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="399" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma03" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 03 -->
@@ -1141,7 +1152,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma04, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma04, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma04, 3, 3), "%d") == nil and #sheet.danoArma04 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma04, 1, 1)..string.sub(sheet.danoArma04, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1151,7 +1162,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma04, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma04, 2, 2), "%d") == nil and #sheet.danoArma04 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma04, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1160,7 +1171,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -1195,7 +1206,7 @@
                               field="atributoArma04" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 04 -->
                         <rectangle left="546" top="521" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="524" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="524" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma04" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 04 -->
@@ -1327,7 +1338,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma05, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma05, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma05, 3, 3), "%d") == nil and #sheet.danoArma05 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma05, 1, 1)..string.sub(sheet.danoArma05, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1337,7 +1348,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma05, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma05, 2, 2), "%d") == nil and #sheet.danoArma05 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma05, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1346,7 +1357,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -1381,7 +1392,7 @@
                               field="atributoArma05" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 05 -->
                         <rectangle left="546" top="646" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="649" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="649" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma05" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 05 -->
@@ -1513,7 +1524,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma06, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma06, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma06, 3, 3), "%d") == nil and #sheet.danoArma06 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma06, 1, 1)..string.sub(sheet.danoArma06, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1523,7 +1534,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma06, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma06, 2, 2), "%d") == nil and #sheet.danoArma06 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma06, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1532,7 +1543,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -1567,7 +1578,7 @@
                               field="atributoArma06" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 06 -->
                         <rectangle left="546" top="771" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="774" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="774" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma06" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 06 -->
@@ -1699,7 +1710,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma07, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma07, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma07, 3, 3), "%d") == nil and #sheet.danoArma07 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma07, 1, 1)..string.sub(sheet.danoArma07, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1709,7 +1720,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma07, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma07, 2, 2), "%d") == nil and #sheet.danoArma07 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma07, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1718,7 +1729,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -1753,7 +1764,7 @@
                               field="atributoArma07" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 07 -->
                         <rectangle left="546" top="896" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="899" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="899" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma07" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 07 -->
@@ -1885,7 +1896,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma08, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma08, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma08, 3, 3), "%d") == nil and #sheet.danoArma08 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma08, 1, 1)..string.sub(sheet.danoArma08, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1895,7 +1906,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma08, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma08, 2, 2), "%d") == nil and #sheet.danoArma08 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma08, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -1904,7 +1915,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -1939,7 +1950,7 @@
                               field="atributoArma08" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 08 -->
                         <rectangle left="546" top="1021" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1024" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1024" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma08" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 08 -->
@@ -2071,7 +2082,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma09, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma09, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma09, 3, 3), "%d") == nil and #sheet.danoArma09 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma09, 1, 1)..string.sub(sheet.danoArma09, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2081,7 +2092,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma09, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma09, 2, 2), "%d") == nil and #sheet.danoArma09 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma09, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2090,7 +2101,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -2125,7 +2136,7 @@
                               field="atributoArma09" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 09 -->
                         <rectangle left="546" top="1146" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1149" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1149" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma09" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 09 -->
@@ -2257,7 +2268,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma10, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma10, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma10, 3, 3), "%d") == nil and #sheet.danoArma10 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma10, 1, 1)..string.sub(sheet.danoArma10, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2267,7 +2278,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma10, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma10, 2, 2), "%d") == nil and #sheet.danoArma10 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma10, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2276,7 +2287,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -2311,7 +2322,7 @@
                               field="atributoArma10" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 10 -->
                         <rectangle left="546" top="1271" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1274" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1274" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma10" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 10 -->
@@ -2443,7 +2454,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma11, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma11, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma11, 3, 3), "%d") == nil and #sheet.danoArma11 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma11, 1, 1)..string.sub(sheet.danoArma11, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2453,7 +2464,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma11, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma11, 2, 2), "%d") == nil and #sheet.danoArma11 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma11, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2462,7 +2473,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -2497,7 +2508,7 @@
                               field="atributoArma11" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 11 -->
                         <rectangle left="546" top="1396" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1399" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1399" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma11" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 11 -->
@@ -2629,7 +2640,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma12, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma12, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma12, 3, 3), "%d") == nil and #sheet.danoArma12 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma12, 1, 1)..string.sub(sheet.danoArma12, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2639,7 +2650,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma12, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma12, 2, 2), "%d") == nil and #sheet.danoArma12 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma12, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2648,7 +2659,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -2683,7 +2694,7 @@
                               field="atributoArma12" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 12 -->
                         <rectangle left="546" top="1521" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1524" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1524" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma12" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 12 -->
@@ -2815,7 +2826,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma13, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma13, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma13, 3, 3), "%d") == nil and #sheet.danoArma13 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma13, 1, 1)..string.sub(sheet.danoArma13, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2825,7 +2836,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma13, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma13, 2, 2), "%d") == nil and #sheet.danoArma13 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma13, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -2834,7 +2845,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -2869,7 +2880,7 @@
                               field="atributoArma13" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 13 -->
                         <rectangle left="546" top="1646" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1649" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1649" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma13" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 13 -->
@@ -3001,7 +3012,7 @@
                                                 danoAutomatico = true
                                           elseif string.match(string.sub(sheet.danoArma14, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma14, 2, 2), "%d") ~= nil and string.match(string.sub(sheet.danoArma14, 3, 3), "%d") == nil and #sheet.danoArma14 == 4 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma14, 1, 1)..string.sub(sheet.danoArma14, 2, 2))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -3011,7 +3022,7 @@
                                                 end
                                           elseif string.match(string.sub(sheet.danoArma14, 1, 1), "%d") ~= nil and string.match(string.sub(sheet.danoArma14, 2, 2), "%d") == nil and #sheet.danoArma14 == 3 then
                                                 numeroDados = tonumber(string.sub(sheet.danoArma14, 1, 1))
-                                                if numeroDados &lt; 41 then
+                                                if numeroDados &lt; 100 then
                                                       dano = numeroDados
                                                       danoAutomatico = false
                                                 else
@@ -3020,7 +3031,7 @@
                                                       danoAutomatico = false
                                                 end
                                           else
-                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 ")
+                                                showMessage("Informe corretamente o valor do dano! \nEx: 3d6 \nMax: 99d6")
                                                 dano = 0
                                                 danoAutomatico = true
                                           end
@@ -3055,7 +3066,7 @@
                               field="atributoArma14" fontColor="#D5D5D5" transparent="true" value="Atributo"/>
                         <!-- Mãos Arma 14 -->
                         <rectangle left="546" top="1771" width="115" height="30" color="#49244F"/>
-                        <comboBox left="546" top="1774" items="{'Mãos', 'Mão Primária', 'Duas mãos', 'Prim / Secundária', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
+                        <comboBox left="546" top="1774" items="{'Mãos', 'Mão Principal', 'Duas mãos', 'Mão Inábil', 'Gestos / Palavras', 'Símbolo Sagrado', 'Outro'}" 
                               field="maosArma14" fontColor="#D5D5D5" transparent="true" value="Mãos" 
                               width="115"/>
                         <!-- Dádiva / Revés Arma 14 -->
@@ -3151,7 +3162,7 @@
 
 <!-- ============================================================================================= -->
 <!-- Aba Talentos -->
-      <tab title="Talentos"> 
+      <tab title="Benefícios e Talentos"> 
             <scrollBox left="0" top="10" width="815" height="725">
             <layout left="0" top="10" width="799" height="3830">
             
@@ -3160,7 +3171,7 @@
                         
                         <!-- Traços de Ancestralidade e Talentos -->
                         <label left="170" top="60" width="480" fontSize="24" horzTextAlign="center" 
-                              text="TRAÇOS DE ANCESTRAIDADE E TALENTOS" fontColor="#49244F" fontStyle="bold"/>
+                              text="BENEFÍCIOS E TALENTOS" fontColor="#49244F" fontStyle="bold"/>
                         
                         <!-- Talento 01 -->
                         <rectangle left="60" top="95" width="720" height="231" color="#D5D5D5"
@@ -3594,9 +3605,13 @@
                         <edit left="297" top="785" fontColor="#49244F" field="pCobre" horzTextAlign="center"
                               fontSize="18" transparent="true" width="60">
                               <event name="onChange">
-                                    if #sheet.pCobre &gt; 5 then
-                                         local delCaracteres = 4 - #sheet.pCobre
-                                          sheet.pCobre = string.sub(sheet.pCobre, 1, delCaracteres) 
+                                    if sheet.pCobre == nil then
+                                          sheet.pCobre = "0"
+                                    else
+                                          if #sheet.pCobre &gt; 5 then
+                                          local delCaracteres = 4 - #sheet.pCobre
+                                                sheet.pCobre = string.sub(sheet.pCobre, 1, delCaracteres) 
+                                          end
                                     end
                               </event>
                         </edit>
@@ -3607,9 +3622,13 @@
                         <edit left="397" top="785" fontColor="#49244F" field="pPrata" horzTextAlign="center"
                               fontSize="18" transparent="true" width="60">
                               <event name="onChange">
-                                    if #sheet.pPrata &gt; 5 then
-                                         local delCaracteres = 4 - #sheet.pPrata
-                                          sheet.pPrata = string.sub(sheet.pPrata, 1, delCaracteres) 
+                                    if sheet.pPrata == nil then
+                                          sheet.pPrata = "0"
+                                    else
+                                          if #sheet.pPrata &gt; 5 then
+                                          local delCaracteres = 4 - #sheet.pPrata
+                                                sheet.pPrata = string.sub(sheet.pPrata, 1, delCaracteres) 
+                                          end
                                     end
                               </event>
                         </edit>
@@ -3620,9 +3639,13 @@
                         <edit left="497" top="785" fontColor="#49244F" field="pOuro" horzTextAlign="center"
                               fontSize="18" transparent="true" width="60">
                               <event name="onChange">
-                                    if #sheet.pOuro &gt; 5 then
-                                         local delCaracteres = 4 - #sheet.pOuro
-                                          sheet.pOuro = string.sub(sheet.pOuro, 1, delCaracteres) 
+                                    if sheet.pOuro == nil then
+                                          sheet.pOuro = "0"
+                                    else
+                                          if #sheet.pOuro &gt; 5 then
+                                          local delCaracteres = 4 - #sheet.pOuro
+                                                sheet.pOuro = string.sub(sheet.pOuro, 1, delCaracteres) 
+                                          end
                                     end
                               </event>
                         </edit>   
@@ -3638,7 +3661,7 @@
 
 <!-- ============================================================================================= -->
 <!-- Aba Magia -->
-      <tab title="Magias 1"> 
+      <tab title="Feitiços"> 
             <scrollBox left="0" top="10" width="815" height="725">
             <layout left="0" top="10" width="799" height="1790">
             
@@ -3647,7 +3670,7 @@
                         
                         <!-- Magia -->
                         <label left="270" top="60" width="280" fontSize="24" horzTextAlign="center" 
-                              text="MAGIAS E FEITIÇOS" fontColor="#49244F" fontStyle="bold"/>
+                              text="FEITIÇOS" fontColor="#49244F" fontStyle="bold"/>
                         
                         <!--Nome Magia 01 -->
                         <rectangle left="60" top="95" width="350" height="318" color="#D5D5D5"
@@ -3723,7 +3746,7 @@
                               transparent="true" field="descricaoMagia01" fontSize="18"/>
                         <!-- Lançar Magia 01 -->
                         <rectangle left="60" top="371" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="378" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="378" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia01 ~= nil and sheet.qtdMagia01 ~= "--"  then
@@ -3744,7 +3767,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="382" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="382" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="378" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -3855,7 +3878,7 @@
                               transparent="true" field="descricaoMagia02" fontSize="18"/>
                         <!-- Lançar Magia 02 -->
                         <rectangle left="434" top="371" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="378" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="378" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia02 ~= nil and sheet.qtdMagia02 ~= "--"  then
@@ -3876,7 +3899,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="382" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="382" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="378" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -3987,7 +4010,7 @@
                               transparent="true" field="descricaoMagia03" fontSize="18"/>
                         <!-- Lançar Magia 03 -->
                         <rectangle left="60" top="711" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="718" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="718" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia03 ~= nil and sheet.qtdMagia03 ~= "--"  then
@@ -4008,7 +4031,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="722" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="722" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="718" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4119,7 +4142,7 @@
                               transparent="true" field="descricaoMagia04" fontSize="18"/>
                         <!-- Lançar Magia 04 -->
                         <rectangle left="434" top="711" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="718" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="718" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia04 ~= nil and sheet.qtdMagia04 ~= "--"  then
@@ -4140,7 +4163,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="722" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="722" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="718" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4251,7 +4274,7 @@
                               transparent="true" field="descricaoMagia05" fontSize="18"/>
                         <!-- Lançar Magia 05 -->
                         <rectangle left="60" top="1051" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="1058" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="1058" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia05 ~= nil and sheet.qtdMagia05 ~= "--"  then
@@ -4272,7 +4295,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="1062" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="1062" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="1058" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4383,7 +4406,7 @@
                               transparent="true" field="descricaoMagia06" fontSize="18"/>
                         <!-- Lançar Magia 06 -->
                         <rectangle left="434" top="1051" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="1058" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="1058" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia06 ~= nil and sheet.qtdMagia06 ~= "--"  then
@@ -4404,7 +4427,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="1062" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="1062" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="1058" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4515,7 +4538,7 @@
                               transparent="true" field="descricaoMagia07" fontSize="18"/>
                         <!-- Lançar Magia 07 -->
                         <rectangle left="60" top="1391" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="1398" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="1398" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia07 ~= nil and sheet.qtdMagia07 ~= "--"  then
@@ -4536,7 +4559,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="1402" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="1402" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="1398" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4647,7 +4670,7 @@
                               transparent="true" field="descricaoMagia08" fontSize="18"/>
                         <!-- Lançar Magia 08 -->
                         <rectangle left="434" top="1391" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="1398" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="1398" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia08 ~= nil and sheet.qtdMagia08 ~= "--"  then
@@ -4668,7 +4691,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="1402" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="1402" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="1398" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4779,7 +4802,7 @@
                               transparent="true" field="descricaoMagia09" fontSize="18"/>
                         <!-- Lançar Magia 09 -->
                         <rectangle left="60" top="1731" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="1738" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="1738" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia09 ~= nil and sheet.qtdMagia09 ~= "--"  then
@@ -4800,7 +4823,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="1742" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="1742" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="1738" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4911,7 +4934,7 @@
                               transparent="true" field="descricaoMagia10" fontSize="18"/>
                         <!-- Lançar Magia 10 -->
                         <rectangle left="434" top="1731" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="1738" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="1738" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia10 ~= nil and sheet.qtdMagia10 ~= "--"  then
@@ -4932,7 +4955,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="1742" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="1742" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="1738" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -4993,7 +5016,7 @@
 
 <!-- ============================================================================================= -->
 <!-- Aba Magia -->
-      <tab title="Magias 2"> 
+      <tab title="Feitiços"> 
             <scrollBox left="0" top="10" width="815" height="725">
             <layout left="0" top="10" width="799" height="1790">
             
@@ -5002,7 +5025,7 @@
                         
                         <!-- Magia -->
                         <label left="270" top="60" width="280" fontSize="24" horzTextAlign="center" 
-                              text="MAGIAS E FEITIÇOS" fontColor="#49244F" fontStyle="bold"/>
+                              text="FEITIÇOS" fontColor="#49244F" fontStyle="bold"/>
                         
                         <!--Nome Magia 11 -->
                         <rectangle left="60" top="95" width="350" height="318" color="#D5D5D5"
@@ -5078,7 +5101,7 @@
                               transparent="true" field="descricaoMagia11" fontSize="18"/>
                         <!-- Lançar Magia 11 -->
                         <rectangle left="60" top="371" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="378" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="378" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia11 ~= nil and sheet.qtdMagia11 ~= "--"  then
@@ -5099,7 +5122,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="382" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="382" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="378" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -5210,7 +5233,7 @@
                               transparent="true" field="descricaoMagia12" fontSize="18"/>
                         <!-- Lançar Magia 12 -->
                         <rectangle left="434" top="371" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="378" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="378" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia12 ~= nil and sheet.qtdMagia12 ~= "--"  then
@@ -5231,7 +5254,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="382" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="382" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="378" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -5342,7 +5365,7 @@
                               transparent="true" field="descricaoMagia13" fontSize="18"/>
                         <!-- Lançar Magia 13 -->
                         <rectangle left="60" top="711" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="718" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="718" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia13 ~= nil and sheet.qtdMagia13 ~= "--"  then
@@ -5363,7 +5386,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="722" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="722" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="718" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -5474,7 +5497,7 @@
                               transparent="true" field="descricaoMagia14" fontSize="18"/>
                         <!-- Lançar Magia 14 -->
                         <rectangle left="434" top="711" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="718" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="718" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia14 ~= nil and sheet.qtdMagia14 ~= "--"  then
@@ -5495,7 +5518,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="722" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="722" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="718" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -5606,7 +5629,7 @@
                               transparent="true" field="descricaoMagia15" fontSize="18"/>
                         <!-- Lançar Magia 15 -->
                         <rectangle left="60" top="1051" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="1058" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="1058" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia15 ~= nil and sheet.qtdMagia15 ~= "--"  then
@@ -5627,7 +5650,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="1062" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="1062" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="1058" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -5738,7 +5761,7 @@
                               transparent="true" field="descricaoMagia16" fontSize="18"/>
                         <!-- Lançar Magia 16 -->
                         <rectangle left="434" top="1051" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="1058" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="1058" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia16 ~= nil and sheet.qtdMagia16 ~= "--"  then
@@ -5759,7 +5782,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="1062" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="1062" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="1058" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -5870,7 +5893,7 @@
                               transparent="true" field="descricaoMagia17" fontSize="18"/>
                         <!-- Lançar Magia 17 -->
                         <rectangle left="60" top="1391" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="1398" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="1398" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia17 ~= nil and sheet.qtdMagia17 ~= "--"  then
@@ -5891,7 +5914,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="1402" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="1402" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="1398" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -6002,7 +6025,7 @@
                               transparent="true" field="descricaoMagia18" fontSize="18"/>
                         <!-- Lançar Magia 18 -->
                         <rectangle left="434" top="1391" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="1398" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="1398" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia18 ~= nil and sheet.qtdMagia18 ~= "--"  then
@@ -6023,7 +6046,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="1402" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="1402" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="1398" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -6134,7 +6157,7 @@
                               transparent="true" field="descricaoMagia19" fontSize="18"/>
                         <!-- Lançar Magia 19 -->
                         <rectangle left="60" top="1731" width="350" height="3" color="#49244F"/>
-                        <rectangle left="64" top="1738" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="64" top="1738" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia19 ~= nil and sheet.qtdMagia19 ~= "--"  then
@@ -6155,7 +6178,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="70" top="1742" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="70" top="1742" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="324" top="1738" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -6266,7 +6289,7 @@
                               transparent="true" field="descricaoMagia20" fontSize="18"/>
                         <!-- Lançar Magia 20 -->
                         <rectangle left="434" top="1731" width="350" height="3" color="#49244F"/>
-                        <rectangle left="438" top="1738" width="120" height="29" color="#49244F" hitTest="true" 
+                        <rectangle left="438" top="1738" width="135" height="29" color="#49244F" hitTest="true" 
                               cursor="handPoint">
                               <event name="onClick">
                                     if sheet.qtdMagia20 ~= nil and sheet.qtdMagia20 ~= "--"  then
@@ -6287,7 +6310,7 @@
                                     end         
                               </event>
                         </rectangle>
-                        <label left="444" top="1742" width="280" fontSize="18" text="Lançar Magia" 
+                        <label left="444" top="1742" width="280" fontSize="18" text="Conjurar Feitiço" 
                               fontColor="#D5D5D5"/>
                         <rectangle left="698" top="1738" width="29" height="29" color="#49244F"
                               cornerType="round" xradius="15" yradius="15"/>
@@ -6417,7 +6440,7 @@
                         <label left="85" top="305" width="150" fontSize="20" horzTextAlign="center" 
                               text="Adormecido" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Adormecido: Você está inconsciente porquê está dormindo. Você acordará se uma criatura usar uma ação para sacudir você, chutá-lo ou fazer outra coisa para acordá-lo. Um barulho alto poderá remover a aflição se você tiver sucesso em um teste de sorte. O tempo gasto dormindo conta como descanso para fins de cura de danos."
+                                    local msg = "Adormecido: Se você estiver inconsciente por estar dormindo naturalmente, você deixa de estar inconsciente quando uma criatura usar uma ação para chacoalhar você, chutá-lo ou fazer outra coisa para acordar você. Um barulho alto pode remover a aflição se você tiver sucesso em uma rolagem de sorte. O tempo passado dormindo conta como repouso para os propósitos de curar dano. Se o seu sono não for interrompido, você acorda naturalmente quando quiser."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6429,7 +6452,7 @@
                         <label left="327" top="305" width="150" fontSize="20" horzTextAlign="center" 
                               text="Amaldiçoado" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Amaldiçoado: Você faz testes de sorte com 1 revés."
+                                    local msg = "Amaldiçoado: Você faz rolagens de sorte com 1 revés."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6441,7 +6464,7 @@
                         <label left="565" top="305" width="150" fontSize="20" horzTextAlign="center" 
                               text="Amedrontado" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Amedrontado: Você teme a fonte dessa aflição — uma criatura, um objeto, um espaço ou outra coisa. Enquanto você tem linha de visão para a fonte do seu medo, você faz jogadas de atributo com 1 revés, e você concede 1 dádiva em jogadas de atributo contra você."
+                                    local msg = "Amedrontado: Você teme a fonte desta aflição — uma criatura, um objeto, um espaço ou alguma outra coisa. Enquanto você tiver linha de visão para a fonte do seu medo, você faz rolagens de atributo com 1 revés e concede 1 dádiva em rolagens de atributo contra você."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6453,7 +6476,7 @@
                         <label left="90" top="365" width="120" fontSize="20" horzTextAlign="center" 
                               text="Atordoado" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Atordoado: Você não pode usar ações ou reações. Sua Velocidade cai para 0 e você não pode se beneficiar de aumentos de Velocidade até que essa aflição termine. Você concede 2 dádivas em jogadas contra você, e faz jogadas de atributos com 2 revés."
+                                    local msg = "Atordoado: Você não pode usar ações ou reações. A sua Velocidade diminui a 0 e você não se beneficia de aumentos à Velocidade até esta aflição terminar. Você concede 2 dádivas em rolagens contra você e faz rolagens de atributo com 2 reveses."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6465,7 +6488,7 @@
                         <label left="327" top="365" width="80" fontSize="20" horzTextAlign="center" 
                               text="Caído" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Caído: Você está deitado no chão. Você não pode usar reações. Você concede 1 dádiva em jogadas feitas para atacá-lo com armas corpo a corpo, mas impõe 1 revés em jogadas feitas para atacá-lo com armas à distância. Você pode usar seu movimento apenas para rastejar ou se levantar."
+                                    local msg = "Caído: Você está deitado no chão. Você não pode usar reações. Você concede 1 dádiva em rolagens feitas para atacar você com armas corpo a corpo, mas impõe 1 revés em rolagens feitas para atacar você com armas à distância. Você somente pode usar seu movimento para rastejar ou se levantar."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6477,7 +6500,7 @@
                         <label left="560" top="365" width="80" fontSize="20" horzTextAlign="center" 
                               text="Cego" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Cego: Você não pode ver e, portanto, não tem linha de visão para nada. Você trata todas as criaturas e objetos como invisíveis. Se você quiser atacar ou interagir com qualquer coisa, você deve adivinhar a localização do alvo ou localizar o alvo usando outros sentidos, o que geralmente significa que você faz o teste com 3 revés. Você não pode fazer uso de reações que dependem da visão. Sua Velocidade é reduzida pela metade."
+                                    local msg = "Cego: Você não consegue enxergar, portanto não tem linha de visão para nada. Você trata todas as criaturas e objetos como estando invisíveis. Se você quiser atacar ou interagir com alguma coisa, deve supor a localização do alvo ou localizá-lo usando outros sentidos, o que geralmente significa que você faz a rolagem com 3 reveses. Você não consegue usar reações que dependam da visão. Por fim, sua Velocidade é reduzida pela metade."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6489,7 +6512,7 @@
                         <label left="80" top="425" width="120" fontSize="20" horzTextAlign="center" 
                               text="Confuso" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Confuso: Você se torna incapaz de entender o que está acontecendo ao seu redor. Você não pode usar reações e faz testes de Intelecto e Vontade com 1 revés."
+                                    local msg = "Confuso: Você fica incapaz de compreender o que acontece ao seu redor. Você não pode usar reações e faz rolagens de Intelecto e Vontade com 1 revés."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6501,7 +6524,7 @@
                         <label left="332" top="425" width="120" fontSize="20" horzTextAlign="center" 
                               text="Controlado" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Controlado: Você está sob o controle da fonte desta aflição. Você executa seu turno quando seu controlador o faz e ele decide o que você faz, usando seus traços, talentos e magias. Se você já executou seu turno quando ganhou esta aflição, você faz seu turno conforme descrito durante a próxima rodada. Enquanto controlado, você considera a fonte da aflição como um aliado."
+                                    local msg = "Controlado: Você fica sob o controle da fonte desta aflição. Seu turno acontece junto com o do seu controlador e ele decide o que você faz, usando os seus traços, talentos e feitiços. Se você já tiver feito um turno ao receber esta aflição, você faz um turno como descrito na rodada seguinte. Enquanto controlado, você trata a fonte desta aflição como um aliado."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6513,7 +6536,7 @@
                         <label left="563" top="425" width="150" fontSize="20" horzTextAlign="center" 
                               text="Enfraquecido" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Enfraquecido: Você faz testes de Força e Agilidade com 1 revés, e concede 1 dádiva em testes contra sua Força e Agilidade. Além disso, sua Velocidade é reduzida pela metade e você não pode se beneficiar de aumentos em sua Velocidade."
+                                    local msg = "Enfraquecido: Você faz rolagens de Força e de Agilidade com 1 revés, e você concede 1 dádiva em rolagens contra sua Força e Agilidade. Além disso, a sua Velocidade é reduzida pela metade e você não se beneficia de aumentos à Velocidade."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6525,7 +6548,7 @@
                         <label left="97" top="485" width="120" fontSize="20" horzTextAlign="center" 
                               text="Envenenado" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Envenenado: Você foi exposto a peçonha, veneno ou alguma outra toxina. Você faz jogadas de atributo com 1 revés e concede 1 dádiva em jogadas contra você. Além disso, no final de cada rodada, você perde 1d6 de Vida."
+                                    local msg = "Envenenado: Você foi submetido a uma peçonha, veneno ou outro tipo de toxina. Você faz rolagens de atributo com 1 revés e concede 1 dádiva em rolagens contra você. Além disso, você perde 1d6 de Vida ao final de cada rodada."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6561,7 +6584,7 @@
                         <label left="93" top="545" width="120" fontSize="20" horzTextAlign="center" 
                               text="Incendiado" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Incendiado: Você sofre 1d6 de dano no fim de cada rodada até que o fogo se apague, normalmente com um teste de sorte bem-sucedido. Você pode apagar as chamas com água ou abafando-a com um cobertor ou objeto similar. Uma criatura que caída faz o teste com 1 dádiva."
+                                    local msg = "Incendiado: Um efeito pode fazer você pegar fogo. Você sofre 1d6 de dano ao final de cada rodada até o fogo ser apagado, normalmente com uma rolagem bem-sucedida de sorte. Você pode apagar as chamas com água, ou sufocá-las com um cobertor ou objeto similar. Uma criatura que ficar caída antes de tentar superar as chamas faz a rolagem com 1 dádiva."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6573,7 +6596,7 @@
                         <label left="340" top="545" width="120" fontSize="20" horzTextAlign="center" 
                               text="Inconsciente" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Inconsciente: Você não pode usar ações ou reações. Sua Velocidade cai para 0 e você não pode se beneficiar de aumentos de Velocidade. Você não recebe nenhuma informação de seus sentidos. Você concede 3 dádivas em testes contra você, e você falha automaticamente em todos os testes de atributo."
+                                    local msg = "Inconsciente: Você não pode usar ações ou reações. A sua Velocidade diminui a 0 e você não se beneficia de aumentos à Velocidade. Você não recebe informações sensoriais. Você concede 3 dádivas em rolagens contra você e você fracassa automaticamente em todas as rolagens de atributo."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6585,7 +6608,7 @@
                         <label left="570" top="545" width="70" fontSize="20" horzTextAlign="center" 
                               text="Lento" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Lento: Sua Velocidade cai para 2 se sua Velocidade for maior que 2 e você não pode se beneficiar de aumentos de Velocidade."
+                                    local msg = "Lento: Se sua Velocidade for maior que 2, ela reduz a 2. Essa aflição não aumenta a Velocidade."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6597,7 +6620,7 @@
                         <label left="95" top="605" width="120" fontSize="20" horzTextAlign="center" 
                               text="Restringido" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Restringido: Sua Velocidade cai para 0 e você não pode se beneficiar de aumentos em sua Velocidade até que essa aflição termine. Além disso, criaturas jogando contra sua Agilidade obtêm um sucesso automático."
+                                    local msg = "Restringido: A sua Velocidade diminui a 0 e você não se beneficia de aumentos à Velocidade até esta aflição terminar. Além disso, criaturas que fizerem rolagens contra a sua Agilidade recebem um sucesso automático."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6609,7 +6632,7 @@
                         <label left="334" top="605" width="70" fontSize="20" horzTextAlign="center" 
                               text="Surdo" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Surdo: Você não pode ouvir. Você não pode fazer uso de reações que dependem de audição e você não está sujeito a efeitos que dependem de audição."
+                                    local msg = "Surdo: Você não consegue ouvir. Você não pode fazer reações que dependam da audição e não é afetado por efeitos que dependam da audição."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6621,7 +6644,7 @@
                         <label left="573" top="605" width="110" fontSize="20" horzTextAlign="center" 
                               text="Vulnerável" fontColor="#D5D5D5" fontStyle="bold" hitTest="true" cursor="handPoint">
                               <event name="onClick">
-                                    local msg = "Vulnerável: Você concede 1 dádiva em jogadas para atacá-lo e em jogadas feitas contra seus atributos."
+                                    local msg = "Vulnerável: Você concede 1 dádiva em rolagens para atacar você e em rolagens feitas contra os seus atributos."
                                     local mesaDeRPG = Firecast.getMesaDe(sheet)
                                     mesaDeRPG.chat:enviarMensagem("---")
                                     mesaDeRPG.chat:enviarMensagem(msg)
@@ -6912,7 +6935,7 @@
       <edit field="frmVelocidade" left="738" top="125" width="28" fontColor="#49244F" type="number" 
             min="0" max="20" transparent="true" horzTextAlign="center"/>
       <!-- Aprendiz -->
-      <label left="401" top="180" width="300" text="TRILHA DE APRENDIZ" fontSize="20" fontStyle="bold" 
+      <label left="401" top="180" width="300" text="CAMINHO DE NOVATO" fontSize="20" fontStyle="bold" 
       fontColor="#49244F"/>
       <rectangle left="401" top="205" width="380" height="50" color="#49244F"/>
       <edit field="frmAprendiz" left="401" top="205" width="380" height="50" transparent="true"
@@ -6928,7 +6951,7 @@
             </event>
       </edit>
       <!-- Especialista -->
-      <label left="401" top="270" width="300" text="TRILHA DE ESPECIALISTA" fontSize="20" fontStyle="bold" 
+      <label left="401" top="270" width="300" text="CAMINHO DE ESPECIALISTA" fontSize="20" fontStyle="bold" 
       fontColor="#49244F"/>
       <rectangle left="401" top="295" width="380" height="50" color="#49244F"/>
       <edit field="frmEspecialista" left="401" top="295" width="380" height="50" transparent="true"
@@ -6944,7 +6967,7 @@
             </event>
       </edit>
       <!-- Mestre -->
-      <label left="401" top="360" width="300" text="TRILHA DE MESTRE" fontSize="20" fontStyle="bold" 
+      <label left="401" top="360" width="300" text="CAMINHO DE MESTRE" fontSize="20" fontStyle="bold" 
             fontColor="#49244F"/>
       <rectangle left="401" top="385" width="380" height="50" color="#49244F"/>
       <edit field="frmMestre" left="401" top="385" width="380" height="50" transparent="true"
@@ -6988,12 +7011,23 @@
             strokeSize="3"/>
       <edit field="frmVontade" left="414" top="620" width="28" fontColor="#49244F" type="number" 
             min="0" max="25" transparent="true" horzTextAlign="center"/>
-      <!-- Defesa -->
-      <label left="655" top="460" text="Defesa" fontSize="20" fontStyle="bold" fontColor="#49244F"/>
-      <rectangle left="665" top="488" width="45" height="45" color="#D5D5D5" 
+      <!-- Defesas -->
+      <label left="651" top="455" text="Defesas" fontSize="20" fontStyle="bold" fontColor="#49244F"/>
+      <rectangle left="593" top="477" width="175" height="25" color="#49244F" 
+            strokeColor="#49244F" strokeSize="3"/>
+      <rectangle left="737" top="468" width="45" height="45" color="#D5D5D5" 
             xradius="20" yradius="20" cornerType="round" strokeColor="#49244F"  
             strokeSize="3"/>
-      <edit field="frmDefesa" left="673" top="495" width="28" fontColor="#49244F" type="number" 
+      <label left="665" top="480" text="Natural" fontSize="14" fontColor="#D5D5D5"/>
+      <edit field="frmDefesa" left="745" top="475" width="28" fontColor="#49244F" type="number" 
+            min="0" max="35" transparent="true" horzTextAlign="center"/>
+      <rectangle left="593" top="527" width="175" height="25" color="#49244F" 
+            strokeColor="#49244F" strokeSize="3"/>
+      <rectangle left="737" top="518" width="45" height="45" color="#D5D5D5" 
+            xradius="20" yradius="20" cornerType="round" strokeColor="#49244F"  
+            strokeSize="3"/>
+      <label left="661" top="532" text="Blindada" fontSize="14" fontColor="#D5D5D5"/>
+      <edit field="frmDefesaBlin" left="745" top="525" width="28" fontColor="#49244F" type="number" 
             min="0" max="35" transparent="true" horzTextAlign="center"/>
       <!-- Vida -->
       <rectangle left="642" top="565" width="95" height="95" color="#D5D5D5" 
@@ -7142,7 +7176,7 @@
             end
             
             -- Jogada com Dádiva ou Revés
-            if modDadivaReves &gt; 0 and modDadivaReves &lt; 12 then
+            if modDadivaReves &gt; 0 and modDadivaReves &lt; 13 then
                   local cont = 0
                   for i = 1, modDadivaReves, 1 do
                         mesaDeRPG.chat:rolarDados("1d6", dadivaOuReves,
