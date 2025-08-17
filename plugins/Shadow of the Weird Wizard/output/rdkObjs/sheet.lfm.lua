@@ -4763,930 +4763,74 @@ local function constructNew_frmWeirdWizard()
 
     obj.rectangle207 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle207:setParent(obj.rectangle206);
-    obj.rectangle207:setLeft(60);
+    obj.rectangle207:setLeft(0);
     obj.rectangle207:setTop(95);
-    obj.rectangle207:setWidth(720);
-    obj.rectangle207:setHeight(231);
+    obj.rectangle207:setWidth(799);
+    obj.rectangle207:setHeight(3300);
     obj.rectangle207:setColor("#D5D5D5");
-    obj.rectangle207:setStrokeColor("#49244F");
-    obj.rectangle207:setStrokeSize(3);
     obj.rectangle207:setName("rectangle207");
+
+    obj.rclTalentos = GUI.fromHandle(_obj_newObject("recordList"));
+    obj.rclTalentos:setParent(obj.rectangle207);
+    obj.rclTalentos:setField("talentosBeneficios");
+    obj.rclTalentos:setName("rclTalentos");
+    obj.rclTalentos:setTemplateForm("frmTalentos");
+    obj.rclTalentos:setLeft(0);
+    obj.rclTalentos:setTop(7);
+    obj.rclTalentos:setWidth(780);
+    obj.rclTalentos:setAutoHeight(true);
 
     obj.rectangle208 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle208:setParent(obj.rectangle206);
-    obj.rectangle208:setLeft(60);
-    obj.rectangle208:setTop(95);
-    obj.rectangle208:setWidth(720);
-    obj.rectangle208:setHeight(50);
+    obj.rectangle208:setLeft(755);
+    obj.rectangle208:setTop(58);
+    obj.rectangle208:setWidth(60);
+    obj.rectangle208:setHeight(1);
     obj.rectangle208:setColor("#49244F");
     obj.rectangle208:setName("rectangle208");
 
-    obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit60:setParent(obj.rectangle206);
-    obj.edit60:setLeft(68);
-    obj.edit60:setTop(103);
-    obj.edit60:setWidth(715);
-    obj.edit60:setFontSize(20);
-    obj.edit60:setHeight(30);
-    obj.edit60:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit60, "fontStyle", "bold");
-    obj.edit60:setTransparent(true);
-    obj.edit60:setField("Talento01");
-    obj.edit60:setName("edit60");
-
-    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.rectangle206);
-    obj.textEditor1:setLeft(68);
-    obj.textEditor1:setTop(143);
-    obj.textEditor1:setWidth(710);
-    obj.textEditor1:setFontSize(18);
-    obj.textEditor1:setHeight(183);
-    obj.textEditor1:setFontColor("#49244F");
-    obj.textEditor1:setTransparent(true);
-    obj.textEditor1:setField("descricaoTalento01");
-    obj.textEditor1:setName("textEditor1");
-
     obj.rectangle209 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle209:setParent(obj.rectangle206);
-    obj.rectangle209:setLeft(60);
-    obj.rectangle209:setTop(337);
-    obj.rectangle209:setWidth(720);
-    obj.rectangle209:setHeight(1);
+    obj.rectangle209:setLeft(755);
+    obj.rectangle209:setTop(66);
+    obj.rectangle209:setWidth(60);
+    obj.rectangle209:setHeight(3);
     obj.rectangle209:setColor("#49244F");
     obj.rectangle209:setName("rectangle209");
 
     obj.rectangle210 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle210:setParent(obj.rectangle206);
-    obj.rectangle210:setLeft(60);
-    obj.rectangle210:setTop(332);
-    obj.rectangle210:setWidth(720);
+    obj.rectangle210:setLeft(755);
+    obj.rectangle210:setTop(74);
+    obj.rectangle210:setWidth(60);
     obj.rectangle210:setHeight(1);
     obj.rectangle210:setColor("#49244F");
     obj.rectangle210:setName("rectangle210");
 
     obj.rectangle211 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle211:setParent(obj.rectangle206);
-    obj.rectangle211:setLeft(60);
-    obj.rectangle211:setTop(345);
-    obj.rectangle211:setWidth(720);
-    obj.rectangle211:setHeight(231);
-    obj.rectangle211:setColor("#D5D5D5");
-    obj.rectangle211:setStrokeColor("#49244F");
-    obj.rectangle211:setStrokeSize(3);
+    obj.rectangle211:setLeft(745);
+    obj.rectangle211:setTop(44);
+    obj.rectangle211:setWidth(45);
+    obj.rectangle211:setHeight(45);
+    obj.rectangle211:setColor("#49244F");
     obj.rectangle211:setName("rectangle211");
 
-    obj.rectangle212 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle212:setParent(obj.rectangle206);
-    obj.rectangle212:setLeft(60);
-    obj.rectangle212:setTop(345);
-    obj.rectangle212:setWidth(720);
-    obj.rectangle212:setHeight(50);
-    obj.rectangle212:setColor("#49244F");
-    obj.rectangle212:setName("rectangle212");
-
-    obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit61:setParent(obj.rectangle206);
-    obj.edit61:setLeft(65);
-    obj.edit61:setTop(353);
-    obj.edit61:setWidth(715);
-    obj.edit61:setFontSize(20);
-    obj.edit61:setHeight(30);
-    obj.edit61:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit61, "fontStyle", "bold");
-    obj.edit61:setTransparent(true);
-    obj.edit61:setField("Talento02");
-    obj.edit61:setName("edit61");
-
-    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.rectangle206);
-    obj.textEditor2:setLeft(68);
-    obj.textEditor2:setTop(393);
-    obj.textEditor2:setWidth(710);
-    obj.textEditor2:setFontSize(18);
-    obj.textEditor2:setHeight(183);
-    obj.textEditor2:setFontColor("#49244F");
-    obj.textEditor2:setTransparent(true);
-    obj.textEditor2:setField("descricaoTalento02");
-    obj.textEditor2:setName("textEditor2");
-
-    obj.rectangle213 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle213:setParent(obj.rectangle206);
-    obj.rectangle213:setLeft(60);
-    obj.rectangle213:setTop(582);
-    obj.rectangle213:setWidth(720);
-    obj.rectangle213:setHeight(1);
-    obj.rectangle213:setColor("#49244F");
-    obj.rectangle213:setName("rectangle213");
-
-    obj.rectangle214 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle214:setParent(obj.rectangle206);
-    obj.rectangle214:setLeft(60);
-    obj.rectangle214:setTop(587);
-    obj.rectangle214:setWidth(720);
-    obj.rectangle214:setHeight(1);
-    obj.rectangle214:setColor("#49244F");
-    obj.rectangle214:setName("rectangle214");
-
-    obj.rectangle215 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle215:setParent(obj.rectangle206);
-    obj.rectangle215:setLeft(60);
-    obj.rectangle215:setTop(595);
-    obj.rectangle215:setWidth(720);
-    obj.rectangle215:setHeight(231);
-    obj.rectangle215:setColor("#D5D5D5");
-    obj.rectangle215:setStrokeColor("#49244F");
-    obj.rectangle215:setStrokeSize(3);
-    obj.rectangle215:setName("rectangle215");
-
-    obj.rectangle216 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle216:setParent(obj.rectangle206);
-    obj.rectangle216:setLeft(60);
-    obj.rectangle216:setTop(595);
-    obj.rectangle216:setWidth(720);
-    obj.rectangle216:setHeight(50);
-    obj.rectangle216:setColor("#49244F");
-    obj.rectangle216:setName("rectangle216");
-
-    obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit62:setParent(obj.rectangle206);
-    obj.edit62:setLeft(65);
-    obj.edit62:setTop(603);
-    obj.edit62:setWidth(715);
-    obj.edit62:setFontSize(20);
-    obj.edit62:setHeight(30);
-    obj.edit62:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit62, "fontStyle", "bold");
-    obj.edit62:setTransparent(true);
-    obj.edit62:setField("Talento03");
-    obj.edit62:setName("edit62");
-
-    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor3:setParent(obj.rectangle206);
-    obj.textEditor3:setLeft(68);
-    obj.textEditor3:setTop(643);
-    obj.textEditor3:setWidth(710);
-    obj.textEditor3:setFontSize(18);
-    obj.textEditor3:setHeight(183);
-    obj.textEditor3:setFontColor("#49244F");
-    obj.textEditor3:setTransparent(true);
-    obj.textEditor3:setField("descricaoTalento03");
-    obj.textEditor3:setName("textEditor3");
-
-    obj.rectangle217 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle217:setParent(obj.rectangle206);
-    obj.rectangle217:setLeft(60);
-    obj.rectangle217:setTop(832);
-    obj.rectangle217:setWidth(720);
-    obj.rectangle217:setHeight(1);
-    obj.rectangle217:setColor("#49244F");
-    obj.rectangle217:setName("rectangle217");
-
-    obj.rectangle218 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle218:setParent(obj.rectangle206);
-    obj.rectangle218:setLeft(60);
-    obj.rectangle218:setTop(837);
-    obj.rectangle218:setWidth(720);
-    obj.rectangle218:setHeight(1);
-    obj.rectangle218:setColor("#49244F");
-    obj.rectangle218:setName("rectangle218");
-
-    obj.rectangle219 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle219:setParent(obj.rectangle206);
-    obj.rectangle219:setLeft(60);
-    obj.rectangle219:setTop(845);
-    obj.rectangle219:setWidth(720);
-    obj.rectangle219:setHeight(231);
-    obj.rectangle219:setColor("#D5D5D5");
-    obj.rectangle219:setStrokeColor("#49244F");
-    obj.rectangle219:setStrokeSize(3);
-    obj.rectangle219:setName("rectangle219");
-
-    obj.rectangle220 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle220:setParent(obj.rectangle206);
-    obj.rectangle220:setLeft(60);
-    obj.rectangle220:setTop(845);
-    obj.rectangle220:setWidth(720);
-    obj.rectangle220:setHeight(50);
-    obj.rectangle220:setColor("#49244F");
-    obj.rectangle220:setName("rectangle220");
-
-    obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit63:setParent(obj.rectangle206);
-    obj.edit63:setLeft(65);
-    obj.edit63:setTop(853);
-    obj.edit63:setWidth(715);
-    obj.edit63:setFontSize(20);
-    obj.edit63:setHeight(30);
-    obj.edit63:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit63, "fontStyle", "bold");
-    obj.edit63:setTransparent(true);
-    obj.edit63:setField("Talento04");
-    obj.edit63:setName("edit63");
-
-    obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor4:setParent(obj.rectangle206);
-    obj.textEditor4:setLeft(68);
-    obj.textEditor4:setTop(893);
-    obj.textEditor4:setWidth(710);
-    obj.textEditor4:setFontSize(18);
-    obj.textEditor4:setHeight(183);
-    obj.textEditor4:setFontColor("#49244F");
-    obj.textEditor4:setTransparent(true);
-    obj.textEditor4:setField("descricaoTalento04");
-    obj.textEditor4:setName("textEditor4");
-
-    obj.rectangle221 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle221:setParent(obj.rectangle206);
-    obj.rectangle221:setLeft(60);
-    obj.rectangle221:setTop(1082);
-    obj.rectangle221:setWidth(720);
-    obj.rectangle221:setHeight(1);
-    obj.rectangle221:setColor("#49244F");
-    obj.rectangle221:setName("rectangle221");
-
-    obj.rectangle222 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle222:setParent(obj.rectangle206);
-    obj.rectangle222:setLeft(60);
-    obj.rectangle222:setTop(1087);
-    obj.rectangle222:setWidth(720);
-    obj.rectangle222:setHeight(1);
-    obj.rectangle222:setColor("#49244F");
-    obj.rectangle222:setName("rectangle222");
-
-    obj.rectangle223 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle223:setParent(obj.rectangle206);
-    obj.rectangle223:setLeft(60);
-    obj.rectangle223:setTop(1095);
-    obj.rectangle223:setWidth(720);
-    obj.rectangle223:setHeight(231);
-    obj.rectangle223:setColor("#D5D5D5");
-    obj.rectangle223:setStrokeColor("#49244F");
-    obj.rectangle223:setStrokeSize(3);
-    obj.rectangle223:setName("rectangle223");
-
-    obj.rectangle224 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle224:setParent(obj.rectangle206);
-    obj.rectangle224:setLeft(60);
-    obj.rectangle224:setTop(1095);
-    obj.rectangle224:setWidth(720);
-    obj.rectangle224:setHeight(50);
-    obj.rectangle224:setColor("#49244F");
-    obj.rectangle224:setName("rectangle224");
-
-    obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit64:setParent(obj.rectangle206);
-    obj.edit64:setLeft(65);
-    obj.edit64:setTop(1103);
-    obj.edit64:setWidth(715);
-    obj.edit64:setFontSize(20);
-    obj.edit64:setHeight(30);
-    obj.edit64:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit64, "fontStyle", "bold");
-    obj.edit64:setTransparent(true);
-    obj.edit64:setField("Talento05");
-    obj.edit64:setName("edit64");
-
-    obj.textEditor5 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor5:setParent(obj.rectangle206);
-    obj.textEditor5:setLeft(68);
-    obj.textEditor5:setTop(1143);
-    obj.textEditor5:setWidth(710);
-    obj.textEditor5:setFontSize(18);
-    obj.textEditor5:setHeight(183);
-    obj.textEditor5:setFontColor("#49244F");
-    obj.textEditor5:setTransparent(true);
-    obj.textEditor5:setField("descricaoTalento05");
-    obj.textEditor5:setName("textEditor5");
-
-    obj.rectangle225 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle225:setParent(obj.rectangle206);
-    obj.rectangle225:setLeft(60);
-    obj.rectangle225:setTop(1332);
-    obj.rectangle225:setWidth(720);
-    obj.rectangle225:setHeight(1);
-    obj.rectangle225:setColor("#49244F");
-    obj.rectangle225:setName("rectangle225");
-
-    obj.rectangle226 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle226:setParent(obj.rectangle206);
-    obj.rectangle226:setLeft(60);
-    obj.rectangle226:setTop(1337);
-    obj.rectangle226:setWidth(720);
-    obj.rectangle226:setHeight(1);
-    obj.rectangle226:setColor("#49244F");
-    obj.rectangle226:setName("rectangle226");
-
-    obj.rectangle227 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle227:setParent(obj.rectangle206);
-    obj.rectangle227:setLeft(60);
-    obj.rectangle227:setTop(1345);
-    obj.rectangle227:setWidth(720);
-    obj.rectangle227:setHeight(231);
-    obj.rectangle227:setColor("#D5D5D5");
-    obj.rectangle227:setStrokeColor("#49244F");
-    obj.rectangle227:setStrokeSize(3);
-    obj.rectangle227:setName("rectangle227");
-
-    obj.rectangle228 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle228:setParent(obj.rectangle206);
-    obj.rectangle228:setLeft(60);
-    obj.rectangle228:setTop(1345);
-    obj.rectangle228:setWidth(720);
-    obj.rectangle228:setHeight(50);
-    obj.rectangle228:setColor("#49244F");
-    obj.rectangle228:setName("rectangle228");
-
-    obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.rectangle206);
-    obj.edit65:setLeft(65);
-    obj.edit65:setTop(1353);
-    obj.edit65:setWidth(715);
-    obj.edit65:setFontSize(20);
-    obj.edit65:setHeight(30);
-    obj.edit65:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit65, "fontStyle", "bold");
-    obj.edit65:setTransparent(true);
-    obj.edit65:setField("Talento06");
-    obj.edit65:setName("edit65");
-
-    obj.textEditor6 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor6:setParent(obj.rectangle206);
-    obj.textEditor6:setLeft(68);
-    obj.textEditor6:setTop(1393);
-    obj.textEditor6:setWidth(710);
-    obj.textEditor6:setFontSize(18);
-    obj.textEditor6:setHeight(183);
-    obj.textEditor6:setFontColor("#49244F");
-    obj.textEditor6:setTransparent(true);
-    obj.textEditor6:setField("descricaoTalento06");
-    obj.textEditor6:setName("textEditor6");
-
-    obj.rectangle229 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle229:setParent(obj.rectangle206);
-    obj.rectangle229:setLeft(60);
-    obj.rectangle229:setTop(1582);
-    obj.rectangle229:setWidth(720);
-    obj.rectangle229:setHeight(1);
-    obj.rectangle229:setColor("#49244F");
-    obj.rectangle229:setName("rectangle229");
-
-    obj.rectangle230 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle230:setParent(obj.rectangle206);
-    obj.rectangle230:setLeft(60);
-    obj.rectangle230:setTop(1587);
-    obj.rectangle230:setWidth(720);
-    obj.rectangle230:setHeight(1);
-    obj.rectangle230:setColor("#49244F");
-    obj.rectangle230:setName("rectangle230");
-
-    obj.rectangle231 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle231:setParent(obj.rectangle206);
-    obj.rectangle231:setLeft(60);
-    obj.rectangle231:setTop(1595);
-    obj.rectangle231:setWidth(720);
-    obj.rectangle231:setHeight(231);
-    obj.rectangle231:setColor("#D5D5D5");
-    obj.rectangle231:setStrokeColor("#49244F");
-    obj.rectangle231:setStrokeSize(3);
-    obj.rectangle231:setName("rectangle231");
-
-    obj.rectangle232 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle232:setParent(obj.rectangle206);
-    obj.rectangle232:setLeft(60);
-    obj.rectangle232:setTop(1595);
-    obj.rectangle232:setWidth(720);
-    obj.rectangle232:setHeight(50);
-    obj.rectangle232:setColor("#49244F");
-    obj.rectangle232:setName("rectangle232");
-
-    obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit66:setParent(obj.rectangle206);
-    obj.edit66:setLeft(65);
-    obj.edit66:setTop(1603);
-    obj.edit66:setWidth(715);
-    obj.edit66:setFontSize(20);
-    obj.edit66:setHeight(30);
-    obj.edit66:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit66, "fontStyle", "bold");
-    obj.edit66:setTransparent(true);
-    obj.edit66:setField("Talento07");
-    obj.edit66:setName("edit66");
-
-    obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor7:setParent(obj.rectangle206);
-    obj.textEditor7:setLeft(68);
-    obj.textEditor7:setTop(1643);
-    obj.textEditor7:setWidth(710);
-    obj.textEditor7:setFontSize(18);
-    obj.textEditor7:setHeight(183);
-    obj.textEditor7:setFontColor("#49244F");
-    obj.textEditor7:setTransparent(true);
-    obj.textEditor7:setField("descricaoTalento07");
-    obj.textEditor7:setName("textEditor7");
-
-    obj.rectangle233 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle233:setParent(obj.rectangle206);
-    obj.rectangle233:setLeft(60);
-    obj.rectangle233:setTop(1832);
-    obj.rectangle233:setWidth(720);
-    obj.rectangle233:setHeight(1);
-    obj.rectangle233:setColor("#49244F");
-    obj.rectangle233:setName("rectangle233");
-
-    obj.rectangle234 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle234:setParent(obj.rectangle206);
-    obj.rectangle234:setLeft(60);
-    obj.rectangle234:setTop(1837);
-    obj.rectangle234:setWidth(720);
-    obj.rectangle234:setHeight(1);
-    obj.rectangle234:setColor("#49244F");
-    obj.rectangle234:setName("rectangle234");
-
-    obj.rectangle235 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle235:setParent(obj.rectangle206);
-    obj.rectangle235:setLeft(60);
-    obj.rectangle235:setTop(1845);
-    obj.rectangle235:setWidth(720);
-    obj.rectangle235:setHeight(231);
-    obj.rectangle235:setColor("#D5D5D5");
-    obj.rectangle235:setStrokeColor("#49244F");
-    obj.rectangle235:setStrokeSize(3);
-    obj.rectangle235:setName("rectangle235");
-
-    obj.rectangle236 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle236:setParent(obj.rectangle206);
-    obj.rectangle236:setLeft(60);
-    obj.rectangle236:setTop(1845);
-    obj.rectangle236:setWidth(720);
-    obj.rectangle236:setHeight(50);
-    obj.rectangle236:setColor("#49244F");
-    obj.rectangle236:setName("rectangle236");
-
-    obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit67:setParent(obj.rectangle206);
-    obj.edit67:setLeft(65);
-    obj.edit67:setTop(1853);
-    obj.edit67:setWidth(715);
-    obj.edit67:setFontSize(20);
-    obj.edit67:setHeight(30);
-    obj.edit67:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit67, "fontStyle", "bold");
-    obj.edit67:setTransparent(true);
-    obj.edit67:setField("Talento08");
-    obj.edit67:setName("edit67");
-
-    obj.textEditor8 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor8:setParent(obj.rectangle206);
-    obj.textEditor8:setLeft(68);
-    obj.textEditor8:setTop(1893);
-    obj.textEditor8:setWidth(710);
-    obj.textEditor8:setFontSize(18);
-    obj.textEditor8:setHeight(183);
-    obj.textEditor8:setFontColor("#49244F");
-    obj.textEditor8:setTransparent(true);
-    obj.textEditor8:setField("descricaoTalento08");
-    obj.textEditor8:setName("textEditor8");
-
-    obj.rectangle237 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle237:setParent(obj.rectangle206);
-    obj.rectangle237:setLeft(60);
-    obj.rectangle237:setTop(2082);
-    obj.rectangle237:setWidth(720);
-    obj.rectangle237:setHeight(1);
-    obj.rectangle237:setColor("#49244F");
-    obj.rectangle237:setName("rectangle237");
-
-    obj.rectangle238 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle238:setParent(obj.rectangle206);
-    obj.rectangle238:setLeft(60);
-    obj.rectangle238:setTop(2087);
-    obj.rectangle238:setWidth(720);
-    obj.rectangle238:setHeight(1);
-    obj.rectangle238:setColor("#49244F");
-    obj.rectangle238:setName("rectangle238");
-
-    obj.rectangle239 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle239:setParent(obj.rectangle206);
-    obj.rectangle239:setLeft(60);
-    obj.rectangle239:setTop(2095);
-    obj.rectangle239:setWidth(720);
-    obj.rectangle239:setHeight(231);
-    obj.rectangle239:setColor("#D5D5D5");
-    obj.rectangle239:setStrokeColor("#49244F");
-    obj.rectangle239:setStrokeSize(3);
-    obj.rectangle239:setName("rectangle239");
-
-    obj.rectangle240 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle240:setParent(obj.rectangle206);
-    obj.rectangle240:setLeft(60);
-    obj.rectangle240:setTop(2095);
-    obj.rectangle240:setWidth(720);
-    obj.rectangle240:setHeight(50);
-    obj.rectangle240:setColor("#49244F");
-    obj.rectangle240:setName("rectangle240");
-
-    obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.rectangle206);
-    obj.edit68:setLeft(65);
-    obj.edit68:setTop(2103);
-    obj.edit68:setWidth(715);
-    obj.edit68:setFontSize(20);
-    obj.edit68:setHeight(30);
-    obj.edit68:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit68, "fontStyle", "bold");
-    obj.edit68:setTransparent(true);
-    obj.edit68:setField("Talento09");
-    obj.edit68:setName("edit68");
-
-    obj.textEditor9 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor9:setParent(obj.rectangle206);
-    obj.textEditor9:setLeft(68);
-    obj.textEditor9:setTop(2143);
-    obj.textEditor9:setWidth(710);
-    obj.textEditor9:setFontSize(18);
-    obj.textEditor9:setHeight(183);
-    obj.textEditor9:setFontColor("#49244F");
-    obj.textEditor9:setTransparent(true);
-    obj.textEditor9:setField("descricaoTalento09");
-    obj.textEditor9:setName("textEditor9");
-
-    obj.rectangle241 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle241:setParent(obj.rectangle206);
-    obj.rectangle241:setLeft(60);
-    obj.rectangle241:setTop(2332);
-    obj.rectangle241:setWidth(720);
-    obj.rectangle241:setHeight(1);
-    obj.rectangle241:setColor("#49244F");
-    obj.rectangle241:setName("rectangle241");
-
-    obj.rectangle242 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle242:setParent(obj.rectangle206);
-    obj.rectangle242:setLeft(60);
-    obj.rectangle242:setTop(2337);
-    obj.rectangle242:setWidth(720);
-    obj.rectangle242:setHeight(1);
-    obj.rectangle242:setColor("#49244F");
-    obj.rectangle242:setName("rectangle242");
-
-    obj.rectangle243 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle243:setParent(obj.rectangle206);
-    obj.rectangle243:setLeft(60);
-    obj.rectangle243:setTop(2345);
-    obj.rectangle243:setWidth(720);
-    obj.rectangle243:setHeight(231);
-    obj.rectangle243:setColor("#D5D5D5");
-    obj.rectangle243:setStrokeColor("#49244F");
-    obj.rectangle243:setStrokeSize(3);
-    obj.rectangle243:setName("rectangle243");
-
-    obj.rectangle244 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle244:setParent(obj.rectangle206);
-    obj.rectangle244:setLeft(60);
-    obj.rectangle244:setTop(2345);
-    obj.rectangle244:setWidth(720);
-    obj.rectangle244:setHeight(50);
-    obj.rectangle244:setColor("#49244F");
-    obj.rectangle244:setName("rectangle244");
-
-    obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.rectangle206);
-    obj.edit69:setLeft(65);
-    obj.edit69:setTop(2353);
-    obj.edit69:setWidth(715);
-    obj.edit69:setFontSize(20);
-    obj.edit69:setHeight(30);
-    obj.edit69:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit69, "fontStyle", "bold");
-    obj.edit69:setTransparent(true);
-    obj.edit69:setField("Talento10");
-    obj.edit69:setName("edit69");
-
-    obj.textEditor10 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor10:setParent(obj.rectangle206);
-    obj.textEditor10:setLeft(68);
-    obj.textEditor10:setTop(2393);
-    obj.textEditor10:setWidth(710);
-    obj.textEditor10:setFontSize(18);
-    obj.textEditor10:setHeight(183);
-    obj.textEditor10:setFontColor("#49244F");
-    obj.textEditor10:setTransparent(true);
-    obj.textEditor10:setField("descricaoTalento10");
-    obj.textEditor10:setName("textEditor10");
-
-    obj.rectangle245 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle245:setParent(obj.rectangle206);
-    obj.rectangle245:setLeft(60);
-    obj.rectangle245:setTop(2582);
-    obj.rectangle245:setWidth(720);
-    obj.rectangle245:setHeight(1);
-    obj.rectangle245:setColor("#49244F");
-    obj.rectangle245:setName("rectangle245");
-
-    obj.rectangle246 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle246:setParent(obj.rectangle206);
-    obj.rectangle246:setLeft(60);
-    obj.rectangle246:setTop(2587);
-    obj.rectangle246:setWidth(720);
-    obj.rectangle246:setHeight(1);
-    obj.rectangle246:setColor("#49244F");
-    obj.rectangle246:setName("rectangle246");
-
-    obj.rectangle247 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle247:setParent(obj.rectangle206);
-    obj.rectangle247:setLeft(60);
-    obj.rectangle247:setTop(2595);
-    obj.rectangle247:setWidth(720);
-    obj.rectangle247:setHeight(231);
-    obj.rectangle247:setColor("#D5D5D5");
-    obj.rectangle247:setStrokeColor("#49244F");
-    obj.rectangle247:setStrokeSize(3);
-    obj.rectangle247:setName("rectangle247");
-
-    obj.rectangle248 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle248:setParent(obj.rectangle206);
-    obj.rectangle248:setLeft(60);
-    obj.rectangle248:setTop(2595);
-    obj.rectangle248:setWidth(720);
-    obj.rectangle248:setHeight(50);
-    obj.rectangle248:setColor("#49244F");
-    obj.rectangle248:setName("rectangle248");
-
-    obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit70:setParent(obj.rectangle206);
-    obj.edit70:setLeft(65);
-    obj.edit70:setTop(2603);
-    obj.edit70:setWidth(715);
-    obj.edit70:setFontSize(20);
-    obj.edit70:setHeight(30);
-    obj.edit70:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit70, "fontStyle", "bold");
-    obj.edit70:setTransparent(true);
-    obj.edit70:setField("Talento11");
-    obj.edit70:setName("edit70");
-
-    obj.textEditor11 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor11:setParent(obj.rectangle206);
-    obj.textEditor11:setLeft(68);
-    obj.textEditor11:setTop(2643);
-    obj.textEditor11:setWidth(710);
-    obj.textEditor11:setFontSize(18);
-    obj.textEditor11:setHeight(183);
-    obj.textEditor11:setFontColor("#49244F");
-    obj.textEditor11:setTransparent(true);
-    obj.textEditor11:setField("descricaoTalento11");
-    obj.textEditor11:setName("textEditor11");
-
-    obj.rectangle249 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle249:setParent(obj.rectangle206);
-    obj.rectangle249:setLeft(60);
-    obj.rectangle249:setTop(2832);
-    obj.rectangle249:setWidth(720);
-    obj.rectangle249:setHeight(1);
-    obj.rectangle249:setColor("#49244F");
-    obj.rectangle249:setName("rectangle249");
-
-    obj.rectangle250 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle250:setParent(obj.rectangle206);
-    obj.rectangle250:setLeft(60);
-    obj.rectangle250:setTop(2837);
-    obj.rectangle250:setWidth(720);
-    obj.rectangle250:setHeight(1);
-    obj.rectangle250:setColor("#49244F");
-    obj.rectangle250:setName("rectangle250");
-
-    obj.rectangle251 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle251:setParent(obj.rectangle206);
-    obj.rectangle251:setLeft(60);
-    obj.rectangle251:setTop(2845);
-    obj.rectangle251:setWidth(720);
-    obj.rectangle251:setHeight(231);
-    obj.rectangle251:setColor("#D5D5D5");
-    obj.rectangle251:setStrokeColor("#49244F");
-    obj.rectangle251:setStrokeSize(3);
-    obj.rectangle251:setName("rectangle251");
-
-    obj.rectangle252 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle252:setParent(obj.rectangle206);
-    obj.rectangle252:setLeft(60);
-    obj.rectangle252:setTop(2845);
-    obj.rectangle252:setWidth(720);
-    obj.rectangle252:setHeight(50);
-    obj.rectangle252:setColor("#49244F");
-    obj.rectangle252:setName("rectangle252");
-
-    obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit71:setParent(obj.rectangle206);
-    obj.edit71:setLeft(65);
-    obj.edit71:setTop(2853);
-    obj.edit71:setWidth(715);
-    obj.edit71:setFontSize(20);
-    obj.edit71:setHeight(30);
-    obj.edit71:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit71, "fontStyle", "bold");
-    obj.edit71:setTransparent(true);
-    obj.edit71:setField("Talento12");
-    obj.edit71:setName("edit71");
-
-    obj.textEditor12 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor12:setParent(obj.rectangle206);
-    obj.textEditor12:setLeft(68);
-    obj.textEditor12:setTop(2893);
-    obj.textEditor12:setWidth(710);
-    obj.textEditor12:setFontSize(18);
-    obj.textEditor12:setHeight(183);
-    obj.textEditor12:setFontColor("#49244F");
-    obj.textEditor12:setTransparent(true);
-    obj.textEditor12:setField("descricaoTalento12");
-    obj.textEditor12:setName("textEditor12");
-
-    obj.rectangle253 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle253:setParent(obj.rectangle206);
-    obj.rectangle253:setLeft(60);
-    obj.rectangle253:setTop(3082);
-    obj.rectangle253:setWidth(720);
-    obj.rectangle253:setHeight(1);
-    obj.rectangle253:setColor("#49244F");
-    obj.rectangle253:setName("rectangle253");
-
-    obj.rectangle254 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle254:setParent(obj.rectangle206);
-    obj.rectangle254:setLeft(60);
-    obj.rectangle254:setTop(3087);
-    obj.rectangle254:setWidth(720);
-    obj.rectangle254:setHeight(1);
-    obj.rectangle254:setColor("#49244F");
-    obj.rectangle254:setName("rectangle254");
-
-    obj.rectangle255 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle255:setParent(obj.rectangle206);
-    obj.rectangle255:setLeft(60);
-    obj.rectangle255:setTop(3095);
-    obj.rectangle255:setWidth(720);
-    obj.rectangle255:setHeight(231);
-    obj.rectangle255:setColor("#D5D5D5");
-    obj.rectangle255:setStrokeColor("#49244F");
-    obj.rectangle255:setStrokeSize(3);
-    obj.rectangle255:setName("rectangle255");
-
-    obj.rectangle256 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle256:setParent(obj.rectangle206);
-    obj.rectangle256:setLeft(60);
-    obj.rectangle256:setTop(3095);
-    obj.rectangle256:setWidth(720);
-    obj.rectangle256:setHeight(50);
-    obj.rectangle256:setColor("#49244F");
-    obj.rectangle256:setName("rectangle256");
-
-    obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit72:setParent(obj.rectangle206);
-    obj.edit72:setLeft(65);
-    obj.edit72:setTop(3103);
-    obj.edit72:setWidth(715);
-    obj.edit72:setFontSize(20);
-    obj.edit72:setHeight(30);
-    obj.edit72:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit72, "fontStyle", "bold");
-    obj.edit72:setTransparent(true);
-    obj.edit72:setField("Talento13");
-    obj.edit72:setName("edit72");
-
-    obj.textEditor13 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor13:setParent(obj.rectangle206);
-    obj.textEditor13:setLeft(68);
-    obj.textEditor13:setTop(3143);
-    obj.textEditor13:setWidth(710);
-    obj.textEditor13:setFontSize(18);
-    obj.textEditor13:setHeight(183);
-    obj.textEditor13:setFontColor("#49244F");
-    obj.textEditor13:setTransparent(true);
-    obj.textEditor13:setField("descricaoTalento13");
-    obj.textEditor13:setName("textEditor13");
-
-    obj.rectangle257 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle257:setParent(obj.rectangle206);
-    obj.rectangle257:setLeft(60);
-    obj.rectangle257:setTop(3332);
-    obj.rectangle257:setWidth(720);
-    obj.rectangle257:setHeight(1);
-    obj.rectangle257:setColor("#49244F");
-    obj.rectangle257:setName("rectangle257");
-
-    obj.rectangle258 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle258:setParent(obj.rectangle206);
-    obj.rectangle258:setLeft(60);
-    obj.rectangle258:setTop(3337);
-    obj.rectangle258:setWidth(720);
-    obj.rectangle258:setHeight(1);
-    obj.rectangle258:setColor("#49244F");
-    obj.rectangle258:setName("rectangle258");
-
-    obj.rectangle259 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle259:setParent(obj.rectangle206);
-    obj.rectangle259:setLeft(60);
-    obj.rectangle259:setTop(3345);
-    obj.rectangle259:setWidth(720);
-    obj.rectangle259:setHeight(231);
-    obj.rectangle259:setColor("#D5D5D5");
-    obj.rectangle259:setStrokeColor("#49244F");
-    obj.rectangle259:setStrokeSize(3);
-    obj.rectangle259:setName("rectangle259");
-
-    obj.rectangle260 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle260:setParent(obj.rectangle206);
-    obj.rectangle260:setLeft(60);
-    obj.rectangle260:setTop(3345);
-    obj.rectangle260:setWidth(720);
-    obj.rectangle260:setHeight(50);
-    obj.rectangle260:setColor("#49244F");
-    obj.rectangle260:setName("rectangle260");
-
-    obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit73:setParent(obj.rectangle206);
-    obj.edit73:setLeft(65);
-    obj.edit73:setTop(3353);
-    obj.edit73:setWidth(715);
-    obj.edit73:setFontSize(20);
-    obj.edit73:setHeight(30);
-    obj.edit73:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit73, "fontStyle", "bold");
-    obj.edit73:setTransparent(true);
-    obj.edit73:setField("Talento14");
-    obj.edit73:setName("edit73");
-
-    obj.textEditor14 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor14:setParent(obj.rectangle206);
-    obj.textEditor14:setLeft(68);
-    obj.textEditor14:setTop(3393);
-    obj.textEditor14:setWidth(710);
-    obj.textEditor14:setFontSize(18);
-    obj.textEditor14:setHeight(183);
-    obj.textEditor14:setFontColor("#49244F");
-    obj.textEditor14:setTransparent(true);
-    obj.textEditor14:setField("descricaoTalento14");
-    obj.textEditor14:setName("textEditor14");
-
-    obj.rectangle261 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle261:setParent(obj.rectangle206);
-    obj.rectangle261:setLeft(60);
-    obj.rectangle261:setTop(3582);
-    obj.rectangle261:setWidth(720);
-    obj.rectangle261:setHeight(1);
-    obj.rectangle261:setColor("#49244F");
-    obj.rectangle261:setName("rectangle261");
-
-    obj.rectangle262 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle262:setParent(obj.rectangle206);
-    obj.rectangle262:setLeft(60);
-    obj.rectangle262:setTop(3587);
-    obj.rectangle262:setWidth(720);
-    obj.rectangle262:setHeight(1);
-    obj.rectangle262:setColor("#49244F");
-    obj.rectangle262:setName("rectangle262");
-
-    obj.rectangle263 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle263:setParent(obj.rectangle206);
-    obj.rectangle263:setLeft(60);
-    obj.rectangle263:setTop(3595);
-    obj.rectangle263:setWidth(720);
-    obj.rectangle263:setHeight(231);
-    obj.rectangle263:setColor("#D5D5D5");
-    obj.rectangle263:setStrokeColor("#49244F");
-    obj.rectangle263:setStrokeSize(3);
-    obj.rectangle263:setName("rectangle263");
-
-    obj.rectangle264 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle264:setParent(obj.rectangle206);
-    obj.rectangle264:setLeft(60);
-    obj.rectangle264:setTop(3595);
-    obj.rectangle264:setWidth(720);
-    obj.rectangle264:setHeight(50);
-    obj.rectangle264:setColor("#49244F");
-    obj.rectangle264:setName("rectangle264");
-
-    obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit74:setParent(obj.rectangle206);
-    obj.edit74:setLeft(65);
-    obj.edit74:setTop(3603);
-    obj.edit74:setWidth(715);
-    obj.edit74:setFontSize(20);
-    obj.edit74:setHeight(30);
-    obj.edit74:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit74, "fontStyle", "bold");
-    obj.edit74:setTransparent(true);
-    obj.edit74:setField("Talento15");
-    obj.edit74:setName("edit74");
-
-    obj.textEditor15 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor15:setParent(obj.rectangle206);
-    obj.textEditor15:setLeft(68);
-    obj.textEditor15:setTop(3643);
-    obj.textEditor15:setWidth(710);
-    obj.textEditor15:setFontSize(18);
-    obj.textEditor15:setHeight(183);
-    obj.textEditor15:setFontColor("#49244F");
-    obj.textEditor15:setTransparent(true);
-    obj.textEditor15:setField("descricaoTalento15");
-    obj.textEditor15:setName("textEditor15");
+    obj.label88 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label88:setParent(obj.rectangle206);
+    obj.label88:setLeft(745);
+    obj.label88:setTop(52);
+    obj.label88:setWidth(45);
+    obj.label88:setHeight(20);
+    obj.label88:setFontSize(40);
+    obj.label88:setHorzTextAlign("center");
+    obj.label88:setText("+");
+    obj.label88:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label88, "fontStyle", "bold");
+    obj.label88:setHitTest(true);
+    obj.label88:setCursor("handPoint");
+    obj.label88:setHint("Adicionar Talento");
+    obj.label88:setName("label88");
 
     obj.layout5 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout5:setParent(obj.tab3);
@@ -5696,32 +4840,176 @@ local function constructNew_frmWeirdWizard()
     obj.layout5:setHeight(825);
     obj.layout5:setName("layout5");
 
-    obj.rectangle265 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle265:setParent(obj.layout5);
-    obj.rectangle265:setLeft(0);
-    obj.rectangle265:setTop(725);
-    obj.rectangle265:setWidth(799);
-    obj.rectangle265:setHeight(105);
-    obj.rectangle265:setColor("#D5D5D5");
-    obj.rectangle265:setName("rectangle265");
+    obj.rectangle212 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle212:setParent(obj.layout5);
+    obj.rectangle212:setLeft(0);
+    obj.rectangle212:setTop(725);
+    obj.rectangle212:setWidth(799);
+    obj.rectangle212:setHeight(105);
+    obj.rectangle212:setColor("#D5D5D5");
+    obj.rectangle212:setName("rectangle212");
 
-    obj.rectangle266 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle266:setParent(obj.layout5);
-    obj.rectangle266:setLeft(65);
-    obj.rectangle266:setTop(730);
-    obj.rectangle266:setWidth(712);
-    obj.rectangle266:setHeight(1);
-    obj.rectangle266:setColor("#49244F");
-    obj.rectangle266:setName("rectangle266");
+    obj.rectangle213 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle213:setParent(obj.layout5);
+    obj.rectangle213:setLeft(65);
+    obj.rectangle213:setTop(650);
+    obj.rectangle213:setWidth(712);
+    obj.rectangle213:setHeight(1);
+    obj.rectangle213:setColor("#49244F");
+    obj.rectangle213:setName("rectangle213");
 
-    obj.rectangle267 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle267:setParent(obj.layout5);
-    obj.rectangle267:setLeft(65);
-    obj.rectangle267:setTop(735);
-    obj.rectangle267:setWidth(712);
-    obj.rectangle267:setHeight(1);
-    obj.rectangle267:setColor("#49244F");
-    obj.rectangle267:setName("rectangle267");
+    obj.rectangle214 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle214:setParent(obj.layout5);
+    obj.rectangle214:setLeft(65);
+    obj.rectangle214:setTop(655);
+    obj.rectangle214:setWidth(712);
+    obj.rectangle214:setHeight(1);
+    obj.rectangle214:setColor("#49244F");
+    obj.rectangle214:setName("rectangle214");
+
+    obj.rectangle215 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle215:setParent(obj.layout5);
+    obj.rectangle215:setLeft(65);
+    obj.rectangle215:setTop(660);
+    obj.rectangle215:setWidth(712);
+    obj.rectangle215:setHeight(1);
+    obj.rectangle215:setColor("#49244F");
+    obj.rectangle215:setName("rectangle215");
+
+    obj.rectangle216 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle216:setParent(obj.layout5);
+    obj.rectangle216:setLeft(65);
+    obj.rectangle216:setTop(665);
+    obj.rectangle216:setWidth(712);
+    obj.rectangle216:setHeight(1);
+    obj.rectangle216:setColor("#49244F");
+    obj.rectangle216:setName("rectangle216");
+
+    obj.rectangle217 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle217:setParent(obj.layout5);
+    obj.rectangle217:setLeft(65);
+    obj.rectangle217:setTop(670);
+    obj.rectangle217:setWidth(712);
+    obj.rectangle217:setHeight(1);
+    obj.rectangle217:setColor("#49244F");
+    obj.rectangle217:setName("rectangle217");
+
+    obj.rectangle218 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle218:setParent(obj.layout5);
+    obj.rectangle218:setLeft(65);
+    obj.rectangle218:setTop(675);
+    obj.rectangle218:setWidth(712);
+    obj.rectangle218:setHeight(1);
+    obj.rectangle218:setColor("#49244F");
+    obj.rectangle218:setName("rectangle218");
+
+    obj.rectangle219 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle219:setParent(obj.layout5);
+    obj.rectangle219:setLeft(65);
+    obj.rectangle219:setTop(680);
+    obj.rectangle219:setWidth(712);
+    obj.rectangle219:setHeight(1);
+    obj.rectangle219:setColor("#49244F");
+    obj.rectangle219:setName("rectangle219");
+
+    obj.rectangle220 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle220:setParent(obj.layout5);
+    obj.rectangle220:setLeft(65);
+    obj.rectangle220:setTop(685);
+    obj.rectangle220:setWidth(712);
+    obj.rectangle220:setHeight(1);
+    obj.rectangle220:setColor("#49244F");
+    obj.rectangle220:setName("rectangle220");
+
+    obj.rectangle221 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle221:setParent(obj.layout5);
+    obj.rectangle221:setLeft(65);
+    obj.rectangle221:setTop(690);
+    obj.rectangle221:setWidth(712);
+    obj.rectangle221:setHeight(1);
+    obj.rectangle221:setColor("#49244F");
+    obj.rectangle221:setName("rectangle221");
+
+    obj.rectangle222 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle222:setParent(obj.layout5);
+    obj.rectangle222:setLeft(65);
+    obj.rectangle222:setTop(695);
+    obj.rectangle222:setWidth(712);
+    obj.rectangle222:setHeight(1);
+    obj.rectangle222:setColor("#49244F");
+    obj.rectangle222:setName("rectangle222");
+
+    obj.rectangle223 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle223:setParent(obj.layout5);
+    obj.rectangle223:setLeft(65);
+    obj.rectangle223:setTop(700);
+    obj.rectangle223:setWidth(712);
+    obj.rectangle223:setHeight(1);
+    obj.rectangle223:setColor("#49244F");
+    obj.rectangle223:setName("rectangle223");
+
+    obj.rectangle224 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle224:setParent(obj.layout5);
+    obj.rectangle224:setLeft(65);
+    obj.rectangle224:setTop(705);
+    obj.rectangle224:setWidth(712);
+    obj.rectangle224:setHeight(1);
+    obj.rectangle224:setColor("#49244F");
+    obj.rectangle224:setName("rectangle224");
+
+    obj.rectangle225 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle225:setParent(obj.layout5);
+    obj.rectangle225:setLeft(65);
+    obj.rectangle225:setTop(710);
+    obj.rectangle225:setWidth(712);
+    obj.rectangle225:setHeight(1);
+    obj.rectangle225:setColor("#49244F");
+    obj.rectangle225:setName("rectangle225");
+
+    obj.rectangle226 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle226:setParent(obj.layout5);
+    obj.rectangle226:setLeft(65);
+    obj.rectangle226:setTop(715);
+    obj.rectangle226:setWidth(712);
+    obj.rectangle226:setHeight(1);
+    obj.rectangle226:setColor("#49244F");
+    obj.rectangle226:setName("rectangle226");
+
+    obj.rectangle227 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle227:setParent(obj.layout5);
+    obj.rectangle227:setLeft(65);
+    obj.rectangle227:setTop(720);
+    obj.rectangle227:setWidth(712);
+    obj.rectangle227:setHeight(1);
+    obj.rectangle227:setColor("#49244F");
+    obj.rectangle227:setName("rectangle227");
+
+    obj.rectangle228 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle228:setParent(obj.layout5);
+    obj.rectangle228:setLeft(65);
+    obj.rectangle228:setTop(725);
+    obj.rectangle228:setWidth(712);
+    obj.rectangle228:setHeight(1);
+    obj.rectangle228:setColor("#49244F");
+    obj.rectangle228:setName("rectangle228");
+
+    obj.rectangle229 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle229:setParent(obj.layout5);
+    obj.rectangle229:setLeft(65);
+    obj.rectangle229:setTop(730);
+    obj.rectangle229:setWidth(712);
+    obj.rectangle229:setHeight(1);
+    obj.rectangle229:setColor("#49244F");
+    obj.rectangle229:setName("rectangle229");
+
+    obj.rectangle230 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle230:setParent(obj.layout5);
+    obj.rectangle230:setLeft(65);
+    obj.rectangle230:setTop(735);
+    obj.rectangle230:setWidth(712);
+    obj.rectangle230:setHeight(1);
+    obj.rectangle230:setColor("#49244F");
+    obj.rectangle230:setName("rectangle230");
 
     obj.image38 = GUI.fromHandle(_obj_newObject("image"));
     obj.image38:setParent(obj.layout5);
@@ -5732,14 +5020,14 @@ local function constructNew_frmWeirdWizard()
     obj.image38:setSRC("/img/libelula.png");
     obj.image38:setName("image38");
 
-    obj.rectangle268 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle268:setParent(obj.layout5);
-    obj.rectangle268:setLeft(0);
-    obj.rectangle268:setTop(0);
-    obj.rectangle268:setWidth(799);
-    obj.rectangle268:setHeight(5);
-    obj.rectangle268:setColor("#D5D5D5");
-    obj.rectangle268:setName("rectangle268");
+    obj.rectangle231 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle231:setParent(obj.layout5);
+    obj.rectangle231:setLeft(0);
+    obj.rectangle231:setTop(0);
+    obj.rectangle231:setWidth(799);
+    obj.rectangle231:setHeight(5);
+    obj.rectangle231:setColor("#D5D5D5");
+    obj.rectangle231:setName("rectangle231");
 
     obj.image39 = GUI.fromHandle(_obj_newObject("image"));
     obj.image39:setParent(obj.layout5);
@@ -5772,297 +5060,297 @@ local function constructNew_frmWeirdWizard()
     obj.layout6:setHeight(825);
     obj.layout6:setName("layout6");
 
-    obj.rectangle269 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle269:setParent(obj.layout6);
-    obj.rectangle269:setLeft(0);
-    obj.rectangle269:setTop(0);
-    obj.rectangle269:setWidth(799);
-    obj.rectangle269:setHeight(825);
-    obj.rectangle269:setColor("#D5D5D5");
-    obj.rectangle269:setName("rectangle269");
-
-    obj.label88 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label88:setParent(obj.rectangle269);
-    obj.label88:setLeft(180);
-    obj.label88:setTop(60);
-    obj.label88:setWidth(480);
-    obj.label88:setFontSize(24);
-    obj.label88:setHorzTextAlign("center");
-    obj.label88:setText("EQUIPAMENTOS E ACESSÓRIOS");
-    obj.label88:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label88, "fontStyle", "bold");
-    obj.label88:setName("label88");
-
-    obj.rectangle270 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle270:setParent(obj.rectangle269);
-    obj.rectangle270:setLeft(60);
-    obj.rectangle270:setTop(95);
-    obj.rectangle270:setWidth(720);
-    obj.rectangle270:setHeight(631);
-    obj.rectangle270:setColor("#D5D5D5");
-    obj.rectangle270:setStrokeColor("#49244F");
-    obj.rectangle270:setStrokeSize(3);
-    obj.rectangle270:setName("rectangle270");
-
-    obj.rectangle271 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle271:setParent(obj.rectangle269);
-    obj.rectangle271:setLeft(60);
-    obj.rectangle271:setTop(95);
-    obj.rectangle271:setWidth(720);
-    obj.rectangle271:setHeight(50);
-    obj.rectangle271:setColor("#49244F");
-    obj.rectangle271:setName("rectangle271");
+    obj.rectangle232 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle232:setParent(obj.layout6);
+    obj.rectangle232:setLeft(0);
+    obj.rectangle232:setTop(0);
+    obj.rectangle232:setWidth(799);
+    obj.rectangle232:setHeight(825);
+    obj.rectangle232:setColor("#D5D5D5");
+    obj.rectangle232:setName("rectangle232");
 
     obj.label89 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label89:setParent(obj.rectangle269);
-    obj.label89:setLeft(70);
-    obj.label89:setTop(110);
-    obj.label89:setWidth(100);
-    obj.label89:setFontSize(20);
-    obj.label89:setText("Itens");
-    obj.label89:setFontColor("#D5D5D5");
+    obj.label89:setParent(obj.rectangle232);
+    obj.label89:setLeft(180);
+    obj.label89:setTop(60);
+    obj.label89:setWidth(480);
+    obj.label89:setFontSize(24);
+    obj.label89:setHorzTextAlign("center");
+    obj.label89:setText("EQUIPAMENTOS E ACESSÓRIOS");
+    obj.label89:setFontColor("#49244F");
     lfm_setPropAsString(obj.label89, "fontStyle", "bold");
     obj.label89:setName("label89");
 
-    obj.textEditor16 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor16:setParent(obj.rectangle269);
-    obj.textEditor16:setLeft(68);
-    obj.textEditor16:setTop(143);
-    obj.textEditor16:setWidth(710);
-    obj.textEditor16:setFontSize(18);
-    obj.textEditor16:setHeight(581);
-    obj.textEditor16:setFontColor("black");
-    obj.textEditor16:setTransparent(true);
-    obj.textEditor16:setField("Itens");
-    obj.textEditor16:setName("textEditor16");
+    obj.rectangle233 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle233:setParent(obj.rectangle232);
+    obj.rectangle233:setLeft(60);
+    obj.rectangle233:setTop(95);
+    obj.rectangle233:setWidth(720);
+    obj.rectangle233:setHeight(631);
+    obj.rectangle233:setColor("#D5D5D5");
+    obj.rectangle233:setStrokeColor("#49244F");
+    obj.rectangle233:setStrokeSize(3);
+    obj.rectangle233:setName("rectangle233");
 
-    obj.rectangle272 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle272:setParent(obj.rectangle269);
-    obj.rectangle272:setLeft(70);
-    obj.rectangle272:setTop(168);
-    obj.rectangle272:setWidth(700);
-    obj.rectangle272:setHeight(1);
-    obj.rectangle272:setColor("#49244F");
-    obj.rectangle272:setName("rectangle272");
+    obj.rectangle234 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle234:setParent(obj.rectangle232);
+    obj.rectangle234:setLeft(60);
+    obj.rectangle234:setTop(95);
+    obj.rectangle234:setWidth(720);
+    obj.rectangle234:setHeight(50);
+    obj.rectangle234:setColor("#49244F");
+    obj.rectangle234:setName("rectangle234");
 
-    obj.rectangle273 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle273:setParent(obj.rectangle269);
-    obj.rectangle273:setLeft(70);
-    obj.rectangle273:setTop(191);
-    obj.rectangle273:setWidth(700);
-    obj.rectangle273:setHeight(1);
-    obj.rectangle273:setColor("#49244F");
-    obj.rectangle273:setName("rectangle273");
+    obj.label90 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label90:setParent(obj.rectangle232);
+    obj.label90:setLeft(70);
+    obj.label90:setTop(110);
+    obj.label90:setWidth(100);
+    obj.label90:setFontSize(20);
+    obj.label90:setText("Itens");
+    obj.label90:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label90, "fontStyle", "bold");
+    obj.label90:setName("label90");
 
-    obj.rectangle274 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle274:setParent(obj.rectangle269);
-    obj.rectangle274:setLeft(70);
-    obj.rectangle274:setTop(214);
-    obj.rectangle274:setWidth(700);
-    obj.rectangle274:setHeight(1);
-    obj.rectangle274:setColor("#49244F");
-    obj.rectangle274:setName("rectangle274");
+    obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor1:setParent(obj.rectangle232);
+    obj.textEditor1:setLeft(68);
+    obj.textEditor1:setTop(143);
+    obj.textEditor1:setWidth(710);
+    obj.textEditor1:setFontSize(18);
+    obj.textEditor1:setHeight(581);
+    obj.textEditor1:setFontColor("black");
+    obj.textEditor1:setTransparent(true);
+    obj.textEditor1:setField("Itens");
+    obj.textEditor1:setName("textEditor1");
 
-    obj.rectangle275 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle275:setParent(obj.rectangle269);
-    obj.rectangle275:setLeft(70);
-    obj.rectangle275:setTop(237);
-    obj.rectangle275:setWidth(700);
-    obj.rectangle275:setHeight(1);
-    obj.rectangle275:setColor("#49244F");
-    obj.rectangle275:setName("rectangle275");
+    obj.rectangle235 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle235:setParent(obj.rectangle232);
+    obj.rectangle235:setLeft(70);
+    obj.rectangle235:setTop(168);
+    obj.rectangle235:setWidth(700);
+    obj.rectangle235:setHeight(1);
+    obj.rectangle235:setColor("#49244F");
+    obj.rectangle235:setName("rectangle235");
 
-    obj.rectangle276 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle276:setParent(obj.rectangle269);
-    obj.rectangle276:setLeft(70);
-    obj.rectangle276:setTop(262);
-    obj.rectangle276:setWidth(700);
-    obj.rectangle276:setHeight(1);
-    obj.rectangle276:setColor("#49244F");
-    obj.rectangle276:setName("rectangle276");
+    obj.rectangle236 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle236:setParent(obj.rectangle232);
+    obj.rectangle236:setLeft(70);
+    obj.rectangle236:setTop(191);
+    obj.rectangle236:setWidth(700);
+    obj.rectangle236:setHeight(1);
+    obj.rectangle236:setColor("#49244F");
+    obj.rectangle236:setName("rectangle236");
 
-    obj.rectangle277 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle277:setParent(obj.rectangle269);
-    obj.rectangle277:setLeft(70);
-    obj.rectangle277:setTop(285);
-    obj.rectangle277:setWidth(700);
-    obj.rectangle277:setHeight(1);
-    obj.rectangle277:setColor("#49244F");
-    obj.rectangle277:setName("rectangle277");
+    obj.rectangle237 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle237:setParent(obj.rectangle232);
+    obj.rectangle237:setLeft(70);
+    obj.rectangle237:setTop(214);
+    obj.rectangle237:setWidth(700);
+    obj.rectangle237:setHeight(1);
+    obj.rectangle237:setColor("#49244F");
+    obj.rectangle237:setName("rectangle237");
 
-    obj.rectangle278 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle278:setParent(obj.rectangle269);
-    obj.rectangle278:setLeft(70);
-    obj.rectangle278:setTop(310);
-    obj.rectangle278:setWidth(700);
-    obj.rectangle278:setHeight(1);
-    obj.rectangle278:setColor("#49244F");
-    obj.rectangle278:setName("rectangle278");
+    obj.rectangle238 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle238:setParent(obj.rectangle232);
+    obj.rectangle238:setLeft(70);
+    obj.rectangle238:setTop(237);
+    obj.rectangle238:setWidth(700);
+    obj.rectangle238:setHeight(1);
+    obj.rectangle238:setColor("#49244F");
+    obj.rectangle238:setName("rectangle238");
 
-    obj.rectangle279 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle279:setParent(obj.rectangle269);
-    obj.rectangle279:setLeft(70);
-    obj.rectangle279:setTop(334);
-    obj.rectangle279:setWidth(700);
-    obj.rectangle279:setHeight(1);
-    obj.rectangle279:setColor("#49244F");
-    obj.rectangle279:setName("rectangle279");
+    obj.rectangle239 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle239:setParent(obj.rectangle232);
+    obj.rectangle239:setLeft(70);
+    obj.rectangle239:setTop(262);
+    obj.rectangle239:setWidth(700);
+    obj.rectangle239:setHeight(1);
+    obj.rectangle239:setColor("#49244F");
+    obj.rectangle239:setName("rectangle239");
 
-    obj.rectangle280 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle280:setParent(obj.rectangle269);
-    obj.rectangle280:setLeft(70);
-    obj.rectangle280:setTop(359);
-    obj.rectangle280:setWidth(700);
-    obj.rectangle280:setHeight(1);
-    obj.rectangle280:setColor("#49244F");
-    obj.rectangle280:setName("rectangle280");
+    obj.rectangle240 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle240:setParent(obj.rectangle232);
+    obj.rectangle240:setLeft(70);
+    obj.rectangle240:setTop(285);
+    obj.rectangle240:setWidth(700);
+    obj.rectangle240:setHeight(1);
+    obj.rectangle240:setColor("#49244F");
+    obj.rectangle240:setName("rectangle240");
 
-    obj.rectangle281 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle281:setParent(obj.rectangle269);
-    obj.rectangle281:setLeft(70);
-    obj.rectangle281:setTop(382);
-    obj.rectangle281:setWidth(700);
-    obj.rectangle281:setHeight(1);
-    obj.rectangle281:setColor("#49244F");
-    obj.rectangle281:setName("rectangle281");
+    obj.rectangle241 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle241:setParent(obj.rectangle232);
+    obj.rectangle241:setLeft(70);
+    obj.rectangle241:setTop(310);
+    obj.rectangle241:setWidth(700);
+    obj.rectangle241:setHeight(1);
+    obj.rectangle241:setColor("#49244F");
+    obj.rectangle241:setName("rectangle241");
 
-    obj.rectangle282 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle282:setParent(obj.rectangle269);
-    obj.rectangle282:setLeft(70);
-    obj.rectangle282:setTop(407);
-    obj.rectangle282:setWidth(700);
-    obj.rectangle282:setHeight(1);
-    obj.rectangle282:setColor("#49244F");
-    obj.rectangle282:setName("rectangle282");
+    obj.rectangle242 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle242:setParent(obj.rectangle232);
+    obj.rectangle242:setLeft(70);
+    obj.rectangle242:setTop(334);
+    obj.rectangle242:setWidth(700);
+    obj.rectangle242:setHeight(1);
+    obj.rectangle242:setColor("#49244F");
+    obj.rectangle242:setName("rectangle242");
 
-    obj.rectangle283 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle283:setParent(obj.rectangle269);
-    obj.rectangle283:setLeft(70);
-    obj.rectangle283:setTop(432);
-    obj.rectangle283:setWidth(700);
-    obj.rectangle283:setHeight(1);
-    obj.rectangle283:setColor("#49244F");
-    obj.rectangle283:setName("rectangle283");
+    obj.rectangle243 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle243:setParent(obj.rectangle232);
+    obj.rectangle243:setLeft(70);
+    obj.rectangle243:setTop(359);
+    obj.rectangle243:setWidth(700);
+    obj.rectangle243:setHeight(1);
+    obj.rectangle243:setColor("#49244F");
+    obj.rectangle243:setName("rectangle243");
 
-    obj.rectangle284 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle284:setParent(obj.rectangle269);
-    obj.rectangle284:setLeft(70);
-    obj.rectangle284:setTop(457);
-    obj.rectangle284:setWidth(700);
-    obj.rectangle284:setHeight(1);
-    obj.rectangle284:setColor("#49244F");
-    obj.rectangle284:setName("rectangle284");
+    obj.rectangle244 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle244:setParent(obj.rectangle232);
+    obj.rectangle244:setLeft(70);
+    obj.rectangle244:setTop(382);
+    obj.rectangle244:setWidth(700);
+    obj.rectangle244:setHeight(1);
+    obj.rectangle244:setColor("#49244F");
+    obj.rectangle244:setName("rectangle244");
 
-    obj.rectangle285 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle285:setParent(obj.rectangle269);
-    obj.rectangle285:setLeft(70);
-    obj.rectangle285:setTop(481);
-    obj.rectangle285:setWidth(700);
-    obj.rectangle285:setHeight(1);
-    obj.rectangle285:setColor("#49244F");
-    obj.rectangle285:setName("rectangle285");
+    obj.rectangle245 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle245:setParent(obj.rectangle232);
+    obj.rectangle245:setLeft(70);
+    obj.rectangle245:setTop(407);
+    obj.rectangle245:setWidth(700);
+    obj.rectangle245:setHeight(1);
+    obj.rectangle245:setColor("#49244F");
+    obj.rectangle245:setName("rectangle245");
 
-    obj.rectangle286 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle286:setParent(obj.rectangle269);
-    obj.rectangle286:setLeft(70);
-    obj.rectangle286:setTop(505);
-    obj.rectangle286:setWidth(700);
-    obj.rectangle286:setHeight(1);
-    obj.rectangle286:setColor("#49244F");
-    obj.rectangle286:setName("rectangle286");
+    obj.rectangle246 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle246:setParent(obj.rectangle232);
+    obj.rectangle246:setLeft(70);
+    obj.rectangle246:setTop(432);
+    obj.rectangle246:setWidth(700);
+    obj.rectangle246:setHeight(1);
+    obj.rectangle246:setColor("#49244F");
+    obj.rectangle246:setName("rectangle246");
 
-    obj.rectangle287 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle287:setParent(obj.rectangle269);
-    obj.rectangle287:setLeft(70);
-    obj.rectangle287:setTop(529);
-    obj.rectangle287:setWidth(700);
-    obj.rectangle287:setHeight(1);
-    obj.rectangle287:setColor("#49244F");
-    obj.rectangle287:setName("rectangle287");
+    obj.rectangle247 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle247:setParent(obj.rectangle232);
+    obj.rectangle247:setLeft(70);
+    obj.rectangle247:setTop(457);
+    obj.rectangle247:setWidth(700);
+    obj.rectangle247:setHeight(1);
+    obj.rectangle247:setColor("#49244F");
+    obj.rectangle247:setName("rectangle247");
 
-    obj.rectangle288 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle288:setParent(obj.rectangle269);
-    obj.rectangle288:setLeft(70);
-    obj.rectangle288:setTop(553);
-    obj.rectangle288:setWidth(700);
-    obj.rectangle288:setHeight(1);
-    obj.rectangle288:setColor("#49244F");
-    obj.rectangle288:setName("rectangle288");
+    obj.rectangle248 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle248:setParent(obj.rectangle232);
+    obj.rectangle248:setLeft(70);
+    obj.rectangle248:setTop(481);
+    obj.rectangle248:setWidth(700);
+    obj.rectangle248:setHeight(1);
+    obj.rectangle248:setColor("#49244F");
+    obj.rectangle248:setName("rectangle248");
 
-    obj.rectangle289 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle289:setParent(obj.rectangle269);
-    obj.rectangle289:setLeft(70);
-    obj.rectangle289:setTop(576);
-    obj.rectangle289:setWidth(700);
-    obj.rectangle289:setHeight(1);
-    obj.rectangle289:setColor("#49244F");
-    obj.rectangle289:setName("rectangle289");
+    obj.rectangle249 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle249:setParent(obj.rectangle232);
+    obj.rectangle249:setLeft(70);
+    obj.rectangle249:setTop(505);
+    obj.rectangle249:setWidth(700);
+    obj.rectangle249:setHeight(1);
+    obj.rectangle249:setColor("#49244F");
+    obj.rectangle249:setName("rectangle249");
 
-    obj.rectangle290 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle290:setParent(obj.rectangle269);
-    obj.rectangle290:setLeft(70);
-    obj.rectangle290:setTop(599);
-    obj.rectangle290:setWidth(700);
-    obj.rectangle290:setHeight(1);
-    obj.rectangle290:setColor("#49244F");
-    obj.rectangle290:setName("rectangle290");
+    obj.rectangle250 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle250:setParent(obj.rectangle232);
+    obj.rectangle250:setLeft(70);
+    obj.rectangle250:setTop(529);
+    obj.rectangle250:setWidth(700);
+    obj.rectangle250:setHeight(1);
+    obj.rectangle250:setColor("#49244F");
+    obj.rectangle250:setName("rectangle250");
 
-    obj.rectangle291 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle291:setParent(obj.rectangle269);
-    obj.rectangle291:setLeft(70);
-    obj.rectangle291:setTop(622);
-    obj.rectangle291:setWidth(700);
-    obj.rectangle291:setHeight(1);
-    obj.rectangle291:setColor("#49244F");
-    obj.rectangle291:setName("rectangle291");
+    obj.rectangle251 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle251:setParent(obj.rectangle232);
+    obj.rectangle251:setLeft(70);
+    obj.rectangle251:setTop(553);
+    obj.rectangle251:setWidth(700);
+    obj.rectangle251:setHeight(1);
+    obj.rectangle251:setColor("#49244F");
+    obj.rectangle251:setName("rectangle251");
 
-    obj.rectangle292 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle292:setParent(obj.rectangle269);
-    obj.rectangle292:setLeft(70);
-    obj.rectangle292:setTop(646);
-    obj.rectangle292:setWidth(700);
-    obj.rectangle292:setHeight(1);
-    obj.rectangle292:setColor("#49244F");
-    obj.rectangle292:setName("rectangle292");
+    obj.rectangle252 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle252:setParent(obj.rectangle232);
+    obj.rectangle252:setLeft(70);
+    obj.rectangle252:setTop(576);
+    obj.rectangle252:setWidth(700);
+    obj.rectangle252:setHeight(1);
+    obj.rectangle252:setColor("#49244F");
+    obj.rectangle252:setName("rectangle252");
 
-    obj.rectangle293 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle293:setParent(obj.rectangle269);
-    obj.rectangle293:setLeft(70);
-    obj.rectangle293:setTop(670);
-    obj.rectangle293:setWidth(700);
-    obj.rectangle293:setHeight(1);
-    obj.rectangle293:setColor("#49244F");
-    obj.rectangle293:setName("rectangle293");
+    obj.rectangle253 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle253:setParent(obj.rectangle232);
+    obj.rectangle253:setLeft(70);
+    obj.rectangle253:setTop(599);
+    obj.rectangle253:setWidth(700);
+    obj.rectangle253:setHeight(1);
+    obj.rectangle253:setColor("#49244F");
+    obj.rectangle253:setName("rectangle253");
 
-    obj.rectangle294 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle294:setParent(obj.rectangle269);
-    obj.rectangle294:setLeft(70);
-    obj.rectangle294:setTop(694);
-    obj.rectangle294:setWidth(700);
-    obj.rectangle294:setHeight(1);
-    obj.rectangle294:setColor("#49244F");
-    obj.rectangle294:setName("rectangle294");
+    obj.rectangle254 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle254:setParent(obj.rectangle232);
+    obj.rectangle254:setLeft(70);
+    obj.rectangle254:setTop(622);
+    obj.rectangle254:setWidth(700);
+    obj.rectangle254:setHeight(1);
+    obj.rectangle254:setColor("#49244F");
+    obj.rectangle254:setName("rectangle254");
 
-    obj.rectangle295 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle295:setParent(obj.rectangle269);
-    obj.rectangle295:setLeft(65);
-    obj.rectangle295:setTop(730);
-    obj.rectangle295:setWidth(712);
-    obj.rectangle295:setHeight(1);
-    obj.rectangle295:setColor("#49244F");
-    obj.rectangle295:setName("rectangle295");
+    obj.rectangle255 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle255:setParent(obj.rectangle232);
+    obj.rectangle255:setLeft(70);
+    obj.rectangle255:setTop(646);
+    obj.rectangle255:setWidth(700);
+    obj.rectangle255:setHeight(1);
+    obj.rectangle255:setColor("#49244F");
+    obj.rectangle255:setName("rectangle255");
 
-    obj.rectangle296 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle296:setParent(obj.rectangle269);
-    obj.rectangle296:setLeft(65);
-    obj.rectangle296:setTop(735);
-    obj.rectangle296:setWidth(712);
-    obj.rectangle296:setHeight(1);
-    obj.rectangle296:setColor("#49244F");
-    obj.rectangle296:setName("rectangle296");
+    obj.rectangle256 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle256:setParent(obj.rectangle232);
+    obj.rectangle256:setLeft(70);
+    obj.rectangle256:setTop(670);
+    obj.rectangle256:setWidth(700);
+    obj.rectangle256:setHeight(1);
+    obj.rectangle256:setColor("#49244F");
+    obj.rectangle256:setName("rectangle256");
+
+    obj.rectangle257 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle257:setParent(obj.rectangle232);
+    obj.rectangle257:setLeft(70);
+    obj.rectangle257:setTop(694);
+    obj.rectangle257:setWidth(700);
+    obj.rectangle257:setHeight(1);
+    obj.rectangle257:setColor("#49244F");
+    obj.rectangle257:setName("rectangle257");
+
+    obj.rectangle258 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle258:setParent(obj.rectangle232);
+    obj.rectangle258:setLeft(65);
+    obj.rectangle258:setTop(730);
+    obj.rectangle258:setWidth(712);
+    obj.rectangle258:setHeight(1);
+    obj.rectangle258:setColor("#49244F");
+    obj.rectangle258:setName("rectangle258");
+
+    obj.rectangle259 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle259:setParent(obj.rectangle232);
+    obj.rectangle259:setLeft(65);
+    obj.rectangle259:setTop(735);
+    obj.rectangle259:setWidth(712);
+    obj.rectangle259:setHeight(1);
+    obj.rectangle259:setColor("#49244F");
+    obj.rectangle259:setName("rectangle259");
 
     obj.image41 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image41:setParent(obj.rectangle269);
+    obj.image41:setParent(obj.rectangle232);
     obj.image41:setLeft(305);
     obj.image41:setTop(745);
     obj.image41:setWidth(43);
@@ -6070,30 +5358,30 @@ local function constructNew_frmWeirdWizard()
     obj.image41:setSRC("/img/pc.png");
     obj.image41:setName("image41");
 
-    obj.label90 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label90:setParent(obj.rectangle269);
-    obj.label90:setLeft(275);
-    obj.label90:setTop(795);
-    obj.label90:setText("PC _______");
-    obj.label90:setFontColor("#49244F");
-    obj.label90:setFontSize(18);
-    lfm_setPropAsString(obj.label90, "fontStyle", "bold");
-    obj.label90:setName("label90");
+    obj.label91 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label91:setParent(obj.rectangle232);
+    obj.label91:setLeft(275);
+    obj.label91:setTop(795);
+    obj.label91:setText("PC _______");
+    obj.label91:setFontColor("#49244F");
+    obj.label91:setFontSize(18);
+    lfm_setPropAsString(obj.label91, "fontStyle", "bold");
+    obj.label91:setName("label91");
 
-    obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit75:setParent(obj.rectangle269);
-    obj.edit75:setLeft(297);
-    obj.edit75:setTop(785);
-    obj.edit75:setFontColor("#49244F");
-    obj.edit75:setField("pCobre");
-    obj.edit75:setHorzTextAlign("center");
-    obj.edit75:setFontSize(18);
-    obj.edit75:setTransparent(true);
-    obj.edit75:setWidth(60);
-    obj.edit75:setName("edit75");
+    obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit60:setParent(obj.rectangle232);
+    obj.edit60:setLeft(297);
+    obj.edit60:setTop(785);
+    obj.edit60:setFontColor("#49244F");
+    obj.edit60:setField("pCobre");
+    obj.edit60:setHorzTextAlign("center");
+    obj.edit60:setFontSize(18);
+    obj.edit60:setTransparent(true);
+    obj.edit60:setWidth(60);
+    obj.edit60:setName("edit60");
 
     obj.image42 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image42:setParent(obj.rectangle269);
+    obj.image42:setParent(obj.rectangle232);
     obj.image42:setLeft(405);
     obj.image42:setTop(745);
     obj.image42:setWidth(43);
@@ -6101,30 +5389,30 @@ local function constructNew_frmWeirdWizard()
     obj.image42:setSRC("/img/pp.png");
     obj.image42:setName("image42");
 
-    obj.label91 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label91:setParent(obj.rectangle269);
-    obj.label91:setLeft(375);
-    obj.label91:setTop(795);
-    obj.label91:setText("PP _______");
-    obj.label91:setFontColor("#49244F");
-    obj.label91:setFontSize(18);
-    lfm_setPropAsString(obj.label91, "fontStyle", "bold");
-    obj.label91:setName("label91");
+    obj.label92 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label92:setParent(obj.rectangle232);
+    obj.label92:setLeft(375);
+    obj.label92:setTop(795);
+    obj.label92:setText("PP _______");
+    obj.label92:setFontColor("#49244F");
+    obj.label92:setFontSize(18);
+    lfm_setPropAsString(obj.label92, "fontStyle", "bold");
+    obj.label92:setName("label92");
 
-    obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit76:setParent(obj.rectangle269);
-    obj.edit76:setLeft(397);
-    obj.edit76:setTop(785);
-    obj.edit76:setFontColor("#49244F");
-    obj.edit76:setField("pPrata");
-    obj.edit76:setHorzTextAlign("center");
-    obj.edit76:setFontSize(18);
-    obj.edit76:setTransparent(true);
-    obj.edit76:setWidth(60);
-    obj.edit76:setName("edit76");
+    obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit61:setParent(obj.rectangle232);
+    obj.edit61:setLeft(397);
+    obj.edit61:setTop(785);
+    obj.edit61:setFontColor("#49244F");
+    obj.edit61:setField("pPrata");
+    obj.edit61:setHorzTextAlign("center");
+    obj.edit61:setFontSize(18);
+    obj.edit61:setTransparent(true);
+    obj.edit61:setWidth(60);
+    obj.edit61:setName("edit61");
 
     obj.image43 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image43:setParent(obj.rectangle269);
+    obj.image43:setParent(obj.rectangle232);
     obj.image43:setLeft(505);
     obj.image43:setTop(745);
     obj.image43:setWidth(43);
@@ -6132,27 +5420,27 @@ local function constructNew_frmWeirdWizard()
     obj.image43:setSRC("/img/po.png");
     obj.image43:setName("image43");
 
-    obj.label92 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label92:setParent(obj.rectangle269);
-    obj.label92:setLeft(475);
-    obj.label92:setTop(795);
-    obj.label92:setText("PO _______");
-    obj.label92:setFontColor("#49244F");
-    obj.label92:setFontSize(18);
-    lfm_setPropAsString(obj.label92, "fontStyle", "bold");
-    obj.label92:setName("label92");
+    obj.label93 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label93:setParent(obj.rectangle232);
+    obj.label93:setLeft(475);
+    obj.label93:setTop(795);
+    obj.label93:setText("PO _______");
+    obj.label93:setFontColor("#49244F");
+    obj.label93:setFontSize(18);
+    lfm_setPropAsString(obj.label93, "fontStyle", "bold");
+    obj.label93:setName("label93");
 
-    obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit77:setParent(obj.rectangle269);
-    obj.edit77:setLeft(497);
-    obj.edit77:setTop(785);
-    obj.edit77:setFontColor("#49244F");
-    obj.edit77:setField("pOuro");
-    obj.edit77:setHorzTextAlign("center");
-    obj.edit77:setFontSize(18);
-    obj.edit77:setTransparent(true);
-    obj.edit77:setWidth(60);
-    obj.edit77:setName("edit77");
+    obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit62:setParent(obj.rectangle232);
+    obj.edit62:setLeft(497);
+    obj.edit62:setTop(785);
+    obj.edit62:setFontColor("#49244F");
+    obj.edit62:setField("pOuro");
+    obj.edit62:setHorzTextAlign("center");
+    obj.edit62:setFontSize(18);
+    obj.edit62:setTransparent(true);
+    obj.edit62:setWidth(60);
+    obj.edit62:setName("edit62");
 
     obj.image44 = GUI.fromHandle(_obj_newObject("image"));
     obj.image44:setParent(obj.layout6);
@@ -6193,2436 +5481,2436 @@ local function constructNew_frmWeirdWizard()
     obj.layout7:setHeight(1790);
     obj.layout7:setName("layout7");
 
-    obj.rectangle297 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle297:setParent(obj.layout7);
-    obj.rectangle297:setLeft(0);
-    obj.rectangle297:setTop(0);
-    obj.rectangle297:setWidth(799);
-    obj.rectangle297:setHeight(1790);
-    obj.rectangle297:setColor("#D5D5D5");
-    obj.rectangle297:setName("rectangle297");
-
-    obj.label93 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label93:setParent(obj.rectangle297);
-    obj.label93:setLeft(270);
-    obj.label93:setTop(60);
-    obj.label93:setWidth(280);
-    obj.label93:setFontSize(24);
-    obj.label93:setHorzTextAlign("center");
-    obj.label93:setText("FEITIÇOS");
-    obj.label93:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label93, "fontStyle", "bold");
-    obj.label93:setName("label93");
-
-    obj.rectangle298 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle298:setParent(obj.rectangle297);
-    obj.rectangle298:setLeft(60);
-    obj.rectangle298:setTop(95);
-    obj.rectangle298:setWidth(350);
-    obj.rectangle298:setHeight(318);
-    obj.rectangle298:setColor("#D5D5D5");
-    obj.rectangle298:setStrokeColor("#49244F");
-    obj.rectangle298:setStrokeSize(3);
-    obj.rectangle298:setName("rectangle298");
-
-    obj.rectangle299 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle299:setParent(obj.rectangle297);
-    obj.rectangle299:setLeft(60);
-    obj.rectangle299:setTop(95);
-    obj.rectangle299:setWidth(350);
-    obj.rectangle299:setHeight(50);
-    obj.rectangle299:setColor("#49244F");
-    obj.rectangle299:setName("rectangle299");
-
-    obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit78:setParent(obj.rectangle297);
-    obj.edit78:setLeft(65);
-    obj.edit78:setTop(103);
-    obj.edit78:setWidth(340);
-    obj.edit78:setFontSize(18);
-    obj.edit78:setHeight(30);
-    obj.edit78:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit78, "fontStyle", "bold");
-    obj.edit78:setTransparent(true);
-    obj.edit78:setField("Magia01");
-    obj.edit78:setName("edit78");
-
-    obj.rectangle300 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle300:setParent(obj.rectangle297);
-    obj.rectangle300:setLeft(60);
-    obj.rectangle300:setTop(176);
-    obj.rectangle300:setWidth(350);
-    obj.rectangle300:setHeight(1);
-    obj.rectangle300:setColor("#49244F");
-    obj.rectangle300:setName("rectangle300");
+    obj.rectangle260 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle260:setParent(obj.layout7);
+    obj.rectangle260:setLeft(0);
+    obj.rectangle260:setTop(0);
+    obj.rectangle260:setWidth(799);
+    obj.rectangle260:setHeight(1790);
+    obj.rectangle260:setColor("#D5D5D5");
+    obj.rectangle260:setName("rectangle260");
 
     obj.label94 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label94:setParent(obj.rectangle297);
-    obj.label94:setLeft(70);
-    obj.label94:setTop(149);
+    obj.label94:setParent(obj.rectangle260);
+    obj.label94:setLeft(270);
+    obj.label94:setTop(60);
     obj.label94:setWidth(280);
-    obj.label94:setFontSize(18);
-    obj.label94:setText("Tradição:");
+    obj.label94:setFontSize(24);
+    obj.label94:setHorzTextAlign("center");
+    obj.label94:setText("FEITIÇOS");
     obj.label94:setFontColor("#49244F");
     lfm_setPropAsString(obj.label94, "fontStyle", "bold");
     obj.label94:setName("label94");
 
-    obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit79:setParent(obj.rectangle297);
-    obj.edit79:setLeft(150);
-    obj.edit79:setTop(143);
-    obj.edit79:setWidth(260);
-    obj.edit79:setFontSize(18);
-    obj.edit79:setFontColor("#49244F");
-    obj.edit79:setTransparent(true);
-    obj.edit79:setField("tradicaoMagia01");
-    obj.edit79:setName("edit79");
+    obj.rectangle261 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle261:setParent(obj.rectangle260);
+    obj.rectangle261:setLeft(60);
+    obj.rectangle261:setTop(95);
+    obj.rectangle261:setWidth(350);
+    obj.rectangle261:setHeight(318);
+    obj.rectangle261:setColor("#D5D5D5");
+    obj.rectangle261:setStrokeColor("#49244F");
+    obj.rectangle261:setStrokeSize(3);
+    obj.rectangle261:setName("rectangle261");
 
-    obj.rectangle301 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle301:setParent(obj.rectangle297);
-    obj.rectangle301:setLeft(60);
-    obj.rectangle301:setTop(211);
-    obj.rectangle301:setWidth(350);
-    obj.rectangle301:setHeight(1);
-    obj.rectangle301:setColor("#49244F");
-    obj.rectangle301:setName("rectangle301");
+    obj.rectangle262 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle262:setParent(obj.rectangle260);
+    obj.rectangle262:setLeft(60);
+    obj.rectangle262:setTop(95);
+    obj.rectangle262:setWidth(350);
+    obj.rectangle262:setHeight(50);
+    obj.rectangle262:setColor("#49244F");
+    obj.rectangle262:setName("rectangle262");
+
+    obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit63:setParent(obj.rectangle260);
+    obj.edit63:setLeft(65);
+    obj.edit63:setTop(103);
+    obj.edit63:setWidth(340);
+    obj.edit63:setFontSize(18);
+    obj.edit63:setHeight(30);
+    obj.edit63:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit63, "fontStyle", "bold");
+    obj.edit63:setTransparent(true);
+    obj.edit63:setField("Magia01");
+    obj.edit63:setName("edit63");
+
+    obj.rectangle263 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle263:setParent(obj.rectangle260);
+    obj.rectangle263:setLeft(60);
+    obj.rectangle263:setTop(176);
+    obj.rectangle263:setWidth(350);
+    obj.rectangle263:setHeight(1);
+    obj.rectangle263:setColor("#49244F");
+    obj.rectangle263:setName("rectangle263");
 
     obj.label95 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label95:setParent(obj.rectangle297);
+    obj.label95:setParent(obj.rectangle260);
     obj.label95:setLeft(70);
-    obj.label95:setTop(184);
+    obj.label95:setTop(149);
     obj.label95:setWidth(280);
     obj.label95:setFontSize(18);
-    obj.label95:setText("Alvo:");
+    obj.label95:setText("Tradição:");
     obj.label95:setFontColor("#49244F");
     lfm_setPropAsString(obj.label95, "fontStyle", "bold");
     obj.label95:setName("label95");
 
-    obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit80:setParent(obj.rectangle297);
-    obj.edit80:setLeft(115);
-    obj.edit80:setTop(178);
-    obj.edit80:setWidth(295);
-    obj.edit80:setFontSize(18);
-    obj.edit80:setFontColor("#49244F");
-    obj.edit80:setTransparent(true);
-    obj.edit80:setField("alvoMagia01");
-    obj.edit80:setName("edit80");
+    obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit64:setParent(obj.rectangle260);
+    obj.edit64:setLeft(150);
+    obj.edit64:setTop(143);
+    obj.edit64:setWidth(260);
+    obj.edit64:setFontSize(18);
+    obj.edit64:setFontColor("#49244F");
+    obj.edit64:setTransparent(true);
+    obj.edit64:setField("tradicaoMagia01");
+    obj.edit64:setName("edit64");
 
-    obj.rectangle302 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle302:setParent(obj.rectangle297);
-    obj.rectangle302:setLeft(60);
-    obj.rectangle302:setTop(246);
-    obj.rectangle302:setWidth(350);
-    obj.rectangle302:setHeight(3);
-    obj.rectangle302:setColor("#49244F");
-    obj.rectangle302:setName("rectangle302");
+    obj.rectangle264 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle264:setParent(obj.rectangle260);
+    obj.rectangle264:setLeft(60);
+    obj.rectangle264:setTop(211);
+    obj.rectangle264:setWidth(350);
+    obj.rectangle264:setHeight(1);
+    obj.rectangle264:setColor("#49244F");
+    obj.rectangle264:setName("rectangle264");
 
     obj.label96 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label96:setParent(obj.rectangle297);
+    obj.label96:setParent(obj.rectangle260);
     obj.label96:setLeft(70);
-    obj.label96:setTop(219);
+    obj.label96:setTop(184);
     obj.label96:setWidth(280);
     obj.label96:setFontSize(18);
-    obj.label96:setText("Duração:");
+    obj.label96:setText("Alvo:");
     obj.label96:setFontColor("#49244F");
     lfm_setPropAsString(obj.label96, "fontStyle", "bold");
     obj.label96:setName("label96");
 
-    obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit81:setParent(obj.rectangle297);
-    obj.edit81:setLeft(150);
-    obj.edit81:setTop(213);
-    obj.edit81:setWidth(260);
-    obj.edit81:setFontSize(18);
-    obj.edit81:setFontColor("#49244F");
-    obj.edit81:setTransparent(true);
-    obj.edit81:setField("duracaoMagia01");
-    obj.edit81:setName("edit81");
+    obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit65:setParent(obj.rectangle260);
+    obj.edit65:setLeft(115);
+    obj.edit65:setTop(178);
+    obj.edit65:setWidth(295);
+    obj.edit65:setFontSize(18);
+    obj.edit65:setFontColor("#49244F");
+    obj.edit65:setTransparent(true);
+    obj.edit65:setField("alvoMagia01");
+    obj.edit65:setName("edit65");
 
-    obj.rectangle303 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle303:setParent(obj.rectangle297);
-    obj.rectangle303:setLeft(60);
-    obj.rectangle303:setTop(246);
-    obj.rectangle303:setWidth(350);
-    obj.rectangle303:setHeight(125);
-    obj.rectangle303:setColor("#49244F");
-    obj.rectangle303:setName("rectangle303");
-
-    obj.textEditor17 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor17:setParent(obj.rectangle297);
-    obj.textEditor17:setLeft(65);
-    obj.textEditor17:setTop(251);
-    obj.textEditor17:setWidth(340);
-    obj.textEditor17:setHeight(115);
-    obj.textEditor17:setFontColor("#D5D5D5");
-    obj.textEditor17:setTransparent(true);
-    obj.textEditor17:setField("descricaoMagia01");
-    obj.textEditor17:setFontSize(18);
-    obj.textEditor17:setName("textEditor17");
-
-    obj.rectangle304 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle304:setParent(obj.rectangle297);
-    obj.rectangle304:setLeft(60);
-    obj.rectangle304:setTop(371);
-    obj.rectangle304:setWidth(350);
-    obj.rectangle304:setHeight(3);
-    obj.rectangle304:setColor("#49244F");
-    obj.rectangle304:setName("rectangle304");
-
-    obj.rectangle305 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle305:setParent(obj.rectangle297);
-    obj.rectangle305:setLeft(64);
-    obj.rectangle305:setTop(378);
-    obj.rectangle305:setWidth(135);
-    obj.rectangle305:setHeight(29);
-    obj.rectangle305:setColor("#49244F");
-    obj.rectangle305:setHitTest(true);
-    obj.rectangle305:setCursor("handPoint");
-    obj.rectangle305:setName("rectangle305");
+    obj.rectangle265 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle265:setParent(obj.rectangle260);
+    obj.rectangle265:setLeft(60);
+    obj.rectangle265:setTop(246);
+    obj.rectangle265:setWidth(350);
+    obj.rectangle265:setHeight(3);
+    obj.rectangle265:setColor("#49244F");
+    obj.rectangle265:setName("rectangle265");
 
     obj.label97 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label97:setParent(obj.rectangle297);
+    obj.label97:setParent(obj.rectangle260);
     obj.label97:setLeft(70);
-    obj.label97:setTop(382);
+    obj.label97:setTop(219);
     obj.label97:setWidth(280);
     obj.label97:setFontSize(18);
-    obj.label97:setText("Conjurar Feitiço");
-    obj.label97:setFontColor("#D5D5D5");
+    obj.label97:setText("Duração:");
+    obj.label97:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label97, "fontStyle", "bold");
     obj.label97:setName("label97");
 
-    obj.rectangle306 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle306:setParent(obj.rectangle297);
-    obj.rectangle306:setLeft(324);
-    obj.rectangle306:setTop(378);
-    obj.rectangle306:setWidth(29);
-    obj.rectangle306:setHeight(29);
-    obj.rectangle306:setColor("#49244F");
-    obj.rectangle306:setCornerType("round");
-    obj.rectangle306:setXradius(15);
-    obj.rectangle306:setYradius(15);
-    obj.rectangle306:setName("rectangle306");
+    obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit66:setParent(obj.rectangle260);
+    obj.edit66:setLeft(150);
+    obj.edit66:setTop(213);
+    obj.edit66:setWidth(260);
+    obj.edit66:setFontSize(18);
+    obj.edit66:setFontColor("#49244F");
+    obj.edit66:setTransparent(true);
+    obj.edit66:setField("duracaoMagia01");
+    obj.edit66:setName("edit66");
 
-    obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit82:setParent(obj.rectangle297);
-    obj.edit82:setLeft(318);
-    obj.edit82:setTop(375);
-    obj.edit82:setWidth(40);
-    obj.edit82:setFontSize(18);
-    obj.edit82:setHorzTextAlign("center");
-    obj.edit82:setFontColor("#D5D5D5");
-    obj.edit82:setTransparent(true);
-    obj.edit82:setField("qtdMagia01");
-    obj.edit82:setHitTest(true);
-    obj.edit82:setCursor("handPoint");
-    obj.edit82:setHint("Quantidade");
-    obj.edit82:setName("edit82");
+    obj.rectangle266 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle266:setParent(obj.rectangle260);
+    obj.rectangle266:setLeft(60);
+    obj.rectangle266:setTop(246);
+    obj.rectangle266:setWidth(350);
+    obj.rectangle266:setHeight(125);
+    obj.rectangle266:setColor("#49244F");
+    obj.rectangle266:setName("rectangle266");
+
+    obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor2:setParent(obj.rectangle260);
+    obj.textEditor2:setLeft(65);
+    obj.textEditor2:setTop(251);
+    obj.textEditor2:setWidth(340);
+    obj.textEditor2:setHeight(115);
+    obj.textEditor2:setFontColor("#D5D5D5");
+    obj.textEditor2:setTransparent(true);
+    obj.textEditor2:setField("descricaoMagia01");
+    obj.textEditor2:setFontSize(18);
+    obj.textEditor2:setName("textEditor2");
+
+    obj.rectangle267 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle267:setParent(obj.rectangle260);
+    obj.rectangle267:setLeft(60);
+    obj.rectangle267:setTop(371);
+    obj.rectangle267:setWidth(350);
+    obj.rectangle267:setHeight(3);
+    obj.rectangle267:setColor("#49244F");
+    obj.rectangle267:setName("rectangle267");
+
+    obj.rectangle268 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle268:setParent(obj.rectangle260);
+    obj.rectangle268:setLeft(64);
+    obj.rectangle268:setTop(378);
+    obj.rectangle268:setWidth(135);
+    obj.rectangle268:setHeight(29);
+    obj.rectangle268:setColor("#49244F");
+    obj.rectangle268:setHitTest(true);
+    obj.rectangle268:setCursor("handPoint");
+    obj.rectangle268:setName("rectangle268");
 
     obj.label98 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label98:setParent(obj.rectangle297);
-    obj.label98:setLeft(360);
+    obj.label98:setParent(obj.rectangle260);
+    obj.label98:setLeft(70);
     obj.label98:setTop(382);
     obj.label98:setWidth(280);
     obj.label98:setFontSize(18);
-    obj.label98:setText("/");
-    obj.label98:setFontColor("#49244F");
+    obj.label98:setText("Conjurar Feitiço");
+    obj.label98:setFontColor("#D5D5D5");
     obj.label98:setName("label98");
 
-    obj.rectangle307 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle307:setParent(obj.rectangle297);
-    obj.rectangle307:setLeft(374);
-    obj.rectangle307:setTop(376);
-    obj.rectangle307:setWidth(29);
-    obj.rectangle307:setHeight(29);
-    obj.rectangle307:setColor("#49244F");
-    obj.rectangle307:setCornerType("round");
-    obj.rectangle307:setXradius(15);
-    obj.rectangle307:setYradius(15);
-    obj.rectangle307:setName("rectangle307");
+    obj.rectangle269 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle269:setParent(obj.rectangle260);
+    obj.rectangle269:setLeft(324);
+    obj.rectangle269:setTop(378);
+    obj.rectangle269:setWidth(29);
+    obj.rectangle269:setHeight(29);
+    obj.rectangle269:setColor("#49244F");
+    obj.rectangle269:setCornerType("round");
+    obj.rectangle269:setXradius(15);
+    obj.rectangle269:setYradius(15);
+    obj.rectangle269:setName("rectangle269");
 
-    obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit83:setParent(obj.rectangle297);
-    obj.edit83:setLeft(368);
-    obj.edit83:setTop(375);
-    obj.edit83:setWidth(40);
-    obj.edit83:setFontSize(18);
-    obj.edit83:setHorzTextAlign("center");
-    obj.edit83:setFontColor("#D5D5D5");
-    obj.edit83:setTransparent(true);
-    obj.edit83:setField("maxMagia01");
-    obj.edit83:setHitTest(true);
-    obj.edit83:setCursor("handPoint");
-    obj.edit83:setHint("Total");
-    obj.edit83:setName("edit83");
-
-    obj.rectangle308 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle308:setParent(obj.rectangle297);
-    obj.rectangle308:setLeft(434);
-    obj.rectangle308:setTop(95);
-    obj.rectangle308:setWidth(350);
-    obj.rectangle308:setHeight(318);
-    obj.rectangle308:setColor("#D5D5D5");
-    obj.rectangle308:setStrokeColor("#49244F");
-    obj.rectangle308:setStrokeSize(3);
-    obj.rectangle308:setName("rectangle308");
-
-    obj.rectangle309 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle309:setParent(obj.rectangle297);
-    obj.rectangle309:setLeft(434);
-    obj.rectangle309:setTop(95);
-    obj.rectangle309:setWidth(350);
-    obj.rectangle309:setHeight(50);
-    obj.rectangle309:setColor("#49244F");
-    obj.rectangle309:setName("rectangle309");
-
-    obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit84:setParent(obj.rectangle297);
-    obj.edit84:setLeft(439);
-    obj.edit84:setTop(103);
-    obj.edit84:setWidth(340);
-    obj.edit84:setFontSize(18);
-    obj.edit84:setHeight(30);
-    obj.edit84:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit84, "fontStyle", "bold");
-    obj.edit84:setTransparent(true);
-    obj.edit84:setField("Magia02");
-    obj.edit84:setName("edit84");
-
-    obj.rectangle310 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle310:setParent(obj.rectangle297);
-    obj.rectangle310:setLeft(434);
-    obj.rectangle310:setTop(176);
-    obj.rectangle310:setWidth(350);
-    obj.rectangle310:setHeight(1);
-    obj.rectangle310:setColor("#49244F");
-    obj.rectangle310:setName("rectangle310");
+    obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit67:setParent(obj.rectangle260);
+    obj.edit67:setLeft(318);
+    obj.edit67:setTop(375);
+    obj.edit67:setWidth(40);
+    obj.edit67:setFontSize(18);
+    obj.edit67:setHorzTextAlign("center");
+    obj.edit67:setFontColor("#D5D5D5");
+    obj.edit67:setTransparent(true);
+    obj.edit67:setField("qtdMagia01");
+    obj.edit67:setHitTest(true);
+    obj.edit67:setCursor("handPoint");
+    obj.edit67:setHint("Quantidade");
+    obj.edit67:setName("edit67");
 
     obj.label99 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label99:setParent(obj.rectangle297);
-    obj.label99:setLeft(444);
-    obj.label99:setTop(149);
+    obj.label99:setParent(obj.rectangle260);
+    obj.label99:setLeft(360);
+    obj.label99:setTop(382);
     obj.label99:setWidth(280);
     obj.label99:setFontSize(18);
-    obj.label99:setText("Tradição:");
+    obj.label99:setText("/");
     obj.label99:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label99, "fontStyle", "bold");
     obj.label99:setName("label99");
 
-    obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit85:setParent(obj.rectangle297);
-    obj.edit85:setLeft(524);
-    obj.edit85:setTop(143);
-    obj.edit85:setWidth(260);
-    obj.edit85:setFontSize(18);
-    obj.edit85:setFontColor("#49244F");
-    obj.edit85:setTransparent(true);
-    obj.edit85:setField("tradicaoMagia02");
-    obj.edit85:setName("edit85");
+    obj.rectangle270 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle270:setParent(obj.rectangle260);
+    obj.rectangle270:setLeft(374);
+    obj.rectangle270:setTop(376);
+    obj.rectangle270:setWidth(29);
+    obj.rectangle270:setHeight(29);
+    obj.rectangle270:setColor("#49244F");
+    obj.rectangle270:setCornerType("round");
+    obj.rectangle270:setXradius(15);
+    obj.rectangle270:setYradius(15);
+    obj.rectangle270:setName("rectangle270");
 
-    obj.rectangle311 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle311:setParent(obj.rectangle297);
-    obj.rectangle311:setLeft(434);
-    obj.rectangle311:setTop(211);
-    obj.rectangle311:setWidth(350);
-    obj.rectangle311:setHeight(1);
-    obj.rectangle311:setColor("#49244F");
-    obj.rectangle311:setName("rectangle311");
+    obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit68:setParent(obj.rectangle260);
+    obj.edit68:setLeft(368);
+    obj.edit68:setTop(375);
+    obj.edit68:setWidth(40);
+    obj.edit68:setFontSize(18);
+    obj.edit68:setHorzTextAlign("center");
+    obj.edit68:setFontColor("#D5D5D5");
+    obj.edit68:setTransparent(true);
+    obj.edit68:setField("maxMagia01");
+    obj.edit68:setHitTest(true);
+    obj.edit68:setCursor("handPoint");
+    obj.edit68:setHint("Total");
+    obj.edit68:setName("edit68");
+
+    obj.rectangle271 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle271:setParent(obj.rectangle260);
+    obj.rectangle271:setLeft(434);
+    obj.rectangle271:setTop(95);
+    obj.rectangle271:setWidth(350);
+    obj.rectangle271:setHeight(318);
+    obj.rectangle271:setColor("#D5D5D5");
+    obj.rectangle271:setStrokeColor("#49244F");
+    obj.rectangle271:setStrokeSize(3);
+    obj.rectangle271:setName("rectangle271");
+
+    obj.rectangle272 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle272:setParent(obj.rectangle260);
+    obj.rectangle272:setLeft(434);
+    obj.rectangle272:setTop(95);
+    obj.rectangle272:setWidth(350);
+    obj.rectangle272:setHeight(50);
+    obj.rectangle272:setColor("#49244F");
+    obj.rectangle272:setName("rectangle272");
+
+    obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit69:setParent(obj.rectangle260);
+    obj.edit69:setLeft(439);
+    obj.edit69:setTop(103);
+    obj.edit69:setWidth(340);
+    obj.edit69:setFontSize(18);
+    obj.edit69:setHeight(30);
+    obj.edit69:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit69, "fontStyle", "bold");
+    obj.edit69:setTransparent(true);
+    obj.edit69:setField("Magia02");
+    obj.edit69:setName("edit69");
+
+    obj.rectangle273 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle273:setParent(obj.rectangle260);
+    obj.rectangle273:setLeft(434);
+    obj.rectangle273:setTop(176);
+    obj.rectangle273:setWidth(350);
+    obj.rectangle273:setHeight(1);
+    obj.rectangle273:setColor("#49244F");
+    obj.rectangle273:setName("rectangle273");
 
     obj.label100 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label100:setParent(obj.rectangle297);
+    obj.label100:setParent(obj.rectangle260);
     obj.label100:setLeft(444);
-    obj.label100:setTop(184);
+    obj.label100:setTop(149);
     obj.label100:setWidth(280);
     obj.label100:setFontSize(18);
-    obj.label100:setText("Alvo:");
+    obj.label100:setText("Tradição:");
     obj.label100:setFontColor("#49244F");
     lfm_setPropAsString(obj.label100, "fontStyle", "bold");
     obj.label100:setName("label100");
 
-    obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit86:setParent(obj.rectangle297);
-    obj.edit86:setLeft(489);
-    obj.edit86:setTop(178);
-    obj.edit86:setWidth(295);
-    obj.edit86:setFontSize(18);
-    obj.edit86:setFontColor("#49244F");
-    obj.edit86:setTransparent(true);
-    obj.edit86:setField("alvoMagia02");
-    obj.edit86:setName("edit86");
+    obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit70:setParent(obj.rectangle260);
+    obj.edit70:setLeft(524);
+    obj.edit70:setTop(143);
+    obj.edit70:setWidth(260);
+    obj.edit70:setFontSize(18);
+    obj.edit70:setFontColor("#49244F");
+    obj.edit70:setTransparent(true);
+    obj.edit70:setField("tradicaoMagia02");
+    obj.edit70:setName("edit70");
 
-    obj.rectangle312 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle312:setParent(obj.rectangle297);
-    obj.rectangle312:setLeft(434);
-    obj.rectangle312:setTop(246);
-    obj.rectangle312:setWidth(350);
-    obj.rectangle312:setHeight(3);
-    obj.rectangle312:setColor("#49244F");
-    obj.rectangle312:setName("rectangle312");
+    obj.rectangle274 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle274:setParent(obj.rectangle260);
+    obj.rectangle274:setLeft(434);
+    obj.rectangle274:setTop(211);
+    obj.rectangle274:setWidth(350);
+    obj.rectangle274:setHeight(1);
+    obj.rectangle274:setColor("#49244F");
+    obj.rectangle274:setName("rectangle274");
 
     obj.label101 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label101:setParent(obj.rectangle297);
+    obj.label101:setParent(obj.rectangle260);
     obj.label101:setLeft(444);
-    obj.label101:setTop(219);
+    obj.label101:setTop(184);
     obj.label101:setWidth(280);
     obj.label101:setFontSize(18);
-    obj.label101:setText("Duração:");
+    obj.label101:setText("Alvo:");
     obj.label101:setFontColor("#49244F");
     lfm_setPropAsString(obj.label101, "fontStyle", "bold");
     obj.label101:setName("label101");
 
-    obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit87:setParent(obj.rectangle297);
-    obj.edit87:setLeft(524);
-    obj.edit87:setTop(213);
-    obj.edit87:setWidth(260);
-    obj.edit87:setFontSize(18);
-    obj.edit87:setFontColor("#49244F");
-    obj.edit87:setTransparent(true);
-    obj.edit87:setField("duracaoMagia02");
-    obj.edit87:setName("edit87");
+    obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit71:setParent(obj.rectangle260);
+    obj.edit71:setLeft(489);
+    obj.edit71:setTop(178);
+    obj.edit71:setWidth(295);
+    obj.edit71:setFontSize(18);
+    obj.edit71:setFontColor("#49244F");
+    obj.edit71:setTransparent(true);
+    obj.edit71:setField("alvoMagia02");
+    obj.edit71:setName("edit71");
 
-    obj.rectangle313 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle313:setParent(obj.rectangle297);
-    obj.rectangle313:setLeft(434);
-    obj.rectangle313:setTop(246);
-    obj.rectangle313:setWidth(350);
-    obj.rectangle313:setHeight(125);
-    obj.rectangle313:setColor("#49244F");
-    obj.rectangle313:setName("rectangle313");
-
-    obj.textEditor18 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor18:setParent(obj.rectangle297);
-    obj.textEditor18:setLeft(439);
-    obj.textEditor18:setTop(251);
-    obj.textEditor18:setWidth(340);
-    obj.textEditor18:setHeight(115);
-    obj.textEditor18:setFontColor("#D5D5D5");
-    obj.textEditor18:setTransparent(true);
-    obj.textEditor18:setField("descricaoMagia02");
-    obj.textEditor18:setFontSize(18);
-    obj.textEditor18:setName("textEditor18");
-
-    obj.rectangle314 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle314:setParent(obj.rectangle297);
-    obj.rectangle314:setLeft(434);
-    obj.rectangle314:setTop(371);
-    obj.rectangle314:setWidth(350);
-    obj.rectangle314:setHeight(3);
-    obj.rectangle314:setColor("#49244F");
-    obj.rectangle314:setName("rectangle314");
-
-    obj.rectangle315 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle315:setParent(obj.rectangle297);
-    obj.rectangle315:setLeft(438);
-    obj.rectangle315:setTop(378);
-    obj.rectangle315:setWidth(135);
-    obj.rectangle315:setHeight(29);
-    obj.rectangle315:setColor("#49244F");
-    obj.rectangle315:setHitTest(true);
-    obj.rectangle315:setCursor("handPoint");
-    obj.rectangle315:setName("rectangle315");
+    obj.rectangle275 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle275:setParent(obj.rectangle260);
+    obj.rectangle275:setLeft(434);
+    obj.rectangle275:setTop(246);
+    obj.rectangle275:setWidth(350);
+    obj.rectangle275:setHeight(3);
+    obj.rectangle275:setColor("#49244F");
+    obj.rectangle275:setName("rectangle275");
 
     obj.label102 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label102:setParent(obj.rectangle297);
+    obj.label102:setParent(obj.rectangle260);
     obj.label102:setLeft(444);
-    obj.label102:setTop(382);
+    obj.label102:setTop(219);
     obj.label102:setWidth(280);
     obj.label102:setFontSize(18);
-    obj.label102:setText("Conjurar Feitiço");
-    obj.label102:setFontColor("#D5D5D5");
+    obj.label102:setText("Duração:");
+    obj.label102:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label102, "fontStyle", "bold");
     obj.label102:setName("label102");
 
-    obj.rectangle316 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle316:setParent(obj.rectangle297);
-    obj.rectangle316:setLeft(698);
-    obj.rectangle316:setTop(378);
-    obj.rectangle316:setWidth(29);
-    obj.rectangle316:setHeight(29);
-    obj.rectangle316:setColor("#49244F");
-    obj.rectangle316:setCornerType("round");
-    obj.rectangle316:setXradius(15);
-    obj.rectangle316:setYradius(15);
-    obj.rectangle316:setName("rectangle316");
+    obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit72:setParent(obj.rectangle260);
+    obj.edit72:setLeft(524);
+    obj.edit72:setTop(213);
+    obj.edit72:setWidth(260);
+    obj.edit72:setFontSize(18);
+    obj.edit72:setFontColor("#49244F");
+    obj.edit72:setTransparent(true);
+    obj.edit72:setField("duracaoMagia02");
+    obj.edit72:setName("edit72");
 
-    obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit88:setParent(obj.rectangle297);
-    obj.edit88:setLeft(692);
-    obj.edit88:setTop(375);
-    obj.edit88:setWidth(40);
-    obj.edit88:setFontSize(18);
-    obj.edit88:setHorzTextAlign("center");
-    obj.edit88:setFontColor("#D5D5D5");
-    obj.edit88:setTransparent(true);
-    obj.edit88:setField("qtdMagia02");
-    obj.edit88:setHitTest(true);
-    obj.edit88:setCursor("handPoint");
-    obj.edit88:setHint("Quantidade");
-    obj.edit88:setName("edit88");
+    obj.rectangle276 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle276:setParent(obj.rectangle260);
+    obj.rectangle276:setLeft(434);
+    obj.rectangle276:setTop(246);
+    obj.rectangle276:setWidth(350);
+    obj.rectangle276:setHeight(125);
+    obj.rectangle276:setColor("#49244F");
+    obj.rectangle276:setName("rectangle276");
+
+    obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor3:setParent(obj.rectangle260);
+    obj.textEditor3:setLeft(439);
+    obj.textEditor3:setTop(251);
+    obj.textEditor3:setWidth(340);
+    obj.textEditor3:setHeight(115);
+    obj.textEditor3:setFontColor("#D5D5D5");
+    obj.textEditor3:setTransparent(true);
+    obj.textEditor3:setField("descricaoMagia02");
+    obj.textEditor3:setFontSize(18);
+    obj.textEditor3:setName("textEditor3");
+
+    obj.rectangle277 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle277:setParent(obj.rectangle260);
+    obj.rectangle277:setLeft(434);
+    obj.rectangle277:setTop(371);
+    obj.rectangle277:setWidth(350);
+    obj.rectangle277:setHeight(3);
+    obj.rectangle277:setColor("#49244F");
+    obj.rectangle277:setName("rectangle277");
+
+    obj.rectangle278 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle278:setParent(obj.rectangle260);
+    obj.rectangle278:setLeft(438);
+    obj.rectangle278:setTop(378);
+    obj.rectangle278:setWidth(135);
+    obj.rectangle278:setHeight(29);
+    obj.rectangle278:setColor("#49244F");
+    obj.rectangle278:setHitTest(true);
+    obj.rectangle278:setCursor("handPoint");
+    obj.rectangle278:setName("rectangle278");
 
     obj.label103 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label103:setParent(obj.rectangle297);
-    obj.label103:setLeft(734);
+    obj.label103:setParent(obj.rectangle260);
+    obj.label103:setLeft(444);
     obj.label103:setTop(382);
     obj.label103:setWidth(280);
     obj.label103:setFontSize(18);
-    obj.label103:setText("/");
-    obj.label103:setFontColor("#49244F");
+    obj.label103:setText("Conjurar Feitiço");
+    obj.label103:setFontColor("#D5D5D5");
     obj.label103:setName("label103");
 
-    obj.rectangle317 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle317:setParent(obj.rectangle297);
-    obj.rectangle317:setLeft(748);
-    obj.rectangle317:setTop(376);
-    obj.rectangle317:setWidth(29);
-    obj.rectangle317:setHeight(29);
-    obj.rectangle317:setColor("#49244F");
-    obj.rectangle317:setCornerType("round");
-    obj.rectangle317:setXradius(15);
-    obj.rectangle317:setYradius(15);
-    obj.rectangle317:setName("rectangle317");
+    obj.rectangle279 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle279:setParent(obj.rectangle260);
+    obj.rectangle279:setLeft(698);
+    obj.rectangle279:setTop(378);
+    obj.rectangle279:setWidth(29);
+    obj.rectangle279:setHeight(29);
+    obj.rectangle279:setColor("#49244F");
+    obj.rectangle279:setCornerType("round");
+    obj.rectangle279:setXradius(15);
+    obj.rectangle279:setYradius(15);
+    obj.rectangle279:setName("rectangle279");
 
-    obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit89:setParent(obj.rectangle297);
-    obj.edit89:setLeft(743);
-    obj.edit89:setTop(375);
-    obj.edit89:setWidth(40);
-    obj.edit89:setFontSize(18);
-    obj.edit89:setHorzTextAlign("center");
-    obj.edit89:setFontColor("#D5D5D5");
-    obj.edit89:setTransparent(true);
-    obj.edit89:setField("maxMagia02");
-    obj.edit89:setHitTest(true);
-    obj.edit89:setCursor("handPoint");
-    obj.edit89:setHint("Total");
-    obj.edit89:setName("edit89");
-
-    obj.rectangle318 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle318:setParent(obj.rectangle297);
-    obj.rectangle318:setLeft(60);
-    obj.rectangle318:setTop(435);
-    obj.rectangle318:setWidth(350);
-    obj.rectangle318:setHeight(318);
-    obj.rectangle318:setColor("#D5D5D5");
-    obj.rectangle318:setStrokeColor("#49244F");
-    obj.rectangle318:setStrokeSize(3);
-    obj.rectangle318:setName("rectangle318");
-
-    obj.rectangle319 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle319:setParent(obj.rectangle297);
-    obj.rectangle319:setLeft(60);
-    obj.rectangle319:setTop(435);
-    obj.rectangle319:setWidth(350);
-    obj.rectangle319:setHeight(50);
-    obj.rectangle319:setColor("#49244F");
-    obj.rectangle319:setName("rectangle319");
-
-    obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit90:setParent(obj.rectangle297);
-    obj.edit90:setLeft(65);
-    obj.edit90:setTop(443);
-    obj.edit90:setWidth(340);
-    obj.edit90:setFontSize(18);
-    obj.edit90:setHeight(30);
-    obj.edit90:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit90, "fontStyle", "bold");
-    obj.edit90:setTransparent(true);
-    obj.edit90:setField("Magia03");
-    obj.edit90:setName("edit90");
-
-    obj.rectangle320 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle320:setParent(obj.rectangle297);
-    obj.rectangle320:setLeft(60);
-    obj.rectangle320:setTop(516);
-    obj.rectangle320:setWidth(350);
-    obj.rectangle320:setHeight(1);
-    obj.rectangle320:setColor("#49244F");
-    obj.rectangle320:setName("rectangle320");
+    obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit73:setParent(obj.rectangle260);
+    obj.edit73:setLeft(692);
+    obj.edit73:setTop(375);
+    obj.edit73:setWidth(40);
+    obj.edit73:setFontSize(18);
+    obj.edit73:setHorzTextAlign("center");
+    obj.edit73:setFontColor("#D5D5D5");
+    obj.edit73:setTransparent(true);
+    obj.edit73:setField("qtdMagia02");
+    obj.edit73:setHitTest(true);
+    obj.edit73:setCursor("handPoint");
+    obj.edit73:setHint("Quantidade");
+    obj.edit73:setName("edit73");
 
     obj.label104 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label104:setParent(obj.rectangle297);
-    obj.label104:setLeft(70);
-    obj.label104:setTop(489);
+    obj.label104:setParent(obj.rectangle260);
+    obj.label104:setLeft(734);
+    obj.label104:setTop(382);
     obj.label104:setWidth(280);
     obj.label104:setFontSize(18);
-    obj.label104:setText("Tradição:");
+    obj.label104:setText("/");
     obj.label104:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label104, "fontStyle", "bold");
     obj.label104:setName("label104");
 
-    obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit91:setParent(obj.rectangle297);
-    obj.edit91:setLeft(150);
-    obj.edit91:setTop(483);
-    obj.edit91:setWidth(260);
-    obj.edit91:setFontSize(18);
-    obj.edit91:setFontColor("#49244F");
-    obj.edit91:setTransparent(true);
-    obj.edit91:setField("tradicaoMagia03");
-    obj.edit91:setName("edit91");
+    obj.rectangle280 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle280:setParent(obj.rectangle260);
+    obj.rectangle280:setLeft(748);
+    obj.rectangle280:setTop(376);
+    obj.rectangle280:setWidth(29);
+    obj.rectangle280:setHeight(29);
+    obj.rectangle280:setColor("#49244F");
+    obj.rectangle280:setCornerType("round");
+    obj.rectangle280:setXradius(15);
+    obj.rectangle280:setYradius(15);
+    obj.rectangle280:setName("rectangle280");
 
-    obj.rectangle321 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle321:setParent(obj.rectangle297);
-    obj.rectangle321:setLeft(60);
-    obj.rectangle321:setTop(551);
-    obj.rectangle321:setWidth(350);
-    obj.rectangle321:setHeight(1);
-    obj.rectangle321:setColor("#49244F");
-    obj.rectangle321:setName("rectangle321");
+    obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit74:setParent(obj.rectangle260);
+    obj.edit74:setLeft(743);
+    obj.edit74:setTop(375);
+    obj.edit74:setWidth(40);
+    obj.edit74:setFontSize(18);
+    obj.edit74:setHorzTextAlign("center");
+    obj.edit74:setFontColor("#D5D5D5");
+    obj.edit74:setTransparent(true);
+    obj.edit74:setField("maxMagia02");
+    obj.edit74:setHitTest(true);
+    obj.edit74:setCursor("handPoint");
+    obj.edit74:setHint("Total");
+    obj.edit74:setName("edit74");
+
+    obj.rectangle281 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle281:setParent(obj.rectangle260);
+    obj.rectangle281:setLeft(60);
+    obj.rectangle281:setTop(435);
+    obj.rectangle281:setWidth(350);
+    obj.rectangle281:setHeight(318);
+    obj.rectangle281:setColor("#D5D5D5");
+    obj.rectangle281:setStrokeColor("#49244F");
+    obj.rectangle281:setStrokeSize(3);
+    obj.rectangle281:setName("rectangle281");
+
+    obj.rectangle282 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle282:setParent(obj.rectangle260);
+    obj.rectangle282:setLeft(60);
+    obj.rectangle282:setTop(435);
+    obj.rectangle282:setWidth(350);
+    obj.rectangle282:setHeight(50);
+    obj.rectangle282:setColor("#49244F");
+    obj.rectangle282:setName("rectangle282");
+
+    obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit75:setParent(obj.rectangle260);
+    obj.edit75:setLeft(65);
+    obj.edit75:setTop(443);
+    obj.edit75:setWidth(340);
+    obj.edit75:setFontSize(18);
+    obj.edit75:setHeight(30);
+    obj.edit75:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit75, "fontStyle", "bold");
+    obj.edit75:setTransparent(true);
+    obj.edit75:setField("Magia03");
+    obj.edit75:setName("edit75");
+
+    obj.rectangle283 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle283:setParent(obj.rectangle260);
+    obj.rectangle283:setLeft(60);
+    obj.rectangle283:setTop(516);
+    obj.rectangle283:setWidth(350);
+    obj.rectangle283:setHeight(1);
+    obj.rectangle283:setColor("#49244F");
+    obj.rectangle283:setName("rectangle283");
 
     obj.label105 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label105:setParent(obj.rectangle297);
+    obj.label105:setParent(obj.rectangle260);
     obj.label105:setLeft(70);
-    obj.label105:setTop(524);
+    obj.label105:setTop(489);
     obj.label105:setWidth(280);
     obj.label105:setFontSize(18);
-    obj.label105:setText("Alvo:");
+    obj.label105:setText("Tradição:");
     obj.label105:setFontColor("#49244F");
     lfm_setPropAsString(obj.label105, "fontStyle", "bold");
     obj.label105:setName("label105");
 
-    obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit92:setParent(obj.rectangle297);
-    obj.edit92:setLeft(115);
-    obj.edit92:setTop(518);
-    obj.edit92:setWidth(295);
-    obj.edit92:setFontSize(18);
-    obj.edit92:setFontColor("#49244F");
-    obj.edit92:setTransparent(true);
-    obj.edit92:setField("alvoMagia03");
-    obj.edit92:setName("edit92");
+    obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit76:setParent(obj.rectangle260);
+    obj.edit76:setLeft(150);
+    obj.edit76:setTop(483);
+    obj.edit76:setWidth(260);
+    obj.edit76:setFontSize(18);
+    obj.edit76:setFontColor("#49244F");
+    obj.edit76:setTransparent(true);
+    obj.edit76:setField("tradicaoMagia03");
+    obj.edit76:setName("edit76");
 
-    obj.rectangle322 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle322:setParent(obj.rectangle297);
-    obj.rectangle322:setLeft(60);
-    obj.rectangle322:setTop(586);
-    obj.rectangle322:setWidth(350);
-    obj.rectangle322:setHeight(3);
-    obj.rectangle322:setColor("#49244F");
-    obj.rectangle322:setName("rectangle322");
+    obj.rectangle284 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle284:setParent(obj.rectangle260);
+    obj.rectangle284:setLeft(60);
+    obj.rectangle284:setTop(551);
+    obj.rectangle284:setWidth(350);
+    obj.rectangle284:setHeight(1);
+    obj.rectangle284:setColor("#49244F");
+    obj.rectangle284:setName("rectangle284");
 
     obj.label106 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label106:setParent(obj.rectangle297);
+    obj.label106:setParent(obj.rectangle260);
     obj.label106:setLeft(70);
-    obj.label106:setTop(559);
+    obj.label106:setTop(524);
     obj.label106:setWidth(280);
     obj.label106:setFontSize(18);
-    obj.label106:setText("Duração:");
+    obj.label106:setText("Alvo:");
     obj.label106:setFontColor("#49244F");
     lfm_setPropAsString(obj.label106, "fontStyle", "bold");
     obj.label106:setName("label106");
 
-    obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit93:setParent(obj.rectangle297);
-    obj.edit93:setLeft(150);
-    obj.edit93:setTop(553);
-    obj.edit93:setWidth(260);
-    obj.edit93:setFontSize(18);
-    obj.edit93:setFontColor("#49244F");
-    obj.edit93:setTransparent(true);
-    obj.edit93:setField("duracaoMagia03");
-    obj.edit93:setName("edit93");
+    obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit77:setParent(obj.rectangle260);
+    obj.edit77:setLeft(115);
+    obj.edit77:setTop(518);
+    obj.edit77:setWidth(295);
+    obj.edit77:setFontSize(18);
+    obj.edit77:setFontColor("#49244F");
+    obj.edit77:setTransparent(true);
+    obj.edit77:setField("alvoMagia03");
+    obj.edit77:setName("edit77");
 
-    obj.rectangle323 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle323:setParent(obj.rectangle297);
-    obj.rectangle323:setLeft(60);
-    obj.rectangle323:setTop(586);
-    obj.rectangle323:setWidth(350);
-    obj.rectangle323:setHeight(125);
-    obj.rectangle323:setColor("#49244F");
-    obj.rectangle323:setName("rectangle323");
-
-    obj.textEditor19 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor19:setParent(obj.rectangle297);
-    obj.textEditor19:setLeft(65);
-    obj.textEditor19:setTop(591);
-    obj.textEditor19:setWidth(340);
-    obj.textEditor19:setHeight(115);
-    obj.textEditor19:setFontColor("#D5D5D5");
-    obj.textEditor19:setTransparent(true);
-    obj.textEditor19:setField("descricaoMagia03");
-    obj.textEditor19:setFontSize(18);
-    obj.textEditor19:setName("textEditor19");
-
-    obj.rectangle324 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle324:setParent(obj.rectangle297);
-    obj.rectangle324:setLeft(60);
-    obj.rectangle324:setTop(711);
-    obj.rectangle324:setWidth(350);
-    obj.rectangle324:setHeight(3);
-    obj.rectangle324:setColor("#49244F");
-    obj.rectangle324:setName("rectangle324");
-
-    obj.rectangle325 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle325:setParent(obj.rectangle297);
-    obj.rectangle325:setLeft(64);
-    obj.rectangle325:setTop(718);
-    obj.rectangle325:setWidth(135);
-    obj.rectangle325:setHeight(29);
-    obj.rectangle325:setColor("#49244F");
-    obj.rectangle325:setHitTest(true);
-    obj.rectangle325:setCursor("handPoint");
-    obj.rectangle325:setName("rectangle325");
+    obj.rectangle285 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle285:setParent(obj.rectangle260);
+    obj.rectangle285:setLeft(60);
+    obj.rectangle285:setTop(586);
+    obj.rectangle285:setWidth(350);
+    obj.rectangle285:setHeight(3);
+    obj.rectangle285:setColor("#49244F");
+    obj.rectangle285:setName("rectangle285");
 
     obj.label107 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label107:setParent(obj.rectangle297);
+    obj.label107:setParent(obj.rectangle260);
     obj.label107:setLeft(70);
-    obj.label107:setTop(722);
+    obj.label107:setTop(559);
     obj.label107:setWidth(280);
     obj.label107:setFontSize(18);
-    obj.label107:setText("Conjurar Feitiço");
-    obj.label107:setFontColor("#D5D5D5");
+    obj.label107:setText("Duração:");
+    obj.label107:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label107, "fontStyle", "bold");
     obj.label107:setName("label107");
 
-    obj.rectangle326 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle326:setParent(obj.rectangle297);
-    obj.rectangle326:setLeft(324);
-    obj.rectangle326:setTop(718);
-    obj.rectangle326:setWidth(29);
-    obj.rectangle326:setHeight(29);
-    obj.rectangle326:setColor("#49244F");
-    obj.rectangle326:setCornerType("round");
-    obj.rectangle326:setXradius(15);
-    obj.rectangle326:setYradius(15);
-    obj.rectangle326:setName("rectangle326");
+    obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit78:setParent(obj.rectangle260);
+    obj.edit78:setLeft(150);
+    obj.edit78:setTop(553);
+    obj.edit78:setWidth(260);
+    obj.edit78:setFontSize(18);
+    obj.edit78:setFontColor("#49244F");
+    obj.edit78:setTransparent(true);
+    obj.edit78:setField("duracaoMagia03");
+    obj.edit78:setName("edit78");
 
-    obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit94:setParent(obj.rectangle297);
-    obj.edit94:setLeft(318);
-    obj.edit94:setTop(715);
-    obj.edit94:setWidth(40);
-    obj.edit94:setFontSize(18);
-    obj.edit94:setHorzTextAlign("center");
-    obj.edit94:setFontColor("#D5D5D5");
-    obj.edit94:setTransparent(true);
-    obj.edit94:setField("qtdMagia03");
-    obj.edit94:setHitTest(true);
-    obj.edit94:setCursor("handPoint");
-    obj.edit94:setHint("Quantidade");
-    obj.edit94:setName("edit94");
+    obj.rectangle286 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle286:setParent(obj.rectangle260);
+    obj.rectangle286:setLeft(60);
+    obj.rectangle286:setTop(586);
+    obj.rectangle286:setWidth(350);
+    obj.rectangle286:setHeight(125);
+    obj.rectangle286:setColor("#49244F");
+    obj.rectangle286:setName("rectangle286");
+
+    obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor4:setParent(obj.rectangle260);
+    obj.textEditor4:setLeft(65);
+    obj.textEditor4:setTop(591);
+    obj.textEditor4:setWidth(340);
+    obj.textEditor4:setHeight(115);
+    obj.textEditor4:setFontColor("#D5D5D5");
+    obj.textEditor4:setTransparent(true);
+    obj.textEditor4:setField("descricaoMagia03");
+    obj.textEditor4:setFontSize(18);
+    obj.textEditor4:setName("textEditor4");
+
+    obj.rectangle287 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle287:setParent(obj.rectangle260);
+    obj.rectangle287:setLeft(60);
+    obj.rectangle287:setTop(711);
+    obj.rectangle287:setWidth(350);
+    obj.rectangle287:setHeight(3);
+    obj.rectangle287:setColor("#49244F");
+    obj.rectangle287:setName("rectangle287");
+
+    obj.rectangle288 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle288:setParent(obj.rectangle260);
+    obj.rectangle288:setLeft(64);
+    obj.rectangle288:setTop(718);
+    obj.rectangle288:setWidth(135);
+    obj.rectangle288:setHeight(29);
+    obj.rectangle288:setColor("#49244F");
+    obj.rectangle288:setHitTest(true);
+    obj.rectangle288:setCursor("handPoint");
+    obj.rectangle288:setName("rectangle288");
 
     obj.label108 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label108:setParent(obj.rectangle297);
-    obj.label108:setLeft(360);
+    obj.label108:setParent(obj.rectangle260);
+    obj.label108:setLeft(70);
     obj.label108:setTop(722);
     obj.label108:setWidth(280);
     obj.label108:setFontSize(18);
-    obj.label108:setText("/");
-    obj.label108:setFontColor("#49244F");
+    obj.label108:setText("Conjurar Feitiço");
+    obj.label108:setFontColor("#D5D5D5");
     obj.label108:setName("label108");
 
-    obj.rectangle327 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle327:setParent(obj.rectangle297);
-    obj.rectangle327:setLeft(374);
-    obj.rectangle327:setTop(716);
-    obj.rectangle327:setWidth(29);
-    obj.rectangle327:setHeight(29);
-    obj.rectangle327:setColor("#49244F");
-    obj.rectangle327:setCornerType("round");
-    obj.rectangle327:setXradius(15);
-    obj.rectangle327:setYradius(15);
-    obj.rectangle327:setName("rectangle327");
+    obj.rectangle289 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle289:setParent(obj.rectangle260);
+    obj.rectangle289:setLeft(324);
+    obj.rectangle289:setTop(718);
+    obj.rectangle289:setWidth(29);
+    obj.rectangle289:setHeight(29);
+    obj.rectangle289:setColor("#49244F");
+    obj.rectangle289:setCornerType("round");
+    obj.rectangle289:setXradius(15);
+    obj.rectangle289:setYradius(15);
+    obj.rectangle289:setName("rectangle289");
 
-    obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit95:setParent(obj.rectangle297);
-    obj.edit95:setLeft(368);
-    obj.edit95:setTop(715);
-    obj.edit95:setWidth(40);
-    obj.edit95:setFontSize(18);
-    obj.edit95:setHorzTextAlign("center");
-    obj.edit95:setFontColor("#D5D5D5");
-    obj.edit95:setTransparent(true);
-    obj.edit95:setField("maxMagia03");
-    obj.edit95:setHitTest(true);
-    obj.edit95:setCursor("handPoint");
-    obj.edit95:setHint("Total");
-    obj.edit95:setName("edit95");
-
-    obj.rectangle328 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle328:setParent(obj.rectangle297);
-    obj.rectangle328:setLeft(434);
-    obj.rectangle328:setTop(435);
-    obj.rectangle328:setWidth(350);
-    obj.rectangle328:setHeight(318);
-    obj.rectangle328:setColor("#D5D5D5");
-    obj.rectangle328:setStrokeColor("#49244F");
-    obj.rectangle328:setStrokeSize(3);
-    obj.rectangle328:setName("rectangle328");
-
-    obj.rectangle329 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle329:setParent(obj.rectangle297);
-    obj.rectangle329:setLeft(434);
-    obj.rectangle329:setTop(435);
-    obj.rectangle329:setWidth(350);
-    obj.rectangle329:setHeight(50);
-    obj.rectangle329:setColor("#49244F");
-    obj.rectangle329:setName("rectangle329");
-
-    obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit96:setParent(obj.rectangle297);
-    obj.edit96:setLeft(439);
-    obj.edit96:setTop(443);
-    obj.edit96:setWidth(340);
-    obj.edit96:setFontSize(18);
-    obj.edit96:setHeight(30);
-    obj.edit96:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit96, "fontStyle", "bold");
-    obj.edit96:setTransparent(true);
-    obj.edit96:setField("Magia04");
-    obj.edit96:setName("edit96");
-
-    obj.rectangle330 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle330:setParent(obj.rectangle297);
-    obj.rectangle330:setLeft(434);
-    obj.rectangle330:setTop(516);
-    obj.rectangle330:setWidth(350);
-    obj.rectangle330:setHeight(1);
-    obj.rectangle330:setColor("#49244F");
-    obj.rectangle330:setName("rectangle330");
+    obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit79:setParent(obj.rectangle260);
+    obj.edit79:setLeft(318);
+    obj.edit79:setTop(715);
+    obj.edit79:setWidth(40);
+    obj.edit79:setFontSize(18);
+    obj.edit79:setHorzTextAlign("center");
+    obj.edit79:setFontColor("#D5D5D5");
+    obj.edit79:setTransparent(true);
+    obj.edit79:setField("qtdMagia03");
+    obj.edit79:setHitTest(true);
+    obj.edit79:setCursor("handPoint");
+    obj.edit79:setHint("Quantidade");
+    obj.edit79:setName("edit79");
 
     obj.label109 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label109:setParent(obj.rectangle297);
-    obj.label109:setLeft(444);
-    obj.label109:setTop(489);
+    obj.label109:setParent(obj.rectangle260);
+    obj.label109:setLeft(360);
+    obj.label109:setTop(722);
     obj.label109:setWidth(280);
     obj.label109:setFontSize(18);
-    obj.label109:setText("Tradição:");
+    obj.label109:setText("/");
     obj.label109:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label109, "fontStyle", "bold");
     obj.label109:setName("label109");
 
-    obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit97:setParent(obj.rectangle297);
-    obj.edit97:setLeft(524);
-    obj.edit97:setTop(483);
-    obj.edit97:setWidth(260);
-    obj.edit97:setFontSize(18);
-    obj.edit97:setFontColor("#49244F");
-    obj.edit97:setTransparent(true);
-    obj.edit97:setField("tradicaoMagia04");
-    obj.edit97:setName("edit97");
+    obj.rectangle290 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle290:setParent(obj.rectangle260);
+    obj.rectangle290:setLeft(374);
+    obj.rectangle290:setTop(716);
+    obj.rectangle290:setWidth(29);
+    obj.rectangle290:setHeight(29);
+    obj.rectangle290:setColor("#49244F");
+    obj.rectangle290:setCornerType("round");
+    obj.rectangle290:setXradius(15);
+    obj.rectangle290:setYradius(15);
+    obj.rectangle290:setName("rectangle290");
 
-    obj.rectangle331 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle331:setParent(obj.rectangle297);
-    obj.rectangle331:setLeft(434);
-    obj.rectangle331:setTop(551);
-    obj.rectangle331:setWidth(350);
-    obj.rectangle331:setHeight(1);
-    obj.rectangle331:setColor("#49244F");
-    obj.rectangle331:setName("rectangle331");
+    obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit80:setParent(obj.rectangle260);
+    obj.edit80:setLeft(368);
+    obj.edit80:setTop(715);
+    obj.edit80:setWidth(40);
+    obj.edit80:setFontSize(18);
+    obj.edit80:setHorzTextAlign("center");
+    obj.edit80:setFontColor("#D5D5D5");
+    obj.edit80:setTransparent(true);
+    obj.edit80:setField("maxMagia03");
+    obj.edit80:setHitTest(true);
+    obj.edit80:setCursor("handPoint");
+    obj.edit80:setHint("Total");
+    obj.edit80:setName("edit80");
+
+    obj.rectangle291 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle291:setParent(obj.rectangle260);
+    obj.rectangle291:setLeft(434);
+    obj.rectangle291:setTop(435);
+    obj.rectangle291:setWidth(350);
+    obj.rectangle291:setHeight(318);
+    obj.rectangle291:setColor("#D5D5D5");
+    obj.rectangle291:setStrokeColor("#49244F");
+    obj.rectangle291:setStrokeSize(3);
+    obj.rectangle291:setName("rectangle291");
+
+    obj.rectangle292 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle292:setParent(obj.rectangle260);
+    obj.rectangle292:setLeft(434);
+    obj.rectangle292:setTop(435);
+    obj.rectangle292:setWidth(350);
+    obj.rectangle292:setHeight(50);
+    obj.rectangle292:setColor("#49244F");
+    obj.rectangle292:setName("rectangle292");
+
+    obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit81:setParent(obj.rectangle260);
+    obj.edit81:setLeft(439);
+    obj.edit81:setTop(443);
+    obj.edit81:setWidth(340);
+    obj.edit81:setFontSize(18);
+    obj.edit81:setHeight(30);
+    obj.edit81:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit81, "fontStyle", "bold");
+    obj.edit81:setTransparent(true);
+    obj.edit81:setField("Magia04");
+    obj.edit81:setName("edit81");
+
+    obj.rectangle293 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle293:setParent(obj.rectangle260);
+    obj.rectangle293:setLeft(434);
+    obj.rectangle293:setTop(516);
+    obj.rectangle293:setWidth(350);
+    obj.rectangle293:setHeight(1);
+    obj.rectangle293:setColor("#49244F");
+    obj.rectangle293:setName("rectangle293");
 
     obj.label110 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label110:setParent(obj.rectangle297);
+    obj.label110:setParent(obj.rectangle260);
     obj.label110:setLeft(444);
-    obj.label110:setTop(524);
+    obj.label110:setTop(489);
     obj.label110:setWidth(280);
     obj.label110:setFontSize(18);
-    obj.label110:setText("Alvo:");
+    obj.label110:setText("Tradição:");
     obj.label110:setFontColor("#49244F");
     lfm_setPropAsString(obj.label110, "fontStyle", "bold");
     obj.label110:setName("label110");
 
-    obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit98:setParent(obj.rectangle297);
-    obj.edit98:setLeft(489);
-    obj.edit98:setTop(518);
-    obj.edit98:setWidth(295);
-    obj.edit98:setFontSize(18);
-    obj.edit98:setFontColor("#49244F");
-    obj.edit98:setTransparent(true);
-    obj.edit98:setField("alvoMagia04");
-    obj.edit98:setName("edit98");
+    obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit82:setParent(obj.rectangle260);
+    obj.edit82:setLeft(524);
+    obj.edit82:setTop(483);
+    obj.edit82:setWidth(260);
+    obj.edit82:setFontSize(18);
+    obj.edit82:setFontColor("#49244F");
+    obj.edit82:setTransparent(true);
+    obj.edit82:setField("tradicaoMagia04");
+    obj.edit82:setName("edit82");
 
-    obj.rectangle332 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle332:setParent(obj.rectangle297);
-    obj.rectangle332:setLeft(434);
-    obj.rectangle332:setTop(586);
-    obj.rectangle332:setWidth(350);
-    obj.rectangle332:setHeight(3);
-    obj.rectangle332:setColor("#49244F");
-    obj.rectangle332:setName("rectangle332");
+    obj.rectangle294 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle294:setParent(obj.rectangle260);
+    obj.rectangle294:setLeft(434);
+    obj.rectangle294:setTop(551);
+    obj.rectangle294:setWidth(350);
+    obj.rectangle294:setHeight(1);
+    obj.rectangle294:setColor("#49244F");
+    obj.rectangle294:setName("rectangle294");
 
     obj.label111 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label111:setParent(obj.rectangle297);
+    obj.label111:setParent(obj.rectangle260);
     obj.label111:setLeft(444);
-    obj.label111:setTop(559);
+    obj.label111:setTop(524);
     obj.label111:setWidth(280);
     obj.label111:setFontSize(18);
-    obj.label111:setText("Duração:");
+    obj.label111:setText("Alvo:");
     obj.label111:setFontColor("#49244F");
     lfm_setPropAsString(obj.label111, "fontStyle", "bold");
     obj.label111:setName("label111");
 
-    obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit99:setParent(obj.rectangle297);
-    obj.edit99:setLeft(524);
-    obj.edit99:setTop(553);
-    obj.edit99:setWidth(260);
-    obj.edit99:setFontSize(18);
-    obj.edit99:setFontColor("#49244F");
-    obj.edit99:setTransparent(true);
-    obj.edit99:setField("duracaoMagia04");
-    obj.edit99:setName("edit99");
+    obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit83:setParent(obj.rectangle260);
+    obj.edit83:setLeft(489);
+    obj.edit83:setTop(518);
+    obj.edit83:setWidth(295);
+    obj.edit83:setFontSize(18);
+    obj.edit83:setFontColor("#49244F");
+    obj.edit83:setTransparent(true);
+    obj.edit83:setField("alvoMagia04");
+    obj.edit83:setName("edit83");
 
-    obj.rectangle333 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle333:setParent(obj.rectangle297);
-    obj.rectangle333:setLeft(434);
-    obj.rectangle333:setTop(586);
-    obj.rectangle333:setWidth(350);
-    obj.rectangle333:setHeight(125);
-    obj.rectangle333:setColor("#49244F");
-    obj.rectangle333:setName("rectangle333");
-
-    obj.textEditor20 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor20:setParent(obj.rectangle297);
-    obj.textEditor20:setLeft(439);
-    obj.textEditor20:setTop(591);
-    obj.textEditor20:setWidth(340);
-    obj.textEditor20:setHeight(115);
-    obj.textEditor20:setFontColor("#D5D5D5");
-    obj.textEditor20:setTransparent(true);
-    obj.textEditor20:setField("descricaoMagia04");
-    obj.textEditor20:setFontSize(18);
-    obj.textEditor20:setName("textEditor20");
-
-    obj.rectangle334 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle334:setParent(obj.rectangle297);
-    obj.rectangle334:setLeft(434);
-    obj.rectangle334:setTop(711);
-    obj.rectangle334:setWidth(350);
-    obj.rectangle334:setHeight(3);
-    obj.rectangle334:setColor("#49244F");
-    obj.rectangle334:setName("rectangle334");
-
-    obj.rectangle335 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle335:setParent(obj.rectangle297);
-    obj.rectangle335:setLeft(438);
-    obj.rectangle335:setTop(718);
-    obj.rectangle335:setWidth(135);
-    obj.rectangle335:setHeight(29);
-    obj.rectangle335:setColor("#49244F");
-    obj.rectangle335:setHitTest(true);
-    obj.rectangle335:setCursor("handPoint");
-    obj.rectangle335:setName("rectangle335");
+    obj.rectangle295 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle295:setParent(obj.rectangle260);
+    obj.rectangle295:setLeft(434);
+    obj.rectangle295:setTop(586);
+    obj.rectangle295:setWidth(350);
+    obj.rectangle295:setHeight(3);
+    obj.rectangle295:setColor("#49244F");
+    obj.rectangle295:setName("rectangle295");
 
     obj.label112 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label112:setParent(obj.rectangle297);
+    obj.label112:setParent(obj.rectangle260);
     obj.label112:setLeft(444);
-    obj.label112:setTop(722);
+    obj.label112:setTop(559);
     obj.label112:setWidth(280);
     obj.label112:setFontSize(18);
-    obj.label112:setText("Conjurar Feitiço");
-    obj.label112:setFontColor("#D5D5D5");
+    obj.label112:setText("Duração:");
+    obj.label112:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label112, "fontStyle", "bold");
     obj.label112:setName("label112");
 
-    obj.rectangle336 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle336:setParent(obj.rectangle297);
-    obj.rectangle336:setLeft(698);
-    obj.rectangle336:setTop(718);
-    obj.rectangle336:setWidth(29);
-    obj.rectangle336:setHeight(29);
-    obj.rectangle336:setColor("#49244F");
-    obj.rectangle336:setCornerType("round");
-    obj.rectangle336:setXradius(15);
-    obj.rectangle336:setYradius(15);
-    obj.rectangle336:setName("rectangle336");
+    obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit84:setParent(obj.rectangle260);
+    obj.edit84:setLeft(524);
+    obj.edit84:setTop(553);
+    obj.edit84:setWidth(260);
+    obj.edit84:setFontSize(18);
+    obj.edit84:setFontColor("#49244F");
+    obj.edit84:setTransparent(true);
+    obj.edit84:setField("duracaoMagia04");
+    obj.edit84:setName("edit84");
 
-    obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit100:setParent(obj.rectangle297);
-    obj.edit100:setLeft(692);
-    obj.edit100:setTop(715);
-    obj.edit100:setWidth(40);
-    obj.edit100:setFontSize(18);
-    obj.edit100:setHorzTextAlign("center");
-    obj.edit100:setFontColor("#D5D5D5");
-    obj.edit100:setTransparent(true);
-    obj.edit100:setField("qtdMagia04");
-    obj.edit100:setHitTest(true);
-    obj.edit100:setCursor("handPoint");
-    obj.edit100:setHint("Quantidade");
-    obj.edit100:setName("edit100");
+    obj.rectangle296 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle296:setParent(obj.rectangle260);
+    obj.rectangle296:setLeft(434);
+    obj.rectangle296:setTop(586);
+    obj.rectangle296:setWidth(350);
+    obj.rectangle296:setHeight(125);
+    obj.rectangle296:setColor("#49244F");
+    obj.rectangle296:setName("rectangle296");
+
+    obj.textEditor5 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor5:setParent(obj.rectangle260);
+    obj.textEditor5:setLeft(439);
+    obj.textEditor5:setTop(591);
+    obj.textEditor5:setWidth(340);
+    obj.textEditor5:setHeight(115);
+    obj.textEditor5:setFontColor("#D5D5D5");
+    obj.textEditor5:setTransparent(true);
+    obj.textEditor5:setField("descricaoMagia04");
+    obj.textEditor5:setFontSize(18);
+    obj.textEditor5:setName("textEditor5");
+
+    obj.rectangle297 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle297:setParent(obj.rectangle260);
+    obj.rectangle297:setLeft(434);
+    obj.rectangle297:setTop(711);
+    obj.rectangle297:setWidth(350);
+    obj.rectangle297:setHeight(3);
+    obj.rectangle297:setColor("#49244F");
+    obj.rectangle297:setName("rectangle297");
+
+    obj.rectangle298 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle298:setParent(obj.rectangle260);
+    obj.rectangle298:setLeft(438);
+    obj.rectangle298:setTop(718);
+    obj.rectangle298:setWidth(135);
+    obj.rectangle298:setHeight(29);
+    obj.rectangle298:setColor("#49244F");
+    obj.rectangle298:setHitTest(true);
+    obj.rectangle298:setCursor("handPoint");
+    obj.rectangle298:setName("rectangle298");
 
     obj.label113 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label113:setParent(obj.rectangle297);
-    obj.label113:setLeft(734);
+    obj.label113:setParent(obj.rectangle260);
+    obj.label113:setLeft(444);
     obj.label113:setTop(722);
     obj.label113:setWidth(280);
     obj.label113:setFontSize(18);
-    obj.label113:setText("/");
-    obj.label113:setFontColor("#49244F");
+    obj.label113:setText("Conjurar Feitiço");
+    obj.label113:setFontColor("#D5D5D5");
     obj.label113:setName("label113");
 
-    obj.rectangle337 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle337:setParent(obj.rectangle297);
-    obj.rectangle337:setLeft(748);
-    obj.rectangle337:setTop(716);
-    obj.rectangle337:setWidth(29);
-    obj.rectangle337:setHeight(29);
-    obj.rectangle337:setColor("#49244F");
-    obj.rectangle337:setCornerType("round");
-    obj.rectangle337:setXradius(15);
-    obj.rectangle337:setYradius(15);
-    obj.rectangle337:setName("rectangle337");
+    obj.rectangle299 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle299:setParent(obj.rectangle260);
+    obj.rectangle299:setLeft(698);
+    obj.rectangle299:setTop(718);
+    obj.rectangle299:setWidth(29);
+    obj.rectangle299:setHeight(29);
+    obj.rectangle299:setColor("#49244F");
+    obj.rectangle299:setCornerType("round");
+    obj.rectangle299:setXradius(15);
+    obj.rectangle299:setYradius(15);
+    obj.rectangle299:setName("rectangle299");
 
-    obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit101:setParent(obj.rectangle297);
-    obj.edit101:setLeft(743);
-    obj.edit101:setTop(715);
-    obj.edit101:setWidth(40);
-    obj.edit101:setFontSize(18);
-    obj.edit101:setHorzTextAlign("center");
-    obj.edit101:setFontColor("#D5D5D5");
-    obj.edit101:setTransparent(true);
-    obj.edit101:setField("maxMagia04");
-    obj.edit101:setHitTest(true);
-    obj.edit101:setCursor("handPoint");
-    obj.edit101:setHint("Total");
-    obj.edit101:setName("edit101");
-
-    obj.rectangle338 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle338:setParent(obj.rectangle297);
-    obj.rectangle338:setLeft(60);
-    obj.rectangle338:setTop(775);
-    obj.rectangle338:setWidth(350);
-    obj.rectangle338:setHeight(318);
-    obj.rectangle338:setColor("#D5D5D5");
-    obj.rectangle338:setStrokeColor("#49244F");
-    obj.rectangle338:setStrokeSize(3);
-    obj.rectangle338:setName("rectangle338");
-
-    obj.rectangle339 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle339:setParent(obj.rectangle297);
-    obj.rectangle339:setLeft(60);
-    obj.rectangle339:setTop(775);
-    obj.rectangle339:setWidth(350);
-    obj.rectangle339:setHeight(50);
-    obj.rectangle339:setColor("#49244F");
-    obj.rectangle339:setName("rectangle339");
-
-    obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit102:setParent(obj.rectangle297);
-    obj.edit102:setLeft(65);
-    obj.edit102:setTop(783);
-    obj.edit102:setWidth(340);
-    obj.edit102:setFontSize(18);
-    obj.edit102:setHeight(30);
-    obj.edit102:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit102, "fontStyle", "bold");
-    obj.edit102:setTransparent(true);
-    obj.edit102:setField("Magia05");
-    obj.edit102:setName("edit102");
-
-    obj.rectangle340 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle340:setParent(obj.rectangle297);
-    obj.rectangle340:setLeft(60);
-    obj.rectangle340:setTop(856);
-    obj.rectangle340:setWidth(350);
-    obj.rectangle340:setHeight(1);
-    obj.rectangle340:setColor("#49244F");
-    obj.rectangle340:setName("rectangle340");
+    obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit85:setParent(obj.rectangle260);
+    obj.edit85:setLeft(692);
+    obj.edit85:setTop(715);
+    obj.edit85:setWidth(40);
+    obj.edit85:setFontSize(18);
+    obj.edit85:setHorzTextAlign("center");
+    obj.edit85:setFontColor("#D5D5D5");
+    obj.edit85:setTransparent(true);
+    obj.edit85:setField("qtdMagia04");
+    obj.edit85:setHitTest(true);
+    obj.edit85:setCursor("handPoint");
+    obj.edit85:setHint("Quantidade");
+    obj.edit85:setName("edit85");
 
     obj.label114 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label114:setParent(obj.rectangle297);
-    obj.label114:setLeft(70);
-    obj.label114:setTop(829);
+    obj.label114:setParent(obj.rectangle260);
+    obj.label114:setLeft(734);
+    obj.label114:setTop(722);
     obj.label114:setWidth(280);
     obj.label114:setFontSize(18);
-    obj.label114:setText("Tradição:");
+    obj.label114:setText("/");
     obj.label114:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label114, "fontStyle", "bold");
     obj.label114:setName("label114");
 
-    obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit103:setParent(obj.rectangle297);
-    obj.edit103:setLeft(150);
-    obj.edit103:setTop(823);
-    obj.edit103:setWidth(260);
-    obj.edit103:setFontSize(18);
-    obj.edit103:setFontColor("#49244F");
-    obj.edit103:setTransparent(true);
-    obj.edit103:setField("tradicaoMagia05");
-    obj.edit103:setName("edit103");
+    obj.rectangle300 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle300:setParent(obj.rectangle260);
+    obj.rectangle300:setLeft(748);
+    obj.rectangle300:setTop(716);
+    obj.rectangle300:setWidth(29);
+    obj.rectangle300:setHeight(29);
+    obj.rectangle300:setColor("#49244F");
+    obj.rectangle300:setCornerType("round");
+    obj.rectangle300:setXradius(15);
+    obj.rectangle300:setYradius(15);
+    obj.rectangle300:setName("rectangle300");
 
-    obj.rectangle341 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle341:setParent(obj.rectangle297);
-    obj.rectangle341:setLeft(60);
-    obj.rectangle341:setTop(891);
-    obj.rectangle341:setWidth(350);
-    obj.rectangle341:setHeight(1);
-    obj.rectangle341:setColor("#49244F");
-    obj.rectangle341:setName("rectangle341");
+    obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit86:setParent(obj.rectangle260);
+    obj.edit86:setLeft(743);
+    obj.edit86:setTop(715);
+    obj.edit86:setWidth(40);
+    obj.edit86:setFontSize(18);
+    obj.edit86:setHorzTextAlign("center");
+    obj.edit86:setFontColor("#D5D5D5");
+    obj.edit86:setTransparent(true);
+    obj.edit86:setField("maxMagia04");
+    obj.edit86:setHitTest(true);
+    obj.edit86:setCursor("handPoint");
+    obj.edit86:setHint("Total");
+    obj.edit86:setName("edit86");
+
+    obj.rectangle301 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle301:setParent(obj.rectangle260);
+    obj.rectangle301:setLeft(60);
+    obj.rectangle301:setTop(775);
+    obj.rectangle301:setWidth(350);
+    obj.rectangle301:setHeight(318);
+    obj.rectangle301:setColor("#D5D5D5");
+    obj.rectangle301:setStrokeColor("#49244F");
+    obj.rectangle301:setStrokeSize(3);
+    obj.rectangle301:setName("rectangle301");
+
+    obj.rectangle302 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle302:setParent(obj.rectangle260);
+    obj.rectangle302:setLeft(60);
+    obj.rectangle302:setTop(775);
+    obj.rectangle302:setWidth(350);
+    obj.rectangle302:setHeight(50);
+    obj.rectangle302:setColor("#49244F");
+    obj.rectangle302:setName("rectangle302");
+
+    obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit87:setParent(obj.rectangle260);
+    obj.edit87:setLeft(65);
+    obj.edit87:setTop(783);
+    obj.edit87:setWidth(340);
+    obj.edit87:setFontSize(18);
+    obj.edit87:setHeight(30);
+    obj.edit87:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit87, "fontStyle", "bold");
+    obj.edit87:setTransparent(true);
+    obj.edit87:setField("Magia05");
+    obj.edit87:setName("edit87");
+
+    obj.rectangle303 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle303:setParent(obj.rectangle260);
+    obj.rectangle303:setLeft(60);
+    obj.rectangle303:setTop(856);
+    obj.rectangle303:setWidth(350);
+    obj.rectangle303:setHeight(1);
+    obj.rectangle303:setColor("#49244F");
+    obj.rectangle303:setName("rectangle303");
 
     obj.label115 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label115:setParent(obj.rectangle297);
+    obj.label115:setParent(obj.rectangle260);
     obj.label115:setLeft(70);
-    obj.label115:setTop(864);
+    obj.label115:setTop(829);
     obj.label115:setWidth(280);
     obj.label115:setFontSize(18);
-    obj.label115:setText("Alvo:");
+    obj.label115:setText("Tradição:");
     obj.label115:setFontColor("#49244F");
     lfm_setPropAsString(obj.label115, "fontStyle", "bold");
     obj.label115:setName("label115");
 
-    obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit104:setParent(obj.rectangle297);
-    obj.edit104:setLeft(115);
-    obj.edit104:setTop(858);
-    obj.edit104:setWidth(295);
-    obj.edit104:setFontSize(18);
-    obj.edit104:setFontColor("#49244F");
-    obj.edit104:setTransparent(true);
-    obj.edit104:setField("alvoMagia05");
-    obj.edit104:setName("edit104");
+    obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit88:setParent(obj.rectangle260);
+    obj.edit88:setLeft(150);
+    obj.edit88:setTop(823);
+    obj.edit88:setWidth(260);
+    obj.edit88:setFontSize(18);
+    obj.edit88:setFontColor("#49244F");
+    obj.edit88:setTransparent(true);
+    obj.edit88:setField("tradicaoMagia05");
+    obj.edit88:setName("edit88");
 
-    obj.rectangle342 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle342:setParent(obj.rectangle297);
-    obj.rectangle342:setLeft(60);
-    obj.rectangle342:setTop(926);
-    obj.rectangle342:setWidth(350);
-    obj.rectangle342:setHeight(3);
-    obj.rectangle342:setColor("#49244F");
-    obj.rectangle342:setName("rectangle342");
+    obj.rectangle304 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle304:setParent(obj.rectangle260);
+    obj.rectangle304:setLeft(60);
+    obj.rectangle304:setTop(891);
+    obj.rectangle304:setWidth(350);
+    obj.rectangle304:setHeight(1);
+    obj.rectangle304:setColor("#49244F");
+    obj.rectangle304:setName("rectangle304");
 
     obj.label116 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label116:setParent(obj.rectangle297);
+    obj.label116:setParent(obj.rectangle260);
     obj.label116:setLeft(70);
-    obj.label116:setTop(899);
+    obj.label116:setTop(864);
     obj.label116:setWidth(280);
     obj.label116:setFontSize(18);
-    obj.label116:setText("Duração:");
+    obj.label116:setText("Alvo:");
     obj.label116:setFontColor("#49244F");
     lfm_setPropAsString(obj.label116, "fontStyle", "bold");
     obj.label116:setName("label116");
 
-    obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit105:setParent(obj.rectangle297);
-    obj.edit105:setLeft(150);
-    obj.edit105:setTop(893);
-    obj.edit105:setWidth(260);
-    obj.edit105:setFontSize(18);
-    obj.edit105:setFontColor("#49244F");
-    obj.edit105:setTransparent(true);
-    obj.edit105:setField("duracaoMagia05");
-    obj.edit105:setName("edit105");
+    obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit89:setParent(obj.rectangle260);
+    obj.edit89:setLeft(115);
+    obj.edit89:setTop(858);
+    obj.edit89:setWidth(295);
+    obj.edit89:setFontSize(18);
+    obj.edit89:setFontColor("#49244F");
+    obj.edit89:setTransparent(true);
+    obj.edit89:setField("alvoMagia05");
+    obj.edit89:setName("edit89");
 
-    obj.rectangle343 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle343:setParent(obj.rectangle297);
-    obj.rectangle343:setLeft(60);
-    obj.rectangle343:setTop(926);
-    obj.rectangle343:setWidth(350);
-    obj.rectangle343:setHeight(125);
-    obj.rectangle343:setColor("#49244F");
-    obj.rectangle343:setName("rectangle343");
-
-    obj.textEditor21 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor21:setParent(obj.rectangle297);
-    obj.textEditor21:setLeft(65);
-    obj.textEditor21:setTop(931);
-    obj.textEditor21:setWidth(340);
-    obj.textEditor21:setHeight(115);
-    obj.textEditor21:setFontColor("#D5D5D5");
-    obj.textEditor21:setTransparent(true);
-    obj.textEditor21:setField("descricaoMagia05");
-    obj.textEditor21:setFontSize(18);
-    obj.textEditor21:setName("textEditor21");
-
-    obj.rectangle344 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle344:setParent(obj.rectangle297);
-    obj.rectangle344:setLeft(60);
-    obj.rectangle344:setTop(1051);
-    obj.rectangle344:setWidth(350);
-    obj.rectangle344:setHeight(3);
-    obj.rectangle344:setColor("#49244F");
-    obj.rectangle344:setName("rectangle344");
-
-    obj.rectangle345 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle345:setParent(obj.rectangle297);
-    obj.rectangle345:setLeft(64);
-    obj.rectangle345:setTop(1058);
-    obj.rectangle345:setWidth(135);
-    obj.rectangle345:setHeight(29);
-    obj.rectangle345:setColor("#49244F");
-    obj.rectangle345:setHitTest(true);
-    obj.rectangle345:setCursor("handPoint");
-    obj.rectangle345:setName("rectangle345");
+    obj.rectangle305 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle305:setParent(obj.rectangle260);
+    obj.rectangle305:setLeft(60);
+    obj.rectangle305:setTop(926);
+    obj.rectangle305:setWidth(350);
+    obj.rectangle305:setHeight(3);
+    obj.rectangle305:setColor("#49244F");
+    obj.rectangle305:setName("rectangle305");
 
     obj.label117 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label117:setParent(obj.rectangle297);
+    obj.label117:setParent(obj.rectangle260);
     obj.label117:setLeft(70);
-    obj.label117:setTop(1062);
+    obj.label117:setTop(899);
     obj.label117:setWidth(280);
     obj.label117:setFontSize(18);
-    obj.label117:setText("Conjurar Feitiço");
-    obj.label117:setFontColor("#D5D5D5");
+    obj.label117:setText("Duração:");
+    obj.label117:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label117, "fontStyle", "bold");
     obj.label117:setName("label117");
 
-    obj.rectangle346 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle346:setParent(obj.rectangle297);
-    obj.rectangle346:setLeft(324);
-    obj.rectangle346:setTop(1058);
-    obj.rectangle346:setWidth(29);
-    obj.rectangle346:setHeight(29);
-    obj.rectangle346:setColor("#49244F");
-    obj.rectangle346:setCornerType("round");
-    obj.rectangle346:setXradius(15);
-    obj.rectangle346:setYradius(15);
-    obj.rectangle346:setName("rectangle346");
+    obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit90:setParent(obj.rectangle260);
+    obj.edit90:setLeft(150);
+    obj.edit90:setTop(893);
+    obj.edit90:setWidth(260);
+    obj.edit90:setFontSize(18);
+    obj.edit90:setFontColor("#49244F");
+    obj.edit90:setTransparent(true);
+    obj.edit90:setField("duracaoMagia05");
+    obj.edit90:setName("edit90");
 
-    obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit106:setParent(obj.rectangle297);
-    obj.edit106:setLeft(318);
-    obj.edit106:setTop(1055);
-    obj.edit106:setWidth(40);
-    obj.edit106:setFontSize(18);
-    obj.edit106:setHorzTextAlign("center");
-    obj.edit106:setFontColor("#D5D5D5");
-    obj.edit106:setTransparent(true);
-    obj.edit106:setField("qtdMagia05");
-    obj.edit106:setHitTest(true);
-    obj.edit106:setCursor("handPoint");
-    obj.edit106:setHint("Quantidade");
-    obj.edit106:setName("edit106");
+    obj.rectangle306 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle306:setParent(obj.rectangle260);
+    obj.rectangle306:setLeft(60);
+    obj.rectangle306:setTop(926);
+    obj.rectangle306:setWidth(350);
+    obj.rectangle306:setHeight(125);
+    obj.rectangle306:setColor("#49244F");
+    obj.rectangle306:setName("rectangle306");
+
+    obj.textEditor6 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor6:setParent(obj.rectangle260);
+    obj.textEditor6:setLeft(65);
+    obj.textEditor6:setTop(931);
+    obj.textEditor6:setWidth(340);
+    obj.textEditor6:setHeight(115);
+    obj.textEditor6:setFontColor("#D5D5D5");
+    obj.textEditor6:setTransparent(true);
+    obj.textEditor6:setField("descricaoMagia05");
+    obj.textEditor6:setFontSize(18);
+    obj.textEditor6:setName("textEditor6");
+
+    obj.rectangle307 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle307:setParent(obj.rectangle260);
+    obj.rectangle307:setLeft(60);
+    obj.rectangle307:setTop(1051);
+    obj.rectangle307:setWidth(350);
+    obj.rectangle307:setHeight(3);
+    obj.rectangle307:setColor("#49244F");
+    obj.rectangle307:setName("rectangle307");
+
+    obj.rectangle308 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle308:setParent(obj.rectangle260);
+    obj.rectangle308:setLeft(64);
+    obj.rectangle308:setTop(1058);
+    obj.rectangle308:setWidth(135);
+    obj.rectangle308:setHeight(29);
+    obj.rectangle308:setColor("#49244F");
+    obj.rectangle308:setHitTest(true);
+    obj.rectangle308:setCursor("handPoint");
+    obj.rectangle308:setName("rectangle308");
 
     obj.label118 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label118:setParent(obj.rectangle297);
-    obj.label118:setLeft(360);
+    obj.label118:setParent(obj.rectangle260);
+    obj.label118:setLeft(70);
     obj.label118:setTop(1062);
     obj.label118:setWidth(280);
     obj.label118:setFontSize(18);
-    obj.label118:setText("/");
-    obj.label118:setFontColor("#49244F");
+    obj.label118:setText("Conjurar Feitiço");
+    obj.label118:setFontColor("#D5D5D5");
     obj.label118:setName("label118");
 
-    obj.rectangle347 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle347:setParent(obj.rectangle297);
-    obj.rectangle347:setLeft(374);
-    obj.rectangle347:setTop(1056);
-    obj.rectangle347:setWidth(29);
-    obj.rectangle347:setHeight(29);
-    obj.rectangle347:setColor("#49244F");
-    obj.rectangle347:setCornerType("round");
-    obj.rectangle347:setXradius(15);
-    obj.rectangle347:setYradius(15);
-    obj.rectangle347:setName("rectangle347");
+    obj.rectangle309 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle309:setParent(obj.rectangle260);
+    obj.rectangle309:setLeft(324);
+    obj.rectangle309:setTop(1058);
+    obj.rectangle309:setWidth(29);
+    obj.rectangle309:setHeight(29);
+    obj.rectangle309:setColor("#49244F");
+    obj.rectangle309:setCornerType("round");
+    obj.rectangle309:setXradius(15);
+    obj.rectangle309:setYradius(15);
+    obj.rectangle309:setName("rectangle309");
 
-    obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit107:setParent(obj.rectangle297);
-    obj.edit107:setLeft(368);
-    obj.edit107:setTop(1055);
-    obj.edit107:setWidth(40);
-    obj.edit107:setFontSize(18);
-    obj.edit107:setHorzTextAlign("center");
-    obj.edit107:setFontColor("#D5D5D5");
-    obj.edit107:setTransparent(true);
-    obj.edit107:setField("maxMagia05");
-    obj.edit107:setHitTest(true);
-    obj.edit107:setCursor("handPoint");
-    obj.edit107:setHint("Total");
-    obj.edit107:setName("edit107");
-
-    obj.rectangle348 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle348:setParent(obj.rectangle297);
-    obj.rectangle348:setLeft(434);
-    obj.rectangle348:setTop(775);
-    obj.rectangle348:setWidth(350);
-    obj.rectangle348:setHeight(318);
-    obj.rectangle348:setColor("#D5D5D5");
-    obj.rectangle348:setStrokeColor("#49244F");
-    obj.rectangle348:setStrokeSize(3);
-    obj.rectangle348:setName("rectangle348");
-
-    obj.rectangle349 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle349:setParent(obj.rectangle297);
-    obj.rectangle349:setLeft(434);
-    obj.rectangle349:setTop(775);
-    obj.rectangle349:setWidth(350);
-    obj.rectangle349:setHeight(50);
-    obj.rectangle349:setColor("#49244F");
-    obj.rectangle349:setName("rectangle349");
-
-    obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit108:setParent(obj.rectangle297);
-    obj.edit108:setLeft(439);
-    obj.edit108:setTop(783);
-    obj.edit108:setWidth(340);
-    obj.edit108:setFontSize(18);
-    obj.edit108:setHeight(30);
-    obj.edit108:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit108, "fontStyle", "bold");
-    obj.edit108:setTransparent(true);
-    obj.edit108:setField("Magia06");
-    obj.edit108:setName("edit108");
-
-    obj.rectangle350 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle350:setParent(obj.rectangle297);
-    obj.rectangle350:setLeft(434);
-    obj.rectangle350:setTop(856);
-    obj.rectangle350:setWidth(350);
-    obj.rectangle350:setHeight(1);
-    obj.rectangle350:setColor("#49244F");
-    obj.rectangle350:setName("rectangle350");
+    obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit91:setParent(obj.rectangle260);
+    obj.edit91:setLeft(318);
+    obj.edit91:setTop(1055);
+    obj.edit91:setWidth(40);
+    obj.edit91:setFontSize(18);
+    obj.edit91:setHorzTextAlign("center");
+    obj.edit91:setFontColor("#D5D5D5");
+    obj.edit91:setTransparent(true);
+    obj.edit91:setField("qtdMagia05");
+    obj.edit91:setHitTest(true);
+    obj.edit91:setCursor("handPoint");
+    obj.edit91:setHint("Quantidade");
+    obj.edit91:setName("edit91");
 
     obj.label119 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label119:setParent(obj.rectangle297);
-    obj.label119:setLeft(444);
-    obj.label119:setTop(829);
+    obj.label119:setParent(obj.rectangle260);
+    obj.label119:setLeft(360);
+    obj.label119:setTop(1062);
     obj.label119:setWidth(280);
     obj.label119:setFontSize(18);
-    obj.label119:setText("Tradição:");
+    obj.label119:setText("/");
     obj.label119:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label119, "fontStyle", "bold");
     obj.label119:setName("label119");
 
-    obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit109:setParent(obj.rectangle297);
-    obj.edit109:setLeft(524);
-    obj.edit109:setTop(823);
-    obj.edit109:setWidth(260);
-    obj.edit109:setFontSize(18);
-    obj.edit109:setFontColor("#49244F");
-    obj.edit109:setTransparent(true);
-    obj.edit109:setField("tradicaoMagia06");
-    obj.edit109:setName("edit109");
+    obj.rectangle310 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle310:setParent(obj.rectangle260);
+    obj.rectangle310:setLeft(374);
+    obj.rectangle310:setTop(1056);
+    obj.rectangle310:setWidth(29);
+    obj.rectangle310:setHeight(29);
+    obj.rectangle310:setColor("#49244F");
+    obj.rectangle310:setCornerType("round");
+    obj.rectangle310:setXradius(15);
+    obj.rectangle310:setYradius(15);
+    obj.rectangle310:setName("rectangle310");
 
-    obj.rectangle351 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle351:setParent(obj.rectangle297);
-    obj.rectangle351:setLeft(434);
-    obj.rectangle351:setTop(891);
-    obj.rectangle351:setWidth(350);
-    obj.rectangle351:setHeight(1);
-    obj.rectangle351:setColor("#49244F");
-    obj.rectangle351:setName("rectangle351");
+    obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit92:setParent(obj.rectangle260);
+    obj.edit92:setLeft(368);
+    obj.edit92:setTop(1055);
+    obj.edit92:setWidth(40);
+    obj.edit92:setFontSize(18);
+    obj.edit92:setHorzTextAlign("center");
+    obj.edit92:setFontColor("#D5D5D5");
+    obj.edit92:setTransparent(true);
+    obj.edit92:setField("maxMagia05");
+    obj.edit92:setHitTest(true);
+    obj.edit92:setCursor("handPoint");
+    obj.edit92:setHint("Total");
+    obj.edit92:setName("edit92");
+
+    obj.rectangle311 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle311:setParent(obj.rectangle260);
+    obj.rectangle311:setLeft(434);
+    obj.rectangle311:setTop(775);
+    obj.rectangle311:setWidth(350);
+    obj.rectangle311:setHeight(318);
+    obj.rectangle311:setColor("#D5D5D5");
+    obj.rectangle311:setStrokeColor("#49244F");
+    obj.rectangle311:setStrokeSize(3);
+    obj.rectangle311:setName("rectangle311");
+
+    obj.rectangle312 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle312:setParent(obj.rectangle260);
+    obj.rectangle312:setLeft(434);
+    obj.rectangle312:setTop(775);
+    obj.rectangle312:setWidth(350);
+    obj.rectangle312:setHeight(50);
+    obj.rectangle312:setColor("#49244F");
+    obj.rectangle312:setName("rectangle312");
+
+    obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit93:setParent(obj.rectangle260);
+    obj.edit93:setLeft(439);
+    obj.edit93:setTop(783);
+    obj.edit93:setWidth(340);
+    obj.edit93:setFontSize(18);
+    obj.edit93:setHeight(30);
+    obj.edit93:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit93, "fontStyle", "bold");
+    obj.edit93:setTransparent(true);
+    obj.edit93:setField("Magia06");
+    obj.edit93:setName("edit93");
+
+    obj.rectangle313 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle313:setParent(obj.rectangle260);
+    obj.rectangle313:setLeft(434);
+    obj.rectangle313:setTop(856);
+    obj.rectangle313:setWidth(350);
+    obj.rectangle313:setHeight(1);
+    obj.rectangle313:setColor("#49244F");
+    obj.rectangle313:setName("rectangle313");
 
     obj.label120 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label120:setParent(obj.rectangle297);
+    obj.label120:setParent(obj.rectangle260);
     obj.label120:setLeft(444);
-    obj.label120:setTop(864);
+    obj.label120:setTop(829);
     obj.label120:setWidth(280);
     obj.label120:setFontSize(18);
-    obj.label120:setText("Alvo:");
+    obj.label120:setText("Tradição:");
     obj.label120:setFontColor("#49244F");
     lfm_setPropAsString(obj.label120, "fontStyle", "bold");
     obj.label120:setName("label120");
 
-    obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit110:setParent(obj.rectangle297);
-    obj.edit110:setLeft(489);
-    obj.edit110:setTop(858);
-    obj.edit110:setWidth(295);
-    obj.edit110:setFontSize(18);
-    obj.edit110:setFontColor("#49244F");
-    obj.edit110:setTransparent(true);
-    obj.edit110:setField("alvoMagia06");
-    obj.edit110:setName("edit110");
+    obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit94:setParent(obj.rectangle260);
+    obj.edit94:setLeft(524);
+    obj.edit94:setTop(823);
+    obj.edit94:setWidth(260);
+    obj.edit94:setFontSize(18);
+    obj.edit94:setFontColor("#49244F");
+    obj.edit94:setTransparent(true);
+    obj.edit94:setField("tradicaoMagia06");
+    obj.edit94:setName("edit94");
 
-    obj.rectangle352 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle352:setParent(obj.rectangle297);
-    obj.rectangle352:setLeft(434);
-    obj.rectangle352:setTop(926);
-    obj.rectangle352:setWidth(350);
-    obj.rectangle352:setHeight(3);
-    obj.rectangle352:setColor("#49244F");
-    obj.rectangle352:setName("rectangle352");
+    obj.rectangle314 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle314:setParent(obj.rectangle260);
+    obj.rectangle314:setLeft(434);
+    obj.rectangle314:setTop(891);
+    obj.rectangle314:setWidth(350);
+    obj.rectangle314:setHeight(1);
+    obj.rectangle314:setColor("#49244F");
+    obj.rectangle314:setName("rectangle314");
 
     obj.label121 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label121:setParent(obj.rectangle297);
+    obj.label121:setParent(obj.rectangle260);
     obj.label121:setLeft(444);
-    obj.label121:setTop(899);
+    obj.label121:setTop(864);
     obj.label121:setWidth(280);
     obj.label121:setFontSize(18);
-    obj.label121:setText("Duração:");
+    obj.label121:setText("Alvo:");
     obj.label121:setFontColor("#49244F");
     lfm_setPropAsString(obj.label121, "fontStyle", "bold");
     obj.label121:setName("label121");
 
-    obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit111:setParent(obj.rectangle297);
-    obj.edit111:setLeft(524);
-    obj.edit111:setTop(893);
-    obj.edit111:setWidth(260);
-    obj.edit111:setFontSize(18);
-    obj.edit111:setFontColor("#49244F");
-    obj.edit111:setTransparent(true);
-    obj.edit111:setField("duracaoMagia06");
-    obj.edit111:setName("edit111");
+    obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit95:setParent(obj.rectangle260);
+    obj.edit95:setLeft(489);
+    obj.edit95:setTop(858);
+    obj.edit95:setWidth(295);
+    obj.edit95:setFontSize(18);
+    obj.edit95:setFontColor("#49244F");
+    obj.edit95:setTransparent(true);
+    obj.edit95:setField("alvoMagia06");
+    obj.edit95:setName("edit95");
 
-    obj.rectangle353 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle353:setParent(obj.rectangle297);
-    obj.rectangle353:setLeft(434);
-    obj.rectangle353:setTop(926);
-    obj.rectangle353:setWidth(350);
-    obj.rectangle353:setHeight(125);
-    obj.rectangle353:setColor("#49244F");
-    obj.rectangle353:setName("rectangle353");
-
-    obj.textEditor22 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor22:setParent(obj.rectangle297);
-    obj.textEditor22:setLeft(439);
-    obj.textEditor22:setTop(931);
-    obj.textEditor22:setWidth(340);
-    obj.textEditor22:setHeight(115);
-    obj.textEditor22:setFontColor("#D5D5D5");
-    obj.textEditor22:setTransparent(true);
-    obj.textEditor22:setField("descricaoMagia06");
-    obj.textEditor22:setFontSize(18);
-    obj.textEditor22:setName("textEditor22");
-
-    obj.rectangle354 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle354:setParent(obj.rectangle297);
-    obj.rectangle354:setLeft(434);
-    obj.rectangle354:setTop(1051);
-    obj.rectangle354:setWidth(350);
-    obj.rectangle354:setHeight(3);
-    obj.rectangle354:setColor("#49244F");
-    obj.rectangle354:setName("rectangle354");
-
-    obj.rectangle355 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle355:setParent(obj.rectangle297);
-    obj.rectangle355:setLeft(438);
-    obj.rectangle355:setTop(1058);
-    obj.rectangle355:setWidth(135);
-    obj.rectangle355:setHeight(29);
-    obj.rectangle355:setColor("#49244F");
-    obj.rectangle355:setHitTest(true);
-    obj.rectangle355:setCursor("handPoint");
-    obj.rectangle355:setName("rectangle355");
+    obj.rectangle315 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle315:setParent(obj.rectangle260);
+    obj.rectangle315:setLeft(434);
+    obj.rectangle315:setTop(926);
+    obj.rectangle315:setWidth(350);
+    obj.rectangle315:setHeight(3);
+    obj.rectangle315:setColor("#49244F");
+    obj.rectangle315:setName("rectangle315");
 
     obj.label122 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label122:setParent(obj.rectangle297);
+    obj.label122:setParent(obj.rectangle260);
     obj.label122:setLeft(444);
-    obj.label122:setTop(1062);
+    obj.label122:setTop(899);
     obj.label122:setWidth(280);
     obj.label122:setFontSize(18);
-    obj.label122:setText("Conjurar Feitiço");
-    obj.label122:setFontColor("#D5D5D5");
+    obj.label122:setText("Duração:");
+    obj.label122:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label122, "fontStyle", "bold");
     obj.label122:setName("label122");
 
-    obj.rectangle356 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle356:setParent(obj.rectangle297);
-    obj.rectangle356:setLeft(698);
-    obj.rectangle356:setTop(1058);
-    obj.rectangle356:setWidth(29);
-    obj.rectangle356:setHeight(29);
-    obj.rectangle356:setColor("#49244F");
-    obj.rectangle356:setCornerType("round");
-    obj.rectangle356:setXradius(15);
-    obj.rectangle356:setYradius(15);
-    obj.rectangle356:setName("rectangle356");
+    obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit96:setParent(obj.rectangle260);
+    obj.edit96:setLeft(524);
+    obj.edit96:setTop(893);
+    obj.edit96:setWidth(260);
+    obj.edit96:setFontSize(18);
+    obj.edit96:setFontColor("#49244F");
+    obj.edit96:setTransparent(true);
+    obj.edit96:setField("duracaoMagia06");
+    obj.edit96:setName("edit96");
 
-    obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit112:setParent(obj.rectangle297);
-    obj.edit112:setLeft(692);
-    obj.edit112:setTop(1055);
-    obj.edit112:setWidth(40);
-    obj.edit112:setFontSize(18);
-    obj.edit112:setHorzTextAlign("center");
-    obj.edit112:setFontColor("#D5D5D5");
-    obj.edit112:setTransparent(true);
-    obj.edit112:setField("qtdMagia06");
-    obj.edit112:setHitTest(true);
-    obj.edit112:setCursor("handPoint");
-    obj.edit112:setHint("Quantidade");
-    obj.edit112:setName("edit112");
+    obj.rectangle316 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle316:setParent(obj.rectangle260);
+    obj.rectangle316:setLeft(434);
+    obj.rectangle316:setTop(926);
+    obj.rectangle316:setWidth(350);
+    obj.rectangle316:setHeight(125);
+    obj.rectangle316:setColor("#49244F");
+    obj.rectangle316:setName("rectangle316");
+
+    obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor7:setParent(obj.rectangle260);
+    obj.textEditor7:setLeft(439);
+    obj.textEditor7:setTop(931);
+    obj.textEditor7:setWidth(340);
+    obj.textEditor7:setHeight(115);
+    obj.textEditor7:setFontColor("#D5D5D5");
+    obj.textEditor7:setTransparent(true);
+    obj.textEditor7:setField("descricaoMagia06");
+    obj.textEditor7:setFontSize(18);
+    obj.textEditor7:setName("textEditor7");
+
+    obj.rectangle317 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle317:setParent(obj.rectangle260);
+    obj.rectangle317:setLeft(434);
+    obj.rectangle317:setTop(1051);
+    obj.rectangle317:setWidth(350);
+    obj.rectangle317:setHeight(3);
+    obj.rectangle317:setColor("#49244F");
+    obj.rectangle317:setName("rectangle317");
+
+    obj.rectangle318 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle318:setParent(obj.rectangle260);
+    obj.rectangle318:setLeft(438);
+    obj.rectangle318:setTop(1058);
+    obj.rectangle318:setWidth(135);
+    obj.rectangle318:setHeight(29);
+    obj.rectangle318:setColor("#49244F");
+    obj.rectangle318:setHitTest(true);
+    obj.rectangle318:setCursor("handPoint");
+    obj.rectangle318:setName("rectangle318");
 
     obj.label123 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label123:setParent(obj.rectangle297);
-    obj.label123:setLeft(734);
+    obj.label123:setParent(obj.rectangle260);
+    obj.label123:setLeft(444);
     obj.label123:setTop(1062);
     obj.label123:setWidth(280);
     obj.label123:setFontSize(18);
-    obj.label123:setText("/");
-    obj.label123:setFontColor("#49244F");
+    obj.label123:setText("Conjurar Feitiço");
+    obj.label123:setFontColor("#D5D5D5");
     obj.label123:setName("label123");
 
-    obj.rectangle357 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle357:setParent(obj.rectangle297);
-    obj.rectangle357:setLeft(748);
-    obj.rectangle357:setTop(1056);
-    obj.rectangle357:setWidth(29);
-    obj.rectangle357:setHeight(29);
-    obj.rectangle357:setColor("#49244F");
-    obj.rectangle357:setCornerType("round");
-    obj.rectangle357:setXradius(15);
-    obj.rectangle357:setYradius(15);
-    obj.rectangle357:setName("rectangle357");
+    obj.rectangle319 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle319:setParent(obj.rectangle260);
+    obj.rectangle319:setLeft(698);
+    obj.rectangle319:setTop(1058);
+    obj.rectangle319:setWidth(29);
+    obj.rectangle319:setHeight(29);
+    obj.rectangle319:setColor("#49244F");
+    obj.rectangle319:setCornerType("round");
+    obj.rectangle319:setXradius(15);
+    obj.rectangle319:setYradius(15);
+    obj.rectangle319:setName("rectangle319");
 
-    obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit113:setParent(obj.rectangle297);
-    obj.edit113:setLeft(743);
-    obj.edit113:setTop(1055);
-    obj.edit113:setWidth(40);
-    obj.edit113:setFontSize(18);
-    obj.edit113:setHorzTextAlign("center");
-    obj.edit113:setFontColor("#D5D5D5");
-    obj.edit113:setTransparent(true);
-    obj.edit113:setField("maxMagia06");
-    obj.edit113:setHitTest(true);
-    obj.edit113:setCursor("handPoint");
-    obj.edit113:setHint("Total");
-    obj.edit113:setName("edit113");
-
-    obj.rectangle358 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle358:setParent(obj.rectangle297);
-    obj.rectangle358:setLeft(60);
-    obj.rectangle358:setTop(1115);
-    obj.rectangle358:setWidth(350);
-    obj.rectangle358:setHeight(318);
-    obj.rectangle358:setColor("#D5D5D5");
-    obj.rectangle358:setStrokeColor("#49244F");
-    obj.rectangle358:setStrokeSize(3);
-    obj.rectangle358:setName("rectangle358");
-
-    obj.rectangle359 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle359:setParent(obj.rectangle297);
-    obj.rectangle359:setLeft(60);
-    obj.rectangle359:setTop(1115);
-    obj.rectangle359:setWidth(350);
-    obj.rectangle359:setHeight(50);
-    obj.rectangle359:setColor("#49244F");
-    obj.rectangle359:setName("rectangle359");
-
-    obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit114:setParent(obj.rectangle297);
-    obj.edit114:setLeft(65);
-    obj.edit114:setTop(1123);
-    obj.edit114:setWidth(340);
-    obj.edit114:setFontSize(18);
-    obj.edit114:setHeight(30);
-    obj.edit114:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit114, "fontStyle", "bold");
-    obj.edit114:setTransparent(true);
-    obj.edit114:setField("Magia07");
-    obj.edit114:setName("edit114");
-
-    obj.rectangle360 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle360:setParent(obj.rectangle297);
-    obj.rectangle360:setLeft(60);
-    obj.rectangle360:setTop(1196);
-    obj.rectangle360:setWidth(350);
-    obj.rectangle360:setHeight(1);
-    obj.rectangle360:setColor("#49244F");
-    obj.rectangle360:setName("rectangle360");
+    obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit97:setParent(obj.rectangle260);
+    obj.edit97:setLeft(692);
+    obj.edit97:setTop(1055);
+    obj.edit97:setWidth(40);
+    obj.edit97:setFontSize(18);
+    obj.edit97:setHorzTextAlign("center");
+    obj.edit97:setFontColor("#D5D5D5");
+    obj.edit97:setTransparent(true);
+    obj.edit97:setField("qtdMagia06");
+    obj.edit97:setHitTest(true);
+    obj.edit97:setCursor("handPoint");
+    obj.edit97:setHint("Quantidade");
+    obj.edit97:setName("edit97");
 
     obj.label124 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label124:setParent(obj.rectangle297);
-    obj.label124:setLeft(70);
-    obj.label124:setTop(1169);
+    obj.label124:setParent(obj.rectangle260);
+    obj.label124:setLeft(734);
+    obj.label124:setTop(1062);
     obj.label124:setWidth(280);
     obj.label124:setFontSize(18);
-    obj.label124:setText("Tradição:");
+    obj.label124:setText("/");
     obj.label124:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label124, "fontStyle", "bold");
     obj.label124:setName("label124");
 
-    obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit115:setParent(obj.rectangle297);
-    obj.edit115:setLeft(150);
-    obj.edit115:setTop(1163);
-    obj.edit115:setWidth(260);
-    obj.edit115:setFontSize(18);
-    obj.edit115:setFontColor("#49244F");
-    obj.edit115:setTransparent(true);
-    obj.edit115:setField("tradicaoMagia07");
-    obj.edit115:setName("edit115");
+    obj.rectangle320 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle320:setParent(obj.rectangle260);
+    obj.rectangle320:setLeft(748);
+    obj.rectangle320:setTop(1056);
+    obj.rectangle320:setWidth(29);
+    obj.rectangle320:setHeight(29);
+    obj.rectangle320:setColor("#49244F");
+    obj.rectangle320:setCornerType("round");
+    obj.rectangle320:setXradius(15);
+    obj.rectangle320:setYradius(15);
+    obj.rectangle320:setName("rectangle320");
 
-    obj.rectangle361 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle361:setParent(obj.rectangle297);
-    obj.rectangle361:setLeft(60);
-    obj.rectangle361:setTop(1231);
-    obj.rectangle361:setWidth(350);
-    obj.rectangle361:setHeight(1);
-    obj.rectangle361:setColor("#49244F");
-    obj.rectangle361:setName("rectangle361");
+    obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit98:setParent(obj.rectangle260);
+    obj.edit98:setLeft(743);
+    obj.edit98:setTop(1055);
+    obj.edit98:setWidth(40);
+    obj.edit98:setFontSize(18);
+    obj.edit98:setHorzTextAlign("center");
+    obj.edit98:setFontColor("#D5D5D5");
+    obj.edit98:setTransparent(true);
+    obj.edit98:setField("maxMagia06");
+    obj.edit98:setHitTest(true);
+    obj.edit98:setCursor("handPoint");
+    obj.edit98:setHint("Total");
+    obj.edit98:setName("edit98");
+
+    obj.rectangle321 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle321:setParent(obj.rectangle260);
+    obj.rectangle321:setLeft(60);
+    obj.rectangle321:setTop(1115);
+    obj.rectangle321:setWidth(350);
+    obj.rectangle321:setHeight(318);
+    obj.rectangle321:setColor("#D5D5D5");
+    obj.rectangle321:setStrokeColor("#49244F");
+    obj.rectangle321:setStrokeSize(3);
+    obj.rectangle321:setName("rectangle321");
+
+    obj.rectangle322 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle322:setParent(obj.rectangle260);
+    obj.rectangle322:setLeft(60);
+    obj.rectangle322:setTop(1115);
+    obj.rectangle322:setWidth(350);
+    obj.rectangle322:setHeight(50);
+    obj.rectangle322:setColor("#49244F");
+    obj.rectangle322:setName("rectangle322");
+
+    obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit99:setParent(obj.rectangle260);
+    obj.edit99:setLeft(65);
+    obj.edit99:setTop(1123);
+    obj.edit99:setWidth(340);
+    obj.edit99:setFontSize(18);
+    obj.edit99:setHeight(30);
+    obj.edit99:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit99, "fontStyle", "bold");
+    obj.edit99:setTransparent(true);
+    obj.edit99:setField("Magia07");
+    obj.edit99:setName("edit99");
+
+    obj.rectangle323 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle323:setParent(obj.rectangle260);
+    obj.rectangle323:setLeft(60);
+    obj.rectangle323:setTop(1196);
+    obj.rectangle323:setWidth(350);
+    obj.rectangle323:setHeight(1);
+    obj.rectangle323:setColor("#49244F");
+    obj.rectangle323:setName("rectangle323");
 
     obj.label125 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label125:setParent(obj.rectangle297);
+    obj.label125:setParent(obj.rectangle260);
     obj.label125:setLeft(70);
-    obj.label125:setTop(1204);
+    obj.label125:setTop(1169);
     obj.label125:setWidth(280);
     obj.label125:setFontSize(18);
-    obj.label125:setText("Alvo:");
+    obj.label125:setText("Tradição:");
     obj.label125:setFontColor("#49244F");
     lfm_setPropAsString(obj.label125, "fontStyle", "bold");
     obj.label125:setName("label125");
 
-    obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit116:setParent(obj.rectangle297);
-    obj.edit116:setLeft(115);
-    obj.edit116:setTop(1198);
-    obj.edit116:setWidth(295);
-    obj.edit116:setFontSize(18);
-    obj.edit116:setFontColor("#49244F");
-    obj.edit116:setTransparent(true);
-    obj.edit116:setField("alvoMagia07");
-    obj.edit116:setName("edit116");
+    obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit100:setParent(obj.rectangle260);
+    obj.edit100:setLeft(150);
+    obj.edit100:setTop(1163);
+    obj.edit100:setWidth(260);
+    obj.edit100:setFontSize(18);
+    obj.edit100:setFontColor("#49244F");
+    obj.edit100:setTransparent(true);
+    obj.edit100:setField("tradicaoMagia07");
+    obj.edit100:setName("edit100");
 
-    obj.rectangle362 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle362:setParent(obj.rectangle297);
-    obj.rectangle362:setLeft(60);
-    obj.rectangle362:setTop(1266);
-    obj.rectangle362:setWidth(350);
-    obj.rectangle362:setHeight(3);
-    obj.rectangle362:setColor("#49244F");
-    obj.rectangle362:setName("rectangle362");
+    obj.rectangle324 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle324:setParent(obj.rectangle260);
+    obj.rectangle324:setLeft(60);
+    obj.rectangle324:setTop(1231);
+    obj.rectangle324:setWidth(350);
+    obj.rectangle324:setHeight(1);
+    obj.rectangle324:setColor("#49244F");
+    obj.rectangle324:setName("rectangle324");
 
     obj.label126 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label126:setParent(obj.rectangle297);
+    obj.label126:setParent(obj.rectangle260);
     obj.label126:setLeft(70);
-    obj.label126:setTop(1239);
+    obj.label126:setTop(1204);
     obj.label126:setWidth(280);
     obj.label126:setFontSize(18);
-    obj.label126:setText("Duração:");
+    obj.label126:setText("Alvo:");
     obj.label126:setFontColor("#49244F");
     lfm_setPropAsString(obj.label126, "fontStyle", "bold");
     obj.label126:setName("label126");
 
-    obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit117:setParent(obj.rectangle297);
-    obj.edit117:setLeft(150);
-    obj.edit117:setTop(1233);
-    obj.edit117:setWidth(260);
-    obj.edit117:setFontSize(18);
-    obj.edit117:setFontColor("#49244F");
-    obj.edit117:setTransparent(true);
-    obj.edit117:setField("duracaoMagia07");
-    obj.edit117:setName("edit117");
+    obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit101:setParent(obj.rectangle260);
+    obj.edit101:setLeft(115);
+    obj.edit101:setTop(1198);
+    obj.edit101:setWidth(295);
+    obj.edit101:setFontSize(18);
+    obj.edit101:setFontColor("#49244F");
+    obj.edit101:setTransparent(true);
+    obj.edit101:setField("alvoMagia07");
+    obj.edit101:setName("edit101");
 
-    obj.rectangle363 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle363:setParent(obj.rectangle297);
-    obj.rectangle363:setLeft(60);
-    obj.rectangle363:setTop(1266);
-    obj.rectangle363:setWidth(350);
-    obj.rectangle363:setHeight(125);
-    obj.rectangle363:setColor("#49244F");
-    obj.rectangle363:setName("rectangle363");
-
-    obj.textEditor23 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor23:setParent(obj.rectangle297);
-    obj.textEditor23:setLeft(65);
-    obj.textEditor23:setTop(1271);
-    obj.textEditor23:setWidth(340);
-    obj.textEditor23:setHeight(115);
-    obj.textEditor23:setFontColor("#D5D5D5");
-    obj.textEditor23:setTransparent(true);
-    obj.textEditor23:setField("descricaoMagia07");
-    obj.textEditor23:setFontSize(18);
-    obj.textEditor23:setName("textEditor23");
-
-    obj.rectangle364 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle364:setParent(obj.rectangle297);
-    obj.rectangle364:setLeft(60);
-    obj.rectangle364:setTop(1391);
-    obj.rectangle364:setWidth(350);
-    obj.rectangle364:setHeight(3);
-    obj.rectangle364:setColor("#49244F");
-    obj.rectangle364:setName("rectangle364");
-
-    obj.rectangle365 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle365:setParent(obj.rectangle297);
-    obj.rectangle365:setLeft(64);
-    obj.rectangle365:setTop(1398);
-    obj.rectangle365:setWidth(135);
-    obj.rectangle365:setHeight(29);
-    obj.rectangle365:setColor("#49244F");
-    obj.rectangle365:setHitTest(true);
-    obj.rectangle365:setCursor("handPoint");
-    obj.rectangle365:setName("rectangle365");
+    obj.rectangle325 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle325:setParent(obj.rectangle260);
+    obj.rectangle325:setLeft(60);
+    obj.rectangle325:setTop(1266);
+    obj.rectangle325:setWidth(350);
+    obj.rectangle325:setHeight(3);
+    obj.rectangle325:setColor("#49244F");
+    obj.rectangle325:setName("rectangle325");
 
     obj.label127 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label127:setParent(obj.rectangle297);
+    obj.label127:setParent(obj.rectangle260);
     obj.label127:setLeft(70);
-    obj.label127:setTop(1402);
+    obj.label127:setTop(1239);
     obj.label127:setWidth(280);
     obj.label127:setFontSize(18);
-    obj.label127:setText("Conjurar Feitiço");
-    obj.label127:setFontColor("#D5D5D5");
+    obj.label127:setText("Duração:");
+    obj.label127:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label127, "fontStyle", "bold");
     obj.label127:setName("label127");
 
-    obj.rectangle366 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle366:setParent(obj.rectangle297);
-    obj.rectangle366:setLeft(324);
-    obj.rectangle366:setTop(1398);
-    obj.rectangle366:setWidth(29);
-    obj.rectangle366:setHeight(29);
-    obj.rectangle366:setColor("#49244F");
-    obj.rectangle366:setCornerType("round");
-    obj.rectangle366:setXradius(15);
-    obj.rectangle366:setYradius(15);
-    obj.rectangle366:setName("rectangle366");
+    obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit102:setParent(obj.rectangle260);
+    obj.edit102:setLeft(150);
+    obj.edit102:setTop(1233);
+    obj.edit102:setWidth(260);
+    obj.edit102:setFontSize(18);
+    obj.edit102:setFontColor("#49244F");
+    obj.edit102:setTransparent(true);
+    obj.edit102:setField("duracaoMagia07");
+    obj.edit102:setName("edit102");
 
-    obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit118:setParent(obj.rectangle297);
-    obj.edit118:setLeft(318);
-    obj.edit118:setTop(1395);
-    obj.edit118:setWidth(40);
-    obj.edit118:setFontSize(18);
-    obj.edit118:setHorzTextAlign("center");
-    obj.edit118:setFontColor("#D5D5D5");
-    obj.edit118:setTransparent(true);
-    obj.edit118:setField("qtdMagia07");
-    obj.edit118:setHitTest(true);
-    obj.edit118:setCursor("handPoint");
-    obj.edit118:setHint("Quantidade");
-    obj.edit118:setName("edit118");
+    obj.rectangle326 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle326:setParent(obj.rectangle260);
+    obj.rectangle326:setLeft(60);
+    obj.rectangle326:setTop(1266);
+    obj.rectangle326:setWidth(350);
+    obj.rectangle326:setHeight(125);
+    obj.rectangle326:setColor("#49244F");
+    obj.rectangle326:setName("rectangle326");
+
+    obj.textEditor8 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor8:setParent(obj.rectangle260);
+    obj.textEditor8:setLeft(65);
+    obj.textEditor8:setTop(1271);
+    obj.textEditor8:setWidth(340);
+    obj.textEditor8:setHeight(115);
+    obj.textEditor8:setFontColor("#D5D5D5");
+    obj.textEditor8:setTransparent(true);
+    obj.textEditor8:setField("descricaoMagia07");
+    obj.textEditor8:setFontSize(18);
+    obj.textEditor8:setName("textEditor8");
+
+    obj.rectangle327 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle327:setParent(obj.rectangle260);
+    obj.rectangle327:setLeft(60);
+    obj.rectangle327:setTop(1391);
+    obj.rectangle327:setWidth(350);
+    obj.rectangle327:setHeight(3);
+    obj.rectangle327:setColor("#49244F");
+    obj.rectangle327:setName("rectangle327");
+
+    obj.rectangle328 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle328:setParent(obj.rectangle260);
+    obj.rectangle328:setLeft(64);
+    obj.rectangle328:setTop(1398);
+    obj.rectangle328:setWidth(135);
+    obj.rectangle328:setHeight(29);
+    obj.rectangle328:setColor("#49244F");
+    obj.rectangle328:setHitTest(true);
+    obj.rectangle328:setCursor("handPoint");
+    obj.rectangle328:setName("rectangle328");
 
     obj.label128 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label128:setParent(obj.rectangle297);
-    obj.label128:setLeft(360);
+    obj.label128:setParent(obj.rectangle260);
+    obj.label128:setLeft(70);
     obj.label128:setTop(1402);
     obj.label128:setWidth(280);
     obj.label128:setFontSize(18);
-    obj.label128:setText("/");
-    obj.label128:setFontColor("#49244F");
+    obj.label128:setText("Conjurar Feitiço");
+    obj.label128:setFontColor("#D5D5D5");
     obj.label128:setName("label128");
 
-    obj.rectangle367 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle367:setParent(obj.rectangle297);
-    obj.rectangle367:setLeft(374);
-    obj.rectangle367:setTop(1396);
-    obj.rectangle367:setWidth(29);
-    obj.rectangle367:setHeight(29);
-    obj.rectangle367:setColor("#49244F");
-    obj.rectangle367:setCornerType("round");
-    obj.rectangle367:setXradius(15);
-    obj.rectangle367:setYradius(15);
-    obj.rectangle367:setName("rectangle367");
+    obj.rectangle329 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle329:setParent(obj.rectangle260);
+    obj.rectangle329:setLeft(324);
+    obj.rectangle329:setTop(1398);
+    obj.rectangle329:setWidth(29);
+    obj.rectangle329:setHeight(29);
+    obj.rectangle329:setColor("#49244F");
+    obj.rectangle329:setCornerType("round");
+    obj.rectangle329:setXradius(15);
+    obj.rectangle329:setYradius(15);
+    obj.rectangle329:setName("rectangle329");
 
-    obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit119:setParent(obj.rectangle297);
-    obj.edit119:setLeft(368);
-    obj.edit119:setTop(1395);
-    obj.edit119:setWidth(40);
-    obj.edit119:setFontSize(18);
-    obj.edit119:setHorzTextAlign("center");
-    obj.edit119:setFontColor("#D5D5D5");
-    obj.edit119:setTransparent(true);
-    obj.edit119:setField("maxMagia07");
-    obj.edit119:setHitTest(true);
-    obj.edit119:setCursor("handPoint");
-    obj.edit119:setHint("Total");
-    obj.edit119:setName("edit119");
-
-    obj.rectangle368 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle368:setParent(obj.rectangle297);
-    obj.rectangle368:setLeft(434);
-    obj.rectangle368:setTop(1115);
-    obj.rectangle368:setWidth(350);
-    obj.rectangle368:setHeight(318);
-    obj.rectangle368:setColor("#D5D5D5");
-    obj.rectangle368:setStrokeColor("#49244F");
-    obj.rectangle368:setStrokeSize(3);
-    obj.rectangle368:setName("rectangle368");
-
-    obj.rectangle369 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle369:setParent(obj.rectangle297);
-    obj.rectangle369:setLeft(434);
-    obj.rectangle369:setTop(1115);
-    obj.rectangle369:setWidth(350);
-    obj.rectangle369:setHeight(50);
-    obj.rectangle369:setColor("#49244F");
-    obj.rectangle369:setName("rectangle369");
-
-    obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit120:setParent(obj.rectangle297);
-    obj.edit120:setLeft(439);
-    obj.edit120:setTop(1123);
-    obj.edit120:setWidth(340);
-    obj.edit120:setFontSize(18);
-    obj.edit120:setHeight(30);
-    obj.edit120:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit120, "fontStyle", "bold");
-    obj.edit120:setTransparent(true);
-    obj.edit120:setField("Magia08");
-    obj.edit120:setName("edit120");
-
-    obj.rectangle370 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle370:setParent(obj.rectangle297);
-    obj.rectangle370:setLeft(434);
-    obj.rectangle370:setTop(1196);
-    obj.rectangle370:setWidth(350);
-    obj.rectangle370:setHeight(1);
-    obj.rectangle370:setColor("#49244F");
-    obj.rectangle370:setName("rectangle370");
+    obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit103:setParent(obj.rectangle260);
+    obj.edit103:setLeft(318);
+    obj.edit103:setTop(1395);
+    obj.edit103:setWidth(40);
+    obj.edit103:setFontSize(18);
+    obj.edit103:setHorzTextAlign("center");
+    obj.edit103:setFontColor("#D5D5D5");
+    obj.edit103:setTransparent(true);
+    obj.edit103:setField("qtdMagia07");
+    obj.edit103:setHitTest(true);
+    obj.edit103:setCursor("handPoint");
+    obj.edit103:setHint("Quantidade");
+    obj.edit103:setName("edit103");
 
     obj.label129 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label129:setParent(obj.rectangle297);
-    obj.label129:setLeft(444);
-    obj.label129:setTop(1169);
+    obj.label129:setParent(obj.rectangle260);
+    obj.label129:setLeft(360);
+    obj.label129:setTop(1402);
     obj.label129:setWidth(280);
     obj.label129:setFontSize(18);
-    obj.label129:setText("Tradição:");
+    obj.label129:setText("/");
     obj.label129:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label129, "fontStyle", "bold");
     obj.label129:setName("label129");
 
-    obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit121:setParent(obj.rectangle297);
-    obj.edit121:setLeft(524);
-    obj.edit121:setTop(1163);
-    obj.edit121:setWidth(260);
-    obj.edit121:setFontSize(18);
-    obj.edit121:setFontColor("#49244F");
-    obj.edit121:setTransparent(true);
-    obj.edit121:setField("tradicaoMagia08");
-    obj.edit121:setName("edit121");
+    obj.rectangle330 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle330:setParent(obj.rectangle260);
+    obj.rectangle330:setLeft(374);
+    obj.rectangle330:setTop(1396);
+    obj.rectangle330:setWidth(29);
+    obj.rectangle330:setHeight(29);
+    obj.rectangle330:setColor("#49244F");
+    obj.rectangle330:setCornerType("round");
+    obj.rectangle330:setXradius(15);
+    obj.rectangle330:setYradius(15);
+    obj.rectangle330:setName("rectangle330");
 
-    obj.rectangle371 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle371:setParent(obj.rectangle297);
-    obj.rectangle371:setLeft(434);
-    obj.rectangle371:setTop(1231);
-    obj.rectangle371:setWidth(350);
-    obj.rectangle371:setHeight(1);
-    obj.rectangle371:setColor("#49244F");
-    obj.rectangle371:setName("rectangle371");
+    obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit104:setParent(obj.rectangle260);
+    obj.edit104:setLeft(368);
+    obj.edit104:setTop(1395);
+    obj.edit104:setWidth(40);
+    obj.edit104:setFontSize(18);
+    obj.edit104:setHorzTextAlign("center");
+    obj.edit104:setFontColor("#D5D5D5");
+    obj.edit104:setTransparent(true);
+    obj.edit104:setField("maxMagia07");
+    obj.edit104:setHitTest(true);
+    obj.edit104:setCursor("handPoint");
+    obj.edit104:setHint("Total");
+    obj.edit104:setName("edit104");
+
+    obj.rectangle331 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle331:setParent(obj.rectangle260);
+    obj.rectangle331:setLeft(434);
+    obj.rectangle331:setTop(1115);
+    obj.rectangle331:setWidth(350);
+    obj.rectangle331:setHeight(318);
+    obj.rectangle331:setColor("#D5D5D5");
+    obj.rectangle331:setStrokeColor("#49244F");
+    obj.rectangle331:setStrokeSize(3);
+    obj.rectangle331:setName("rectangle331");
+
+    obj.rectangle332 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle332:setParent(obj.rectangle260);
+    obj.rectangle332:setLeft(434);
+    obj.rectangle332:setTop(1115);
+    obj.rectangle332:setWidth(350);
+    obj.rectangle332:setHeight(50);
+    obj.rectangle332:setColor("#49244F");
+    obj.rectangle332:setName("rectangle332");
+
+    obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit105:setParent(obj.rectangle260);
+    obj.edit105:setLeft(439);
+    obj.edit105:setTop(1123);
+    obj.edit105:setWidth(340);
+    obj.edit105:setFontSize(18);
+    obj.edit105:setHeight(30);
+    obj.edit105:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit105, "fontStyle", "bold");
+    obj.edit105:setTransparent(true);
+    obj.edit105:setField("Magia08");
+    obj.edit105:setName("edit105");
+
+    obj.rectangle333 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle333:setParent(obj.rectangle260);
+    obj.rectangle333:setLeft(434);
+    obj.rectangle333:setTop(1196);
+    obj.rectangle333:setWidth(350);
+    obj.rectangle333:setHeight(1);
+    obj.rectangle333:setColor("#49244F");
+    obj.rectangle333:setName("rectangle333");
 
     obj.label130 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label130:setParent(obj.rectangle297);
+    obj.label130:setParent(obj.rectangle260);
     obj.label130:setLeft(444);
-    obj.label130:setTop(1204);
+    obj.label130:setTop(1169);
     obj.label130:setWidth(280);
     obj.label130:setFontSize(18);
-    obj.label130:setText("Alvo:");
+    obj.label130:setText("Tradição:");
     obj.label130:setFontColor("#49244F");
     lfm_setPropAsString(obj.label130, "fontStyle", "bold");
     obj.label130:setName("label130");
 
-    obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit122:setParent(obj.rectangle297);
-    obj.edit122:setLeft(489);
-    obj.edit122:setTop(1198);
-    obj.edit122:setWidth(295);
-    obj.edit122:setFontSize(18);
-    obj.edit122:setFontColor("#49244F");
-    obj.edit122:setTransparent(true);
-    obj.edit122:setField("alvoMagia08");
-    obj.edit122:setName("edit122");
+    obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit106:setParent(obj.rectangle260);
+    obj.edit106:setLeft(524);
+    obj.edit106:setTop(1163);
+    obj.edit106:setWidth(260);
+    obj.edit106:setFontSize(18);
+    obj.edit106:setFontColor("#49244F");
+    obj.edit106:setTransparent(true);
+    obj.edit106:setField("tradicaoMagia08");
+    obj.edit106:setName("edit106");
 
-    obj.rectangle372 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle372:setParent(obj.rectangle297);
-    obj.rectangle372:setLeft(434);
-    obj.rectangle372:setTop(1266);
-    obj.rectangle372:setWidth(350);
-    obj.rectangle372:setHeight(3);
-    obj.rectangle372:setColor("#49244F");
-    obj.rectangle372:setName("rectangle372");
+    obj.rectangle334 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle334:setParent(obj.rectangle260);
+    obj.rectangle334:setLeft(434);
+    obj.rectangle334:setTop(1231);
+    obj.rectangle334:setWidth(350);
+    obj.rectangle334:setHeight(1);
+    obj.rectangle334:setColor("#49244F");
+    obj.rectangle334:setName("rectangle334");
 
     obj.label131 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label131:setParent(obj.rectangle297);
+    obj.label131:setParent(obj.rectangle260);
     obj.label131:setLeft(444);
-    obj.label131:setTop(1239);
+    obj.label131:setTop(1204);
     obj.label131:setWidth(280);
     obj.label131:setFontSize(18);
-    obj.label131:setText("Duração:");
+    obj.label131:setText("Alvo:");
     obj.label131:setFontColor("#49244F");
     lfm_setPropAsString(obj.label131, "fontStyle", "bold");
     obj.label131:setName("label131");
 
-    obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit123:setParent(obj.rectangle297);
-    obj.edit123:setLeft(524);
-    obj.edit123:setTop(1233);
-    obj.edit123:setWidth(260);
-    obj.edit123:setFontSize(18);
-    obj.edit123:setFontColor("#49244F");
-    obj.edit123:setTransparent(true);
-    obj.edit123:setField("duracaoMagia08");
-    obj.edit123:setName("edit123");
+    obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit107:setParent(obj.rectangle260);
+    obj.edit107:setLeft(489);
+    obj.edit107:setTop(1198);
+    obj.edit107:setWidth(295);
+    obj.edit107:setFontSize(18);
+    obj.edit107:setFontColor("#49244F");
+    obj.edit107:setTransparent(true);
+    obj.edit107:setField("alvoMagia08");
+    obj.edit107:setName("edit107");
 
-    obj.rectangle373 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle373:setParent(obj.rectangle297);
-    obj.rectangle373:setLeft(434);
-    obj.rectangle373:setTop(1266);
-    obj.rectangle373:setWidth(350);
-    obj.rectangle373:setHeight(125);
-    obj.rectangle373:setColor("#49244F");
-    obj.rectangle373:setName("rectangle373");
-
-    obj.textEditor24 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor24:setParent(obj.rectangle297);
-    obj.textEditor24:setLeft(439);
-    obj.textEditor24:setTop(1271);
-    obj.textEditor24:setWidth(340);
-    obj.textEditor24:setHeight(115);
-    obj.textEditor24:setFontColor("#D5D5D5");
-    obj.textEditor24:setTransparent(true);
-    obj.textEditor24:setField("descricaoMagia08");
-    obj.textEditor24:setFontSize(18);
-    obj.textEditor24:setName("textEditor24");
-
-    obj.rectangle374 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle374:setParent(obj.rectangle297);
-    obj.rectangle374:setLeft(434);
-    obj.rectangle374:setTop(1391);
-    obj.rectangle374:setWidth(350);
-    obj.rectangle374:setHeight(3);
-    obj.rectangle374:setColor("#49244F");
-    obj.rectangle374:setName("rectangle374");
-
-    obj.rectangle375 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle375:setParent(obj.rectangle297);
-    obj.rectangle375:setLeft(438);
-    obj.rectangle375:setTop(1398);
-    obj.rectangle375:setWidth(135);
-    obj.rectangle375:setHeight(29);
-    obj.rectangle375:setColor("#49244F");
-    obj.rectangle375:setHitTest(true);
-    obj.rectangle375:setCursor("handPoint");
-    obj.rectangle375:setName("rectangle375");
+    obj.rectangle335 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle335:setParent(obj.rectangle260);
+    obj.rectangle335:setLeft(434);
+    obj.rectangle335:setTop(1266);
+    obj.rectangle335:setWidth(350);
+    obj.rectangle335:setHeight(3);
+    obj.rectangle335:setColor("#49244F");
+    obj.rectangle335:setName("rectangle335");
 
     obj.label132 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label132:setParent(obj.rectangle297);
+    obj.label132:setParent(obj.rectangle260);
     obj.label132:setLeft(444);
-    obj.label132:setTop(1402);
+    obj.label132:setTop(1239);
     obj.label132:setWidth(280);
     obj.label132:setFontSize(18);
-    obj.label132:setText("Conjurar Feitiço");
-    obj.label132:setFontColor("#D5D5D5");
+    obj.label132:setText("Duração:");
+    obj.label132:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label132, "fontStyle", "bold");
     obj.label132:setName("label132");
 
-    obj.rectangle376 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle376:setParent(obj.rectangle297);
-    obj.rectangle376:setLeft(698);
-    obj.rectangle376:setTop(1398);
-    obj.rectangle376:setWidth(29);
-    obj.rectangle376:setHeight(29);
-    obj.rectangle376:setColor("#49244F");
-    obj.rectangle376:setCornerType("round");
-    obj.rectangle376:setXradius(15);
-    obj.rectangle376:setYradius(15);
-    obj.rectangle376:setName("rectangle376");
+    obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit108:setParent(obj.rectangle260);
+    obj.edit108:setLeft(524);
+    obj.edit108:setTop(1233);
+    obj.edit108:setWidth(260);
+    obj.edit108:setFontSize(18);
+    obj.edit108:setFontColor("#49244F");
+    obj.edit108:setTransparent(true);
+    obj.edit108:setField("duracaoMagia08");
+    obj.edit108:setName("edit108");
 
-    obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit124:setParent(obj.rectangle297);
-    obj.edit124:setLeft(692);
-    obj.edit124:setTop(1395);
-    obj.edit124:setWidth(40);
-    obj.edit124:setFontSize(18);
-    obj.edit124:setHorzTextAlign("center");
-    obj.edit124:setFontColor("#D5D5D5");
-    obj.edit124:setTransparent(true);
-    obj.edit124:setField("qtdMagia08");
-    obj.edit124:setHitTest(true);
-    obj.edit124:setCursor("handPoint");
-    obj.edit124:setHint("Quantidade");
-    obj.edit124:setName("edit124");
+    obj.rectangle336 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle336:setParent(obj.rectangle260);
+    obj.rectangle336:setLeft(434);
+    obj.rectangle336:setTop(1266);
+    obj.rectangle336:setWidth(350);
+    obj.rectangle336:setHeight(125);
+    obj.rectangle336:setColor("#49244F");
+    obj.rectangle336:setName("rectangle336");
+
+    obj.textEditor9 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor9:setParent(obj.rectangle260);
+    obj.textEditor9:setLeft(439);
+    obj.textEditor9:setTop(1271);
+    obj.textEditor9:setWidth(340);
+    obj.textEditor9:setHeight(115);
+    obj.textEditor9:setFontColor("#D5D5D5");
+    obj.textEditor9:setTransparent(true);
+    obj.textEditor9:setField("descricaoMagia08");
+    obj.textEditor9:setFontSize(18);
+    obj.textEditor9:setName("textEditor9");
+
+    obj.rectangle337 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle337:setParent(obj.rectangle260);
+    obj.rectangle337:setLeft(434);
+    obj.rectangle337:setTop(1391);
+    obj.rectangle337:setWidth(350);
+    obj.rectangle337:setHeight(3);
+    obj.rectangle337:setColor("#49244F");
+    obj.rectangle337:setName("rectangle337");
+
+    obj.rectangle338 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle338:setParent(obj.rectangle260);
+    obj.rectangle338:setLeft(438);
+    obj.rectangle338:setTop(1398);
+    obj.rectangle338:setWidth(135);
+    obj.rectangle338:setHeight(29);
+    obj.rectangle338:setColor("#49244F");
+    obj.rectangle338:setHitTest(true);
+    obj.rectangle338:setCursor("handPoint");
+    obj.rectangle338:setName("rectangle338");
 
     obj.label133 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label133:setParent(obj.rectangle297);
-    obj.label133:setLeft(734);
+    obj.label133:setParent(obj.rectangle260);
+    obj.label133:setLeft(444);
     obj.label133:setTop(1402);
     obj.label133:setWidth(280);
     obj.label133:setFontSize(18);
-    obj.label133:setText("/");
-    obj.label133:setFontColor("#49244F");
+    obj.label133:setText("Conjurar Feitiço");
+    obj.label133:setFontColor("#D5D5D5");
     obj.label133:setName("label133");
 
-    obj.rectangle377 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle377:setParent(obj.rectangle297);
-    obj.rectangle377:setLeft(748);
-    obj.rectangle377:setTop(1396);
-    obj.rectangle377:setWidth(29);
-    obj.rectangle377:setHeight(29);
-    obj.rectangle377:setColor("#49244F");
-    obj.rectangle377:setCornerType("round");
-    obj.rectangle377:setXradius(15);
-    obj.rectangle377:setYradius(15);
-    obj.rectangle377:setName("rectangle377");
+    obj.rectangle339 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle339:setParent(obj.rectangle260);
+    obj.rectangle339:setLeft(698);
+    obj.rectangle339:setTop(1398);
+    obj.rectangle339:setWidth(29);
+    obj.rectangle339:setHeight(29);
+    obj.rectangle339:setColor("#49244F");
+    obj.rectangle339:setCornerType("round");
+    obj.rectangle339:setXradius(15);
+    obj.rectangle339:setYradius(15);
+    obj.rectangle339:setName("rectangle339");
 
-    obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit125:setParent(obj.rectangle297);
-    obj.edit125:setLeft(743);
-    obj.edit125:setTop(1395);
-    obj.edit125:setWidth(40);
-    obj.edit125:setFontSize(18);
-    obj.edit125:setHorzTextAlign("center");
-    obj.edit125:setFontColor("#D5D5D5");
-    obj.edit125:setTransparent(true);
-    obj.edit125:setField("maxMagia08");
-    obj.edit125:setHitTest(true);
-    obj.edit125:setCursor("handPoint");
-    obj.edit125:setHint("Total");
-    obj.edit125:setName("edit125");
-
-    obj.rectangle378 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle378:setParent(obj.rectangle297);
-    obj.rectangle378:setLeft(60);
-    obj.rectangle378:setTop(1455);
-    obj.rectangle378:setWidth(350);
-    obj.rectangle378:setHeight(318);
-    obj.rectangle378:setColor("#D5D5D5");
-    obj.rectangle378:setStrokeColor("#49244F");
-    obj.rectangle378:setStrokeSize(3);
-    obj.rectangle378:setName("rectangle378");
-
-    obj.rectangle379 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle379:setParent(obj.rectangle297);
-    obj.rectangle379:setLeft(60);
-    obj.rectangle379:setTop(1455);
-    obj.rectangle379:setWidth(350);
-    obj.rectangle379:setHeight(50);
-    obj.rectangle379:setColor("#49244F");
-    obj.rectangle379:setName("rectangle379");
-
-    obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit126:setParent(obj.rectangle297);
-    obj.edit126:setLeft(65);
-    obj.edit126:setTop(1463);
-    obj.edit126:setWidth(340);
-    obj.edit126:setFontSize(18);
-    obj.edit126:setHeight(30);
-    obj.edit126:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit126, "fontStyle", "bold");
-    obj.edit126:setTransparent(true);
-    obj.edit126:setField("Magia09");
-    obj.edit126:setName("edit126");
-
-    obj.rectangle380 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle380:setParent(obj.rectangle297);
-    obj.rectangle380:setLeft(60);
-    obj.rectangle380:setTop(1536);
-    obj.rectangle380:setWidth(350);
-    obj.rectangle380:setHeight(1);
-    obj.rectangle380:setColor("#49244F");
-    obj.rectangle380:setName("rectangle380");
+    obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit109:setParent(obj.rectangle260);
+    obj.edit109:setLeft(692);
+    obj.edit109:setTop(1395);
+    obj.edit109:setWidth(40);
+    obj.edit109:setFontSize(18);
+    obj.edit109:setHorzTextAlign("center");
+    obj.edit109:setFontColor("#D5D5D5");
+    obj.edit109:setTransparent(true);
+    obj.edit109:setField("qtdMagia08");
+    obj.edit109:setHitTest(true);
+    obj.edit109:setCursor("handPoint");
+    obj.edit109:setHint("Quantidade");
+    obj.edit109:setName("edit109");
 
     obj.label134 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label134:setParent(obj.rectangle297);
-    obj.label134:setLeft(70);
-    obj.label134:setTop(1509);
+    obj.label134:setParent(obj.rectangle260);
+    obj.label134:setLeft(734);
+    obj.label134:setTop(1402);
     obj.label134:setWidth(280);
     obj.label134:setFontSize(18);
-    obj.label134:setText("Tradição:");
+    obj.label134:setText("/");
     obj.label134:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label134, "fontStyle", "bold");
     obj.label134:setName("label134");
 
-    obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit127:setParent(obj.rectangle297);
-    obj.edit127:setLeft(150);
-    obj.edit127:setTop(1503);
-    obj.edit127:setWidth(260);
-    obj.edit127:setFontSize(18);
-    obj.edit127:setFontColor("#49244F");
-    obj.edit127:setTransparent(true);
-    obj.edit127:setField("tradicaoMagia09");
-    obj.edit127:setName("edit127");
+    obj.rectangle340 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle340:setParent(obj.rectangle260);
+    obj.rectangle340:setLeft(748);
+    obj.rectangle340:setTop(1396);
+    obj.rectangle340:setWidth(29);
+    obj.rectangle340:setHeight(29);
+    obj.rectangle340:setColor("#49244F");
+    obj.rectangle340:setCornerType("round");
+    obj.rectangle340:setXradius(15);
+    obj.rectangle340:setYradius(15);
+    obj.rectangle340:setName("rectangle340");
 
-    obj.rectangle381 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle381:setParent(obj.rectangle297);
-    obj.rectangle381:setLeft(60);
-    obj.rectangle381:setTop(1571);
-    obj.rectangle381:setWidth(350);
-    obj.rectangle381:setHeight(1);
-    obj.rectangle381:setColor("#49244F");
-    obj.rectangle381:setName("rectangle381");
+    obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit110:setParent(obj.rectangle260);
+    obj.edit110:setLeft(743);
+    obj.edit110:setTop(1395);
+    obj.edit110:setWidth(40);
+    obj.edit110:setFontSize(18);
+    obj.edit110:setHorzTextAlign("center");
+    obj.edit110:setFontColor("#D5D5D5");
+    obj.edit110:setTransparent(true);
+    obj.edit110:setField("maxMagia08");
+    obj.edit110:setHitTest(true);
+    obj.edit110:setCursor("handPoint");
+    obj.edit110:setHint("Total");
+    obj.edit110:setName("edit110");
+
+    obj.rectangle341 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle341:setParent(obj.rectangle260);
+    obj.rectangle341:setLeft(60);
+    obj.rectangle341:setTop(1455);
+    obj.rectangle341:setWidth(350);
+    obj.rectangle341:setHeight(318);
+    obj.rectangle341:setColor("#D5D5D5");
+    obj.rectangle341:setStrokeColor("#49244F");
+    obj.rectangle341:setStrokeSize(3);
+    obj.rectangle341:setName("rectangle341");
+
+    obj.rectangle342 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle342:setParent(obj.rectangle260);
+    obj.rectangle342:setLeft(60);
+    obj.rectangle342:setTop(1455);
+    obj.rectangle342:setWidth(350);
+    obj.rectangle342:setHeight(50);
+    obj.rectangle342:setColor("#49244F");
+    obj.rectangle342:setName("rectangle342");
+
+    obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit111:setParent(obj.rectangle260);
+    obj.edit111:setLeft(65);
+    obj.edit111:setTop(1463);
+    obj.edit111:setWidth(340);
+    obj.edit111:setFontSize(18);
+    obj.edit111:setHeight(30);
+    obj.edit111:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit111, "fontStyle", "bold");
+    obj.edit111:setTransparent(true);
+    obj.edit111:setField("Magia09");
+    obj.edit111:setName("edit111");
+
+    obj.rectangle343 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle343:setParent(obj.rectangle260);
+    obj.rectangle343:setLeft(60);
+    obj.rectangle343:setTop(1536);
+    obj.rectangle343:setWidth(350);
+    obj.rectangle343:setHeight(1);
+    obj.rectangle343:setColor("#49244F");
+    obj.rectangle343:setName("rectangle343");
 
     obj.label135 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label135:setParent(obj.rectangle297);
+    obj.label135:setParent(obj.rectangle260);
     obj.label135:setLeft(70);
-    obj.label135:setTop(1544);
+    obj.label135:setTop(1509);
     obj.label135:setWidth(280);
     obj.label135:setFontSize(18);
-    obj.label135:setText("Alvo:");
+    obj.label135:setText("Tradição:");
     obj.label135:setFontColor("#49244F");
     lfm_setPropAsString(obj.label135, "fontStyle", "bold");
     obj.label135:setName("label135");
 
-    obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit128:setParent(obj.rectangle297);
-    obj.edit128:setLeft(115);
-    obj.edit128:setTop(1538);
-    obj.edit128:setWidth(295);
-    obj.edit128:setFontSize(18);
-    obj.edit128:setFontColor("#49244F");
-    obj.edit128:setTransparent(true);
-    obj.edit128:setField("alvoMagia09");
-    obj.edit128:setName("edit128");
+    obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit112:setParent(obj.rectangle260);
+    obj.edit112:setLeft(150);
+    obj.edit112:setTop(1503);
+    obj.edit112:setWidth(260);
+    obj.edit112:setFontSize(18);
+    obj.edit112:setFontColor("#49244F");
+    obj.edit112:setTransparent(true);
+    obj.edit112:setField("tradicaoMagia09");
+    obj.edit112:setName("edit112");
 
-    obj.rectangle382 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle382:setParent(obj.rectangle297);
-    obj.rectangle382:setLeft(60);
-    obj.rectangle382:setTop(1606);
-    obj.rectangle382:setWidth(350);
-    obj.rectangle382:setHeight(3);
-    obj.rectangle382:setColor("#49244F");
-    obj.rectangle382:setName("rectangle382");
+    obj.rectangle344 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle344:setParent(obj.rectangle260);
+    obj.rectangle344:setLeft(60);
+    obj.rectangle344:setTop(1571);
+    obj.rectangle344:setWidth(350);
+    obj.rectangle344:setHeight(1);
+    obj.rectangle344:setColor("#49244F");
+    obj.rectangle344:setName("rectangle344");
 
     obj.label136 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label136:setParent(obj.rectangle297);
+    obj.label136:setParent(obj.rectangle260);
     obj.label136:setLeft(70);
-    obj.label136:setTop(1579);
+    obj.label136:setTop(1544);
     obj.label136:setWidth(280);
     obj.label136:setFontSize(18);
-    obj.label136:setText("Duração:");
+    obj.label136:setText("Alvo:");
     obj.label136:setFontColor("#49244F");
     lfm_setPropAsString(obj.label136, "fontStyle", "bold");
     obj.label136:setName("label136");
 
-    obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit129:setParent(obj.rectangle297);
-    obj.edit129:setLeft(150);
-    obj.edit129:setTop(1573);
-    obj.edit129:setWidth(260);
-    obj.edit129:setFontSize(18);
-    obj.edit129:setFontColor("#49244F");
-    obj.edit129:setTransparent(true);
-    obj.edit129:setField("duracaoMagia09");
-    obj.edit129:setName("edit129");
+    obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit113:setParent(obj.rectangle260);
+    obj.edit113:setLeft(115);
+    obj.edit113:setTop(1538);
+    obj.edit113:setWidth(295);
+    obj.edit113:setFontSize(18);
+    obj.edit113:setFontColor("#49244F");
+    obj.edit113:setTransparent(true);
+    obj.edit113:setField("alvoMagia09");
+    obj.edit113:setName("edit113");
 
-    obj.rectangle383 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle383:setParent(obj.rectangle297);
-    obj.rectangle383:setLeft(60);
-    obj.rectangle383:setTop(1606);
-    obj.rectangle383:setWidth(350);
-    obj.rectangle383:setHeight(125);
-    obj.rectangle383:setColor("#49244F");
-    obj.rectangle383:setName("rectangle383");
-
-    obj.textEditor25 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor25:setParent(obj.rectangle297);
-    obj.textEditor25:setLeft(65);
-    obj.textEditor25:setTop(1611);
-    obj.textEditor25:setWidth(340);
-    obj.textEditor25:setHeight(115);
-    obj.textEditor25:setFontColor("#D5D5D5");
-    obj.textEditor25:setTransparent(true);
-    obj.textEditor25:setField("descricaoMagia09");
-    obj.textEditor25:setFontSize(18);
-    obj.textEditor25:setName("textEditor25");
-
-    obj.rectangle384 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle384:setParent(obj.rectangle297);
-    obj.rectangle384:setLeft(60);
-    obj.rectangle384:setTop(1731);
-    obj.rectangle384:setWidth(350);
-    obj.rectangle384:setHeight(3);
-    obj.rectangle384:setColor("#49244F");
-    obj.rectangle384:setName("rectangle384");
-
-    obj.rectangle385 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle385:setParent(obj.rectangle297);
-    obj.rectangle385:setLeft(64);
-    obj.rectangle385:setTop(1738);
-    obj.rectangle385:setWidth(135);
-    obj.rectangle385:setHeight(29);
-    obj.rectangle385:setColor("#49244F");
-    obj.rectangle385:setHitTest(true);
-    obj.rectangle385:setCursor("handPoint");
-    obj.rectangle385:setName("rectangle385");
+    obj.rectangle345 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle345:setParent(obj.rectangle260);
+    obj.rectangle345:setLeft(60);
+    obj.rectangle345:setTop(1606);
+    obj.rectangle345:setWidth(350);
+    obj.rectangle345:setHeight(3);
+    obj.rectangle345:setColor("#49244F");
+    obj.rectangle345:setName("rectangle345");
 
     obj.label137 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label137:setParent(obj.rectangle297);
+    obj.label137:setParent(obj.rectangle260);
     obj.label137:setLeft(70);
-    obj.label137:setTop(1742);
+    obj.label137:setTop(1579);
     obj.label137:setWidth(280);
     obj.label137:setFontSize(18);
-    obj.label137:setText("Conjurar Feitiço");
-    obj.label137:setFontColor("#D5D5D5");
+    obj.label137:setText("Duração:");
+    obj.label137:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label137, "fontStyle", "bold");
     obj.label137:setName("label137");
 
-    obj.rectangle386 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle386:setParent(obj.rectangle297);
-    obj.rectangle386:setLeft(324);
-    obj.rectangle386:setTop(1738);
-    obj.rectangle386:setWidth(29);
-    obj.rectangle386:setHeight(29);
-    obj.rectangle386:setColor("#49244F");
-    obj.rectangle386:setCornerType("round");
-    obj.rectangle386:setXradius(15);
-    obj.rectangle386:setYradius(15);
-    obj.rectangle386:setName("rectangle386");
+    obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit114:setParent(obj.rectangle260);
+    obj.edit114:setLeft(150);
+    obj.edit114:setTop(1573);
+    obj.edit114:setWidth(260);
+    obj.edit114:setFontSize(18);
+    obj.edit114:setFontColor("#49244F");
+    obj.edit114:setTransparent(true);
+    obj.edit114:setField("duracaoMagia09");
+    obj.edit114:setName("edit114");
 
-    obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit130:setParent(obj.rectangle297);
-    obj.edit130:setLeft(318);
-    obj.edit130:setTop(1735);
-    obj.edit130:setWidth(40);
-    obj.edit130:setFontSize(18);
-    obj.edit130:setHorzTextAlign("center");
-    obj.edit130:setFontColor("#D5D5D5");
-    obj.edit130:setTransparent(true);
-    obj.edit130:setField("qtdMagia09");
-    obj.edit130:setHitTest(true);
-    obj.edit130:setCursor("handPoint");
-    obj.edit130:setHint("Quantidade");
-    obj.edit130:setName("edit130");
+    obj.rectangle346 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle346:setParent(obj.rectangle260);
+    obj.rectangle346:setLeft(60);
+    obj.rectangle346:setTop(1606);
+    obj.rectangle346:setWidth(350);
+    obj.rectangle346:setHeight(125);
+    obj.rectangle346:setColor("#49244F");
+    obj.rectangle346:setName("rectangle346");
+
+    obj.textEditor10 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor10:setParent(obj.rectangle260);
+    obj.textEditor10:setLeft(65);
+    obj.textEditor10:setTop(1611);
+    obj.textEditor10:setWidth(340);
+    obj.textEditor10:setHeight(115);
+    obj.textEditor10:setFontColor("#D5D5D5");
+    obj.textEditor10:setTransparent(true);
+    obj.textEditor10:setField("descricaoMagia09");
+    obj.textEditor10:setFontSize(18);
+    obj.textEditor10:setName("textEditor10");
+
+    obj.rectangle347 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle347:setParent(obj.rectangle260);
+    obj.rectangle347:setLeft(60);
+    obj.rectangle347:setTop(1731);
+    obj.rectangle347:setWidth(350);
+    obj.rectangle347:setHeight(3);
+    obj.rectangle347:setColor("#49244F");
+    obj.rectangle347:setName("rectangle347");
+
+    obj.rectangle348 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle348:setParent(obj.rectangle260);
+    obj.rectangle348:setLeft(64);
+    obj.rectangle348:setTop(1738);
+    obj.rectangle348:setWidth(135);
+    obj.rectangle348:setHeight(29);
+    obj.rectangle348:setColor("#49244F");
+    obj.rectangle348:setHitTest(true);
+    obj.rectangle348:setCursor("handPoint");
+    obj.rectangle348:setName("rectangle348");
 
     obj.label138 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label138:setParent(obj.rectangle297);
-    obj.label138:setLeft(360);
+    obj.label138:setParent(obj.rectangle260);
+    obj.label138:setLeft(70);
     obj.label138:setTop(1742);
     obj.label138:setWidth(280);
     obj.label138:setFontSize(18);
-    obj.label138:setText("/");
-    obj.label138:setFontColor("#49244F");
+    obj.label138:setText("Conjurar Feitiço");
+    obj.label138:setFontColor("#D5D5D5");
     obj.label138:setName("label138");
 
-    obj.rectangle387 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle387:setParent(obj.rectangle297);
-    obj.rectangle387:setLeft(374);
-    obj.rectangle387:setTop(1736);
-    obj.rectangle387:setWidth(29);
-    obj.rectangle387:setHeight(29);
-    obj.rectangle387:setColor("#49244F");
-    obj.rectangle387:setCornerType("round");
-    obj.rectangle387:setXradius(15);
-    obj.rectangle387:setYradius(15);
-    obj.rectangle387:setName("rectangle387");
+    obj.rectangle349 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle349:setParent(obj.rectangle260);
+    obj.rectangle349:setLeft(324);
+    obj.rectangle349:setTop(1738);
+    obj.rectangle349:setWidth(29);
+    obj.rectangle349:setHeight(29);
+    obj.rectangle349:setColor("#49244F");
+    obj.rectangle349:setCornerType("round");
+    obj.rectangle349:setXradius(15);
+    obj.rectangle349:setYradius(15);
+    obj.rectangle349:setName("rectangle349");
 
-    obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit131:setParent(obj.rectangle297);
-    obj.edit131:setLeft(368);
-    obj.edit131:setTop(1735);
-    obj.edit131:setWidth(40);
-    obj.edit131:setFontSize(18);
-    obj.edit131:setHorzTextAlign("center");
-    obj.edit131:setFontColor("#D5D5D5");
-    obj.edit131:setTransparent(true);
-    obj.edit131:setField("maxMagia09");
-    obj.edit131:setHitTest(true);
-    obj.edit131:setCursor("handPoint");
-    obj.edit131:setHint("Total");
-    obj.edit131:setName("edit131");
-
-    obj.rectangle388 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle388:setParent(obj.rectangle297);
-    obj.rectangle388:setLeft(434);
-    obj.rectangle388:setTop(1455);
-    obj.rectangle388:setWidth(350);
-    obj.rectangle388:setHeight(318);
-    obj.rectangle388:setColor("#D5D5D5");
-    obj.rectangle388:setStrokeColor("#49244F");
-    obj.rectangle388:setStrokeSize(3);
-    obj.rectangle388:setName("rectangle388");
-
-    obj.rectangle389 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle389:setParent(obj.rectangle297);
-    obj.rectangle389:setLeft(434);
-    obj.rectangle389:setTop(1455);
-    obj.rectangle389:setWidth(350);
-    obj.rectangle389:setHeight(50);
-    obj.rectangle389:setColor("#49244F");
-    obj.rectangle389:setName("rectangle389");
-
-    obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit132:setParent(obj.rectangle297);
-    obj.edit132:setLeft(439);
-    obj.edit132:setTop(1463);
-    obj.edit132:setWidth(340);
-    obj.edit132:setFontSize(18);
-    obj.edit132:setHeight(30);
-    obj.edit132:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit132, "fontStyle", "bold");
-    obj.edit132:setTransparent(true);
-    obj.edit132:setField("Magia10");
-    obj.edit132:setName("edit132");
-
-    obj.rectangle390 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle390:setParent(obj.rectangle297);
-    obj.rectangle390:setLeft(434);
-    obj.rectangle390:setTop(1536);
-    obj.rectangle390:setWidth(350);
-    obj.rectangle390:setHeight(1);
-    obj.rectangle390:setColor("#49244F");
-    obj.rectangle390:setName("rectangle390");
+    obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit115:setParent(obj.rectangle260);
+    obj.edit115:setLeft(318);
+    obj.edit115:setTop(1735);
+    obj.edit115:setWidth(40);
+    obj.edit115:setFontSize(18);
+    obj.edit115:setHorzTextAlign("center");
+    obj.edit115:setFontColor("#D5D5D5");
+    obj.edit115:setTransparent(true);
+    obj.edit115:setField("qtdMagia09");
+    obj.edit115:setHitTest(true);
+    obj.edit115:setCursor("handPoint");
+    obj.edit115:setHint("Quantidade");
+    obj.edit115:setName("edit115");
 
     obj.label139 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label139:setParent(obj.rectangle297);
-    obj.label139:setLeft(444);
-    obj.label139:setTop(1509);
+    obj.label139:setParent(obj.rectangle260);
+    obj.label139:setLeft(360);
+    obj.label139:setTop(1742);
     obj.label139:setWidth(280);
     obj.label139:setFontSize(18);
-    obj.label139:setText("Tradição:");
+    obj.label139:setText("/");
     obj.label139:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label139, "fontStyle", "bold");
     obj.label139:setName("label139");
 
-    obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit133:setParent(obj.rectangle297);
-    obj.edit133:setLeft(524);
-    obj.edit133:setTop(1503);
-    obj.edit133:setWidth(260);
-    obj.edit133:setFontSize(18);
-    obj.edit133:setFontColor("#49244F");
-    obj.edit133:setTransparent(true);
-    obj.edit133:setField("tradicaoMagia10");
-    obj.edit133:setName("edit133");
+    obj.rectangle350 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle350:setParent(obj.rectangle260);
+    obj.rectangle350:setLeft(374);
+    obj.rectangle350:setTop(1736);
+    obj.rectangle350:setWidth(29);
+    obj.rectangle350:setHeight(29);
+    obj.rectangle350:setColor("#49244F");
+    obj.rectangle350:setCornerType("round");
+    obj.rectangle350:setXradius(15);
+    obj.rectangle350:setYradius(15);
+    obj.rectangle350:setName("rectangle350");
 
-    obj.rectangle391 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle391:setParent(obj.rectangle297);
-    obj.rectangle391:setLeft(434);
-    obj.rectangle391:setTop(1571);
-    obj.rectangle391:setWidth(350);
-    obj.rectangle391:setHeight(1);
-    obj.rectangle391:setColor("#49244F");
-    obj.rectangle391:setName("rectangle391");
+    obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit116:setParent(obj.rectangle260);
+    obj.edit116:setLeft(368);
+    obj.edit116:setTop(1735);
+    obj.edit116:setWidth(40);
+    obj.edit116:setFontSize(18);
+    obj.edit116:setHorzTextAlign("center");
+    obj.edit116:setFontColor("#D5D5D5");
+    obj.edit116:setTransparent(true);
+    obj.edit116:setField("maxMagia09");
+    obj.edit116:setHitTest(true);
+    obj.edit116:setCursor("handPoint");
+    obj.edit116:setHint("Total");
+    obj.edit116:setName("edit116");
+
+    obj.rectangle351 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle351:setParent(obj.rectangle260);
+    obj.rectangle351:setLeft(434);
+    obj.rectangle351:setTop(1455);
+    obj.rectangle351:setWidth(350);
+    obj.rectangle351:setHeight(318);
+    obj.rectangle351:setColor("#D5D5D5");
+    obj.rectangle351:setStrokeColor("#49244F");
+    obj.rectangle351:setStrokeSize(3);
+    obj.rectangle351:setName("rectangle351");
+
+    obj.rectangle352 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle352:setParent(obj.rectangle260);
+    obj.rectangle352:setLeft(434);
+    obj.rectangle352:setTop(1455);
+    obj.rectangle352:setWidth(350);
+    obj.rectangle352:setHeight(50);
+    obj.rectangle352:setColor("#49244F");
+    obj.rectangle352:setName("rectangle352");
+
+    obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit117:setParent(obj.rectangle260);
+    obj.edit117:setLeft(439);
+    obj.edit117:setTop(1463);
+    obj.edit117:setWidth(340);
+    obj.edit117:setFontSize(18);
+    obj.edit117:setHeight(30);
+    obj.edit117:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit117, "fontStyle", "bold");
+    obj.edit117:setTransparent(true);
+    obj.edit117:setField("Magia10");
+    obj.edit117:setName("edit117");
+
+    obj.rectangle353 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle353:setParent(obj.rectangle260);
+    obj.rectangle353:setLeft(434);
+    obj.rectangle353:setTop(1536);
+    obj.rectangle353:setWidth(350);
+    obj.rectangle353:setHeight(1);
+    obj.rectangle353:setColor("#49244F");
+    obj.rectangle353:setName("rectangle353");
 
     obj.label140 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label140:setParent(obj.rectangle297);
+    obj.label140:setParent(obj.rectangle260);
     obj.label140:setLeft(444);
-    obj.label140:setTop(1544);
+    obj.label140:setTop(1509);
     obj.label140:setWidth(280);
     obj.label140:setFontSize(18);
-    obj.label140:setText("Alvo:");
+    obj.label140:setText("Tradição:");
     obj.label140:setFontColor("#49244F");
     lfm_setPropAsString(obj.label140, "fontStyle", "bold");
     obj.label140:setName("label140");
 
-    obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit134:setParent(obj.rectangle297);
-    obj.edit134:setLeft(489);
-    obj.edit134:setTop(1538);
-    obj.edit134:setWidth(295);
-    obj.edit134:setFontSize(18);
-    obj.edit134:setFontColor("#49244F");
-    obj.edit134:setTransparent(true);
-    obj.edit134:setField("alvoMagia10");
-    obj.edit134:setName("edit134");
+    obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit118:setParent(obj.rectangle260);
+    obj.edit118:setLeft(524);
+    obj.edit118:setTop(1503);
+    obj.edit118:setWidth(260);
+    obj.edit118:setFontSize(18);
+    obj.edit118:setFontColor("#49244F");
+    obj.edit118:setTransparent(true);
+    obj.edit118:setField("tradicaoMagia10");
+    obj.edit118:setName("edit118");
 
-    obj.rectangle392 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle392:setParent(obj.rectangle297);
-    obj.rectangle392:setLeft(434);
-    obj.rectangle392:setTop(1606);
-    obj.rectangle392:setWidth(350);
-    obj.rectangle392:setHeight(3);
-    obj.rectangle392:setColor("#49244F");
-    obj.rectangle392:setName("rectangle392");
+    obj.rectangle354 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle354:setParent(obj.rectangle260);
+    obj.rectangle354:setLeft(434);
+    obj.rectangle354:setTop(1571);
+    obj.rectangle354:setWidth(350);
+    obj.rectangle354:setHeight(1);
+    obj.rectangle354:setColor("#49244F");
+    obj.rectangle354:setName("rectangle354");
 
     obj.label141 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label141:setParent(obj.rectangle297);
+    obj.label141:setParent(obj.rectangle260);
     obj.label141:setLeft(444);
-    obj.label141:setTop(1579);
+    obj.label141:setTop(1544);
     obj.label141:setWidth(280);
     obj.label141:setFontSize(18);
-    obj.label141:setText("Duração:");
+    obj.label141:setText("Alvo:");
     obj.label141:setFontColor("#49244F");
     lfm_setPropAsString(obj.label141, "fontStyle", "bold");
     obj.label141:setName("label141");
 
-    obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit135:setParent(obj.rectangle297);
-    obj.edit135:setLeft(524);
-    obj.edit135:setTop(1573);
-    obj.edit135:setWidth(260);
-    obj.edit135:setFontSize(18);
-    obj.edit135:setFontColor("#49244F");
-    obj.edit135:setTransparent(true);
-    obj.edit135:setField("duracaoMagia10");
-    obj.edit135:setName("edit135");
+    obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit119:setParent(obj.rectangle260);
+    obj.edit119:setLeft(489);
+    obj.edit119:setTop(1538);
+    obj.edit119:setWidth(295);
+    obj.edit119:setFontSize(18);
+    obj.edit119:setFontColor("#49244F");
+    obj.edit119:setTransparent(true);
+    obj.edit119:setField("alvoMagia10");
+    obj.edit119:setName("edit119");
 
-    obj.rectangle393 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle393:setParent(obj.rectangle297);
-    obj.rectangle393:setLeft(434);
-    obj.rectangle393:setTop(1606);
-    obj.rectangle393:setWidth(350);
-    obj.rectangle393:setHeight(125);
-    obj.rectangle393:setColor("#49244F");
-    obj.rectangle393:setName("rectangle393");
-
-    obj.textEditor26 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor26:setParent(obj.rectangle297);
-    obj.textEditor26:setLeft(439);
-    obj.textEditor26:setTop(1611);
-    obj.textEditor26:setWidth(340);
-    obj.textEditor26:setHeight(115);
-    obj.textEditor26:setFontColor("#D5D5D5");
-    obj.textEditor26:setTransparent(true);
-    obj.textEditor26:setField("descricaoMagia10");
-    obj.textEditor26:setFontSize(18);
-    obj.textEditor26:setName("textEditor26");
-
-    obj.rectangle394 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle394:setParent(obj.rectangle297);
-    obj.rectangle394:setLeft(434);
-    obj.rectangle394:setTop(1731);
-    obj.rectangle394:setWidth(350);
-    obj.rectangle394:setHeight(3);
-    obj.rectangle394:setColor("#49244F");
-    obj.rectangle394:setName("rectangle394");
-
-    obj.rectangle395 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle395:setParent(obj.rectangle297);
-    obj.rectangle395:setLeft(438);
-    obj.rectangle395:setTop(1738);
-    obj.rectangle395:setWidth(135);
-    obj.rectangle395:setHeight(29);
-    obj.rectangle395:setColor("#49244F");
-    obj.rectangle395:setHitTest(true);
-    obj.rectangle395:setCursor("handPoint");
-    obj.rectangle395:setName("rectangle395");
+    obj.rectangle355 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle355:setParent(obj.rectangle260);
+    obj.rectangle355:setLeft(434);
+    obj.rectangle355:setTop(1606);
+    obj.rectangle355:setWidth(350);
+    obj.rectangle355:setHeight(3);
+    obj.rectangle355:setColor("#49244F");
+    obj.rectangle355:setName("rectangle355");
 
     obj.label142 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label142:setParent(obj.rectangle297);
+    obj.label142:setParent(obj.rectangle260);
     obj.label142:setLeft(444);
-    obj.label142:setTop(1742);
+    obj.label142:setTop(1579);
     obj.label142:setWidth(280);
     obj.label142:setFontSize(18);
-    obj.label142:setText("Conjurar Feitiço");
-    obj.label142:setFontColor("#D5D5D5");
+    obj.label142:setText("Duração:");
+    obj.label142:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label142, "fontStyle", "bold");
     obj.label142:setName("label142");
 
-    obj.rectangle396 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle396:setParent(obj.rectangle297);
-    obj.rectangle396:setLeft(698);
-    obj.rectangle396:setTop(1738);
-    obj.rectangle396:setWidth(29);
-    obj.rectangle396:setHeight(29);
-    obj.rectangle396:setColor("#49244F");
-    obj.rectangle396:setCornerType("round");
-    obj.rectangle396:setXradius(15);
-    obj.rectangle396:setYradius(15);
-    obj.rectangle396:setName("rectangle396");
+    obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit120:setParent(obj.rectangle260);
+    obj.edit120:setLeft(524);
+    obj.edit120:setTop(1573);
+    obj.edit120:setWidth(260);
+    obj.edit120:setFontSize(18);
+    obj.edit120:setFontColor("#49244F");
+    obj.edit120:setTransparent(true);
+    obj.edit120:setField("duracaoMagia10");
+    obj.edit120:setName("edit120");
 
-    obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit136:setParent(obj.rectangle297);
-    obj.edit136:setLeft(692);
-    obj.edit136:setTop(1735);
-    obj.edit136:setWidth(40);
-    obj.edit136:setFontSize(18);
-    obj.edit136:setHorzTextAlign("center");
-    obj.edit136:setFontColor("#D5D5D5");
-    obj.edit136:setTransparent(true);
-    obj.edit136:setField("qtdMagia10");
-    obj.edit136:setHitTest(true);
-    obj.edit136:setCursor("handPoint");
-    obj.edit136:setHint("Quantidade");
-    obj.edit136:setName("edit136");
+    obj.rectangle356 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle356:setParent(obj.rectangle260);
+    obj.rectangle356:setLeft(434);
+    obj.rectangle356:setTop(1606);
+    obj.rectangle356:setWidth(350);
+    obj.rectangle356:setHeight(125);
+    obj.rectangle356:setColor("#49244F");
+    obj.rectangle356:setName("rectangle356");
+
+    obj.textEditor11 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor11:setParent(obj.rectangle260);
+    obj.textEditor11:setLeft(439);
+    obj.textEditor11:setTop(1611);
+    obj.textEditor11:setWidth(340);
+    obj.textEditor11:setHeight(115);
+    obj.textEditor11:setFontColor("#D5D5D5");
+    obj.textEditor11:setTransparent(true);
+    obj.textEditor11:setField("descricaoMagia10");
+    obj.textEditor11:setFontSize(18);
+    obj.textEditor11:setName("textEditor11");
+
+    obj.rectangle357 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle357:setParent(obj.rectangle260);
+    obj.rectangle357:setLeft(434);
+    obj.rectangle357:setTop(1731);
+    obj.rectangle357:setWidth(350);
+    obj.rectangle357:setHeight(3);
+    obj.rectangle357:setColor("#49244F");
+    obj.rectangle357:setName("rectangle357");
+
+    obj.rectangle358 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle358:setParent(obj.rectangle260);
+    obj.rectangle358:setLeft(438);
+    obj.rectangle358:setTop(1738);
+    obj.rectangle358:setWidth(135);
+    obj.rectangle358:setHeight(29);
+    obj.rectangle358:setColor("#49244F");
+    obj.rectangle358:setHitTest(true);
+    obj.rectangle358:setCursor("handPoint");
+    obj.rectangle358:setName("rectangle358");
 
     obj.label143 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label143:setParent(obj.rectangle297);
-    obj.label143:setLeft(734);
+    obj.label143:setParent(obj.rectangle260);
+    obj.label143:setLeft(444);
     obj.label143:setTop(1742);
     obj.label143:setWidth(280);
     obj.label143:setFontSize(18);
-    obj.label143:setText("/");
-    obj.label143:setFontColor("#49244F");
+    obj.label143:setText("Conjurar Feitiço");
+    obj.label143:setFontColor("#D5D5D5");
     obj.label143:setName("label143");
 
-    obj.rectangle397 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle397:setParent(obj.rectangle297);
-    obj.rectangle397:setLeft(748);
-    obj.rectangle397:setTop(1736);
-    obj.rectangle397:setWidth(29);
-    obj.rectangle397:setHeight(29);
-    obj.rectangle397:setColor("#49244F");
-    obj.rectangle397:setCornerType("round");
-    obj.rectangle397:setXradius(15);
-    obj.rectangle397:setYradius(15);
-    obj.rectangle397:setName("rectangle397");
+    obj.rectangle359 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle359:setParent(obj.rectangle260);
+    obj.rectangle359:setLeft(698);
+    obj.rectangle359:setTop(1738);
+    obj.rectangle359:setWidth(29);
+    obj.rectangle359:setHeight(29);
+    obj.rectangle359:setColor("#49244F");
+    obj.rectangle359:setCornerType("round");
+    obj.rectangle359:setXradius(15);
+    obj.rectangle359:setYradius(15);
+    obj.rectangle359:setName("rectangle359");
 
-    obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit137:setParent(obj.rectangle297);
-    obj.edit137:setLeft(743);
-    obj.edit137:setTop(1735);
-    obj.edit137:setWidth(40);
-    obj.edit137:setFontSize(18);
-    obj.edit137:setHorzTextAlign("center");
-    obj.edit137:setFontColor("#D5D5D5");
-    obj.edit137:setTransparent(true);
-    obj.edit137:setField("maxMagia10");
-    obj.edit137:setHitTest(true);
-    obj.edit137:setCursor("handPoint");
-    obj.edit137:setHint("Total");
-    obj.edit137:setName("edit137");
+    obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit121:setParent(obj.rectangle260);
+    obj.edit121:setLeft(692);
+    obj.edit121:setTop(1735);
+    obj.edit121:setWidth(40);
+    obj.edit121:setFontSize(18);
+    obj.edit121:setHorzTextAlign("center");
+    obj.edit121:setFontColor("#D5D5D5");
+    obj.edit121:setTransparent(true);
+    obj.edit121:setField("qtdMagia10");
+    obj.edit121:setHitTest(true);
+    obj.edit121:setCursor("handPoint");
+    obj.edit121:setHint("Quantidade");
+    obj.edit121:setName("edit121");
+
+    obj.label144 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label144:setParent(obj.rectangle260);
+    obj.label144:setLeft(734);
+    obj.label144:setTop(1742);
+    obj.label144:setWidth(280);
+    obj.label144:setFontSize(18);
+    obj.label144:setText("/");
+    obj.label144:setFontColor("#49244F");
+    obj.label144:setName("label144");
+
+    obj.rectangle360 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle360:setParent(obj.rectangle260);
+    obj.rectangle360:setLeft(748);
+    obj.rectangle360:setTop(1736);
+    obj.rectangle360:setWidth(29);
+    obj.rectangle360:setHeight(29);
+    obj.rectangle360:setColor("#49244F");
+    obj.rectangle360:setCornerType("round");
+    obj.rectangle360:setXradius(15);
+    obj.rectangle360:setYradius(15);
+    obj.rectangle360:setName("rectangle360");
+
+    obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit122:setParent(obj.rectangle260);
+    obj.edit122:setLeft(743);
+    obj.edit122:setTop(1735);
+    obj.edit122:setWidth(40);
+    obj.edit122:setFontSize(18);
+    obj.edit122:setHorzTextAlign("center");
+    obj.edit122:setFontColor("#D5D5D5");
+    obj.edit122:setTransparent(true);
+    obj.edit122:setField("maxMagia10");
+    obj.edit122:setHitTest(true);
+    obj.edit122:setCursor("handPoint");
+    obj.edit122:setHint("Total");
+    obj.edit122:setName("edit122");
 
     obj.layout8 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout8:setParent(obj.tab5);
@@ -8632,32 +7920,32 @@ local function constructNew_frmWeirdWizard()
     obj.layout8:setHeight(825);
     obj.layout8:setName("layout8");
 
-    obj.rectangle398 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle398:setParent(obj.layout8);
-    obj.rectangle398:setLeft(0);
-    obj.rectangle398:setTop(725);
-    obj.rectangle398:setWidth(799);
-    obj.rectangle398:setHeight(105);
-    obj.rectangle398:setColor("#D5D5D5");
-    obj.rectangle398:setName("rectangle398");
+    obj.rectangle361 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle361:setParent(obj.layout8);
+    obj.rectangle361:setLeft(0);
+    obj.rectangle361:setTop(725);
+    obj.rectangle361:setWidth(799);
+    obj.rectangle361:setHeight(105);
+    obj.rectangle361:setColor("#D5D5D5");
+    obj.rectangle361:setName("rectangle361");
 
-    obj.rectangle399 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle399:setParent(obj.layout8);
-    obj.rectangle399:setLeft(65);
-    obj.rectangle399:setTop(730);
-    obj.rectangle399:setWidth(712);
-    obj.rectangle399:setHeight(1);
-    obj.rectangle399:setColor("#49244F");
-    obj.rectangle399:setName("rectangle399");
+    obj.rectangle362 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle362:setParent(obj.layout8);
+    obj.rectangle362:setLeft(65);
+    obj.rectangle362:setTop(730);
+    obj.rectangle362:setWidth(712);
+    obj.rectangle362:setHeight(1);
+    obj.rectangle362:setColor("#49244F");
+    obj.rectangle362:setName("rectangle362");
 
-    obj.rectangle400 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle400:setParent(obj.layout8);
-    obj.rectangle400:setLeft(65);
-    obj.rectangle400:setTop(735);
-    obj.rectangle400:setWidth(712);
-    obj.rectangle400:setHeight(1);
-    obj.rectangle400:setColor("#49244F");
-    obj.rectangle400:setName("rectangle400");
+    obj.rectangle363 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle363:setParent(obj.layout8);
+    obj.rectangle363:setLeft(65);
+    obj.rectangle363:setTop(735);
+    obj.rectangle363:setWidth(712);
+    obj.rectangle363:setHeight(1);
+    obj.rectangle363:setColor("#49244F");
+    obj.rectangle363:setName("rectangle363");
 
     obj.image46 = GUI.fromHandle(_obj_newObject("image"));
     obj.image46:setParent(obj.layout8);
@@ -8668,14 +7956,14 @@ local function constructNew_frmWeirdWizard()
     obj.image46:setSRC("/img/livrosMagicos.png");
     obj.image46:setName("image46");
 
-    obj.rectangle401 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle401:setParent(obj.layout8);
-    obj.rectangle401:setLeft(0);
-    obj.rectangle401:setTop(0);
-    obj.rectangle401:setWidth(799);
-    obj.rectangle401:setHeight(5);
-    obj.rectangle401:setColor("#D5D5D5");
-    obj.rectangle401:setName("rectangle401");
+    obj.rectangle364 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle364:setParent(obj.layout8);
+    obj.rectangle364:setLeft(0);
+    obj.rectangle364:setTop(0);
+    obj.rectangle364:setWidth(799);
+    obj.rectangle364:setHeight(5);
+    obj.rectangle364:setColor("#D5D5D5");
+    obj.rectangle364:setName("rectangle364");
 
     obj.image47 = GUI.fromHandle(_obj_newObject("image"));
     obj.image47:setParent(obj.layout8);
@@ -8716,2436 +8004,2436 @@ local function constructNew_frmWeirdWizard()
     obj.layout9:setHeight(1790);
     obj.layout9:setName("layout9");
 
-    obj.rectangle402 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle402:setParent(obj.layout9);
-    obj.rectangle402:setLeft(0);
-    obj.rectangle402:setTop(0);
-    obj.rectangle402:setWidth(799);
-    obj.rectangle402:setHeight(1790);
-    obj.rectangle402:setColor("#D5D5D5");
-    obj.rectangle402:setName("rectangle402");
-
-    obj.label144 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label144:setParent(obj.rectangle402);
-    obj.label144:setLeft(270);
-    obj.label144:setTop(60);
-    obj.label144:setWidth(280);
-    obj.label144:setFontSize(24);
-    obj.label144:setHorzTextAlign("center");
-    obj.label144:setText("FEITIÇOS");
-    obj.label144:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label144, "fontStyle", "bold");
-    obj.label144:setName("label144");
-
-    obj.rectangle403 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle403:setParent(obj.rectangle402);
-    obj.rectangle403:setLeft(60);
-    obj.rectangle403:setTop(95);
-    obj.rectangle403:setWidth(350);
-    obj.rectangle403:setHeight(318);
-    obj.rectangle403:setColor("#D5D5D5");
-    obj.rectangle403:setStrokeColor("#49244F");
-    obj.rectangle403:setStrokeSize(3);
-    obj.rectangle403:setName("rectangle403");
-
-    obj.rectangle404 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle404:setParent(obj.rectangle402);
-    obj.rectangle404:setLeft(60);
-    obj.rectangle404:setTop(95);
-    obj.rectangle404:setWidth(350);
-    obj.rectangle404:setHeight(50);
-    obj.rectangle404:setColor("#49244F");
-    obj.rectangle404:setName("rectangle404");
-
-    obj.edit138 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit138:setParent(obj.rectangle402);
-    obj.edit138:setLeft(65);
-    obj.edit138:setTop(103);
-    obj.edit138:setWidth(340);
-    obj.edit138:setFontSize(18);
-    obj.edit138:setHeight(30);
-    obj.edit138:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit138, "fontStyle", "bold");
-    obj.edit138:setTransparent(true);
-    obj.edit138:setField("Magia11");
-    obj.edit138:setName("edit138");
-
-    obj.rectangle405 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle405:setParent(obj.rectangle402);
-    obj.rectangle405:setLeft(60);
-    obj.rectangle405:setTop(176);
-    obj.rectangle405:setWidth(350);
-    obj.rectangle405:setHeight(1);
-    obj.rectangle405:setColor("#49244F");
-    obj.rectangle405:setName("rectangle405");
+    obj.rectangle365 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle365:setParent(obj.layout9);
+    obj.rectangle365:setLeft(0);
+    obj.rectangle365:setTop(0);
+    obj.rectangle365:setWidth(799);
+    obj.rectangle365:setHeight(1790);
+    obj.rectangle365:setColor("#D5D5D5");
+    obj.rectangle365:setName("rectangle365");
 
     obj.label145 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label145:setParent(obj.rectangle402);
-    obj.label145:setLeft(70);
-    obj.label145:setTop(149);
+    obj.label145:setParent(obj.rectangle365);
+    obj.label145:setLeft(270);
+    obj.label145:setTop(60);
     obj.label145:setWidth(280);
-    obj.label145:setFontSize(18);
-    obj.label145:setText("Tradição:");
+    obj.label145:setFontSize(24);
+    obj.label145:setHorzTextAlign("center");
+    obj.label145:setText("FEITIÇOS");
     obj.label145:setFontColor("#49244F");
     lfm_setPropAsString(obj.label145, "fontStyle", "bold");
     obj.label145:setName("label145");
 
-    obj.edit139 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit139:setParent(obj.rectangle402);
-    obj.edit139:setLeft(150);
-    obj.edit139:setTop(143);
-    obj.edit139:setWidth(260);
-    obj.edit139:setFontSize(18);
-    obj.edit139:setFontColor("#49244F");
-    obj.edit139:setTransparent(true);
-    obj.edit139:setField("tradicaoMagia11");
-    obj.edit139:setName("edit139");
+    obj.rectangle366 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle366:setParent(obj.rectangle365);
+    obj.rectangle366:setLeft(60);
+    obj.rectangle366:setTop(95);
+    obj.rectangle366:setWidth(350);
+    obj.rectangle366:setHeight(318);
+    obj.rectangle366:setColor("#D5D5D5");
+    obj.rectangle366:setStrokeColor("#49244F");
+    obj.rectangle366:setStrokeSize(3);
+    obj.rectangle366:setName("rectangle366");
 
-    obj.rectangle406 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle406:setParent(obj.rectangle402);
-    obj.rectangle406:setLeft(60);
-    obj.rectangle406:setTop(211);
-    obj.rectangle406:setWidth(350);
-    obj.rectangle406:setHeight(1);
-    obj.rectangle406:setColor("#49244F");
-    obj.rectangle406:setName("rectangle406");
+    obj.rectangle367 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle367:setParent(obj.rectangle365);
+    obj.rectangle367:setLeft(60);
+    obj.rectangle367:setTop(95);
+    obj.rectangle367:setWidth(350);
+    obj.rectangle367:setHeight(50);
+    obj.rectangle367:setColor("#49244F");
+    obj.rectangle367:setName("rectangle367");
+
+    obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit123:setParent(obj.rectangle365);
+    obj.edit123:setLeft(65);
+    obj.edit123:setTop(103);
+    obj.edit123:setWidth(340);
+    obj.edit123:setFontSize(18);
+    obj.edit123:setHeight(30);
+    obj.edit123:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit123, "fontStyle", "bold");
+    obj.edit123:setTransparent(true);
+    obj.edit123:setField("Magia11");
+    obj.edit123:setName("edit123");
+
+    obj.rectangle368 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle368:setParent(obj.rectangle365);
+    obj.rectangle368:setLeft(60);
+    obj.rectangle368:setTop(176);
+    obj.rectangle368:setWidth(350);
+    obj.rectangle368:setHeight(1);
+    obj.rectangle368:setColor("#49244F");
+    obj.rectangle368:setName("rectangle368");
 
     obj.label146 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label146:setParent(obj.rectangle402);
+    obj.label146:setParent(obj.rectangle365);
     obj.label146:setLeft(70);
-    obj.label146:setTop(184);
+    obj.label146:setTop(149);
     obj.label146:setWidth(280);
     obj.label146:setFontSize(18);
-    obj.label146:setText("Alvo:");
+    obj.label146:setText("Tradição:");
     obj.label146:setFontColor("#49244F");
     lfm_setPropAsString(obj.label146, "fontStyle", "bold");
     obj.label146:setName("label146");
 
-    obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit140:setParent(obj.rectangle402);
-    obj.edit140:setLeft(115);
-    obj.edit140:setTop(178);
-    obj.edit140:setWidth(295);
-    obj.edit140:setFontSize(18);
-    obj.edit140:setFontColor("#49244F");
-    obj.edit140:setTransparent(true);
-    obj.edit140:setField("alvoMagia11");
-    obj.edit140:setName("edit140");
+    obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit124:setParent(obj.rectangle365);
+    obj.edit124:setLeft(150);
+    obj.edit124:setTop(143);
+    obj.edit124:setWidth(260);
+    obj.edit124:setFontSize(18);
+    obj.edit124:setFontColor("#49244F");
+    obj.edit124:setTransparent(true);
+    obj.edit124:setField("tradicaoMagia11");
+    obj.edit124:setName("edit124");
 
-    obj.rectangle407 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle407:setParent(obj.rectangle402);
-    obj.rectangle407:setLeft(60);
-    obj.rectangle407:setTop(246);
-    obj.rectangle407:setWidth(350);
-    obj.rectangle407:setHeight(3);
-    obj.rectangle407:setColor("#49244F");
-    obj.rectangle407:setName("rectangle407");
+    obj.rectangle369 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle369:setParent(obj.rectangle365);
+    obj.rectangle369:setLeft(60);
+    obj.rectangle369:setTop(211);
+    obj.rectangle369:setWidth(350);
+    obj.rectangle369:setHeight(1);
+    obj.rectangle369:setColor("#49244F");
+    obj.rectangle369:setName("rectangle369");
 
     obj.label147 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label147:setParent(obj.rectangle402);
+    obj.label147:setParent(obj.rectangle365);
     obj.label147:setLeft(70);
-    obj.label147:setTop(219);
+    obj.label147:setTop(184);
     obj.label147:setWidth(280);
     obj.label147:setFontSize(18);
-    obj.label147:setText("Duração:");
+    obj.label147:setText("Alvo:");
     obj.label147:setFontColor("#49244F");
     lfm_setPropAsString(obj.label147, "fontStyle", "bold");
     obj.label147:setName("label147");
 
-    obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit141:setParent(obj.rectangle402);
-    obj.edit141:setLeft(150);
-    obj.edit141:setTop(213);
-    obj.edit141:setWidth(260);
-    obj.edit141:setFontSize(18);
-    obj.edit141:setFontColor("#49244F");
-    obj.edit141:setTransparent(true);
-    obj.edit141:setField("duracaoMagia11");
-    obj.edit141:setName("edit141");
+    obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit125:setParent(obj.rectangle365);
+    obj.edit125:setLeft(115);
+    obj.edit125:setTop(178);
+    obj.edit125:setWidth(295);
+    obj.edit125:setFontSize(18);
+    obj.edit125:setFontColor("#49244F");
+    obj.edit125:setTransparent(true);
+    obj.edit125:setField("alvoMagia11");
+    obj.edit125:setName("edit125");
 
-    obj.rectangle408 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle408:setParent(obj.rectangle402);
-    obj.rectangle408:setLeft(60);
-    obj.rectangle408:setTop(246);
-    obj.rectangle408:setWidth(350);
-    obj.rectangle408:setHeight(125);
-    obj.rectangle408:setColor("#49244F");
-    obj.rectangle408:setName("rectangle408");
-
-    obj.textEditor27 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor27:setParent(obj.rectangle402);
-    obj.textEditor27:setLeft(65);
-    obj.textEditor27:setTop(251);
-    obj.textEditor27:setWidth(340);
-    obj.textEditor27:setHeight(115);
-    obj.textEditor27:setFontColor("#D5D5D5");
-    obj.textEditor27:setTransparent(true);
-    obj.textEditor27:setField("descricaoMagia11");
-    obj.textEditor27:setFontSize(18);
-    obj.textEditor27:setName("textEditor27");
-
-    obj.rectangle409 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle409:setParent(obj.rectangle402);
-    obj.rectangle409:setLeft(60);
-    obj.rectangle409:setTop(371);
-    obj.rectangle409:setWidth(350);
-    obj.rectangle409:setHeight(3);
-    obj.rectangle409:setColor("#49244F");
-    obj.rectangle409:setName("rectangle409");
-
-    obj.rectangle410 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle410:setParent(obj.rectangle402);
-    obj.rectangle410:setLeft(64);
-    obj.rectangle410:setTop(378);
-    obj.rectangle410:setWidth(135);
-    obj.rectangle410:setHeight(29);
-    obj.rectangle410:setColor("#49244F");
-    obj.rectangle410:setHitTest(true);
-    obj.rectangle410:setCursor("handPoint");
-    obj.rectangle410:setName("rectangle410");
+    obj.rectangle370 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle370:setParent(obj.rectangle365);
+    obj.rectangle370:setLeft(60);
+    obj.rectangle370:setTop(246);
+    obj.rectangle370:setWidth(350);
+    obj.rectangle370:setHeight(3);
+    obj.rectangle370:setColor("#49244F");
+    obj.rectangle370:setName("rectangle370");
 
     obj.label148 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label148:setParent(obj.rectangle402);
+    obj.label148:setParent(obj.rectangle365);
     obj.label148:setLeft(70);
-    obj.label148:setTop(382);
+    obj.label148:setTop(219);
     obj.label148:setWidth(280);
     obj.label148:setFontSize(18);
-    obj.label148:setText("Conjurar Feitiço");
-    obj.label148:setFontColor("#D5D5D5");
+    obj.label148:setText("Duração:");
+    obj.label148:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label148, "fontStyle", "bold");
     obj.label148:setName("label148");
 
-    obj.rectangle411 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle411:setParent(obj.rectangle402);
-    obj.rectangle411:setLeft(324);
-    obj.rectangle411:setTop(378);
-    obj.rectangle411:setWidth(29);
-    obj.rectangle411:setHeight(29);
-    obj.rectangle411:setColor("#49244F");
-    obj.rectangle411:setCornerType("round");
-    obj.rectangle411:setXradius(15);
-    obj.rectangle411:setYradius(15);
-    obj.rectangle411:setName("rectangle411");
+    obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit126:setParent(obj.rectangle365);
+    obj.edit126:setLeft(150);
+    obj.edit126:setTop(213);
+    obj.edit126:setWidth(260);
+    obj.edit126:setFontSize(18);
+    obj.edit126:setFontColor("#49244F");
+    obj.edit126:setTransparent(true);
+    obj.edit126:setField("duracaoMagia11");
+    obj.edit126:setName("edit126");
 
-    obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit142:setParent(obj.rectangle402);
-    obj.edit142:setLeft(318);
-    obj.edit142:setTop(375);
-    obj.edit142:setWidth(40);
-    obj.edit142:setFontSize(18);
-    obj.edit142:setHorzTextAlign("center");
-    obj.edit142:setFontColor("#D5D5D5");
-    obj.edit142:setTransparent(true);
-    obj.edit142:setField("qtdMagia11");
-    obj.edit142:setHitTest(true);
-    obj.edit142:setCursor("handPoint");
-    obj.edit142:setHint("Quantidade");
-    obj.edit142:setName("edit142");
+    obj.rectangle371 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle371:setParent(obj.rectangle365);
+    obj.rectangle371:setLeft(60);
+    obj.rectangle371:setTop(246);
+    obj.rectangle371:setWidth(350);
+    obj.rectangle371:setHeight(125);
+    obj.rectangle371:setColor("#49244F");
+    obj.rectangle371:setName("rectangle371");
+
+    obj.textEditor12 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor12:setParent(obj.rectangle365);
+    obj.textEditor12:setLeft(65);
+    obj.textEditor12:setTop(251);
+    obj.textEditor12:setWidth(340);
+    obj.textEditor12:setHeight(115);
+    obj.textEditor12:setFontColor("#D5D5D5");
+    obj.textEditor12:setTransparent(true);
+    obj.textEditor12:setField("descricaoMagia11");
+    obj.textEditor12:setFontSize(18);
+    obj.textEditor12:setName("textEditor12");
+
+    obj.rectangle372 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle372:setParent(obj.rectangle365);
+    obj.rectangle372:setLeft(60);
+    obj.rectangle372:setTop(371);
+    obj.rectangle372:setWidth(350);
+    obj.rectangle372:setHeight(3);
+    obj.rectangle372:setColor("#49244F");
+    obj.rectangle372:setName("rectangle372");
+
+    obj.rectangle373 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle373:setParent(obj.rectangle365);
+    obj.rectangle373:setLeft(64);
+    obj.rectangle373:setTop(378);
+    obj.rectangle373:setWidth(135);
+    obj.rectangle373:setHeight(29);
+    obj.rectangle373:setColor("#49244F");
+    obj.rectangle373:setHitTest(true);
+    obj.rectangle373:setCursor("handPoint");
+    obj.rectangle373:setName("rectangle373");
 
     obj.label149 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label149:setParent(obj.rectangle402);
-    obj.label149:setLeft(360);
+    obj.label149:setParent(obj.rectangle365);
+    obj.label149:setLeft(70);
     obj.label149:setTop(382);
     obj.label149:setWidth(280);
     obj.label149:setFontSize(18);
-    obj.label149:setText("/");
-    obj.label149:setFontColor("#49244F");
+    obj.label149:setText("Conjurar Feitiço");
+    obj.label149:setFontColor("#D5D5D5");
     obj.label149:setName("label149");
 
-    obj.rectangle412 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle412:setParent(obj.rectangle402);
-    obj.rectangle412:setLeft(374);
-    obj.rectangle412:setTop(376);
-    obj.rectangle412:setWidth(29);
-    obj.rectangle412:setHeight(29);
-    obj.rectangle412:setColor("#49244F");
-    obj.rectangle412:setCornerType("round");
-    obj.rectangle412:setXradius(15);
-    obj.rectangle412:setYradius(15);
-    obj.rectangle412:setName("rectangle412");
+    obj.rectangle374 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle374:setParent(obj.rectangle365);
+    obj.rectangle374:setLeft(324);
+    obj.rectangle374:setTop(378);
+    obj.rectangle374:setWidth(29);
+    obj.rectangle374:setHeight(29);
+    obj.rectangle374:setColor("#49244F");
+    obj.rectangle374:setCornerType("round");
+    obj.rectangle374:setXradius(15);
+    obj.rectangle374:setYradius(15);
+    obj.rectangle374:setName("rectangle374");
 
-    obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit143:setParent(obj.rectangle402);
-    obj.edit143:setLeft(368);
-    obj.edit143:setTop(375);
-    obj.edit143:setWidth(40);
-    obj.edit143:setFontSize(18);
-    obj.edit143:setHorzTextAlign("center");
-    obj.edit143:setFontColor("#D5D5D5");
-    obj.edit143:setTransparent(true);
-    obj.edit143:setField("maxMagia11");
-    obj.edit143:setHitTest(true);
-    obj.edit143:setCursor("handPoint");
-    obj.edit143:setHint("Total");
-    obj.edit143:setName("edit143");
-
-    obj.rectangle413 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle413:setParent(obj.rectangle402);
-    obj.rectangle413:setLeft(434);
-    obj.rectangle413:setTop(95);
-    obj.rectangle413:setWidth(350);
-    obj.rectangle413:setHeight(318);
-    obj.rectangle413:setColor("#D5D5D5");
-    obj.rectangle413:setStrokeColor("#49244F");
-    obj.rectangle413:setStrokeSize(3);
-    obj.rectangle413:setName("rectangle413");
-
-    obj.rectangle414 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle414:setParent(obj.rectangle402);
-    obj.rectangle414:setLeft(434);
-    obj.rectangle414:setTop(95);
-    obj.rectangle414:setWidth(350);
-    obj.rectangle414:setHeight(50);
-    obj.rectangle414:setColor("#49244F");
-    obj.rectangle414:setName("rectangle414");
-
-    obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit144:setParent(obj.rectangle402);
-    obj.edit144:setLeft(439);
-    obj.edit144:setTop(103);
-    obj.edit144:setWidth(340);
-    obj.edit144:setFontSize(18);
-    obj.edit144:setHeight(30);
-    obj.edit144:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit144, "fontStyle", "bold");
-    obj.edit144:setTransparent(true);
-    obj.edit144:setField("Magia12");
-    obj.edit144:setName("edit144");
-
-    obj.rectangle415 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle415:setParent(obj.rectangle402);
-    obj.rectangle415:setLeft(434);
-    obj.rectangle415:setTop(176);
-    obj.rectangle415:setWidth(350);
-    obj.rectangle415:setHeight(1);
-    obj.rectangle415:setColor("#49244F");
-    obj.rectangle415:setName("rectangle415");
+    obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit127:setParent(obj.rectangle365);
+    obj.edit127:setLeft(318);
+    obj.edit127:setTop(375);
+    obj.edit127:setWidth(40);
+    obj.edit127:setFontSize(18);
+    obj.edit127:setHorzTextAlign("center");
+    obj.edit127:setFontColor("#D5D5D5");
+    obj.edit127:setTransparent(true);
+    obj.edit127:setField("qtdMagia11");
+    obj.edit127:setHitTest(true);
+    obj.edit127:setCursor("handPoint");
+    obj.edit127:setHint("Quantidade");
+    obj.edit127:setName("edit127");
 
     obj.label150 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label150:setParent(obj.rectangle402);
-    obj.label150:setLeft(444);
-    obj.label150:setTop(149);
+    obj.label150:setParent(obj.rectangle365);
+    obj.label150:setLeft(360);
+    obj.label150:setTop(382);
     obj.label150:setWidth(280);
     obj.label150:setFontSize(18);
-    obj.label150:setText("Tradição:");
+    obj.label150:setText("/");
     obj.label150:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label150, "fontStyle", "bold");
     obj.label150:setName("label150");
 
-    obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit145:setParent(obj.rectangle402);
-    obj.edit145:setLeft(524);
-    obj.edit145:setTop(143);
-    obj.edit145:setWidth(260);
-    obj.edit145:setFontSize(18);
-    obj.edit145:setFontColor("#49244F");
-    obj.edit145:setTransparent(true);
-    obj.edit145:setField("tradicaoMagia12");
-    obj.edit145:setName("edit145");
+    obj.rectangle375 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle375:setParent(obj.rectangle365);
+    obj.rectangle375:setLeft(374);
+    obj.rectangle375:setTop(376);
+    obj.rectangle375:setWidth(29);
+    obj.rectangle375:setHeight(29);
+    obj.rectangle375:setColor("#49244F");
+    obj.rectangle375:setCornerType("round");
+    obj.rectangle375:setXradius(15);
+    obj.rectangle375:setYradius(15);
+    obj.rectangle375:setName("rectangle375");
 
-    obj.rectangle416 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle416:setParent(obj.rectangle402);
-    obj.rectangle416:setLeft(434);
-    obj.rectangle416:setTop(211);
-    obj.rectangle416:setWidth(350);
-    obj.rectangle416:setHeight(1);
-    obj.rectangle416:setColor("#49244F");
-    obj.rectangle416:setName("rectangle416");
+    obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit128:setParent(obj.rectangle365);
+    obj.edit128:setLeft(368);
+    obj.edit128:setTop(375);
+    obj.edit128:setWidth(40);
+    obj.edit128:setFontSize(18);
+    obj.edit128:setHorzTextAlign("center");
+    obj.edit128:setFontColor("#D5D5D5");
+    obj.edit128:setTransparent(true);
+    obj.edit128:setField("maxMagia11");
+    obj.edit128:setHitTest(true);
+    obj.edit128:setCursor("handPoint");
+    obj.edit128:setHint("Total");
+    obj.edit128:setName("edit128");
+
+    obj.rectangle376 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle376:setParent(obj.rectangle365);
+    obj.rectangle376:setLeft(434);
+    obj.rectangle376:setTop(95);
+    obj.rectangle376:setWidth(350);
+    obj.rectangle376:setHeight(318);
+    obj.rectangle376:setColor("#D5D5D5");
+    obj.rectangle376:setStrokeColor("#49244F");
+    obj.rectangle376:setStrokeSize(3);
+    obj.rectangle376:setName("rectangle376");
+
+    obj.rectangle377 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle377:setParent(obj.rectangle365);
+    obj.rectangle377:setLeft(434);
+    obj.rectangle377:setTop(95);
+    obj.rectangle377:setWidth(350);
+    obj.rectangle377:setHeight(50);
+    obj.rectangle377:setColor("#49244F");
+    obj.rectangle377:setName("rectangle377");
+
+    obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit129:setParent(obj.rectangle365);
+    obj.edit129:setLeft(439);
+    obj.edit129:setTop(103);
+    obj.edit129:setWidth(340);
+    obj.edit129:setFontSize(18);
+    obj.edit129:setHeight(30);
+    obj.edit129:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit129, "fontStyle", "bold");
+    obj.edit129:setTransparent(true);
+    obj.edit129:setField("Magia12");
+    obj.edit129:setName("edit129");
+
+    obj.rectangle378 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle378:setParent(obj.rectangle365);
+    obj.rectangle378:setLeft(434);
+    obj.rectangle378:setTop(176);
+    obj.rectangle378:setWidth(350);
+    obj.rectangle378:setHeight(1);
+    obj.rectangle378:setColor("#49244F");
+    obj.rectangle378:setName("rectangle378");
 
     obj.label151 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label151:setParent(obj.rectangle402);
+    obj.label151:setParent(obj.rectangle365);
     obj.label151:setLeft(444);
-    obj.label151:setTop(184);
+    obj.label151:setTop(149);
     obj.label151:setWidth(280);
     obj.label151:setFontSize(18);
-    obj.label151:setText("Alvo:");
+    obj.label151:setText("Tradição:");
     obj.label151:setFontColor("#49244F");
     lfm_setPropAsString(obj.label151, "fontStyle", "bold");
     obj.label151:setName("label151");
 
-    obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit146:setParent(obj.rectangle402);
-    obj.edit146:setLeft(489);
-    obj.edit146:setTop(178);
-    obj.edit146:setWidth(295);
-    obj.edit146:setFontSize(18);
-    obj.edit146:setFontColor("#49244F");
-    obj.edit146:setTransparent(true);
-    obj.edit146:setField("alvoMagia12");
-    obj.edit146:setName("edit146");
+    obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit130:setParent(obj.rectangle365);
+    obj.edit130:setLeft(524);
+    obj.edit130:setTop(143);
+    obj.edit130:setWidth(260);
+    obj.edit130:setFontSize(18);
+    obj.edit130:setFontColor("#49244F");
+    obj.edit130:setTransparent(true);
+    obj.edit130:setField("tradicaoMagia12");
+    obj.edit130:setName("edit130");
 
-    obj.rectangle417 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle417:setParent(obj.rectangle402);
-    obj.rectangle417:setLeft(434);
-    obj.rectangle417:setTop(246);
-    obj.rectangle417:setWidth(350);
-    obj.rectangle417:setHeight(3);
-    obj.rectangle417:setColor("#49244F");
-    obj.rectangle417:setName("rectangle417");
+    obj.rectangle379 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle379:setParent(obj.rectangle365);
+    obj.rectangle379:setLeft(434);
+    obj.rectangle379:setTop(211);
+    obj.rectangle379:setWidth(350);
+    obj.rectangle379:setHeight(1);
+    obj.rectangle379:setColor("#49244F");
+    obj.rectangle379:setName("rectangle379");
 
     obj.label152 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label152:setParent(obj.rectangle402);
+    obj.label152:setParent(obj.rectangle365);
     obj.label152:setLeft(444);
-    obj.label152:setTop(219);
+    obj.label152:setTop(184);
     obj.label152:setWidth(280);
     obj.label152:setFontSize(18);
-    obj.label152:setText("Duração:");
+    obj.label152:setText("Alvo:");
     obj.label152:setFontColor("#49244F");
     lfm_setPropAsString(obj.label152, "fontStyle", "bold");
     obj.label152:setName("label152");
 
-    obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit147:setParent(obj.rectangle402);
-    obj.edit147:setLeft(524);
-    obj.edit147:setTop(213);
-    obj.edit147:setWidth(260);
-    obj.edit147:setFontSize(18);
-    obj.edit147:setFontColor("#49244F");
-    obj.edit147:setTransparent(true);
-    obj.edit147:setField("duracaoMagia12");
-    obj.edit147:setName("edit147");
+    obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit131:setParent(obj.rectangle365);
+    obj.edit131:setLeft(489);
+    obj.edit131:setTop(178);
+    obj.edit131:setWidth(295);
+    obj.edit131:setFontSize(18);
+    obj.edit131:setFontColor("#49244F");
+    obj.edit131:setTransparent(true);
+    obj.edit131:setField("alvoMagia12");
+    obj.edit131:setName("edit131");
 
-    obj.rectangle418 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle418:setParent(obj.rectangle402);
-    obj.rectangle418:setLeft(434);
-    obj.rectangle418:setTop(246);
-    obj.rectangle418:setWidth(350);
-    obj.rectangle418:setHeight(125);
-    obj.rectangle418:setColor("#49244F");
-    obj.rectangle418:setName("rectangle418");
-
-    obj.textEditor28 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor28:setParent(obj.rectangle402);
-    obj.textEditor28:setLeft(439);
-    obj.textEditor28:setTop(251);
-    obj.textEditor28:setWidth(340);
-    obj.textEditor28:setHeight(115);
-    obj.textEditor28:setFontColor("#D5D5D5");
-    obj.textEditor28:setTransparent(true);
-    obj.textEditor28:setField("descricaoMagia12");
-    obj.textEditor28:setFontSize(18);
-    obj.textEditor28:setName("textEditor28");
-
-    obj.rectangle419 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle419:setParent(obj.rectangle402);
-    obj.rectangle419:setLeft(434);
-    obj.rectangle419:setTop(371);
-    obj.rectangle419:setWidth(350);
-    obj.rectangle419:setHeight(3);
-    obj.rectangle419:setColor("#49244F");
-    obj.rectangle419:setName("rectangle419");
-
-    obj.rectangle420 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle420:setParent(obj.rectangle402);
-    obj.rectangle420:setLeft(438);
-    obj.rectangle420:setTop(378);
-    obj.rectangle420:setWidth(135);
-    obj.rectangle420:setHeight(29);
-    obj.rectangle420:setColor("#49244F");
-    obj.rectangle420:setHitTest(true);
-    obj.rectangle420:setCursor("handPoint");
-    obj.rectangle420:setName("rectangle420");
+    obj.rectangle380 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle380:setParent(obj.rectangle365);
+    obj.rectangle380:setLeft(434);
+    obj.rectangle380:setTop(246);
+    obj.rectangle380:setWidth(350);
+    obj.rectangle380:setHeight(3);
+    obj.rectangle380:setColor("#49244F");
+    obj.rectangle380:setName("rectangle380");
 
     obj.label153 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label153:setParent(obj.rectangle402);
+    obj.label153:setParent(obj.rectangle365);
     obj.label153:setLeft(444);
-    obj.label153:setTop(382);
+    obj.label153:setTop(219);
     obj.label153:setWidth(280);
     obj.label153:setFontSize(18);
-    obj.label153:setText("Conjurar Feitiço");
-    obj.label153:setFontColor("#D5D5D5");
+    obj.label153:setText("Duração:");
+    obj.label153:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label153, "fontStyle", "bold");
     obj.label153:setName("label153");
 
-    obj.rectangle421 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle421:setParent(obj.rectangle402);
-    obj.rectangle421:setLeft(698);
-    obj.rectangle421:setTop(378);
-    obj.rectangle421:setWidth(29);
-    obj.rectangle421:setHeight(29);
-    obj.rectangle421:setColor("#49244F");
-    obj.rectangle421:setCornerType("round");
-    obj.rectangle421:setXradius(15);
-    obj.rectangle421:setYradius(15);
-    obj.rectangle421:setName("rectangle421");
+    obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit132:setParent(obj.rectangle365);
+    obj.edit132:setLeft(524);
+    obj.edit132:setTop(213);
+    obj.edit132:setWidth(260);
+    obj.edit132:setFontSize(18);
+    obj.edit132:setFontColor("#49244F");
+    obj.edit132:setTransparent(true);
+    obj.edit132:setField("duracaoMagia12");
+    obj.edit132:setName("edit132");
 
-    obj.edit148 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit148:setParent(obj.rectangle402);
-    obj.edit148:setLeft(692);
-    obj.edit148:setTop(375);
-    obj.edit148:setWidth(40);
-    obj.edit148:setFontSize(18);
-    obj.edit148:setHorzTextAlign("center");
-    obj.edit148:setFontColor("#D5D5D5");
-    obj.edit148:setTransparent(true);
-    obj.edit148:setField("qtdMagia12");
-    obj.edit148:setHitTest(true);
-    obj.edit148:setCursor("handPoint");
-    obj.edit148:setHint("Quantidade");
-    obj.edit148:setName("edit148");
+    obj.rectangle381 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle381:setParent(obj.rectangle365);
+    obj.rectangle381:setLeft(434);
+    obj.rectangle381:setTop(246);
+    obj.rectangle381:setWidth(350);
+    obj.rectangle381:setHeight(125);
+    obj.rectangle381:setColor("#49244F");
+    obj.rectangle381:setName("rectangle381");
+
+    obj.textEditor13 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor13:setParent(obj.rectangle365);
+    obj.textEditor13:setLeft(439);
+    obj.textEditor13:setTop(251);
+    obj.textEditor13:setWidth(340);
+    obj.textEditor13:setHeight(115);
+    obj.textEditor13:setFontColor("#D5D5D5");
+    obj.textEditor13:setTransparent(true);
+    obj.textEditor13:setField("descricaoMagia12");
+    obj.textEditor13:setFontSize(18);
+    obj.textEditor13:setName("textEditor13");
+
+    obj.rectangle382 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle382:setParent(obj.rectangle365);
+    obj.rectangle382:setLeft(434);
+    obj.rectangle382:setTop(371);
+    obj.rectangle382:setWidth(350);
+    obj.rectangle382:setHeight(3);
+    obj.rectangle382:setColor("#49244F");
+    obj.rectangle382:setName("rectangle382");
+
+    obj.rectangle383 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle383:setParent(obj.rectangle365);
+    obj.rectangle383:setLeft(438);
+    obj.rectangle383:setTop(378);
+    obj.rectangle383:setWidth(135);
+    obj.rectangle383:setHeight(29);
+    obj.rectangle383:setColor("#49244F");
+    obj.rectangle383:setHitTest(true);
+    obj.rectangle383:setCursor("handPoint");
+    obj.rectangle383:setName("rectangle383");
 
     obj.label154 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label154:setParent(obj.rectangle402);
-    obj.label154:setLeft(734);
+    obj.label154:setParent(obj.rectangle365);
+    obj.label154:setLeft(444);
     obj.label154:setTop(382);
     obj.label154:setWidth(280);
     obj.label154:setFontSize(18);
-    obj.label154:setText("/");
-    obj.label154:setFontColor("#49244F");
+    obj.label154:setText("Conjurar Feitiço");
+    obj.label154:setFontColor("#D5D5D5");
     obj.label154:setName("label154");
 
-    obj.rectangle422 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle422:setParent(obj.rectangle402);
-    obj.rectangle422:setLeft(748);
-    obj.rectangle422:setTop(376);
-    obj.rectangle422:setWidth(29);
-    obj.rectangle422:setHeight(29);
-    obj.rectangle422:setColor("#49244F");
-    obj.rectangle422:setCornerType("round");
-    obj.rectangle422:setXradius(15);
-    obj.rectangle422:setYradius(15);
-    obj.rectangle422:setName("rectangle422");
+    obj.rectangle384 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle384:setParent(obj.rectangle365);
+    obj.rectangle384:setLeft(698);
+    obj.rectangle384:setTop(378);
+    obj.rectangle384:setWidth(29);
+    obj.rectangle384:setHeight(29);
+    obj.rectangle384:setColor("#49244F");
+    obj.rectangle384:setCornerType("round");
+    obj.rectangle384:setXradius(15);
+    obj.rectangle384:setYradius(15);
+    obj.rectangle384:setName("rectangle384");
 
-    obj.edit149 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit149:setParent(obj.rectangle402);
-    obj.edit149:setLeft(743);
-    obj.edit149:setTop(375);
-    obj.edit149:setWidth(40);
-    obj.edit149:setFontSize(18);
-    obj.edit149:setHorzTextAlign("center");
-    obj.edit149:setFontColor("#D5D5D5");
-    obj.edit149:setTransparent(true);
-    obj.edit149:setField("maxMagia12");
-    obj.edit149:setHitTest(true);
-    obj.edit149:setCursor("handPoint");
-    obj.edit149:setHint("Total");
-    obj.edit149:setName("edit149");
-
-    obj.rectangle423 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle423:setParent(obj.rectangle402);
-    obj.rectangle423:setLeft(60);
-    obj.rectangle423:setTop(435);
-    obj.rectangle423:setWidth(350);
-    obj.rectangle423:setHeight(318);
-    obj.rectangle423:setColor("#D5D5D5");
-    obj.rectangle423:setStrokeColor("#49244F");
-    obj.rectangle423:setStrokeSize(3);
-    obj.rectangle423:setName("rectangle423");
-
-    obj.rectangle424 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle424:setParent(obj.rectangle402);
-    obj.rectangle424:setLeft(60);
-    obj.rectangle424:setTop(435);
-    obj.rectangle424:setWidth(350);
-    obj.rectangle424:setHeight(50);
-    obj.rectangle424:setColor("#49244F");
-    obj.rectangle424:setName("rectangle424");
-
-    obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit150:setParent(obj.rectangle402);
-    obj.edit150:setLeft(65);
-    obj.edit150:setTop(443);
-    obj.edit150:setWidth(340);
-    obj.edit150:setFontSize(18);
-    obj.edit150:setHeight(30);
-    obj.edit150:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit150, "fontStyle", "bold");
-    obj.edit150:setTransparent(true);
-    obj.edit150:setField("Magia13");
-    obj.edit150:setName("edit150");
-
-    obj.rectangle425 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle425:setParent(obj.rectangle402);
-    obj.rectangle425:setLeft(60);
-    obj.rectangle425:setTop(516);
-    obj.rectangle425:setWidth(350);
-    obj.rectangle425:setHeight(1);
-    obj.rectangle425:setColor("#49244F");
-    obj.rectangle425:setName("rectangle425");
+    obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit133:setParent(obj.rectangle365);
+    obj.edit133:setLeft(692);
+    obj.edit133:setTop(375);
+    obj.edit133:setWidth(40);
+    obj.edit133:setFontSize(18);
+    obj.edit133:setHorzTextAlign("center");
+    obj.edit133:setFontColor("#D5D5D5");
+    obj.edit133:setTransparent(true);
+    obj.edit133:setField("qtdMagia12");
+    obj.edit133:setHitTest(true);
+    obj.edit133:setCursor("handPoint");
+    obj.edit133:setHint("Quantidade");
+    obj.edit133:setName("edit133");
 
     obj.label155 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label155:setParent(obj.rectangle402);
-    obj.label155:setLeft(70);
-    obj.label155:setTop(489);
+    obj.label155:setParent(obj.rectangle365);
+    obj.label155:setLeft(734);
+    obj.label155:setTop(382);
     obj.label155:setWidth(280);
     obj.label155:setFontSize(18);
-    obj.label155:setText("Tradição:");
+    obj.label155:setText("/");
     obj.label155:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label155, "fontStyle", "bold");
     obj.label155:setName("label155");
 
-    obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit151:setParent(obj.rectangle402);
-    obj.edit151:setLeft(150);
-    obj.edit151:setTop(483);
-    obj.edit151:setWidth(260);
-    obj.edit151:setFontSize(18);
-    obj.edit151:setFontColor("#49244F");
-    obj.edit151:setTransparent(true);
-    obj.edit151:setField("tradicaoMagia13");
-    obj.edit151:setName("edit151");
+    obj.rectangle385 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle385:setParent(obj.rectangle365);
+    obj.rectangle385:setLeft(748);
+    obj.rectangle385:setTop(376);
+    obj.rectangle385:setWidth(29);
+    obj.rectangle385:setHeight(29);
+    obj.rectangle385:setColor("#49244F");
+    obj.rectangle385:setCornerType("round");
+    obj.rectangle385:setXradius(15);
+    obj.rectangle385:setYradius(15);
+    obj.rectangle385:setName("rectangle385");
 
-    obj.rectangle426 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle426:setParent(obj.rectangle402);
-    obj.rectangle426:setLeft(60);
-    obj.rectangle426:setTop(551);
-    obj.rectangle426:setWidth(350);
-    obj.rectangle426:setHeight(1);
-    obj.rectangle426:setColor("#49244F");
-    obj.rectangle426:setName("rectangle426");
+    obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit134:setParent(obj.rectangle365);
+    obj.edit134:setLeft(743);
+    obj.edit134:setTop(375);
+    obj.edit134:setWidth(40);
+    obj.edit134:setFontSize(18);
+    obj.edit134:setHorzTextAlign("center");
+    obj.edit134:setFontColor("#D5D5D5");
+    obj.edit134:setTransparent(true);
+    obj.edit134:setField("maxMagia12");
+    obj.edit134:setHitTest(true);
+    obj.edit134:setCursor("handPoint");
+    obj.edit134:setHint("Total");
+    obj.edit134:setName("edit134");
+
+    obj.rectangle386 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle386:setParent(obj.rectangle365);
+    obj.rectangle386:setLeft(60);
+    obj.rectangle386:setTop(435);
+    obj.rectangle386:setWidth(350);
+    obj.rectangle386:setHeight(318);
+    obj.rectangle386:setColor("#D5D5D5");
+    obj.rectangle386:setStrokeColor("#49244F");
+    obj.rectangle386:setStrokeSize(3);
+    obj.rectangle386:setName("rectangle386");
+
+    obj.rectangle387 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle387:setParent(obj.rectangle365);
+    obj.rectangle387:setLeft(60);
+    obj.rectangle387:setTop(435);
+    obj.rectangle387:setWidth(350);
+    obj.rectangle387:setHeight(50);
+    obj.rectangle387:setColor("#49244F");
+    obj.rectangle387:setName("rectangle387");
+
+    obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit135:setParent(obj.rectangle365);
+    obj.edit135:setLeft(65);
+    obj.edit135:setTop(443);
+    obj.edit135:setWidth(340);
+    obj.edit135:setFontSize(18);
+    obj.edit135:setHeight(30);
+    obj.edit135:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit135, "fontStyle", "bold");
+    obj.edit135:setTransparent(true);
+    obj.edit135:setField("Magia13");
+    obj.edit135:setName("edit135");
+
+    obj.rectangle388 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle388:setParent(obj.rectangle365);
+    obj.rectangle388:setLeft(60);
+    obj.rectangle388:setTop(516);
+    obj.rectangle388:setWidth(350);
+    obj.rectangle388:setHeight(1);
+    obj.rectangle388:setColor("#49244F");
+    obj.rectangle388:setName("rectangle388");
 
     obj.label156 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label156:setParent(obj.rectangle402);
+    obj.label156:setParent(obj.rectangle365);
     obj.label156:setLeft(70);
-    obj.label156:setTop(524);
+    obj.label156:setTop(489);
     obj.label156:setWidth(280);
     obj.label156:setFontSize(18);
-    obj.label156:setText("Alvo:");
+    obj.label156:setText("Tradição:");
     obj.label156:setFontColor("#49244F");
     lfm_setPropAsString(obj.label156, "fontStyle", "bold");
     obj.label156:setName("label156");
 
-    obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit152:setParent(obj.rectangle402);
-    obj.edit152:setLeft(115);
-    obj.edit152:setTop(518);
-    obj.edit152:setWidth(295);
-    obj.edit152:setFontSize(18);
-    obj.edit152:setFontColor("#49244F");
-    obj.edit152:setTransparent(true);
-    obj.edit152:setField("alvoMagia13");
-    obj.edit152:setName("edit152");
+    obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit136:setParent(obj.rectangle365);
+    obj.edit136:setLeft(150);
+    obj.edit136:setTop(483);
+    obj.edit136:setWidth(260);
+    obj.edit136:setFontSize(18);
+    obj.edit136:setFontColor("#49244F");
+    obj.edit136:setTransparent(true);
+    obj.edit136:setField("tradicaoMagia13");
+    obj.edit136:setName("edit136");
 
-    obj.rectangle427 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle427:setParent(obj.rectangle402);
-    obj.rectangle427:setLeft(60);
-    obj.rectangle427:setTop(586);
-    obj.rectangle427:setWidth(350);
-    obj.rectangle427:setHeight(3);
-    obj.rectangle427:setColor("#49244F");
-    obj.rectangle427:setName("rectangle427");
+    obj.rectangle389 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle389:setParent(obj.rectangle365);
+    obj.rectangle389:setLeft(60);
+    obj.rectangle389:setTop(551);
+    obj.rectangle389:setWidth(350);
+    obj.rectangle389:setHeight(1);
+    obj.rectangle389:setColor("#49244F");
+    obj.rectangle389:setName("rectangle389");
 
     obj.label157 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label157:setParent(obj.rectangle402);
+    obj.label157:setParent(obj.rectangle365);
     obj.label157:setLeft(70);
-    obj.label157:setTop(559);
+    obj.label157:setTop(524);
     obj.label157:setWidth(280);
     obj.label157:setFontSize(18);
-    obj.label157:setText("Duração:");
+    obj.label157:setText("Alvo:");
     obj.label157:setFontColor("#49244F");
     lfm_setPropAsString(obj.label157, "fontStyle", "bold");
     obj.label157:setName("label157");
 
-    obj.edit153 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit153:setParent(obj.rectangle402);
-    obj.edit153:setLeft(150);
-    obj.edit153:setTop(553);
-    obj.edit153:setWidth(260);
-    obj.edit153:setFontSize(18);
-    obj.edit153:setFontColor("#49244F");
-    obj.edit153:setTransparent(true);
-    obj.edit153:setField("duracaoMagia13");
-    obj.edit153:setName("edit153");
+    obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit137:setParent(obj.rectangle365);
+    obj.edit137:setLeft(115);
+    obj.edit137:setTop(518);
+    obj.edit137:setWidth(295);
+    obj.edit137:setFontSize(18);
+    obj.edit137:setFontColor("#49244F");
+    obj.edit137:setTransparent(true);
+    obj.edit137:setField("alvoMagia13");
+    obj.edit137:setName("edit137");
 
-    obj.rectangle428 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle428:setParent(obj.rectangle402);
-    obj.rectangle428:setLeft(60);
-    obj.rectangle428:setTop(586);
-    obj.rectangle428:setWidth(350);
-    obj.rectangle428:setHeight(125);
-    obj.rectangle428:setColor("#49244F");
-    obj.rectangle428:setName("rectangle428");
-
-    obj.textEditor29 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor29:setParent(obj.rectangle402);
-    obj.textEditor29:setLeft(65);
-    obj.textEditor29:setTop(591);
-    obj.textEditor29:setWidth(340);
-    obj.textEditor29:setHeight(115);
-    obj.textEditor29:setFontColor("#D5D5D5");
-    obj.textEditor29:setTransparent(true);
-    obj.textEditor29:setField("descricaoMagia13");
-    obj.textEditor29:setFontSize(18);
-    obj.textEditor29:setName("textEditor29");
-
-    obj.rectangle429 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle429:setParent(obj.rectangle402);
-    obj.rectangle429:setLeft(60);
-    obj.rectangle429:setTop(711);
-    obj.rectangle429:setWidth(350);
-    obj.rectangle429:setHeight(3);
-    obj.rectangle429:setColor("#49244F");
-    obj.rectangle429:setName("rectangle429");
-
-    obj.rectangle430 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle430:setParent(obj.rectangle402);
-    obj.rectangle430:setLeft(64);
-    obj.rectangle430:setTop(718);
-    obj.rectangle430:setWidth(135);
-    obj.rectangle430:setHeight(29);
-    obj.rectangle430:setColor("#49244F");
-    obj.rectangle430:setHitTest(true);
-    obj.rectangle430:setCursor("handPoint");
-    obj.rectangle430:setName("rectangle430");
+    obj.rectangle390 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle390:setParent(obj.rectangle365);
+    obj.rectangle390:setLeft(60);
+    obj.rectangle390:setTop(586);
+    obj.rectangle390:setWidth(350);
+    obj.rectangle390:setHeight(3);
+    obj.rectangle390:setColor("#49244F");
+    obj.rectangle390:setName("rectangle390");
 
     obj.label158 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label158:setParent(obj.rectangle402);
+    obj.label158:setParent(obj.rectangle365);
     obj.label158:setLeft(70);
-    obj.label158:setTop(722);
+    obj.label158:setTop(559);
     obj.label158:setWidth(280);
     obj.label158:setFontSize(18);
-    obj.label158:setText("Conjurar Feitiço");
-    obj.label158:setFontColor("#D5D5D5");
+    obj.label158:setText("Duração:");
+    obj.label158:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label158, "fontStyle", "bold");
     obj.label158:setName("label158");
 
-    obj.rectangle431 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle431:setParent(obj.rectangle402);
-    obj.rectangle431:setLeft(324);
-    obj.rectangle431:setTop(718);
-    obj.rectangle431:setWidth(29);
-    obj.rectangle431:setHeight(29);
-    obj.rectangle431:setColor("#49244F");
-    obj.rectangle431:setCornerType("round");
-    obj.rectangle431:setXradius(15);
-    obj.rectangle431:setYradius(15);
-    obj.rectangle431:setName("rectangle431");
+    obj.edit138 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit138:setParent(obj.rectangle365);
+    obj.edit138:setLeft(150);
+    obj.edit138:setTop(553);
+    obj.edit138:setWidth(260);
+    obj.edit138:setFontSize(18);
+    obj.edit138:setFontColor("#49244F");
+    obj.edit138:setTransparent(true);
+    obj.edit138:setField("duracaoMagia13");
+    obj.edit138:setName("edit138");
 
-    obj.edit154 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit154:setParent(obj.rectangle402);
-    obj.edit154:setLeft(318);
-    obj.edit154:setTop(715);
-    obj.edit154:setWidth(40);
-    obj.edit154:setFontSize(18);
-    obj.edit154:setHorzTextAlign("center");
-    obj.edit154:setFontColor("#D5D5D5");
-    obj.edit154:setTransparent(true);
-    obj.edit154:setField("qtdMagia13");
-    obj.edit154:setHitTest(true);
-    obj.edit154:setCursor("handPoint");
-    obj.edit154:setHint("Quantidade");
-    obj.edit154:setName("edit154");
+    obj.rectangle391 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle391:setParent(obj.rectangle365);
+    obj.rectangle391:setLeft(60);
+    obj.rectangle391:setTop(586);
+    obj.rectangle391:setWidth(350);
+    obj.rectangle391:setHeight(125);
+    obj.rectangle391:setColor("#49244F");
+    obj.rectangle391:setName("rectangle391");
+
+    obj.textEditor14 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor14:setParent(obj.rectangle365);
+    obj.textEditor14:setLeft(65);
+    obj.textEditor14:setTop(591);
+    obj.textEditor14:setWidth(340);
+    obj.textEditor14:setHeight(115);
+    obj.textEditor14:setFontColor("#D5D5D5");
+    obj.textEditor14:setTransparent(true);
+    obj.textEditor14:setField("descricaoMagia13");
+    obj.textEditor14:setFontSize(18);
+    obj.textEditor14:setName("textEditor14");
+
+    obj.rectangle392 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle392:setParent(obj.rectangle365);
+    obj.rectangle392:setLeft(60);
+    obj.rectangle392:setTop(711);
+    obj.rectangle392:setWidth(350);
+    obj.rectangle392:setHeight(3);
+    obj.rectangle392:setColor("#49244F");
+    obj.rectangle392:setName("rectangle392");
+
+    obj.rectangle393 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle393:setParent(obj.rectangle365);
+    obj.rectangle393:setLeft(64);
+    obj.rectangle393:setTop(718);
+    obj.rectangle393:setWidth(135);
+    obj.rectangle393:setHeight(29);
+    obj.rectangle393:setColor("#49244F");
+    obj.rectangle393:setHitTest(true);
+    obj.rectangle393:setCursor("handPoint");
+    obj.rectangle393:setName("rectangle393");
 
     obj.label159 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label159:setParent(obj.rectangle402);
-    obj.label159:setLeft(360);
+    obj.label159:setParent(obj.rectangle365);
+    obj.label159:setLeft(70);
     obj.label159:setTop(722);
     obj.label159:setWidth(280);
     obj.label159:setFontSize(18);
-    obj.label159:setText("/");
-    obj.label159:setFontColor("#49244F");
+    obj.label159:setText("Conjurar Feitiço");
+    obj.label159:setFontColor("#D5D5D5");
     obj.label159:setName("label159");
 
-    obj.rectangle432 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle432:setParent(obj.rectangle402);
-    obj.rectangle432:setLeft(374);
-    obj.rectangle432:setTop(716);
-    obj.rectangle432:setWidth(29);
-    obj.rectangle432:setHeight(29);
-    obj.rectangle432:setColor("#49244F");
-    obj.rectangle432:setCornerType("round");
-    obj.rectangle432:setXradius(15);
-    obj.rectangle432:setYradius(15);
-    obj.rectangle432:setName("rectangle432");
+    obj.rectangle394 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle394:setParent(obj.rectangle365);
+    obj.rectangle394:setLeft(324);
+    obj.rectangle394:setTop(718);
+    obj.rectangle394:setWidth(29);
+    obj.rectangle394:setHeight(29);
+    obj.rectangle394:setColor("#49244F");
+    obj.rectangle394:setCornerType("round");
+    obj.rectangle394:setXradius(15);
+    obj.rectangle394:setYradius(15);
+    obj.rectangle394:setName("rectangle394");
 
-    obj.edit155 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit155:setParent(obj.rectangle402);
-    obj.edit155:setLeft(368);
-    obj.edit155:setTop(715);
-    obj.edit155:setWidth(40);
-    obj.edit155:setFontSize(18);
-    obj.edit155:setHorzTextAlign("center");
-    obj.edit155:setFontColor("#D5D5D5");
-    obj.edit155:setTransparent(true);
-    obj.edit155:setField("maxMagia13");
-    obj.edit155:setHitTest(true);
-    obj.edit155:setCursor("handPoint");
-    obj.edit155:setHint("Total");
-    obj.edit155:setName("edit155");
-
-    obj.rectangle433 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle433:setParent(obj.rectangle402);
-    obj.rectangle433:setLeft(434);
-    obj.rectangle433:setTop(435);
-    obj.rectangle433:setWidth(350);
-    obj.rectangle433:setHeight(318);
-    obj.rectangle433:setColor("#D5D5D5");
-    obj.rectangle433:setStrokeColor("#49244F");
-    obj.rectangle433:setStrokeSize(3);
-    obj.rectangle433:setName("rectangle433");
-
-    obj.rectangle434 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle434:setParent(obj.rectangle402);
-    obj.rectangle434:setLeft(434);
-    obj.rectangle434:setTop(435);
-    obj.rectangle434:setWidth(350);
-    obj.rectangle434:setHeight(50);
-    obj.rectangle434:setColor("#49244F");
-    obj.rectangle434:setName("rectangle434");
-
-    obj.edit156 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit156:setParent(obj.rectangle402);
-    obj.edit156:setLeft(439);
-    obj.edit156:setTop(443);
-    obj.edit156:setWidth(340);
-    obj.edit156:setFontSize(18);
-    obj.edit156:setHeight(30);
-    obj.edit156:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit156, "fontStyle", "bold");
-    obj.edit156:setTransparent(true);
-    obj.edit156:setField("Magia14");
-    obj.edit156:setName("edit156");
-
-    obj.rectangle435 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle435:setParent(obj.rectangle402);
-    obj.rectangle435:setLeft(434);
-    obj.rectangle435:setTop(516);
-    obj.rectangle435:setWidth(350);
-    obj.rectangle435:setHeight(1);
-    obj.rectangle435:setColor("#49244F");
-    obj.rectangle435:setName("rectangle435");
+    obj.edit139 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit139:setParent(obj.rectangle365);
+    obj.edit139:setLeft(318);
+    obj.edit139:setTop(715);
+    obj.edit139:setWidth(40);
+    obj.edit139:setFontSize(18);
+    obj.edit139:setHorzTextAlign("center");
+    obj.edit139:setFontColor("#D5D5D5");
+    obj.edit139:setTransparent(true);
+    obj.edit139:setField("qtdMagia13");
+    obj.edit139:setHitTest(true);
+    obj.edit139:setCursor("handPoint");
+    obj.edit139:setHint("Quantidade");
+    obj.edit139:setName("edit139");
 
     obj.label160 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label160:setParent(obj.rectangle402);
-    obj.label160:setLeft(444);
-    obj.label160:setTop(489);
+    obj.label160:setParent(obj.rectangle365);
+    obj.label160:setLeft(360);
+    obj.label160:setTop(722);
     obj.label160:setWidth(280);
     obj.label160:setFontSize(18);
-    obj.label160:setText("Tradição:");
+    obj.label160:setText("/");
     obj.label160:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label160, "fontStyle", "bold");
     obj.label160:setName("label160");
 
-    obj.edit157 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit157:setParent(obj.rectangle402);
-    obj.edit157:setLeft(524);
-    obj.edit157:setTop(483);
-    obj.edit157:setWidth(260);
-    obj.edit157:setFontSize(18);
-    obj.edit157:setFontColor("#49244F");
-    obj.edit157:setTransparent(true);
-    obj.edit157:setField("tradicaoMagia14");
-    obj.edit157:setName("edit157");
+    obj.rectangle395 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle395:setParent(obj.rectangle365);
+    obj.rectangle395:setLeft(374);
+    obj.rectangle395:setTop(716);
+    obj.rectangle395:setWidth(29);
+    obj.rectangle395:setHeight(29);
+    obj.rectangle395:setColor("#49244F");
+    obj.rectangle395:setCornerType("round");
+    obj.rectangle395:setXradius(15);
+    obj.rectangle395:setYradius(15);
+    obj.rectangle395:setName("rectangle395");
 
-    obj.rectangle436 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle436:setParent(obj.rectangle402);
-    obj.rectangle436:setLeft(434);
-    obj.rectangle436:setTop(551);
-    obj.rectangle436:setWidth(350);
-    obj.rectangle436:setHeight(1);
-    obj.rectangle436:setColor("#49244F");
-    obj.rectangle436:setName("rectangle436");
+    obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit140:setParent(obj.rectangle365);
+    obj.edit140:setLeft(368);
+    obj.edit140:setTop(715);
+    obj.edit140:setWidth(40);
+    obj.edit140:setFontSize(18);
+    obj.edit140:setHorzTextAlign("center");
+    obj.edit140:setFontColor("#D5D5D5");
+    obj.edit140:setTransparent(true);
+    obj.edit140:setField("maxMagia13");
+    obj.edit140:setHitTest(true);
+    obj.edit140:setCursor("handPoint");
+    obj.edit140:setHint("Total");
+    obj.edit140:setName("edit140");
+
+    obj.rectangle396 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle396:setParent(obj.rectangle365);
+    obj.rectangle396:setLeft(434);
+    obj.rectangle396:setTop(435);
+    obj.rectangle396:setWidth(350);
+    obj.rectangle396:setHeight(318);
+    obj.rectangle396:setColor("#D5D5D5");
+    obj.rectangle396:setStrokeColor("#49244F");
+    obj.rectangle396:setStrokeSize(3);
+    obj.rectangle396:setName("rectangle396");
+
+    obj.rectangle397 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle397:setParent(obj.rectangle365);
+    obj.rectangle397:setLeft(434);
+    obj.rectangle397:setTop(435);
+    obj.rectangle397:setWidth(350);
+    obj.rectangle397:setHeight(50);
+    obj.rectangle397:setColor("#49244F");
+    obj.rectangle397:setName("rectangle397");
+
+    obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit141:setParent(obj.rectangle365);
+    obj.edit141:setLeft(439);
+    obj.edit141:setTop(443);
+    obj.edit141:setWidth(340);
+    obj.edit141:setFontSize(18);
+    obj.edit141:setHeight(30);
+    obj.edit141:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit141, "fontStyle", "bold");
+    obj.edit141:setTransparent(true);
+    obj.edit141:setField("Magia14");
+    obj.edit141:setName("edit141");
+
+    obj.rectangle398 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle398:setParent(obj.rectangle365);
+    obj.rectangle398:setLeft(434);
+    obj.rectangle398:setTop(516);
+    obj.rectangle398:setWidth(350);
+    obj.rectangle398:setHeight(1);
+    obj.rectangle398:setColor("#49244F");
+    obj.rectangle398:setName("rectangle398");
 
     obj.label161 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label161:setParent(obj.rectangle402);
+    obj.label161:setParent(obj.rectangle365);
     obj.label161:setLeft(444);
-    obj.label161:setTop(524);
+    obj.label161:setTop(489);
     obj.label161:setWidth(280);
     obj.label161:setFontSize(18);
-    obj.label161:setText("Alvo:");
+    obj.label161:setText("Tradição:");
     obj.label161:setFontColor("#49244F");
     lfm_setPropAsString(obj.label161, "fontStyle", "bold");
     obj.label161:setName("label161");
 
-    obj.edit158 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit158:setParent(obj.rectangle402);
-    obj.edit158:setLeft(489);
-    obj.edit158:setTop(518);
-    obj.edit158:setWidth(295);
-    obj.edit158:setFontSize(18);
-    obj.edit158:setFontColor("#49244F");
-    obj.edit158:setTransparent(true);
-    obj.edit158:setField("alvoMagia14");
-    obj.edit158:setName("edit158");
+    obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit142:setParent(obj.rectangle365);
+    obj.edit142:setLeft(524);
+    obj.edit142:setTop(483);
+    obj.edit142:setWidth(260);
+    obj.edit142:setFontSize(18);
+    obj.edit142:setFontColor("#49244F");
+    obj.edit142:setTransparent(true);
+    obj.edit142:setField("tradicaoMagia14");
+    obj.edit142:setName("edit142");
 
-    obj.rectangle437 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle437:setParent(obj.rectangle402);
-    obj.rectangle437:setLeft(434);
-    obj.rectangle437:setTop(586);
-    obj.rectangle437:setWidth(350);
-    obj.rectangle437:setHeight(3);
-    obj.rectangle437:setColor("#49244F");
-    obj.rectangle437:setName("rectangle437");
+    obj.rectangle399 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle399:setParent(obj.rectangle365);
+    obj.rectangle399:setLeft(434);
+    obj.rectangle399:setTop(551);
+    obj.rectangle399:setWidth(350);
+    obj.rectangle399:setHeight(1);
+    obj.rectangle399:setColor("#49244F");
+    obj.rectangle399:setName("rectangle399");
 
     obj.label162 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label162:setParent(obj.rectangle402);
+    obj.label162:setParent(obj.rectangle365);
     obj.label162:setLeft(444);
-    obj.label162:setTop(559);
+    obj.label162:setTop(524);
     obj.label162:setWidth(280);
     obj.label162:setFontSize(18);
-    obj.label162:setText("Duração:");
+    obj.label162:setText("Alvo:");
     obj.label162:setFontColor("#49244F");
     lfm_setPropAsString(obj.label162, "fontStyle", "bold");
     obj.label162:setName("label162");
 
-    obj.edit159 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit159:setParent(obj.rectangle402);
-    obj.edit159:setLeft(524);
-    obj.edit159:setTop(553);
-    obj.edit159:setWidth(260);
-    obj.edit159:setFontSize(18);
-    obj.edit159:setFontColor("#49244F");
-    obj.edit159:setTransparent(true);
-    obj.edit159:setField("duracaoMagia14");
-    obj.edit159:setName("edit159");
+    obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit143:setParent(obj.rectangle365);
+    obj.edit143:setLeft(489);
+    obj.edit143:setTop(518);
+    obj.edit143:setWidth(295);
+    obj.edit143:setFontSize(18);
+    obj.edit143:setFontColor("#49244F");
+    obj.edit143:setTransparent(true);
+    obj.edit143:setField("alvoMagia14");
+    obj.edit143:setName("edit143");
 
-    obj.rectangle438 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle438:setParent(obj.rectangle402);
-    obj.rectangle438:setLeft(434);
-    obj.rectangle438:setTop(586);
-    obj.rectangle438:setWidth(350);
-    obj.rectangle438:setHeight(125);
-    obj.rectangle438:setColor("#49244F");
-    obj.rectangle438:setName("rectangle438");
-
-    obj.textEditor30 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor30:setParent(obj.rectangle402);
-    obj.textEditor30:setLeft(439);
-    obj.textEditor30:setTop(591);
-    obj.textEditor30:setWidth(340);
-    obj.textEditor30:setHeight(115);
-    obj.textEditor30:setFontColor("#D5D5D5");
-    obj.textEditor30:setTransparent(true);
-    obj.textEditor30:setField("descricaoMagia14");
-    obj.textEditor30:setFontSize(18);
-    obj.textEditor30:setName("textEditor30");
-
-    obj.rectangle439 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle439:setParent(obj.rectangle402);
-    obj.rectangle439:setLeft(434);
-    obj.rectangle439:setTop(711);
-    obj.rectangle439:setWidth(350);
-    obj.rectangle439:setHeight(3);
-    obj.rectangle439:setColor("#49244F");
-    obj.rectangle439:setName("rectangle439");
-
-    obj.rectangle440 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle440:setParent(obj.rectangle402);
-    obj.rectangle440:setLeft(438);
-    obj.rectangle440:setTop(718);
-    obj.rectangle440:setWidth(135);
-    obj.rectangle440:setHeight(29);
-    obj.rectangle440:setColor("#49244F");
-    obj.rectangle440:setHitTest(true);
-    obj.rectangle440:setCursor("handPoint");
-    obj.rectangle440:setName("rectangle440");
+    obj.rectangle400 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle400:setParent(obj.rectangle365);
+    obj.rectangle400:setLeft(434);
+    obj.rectangle400:setTop(586);
+    obj.rectangle400:setWidth(350);
+    obj.rectangle400:setHeight(3);
+    obj.rectangle400:setColor("#49244F");
+    obj.rectangle400:setName("rectangle400");
 
     obj.label163 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label163:setParent(obj.rectangle402);
+    obj.label163:setParent(obj.rectangle365);
     obj.label163:setLeft(444);
-    obj.label163:setTop(722);
+    obj.label163:setTop(559);
     obj.label163:setWidth(280);
     obj.label163:setFontSize(18);
-    obj.label163:setText("Conjurar Feitiço");
-    obj.label163:setFontColor("#D5D5D5");
+    obj.label163:setText("Duração:");
+    obj.label163:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label163, "fontStyle", "bold");
     obj.label163:setName("label163");
 
-    obj.rectangle441 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle441:setParent(obj.rectangle402);
-    obj.rectangle441:setLeft(698);
-    obj.rectangle441:setTop(718);
-    obj.rectangle441:setWidth(29);
-    obj.rectangle441:setHeight(29);
-    obj.rectangle441:setColor("#49244F");
-    obj.rectangle441:setCornerType("round");
-    obj.rectangle441:setXradius(15);
-    obj.rectangle441:setYradius(15);
-    obj.rectangle441:setName("rectangle441");
+    obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit144:setParent(obj.rectangle365);
+    obj.edit144:setLeft(524);
+    obj.edit144:setTop(553);
+    obj.edit144:setWidth(260);
+    obj.edit144:setFontSize(18);
+    obj.edit144:setFontColor("#49244F");
+    obj.edit144:setTransparent(true);
+    obj.edit144:setField("duracaoMagia14");
+    obj.edit144:setName("edit144");
 
-    obj.edit160 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit160:setParent(obj.rectangle402);
-    obj.edit160:setLeft(692);
-    obj.edit160:setTop(715);
-    obj.edit160:setWidth(40);
-    obj.edit160:setFontSize(18);
-    obj.edit160:setHorzTextAlign("center");
-    obj.edit160:setFontColor("#D5D5D5");
-    obj.edit160:setTransparent(true);
-    obj.edit160:setField("qtdMagia14");
-    obj.edit160:setHitTest(true);
-    obj.edit160:setCursor("handPoint");
-    obj.edit160:setHint("Quantidade");
-    obj.edit160:setName("edit160");
+    obj.rectangle401 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle401:setParent(obj.rectangle365);
+    obj.rectangle401:setLeft(434);
+    obj.rectangle401:setTop(586);
+    obj.rectangle401:setWidth(350);
+    obj.rectangle401:setHeight(125);
+    obj.rectangle401:setColor("#49244F");
+    obj.rectangle401:setName("rectangle401");
+
+    obj.textEditor15 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor15:setParent(obj.rectangle365);
+    obj.textEditor15:setLeft(439);
+    obj.textEditor15:setTop(591);
+    obj.textEditor15:setWidth(340);
+    obj.textEditor15:setHeight(115);
+    obj.textEditor15:setFontColor("#D5D5D5");
+    obj.textEditor15:setTransparent(true);
+    obj.textEditor15:setField("descricaoMagia14");
+    obj.textEditor15:setFontSize(18);
+    obj.textEditor15:setName("textEditor15");
+
+    obj.rectangle402 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle402:setParent(obj.rectangle365);
+    obj.rectangle402:setLeft(434);
+    obj.rectangle402:setTop(711);
+    obj.rectangle402:setWidth(350);
+    obj.rectangle402:setHeight(3);
+    obj.rectangle402:setColor("#49244F");
+    obj.rectangle402:setName("rectangle402");
+
+    obj.rectangle403 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle403:setParent(obj.rectangle365);
+    obj.rectangle403:setLeft(438);
+    obj.rectangle403:setTop(718);
+    obj.rectangle403:setWidth(135);
+    obj.rectangle403:setHeight(29);
+    obj.rectangle403:setColor("#49244F");
+    obj.rectangle403:setHitTest(true);
+    obj.rectangle403:setCursor("handPoint");
+    obj.rectangle403:setName("rectangle403");
 
     obj.label164 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label164:setParent(obj.rectangle402);
-    obj.label164:setLeft(734);
+    obj.label164:setParent(obj.rectangle365);
+    obj.label164:setLeft(444);
     obj.label164:setTop(722);
     obj.label164:setWidth(280);
     obj.label164:setFontSize(18);
-    obj.label164:setText("/");
-    obj.label164:setFontColor("#49244F");
+    obj.label164:setText("Conjurar Feitiço");
+    obj.label164:setFontColor("#D5D5D5");
     obj.label164:setName("label164");
 
-    obj.rectangle442 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle442:setParent(obj.rectangle402);
-    obj.rectangle442:setLeft(748);
-    obj.rectangle442:setTop(716);
-    obj.rectangle442:setWidth(29);
-    obj.rectangle442:setHeight(29);
-    obj.rectangle442:setColor("#49244F");
-    obj.rectangle442:setCornerType("round");
-    obj.rectangle442:setXradius(15);
-    obj.rectangle442:setYradius(15);
-    obj.rectangle442:setName("rectangle442");
+    obj.rectangle404 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle404:setParent(obj.rectangle365);
+    obj.rectangle404:setLeft(698);
+    obj.rectangle404:setTop(718);
+    obj.rectangle404:setWidth(29);
+    obj.rectangle404:setHeight(29);
+    obj.rectangle404:setColor("#49244F");
+    obj.rectangle404:setCornerType("round");
+    obj.rectangle404:setXradius(15);
+    obj.rectangle404:setYradius(15);
+    obj.rectangle404:setName("rectangle404");
 
-    obj.edit161 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit161:setParent(obj.rectangle402);
-    obj.edit161:setLeft(743);
-    obj.edit161:setTop(715);
-    obj.edit161:setWidth(40);
-    obj.edit161:setFontSize(18);
-    obj.edit161:setHorzTextAlign("center");
-    obj.edit161:setFontColor("#D5D5D5");
-    obj.edit161:setTransparent(true);
-    obj.edit161:setField("maxMagia14");
-    obj.edit161:setHitTest(true);
-    obj.edit161:setCursor("handPoint");
-    obj.edit161:setHint("Total");
-    obj.edit161:setName("edit161");
-
-    obj.rectangle443 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle443:setParent(obj.rectangle402);
-    obj.rectangle443:setLeft(60);
-    obj.rectangle443:setTop(775);
-    obj.rectangle443:setWidth(350);
-    obj.rectangle443:setHeight(318);
-    obj.rectangle443:setColor("#D5D5D5");
-    obj.rectangle443:setStrokeColor("#49244F");
-    obj.rectangle443:setStrokeSize(3);
-    obj.rectangle443:setName("rectangle443");
-
-    obj.rectangle444 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle444:setParent(obj.rectangle402);
-    obj.rectangle444:setLeft(60);
-    obj.rectangle444:setTop(775);
-    obj.rectangle444:setWidth(350);
-    obj.rectangle444:setHeight(50);
-    obj.rectangle444:setColor("#49244F");
-    obj.rectangle444:setName("rectangle444");
-
-    obj.edit162 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit162:setParent(obj.rectangle402);
-    obj.edit162:setLeft(65);
-    obj.edit162:setTop(783);
-    obj.edit162:setWidth(340);
-    obj.edit162:setFontSize(18);
-    obj.edit162:setHeight(30);
-    obj.edit162:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit162, "fontStyle", "bold");
-    obj.edit162:setTransparent(true);
-    obj.edit162:setField("Magia15");
-    obj.edit162:setName("edit162");
-
-    obj.rectangle445 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle445:setParent(obj.rectangle402);
-    obj.rectangle445:setLeft(60);
-    obj.rectangle445:setTop(856);
-    obj.rectangle445:setWidth(350);
-    obj.rectangle445:setHeight(1);
-    obj.rectangle445:setColor("#49244F");
-    obj.rectangle445:setName("rectangle445");
+    obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit145:setParent(obj.rectangle365);
+    obj.edit145:setLeft(692);
+    obj.edit145:setTop(715);
+    obj.edit145:setWidth(40);
+    obj.edit145:setFontSize(18);
+    obj.edit145:setHorzTextAlign("center");
+    obj.edit145:setFontColor("#D5D5D5");
+    obj.edit145:setTransparent(true);
+    obj.edit145:setField("qtdMagia14");
+    obj.edit145:setHitTest(true);
+    obj.edit145:setCursor("handPoint");
+    obj.edit145:setHint("Quantidade");
+    obj.edit145:setName("edit145");
 
     obj.label165 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label165:setParent(obj.rectangle402);
-    obj.label165:setLeft(70);
-    obj.label165:setTop(829);
+    obj.label165:setParent(obj.rectangle365);
+    obj.label165:setLeft(734);
+    obj.label165:setTop(722);
     obj.label165:setWidth(280);
     obj.label165:setFontSize(18);
-    obj.label165:setText("Tradição:");
+    obj.label165:setText("/");
     obj.label165:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label165, "fontStyle", "bold");
     obj.label165:setName("label165");
 
-    obj.edit163 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit163:setParent(obj.rectangle402);
-    obj.edit163:setLeft(150);
-    obj.edit163:setTop(823);
-    obj.edit163:setWidth(260);
-    obj.edit163:setFontSize(18);
-    obj.edit163:setFontColor("#49244F");
-    obj.edit163:setTransparent(true);
-    obj.edit163:setField("tradicaoMagia15");
-    obj.edit163:setName("edit163");
+    obj.rectangle405 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle405:setParent(obj.rectangle365);
+    obj.rectangle405:setLeft(748);
+    obj.rectangle405:setTop(716);
+    obj.rectangle405:setWidth(29);
+    obj.rectangle405:setHeight(29);
+    obj.rectangle405:setColor("#49244F");
+    obj.rectangle405:setCornerType("round");
+    obj.rectangle405:setXradius(15);
+    obj.rectangle405:setYradius(15);
+    obj.rectangle405:setName("rectangle405");
 
-    obj.rectangle446 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle446:setParent(obj.rectangle402);
-    obj.rectangle446:setLeft(60);
-    obj.rectangle446:setTop(891);
-    obj.rectangle446:setWidth(350);
-    obj.rectangle446:setHeight(1);
-    obj.rectangle446:setColor("#49244F");
-    obj.rectangle446:setName("rectangle446");
+    obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit146:setParent(obj.rectangle365);
+    obj.edit146:setLeft(743);
+    obj.edit146:setTop(715);
+    obj.edit146:setWidth(40);
+    obj.edit146:setFontSize(18);
+    obj.edit146:setHorzTextAlign("center");
+    obj.edit146:setFontColor("#D5D5D5");
+    obj.edit146:setTransparent(true);
+    obj.edit146:setField("maxMagia14");
+    obj.edit146:setHitTest(true);
+    obj.edit146:setCursor("handPoint");
+    obj.edit146:setHint("Total");
+    obj.edit146:setName("edit146");
+
+    obj.rectangle406 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle406:setParent(obj.rectangle365);
+    obj.rectangle406:setLeft(60);
+    obj.rectangle406:setTop(775);
+    obj.rectangle406:setWidth(350);
+    obj.rectangle406:setHeight(318);
+    obj.rectangle406:setColor("#D5D5D5");
+    obj.rectangle406:setStrokeColor("#49244F");
+    obj.rectangle406:setStrokeSize(3);
+    obj.rectangle406:setName("rectangle406");
+
+    obj.rectangle407 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle407:setParent(obj.rectangle365);
+    obj.rectangle407:setLeft(60);
+    obj.rectangle407:setTop(775);
+    obj.rectangle407:setWidth(350);
+    obj.rectangle407:setHeight(50);
+    obj.rectangle407:setColor("#49244F");
+    obj.rectangle407:setName("rectangle407");
+
+    obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit147:setParent(obj.rectangle365);
+    obj.edit147:setLeft(65);
+    obj.edit147:setTop(783);
+    obj.edit147:setWidth(340);
+    obj.edit147:setFontSize(18);
+    obj.edit147:setHeight(30);
+    obj.edit147:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit147, "fontStyle", "bold");
+    obj.edit147:setTransparent(true);
+    obj.edit147:setField("Magia15");
+    obj.edit147:setName("edit147");
+
+    obj.rectangle408 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle408:setParent(obj.rectangle365);
+    obj.rectangle408:setLeft(60);
+    obj.rectangle408:setTop(856);
+    obj.rectangle408:setWidth(350);
+    obj.rectangle408:setHeight(1);
+    obj.rectangle408:setColor("#49244F");
+    obj.rectangle408:setName("rectangle408");
 
     obj.label166 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label166:setParent(obj.rectangle402);
+    obj.label166:setParent(obj.rectangle365);
     obj.label166:setLeft(70);
-    obj.label166:setTop(864);
+    obj.label166:setTop(829);
     obj.label166:setWidth(280);
     obj.label166:setFontSize(18);
-    obj.label166:setText("Alvo:");
+    obj.label166:setText("Tradição:");
     obj.label166:setFontColor("#49244F");
     lfm_setPropAsString(obj.label166, "fontStyle", "bold");
     obj.label166:setName("label166");
 
-    obj.edit164 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit164:setParent(obj.rectangle402);
-    obj.edit164:setLeft(115);
-    obj.edit164:setTop(858);
-    obj.edit164:setWidth(295);
-    obj.edit164:setFontSize(18);
-    obj.edit164:setFontColor("#49244F");
-    obj.edit164:setTransparent(true);
-    obj.edit164:setField("alvoMagia15");
-    obj.edit164:setName("edit164");
+    obj.edit148 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit148:setParent(obj.rectangle365);
+    obj.edit148:setLeft(150);
+    obj.edit148:setTop(823);
+    obj.edit148:setWidth(260);
+    obj.edit148:setFontSize(18);
+    obj.edit148:setFontColor("#49244F");
+    obj.edit148:setTransparent(true);
+    obj.edit148:setField("tradicaoMagia15");
+    obj.edit148:setName("edit148");
 
-    obj.rectangle447 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle447:setParent(obj.rectangle402);
-    obj.rectangle447:setLeft(60);
-    obj.rectangle447:setTop(926);
-    obj.rectangle447:setWidth(350);
-    obj.rectangle447:setHeight(3);
-    obj.rectangle447:setColor("#49244F");
-    obj.rectangle447:setName("rectangle447");
+    obj.rectangle409 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle409:setParent(obj.rectangle365);
+    obj.rectangle409:setLeft(60);
+    obj.rectangle409:setTop(891);
+    obj.rectangle409:setWidth(350);
+    obj.rectangle409:setHeight(1);
+    obj.rectangle409:setColor("#49244F");
+    obj.rectangle409:setName("rectangle409");
 
     obj.label167 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label167:setParent(obj.rectangle402);
+    obj.label167:setParent(obj.rectangle365);
     obj.label167:setLeft(70);
-    obj.label167:setTop(899);
+    obj.label167:setTop(864);
     obj.label167:setWidth(280);
     obj.label167:setFontSize(18);
-    obj.label167:setText("Duração:");
+    obj.label167:setText("Alvo:");
     obj.label167:setFontColor("#49244F");
     lfm_setPropAsString(obj.label167, "fontStyle", "bold");
     obj.label167:setName("label167");
 
-    obj.edit165 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit165:setParent(obj.rectangle402);
-    obj.edit165:setLeft(150);
-    obj.edit165:setTop(893);
-    obj.edit165:setWidth(260);
-    obj.edit165:setFontSize(18);
-    obj.edit165:setFontColor("#49244F");
-    obj.edit165:setTransparent(true);
-    obj.edit165:setField("duracaoMagia15");
-    obj.edit165:setName("edit165");
+    obj.edit149 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit149:setParent(obj.rectangle365);
+    obj.edit149:setLeft(115);
+    obj.edit149:setTop(858);
+    obj.edit149:setWidth(295);
+    obj.edit149:setFontSize(18);
+    obj.edit149:setFontColor("#49244F");
+    obj.edit149:setTransparent(true);
+    obj.edit149:setField("alvoMagia15");
+    obj.edit149:setName("edit149");
 
-    obj.rectangle448 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle448:setParent(obj.rectangle402);
-    obj.rectangle448:setLeft(60);
-    obj.rectangle448:setTop(926);
-    obj.rectangle448:setWidth(350);
-    obj.rectangle448:setHeight(125);
-    obj.rectangle448:setColor("#49244F");
-    obj.rectangle448:setName("rectangle448");
-
-    obj.textEditor31 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor31:setParent(obj.rectangle402);
-    obj.textEditor31:setLeft(65);
-    obj.textEditor31:setTop(931);
-    obj.textEditor31:setWidth(340);
-    obj.textEditor31:setHeight(115);
-    obj.textEditor31:setFontColor("#D5D5D5");
-    obj.textEditor31:setTransparent(true);
-    obj.textEditor31:setField("descricaoMagia15");
-    obj.textEditor31:setFontSize(18);
-    obj.textEditor31:setName("textEditor31");
-
-    obj.rectangle449 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle449:setParent(obj.rectangle402);
-    obj.rectangle449:setLeft(60);
-    obj.rectangle449:setTop(1051);
-    obj.rectangle449:setWidth(350);
-    obj.rectangle449:setHeight(3);
-    obj.rectangle449:setColor("#49244F");
-    obj.rectangle449:setName("rectangle449");
-
-    obj.rectangle450 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle450:setParent(obj.rectangle402);
-    obj.rectangle450:setLeft(64);
-    obj.rectangle450:setTop(1058);
-    obj.rectangle450:setWidth(135);
-    obj.rectangle450:setHeight(29);
-    obj.rectangle450:setColor("#49244F");
-    obj.rectangle450:setHitTest(true);
-    obj.rectangle450:setCursor("handPoint");
-    obj.rectangle450:setName("rectangle450");
+    obj.rectangle410 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle410:setParent(obj.rectangle365);
+    obj.rectangle410:setLeft(60);
+    obj.rectangle410:setTop(926);
+    obj.rectangle410:setWidth(350);
+    obj.rectangle410:setHeight(3);
+    obj.rectangle410:setColor("#49244F");
+    obj.rectangle410:setName("rectangle410");
 
     obj.label168 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label168:setParent(obj.rectangle402);
+    obj.label168:setParent(obj.rectangle365);
     obj.label168:setLeft(70);
-    obj.label168:setTop(1062);
+    obj.label168:setTop(899);
     obj.label168:setWidth(280);
     obj.label168:setFontSize(18);
-    obj.label168:setText("Conjurar Feitiço");
-    obj.label168:setFontColor("#D5D5D5");
+    obj.label168:setText("Duração:");
+    obj.label168:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label168, "fontStyle", "bold");
     obj.label168:setName("label168");
 
-    obj.rectangle451 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle451:setParent(obj.rectangle402);
-    obj.rectangle451:setLeft(324);
-    obj.rectangle451:setTop(1058);
-    obj.rectangle451:setWidth(29);
-    obj.rectangle451:setHeight(29);
-    obj.rectangle451:setColor("#49244F");
-    obj.rectangle451:setCornerType("round");
-    obj.rectangle451:setXradius(15);
-    obj.rectangle451:setYradius(15);
-    obj.rectangle451:setName("rectangle451");
+    obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit150:setParent(obj.rectangle365);
+    obj.edit150:setLeft(150);
+    obj.edit150:setTop(893);
+    obj.edit150:setWidth(260);
+    obj.edit150:setFontSize(18);
+    obj.edit150:setFontColor("#49244F");
+    obj.edit150:setTransparent(true);
+    obj.edit150:setField("duracaoMagia15");
+    obj.edit150:setName("edit150");
 
-    obj.edit166 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit166:setParent(obj.rectangle402);
-    obj.edit166:setLeft(318);
-    obj.edit166:setTop(1055);
-    obj.edit166:setWidth(40);
-    obj.edit166:setFontSize(18);
-    obj.edit166:setHorzTextAlign("center");
-    obj.edit166:setFontColor("#D5D5D5");
-    obj.edit166:setTransparent(true);
-    obj.edit166:setField("qtdMagia15");
-    obj.edit166:setHitTest(true);
-    obj.edit166:setCursor("handPoint");
-    obj.edit166:setHint("Quantidade");
-    obj.edit166:setName("edit166");
+    obj.rectangle411 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle411:setParent(obj.rectangle365);
+    obj.rectangle411:setLeft(60);
+    obj.rectangle411:setTop(926);
+    obj.rectangle411:setWidth(350);
+    obj.rectangle411:setHeight(125);
+    obj.rectangle411:setColor("#49244F");
+    obj.rectangle411:setName("rectangle411");
+
+    obj.textEditor16 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor16:setParent(obj.rectangle365);
+    obj.textEditor16:setLeft(65);
+    obj.textEditor16:setTop(931);
+    obj.textEditor16:setWidth(340);
+    obj.textEditor16:setHeight(115);
+    obj.textEditor16:setFontColor("#D5D5D5");
+    obj.textEditor16:setTransparent(true);
+    obj.textEditor16:setField("descricaoMagia15");
+    obj.textEditor16:setFontSize(18);
+    obj.textEditor16:setName("textEditor16");
+
+    obj.rectangle412 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle412:setParent(obj.rectangle365);
+    obj.rectangle412:setLeft(60);
+    obj.rectangle412:setTop(1051);
+    obj.rectangle412:setWidth(350);
+    obj.rectangle412:setHeight(3);
+    obj.rectangle412:setColor("#49244F");
+    obj.rectangle412:setName("rectangle412");
+
+    obj.rectangle413 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle413:setParent(obj.rectangle365);
+    obj.rectangle413:setLeft(64);
+    obj.rectangle413:setTop(1058);
+    obj.rectangle413:setWidth(135);
+    obj.rectangle413:setHeight(29);
+    obj.rectangle413:setColor("#49244F");
+    obj.rectangle413:setHitTest(true);
+    obj.rectangle413:setCursor("handPoint");
+    obj.rectangle413:setName("rectangle413");
 
     obj.label169 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label169:setParent(obj.rectangle402);
-    obj.label169:setLeft(360);
+    obj.label169:setParent(obj.rectangle365);
+    obj.label169:setLeft(70);
     obj.label169:setTop(1062);
     obj.label169:setWidth(280);
     obj.label169:setFontSize(18);
-    obj.label169:setText("/");
-    obj.label169:setFontColor("#49244F");
+    obj.label169:setText("Conjurar Feitiço");
+    obj.label169:setFontColor("#D5D5D5");
     obj.label169:setName("label169");
 
-    obj.rectangle452 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle452:setParent(obj.rectangle402);
-    obj.rectangle452:setLeft(374);
-    obj.rectangle452:setTop(1056);
-    obj.rectangle452:setWidth(29);
-    obj.rectangle452:setHeight(29);
-    obj.rectangle452:setColor("#49244F");
-    obj.rectangle452:setCornerType("round");
-    obj.rectangle452:setXradius(15);
-    obj.rectangle452:setYradius(15);
-    obj.rectangle452:setName("rectangle452");
+    obj.rectangle414 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle414:setParent(obj.rectangle365);
+    obj.rectangle414:setLeft(324);
+    obj.rectangle414:setTop(1058);
+    obj.rectangle414:setWidth(29);
+    obj.rectangle414:setHeight(29);
+    obj.rectangle414:setColor("#49244F");
+    obj.rectangle414:setCornerType("round");
+    obj.rectangle414:setXradius(15);
+    obj.rectangle414:setYradius(15);
+    obj.rectangle414:setName("rectangle414");
 
-    obj.edit167 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit167:setParent(obj.rectangle402);
-    obj.edit167:setLeft(368);
-    obj.edit167:setTop(1055);
-    obj.edit167:setWidth(40);
-    obj.edit167:setFontSize(18);
-    obj.edit167:setHorzTextAlign("center");
-    obj.edit167:setFontColor("#D5D5D5");
-    obj.edit167:setTransparent(true);
-    obj.edit167:setField("maxMagia15");
-    obj.edit167:setHitTest(true);
-    obj.edit167:setCursor("handPoint");
-    obj.edit167:setHint("Total");
-    obj.edit167:setName("edit167");
-
-    obj.rectangle453 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle453:setParent(obj.rectangle402);
-    obj.rectangle453:setLeft(434);
-    obj.rectangle453:setTop(775);
-    obj.rectangle453:setWidth(350);
-    obj.rectangle453:setHeight(318);
-    obj.rectangle453:setColor("#D5D5D5");
-    obj.rectangle453:setStrokeColor("#49244F");
-    obj.rectangle453:setStrokeSize(3);
-    obj.rectangle453:setName("rectangle453");
-
-    obj.rectangle454 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle454:setParent(obj.rectangle402);
-    obj.rectangle454:setLeft(434);
-    obj.rectangle454:setTop(775);
-    obj.rectangle454:setWidth(350);
-    obj.rectangle454:setHeight(50);
-    obj.rectangle454:setColor("#49244F");
-    obj.rectangle454:setName("rectangle454");
-
-    obj.edit168 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit168:setParent(obj.rectangle402);
-    obj.edit168:setLeft(439);
-    obj.edit168:setTop(783);
-    obj.edit168:setWidth(340);
-    obj.edit168:setFontSize(18);
-    obj.edit168:setHeight(30);
-    obj.edit168:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit168, "fontStyle", "bold");
-    obj.edit168:setTransparent(true);
-    obj.edit168:setField("Magia16");
-    obj.edit168:setName("edit168");
-
-    obj.rectangle455 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle455:setParent(obj.rectangle402);
-    obj.rectangle455:setLeft(434);
-    obj.rectangle455:setTop(856);
-    obj.rectangle455:setWidth(350);
-    obj.rectangle455:setHeight(1);
-    obj.rectangle455:setColor("#49244F");
-    obj.rectangle455:setName("rectangle455");
+    obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit151:setParent(obj.rectangle365);
+    obj.edit151:setLeft(318);
+    obj.edit151:setTop(1055);
+    obj.edit151:setWidth(40);
+    obj.edit151:setFontSize(18);
+    obj.edit151:setHorzTextAlign("center");
+    obj.edit151:setFontColor("#D5D5D5");
+    obj.edit151:setTransparent(true);
+    obj.edit151:setField("qtdMagia15");
+    obj.edit151:setHitTest(true);
+    obj.edit151:setCursor("handPoint");
+    obj.edit151:setHint("Quantidade");
+    obj.edit151:setName("edit151");
 
     obj.label170 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label170:setParent(obj.rectangle402);
-    obj.label170:setLeft(444);
-    obj.label170:setTop(829);
+    obj.label170:setParent(obj.rectangle365);
+    obj.label170:setLeft(360);
+    obj.label170:setTop(1062);
     obj.label170:setWidth(280);
     obj.label170:setFontSize(18);
-    obj.label170:setText("Tradição:");
+    obj.label170:setText("/");
     obj.label170:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label170, "fontStyle", "bold");
     obj.label170:setName("label170");
 
-    obj.edit169 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit169:setParent(obj.rectangle402);
-    obj.edit169:setLeft(524);
-    obj.edit169:setTop(823);
-    obj.edit169:setWidth(260);
-    obj.edit169:setFontSize(18);
-    obj.edit169:setFontColor("#49244F");
-    obj.edit169:setTransparent(true);
-    obj.edit169:setField("tradicaoMagia16");
-    obj.edit169:setName("edit169");
+    obj.rectangle415 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle415:setParent(obj.rectangle365);
+    obj.rectangle415:setLeft(374);
+    obj.rectangle415:setTop(1056);
+    obj.rectangle415:setWidth(29);
+    obj.rectangle415:setHeight(29);
+    obj.rectangle415:setColor("#49244F");
+    obj.rectangle415:setCornerType("round");
+    obj.rectangle415:setXradius(15);
+    obj.rectangle415:setYradius(15);
+    obj.rectangle415:setName("rectangle415");
 
-    obj.rectangle456 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle456:setParent(obj.rectangle402);
-    obj.rectangle456:setLeft(434);
-    obj.rectangle456:setTop(891);
-    obj.rectangle456:setWidth(350);
-    obj.rectangle456:setHeight(1);
-    obj.rectangle456:setColor("#49244F");
-    obj.rectangle456:setName("rectangle456");
+    obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit152:setParent(obj.rectangle365);
+    obj.edit152:setLeft(368);
+    obj.edit152:setTop(1055);
+    obj.edit152:setWidth(40);
+    obj.edit152:setFontSize(18);
+    obj.edit152:setHorzTextAlign("center");
+    obj.edit152:setFontColor("#D5D5D5");
+    obj.edit152:setTransparent(true);
+    obj.edit152:setField("maxMagia15");
+    obj.edit152:setHitTest(true);
+    obj.edit152:setCursor("handPoint");
+    obj.edit152:setHint("Total");
+    obj.edit152:setName("edit152");
+
+    obj.rectangle416 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle416:setParent(obj.rectangle365);
+    obj.rectangle416:setLeft(434);
+    obj.rectangle416:setTop(775);
+    obj.rectangle416:setWidth(350);
+    obj.rectangle416:setHeight(318);
+    obj.rectangle416:setColor("#D5D5D5");
+    obj.rectangle416:setStrokeColor("#49244F");
+    obj.rectangle416:setStrokeSize(3);
+    obj.rectangle416:setName("rectangle416");
+
+    obj.rectangle417 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle417:setParent(obj.rectangle365);
+    obj.rectangle417:setLeft(434);
+    obj.rectangle417:setTop(775);
+    obj.rectangle417:setWidth(350);
+    obj.rectangle417:setHeight(50);
+    obj.rectangle417:setColor("#49244F");
+    obj.rectangle417:setName("rectangle417");
+
+    obj.edit153 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit153:setParent(obj.rectangle365);
+    obj.edit153:setLeft(439);
+    obj.edit153:setTop(783);
+    obj.edit153:setWidth(340);
+    obj.edit153:setFontSize(18);
+    obj.edit153:setHeight(30);
+    obj.edit153:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit153, "fontStyle", "bold");
+    obj.edit153:setTransparent(true);
+    obj.edit153:setField("Magia16");
+    obj.edit153:setName("edit153");
+
+    obj.rectangle418 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle418:setParent(obj.rectangle365);
+    obj.rectangle418:setLeft(434);
+    obj.rectangle418:setTop(856);
+    obj.rectangle418:setWidth(350);
+    obj.rectangle418:setHeight(1);
+    obj.rectangle418:setColor("#49244F");
+    obj.rectangle418:setName("rectangle418");
 
     obj.label171 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label171:setParent(obj.rectangle402);
+    obj.label171:setParent(obj.rectangle365);
     obj.label171:setLeft(444);
-    obj.label171:setTop(864);
+    obj.label171:setTop(829);
     obj.label171:setWidth(280);
     obj.label171:setFontSize(18);
-    obj.label171:setText("Alvo:");
+    obj.label171:setText("Tradição:");
     obj.label171:setFontColor("#49244F");
     lfm_setPropAsString(obj.label171, "fontStyle", "bold");
     obj.label171:setName("label171");
 
-    obj.edit170 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit170:setParent(obj.rectangle402);
-    obj.edit170:setLeft(489);
-    obj.edit170:setTop(858);
-    obj.edit170:setWidth(295);
-    obj.edit170:setFontSize(18);
-    obj.edit170:setFontColor("#49244F");
-    obj.edit170:setTransparent(true);
-    obj.edit170:setField("alvoMagia16");
-    obj.edit170:setName("edit170");
+    obj.edit154 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit154:setParent(obj.rectangle365);
+    obj.edit154:setLeft(524);
+    obj.edit154:setTop(823);
+    obj.edit154:setWidth(260);
+    obj.edit154:setFontSize(18);
+    obj.edit154:setFontColor("#49244F");
+    obj.edit154:setTransparent(true);
+    obj.edit154:setField("tradicaoMagia16");
+    obj.edit154:setName("edit154");
 
-    obj.rectangle457 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle457:setParent(obj.rectangle402);
-    obj.rectangle457:setLeft(434);
-    obj.rectangle457:setTop(926);
-    obj.rectangle457:setWidth(350);
-    obj.rectangle457:setHeight(3);
-    obj.rectangle457:setColor("#49244F");
-    obj.rectangle457:setName("rectangle457");
+    obj.rectangle419 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle419:setParent(obj.rectangle365);
+    obj.rectangle419:setLeft(434);
+    obj.rectangle419:setTop(891);
+    obj.rectangle419:setWidth(350);
+    obj.rectangle419:setHeight(1);
+    obj.rectangle419:setColor("#49244F");
+    obj.rectangle419:setName("rectangle419");
 
     obj.label172 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label172:setParent(obj.rectangle402);
+    obj.label172:setParent(obj.rectangle365);
     obj.label172:setLeft(444);
-    obj.label172:setTop(899);
+    obj.label172:setTop(864);
     obj.label172:setWidth(280);
     obj.label172:setFontSize(18);
-    obj.label172:setText("Duração:");
+    obj.label172:setText("Alvo:");
     obj.label172:setFontColor("#49244F");
     lfm_setPropAsString(obj.label172, "fontStyle", "bold");
     obj.label172:setName("label172");
 
-    obj.edit171 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit171:setParent(obj.rectangle402);
-    obj.edit171:setLeft(524);
-    obj.edit171:setTop(893);
-    obj.edit171:setWidth(260);
-    obj.edit171:setFontSize(18);
-    obj.edit171:setFontColor("#49244F");
-    obj.edit171:setTransparent(true);
-    obj.edit171:setField("duracaoMagia16");
-    obj.edit171:setName("edit171");
+    obj.edit155 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit155:setParent(obj.rectangle365);
+    obj.edit155:setLeft(489);
+    obj.edit155:setTop(858);
+    obj.edit155:setWidth(295);
+    obj.edit155:setFontSize(18);
+    obj.edit155:setFontColor("#49244F");
+    obj.edit155:setTransparent(true);
+    obj.edit155:setField("alvoMagia16");
+    obj.edit155:setName("edit155");
 
-    obj.rectangle458 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle458:setParent(obj.rectangle402);
-    obj.rectangle458:setLeft(434);
-    obj.rectangle458:setTop(926);
-    obj.rectangle458:setWidth(350);
-    obj.rectangle458:setHeight(125);
-    obj.rectangle458:setColor("#49244F");
-    obj.rectangle458:setName("rectangle458");
-
-    obj.textEditor32 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor32:setParent(obj.rectangle402);
-    obj.textEditor32:setLeft(439);
-    obj.textEditor32:setTop(931);
-    obj.textEditor32:setWidth(340);
-    obj.textEditor32:setHeight(115);
-    obj.textEditor32:setFontColor("#D5D5D5");
-    obj.textEditor32:setTransparent(true);
-    obj.textEditor32:setField("descricaoMagia16");
-    obj.textEditor32:setFontSize(18);
-    obj.textEditor32:setName("textEditor32");
-
-    obj.rectangle459 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle459:setParent(obj.rectangle402);
-    obj.rectangle459:setLeft(434);
-    obj.rectangle459:setTop(1051);
-    obj.rectangle459:setWidth(350);
-    obj.rectangle459:setHeight(3);
-    obj.rectangle459:setColor("#49244F");
-    obj.rectangle459:setName("rectangle459");
-
-    obj.rectangle460 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle460:setParent(obj.rectangle402);
-    obj.rectangle460:setLeft(438);
-    obj.rectangle460:setTop(1058);
-    obj.rectangle460:setWidth(135);
-    obj.rectangle460:setHeight(29);
-    obj.rectangle460:setColor("#49244F");
-    obj.rectangle460:setHitTest(true);
-    obj.rectangle460:setCursor("handPoint");
-    obj.rectangle460:setName("rectangle460");
+    obj.rectangle420 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle420:setParent(obj.rectangle365);
+    obj.rectangle420:setLeft(434);
+    obj.rectangle420:setTop(926);
+    obj.rectangle420:setWidth(350);
+    obj.rectangle420:setHeight(3);
+    obj.rectangle420:setColor("#49244F");
+    obj.rectangle420:setName("rectangle420");
 
     obj.label173 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label173:setParent(obj.rectangle402);
+    obj.label173:setParent(obj.rectangle365);
     obj.label173:setLeft(444);
-    obj.label173:setTop(1062);
+    obj.label173:setTop(899);
     obj.label173:setWidth(280);
     obj.label173:setFontSize(18);
-    obj.label173:setText("Conjurar Feitiço");
-    obj.label173:setFontColor("#D5D5D5");
+    obj.label173:setText("Duração:");
+    obj.label173:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label173, "fontStyle", "bold");
     obj.label173:setName("label173");
 
-    obj.rectangle461 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle461:setParent(obj.rectangle402);
-    obj.rectangle461:setLeft(698);
-    obj.rectangle461:setTop(1058);
-    obj.rectangle461:setWidth(29);
-    obj.rectangle461:setHeight(29);
-    obj.rectangle461:setColor("#49244F");
-    obj.rectangle461:setCornerType("round");
-    obj.rectangle461:setXradius(15);
-    obj.rectangle461:setYradius(15);
-    obj.rectangle461:setName("rectangle461");
+    obj.edit156 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit156:setParent(obj.rectangle365);
+    obj.edit156:setLeft(524);
+    obj.edit156:setTop(893);
+    obj.edit156:setWidth(260);
+    obj.edit156:setFontSize(18);
+    obj.edit156:setFontColor("#49244F");
+    obj.edit156:setTransparent(true);
+    obj.edit156:setField("duracaoMagia16");
+    obj.edit156:setName("edit156");
 
-    obj.edit172 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit172:setParent(obj.rectangle402);
-    obj.edit172:setLeft(692);
-    obj.edit172:setTop(1055);
-    obj.edit172:setWidth(40);
-    obj.edit172:setFontSize(18);
-    obj.edit172:setHorzTextAlign("center");
-    obj.edit172:setFontColor("#D5D5D5");
-    obj.edit172:setTransparent(true);
-    obj.edit172:setField("qtdMagia16");
-    obj.edit172:setHitTest(true);
-    obj.edit172:setCursor("handPoint");
-    obj.edit172:setHint("Quantidade");
-    obj.edit172:setName("edit172");
+    obj.rectangle421 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle421:setParent(obj.rectangle365);
+    obj.rectangle421:setLeft(434);
+    obj.rectangle421:setTop(926);
+    obj.rectangle421:setWidth(350);
+    obj.rectangle421:setHeight(125);
+    obj.rectangle421:setColor("#49244F");
+    obj.rectangle421:setName("rectangle421");
+
+    obj.textEditor17 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor17:setParent(obj.rectangle365);
+    obj.textEditor17:setLeft(439);
+    obj.textEditor17:setTop(931);
+    obj.textEditor17:setWidth(340);
+    obj.textEditor17:setHeight(115);
+    obj.textEditor17:setFontColor("#D5D5D5");
+    obj.textEditor17:setTransparent(true);
+    obj.textEditor17:setField("descricaoMagia16");
+    obj.textEditor17:setFontSize(18);
+    obj.textEditor17:setName("textEditor17");
+
+    obj.rectangle422 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle422:setParent(obj.rectangle365);
+    obj.rectangle422:setLeft(434);
+    obj.rectangle422:setTop(1051);
+    obj.rectangle422:setWidth(350);
+    obj.rectangle422:setHeight(3);
+    obj.rectangle422:setColor("#49244F");
+    obj.rectangle422:setName("rectangle422");
+
+    obj.rectangle423 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle423:setParent(obj.rectangle365);
+    obj.rectangle423:setLeft(438);
+    obj.rectangle423:setTop(1058);
+    obj.rectangle423:setWidth(135);
+    obj.rectangle423:setHeight(29);
+    obj.rectangle423:setColor("#49244F");
+    obj.rectangle423:setHitTest(true);
+    obj.rectangle423:setCursor("handPoint");
+    obj.rectangle423:setName("rectangle423");
 
     obj.label174 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label174:setParent(obj.rectangle402);
-    obj.label174:setLeft(734);
+    obj.label174:setParent(obj.rectangle365);
+    obj.label174:setLeft(444);
     obj.label174:setTop(1062);
     obj.label174:setWidth(280);
     obj.label174:setFontSize(18);
-    obj.label174:setText("/");
-    obj.label174:setFontColor("#49244F");
+    obj.label174:setText("Conjurar Feitiço");
+    obj.label174:setFontColor("#D5D5D5");
     obj.label174:setName("label174");
 
-    obj.rectangle462 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle462:setParent(obj.rectangle402);
-    obj.rectangle462:setLeft(748);
-    obj.rectangle462:setTop(1056);
-    obj.rectangle462:setWidth(29);
-    obj.rectangle462:setHeight(29);
-    obj.rectangle462:setColor("#49244F");
-    obj.rectangle462:setCornerType("round");
-    obj.rectangle462:setXradius(15);
-    obj.rectangle462:setYradius(15);
-    obj.rectangle462:setName("rectangle462");
+    obj.rectangle424 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle424:setParent(obj.rectangle365);
+    obj.rectangle424:setLeft(698);
+    obj.rectangle424:setTop(1058);
+    obj.rectangle424:setWidth(29);
+    obj.rectangle424:setHeight(29);
+    obj.rectangle424:setColor("#49244F");
+    obj.rectangle424:setCornerType("round");
+    obj.rectangle424:setXradius(15);
+    obj.rectangle424:setYradius(15);
+    obj.rectangle424:setName("rectangle424");
 
-    obj.edit173 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit173:setParent(obj.rectangle402);
-    obj.edit173:setLeft(743);
-    obj.edit173:setTop(1055);
-    obj.edit173:setWidth(40);
-    obj.edit173:setFontSize(18);
-    obj.edit173:setHorzTextAlign("center");
-    obj.edit173:setFontColor("#D5D5D5");
-    obj.edit173:setTransparent(true);
-    obj.edit173:setField("maxMagia16");
-    obj.edit173:setHitTest(true);
-    obj.edit173:setCursor("handPoint");
-    obj.edit173:setHint("Total");
-    obj.edit173:setName("edit173");
-
-    obj.rectangle463 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle463:setParent(obj.rectangle402);
-    obj.rectangle463:setLeft(60);
-    obj.rectangle463:setTop(1115);
-    obj.rectangle463:setWidth(350);
-    obj.rectangle463:setHeight(318);
-    obj.rectangle463:setColor("#D5D5D5");
-    obj.rectangle463:setStrokeColor("#49244F");
-    obj.rectangle463:setStrokeSize(3);
-    obj.rectangle463:setName("rectangle463");
-
-    obj.rectangle464 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle464:setParent(obj.rectangle402);
-    obj.rectangle464:setLeft(60);
-    obj.rectangle464:setTop(1115);
-    obj.rectangle464:setWidth(350);
-    obj.rectangle464:setHeight(50);
-    obj.rectangle464:setColor("#49244F");
-    obj.rectangle464:setName("rectangle464");
-
-    obj.edit174 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit174:setParent(obj.rectangle402);
-    obj.edit174:setLeft(65);
-    obj.edit174:setTop(1123);
-    obj.edit174:setWidth(340);
-    obj.edit174:setFontSize(18);
-    obj.edit174:setHeight(30);
-    obj.edit174:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit174, "fontStyle", "bold");
-    obj.edit174:setTransparent(true);
-    obj.edit174:setField("Magia17");
-    obj.edit174:setName("edit174");
-
-    obj.rectangle465 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle465:setParent(obj.rectangle402);
-    obj.rectangle465:setLeft(60);
-    obj.rectangle465:setTop(1196);
-    obj.rectangle465:setWidth(350);
-    obj.rectangle465:setHeight(1);
-    obj.rectangle465:setColor("#49244F");
-    obj.rectangle465:setName("rectangle465");
+    obj.edit157 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit157:setParent(obj.rectangle365);
+    obj.edit157:setLeft(692);
+    obj.edit157:setTop(1055);
+    obj.edit157:setWidth(40);
+    obj.edit157:setFontSize(18);
+    obj.edit157:setHorzTextAlign("center");
+    obj.edit157:setFontColor("#D5D5D5");
+    obj.edit157:setTransparent(true);
+    obj.edit157:setField("qtdMagia16");
+    obj.edit157:setHitTest(true);
+    obj.edit157:setCursor("handPoint");
+    obj.edit157:setHint("Quantidade");
+    obj.edit157:setName("edit157");
 
     obj.label175 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label175:setParent(obj.rectangle402);
-    obj.label175:setLeft(70);
-    obj.label175:setTop(1169);
+    obj.label175:setParent(obj.rectangle365);
+    obj.label175:setLeft(734);
+    obj.label175:setTop(1062);
     obj.label175:setWidth(280);
     obj.label175:setFontSize(18);
-    obj.label175:setText("Tradição:");
+    obj.label175:setText("/");
     obj.label175:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label175, "fontStyle", "bold");
     obj.label175:setName("label175");
 
-    obj.edit175 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit175:setParent(obj.rectangle402);
-    obj.edit175:setLeft(150);
-    obj.edit175:setTop(1163);
-    obj.edit175:setWidth(260);
-    obj.edit175:setFontSize(18);
-    obj.edit175:setFontColor("#49244F");
-    obj.edit175:setTransparent(true);
-    obj.edit175:setField("tradicaoMagia17");
-    obj.edit175:setName("edit175");
+    obj.rectangle425 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle425:setParent(obj.rectangle365);
+    obj.rectangle425:setLeft(748);
+    obj.rectangle425:setTop(1056);
+    obj.rectangle425:setWidth(29);
+    obj.rectangle425:setHeight(29);
+    obj.rectangle425:setColor("#49244F");
+    obj.rectangle425:setCornerType("round");
+    obj.rectangle425:setXradius(15);
+    obj.rectangle425:setYradius(15);
+    obj.rectangle425:setName("rectangle425");
 
-    obj.rectangle466 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle466:setParent(obj.rectangle402);
-    obj.rectangle466:setLeft(60);
-    obj.rectangle466:setTop(1231);
-    obj.rectangle466:setWidth(350);
-    obj.rectangle466:setHeight(1);
-    obj.rectangle466:setColor("#49244F");
-    obj.rectangle466:setName("rectangle466");
+    obj.edit158 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit158:setParent(obj.rectangle365);
+    obj.edit158:setLeft(743);
+    obj.edit158:setTop(1055);
+    obj.edit158:setWidth(40);
+    obj.edit158:setFontSize(18);
+    obj.edit158:setHorzTextAlign("center");
+    obj.edit158:setFontColor("#D5D5D5");
+    obj.edit158:setTransparent(true);
+    obj.edit158:setField("maxMagia16");
+    obj.edit158:setHitTest(true);
+    obj.edit158:setCursor("handPoint");
+    obj.edit158:setHint("Total");
+    obj.edit158:setName("edit158");
+
+    obj.rectangle426 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle426:setParent(obj.rectangle365);
+    obj.rectangle426:setLeft(60);
+    obj.rectangle426:setTop(1115);
+    obj.rectangle426:setWidth(350);
+    obj.rectangle426:setHeight(318);
+    obj.rectangle426:setColor("#D5D5D5");
+    obj.rectangle426:setStrokeColor("#49244F");
+    obj.rectangle426:setStrokeSize(3);
+    obj.rectangle426:setName("rectangle426");
+
+    obj.rectangle427 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle427:setParent(obj.rectangle365);
+    obj.rectangle427:setLeft(60);
+    obj.rectangle427:setTop(1115);
+    obj.rectangle427:setWidth(350);
+    obj.rectangle427:setHeight(50);
+    obj.rectangle427:setColor("#49244F");
+    obj.rectangle427:setName("rectangle427");
+
+    obj.edit159 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit159:setParent(obj.rectangle365);
+    obj.edit159:setLeft(65);
+    obj.edit159:setTop(1123);
+    obj.edit159:setWidth(340);
+    obj.edit159:setFontSize(18);
+    obj.edit159:setHeight(30);
+    obj.edit159:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit159, "fontStyle", "bold");
+    obj.edit159:setTransparent(true);
+    obj.edit159:setField("Magia17");
+    obj.edit159:setName("edit159");
+
+    obj.rectangle428 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle428:setParent(obj.rectangle365);
+    obj.rectangle428:setLeft(60);
+    obj.rectangle428:setTop(1196);
+    obj.rectangle428:setWidth(350);
+    obj.rectangle428:setHeight(1);
+    obj.rectangle428:setColor("#49244F");
+    obj.rectangle428:setName("rectangle428");
 
     obj.label176 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label176:setParent(obj.rectangle402);
+    obj.label176:setParent(obj.rectangle365);
     obj.label176:setLeft(70);
-    obj.label176:setTop(1204);
+    obj.label176:setTop(1169);
     obj.label176:setWidth(280);
     obj.label176:setFontSize(18);
-    obj.label176:setText("Alvo:");
+    obj.label176:setText("Tradição:");
     obj.label176:setFontColor("#49244F");
     lfm_setPropAsString(obj.label176, "fontStyle", "bold");
     obj.label176:setName("label176");
 
-    obj.edit176 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit176:setParent(obj.rectangle402);
-    obj.edit176:setLeft(115);
-    obj.edit176:setTop(1198);
-    obj.edit176:setWidth(295);
-    obj.edit176:setFontSize(18);
-    obj.edit176:setFontColor("#49244F");
-    obj.edit176:setTransparent(true);
-    obj.edit176:setField("alvoMagia17");
-    obj.edit176:setName("edit176");
+    obj.edit160 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit160:setParent(obj.rectangle365);
+    obj.edit160:setLeft(150);
+    obj.edit160:setTop(1163);
+    obj.edit160:setWidth(260);
+    obj.edit160:setFontSize(18);
+    obj.edit160:setFontColor("#49244F");
+    obj.edit160:setTransparent(true);
+    obj.edit160:setField("tradicaoMagia17");
+    obj.edit160:setName("edit160");
 
-    obj.rectangle467 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle467:setParent(obj.rectangle402);
-    obj.rectangle467:setLeft(60);
-    obj.rectangle467:setTop(1266);
-    obj.rectangle467:setWidth(350);
-    obj.rectangle467:setHeight(3);
-    obj.rectangle467:setColor("#49244F");
-    obj.rectangle467:setName("rectangle467");
+    obj.rectangle429 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle429:setParent(obj.rectangle365);
+    obj.rectangle429:setLeft(60);
+    obj.rectangle429:setTop(1231);
+    obj.rectangle429:setWidth(350);
+    obj.rectangle429:setHeight(1);
+    obj.rectangle429:setColor("#49244F");
+    obj.rectangle429:setName("rectangle429");
 
     obj.label177 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label177:setParent(obj.rectangle402);
+    obj.label177:setParent(obj.rectangle365);
     obj.label177:setLeft(70);
-    obj.label177:setTop(1239);
+    obj.label177:setTop(1204);
     obj.label177:setWidth(280);
     obj.label177:setFontSize(18);
-    obj.label177:setText("Duração:");
+    obj.label177:setText("Alvo:");
     obj.label177:setFontColor("#49244F");
     lfm_setPropAsString(obj.label177, "fontStyle", "bold");
     obj.label177:setName("label177");
 
-    obj.edit177 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit177:setParent(obj.rectangle402);
-    obj.edit177:setLeft(150);
-    obj.edit177:setTop(1233);
-    obj.edit177:setWidth(260);
-    obj.edit177:setFontSize(18);
-    obj.edit177:setFontColor("#49244F");
-    obj.edit177:setTransparent(true);
-    obj.edit177:setField("duracaoMagia17");
-    obj.edit177:setName("edit177");
+    obj.edit161 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit161:setParent(obj.rectangle365);
+    obj.edit161:setLeft(115);
+    obj.edit161:setTop(1198);
+    obj.edit161:setWidth(295);
+    obj.edit161:setFontSize(18);
+    obj.edit161:setFontColor("#49244F");
+    obj.edit161:setTransparent(true);
+    obj.edit161:setField("alvoMagia17");
+    obj.edit161:setName("edit161");
 
-    obj.rectangle468 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle468:setParent(obj.rectangle402);
-    obj.rectangle468:setLeft(60);
-    obj.rectangle468:setTop(1266);
-    obj.rectangle468:setWidth(350);
-    obj.rectangle468:setHeight(125);
-    obj.rectangle468:setColor("#49244F");
-    obj.rectangle468:setName("rectangle468");
-
-    obj.textEditor33 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor33:setParent(obj.rectangle402);
-    obj.textEditor33:setLeft(65);
-    obj.textEditor33:setTop(1271);
-    obj.textEditor33:setWidth(340);
-    obj.textEditor33:setHeight(115);
-    obj.textEditor33:setFontColor("#D5D5D5");
-    obj.textEditor33:setTransparent(true);
-    obj.textEditor33:setField("descricaoMagia17");
-    obj.textEditor33:setFontSize(18);
-    obj.textEditor33:setName("textEditor33");
-
-    obj.rectangle469 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle469:setParent(obj.rectangle402);
-    obj.rectangle469:setLeft(60);
-    obj.rectangle469:setTop(1391);
-    obj.rectangle469:setWidth(350);
-    obj.rectangle469:setHeight(3);
-    obj.rectangle469:setColor("#49244F");
-    obj.rectangle469:setName("rectangle469");
-
-    obj.rectangle470 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle470:setParent(obj.rectangle402);
-    obj.rectangle470:setLeft(64);
-    obj.rectangle470:setTop(1398);
-    obj.rectangle470:setWidth(135);
-    obj.rectangle470:setHeight(29);
-    obj.rectangle470:setColor("#49244F");
-    obj.rectangle470:setHitTest(true);
-    obj.rectangle470:setCursor("handPoint");
-    obj.rectangle470:setName("rectangle470");
+    obj.rectangle430 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle430:setParent(obj.rectangle365);
+    obj.rectangle430:setLeft(60);
+    obj.rectangle430:setTop(1266);
+    obj.rectangle430:setWidth(350);
+    obj.rectangle430:setHeight(3);
+    obj.rectangle430:setColor("#49244F");
+    obj.rectangle430:setName("rectangle430");
 
     obj.label178 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label178:setParent(obj.rectangle402);
+    obj.label178:setParent(obj.rectangle365);
     obj.label178:setLeft(70);
-    obj.label178:setTop(1402);
+    obj.label178:setTop(1239);
     obj.label178:setWidth(280);
     obj.label178:setFontSize(18);
-    obj.label178:setText("Conjurar Feitiço");
-    obj.label178:setFontColor("#D5D5D5");
+    obj.label178:setText("Duração:");
+    obj.label178:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label178, "fontStyle", "bold");
     obj.label178:setName("label178");
 
-    obj.rectangle471 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle471:setParent(obj.rectangle402);
-    obj.rectangle471:setLeft(324);
-    obj.rectangle471:setTop(1398);
-    obj.rectangle471:setWidth(29);
-    obj.rectangle471:setHeight(29);
-    obj.rectangle471:setColor("#49244F");
-    obj.rectangle471:setCornerType("round");
-    obj.rectangle471:setXradius(15);
-    obj.rectangle471:setYradius(15);
-    obj.rectangle471:setName("rectangle471");
+    obj.edit162 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit162:setParent(obj.rectangle365);
+    obj.edit162:setLeft(150);
+    obj.edit162:setTop(1233);
+    obj.edit162:setWidth(260);
+    obj.edit162:setFontSize(18);
+    obj.edit162:setFontColor("#49244F");
+    obj.edit162:setTransparent(true);
+    obj.edit162:setField("duracaoMagia17");
+    obj.edit162:setName("edit162");
 
-    obj.edit178 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit178:setParent(obj.rectangle402);
-    obj.edit178:setLeft(318);
-    obj.edit178:setTop(1395);
-    obj.edit178:setWidth(40);
-    obj.edit178:setFontSize(18);
-    obj.edit178:setHorzTextAlign("center");
-    obj.edit178:setFontColor("#D5D5D5");
-    obj.edit178:setTransparent(true);
-    obj.edit178:setField("qtdMagia17");
-    obj.edit178:setHitTest(true);
-    obj.edit178:setCursor("handPoint");
-    obj.edit178:setHint("Quantidade");
-    obj.edit178:setName("edit178");
+    obj.rectangle431 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle431:setParent(obj.rectangle365);
+    obj.rectangle431:setLeft(60);
+    obj.rectangle431:setTop(1266);
+    obj.rectangle431:setWidth(350);
+    obj.rectangle431:setHeight(125);
+    obj.rectangle431:setColor("#49244F");
+    obj.rectangle431:setName("rectangle431");
+
+    obj.textEditor18 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor18:setParent(obj.rectangle365);
+    obj.textEditor18:setLeft(65);
+    obj.textEditor18:setTop(1271);
+    obj.textEditor18:setWidth(340);
+    obj.textEditor18:setHeight(115);
+    obj.textEditor18:setFontColor("#D5D5D5");
+    obj.textEditor18:setTransparent(true);
+    obj.textEditor18:setField("descricaoMagia17");
+    obj.textEditor18:setFontSize(18);
+    obj.textEditor18:setName("textEditor18");
+
+    obj.rectangle432 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle432:setParent(obj.rectangle365);
+    obj.rectangle432:setLeft(60);
+    obj.rectangle432:setTop(1391);
+    obj.rectangle432:setWidth(350);
+    obj.rectangle432:setHeight(3);
+    obj.rectangle432:setColor("#49244F");
+    obj.rectangle432:setName("rectangle432");
+
+    obj.rectangle433 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle433:setParent(obj.rectangle365);
+    obj.rectangle433:setLeft(64);
+    obj.rectangle433:setTop(1398);
+    obj.rectangle433:setWidth(135);
+    obj.rectangle433:setHeight(29);
+    obj.rectangle433:setColor("#49244F");
+    obj.rectangle433:setHitTest(true);
+    obj.rectangle433:setCursor("handPoint");
+    obj.rectangle433:setName("rectangle433");
 
     obj.label179 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label179:setParent(obj.rectangle402);
-    obj.label179:setLeft(360);
+    obj.label179:setParent(obj.rectangle365);
+    obj.label179:setLeft(70);
     obj.label179:setTop(1402);
     obj.label179:setWidth(280);
     obj.label179:setFontSize(18);
-    obj.label179:setText("/");
-    obj.label179:setFontColor("#49244F");
+    obj.label179:setText("Conjurar Feitiço");
+    obj.label179:setFontColor("#D5D5D5");
     obj.label179:setName("label179");
 
-    obj.rectangle472 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle472:setParent(obj.rectangle402);
-    obj.rectangle472:setLeft(374);
-    obj.rectangle472:setTop(1396);
-    obj.rectangle472:setWidth(29);
-    obj.rectangle472:setHeight(29);
-    obj.rectangle472:setColor("#49244F");
-    obj.rectangle472:setCornerType("round");
-    obj.rectangle472:setXradius(15);
-    obj.rectangle472:setYradius(15);
-    obj.rectangle472:setName("rectangle472");
+    obj.rectangle434 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle434:setParent(obj.rectangle365);
+    obj.rectangle434:setLeft(324);
+    obj.rectangle434:setTop(1398);
+    obj.rectangle434:setWidth(29);
+    obj.rectangle434:setHeight(29);
+    obj.rectangle434:setColor("#49244F");
+    obj.rectangle434:setCornerType("round");
+    obj.rectangle434:setXradius(15);
+    obj.rectangle434:setYradius(15);
+    obj.rectangle434:setName("rectangle434");
 
-    obj.edit179 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit179:setParent(obj.rectangle402);
-    obj.edit179:setLeft(368);
-    obj.edit179:setTop(1395);
-    obj.edit179:setWidth(40);
-    obj.edit179:setFontSize(18);
-    obj.edit179:setHorzTextAlign("center");
-    obj.edit179:setFontColor("#D5D5D5");
-    obj.edit179:setTransparent(true);
-    obj.edit179:setField("maxMagia17");
-    obj.edit179:setHitTest(true);
-    obj.edit179:setCursor("handPoint");
-    obj.edit179:setHint("Total");
-    obj.edit179:setName("edit179");
-
-    obj.rectangle473 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle473:setParent(obj.rectangle402);
-    obj.rectangle473:setLeft(434);
-    obj.rectangle473:setTop(1115);
-    obj.rectangle473:setWidth(350);
-    obj.rectangle473:setHeight(318);
-    obj.rectangle473:setColor("#D5D5D5");
-    obj.rectangle473:setStrokeColor("#49244F");
-    obj.rectangle473:setStrokeSize(3);
-    obj.rectangle473:setName("rectangle473");
-
-    obj.rectangle474 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle474:setParent(obj.rectangle402);
-    obj.rectangle474:setLeft(434);
-    obj.rectangle474:setTop(1115);
-    obj.rectangle474:setWidth(350);
-    obj.rectangle474:setHeight(50);
-    obj.rectangle474:setColor("#49244F");
-    obj.rectangle474:setName("rectangle474");
-
-    obj.edit180 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit180:setParent(obj.rectangle402);
-    obj.edit180:setLeft(439);
-    obj.edit180:setTop(1123);
-    obj.edit180:setWidth(340);
-    obj.edit180:setFontSize(18);
-    obj.edit180:setHeight(30);
-    obj.edit180:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit180, "fontStyle", "bold");
-    obj.edit180:setTransparent(true);
-    obj.edit180:setField("Magia18");
-    obj.edit180:setName("edit180");
-
-    obj.rectangle475 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle475:setParent(obj.rectangle402);
-    obj.rectangle475:setLeft(434);
-    obj.rectangle475:setTop(1196);
-    obj.rectangle475:setWidth(350);
-    obj.rectangle475:setHeight(1);
-    obj.rectangle475:setColor("#49244F");
-    obj.rectangle475:setName("rectangle475");
+    obj.edit163 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit163:setParent(obj.rectangle365);
+    obj.edit163:setLeft(318);
+    obj.edit163:setTop(1395);
+    obj.edit163:setWidth(40);
+    obj.edit163:setFontSize(18);
+    obj.edit163:setHorzTextAlign("center");
+    obj.edit163:setFontColor("#D5D5D5");
+    obj.edit163:setTransparent(true);
+    obj.edit163:setField("qtdMagia17");
+    obj.edit163:setHitTest(true);
+    obj.edit163:setCursor("handPoint");
+    obj.edit163:setHint("Quantidade");
+    obj.edit163:setName("edit163");
 
     obj.label180 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label180:setParent(obj.rectangle402);
-    obj.label180:setLeft(444);
-    obj.label180:setTop(1169);
+    obj.label180:setParent(obj.rectangle365);
+    obj.label180:setLeft(360);
+    obj.label180:setTop(1402);
     obj.label180:setWidth(280);
     obj.label180:setFontSize(18);
-    obj.label180:setText("Tradição:");
+    obj.label180:setText("/");
     obj.label180:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label180, "fontStyle", "bold");
     obj.label180:setName("label180");
 
-    obj.edit181 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit181:setParent(obj.rectangle402);
-    obj.edit181:setLeft(524);
-    obj.edit181:setTop(1163);
-    obj.edit181:setWidth(260);
-    obj.edit181:setFontSize(18);
-    obj.edit181:setFontColor("#49244F");
-    obj.edit181:setTransparent(true);
-    obj.edit181:setField("tradicaoMagia18");
-    obj.edit181:setName("edit181");
+    obj.rectangle435 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle435:setParent(obj.rectangle365);
+    obj.rectangle435:setLeft(374);
+    obj.rectangle435:setTop(1396);
+    obj.rectangle435:setWidth(29);
+    obj.rectangle435:setHeight(29);
+    obj.rectangle435:setColor("#49244F");
+    obj.rectangle435:setCornerType("round");
+    obj.rectangle435:setXradius(15);
+    obj.rectangle435:setYradius(15);
+    obj.rectangle435:setName("rectangle435");
 
-    obj.rectangle476 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle476:setParent(obj.rectangle402);
-    obj.rectangle476:setLeft(434);
-    obj.rectangle476:setTop(1231);
-    obj.rectangle476:setWidth(350);
-    obj.rectangle476:setHeight(1);
-    obj.rectangle476:setColor("#49244F");
-    obj.rectangle476:setName("rectangle476");
+    obj.edit164 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit164:setParent(obj.rectangle365);
+    obj.edit164:setLeft(368);
+    obj.edit164:setTop(1395);
+    obj.edit164:setWidth(40);
+    obj.edit164:setFontSize(18);
+    obj.edit164:setHorzTextAlign("center");
+    obj.edit164:setFontColor("#D5D5D5");
+    obj.edit164:setTransparent(true);
+    obj.edit164:setField("maxMagia17");
+    obj.edit164:setHitTest(true);
+    obj.edit164:setCursor("handPoint");
+    obj.edit164:setHint("Total");
+    obj.edit164:setName("edit164");
+
+    obj.rectangle436 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle436:setParent(obj.rectangle365);
+    obj.rectangle436:setLeft(434);
+    obj.rectangle436:setTop(1115);
+    obj.rectangle436:setWidth(350);
+    obj.rectangle436:setHeight(318);
+    obj.rectangle436:setColor("#D5D5D5");
+    obj.rectangle436:setStrokeColor("#49244F");
+    obj.rectangle436:setStrokeSize(3);
+    obj.rectangle436:setName("rectangle436");
+
+    obj.rectangle437 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle437:setParent(obj.rectangle365);
+    obj.rectangle437:setLeft(434);
+    obj.rectangle437:setTop(1115);
+    obj.rectangle437:setWidth(350);
+    obj.rectangle437:setHeight(50);
+    obj.rectangle437:setColor("#49244F");
+    obj.rectangle437:setName("rectangle437");
+
+    obj.edit165 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit165:setParent(obj.rectangle365);
+    obj.edit165:setLeft(439);
+    obj.edit165:setTop(1123);
+    obj.edit165:setWidth(340);
+    obj.edit165:setFontSize(18);
+    obj.edit165:setHeight(30);
+    obj.edit165:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit165, "fontStyle", "bold");
+    obj.edit165:setTransparent(true);
+    obj.edit165:setField("Magia18");
+    obj.edit165:setName("edit165");
+
+    obj.rectangle438 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle438:setParent(obj.rectangle365);
+    obj.rectangle438:setLeft(434);
+    obj.rectangle438:setTop(1196);
+    obj.rectangle438:setWidth(350);
+    obj.rectangle438:setHeight(1);
+    obj.rectangle438:setColor("#49244F");
+    obj.rectangle438:setName("rectangle438");
 
     obj.label181 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label181:setParent(obj.rectangle402);
+    obj.label181:setParent(obj.rectangle365);
     obj.label181:setLeft(444);
-    obj.label181:setTop(1204);
+    obj.label181:setTop(1169);
     obj.label181:setWidth(280);
     obj.label181:setFontSize(18);
-    obj.label181:setText("Alvo:");
+    obj.label181:setText("Tradição:");
     obj.label181:setFontColor("#49244F");
     lfm_setPropAsString(obj.label181, "fontStyle", "bold");
     obj.label181:setName("label181");
 
-    obj.edit182 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit182:setParent(obj.rectangle402);
-    obj.edit182:setLeft(489);
-    obj.edit182:setTop(1198);
-    obj.edit182:setWidth(295);
-    obj.edit182:setFontSize(18);
-    obj.edit182:setFontColor("#49244F");
-    obj.edit182:setTransparent(true);
-    obj.edit182:setField("alvoMagia18");
-    obj.edit182:setName("edit182");
+    obj.edit166 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit166:setParent(obj.rectangle365);
+    obj.edit166:setLeft(524);
+    obj.edit166:setTop(1163);
+    obj.edit166:setWidth(260);
+    obj.edit166:setFontSize(18);
+    obj.edit166:setFontColor("#49244F");
+    obj.edit166:setTransparent(true);
+    obj.edit166:setField("tradicaoMagia18");
+    obj.edit166:setName("edit166");
 
-    obj.rectangle477 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle477:setParent(obj.rectangle402);
-    obj.rectangle477:setLeft(434);
-    obj.rectangle477:setTop(1266);
-    obj.rectangle477:setWidth(350);
-    obj.rectangle477:setHeight(3);
-    obj.rectangle477:setColor("#49244F");
-    obj.rectangle477:setName("rectangle477");
+    obj.rectangle439 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle439:setParent(obj.rectangle365);
+    obj.rectangle439:setLeft(434);
+    obj.rectangle439:setTop(1231);
+    obj.rectangle439:setWidth(350);
+    obj.rectangle439:setHeight(1);
+    obj.rectangle439:setColor("#49244F");
+    obj.rectangle439:setName("rectangle439");
 
     obj.label182 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label182:setParent(obj.rectangle402);
+    obj.label182:setParent(obj.rectangle365);
     obj.label182:setLeft(444);
-    obj.label182:setTop(1239);
+    obj.label182:setTop(1204);
     obj.label182:setWidth(280);
     obj.label182:setFontSize(18);
-    obj.label182:setText("Duração:");
+    obj.label182:setText("Alvo:");
     obj.label182:setFontColor("#49244F");
     lfm_setPropAsString(obj.label182, "fontStyle", "bold");
     obj.label182:setName("label182");
 
-    obj.edit183 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit183:setParent(obj.rectangle402);
-    obj.edit183:setLeft(524);
-    obj.edit183:setTop(1233);
-    obj.edit183:setWidth(260);
-    obj.edit183:setFontSize(18);
-    obj.edit183:setFontColor("#49244F");
-    obj.edit183:setTransparent(true);
-    obj.edit183:setField("duracaoMagia18");
-    obj.edit183:setName("edit183");
+    obj.edit167 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit167:setParent(obj.rectangle365);
+    obj.edit167:setLeft(489);
+    obj.edit167:setTop(1198);
+    obj.edit167:setWidth(295);
+    obj.edit167:setFontSize(18);
+    obj.edit167:setFontColor("#49244F");
+    obj.edit167:setTransparent(true);
+    obj.edit167:setField("alvoMagia18");
+    obj.edit167:setName("edit167");
 
-    obj.rectangle478 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle478:setParent(obj.rectangle402);
-    obj.rectangle478:setLeft(434);
-    obj.rectangle478:setTop(1266);
-    obj.rectangle478:setWidth(350);
-    obj.rectangle478:setHeight(125);
-    obj.rectangle478:setColor("#49244F");
-    obj.rectangle478:setName("rectangle478");
-
-    obj.textEditor34 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor34:setParent(obj.rectangle402);
-    obj.textEditor34:setLeft(439);
-    obj.textEditor34:setTop(1271);
-    obj.textEditor34:setWidth(340);
-    obj.textEditor34:setHeight(115);
-    obj.textEditor34:setFontColor("#D5D5D5");
-    obj.textEditor34:setTransparent(true);
-    obj.textEditor34:setField("descricaoMagia18");
-    obj.textEditor34:setFontSize(18);
-    obj.textEditor34:setName("textEditor34");
-
-    obj.rectangle479 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle479:setParent(obj.rectangle402);
-    obj.rectangle479:setLeft(434);
-    obj.rectangle479:setTop(1391);
-    obj.rectangle479:setWidth(350);
-    obj.rectangle479:setHeight(3);
-    obj.rectangle479:setColor("#49244F");
-    obj.rectangle479:setName("rectangle479");
-
-    obj.rectangle480 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle480:setParent(obj.rectangle402);
-    obj.rectangle480:setLeft(438);
-    obj.rectangle480:setTop(1398);
-    obj.rectangle480:setWidth(135);
-    obj.rectangle480:setHeight(29);
-    obj.rectangle480:setColor("#49244F");
-    obj.rectangle480:setHitTest(true);
-    obj.rectangle480:setCursor("handPoint");
-    obj.rectangle480:setName("rectangle480");
+    obj.rectangle440 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle440:setParent(obj.rectangle365);
+    obj.rectangle440:setLeft(434);
+    obj.rectangle440:setTop(1266);
+    obj.rectangle440:setWidth(350);
+    obj.rectangle440:setHeight(3);
+    obj.rectangle440:setColor("#49244F");
+    obj.rectangle440:setName("rectangle440");
 
     obj.label183 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label183:setParent(obj.rectangle402);
+    obj.label183:setParent(obj.rectangle365);
     obj.label183:setLeft(444);
-    obj.label183:setTop(1402);
+    obj.label183:setTop(1239);
     obj.label183:setWidth(280);
     obj.label183:setFontSize(18);
-    obj.label183:setText("Conjurar Feitiço");
-    obj.label183:setFontColor("#D5D5D5");
+    obj.label183:setText("Duração:");
+    obj.label183:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label183, "fontStyle", "bold");
     obj.label183:setName("label183");
 
-    obj.rectangle481 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle481:setParent(obj.rectangle402);
-    obj.rectangle481:setLeft(698);
-    obj.rectangle481:setTop(1398);
-    obj.rectangle481:setWidth(29);
-    obj.rectangle481:setHeight(29);
-    obj.rectangle481:setColor("#49244F");
-    obj.rectangle481:setCornerType("round");
-    obj.rectangle481:setXradius(15);
-    obj.rectangle481:setYradius(15);
-    obj.rectangle481:setName("rectangle481");
+    obj.edit168 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit168:setParent(obj.rectangle365);
+    obj.edit168:setLeft(524);
+    obj.edit168:setTop(1233);
+    obj.edit168:setWidth(260);
+    obj.edit168:setFontSize(18);
+    obj.edit168:setFontColor("#49244F");
+    obj.edit168:setTransparent(true);
+    obj.edit168:setField("duracaoMagia18");
+    obj.edit168:setName("edit168");
 
-    obj.edit184 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit184:setParent(obj.rectangle402);
-    obj.edit184:setLeft(692);
-    obj.edit184:setTop(1395);
-    obj.edit184:setWidth(40);
-    obj.edit184:setFontSize(18);
-    obj.edit184:setHorzTextAlign("center");
-    obj.edit184:setFontColor("#D5D5D5");
-    obj.edit184:setTransparent(true);
-    obj.edit184:setField("qtdMagia18");
-    obj.edit184:setHitTest(true);
-    obj.edit184:setCursor("handPoint");
-    obj.edit184:setHint("Quantidade");
-    obj.edit184:setName("edit184");
+    obj.rectangle441 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle441:setParent(obj.rectangle365);
+    obj.rectangle441:setLeft(434);
+    obj.rectangle441:setTop(1266);
+    obj.rectangle441:setWidth(350);
+    obj.rectangle441:setHeight(125);
+    obj.rectangle441:setColor("#49244F");
+    obj.rectangle441:setName("rectangle441");
+
+    obj.textEditor19 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor19:setParent(obj.rectangle365);
+    obj.textEditor19:setLeft(439);
+    obj.textEditor19:setTop(1271);
+    obj.textEditor19:setWidth(340);
+    obj.textEditor19:setHeight(115);
+    obj.textEditor19:setFontColor("#D5D5D5");
+    obj.textEditor19:setTransparent(true);
+    obj.textEditor19:setField("descricaoMagia18");
+    obj.textEditor19:setFontSize(18);
+    obj.textEditor19:setName("textEditor19");
+
+    obj.rectangle442 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle442:setParent(obj.rectangle365);
+    obj.rectangle442:setLeft(434);
+    obj.rectangle442:setTop(1391);
+    obj.rectangle442:setWidth(350);
+    obj.rectangle442:setHeight(3);
+    obj.rectangle442:setColor("#49244F");
+    obj.rectangle442:setName("rectangle442");
+
+    obj.rectangle443 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle443:setParent(obj.rectangle365);
+    obj.rectangle443:setLeft(438);
+    obj.rectangle443:setTop(1398);
+    obj.rectangle443:setWidth(135);
+    obj.rectangle443:setHeight(29);
+    obj.rectangle443:setColor("#49244F");
+    obj.rectangle443:setHitTest(true);
+    obj.rectangle443:setCursor("handPoint");
+    obj.rectangle443:setName("rectangle443");
 
     obj.label184 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label184:setParent(obj.rectangle402);
-    obj.label184:setLeft(734);
+    obj.label184:setParent(obj.rectangle365);
+    obj.label184:setLeft(444);
     obj.label184:setTop(1402);
     obj.label184:setWidth(280);
     obj.label184:setFontSize(18);
-    obj.label184:setText("/");
-    obj.label184:setFontColor("#49244F");
+    obj.label184:setText("Conjurar Feitiço");
+    obj.label184:setFontColor("#D5D5D5");
     obj.label184:setName("label184");
 
-    obj.rectangle482 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle482:setParent(obj.rectangle402);
-    obj.rectangle482:setLeft(748);
-    obj.rectangle482:setTop(1396);
-    obj.rectangle482:setWidth(29);
-    obj.rectangle482:setHeight(29);
-    obj.rectangle482:setColor("#49244F");
-    obj.rectangle482:setCornerType("round");
-    obj.rectangle482:setXradius(15);
-    obj.rectangle482:setYradius(15);
-    obj.rectangle482:setName("rectangle482");
+    obj.rectangle444 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle444:setParent(obj.rectangle365);
+    obj.rectangle444:setLeft(698);
+    obj.rectangle444:setTop(1398);
+    obj.rectangle444:setWidth(29);
+    obj.rectangle444:setHeight(29);
+    obj.rectangle444:setColor("#49244F");
+    obj.rectangle444:setCornerType("round");
+    obj.rectangle444:setXradius(15);
+    obj.rectangle444:setYradius(15);
+    obj.rectangle444:setName("rectangle444");
 
-    obj.edit185 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit185:setParent(obj.rectangle402);
-    obj.edit185:setLeft(743);
-    obj.edit185:setTop(1395);
-    obj.edit185:setWidth(40);
-    obj.edit185:setFontSize(18);
-    obj.edit185:setHorzTextAlign("center");
-    obj.edit185:setFontColor("#D5D5D5");
-    obj.edit185:setTransparent(true);
-    obj.edit185:setField("maxMagia18");
-    obj.edit185:setHitTest(true);
-    obj.edit185:setCursor("handPoint");
-    obj.edit185:setHint("Total");
-    obj.edit185:setName("edit185");
-
-    obj.rectangle483 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle483:setParent(obj.rectangle402);
-    obj.rectangle483:setLeft(60);
-    obj.rectangle483:setTop(1455);
-    obj.rectangle483:setWidth(350);
-    obj.rectangle483:setHeight(318);
-    obj.rectangle483:setColor("#D5D5D5");
-    obj.rectangle483:setStrokeColor("#49244F");
-    obj.rectangle483:setStrokeSize(3);
-    obj.rectangle483:setName("rectangle483");
-
-    obj.rectangle484 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle484:setParent(obj.rectangle402);
-    obj.rectangle484:setLeft(60);
-    obj.rectangle484:setTop(1455);
-    obj.rectangle484:setWidth(350);
-    obj.rectangle484:setHeight(50);
-    obj.rectangle484:setColor("#49244F");
-    obj.rectangle484:setName("rectangle484");
-
-    obj.edit186 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit186:setParent(obj.rectangle402);
-    obj.edit186:setLeft(65);
-    obj.edit186:setTop(1463);
-    obj.edit186:setWidth(340);
-    obj.edit186:setFontSize(18);
-    obj.edit186:setHeight(30);
-    obj.edit186:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit186, "fontStyle", "bold");
-    obj.edit186:setTransparent(true);
-    obj.edit186:setField("Magia19");
-    obj.edit186:setName("edit186");
-
-    obj.rectangle485 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle485:setParent(obj.rectangle402);
-    obj.rectangle485:setLeft(60);
-    obj.rectangle485:setTop(1536);
-    obj.rectangle485:setWidth(350);
-    obj.rectangle485:setHeight(1);
-    obj.rectangle485:setColor("#49244F");
-    obj.rectangle485:setName("rectangle485");
+    obj.edit169 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit169:setParent(obj.rectangle365);
+    obj.edit169:setLeft(692);
+    obj.edit169:setTop(1395);
+    obj.edit169:setWidth(40);
+    obj.edit169:setFontSize(18);
+    obj.edit169:setHorzTextAlign("center");
+    obj.edit169:setFontColor("#D5D5D5");
+    obj.edit169:setTransparent(true);
+    obj.edit169:setField("qtdMagia18");
+    obj.edit169:setHitTest(true);
+    obj.edit169:setCursor("handPoint");
+    obj.edit169:setHint("Quantidade");
+    obj.edit169:setName("edit169");
 
     obj.label185 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label185:setParent(obj.rectangle402);
-    obj.label185:setLeft(70);
-    obj.label185:setTop(1509);
+    obj.label185:setParent(obj.rectangle365);
+    obj.label185:setLeft(734);
+    obj.label185:setTop(1402);
     obj.label185:setWidth(280);
     obj.label185:setFontSize(18);
-    obj.label185:setText("Tradição:");
+    obj.label185:setText("/");
     obj.label185:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label185, "fontStyle", "bold");
     obj.label185:setName("label185");
 
-    obj.edit187 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit187:setParent(obj.rectangle402);
-    obj.edit187:setLeft(150);
-    obj.edit187:setTop(1503);
-    obj.edit187:setWidth(260);
-    obj.edit187:setFontSize(18);
-    obj.edit187:setFontColor("#49244F");
-    obj.edit187:setTransparent(true);
-    obj.edit187:setField("tradicaoMagia19");
-    obj.edit187:setName("edit187");
+    obj.rectangle445 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle445:setParent(obj.rectangle365);
+    obj.rectangle445:setLeft(748);
+    obj.rectangle445:setTop(1396);
+    obj.rectangle445:setWidth(29);
+    obj.rectangle445:setHeight(29);
+    obj.rectangle445:setColor("#49244F");
+    obj.rectangle445:setCornerType("round");
+    obj.rectangle445:setXradius(15);
+    obj.rectangle445:setYradius(15);
+    obj.rectangle445:setName("rectangle445");
 
-    obj.rectangle486 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle486:setParent(obj.rectangle402);
-    obj.rectangle486:setLeft(60);
-    obj.rectangle486:setTop(1571);
-    obj.rectangle486:setWidth(350);
-    obj.rectangle486:setHeight(1);
-    obj.rectangle486:setColor("#49244F");
-    obj.rectangle486:setName("rectangle486");
+    obj.edit170 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit170:setParent(obj.rectangle365);
+    obj.edit170:setLeft(743);
+    obj.edit170:setTop(1395);
+    obj.edit170:setWidth(40);
+    obj.edit170:setFontSize(18);
+    obj.edit170:setHorzTextAlign("center");
+    obj.edit170:setFontColor("#D5D5D5");
+    obj.edit170:setTransparent(true);
+    obj.edit170:setField("maxMagia18");
+    obj.edit170:setHitTest(true);
+    obj.edit170:setCursor("handPoint");
+    obj.edit170:setHint("Total");
+    obj.edit170:setName("edit170");
+
+    obj.rectangle446 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle446:setParent(obj.rectangle365);
+    obj.rectangle446:setLeft(60);
+    obj.rectangle446:setTop(1455);
+    obj.rectangle446:setWidth(350);
+    obj.rectangle446:setHeight(318);
+    obj.rectangle446:setColor("#D5D5D5");
+    obj.rectangle446:setStrokeColor("#49244F");
+    obj.rectangle446:setStrokeSize(3);
+    obj.rectangle446:setName("rectangle446");
+
+    obj.rectangle447 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle447:setParent(obj.rectangle365);
+    obj.rectangle447:setLeft(60);
+    obj.rectangle447:setTop(1455);
+    obj.rectangle447:setWidth(350);
+    obj.rectangle447:setHeight(50);
+    obj.rectangle447:setColor("#49244F");
+    obj.rectangle447:setName("rectangle447");
+
+    obj.edit171 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit171:setParent(obj.rectangle365);
+    obj.edit171:setLeft(65);
+    obj.edit171:setTop(1463);
+    obj.edit171:setWidth(340);
+    obj.edit171:setFontSize(18);
+    obj.edit171:setHeight(30);
+    obj.edit171:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit171, "fontStyle", "bold");
+    obj.edit171:setTransparent(true);
+    obj.edit171:setField("Magia19");
+    obj.edit171:setName("edit171");
+
+    obj.rectangle448 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle448:setParent(obj.rectangle365);
+    obj.rectangle448:setLeft(60);
+    obj.rectangle448:setTop(1536);
+    obj.rectangle448:setWidth(350);
+    obj.rectangle448:setHeight(1);
+    obj.rectangle448:setColor("#49244F");
+    obj.rectangle448:setName("rectangle448");
 
     obj.label186 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label186:setParent(obj.rectangle402);
+    obj.label186:setParent(obj.rectangle365);
     obj.label186:setLeft(70);
-    obj.label186:setTop(1544);
+    obj.label186:setTop(1509);
     obj.label186:setWidth(280);
     obj.label186:setFontSize(18);
-    obj.label186:setText("Alvo:");
+    obj.label186:setText("Tradição:");
     obj.label186:setFontColor("#49244F");
     lfm_setPropAsString(obj.label186, "fontStyle", "bold");
     obj.label186:setName("label186");
 
-    obj.edit188 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit188:setParent(obj.rectangle402);
-    obj.edit188:setLeft(115);
-    obj.edit188:setTop(1538);
-    obj.edit188:setWidth(295);
-    obj.edit188:setFontSize(18);
-    obj.edit188:setFontColor("#49244F");
-    obj.edit188:setTransparent(true);
-    obj.edit188:setField("alvoMagia19");
-    obj.edit188:setName("edit188");
+    obj.edit172 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit172:setParent(obj.rectangle365);
+    obj.edit172:setLeft(150);
+    obj.edit172:setTop(1503);
+    obj.edit172:setWidth(260);
+    obj.edit172:setFontSize(18);
+    obj.edit172:setFontColor("#49244F");
+    obj.edit172:setTransparent(true);
+    obj.edit172:setField("tradicaoMagia19");
+    obj.edit172:setName("edit172");
 
-    obj.rectangle487 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle487:setParent(obj.rectangle402);
-    obj.rectangle487:setLeft(60);
-    obj.rectangle487:setTop(1606);
-    obj.rectangle487:setWidth(350);
-    obj.rectangle487:setHeight(3);
-    obj.rectangle487:setColor("#49244F");
-    obj.rectangle487:setName("rectangle487");
+    obj.rectangle449 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle449:setParent(obj.rectangle365);
+    obj.rectangle449:setLeft(60);
+    obj.rectangle449:setTop(1571);
+    obj.rectangle449:setWidth(350);
+    obj.rectangle449:setHeight(1);
+    obj.rectangle449:setColor("#49244F");
+    obj.rectangle449:setName("rectangle449");
 
     obj.label187 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label187:setParent(obj.rectangle402);
+    obj.label187:setParent(obj.rectangle365);
     obj.label187:setLeft(70);
-    obj.label187:setTop(1579);
+    obj.label187:setTop(1544);
     obj.label187:setWidth(280);
     obj.label187:setFontSize(18);
-    obj.label187:setText("Duração:");
+    obj.label187:setText("Alvo:");
     obj.label187:setFontColor("#49244F");
     lfm_setPropAsString(obj.label187, "fontStyle", "bold");
     obj.label187:setName("label187");
 
-    obj.edit189 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit189:setParent(obj.rectangle402);
-    obj.edit189:setLeft(150);
-    obj.edit189:setTop(1573);
-    obj.edit189:setWidth(260);
-    obj.edit189:setFontSize(18);
-    obj.edit189:setFontColor("#49244F");
-    obj.edit189:setTransparent(true);
-    obj.edit189:setField("duracaoMagia19");
-    obj.edit189:setName("edit189");
+    obj.edit173 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit173:setParent(obj.rectangle365);
+    obj.edit173:setLeft(115);
+    obj.edit173:setTop(1538);
+    obj.edit173:setWidth(295);
+    obj.edit173:setFontSize(18);
+    obj.edit173:setFontColor("#49244F");
+    obj.edit173:setTransparent(true);
+    obj.edit173:setField("alvoMagia19");
+    obj.edit173:setName("edit173");
 
-    obj.rectangle488 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle488:setParent(obj.rectangle402);
-    obj.rectangle488:setLeft(60);
-    obj.rectangle488:setTop(1606);
-    obj.rectangle488:setWidth(350);
-    obj.rectangle488:setHeight(125);
-    obj.rectangle488:setColor("#49244F");
-    obj.rectangle488:setName("rectangle488");
-
-    obj.textEditor35 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor35:setParent(obj.rectangle402);
-    obj.textEditor35:setLeft(65);
-    obj.textEditor35:setTop(1611);
-    obj.textEditor35:setWidth(340);
-    obj.textEditor35:setHeight(115);
-    obj.textEditor35:setFontColor("#D5D5D5");
-    obj.textEditor35:setTransparent(true);
-    obj.textEditor35:setField("descricaoMagia19");
-    obj.textEditor35:setFontSize(18);
-    obj.textEditor35:setName("textEditor35");
-
-    obj.rectangle489 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle489:setParent(obj.rectangle402);
-    obj.rectangle489:setLeft(60);
-    obj.rectangle489:setTop(1731);
-    obj.rectangle489:setWidth(350);
-    obj.rectangle489:setHeight(3);
-    obj.rectangle489:setColor("#49244F");
-    obj.rectangle489:setName("rectangle489");
-
-    obj.rectangle490 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle490:setParent(obj.rectangle402);
-    obj.rectangle490:setLeft(64);
-    obj.rectangle490:setTop(1738);
-    obj.rectangle490:setWidth(135);
-    obj.rectangle490:setHeight(29);
-    obj.rectangle490:setColor("#49244F");
-    obj.rectangle490:setHitTest(true);
-    obj.rectangle490:setCursor("handPoint");
-    obj.rectangle490:setName("rectangle490");
+    obj.rectangle450 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle450:setParent(obj.rectangle365);
+    obj.rectangle450:setLeft(60);
+    obj.rectangle450:setTop(1606);
+    obj.rectangle450:setWidth(350);
+    obj.rectangle450:setHeight(3);
+    obj.rectangle450:setColor("#49244F");
+    obj.rectangle450:setName("rectangle450");
 
     obj.label188 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label188:setParent(obj.rectangle402);
+    obj.label188:setParent(obj.rectangle365);
     obj.label188:setLeft(70);
-    obj.label188:setTop(1742);
+    obj.label188:setTop(1579);
     obj.label188:setWidth(280);
     obj.label188:setFontSize(18);
-    obj.label188:setText("Conjurar Feitiço");
-    obj.label188:setFontColor("#D5D5D5");
+    obj.label188:setText("Duração:");
+    obj.label188:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label188, "fontStyle", "bold");
     obj.label188:setName("label188");
 
-    obj.rectangle491 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle491:setParent(obj.rectangle402);
-    obj.rectangle491:setLeft(324);
-    obj.rectangle491:setTop(1738);
-    obj.rectangle491:setWidth(29);
-    obj.rectangle491:setHeight(29);
-    obj.rectangle491:setColor("#49244F");
-    obj.rectangle491:setCornerType("round");
-    obj.rectangle491:setXradius(15);
-    obj.rectangle491:setYradius(15);
-    obj.rectangle491:setName("rectangle491");
+    obj.edit174 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit174:setParent(obj.rectangle365);
+    obj.edit174:setLeft(150);
+    obj.edit174:setTop(1573);
+    obj.edit174:setWidth(260);
+    obj.edit174:setFontSize(18);
+    obj.edit174:setFontColor("#49244F");
+    obj.edit174:setTransparent(true);
+    obj.edit174:setField("duracaoMagia19");
+    obj.edit174:setName("edit174");
 
-    obj.edit190 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit190:setParent(obj.rectangle402);
-    obj.edit190:setLeft(318);
-    obj.edit190:setTop(1735);
-    obj.edit190:setWidth(40);
-    obj.edit190:setFontSize(18);
-    obj.edit190:setHorzTextAlign("center");
-    obj.edit190:setFontColor("#D5D5D5");
-    obj.edit190:setTransparent(true);
-    obj.edit190:setField("qtdMagia19");
-    obj.edit190:setHitTest(true);
-    obj.edit190:setCursor("handPoint");
-    obj.edit190:setHint("Quantidade");
-    obj.edit190:setName("edit190");
+    obj.rectangle451 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle451:setParent(obj.rectangle365);
+    obj.rectangle451:setLeft(60);
+    obj.rectangle451:setTop(1606);
+    obj.rectangle451:setWidth(350);
+    obj.rectangle451:setHeight(125);
+    obj.rectangle451:setColor("#49244F");
+    obj.rectangle451:setName("rectangle451");
+
+    obj.textEditor20 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor20:setParent(obj.rectangle365);
+    obj.textEditor20:setLeft(65);
+    obj.textEditor20:setTop(1611);
+    obj.textEditor20:setWidth(340);
+    obj.textEditor20:setHeight(115);
+    obj.textEditor20:setFontColor("#D5D5D5");
+    obj.textEditor20:setTransparent(true);
+    obj.textEditor20:setField("descricaoMagia19");
+    obj.textEditor20:setFontSize(18);
+    obj.textEditor20:setName("textEditor20");
+
+    obj.rectangle452 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle452:setParent(obj.rectangle365);
+    obj.rectangle452:setLeft(60);
+    obj.rectangle452:setTop(1731);
+    obj.rectangle452:setWidth(350);
+    obj.rectangle452:setHeight(3);
+    obj.rectangle452:setColor("#49244F");
+    obj.rectangle452:setName("rectangle452");
+
+    obj.rectangle453 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle453:setParent(obj.rectangle365);
+    obj.rectangle453:setLeft(64);
+    obj.rectangle453:setTop(1738);
+    obj.rectangle453:setWidth(135);
+    obj.rectangle453:setHeight(29);
+    obj.rectangle453:setColor("#49244F");
+    obj.rectangle453:setHitTest(true);
+    obj.rectangle453:setCursor("handPoint");
+    obj.rectangle453:setName("rectangle453");
 
     obj.label189 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label189:setParent(obj.rectangle402);
-    obj.label189:setLeft(360);
+    obj.label189:setParent(obj.rectangle365);
+    obj.label189:setLeft(70);
     obj.label189:setTop(1742);
     obj.label189:setWidth(280);
     obj.label189:setFontSize(18);
-    obj.label189:setText("/");
-    obj.label189:setFontColor("#49244F");
+    obj.label189:setText("Conjurar Feitiço");
+    obj.label189:setFontColor("#D5D5D5");
     obj.label189:setName("label189");
 
-    obj.rectangle492 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle492:setParent(obj.rectangle402);
-    obj.rectangle492:setLeft(374);
-    obj.rectangle492:setTop(1736);
-    obj.rectangle492:setWidth(29);
-    obj.rectangle492:setHeight(29);
-    obj.rectangle492:setColor("#49244F");
-    obj.rectangle492:setCornerType("round");
-    obj.rectangle492:setXradius(15);
-    obj.rectangle492:setYradius(15);
-    obj.rectangle492:setName("rectangle492");
+    obj.rectangle454 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle454:setParent(obj.rectangle365);
+    obj.rectangle454:setLeft(324);
+    obj.rectangle454:setTop(1738);
+    obj.rectangle454:setWidth(29);
+    obj.rectangle454:setHeight(29);
+    obj.rectangle454:setColor("#49244F");
+    obj.rectangle454:setCornerType("round");
+    obj.rectangle454:setXradius(15);
+    obj.rectangle454:setYradius(15);
+    obj.rectangle454:setName("rectangle454");
 
-    obj.edit191 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit191:setParent(obj.rectangle402);
-    obj.edit191:setLeft(368);
-    obj.edit191:setTop(1735);
-    obj.edit191:setWidth(40);
-    obj.edit191:setFontSize(18);
-    obj.edit191:setHorzTextAlign("center");
-    obj.edit191:setFontColor("#D5D5D5");
-    obj.edit191:setTransparent(true);
-    obj.edit191:setField("maxMagia19");
-    obj.edit191:setHitTest(true);
-    obj.edit191:setCursor("handPoint");
-    obj.edit191:setHint("Total");
-    obj.edit191:setName("edit191");
-
-    obj.rectangle493 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle493:setParent(obj.rectangle402);
-    obj.rectangle493:setLeft(434);
-    obj.rectangle493:setTop(1455);
-    obj.rectangle493:setWidth(350);
-    obj.rectangle493:setHeight(318);
-    obj.rectangle493:setColor("#D5D5D5");
-    obj.rectangle493:setStrokeColor("#49244F");
-    obj.rectangle493:setStrokeSize(3);
-    obj.rectangle493:setName("rectangle493");
-
-    obj.rectangle494 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle494:setParent(obj.rectangle402);
-    obj.rectangle494:setLeft(434);
-    obj.rectangle494:setTop(1455);
-    obj.rectangle494:setWidth(350);
-    obj.rectangle494:setHeight(50);
-    obj.rectangle494:setColor("#49244F");
-    obj.rectangle494:setName("rectangle494");
-
-    obj.edit192 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit192:setParent(obj.rectangle402);
-    obj.edit192:setLeft(439);
-    obj.edit192:setTop(1463);
-    obj.edit192:setWidth(340);
-    obj.edit192:setFontSize(18);
-    obj.edit192:setHeight(30);
-    obj.edit192:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.edit192, "fontStyle", "bold");
-    obj.edit192:setTransparent(true);
-    obj.edit192:setField("Magia20");
-    obj.edit192:setName("edit192");
-
-    obj.rectangle495 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle495:setParent(obj.rectangle402);
-    obj.rectangle495:setLeft(434);
-    obj.rectangle495:setTop(1536);
-    obj.rectangle495:setWidth(350);
-    obj.rectangle495:setHeight(1);
-    obj.rectangle495:setColor("#49244F");
-    obj.rectangle495:setName("rectangle495");
+    obj.edit175 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit175:setParent(obj.rectangle365);
+    obj.edit175:setLeft(318);
+    obj.edit175:setTop(1735);
+    obj.edit175:setWidth(40);
+    obj.edit175:setFontSize(18);
+    obj.edit175:setHorzTextAlign("center");
+    obj.edit175:setFontColor("#D5D5D5");
+    obj.edit175:setTransparent(true);
+    obj.edit175:setField("qtdMagia19");
+    obj.edit175:setHitTest(true);
+    obj.edit175:setCursor("handPoint");
+    obj.edit175:setHint("Quantidade");
+    obj.edit175:setName("edit175");
 
     obj.label190 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label190:setParent(obj.rectangle402);
-    obj.label190:setLeft(444);
-    obj.label190:setTop(1509);
+    obj.label190:setParent(obj.rectangle365);
+    obj.label190:setLeft(360);
+    obj.label190:setTop(1742);
     obj.label190:setWidth(280);
     obj.label190:setFontSize(18);
-    obj.label190:setText("Tradição:");
+    obj.label190:setText("/");
     obj.label190:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label190, "fontStyle", "bold");
     obj.label190:setName("label190");
 
-    obj.edit193 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit193:setParent(obj.rectangle402);
-    obj.edit193:setLeft(524);
-    obj.edit193:setTop(1503);
-    obj.edit193:setWidth(260);
-    obj.edit193:setFontSize(18);
-    obj.edit193:setFontColor("#49244F");
-    obj.edit193:setTransparent(true);
-    obj.edit193:setField("tradicaoMagia20");
-    obj.edit193:setName("edit193");
+    obj.rectangle455 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle455:setParent(obj.rectangle365);
+    obj.rectangle455:setLeft(374);
+    obj.rectangle455:setTop(1736);
+    obj.rectangle455:setWidth(29);
+    obj.rectangle455:setHeight(29);
+    obj.rectangle455:setColor("#49244F");
+    obj.rectangle455:setCornerType("round");
+    obj.rectangle455:setXradius(15);
+    obj.rectangle455:setYradius(15);
+    obj.rectangle455:setName("rectangle455");
 
-    obj.rectangle496 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle496:setParent(obj.rectangle402);
-    obj.rectangle496:setLeft(434);
-    obj.rectangle496:setTop(1571);
-    obj.rectangle496:setWidth(350);
-    obj.rectangle496:setHeight(1);
-    obj.rectangle496:setColor("#49244F");
-    obj.rectangle496:setName("rectangle496");
+    obj.edit176 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit176:setParent(obj.rectangle365);
+    obj.edit176:setLeft(368);
+    obj.edit176:setTop(1735);
+    obj.edit176:setWidth(40);
+    obj.edit176:setFontSize(18);
+    obj.edit176:setHorzTextAlign("center");
+    obj.edit176:setFontColor("#D5D5D5");
+    obj.edit176:setTransparent(true);
+    obj.edit176:setField("maxMagia19");
+    obj.edit176:setHitTest(true);
+    obj.edit176:setCursor("handPoint");
+    obj.edit176:setHint("Total");
+    obj.edit176:setName("edit176");
+
+    obj.rectangle456 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle456:setParent(obj.rectangle365);
+    obj.rectangle456:setLeft(434);
+    obj.rectangle456:setTop(1455);
+    obj.rectangle456:setWidth(350);
+    obj.rectangle456:setHeight(318);
+    obj.rectangle456:setColor("#D5D5D5");
+    obj.rectangle456:setStrokeColor("#49244F");
+    obj.rectangle456:setStrokeSize(3);
+    obj.rectangle456:setName("rectangle456");
+
+    obj.rectangle457 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle457:setParent(obj.rectangle365);
+    obj.rectangle457:setLeft(434);
+    obj.rectangle457:setTop(1455);
+    obj.rectangle457:setWidth(350);
+    obj.rectangle457:setHeight(50);
+    obj.rectangle457:setColor("#49244F");
+    obj.rectangle457:setName("rectangle457");
+
+    obj.edit177 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit177:setParent(obj.rectangle365);
+    obj.edit177:setLeft(439);
+    obj.edit177:setTop(1463);
+    obj.edit177:setWidth(340);
+    obj.edit177:setFontSize(18);
+    obj.edit177:setHeight(30);
+    obj.edit177:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.edit177, "fontStyle", "bold");
+    obj.edit177:setTransparent(true);
+    obj.edit177:setField("Magia20");
+    obj.edit177:setName("edit177");
+
+    obj.rectangle458 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle458:setParent(obj.rectangle365);
+    obj.rectangle458:setLeft(434);
+    obj.rectangle458:setTop(1536);
+    obj.rectangle458:setWidth(350);
+    obj.rectangle458:setHeight(1);
+    obj.rectangle458:setColor("#49244F");
+    obj.rectangle458:setName("rectangle458");
 
     obj.label191 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label191:setParent(obj.rectangle402);
+    obj.label191:setParent(obj.rectangle365);
     obj.label191:setLeft(444);
-    obj.label191:setTop(1544);
+    obj.label191:setTop(1509);
     obj.label191:setWidth(280);
     obj.label191:setFontSize(18);
-    obj.label191:setText("Alvo:");
+    obj.label191:setText("Tradição:");
     obj.label191:setFontColor("#49244F");
     lfm_setPropAsString(obj.label191, "fontStyle", "bold");
     obj.label191:setName("label191");
 
-    obj.edit194 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit194:setParent(obj.rectangle402);
-    obj.edit194:setLeft(489);
-    obj.edit194:setTop(1538);
-    obj.edit194:setWidth(295);
-    obj.edit194:setFontSize(18);
-    obj.edit194:setFontColor("#49244F");
-    obj.edit194:setTransparent(true);
-    obj.edit194:setField("alvoMagia20");
-    obj.edit194:setName("edit194");
+    obj.edit178 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit178:setParent(obj.rectangle365);
+    obj.edit178:setLeft(524);
+    obj.edit178:setTop(1503);
+    obj.edit178:setWidth(260);
+    obj.edit178:setFontSize(18);
+    obj.edit178:setFontColor("#49244F");
+    obj.edit178:setTransparent(true);
+    obj.edit178:setField("tradicaoMagia20");
+    obj.edit178:setName("edit178");
 
-    obj.rectangle497 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle497:setParent(obj.rectangle402);
-    obj.rectangle497:setLeft(434);
-    obj.rectangle497:setTop(1606);
-    obj.rectangle497:setWidth(350);
-    obj.rectangle497:setHeight(3);
-    obj.rectangle497:setColor("#49244F");
-    obj.rectangle497:setName("rectangle497");
+    obj.rectangle459 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle459:setParent(obj.rectangle365);
+    obj.rectangle459:setLeft(434);
+    obj.rectangle459:setTop(1571);
+    obj.rectangle459:setWidth(350);
+    obj.rectangle459:setHeight(1);
+    obj.rectangle459:setColor("#49244F");
+    obj.rectangle459:setName("rectangle459");
 
     obj.label192 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label192:setParent(obj.rectangle402);
+    obj.label192:setParent(obj.rectangle365);
     obj.label192:setLeft(444);
-    obj.label192:setTop(1579);
+    obj.label192:setTop(1544);
     obj.label192:setWidth(280);
     obj.label192:setFontSize(18);
-    obj.label192:setText("Duração:");
+    obj.label192:setText("Alvo:");
     obj.label192:setFontColor("#49244F");
     lfm_setPropAsString(obj.label192, "fontStyle", "bold");
     obj.label192:setName("label192");
 
-    obj.edit195 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit195:setParent(obj.rectangle402);
-    obj.edit195:setLeft(524);
-    obj.edit195:setTop(1573);
-    obj.edit195:setWidth(260);
-    obj.edit195:setFontSize(18);
-    obj.edit195:setFontColor("#49244F");
-    obj.edit195:setTransparent(true);
-    obj.edit195:setField("duracaoMagia20");
-    obj.edit195:setName("edit195");
+    obj.edit179 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit179:setParent(obj.rectangle365);
+    obj.edit179:setLeft(489);
+    obj.edit179:setTop(1538);
+    obj.edit179:setWidth(295);
+    obj.edit179:setFontSize(18);
+    obj.edit179:setFontColor("#49244F");
+    obj.edit179:setTransparent(true);
+    obj.edit179:setField("alvoMagia20");
+    obj.edit179:setName("edit179");
 
-    obj.rectangle498 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle498:setParent(obj.rectangle402);
-    obj.rectangle498:setLeft(434);
-    obj.rectangle498:setTop(1606);
-    obj.rectangle498:setWidth(350);
-    obj.rectangle498:setHeight(125);
-    obj.rectangle498:setColor("#49244F");
-    obj.rectangle498:setName("rectangle498");
-
-    obj.textEditor36 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor36:setParent(obj.rectangle402);
-    obj.textEditor36:setLeft(439);
-    obj.textEditor36:setTop(1611);
-    obj.textEditor36:setWidth(340);
-    obj.textEditor36:setHeight(115);
-    obj.textEditor36:setFontColor("#D5D5D5");
-    obj.textEditor36:setTransparent(true);
-    obj.textEditor36:setField("descricaoMagia20");
-    obj.textEditor36:setFontSize(18);
-    obj.textEditor36:setName("textEditor36");
-
-    obj.rectangle499 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle499:setParent(obj.rectangle402);
-    obj.rectangle499:setLeft(434);
-    obj.rectangle499:setTop(1731);
-    obj.rectangle499:setWidth(350);
-    obj.rectangle499:setHeight(3);
-    obj.rectangle499:setColor("#49244F");
-    obj.rectangle499:setName("rectangle499");
-
-    obj.rectangle500 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle500:setParent(obj.rectangle402);
-    obj.rectangle500:setLeft(438);
-    obj.rectangle500:setTop(1738);
-    obj.rectangle500:setWidth(135);
-    obj.rectangle500:setHeight(29);
-    obj.rectangle500:setColor("#49244F");
-    obj.rectangle500:setHitTest(true);
-    obj.rectangle500:setCursor("handPoint");
-    obj.rectangle500:setName("rectangle500");
+    obj.rectangle460 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle460:setParent(obj.rectangle365);
+    obj.rectangle460:setLeft(434);
+    obj.rectangle460:setTop(1606);
+    obj.rectangle460:setWidth(350);
+    obj.rectangle460:setHeight(3);
+    obj.rectangle460:setColor("#49244F");
+    obj.rectangle460:setName("rectangle460");
 
     obj.label193 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label193:setParent(obj.rectangle402);
+    obj.label193:setParent(obj.rectangle365);
     obj.label193:setLeft(444);
-    obj.label193:setTop(1742);
+    obj.label193:setTop(1579);
     obj.label193:setWidth(280);
     obj.label193:setFontSize(18);
-    obj.label193:setText("Conjurar Feitiço");
-    obj.label193:setFontColor("#D5D5D5");
+    obj.label193:setText("Duração:");
+    obj.label193:setFontColor("#49244F");
+    lfm_setPropAsString(obj.label193, "fontStyle", "bold");
     obj.label193:setName("label193");
 
-    obj.rectangle501 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle501:setParent(obj.rectangle402);
-    obj.rectangle501:setLeft(698);
-    obj.rectangle501:setTop(1738);
-    obj.rectangle501:setWidth(29);
-    obj.rectangle501:setHeight(29);
-    obj.rectangle501:setColor("#49244F");
-    obj.rectangle501:setCornerType("round");
-    obj.rectangle501:setXradius(15);
-    obj.rectangle501:setYradius(15);
-    obj.rectangle501:setName("rectangle501");
+    obj.edit180 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit180:setParent(obj.rectangle365);
+    obj.edit180:setLeft(524);
+    obj.edit180:setTop(1573);
+    obj.edit180:setWidth(260);
+    obj.edit180:setFontSize(18);
+    obj.edit180:setFontColor("#49244F");
+    obj.edit180:setTransparent(true);
+    obj.edit180:setField("duracaoMagia20");
+    obj.edit180:setName("edit180");
 
-    obj.edit196 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit196:setParent(obj.rectangle402);
-    obj.edit196:setLeft(692);
-    obj.edit196:setTop(1735);
-    obj.edit196:setWidth(40);
-    obj.edit196:setFontSize(18);
-    obj.edit196:setHorzTextAlign("center");
-    obj.edit196:setFontColor("#D5D5D5");
-    obj.edit196:setTransparent(true);
-    obj.edit196:setField("qtdMagia20");
-    obj.edit196:setHitTest(true);
-    obj.edit196:setCursor("handPoint");
-    obj.edit196:setHint("Quantidade");
-    obj.edit196:setName("edit196");
+    obj.rectangle461 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle461:setParent(obj.rectangle365);
+    obj.rectangle461:setLeft(434);
+    obj.rectangle461:setTop(1606);
+    obj.rectangle461:setWidth(350);
+    obj.rectangle461:setHeight(125);
+    obj.rectangle461:setColor("#49244F");
+    obj.rectangle461:setName("rectangle461");
+
+    obj.textEditor21 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor21:setParent(obj.rectangle365);
+    obj.textEditor21:setLeft(439);
+    obj.textEditor21:setTop(1611);
+    obj.textEditor21:setWidth(340);
+    obj.textEditor21:setHeight(115);
+    obj.textEditor21:setFontColor("#D5D5D5");
+    obj.textEditor21:setTransparent(true);
+    obj.textEditor21:setField("descricaoMagia20");
+    obj.textEditor21:setFontSize(18);
+    obj.textEditor21:setName("textEditor21");
+
+    obj.rectangle462 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle462:setParent(obj.rectangle365);
+    obj.rectangle462:setLeft(434);
+    obj.rectangle462:setTop(1731);
+    obj.rectangle462:setWidth(350);
+    obj.rectangle462:setHeight(3);
+    obj.rectangle462:setColor("#49244F");
+    obj.rectangle462:setName("rectangle462");
+
+    obj.rectangle463 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle463:setParent(obj.rectangle365);
+    obj.rectangle463:setLeft(438);
+    obj.rectangle463:setTop(1738);
+    obj.rectangle463:setWidth(135);
+    obj.rectangle463:setHeight(29);
+    obj.rectangle463:setColor("#49244F");
+    obj.rectangle463:setHitTest(true);
+    obj.rectangle463:setCursor("handPoint");
+    obj.rectangle463:setName("rectangle463");
 
     obj.label194 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label194:setParent(obj.rectangle402);
-    obj.label194:setLeft(734);
+    obj.label194:setParent(obj.rectangle365);
+    obj.label194:setLeft(444);
     obj.label194:setTop(1742);
     obj.label194:setWidth(280);
     obj.label194:setFontSize(18);
-    obj.label194:setText("/");
-    obj.label194:setFontColor("#49244F");
+    obj.label194:setText("Conjurar Feitiço");
+    obj.label194:setFontColor("#D5D5D5");
     obj.label194:setName("label194");
 
-    obj.rectangle502 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle502:setParent(obj.rectangle402);
-    obj.rectangle502:setLeft(748);
-    obj.rectangle502:setTop(1736);
-    obj.rectangle502:setWidth(29);
-    obj.rectangle502:setHeight(29);
-    obj.rectangle502:setColor("#49244F");
-    obj.rectangle502:setCornerType("round");
-    obj.rectangle502:setXradius(15);
-    obj.rectangle502:setYradius(15);
-    obj.rectangle502:setName("rectangle502");
+    obj.rectangle464 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle464:setParent(obj.rectangle365);
+    obj.rectangle464:setLeft(698);
+    obj.rectangle464:setTop(1738);
+    obj.rectangle464:setWidth(29);
+    obj.rectangle464:setHeight(29);
+    obj.rectangle464:setColor("#49244F");
+    obj.rectangle464:setCornerType("round");
+    obj.rectangle464:setXradius(15);
+    obj.rectangle464:setYradius(15);
+    obj.rectangle464:setName("rectangle464");
 
-    obj.edit197 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit197:setParent(obj.rectangle402);
-    obj.edit197:setLeft(743);
-    obj.edit197:setTop(1735);
-    obj.edit197:setWidth(40);
-    obj.edit197:setFontSize(18);
-    obj.edit197:setHorzTextAlign("center");
-    obj.edit197:setFontColor("#D5D5D5");
-    obj.edit197:setTransparent(true);
-    obj.edit197:setField("maxMagia20");
-    obj.edit197:setHitTest(true);
-    obj.edit197:setCursor("handPoint");
-    obj.edit197:setHint("Total");
-    obj.edit197:setName("edit197");
+    obj.edit181 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit181:setParent(obj.rectangle365);
+    obj.edit181:setLeft(692);
+    obj.edit181:setTop(1735);
+    obj.edit181:setWidth(40);
+    obj.edit181:setFontSize(18);
+    obj.edit181:setHorzTextAlign("center");
+    obj.edit181:setFontColor("#D5D5D5");
+    obj.edit181:setTransparent(true);
+    obj.edit181:setField("qtdMagia20");
+    obj.edit181:setHitTest(true);
+    obj.edit181:setCursor("handPoint");
+    obj.edit181:setHint("Quantidade");
+    obj.edit181:setName("edit181");
+
+    obj.label195 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label195:setParent(obj.rectangle365);
+    obj.label195:setLeft(734);
+    obj.label195:setTop(1742);
+    obj.label195:setWidth(280);
+    obj.label195:setFontSize(18);
+    obj.label195:setText("/");
+    obj.label195:setFontColor("#49244F");
+    obj.label195:setName("label195");
+
+    obj.rectangle465 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle465:setParent(obj.rectangle365);
+    obj.rectangle465:setLeft(748);
+    obj.rectangle465:setTop(1736);
+    obj.rectangle465:setWidth(29);
+    obj.rectangle465:setHeight(29);
+    obj.rectangle465:setColor("#49244F");
+    obj.rectangle465:setCornerType("round");
+    obj.rectangle465:setXradius(15);
+    obj.rectangle465:setYradius(15);
+    obj.rectangle465:setName("rectangle465");
+
+    obj.edit182 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit182:setParent(obj.rectangle365);
+    obj.edit182:setLeft(743);
+    obj.edit182:setTop(1735);
+    obj.edit182:setWidth(40);
+    obj.edit182:setFontSize(18);
+    obj.edit182:setHorzTextAlign("center");
+    obj.edit182:setFontColor("#D5D5D5");
+    obj.edit182:setTransparent(true);
+    obj.edit182:setField("maxMagia20");
+    obj.edit182:setHitTest(true);
+    obj.edit182:setCursor("handPoint");
+    obj.edit182:setHint("Total");
+    obj.edit182:setName("edit182");
 
     obj.layout10 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout10:setParent(obj.tab6);
@@ -11155,32 +10443,32 @@ local function constructNew_frmWeirdWizard()
     obj.layout10:setHeight(825);
     obj.layout10:setName("layout10");
 
-    obj.rectangle503 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle503:setParent(obj.layout10);
-    obj.rectangle503:setLeft(0);
-    obj.rectangle503:setTop(725);
-    obj.rectangle503:setWidth(799);
-    obj.rectangle503:setHeight(105);
-    obj.rectangle503:setColor("#D5D5D5");
-    obj.rectangle503:setName("rectangle503");
+    obj.rectangle466 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle466:setParent(obj.layout10);
+    obj.rectangle466:setLeft(0);
+    obj.rectangle466:setTop(725);
+    obj.rectangle466:setWidth(799);
+    obj.rectangle466:setHeight(105);
+    obj.rectangle466:setColor("#D5D5D5");
+    obj.rectangle466:setName("rectangle466");
 
-    obj.rectangle504 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle504:setParent(obj.layout10);
-    obj.rectangle504:setLeft(65);
-    obj.rectangle504:setTop(730);
-    obj.rectangle504:setWidth(712);
-    obj.rectangle504:setHeight(1);
-    obj.rectangle504:setColor("#49244F");
-    obj.rectangle504:setName("rectangle504");
+    obj.rectangle467 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle467:setParent(obj.layout10);
+    obj.rectangle467:setLeft(65);
+    obj.rectangle467:setTop(730);
+    obj.rectangle467:setWidth(712);
+    obj.rectangle467:setHeight(1);
+    obj.rectangle467:setColor("#49244F");
+    obj.rectangle467:setName("rectangle467");
 
-    obj.rectangle505 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle505:setParent(obj.layout10);
-    obj.rectangle505:setLeft(65);
-    obj.rectangle505:setTop(735);
-    obj.rectangle505:setWidth(712);
-    obj.rectangle505:setHeight(1);
-    obj.rectangle505:setColor("#49244F");
-    obj.rectangle505:setName("rectangle505");
+    obj.rectangle468 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle468:setParent(obj.layout10);
+    obj.rectangle468:setLeft(65);
+    obj.rectangle468:setTop(735);
+    obj.rectangle468:setWidth(712);
+    obj.rectangle468:setHeight(1);
+    obj.rectangle468:setColor("#49244F");
+    obj.rectangle468:setName("rectangle468");
 
     obj.image49 = GUI.fromHandle(_obj_newObject("image"));
     obj.image49:setParent(obj.layout10);
@@ -11191,14 +10479,14 @@ local function constructNew_frmWeirdWizard()
     obj.image49:setSRC("/img/livrosMagicos.png");
     obj.image49:setName("image49");
 
-    obj.rectangle506 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle506:setParent(obj.layout10);
-    obj.rectangle506:setLeft(0);
-    obj.rectangle506:setTop(0);
-    obj.rectangle506:setWidth(799);
-    obj.rectangle506:setHeight(5);
-    obj.rectangle506:setColor("#D5D5D5");
-    obj.rectangle506:setName("rectangle506");
+    obj.rectangle469 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle469:setParent(obj.layout10);
+    obj.rectangle469:setLeft(0);
+    obj.rectangle469:setTop(0);
+    obj.rectangle469:setWidth(799);
+    obj.rectangle469:setHeight(5);
+    obj.rectangle469:setColor("#D5D5D5");
+    obj.rectangle469:setName("rectangle469");
 
     obj.image50 = GUI.fromHandle(_obj_newObject("image"));
     obj.image50:setParent(obj.layout10);
@@ -11231,17 +10519,17 @@ local function constructNew_frmWeirdWizard()
     obj.layout11:setHeight(825);
     obj.layout11:setName("layout11");
 
-    obj.rectangle507 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle507:setParent(obj.layout11);
-    obj.rectangle507:setLeft(0);
-    obj.rectangle507:setTop(0);
-    obj.rectangle507:setWidth(799);
-    obj.rectangle507:setHeight(825);
-    obj.rectangle507:setColor("#D5D5D5");
-    obj.rectangle507:setName("rectangle507");
+    obj.rectangle470 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle470:setParent(obj.layout11);
+    obj.rectangle470:setLeft(0);
+    obj.rectangle470:setTop(0);
+    obj.rectangle470:setWidth(799);
+    obj.rectangle470:setHeight(825);
+    obj.rectangle470:setColor("#D5D5D5");
+    obj.rectangle470:setName("rectangle470");
 
     obj.image52 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image52:setParent(obj.rectangle507);
+    obj.image52:setParent(obj.rectangle470);
     obj.image52:setLeft(0);
     obj.image52:setTop(0);
     obj.image52:setWidth(799);
@@ -11249,799 +10537,821 @@ local function constructNew_frmWeirdWizard()
     obj.image52:setSRC("/img/borda.png");
     obj.image52:setName("image52");
 
-    obj.rectangle508 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle508:setParent(obj.rectangle507);
-    obj.rectangle508:setLeft(60);
-    obj.rectangle508:setTop(95);
-    obj.rectangle508:setWidth(720);
-    obj.rectangle508:setHeight(575);
-    obj.rectangle508:setColor("#D5D5D5");
-    obj.rectangle508:setStrokeColor("#49244F");
-    obj.rectangle508:setStrokeSize(3);
-    obj.rectangle508:setName("rectangle508");
+    obj.rectangle471 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle471:setParent(obj.rectangle470);
+    obj.rectangle471:setLeft(60);
+    obj.rectangle471:setTop(95);
+    obj.rectangle471:setWidth(720);
+    obj.rectangle471:setHeight(575);
+    obj.rectangle471:setColor("#D5D5D5");
+    obj.rectangle471:setStrokeColor("#49244F");
+    obj.rectangle471:setStrokeSize(3);
+    obj.rectangle471:setName("rectangle471");
 
-    obj.rectangle509 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle509:setParent(obj.rectangle507);
-    obj.rectangle509:setLeft(418);
-    obj.rectangle509:setTop(130);
-    obj.rectangle509:setWidth(3);
-    obj.rectangle509:setHeight(100);
-    obj.rectangle509:setColor("#49244F");
-    obj.rectangle509:setName("rectangle509");
+    obj.rectangle472 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle472:setParent(obj.rectangle470);
+    obj.rectangle472:setLeft(418);
+    obj.rectangle472:setTop(130);
+    obj.rectangle472:setWidth(3);
+    obj.rectangle472:setHeight(100);
+    obj.rectangle472:setColor("#49244F");
+    obj.rectangle472:setName("rectangle472");
 
-    obj.rectangle510 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle510:setParent(obj.rectangle507);
-    obj.rectangle510:setLeft(80);
-    obj.rectangle510:setTop(260);
-    obj.rectangle510:setWidth(680);
-    obj.rectangle510:setHeight(3);
-    obj.rectangle510:setColor("#49244F");
-    obj.rectangle510:setName("rectangle510");
-
-    obj.label195 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label195:setParent(obj.rectangle507);
-    obj.label195:setLeft(325);
-    obj.label195:setTop(60);
-    obj.label195:setWidth(180);
-    obj.label195:setFontSize(24);
-    obj.label195:setHorzTextAlign("center");
-    obj.label195:setText("AFLIÇÕES");
-    obj.label195:setFontColor("#49244F");
-    lfm_setPropAsString(obj.label195, "fontStyle", "bold");
-    obj.label195:setName("label195");
-
-    obj.rectangle511 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle511:setParent(obj.rectangle507);
-    obj.rectangle511:setLeft(80);
-    obj.rectangle511:setTop(130);
-    obj.rectangle511:setWidth(320);
-    obj.rectangle511:setHeight(40);
-    obj.rectangle511:setColor("#49244F");
-    obj.rectangle511:setName("rectangle511");
+    obj.rectangle473 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle473:setParent(obj.rectangle470);
+    obj.rectangle473:setLeft(80);
+    obj.rectangle473:setTop(260);
+    obj.rectangle473:setWidth(680);
+    obj.rectangle473:setHeight(3);
+    obj.rectangle473:setColor("#49244F");
+    obj.rectangle473:setName("rectangle473");
 
     obj.label196 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label196:setParent(obj.rectangle507);
-    obj.label196:setLeft(75);
-    obj.label196:setTop(140);
-    obj.label196:setWidth(210);
-    obj.label196:setFontSize(20);
+    obj.label196:setParent(obj.rectangle470);
+    obj.label196:setLeft(325);
+    obj.label196:setTop(60);
+    obj.label196:setWidth(180);
+    obj.label196:setFontSize(24);
     obj.label196:setHorzTextAlign("center");
-    obj.label196:setText("Força Debilitada");
-    obj.label196:setFontColor("#D5D5D5");
+    obj.label196:setText("AFLIÇÕES");
+    obj.label196:setFontColor("#49244F");
     lfm_setPropAsString(obj.label196, "fontStyle", "bold");
-    obj.label196:setHitTest(true);
-    obj.label196:setCursor("handPoint");
     obj.label196:setName("label196");
 
+    obj.rectangle474 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle474:setParent(obj.rectangle470);
+    obj.rectangle474:setLeft(80);
+    obj.rectangle474:setTop(130);
+    obj.rectangle474:setWidth(320);
+    obj.rectangle474:setHeight(40);
+    obj.rectangle474:setColor("#49244F");
+    obj.rectangle474:setName("rectangle474");
+
+    obj.label197 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label197:setParent(obj.rectangle470);
+    obj.label197:setLeft(75);
+    obj.label197:setTop(140);
+    obj.label197:setWidth(210);
+    obj.label197:setFontSize(20);
+    obj.label197:setHorzTextAlign("center");
+    obj.label197:setText("Força Debilitada");
+    obj.label197:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label197, "fontStyle", "bold");
+    obj.label197:setHitTest(true);
+    obj.label197:setCursor("handPoint");
+    obj.label197:setHint("Enviar no Chat");
+    obj.label197:setName("label197");
+
     obj.checkBox1 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox1:setParent(obj.rectangle507);
+    obj.checkBox1:setParent(obj.rectangle470);
     obj.checkBox1:setField("ForçaDebilitada");
     obj.checkBox1:setLeft(370);
     obj.checkBox1:setTop(142);
     obj.checkBox1:setName("checkBox1");
 
-    obj.rectangle512 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle512:setParent(obj.rectangle507);
-    obj.rectangle512:setLeft(440);
-    obj.rectangle512:setTop(130);
-    obj.rectangle512:setWidth(320);
-    obj.rectangle512:setHeight(40);
-    obj.rectangle512:setColor("#49244F");
-    obj.rectangle512:setName("rectangle512");
+    obj.rectangle475 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle475:setParent(obj.rectangle470);
+    obj.rectangle475:setLeft(440);
+    obj.rectangle475:setTop(130);
+    obj.rectangle475:setWidth(320);
+    obj.rectangle475:setHeight(40);
+    obj.rectangle475:setColor("#49244F");
+    obj.rectangle475:setName("rectangle475");
 
-    obj.label197 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label197:setParent(obj.rectangle507);
-    obj.label197:setLeft(455);
-    obj.label197:setTop(140);
-    obj.label197:setWidth(210);
-    obj.label197:setFontSize(20);
-    obj.label197:setHorzTextAlign("center");
-    obj.label197:setText("Agilidade Debilitada");
-    obj.label197:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label197, "fontStyle", "bold");
-    obj.label197:setHitTest(true);
-    obj.label197:setCursor("handPoint");
-    obj.label197:setName("label197");
+    obj.label198 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label198:setParent(obj.rectangle470);
+    obj.label198:setLeft(455);
+    obj.label198:setTop(140);
+    obj.label198:setWidth(210);
+    obj.label198:setFontSize(20);
+    obj.label198:setHorzTextAlign("center");
+    obj.label198:setText("Agilidade Debilitada");
+    obj.label198:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label198, "fontStyle", "bold");
+    obj.label198:setHitTest(true);
+    obj.label198:setCursor("handPoint");
+    obj.label198:setHint("Enviar no Chat");
+    obj.label198:setName("label198");
 
     obj.checkBox2 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox2:setParent(obj.rectangle507);
+    obj.checkBox2:setParent(obj.rectangle470);
     obj.checkBox2:setField("AgilidadeDebilitada");
     obj.checkBox2:setLeft(730);
     obj.checkBox2:setTop(142);
     obj.checkBox2:setName("checkBox2");
 
-    obj.rectangle513 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle513:setParent(obj.rectangle507);
-    obj.rectangle513:setLeft(80);
-    obj.rectangle513:setTop(190);
-    obj.rectangle513:setWidth(320);
-    obj.rectangle513:setHeight(40);
-    obj.rectangle513:setColor("#49244F");
-    obj.rectangle513:setName("rectangle513");
+    obj.rectangle476 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle476:setParent(obj.rectangle470);
+    obj.rectangle476:setLeft(80);
+    obj.rectangle476:setTop(190);
+    obj.rectangle476:setWidth(320);
+    obj.rectangle476:setHeight(40);
+    obj.rectangle476:setColor("#49244F");
+    obj.rectangle476:setName("rectangle476");
 
-    obj.label198 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label198:setParent(obj.rectangle507);
-    obj.label198:setLeft(90);
-    obj.label198:setTop(200);
-    obj.label198:setWidth(210);
-    obj.label198:setFontSize(20);
-    obj.label198:setHorzTextAlign("center");
-    obj.label198:setText("Intelecto Debilitado");
-    obj.label198:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label198, "fontStyle", "bold");
-    obj.label198:setHitTest(true);
-    obj.label198:setCursor("handPoint");
-    obj.label198:setName("label198");
+    obj.label199 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label199:setParent(obj.rectangle470);
+    obj.label199:setLeft(90);
+    obj.label199:setTop(200);
+    obj.label199:setWidth(210);
+    obj.label199:setFontSize(20);
+    obj.label199:setHorzTextAlign("center");
+    obj.label199:setText("Intelecto Debilitado");
+    obj.label199:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label199, "fontStyle", "bold");
+    obj.label199:setHitTest(true);
+    obj.label199:setCursor("handPoint");
+    obj.label199:setHint("Enviar no Chat");
+    obj.label199:setName("label199");
 
     obj.checkBox3 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox3:setParent(obj.rectangle507);
+    obj.checkBox3:setParent(obj.rectangle470);
     obj.checkBox3:setField("IntelectoDebilitado");
     obj.checkBox3:setLeft(370);
     obj.checkBox3:setTop(202);
     obj.checkBox3:setName("checkBox3");
 
-    obj.rectangle514 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle514:setParent(obj.rectangle507);
-    obj.rectangle514:setLeft(440);
-    obj.rectangle514:setTop(190);
-    obj.rectangle514:setWidth(320);
-    obj.rectangle514:setHeight(40);
-    obj.rectangle514:setColor("#49244F");
-    obj.rectangle514:setName("rectangle514");
+    obj.rectangle477 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle477:setParent(obj.rectangle470);
+    obj.rectangle477:setLeft(440);
+    obj.rectangle477:setTop(190);
+    obj.rectangle477:setWidth(320);
+    obj.rectangle477:setHeight(40);
+    obj.rectangle477:setColor("#49244F");
+    obj.rectangle477:setName("rectangle477");
 
-    obj.label199 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label199:setParent(obj.rectangle507);
-    obj.label199:setLeft(450);
-    obj.label199:setTop(200);
-    obj.label199:setWidth(210);
-    obj.label199:setFontSize(20);
-    obj.label199:setHorzTextAlign("center");
-    obj.label199:setText("Vontade Debilitada");
-    obj.label199:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label199, "fontStyle", "bold");
-    obj.label199:setHitTest(true);
-    obj.label199:setCursor("handPoint");
-    obj.label199:setName("label199");
+    obj.label200 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label200:setParent(obj.rectangle470);
+    obj.label200:setLeft(450);
+    obj.label200:setTop(200);
+    obj.label200:setWidth(210);
+    obj.label200:setFontSize(20);
+    obj.label200:setHorzTextAlign("center");
+    obj.label200:setText("Vontade Debilitada");
+    obj.label200:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label200, "fontStyle", "bold");
+    obj.label200:setHitTest(true);
+    obj.label200:setCursor("handPoint");
+    obj.label200:setHint("Enviar no Chat");
+    obj.label200:setName("label200");
 
     obj.checkBox4 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox4:setParent(obj.rectangle507);
+    obj.checkBox4:setParent(obj.rectangle470);
     obj.checkBox4:setField("VontadeDebilitada");
     obj.checkBox4:setLeft(730);
     obj.checkBox4:setTop(202);
     obj.checkBox4:setName("checkBox4");
 
-    obj.rectangle515 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle515:setParent(obj.rectangle507);
-    obj.rectangle515:setLeft(80);
-    obj.rectangle515:setTop(295);
-    obj.rectangle515:setWidth(200);
-    obj.rectangle515:setHeight(40);
-    obj.rectangle515:setColor("#49244F");
-    obj.rectangle515:setName("rectangle515");
+    obj.rectangle478 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle478:setParent(obj.rectangle470);
+    obj.rectangle478:setLeft(80);
+    obj.rectangle478:setTop(295);
+    obj.rectangle478:setWidth(200);
+    obj.rectangle478:setHeight(40);
+    obj.rectangle478:setColor("#49244F");
+    obj.rectangle478:setName("rectangle478");
 
-    obj.label200 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label200:setParent(obj.rectangle507);
-    obj.label200:setLeft(85);
-    obj.label200:setTop(305);
-    obj.label200:setWidth(150);
-    obj.label200:setFontSize(20);
-    obj.label200:setHorzTextAlign("center");
-    obj.label200:setText("Adormecido");
-    obj.label200:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label200, "fontStyle", "bold");
-    obj.label200:setHitTest(true);
-    obj.label200:setCursor("handPoint");
-    obj.label200:setName("label200");
+    obj.label201 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label201:setParent(obj.rectangle470);
+    obj.label201:setLeft(85);
+    obj.label201:setTop(305);
+    obj.label201:setWidth(150);
+    obj.label201:setFontSize(20);
+    obj.label201:setHorzTextAlign("center");
+    obj.label201:setText("Adormecido");
+    obj.label201:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label201, "fontStyle", "bold");
+    obj.label201:setHitTest(true);
+    obj.label201:setCursor("handPoint");
+    obj.label201:setHint("Enviar no Chat");
+    obj.label201:setName("label201");
 
     obj.checkBox5 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox5:setParent(obj.rectangle507);
+    obj.checkBox5:setParent(obj.rectangle470);
     obj.checkBox5:setField("Adormecido");
     obj.checkBox5:setLeft(250);
     obj.checkBox5:setTop(307);
     obj.checkBox5:setName("checkBox5");
 
-    obj.rectangle516 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle516:setParent(obj.rectangle507);
-    obj.rectangle516:setLeft(322);
-    obj.rectangle516:setTop(295);
-    obj.rectangle516:setWidth(200);
-    obj.rectangle516:setHeight(40);
-    obj.rectangle516:setColor("#49244F");
-    obj.rectangle516:setName("rectangle516");
+    obj.rectangle479 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle479:setParent(obj.rectangle470);
+    obj.rectangle479:setLeft(322);
+    obj.rectangle479:setTop(295);
+    obj.rectangle479:setWidth(200);
+    obj.rectangle479:setHeight(40);
+    obj.rectangle479:setColor("#49244F");
+    obj.rectangle479:setName("rectangle479");
 
-    obj.label201 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label201:setParent(obj.rectangle507);
-    obj.label201:setLeft(327);
-    obj.label201:setTop(305);
-    obj.label201:setWidth(150);
-    obj.label201:setFontSize(20);
-    obj.label201:setHorzTextAlign("center");
-    obj.label201:setText("Amaldiçoado");
-    obj.label201:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label201, "fontStyle", "bold");
-    obj.label201:setHitTest(true);
-    obj.label201:setCursor("handPoint");
-    obj.label201:setName("label201");
+    obj.label202 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label202:setParent(obj.rectangle470);
+    obj.label202:setLeft(327);
+    obj.label202:setTop(305);
+    obj.label202:setWidth(150);
+    obj.label202:setFontSize(20);
+    obj.label202:setHorzTextAlign("center");
+    obj.label202:setText("Amaldiçoado");
+    obj.label202:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label202, "fontStyle", "bold");
+    obj.label202:setHitTest(true);
+    obj.label202:setCursor("handPoint");
+    obj.label202:setHint("Enviar no Chat");
+    obj.label202:setName("label202");
 
     obj.checkBox6 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox6:setParent(obj.rectangle507);
+    obj.checkBox6:setParent(obj.rectangle470);
     obj.checkBox6:setField("Amaldicoado");
     obj.checkBox6:setLeft(492);
     obj.checkBox6:setTop(307);
     obj.checkBox6:setName("checkBox6");
 
-    obj.rectangle517 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle517:setParent(obj.rectangle507);
-    obj.rectangle517:setLeft(560);
-    obj.rectangle517:setTop(295);
-    obj.rectangle517:setWidth(200);
-    obj.rectangle517:setHeight(40);
-    obj.rectangle517:setColor("#49244F");
-    obj.rectangle517:setName("rectangle517");
+    obj.rectangle480 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle480:setParent(obj.rectangle470);
+    obj.rectangle480:setLeft(560);
+    obj.rectangle480:setTop(295);
+    obj.rectangle480:setWidth(200);
+    obj.rectangle480:setHeight(40);
+    obj.rectangle480:setColor("#49244F");
+    obj.rectangle480:setName("rectangle480");
 
-    obj.label202 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label202:setParent(obj.rectangle507);
-    obj.label202:setLeft(565);
-    obj.label202:setTop(305);
-    obj.label202:setWidth(150);
-    obj.label202:setFontSize(20);
-    obj.label202:setHorzTextAlign("center");
-    obj.label202:setText("Amedrontado");
-    obj.label202:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label202, "fontStyle", "bold");
-    obj.label202:setHitTest(true);
-    obj.label202:setCursor("handPoint");
-    obj.label202:setName("label202");
+    obj.label203 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label203:setParent(obj.rectangle470);
+    obj.label203:setLeft(565);
+    obj.label203:setTop(305);
+    obj.label203:setWidth(150);
+    obj.label203:setFontSize(20);
+    obj.label203:setHorzTextAlign("center");
+    obj.label203:setText("Amedrontado");
+    obj.label203:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label203, "fontStyle", "bold");
+    obj.label203:setHitTest(true);
+    obj.label203:setCursor("handPoint");
+    obj.label203:setHint("Enviar no Chat");
+    obj.label203:setName("label203");
 
     obj.checkBox7 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox7:setParent(obj.rectangle507);
+    obj.checkBox7:setParent(obj.rectangle470);
     obj.checkBox7:setField("Amedrontado");
     obj.checkBox7:setLeft(730);
     obj.checkBox7:setTop(307);
     obj.checkBox7:setName("checkBox7");
 
-    obj.rectangle518 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle518:setParent(obj.rectangle507);
-    obj.rectangle518:setLeft(80);
-    obj.rectangle518:setTop(355);
-    obj.rectangle518:setWidth(200);
-    obj.rectangle518:setHeight(40);
-    obj.rectangle518:setColor("#49244F");
-    obj.rectangle518:setName("rectangle518");
+    obj.rectangle481 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle481:setParent(obj.rectangle470);
+    obj.rectangle481:setLeft(80);
+    obj.rectangle481:setTop(355);
+    obj.rectangle481:setWidth(200);
+    obj.rectangle481:setHeight(40);
+    obj.rectangle481:setColor("#49244F");
+    obj.rectangle481:setName("rectangle481");
 
-    obj.label203 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label203:setParent(obj.rectangle507);
-    obj.label203:setLeft(90);
-    obj.label203:setTop(365);
-    obj.label203:setWidth(120);
-    obj.label203:setFontSize(20);
-    obj.label203:setHorzTextAlign("center");
-    obj.label203:setText("Atordoado");
-    obj.label203:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label203, "fontStyle", "bold");
-    obj.label203:setHitTest(true);
-    obj.label203:setCursor("handPoint");
-    obj.label203:setName("label203");
+    obj.label204 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label204:setParent(obj.rectangle470);
+    obj.label204:setLeft(90);
+    obj.label204:setTop(365);
+    obj.label204:setWidth(120);
+    obj.label204:setFontSize(20);
+    obj.label204:setHorzTextAlign("center");
+    obj.label204:setText("Atordoado");
+    obj.label204:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label204, "fontStyle", "bold");
+    obj.label204:setHitTest(true);
+    obj.label204:setCursor("handPoint");
+    obj.label204:setHint("Enviar no Chat");
+    obj.label204:setName("label204");
 
     obj.checkBox8 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox8:setParent(obj.rectangle507);
+    obj.checkBox8:setParent(obj.rectangle470);
     obj.checkBox8:setField("Atordoado");
     obj.checkBox8:setLeft(250);
     obj.checkBox8:setTop(367);
     obj.checkBox8:setName("checkBox8");
 
-    obj.rectangle519 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle519:setParent(obj.rectangle507);
-    obj.rectangle519:setLeft(322);
-    obj.rectangle519:setTop(355);
-    obj.rectangle519:setWidth(200);
-    obj.rectangle519:setHeight(40);
-    obj.rectangle519:setColor("#49244F");
-    obj.rectangle519:setName("rectangle519");
+    obj.rectangle482 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle482:setParent(obj.rectangle470);
+    obj.rectangle482:setLeft(322);
+    obj.rectangle482:setTop(355);
+    obj.rectangle482:setWidth(200);
+    obj.rectangle482:setHeight(40);
+    obj.rectangle482:setColor("#49244F");
+    obj.rectangle482:setName("rectangle482");
 
-    obj.label204 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label204:setParent(obj.rectangle507);
-    obj.label204:setLeft(327);
-    obj.label204:setTop(365);
-    obj.label204:setWidth(80);
-    obj.label204:setFontSize(20);
-    obj.label204:setHorzTextAlign("center");
-    obj.label204:setText("Caído");
-    obj.label204:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label204, "fontStyle", "bold");
-    obj.label204:setHitTest(true);
-    obj.label204:setCursor("handPoint");
-    obj.label204:setName("label204");
+    obj.label205 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label205:setParent(obj.rectangle470);
+    obj.label205:setLeft(327);
+    obj.label205:setTop(365);
+    obj.label205:setWidth(80);
+    obj.label205:setFontSize(20);
+    obj.label205:setHorzTextAlign("center");
+    obj.label205:setText("Caído");
+    obj.label205:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label205, "fontStyle", "bold");
+    obj.label205:setHitTest(true);
+    obj.label205:setCursor("handPoint");
+    obj.label205:setHint("Enviar no Chat");
+    obj.label205:setName("label205");
 
     obj.checkBox9 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox9:setParent(obj.rectangle507);
+    obj.checkBox9:setParent(obj.rectangle470);
     obj.checkBox9:setField("Caido");
     obj.checkBox9:setLeft(492);
     obj.checkBox9:setTop(367);
     obj.checkBox9:setName("checkBox9");
 
-    obj.rectangle520 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle520:setParent(obj.rectangle507);
-    obj.rectangle520:setLeft(560);
-    obj.rectangle520:setTop(355);
-    obj.rectangle520:setWidth(200);
-    obj.rectangle520:setHeight(40);
-    obj.rectangle520:setColor("#49244F");
-    obj.rectangle520:setName("rectangle520");
+    obj.rectangle483 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle483:setParent(obj.rectangle470);
+    obj.rectangle483:setLeft(560);
+    obj.rectangle483:setTop(355);
+    obj.rectangle483:setWidth(200);
+    obj.rectangle483:setHeight(40);
+    obj.rectangle483:setColor("#49244F");
+    obj.rectangle483:setName("rectangle483");
 
-    obj.label205 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label205:setParent(obj.rectangle507);
-    obj.label205:setLeft(560);
-    obj.label205:setTop(365);
-    obj.label205:setWidth(80);
-    obj.label205:setFontSize(20);
-    obj.label205:setHorzTextAlign("center");
-    obj.label205:setText("Cego");
-    obj.label205:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label205, "fontStyle", "bold");
-    obj.label205:setHitTest(true);
-    obj.label205:setCursor("handPoint");
-    obj.label205:setName("label205");
+    obj.label206 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label206:setParent(obj.rectangle470);
+    obj.label206:setLeft(560);
+    obj.label206:setTop(365);
+    obj.label206:setWidth(80);
+    obj.label206:setFontSize(20);
+    obj.label206:setHorzTextAlign("center");
+    obj.label206:setText("Cego");
+    obj.label206:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label206, "fontStyle", "bold");
+    obj.label206:setHitTest(true);
+    obj.label206:setCursor("handPoint");
+    obj.label206:setHint("Enviar no Chat");
+    obj.label206:setName("label206");
 
     obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.rectangle507);
+    obj.checkBox10:setParent(obj.rectangle470);
     obj.checkBox10:setField("Cego");
     obj.checkBox10:setLeft(730);
     obj.checkBox10:setTop(367);
     obj.checkBox10:setName("checkBox10");
 
-    obj.rectangle521 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle521:setParent(obj.rectangle507);
-    obj.rectangle521:setLeft(80);
-    obj.rectangle521:setTop(415);
-    obj.rectangle521:setWidth(200);
-    obj.rectangle521:setHeight(40);
-    obj.rectangle521:setColor("#49244F");
-    obj.rectangle521:setName("rectangle521");
+    obj.rectangle484 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle484:setParent(obj.rectangle470);
+    obj.rectangle484:setLeft(80);
+    obj.rectangle484:setTop(415);
+    obj.rectangle484:setWidth(200);
+    obj.rectangle484:setHeight(40);
+    obj.rectangle484:setColor("#49244F");
+    obj.rectangle484:setName("rectangle484");
 
-    obj.label206 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label206:setParent(obj.rectangle507);
-    obj.label206:setLeft(80);
-    obj.label206:setTop(425);
-    obj.label206:setWidth(120);
-    obj.label206:setFontSize(20);
-    obj.label206:setHorzTextAlign("center");
-    obj.label206:setText("Confuso");
-    obj.label206:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label206, "fontStyle", "bold");
-    obj.label206:setHitTest(true);
-    obj.label206:setCursor("handPoint");
-    obj.label206:setName("label206");
+    obj.label207 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label207:setParent(obj.rectangle470);
+    obj.label207:setLeft(80);
+    obj.label207:setTop(425);
+    obj.label207:setWidth(120);
+    obj.label207:setFontSize(20);
+    obj.label207:setHorzTextAlign("center");
+    obj.label207:setText("Confuso");
+    obj.label207:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label207, "fontStyle", "bold");
+    obj.label207:setHitTest(true);
+    obj.label207:setCursor("handPoint");
+    obj.label207:setHint("Enviar no Chat");
+    obj.label207:setName("label207");
 
     obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox11:setParent(obj.rectangle507);
+    obj.checkBox11:setParent(obj.rectangle470);
     obj.checkBox11:setField("Confuso");
     obj.checkBox11:setLeft(250);
     obj.checkBox11:setTop(427);
     obj.checkBox11:setName("checkBox11");
 
-    obj.rectangle522 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle522:setParent(obj.rectangle507);
-    obj.rectangle522:setLeft(322);
-    obj.rectangle522:setTop(415);
-    obj.rectangle522:setWidth(200);
-    obj.rectangle522:setHeight(40);
-    obj.rectangle522:setColor("#49244F");
-    obj.rectangle522:setName("rectangle522");
+    obj.rectangle485 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle485:setParent(obj.rectangle470);
+    obj.rectangle485:setLeft(322);
+    obj.rectangle485:setTop(415);
+    obj.rectangle485:setWidth(200);
+    obj.rectangle485:setHeight(40);
+    obj.rectangle485:setColor("#49244F");
+    obj.rectangle485:setName("rectangle485");
 
-    obj.label207 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label207:setParent(obj.rectangle507);
-    obj.label207:setLeft(332);
-    obj.label207:setTop(425);
-    obj.label207:setWidth(120);
-    obj.label207:setFontSize(20);
-    obj.label207:setHorzTextAlign("center");
-    obj.label207:setText("Controlado");
-    obj.label207:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label207, "fontStyle", "bold");
-    obj.label207:setHitTest(true);
-    obj.label207:setCursor("handPoint");
-    obj.label207:setName("label207");
+    obj.label208 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label208:setParent(obj.rectangle470);
+    obj.label208:setLeft(332);
+    obj.label208:setTop(425);
+    obj.label208:setWidth(120);
+    obj.label208:setFontSize(20);
+    obj.label208:setHorzTextAlign("center");
+    obj.label208:setText("Controlado");
+    obj.label208:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label208, "fontStyle", "bold");
+    obj.label208:setHitTest(true);
+    obj.label208:setCursor("handPoint");
+    obj.label208:setHint("Enviar no Chat");
+    obj.label208:setName("label208");
 
     obj.checkBox12 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox12:setParent(obj.rectangle507);
+    obj.checkBox12:setParent(obj.rectangle470);
     obj.checkBox12:setField("Controlado");
     obj.checkBox12:setLeft(492);
     obj.checkBox12:setTop(427);
     obj.checkBox12:setName("checkBox12");
 
-    obj.rectangle523 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle523:setParent(obj.rectangle507);
-    obj.rectangle523:setLeft(560);
-    obj.rectangle523:setTop(415);
-    obj.rectangle523:setWidth(200);
-    obj.rectangle523:setHeight(40);
-    obj.rectangle523:setColor("#49244F");
-    obj.rectangle523:setName("rectangle523");
+    obj.rectangle486 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle486:setParent(obj.rectangle470);
+    obj.rectangle486:setLeft(560);
+    obj.rectangle486:setTop(415);
+    obj.rectangle486:setWidth(200);
+    obj.rectangle486:setHeight(40);
+    obj.rectangle486:setColor("#49244F");
+    obj.rectangle486:setName("rectangle486");
 
-    obj.label208 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label208:setParent(obj.rectangle507);
-    obj.label208:setLeft(563);
-    obj.label208:setTop(425);
-    obj.label208:setWidth(150);
-    obj.label208:setFontSize(20);
-    obj.label208:setHorzTextAlign("center");
-    obj.label208:setText("Enfraquecido");
-    obj.label208:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label208, "fontStyle", "bold");
-    obj.label208:setHitTest(true);
-    obj.label208:setCursor("handPoint");
-    obj.label208:setName("label208");
+    obj.label209 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label209:setParent(obj.rectangle470);
+    obj.label209:setLeft(563);
+    obj.label209:setTop(425);
+    obj.label209:setWidth(150);
+    obj.label209:setFontSize(20);
+    obj.label209:setHorzTextAlign("center");
+    obj.label209:setText("Enfraquecido");
+    obj.label209:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label209, "fontStyle", "bold");
+    obj.label209:setHitTest(true);
+    obj.label209:setCursor("handPoint");
+    obj.label209:setHint("Enviar no Chat");
+    obj.label209:setName("label209");
 
     obj.checkBox13 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox13:setParent(obj.rectangle507);
+    obj.checkBox13:setParent(obj.rectangle470);
     obj.checkBox13:setField("Enfraquecido");
     obj.checkBox13:setLeft(730);
     obj.checkBox13:setTop(427);
     obj.checkBox13:setName("checkBox13");
 
-    obj.rectangle524 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle524:setParent(obj.rectangle507);
-    obj.rectangle524:setLeft(80);
-    obj.rectangle524:setTop(475);
-    obj.rectangle524:setWidth(200);
-    obj.rectangle524:setHeight(40);
-    obj.rectangle524:setColor("#49244F");
-    obj.rectangle524:setName("rectangle524");
+    obj.rectangle487 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle487:setParent(obj.rectangle470);
+    obj.rectangle487:setLeft(80);
+    obj.rectangle487:setTop(475);
+    obj.rectangle487:setWidth(200);
+    obj.rectangle487:setHeight(40);
+    obj.rectangle487:setColor("#49244F");
+    obj.rectangle487:setName("rectangle487");
 
-    obj.label209 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label209:setParent(obj.rectangle507);
-    obj.label209:setLeft(97);
-    obj.label209:setTop(485);
-    obj.label209:setWidth(120);
-    obj.label209:setFontSize(20);
-    obj.label209:setHorzTextAlign("center");
-    obj.label209:setText("Envenenado");
-    obj.label209:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label209, "fontStyle", "bold");
-    obj.label209:setHitTest(true);
-    obj.label209:setCursor("handPoint");
-    obj.label209:setName("label209");
+    obj.label210 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label210:setParent(obj.rectangle470);
+    obj.label210:setLeft(97);
+    obj.label210:setTop(485);
+    obj.label210:setWidth(120);
+    obj.label210:setFontSize(20);
+    obj.label210:setHorzTextAlign("center");
+    obj.label210:setText("Envenenado");
+    obj.label210:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label210, "fontStyle", "bold");
+    obj.label210:setHitTest(true);
+    obj.label210:setCursor("handPoint");
+    obj.label210:setHint("Enviar no Chat");
+    obj.label210:setName("label210");
 
     obj.checkBox14 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox14:setParent(obj.rectangle507);
+    obj.checkBox14:setParent(obj.rectangle470);
     obj.checkBox14:setField("Envenenado");
     obj.checkBox14:setLeft(250);
     obj.checkBox14:setTop(487);
     obj.checkBox14:setName("checkBox14");
 
-    obj.rectangle525 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle525:setParent(obj.rectangle507);
-    obj.rectangle525:setLeft(322);
-    obj.rectangle525:setTop(475);
-    obj.rectangle525:setWidth(200);
-    obj.rectangle525:setHeight(40);
-    obj.rectangle525:setColor("#49244F");
-    obj.rectangle525:setName("rectangle525");
+    obj.rectangle488 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle488:setParent(obj.rectangle470);
+    obj.rectangle488:setLeft(322);
+    obj.rectangle488:setTop(475);
+    obj.rectangle488:setWidth(200);
+    obj.rectangle488:setHeight(40);
+    obj.rectangle488:setColor("#49244F");
+    obj.rectangle488:setName("rectangle488");
 
-    obj.label210 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label210:setParent(obj.rectangle507);
-    obj.label210:setLeft(330);
-    obj.label210:setTop(485);
-    obj.label210:setWidth(80);
-    obj.label210:setFontSize(20);
-    obj.label210:setHorzTextAlign("center");
-    obj.label210:setText("Ferido");
-    obj.label210:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label210, "fontStyle", "bold");
-    obj.label210:setHitTest(true);
-    obj.label210:setCursor("handPoint");
-    obj.label210:setName("label210");
+    obj.label211 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label211:setParent(obj.rectangle470);
+    obj.label211:setLeft(330);
+    obj.label211:setTop(485);
+    obj.label211:setWidth(80);
+    obj.label211:setFontSize(20);
+    obj.label211:setHorzTextAlign("center");
+    obj.label211:setText("Ferido");
+    obj.label211:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label211, "fontStyle", "bold");
+    obj.label211:setHitTest(true);
+    obj.label211:setCursor("handPoint");
+    obj.label211:setHint("Enviar no Chat");
+    obj.label211:setName("label211");
 
     obj.checkBox15 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox15:setParent(obj.rectangle507);
+    obj.checkBox15:setParent(obj.rectangle470);
     obj.checkBox15:setField("Ferido");
     obj.checkBox15:setLeft(492);
     obj.checkBox15:setTop(487);
     obj.checkBox15:setName("checkBox15");
 
-    obj.rectangle526 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle526:setParent(obj.rectangle507);
-    obj.rectangle526:setLeft(560);
-    obj.rectangle526:setTop(475);
-    obj.rectangle526:setWidth(200);
-    obj.rectangle526:setHeight(40);
-    obj.rectangle526:setColor("#49244F");
-    obj.rectangle526:setName("rectangle526");
+    obj.rectangle489 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle489:setParent(obj.rectangle470);
+    obj.rectangle489:setLeft(560);
+    obj.rectangle489:setTop(475);
+    obj.rectangle489:setWidth(200);
+    obj.rectangle489:setHeight(40);
+    obj.rectangle489:setColor("#49244F");
+    obj.rectangle489:setName("rectangle489");
 
-    obj.label211 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label211:setParent(obj.rectangle507);
-    obj.label211:setLeft(567);
-    obj.label211:setTop(485);
-    obj.label211:setWidth(140);
-    obj.label211:setFontSize(20);
-    obj.label211:setHorzTextAlign("center");
-    obj.label211:setText("Incapacitado");
-    obj.label211:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label211, "fontStyle", "bold");
-    obj.label211:setHitTest(true);
-    obj.label211:setCursor("handPoint");
-    obj.label211:setName("label211");
+    obj.label212 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label212:setParent(obj.rectangle470);
+    obj.label212:setLeft(567);
+    obj.label212:setTop(485);
+    obj.label212:setWidth(140);
+    obj.label212:setFontSize(20);
+    obj.label212:setHorzTextAlign("center");
+    obj.label212:setText("Incapacitado");
+    obj.label212:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label212, "fontStyle", "bold");
+    obj.label212:setHitTest(true);
+    obj.label212:setCursor("handPoint");
+    obj.label212:setHint("Enviar no Chat");
+    obj.label212:setName("label212");
 
     obj.checkBox16 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox16:setParent(obj.rectangle507);
+    obj.checkBox16:setParent(obj.rectangle470);
     obj.checkBox16:setField("Incapacitado");
     obj.checkBox16:setLeft(730);
     obj.checkBox16:setTop(487);
     obj.checkBox16:setName("checkBox16");
 
-    obj.rectangle527 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle527:setParent(obj.rectangle507);
-    obj.rectangle527:setLeft(80);
-    obj.rectangle527:setTop(535);
-    obj.rectangle527:setWidth(200);
-    obj.rectangle527:setHeight(40);
-    obj.rectangle527:setColor("#49244F");
-    obj.rectangle527:setName("rectangle527");
+    obj.rectangle490 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle490:setParent(obj.rectangle470);
+    obj.rectangle490:setLeft(80);
+    obj.rectangle490:setTop(535);
+    obj.rectangle490:setWidth(200);
+    obj.rectangle490:setHeight(40);
+    obj.rectangle490:setColor("#49244F");
+    obj.rectangle490:setName("rectangle490");
 
-    obj.label212 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label212:setParent(obj.rectangle507);
-    obj.label212:setLeft(93);
-    obj.label212:setTop(545);
-    obj.label212:setWidth(120);
-    obj.label212:setFontSize(20);
-    obj.label212:setHorzTextAlign("center");
-    obj.label212:setText("Incendiado");
-    obj.label212:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label212, "fontStyle", "bold");
-    obj.label212:setHitTest(true);
-    obj.label212:setCursor("handPoint");
-    obj.label212:setName("label212");
+    obj.label213 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label213:setParent(obj.rectangle470);
+    obj.label213:setLeft(93);
+    obj.label213:setTop(545);
+    obj.label213:setWidth(120);
+    obj.label213:setFontSize(20);
+    obj.label213:setHorzTextAlign("center");
+    obj.label213:setText("Incendiado");
+    obj.label213:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label213, "fontStyle", "bold");
+    obj.label213:setHitTest(true);
+    obj.label213:setCursor("handPoint");
+    obj.label213:setHint("Enviar no Chat");
+    obj.label213:setName("label213");
 
     obj.checkBox17 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox17:setParent(obj.rectangle507);
+    obj.checkBox17:setParent(obj.rectangle470);
     obj.checkBox17:setField("Incendiado");
     obj.checkBox17:setLeft(250);
     obj.checkBox17:setTop(547);
     obj.checkBox17:setName("checkBox17");
 
-    obj.rectangle528 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle528:setParent(obj.rectangle507);
-    obj.rectangle528:setLeft(322);
-    obj.rectangle528:setTop(535);
-    obj.rectangle528:setWidth(200);
-    obj.rectangle528:setHeight(40);
-    obj.rectangle528:setColor("#49244F");
-    obj.rectangle528:setName("rectangle528");
+    obj.rectangle491 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle491:setParent(obj.rectangle470);
+    obj.rectangle491:setLeft(322);
+    obj.rectangle491:setTop(535);
+    obj.rectangle491:setWidth(200);
+    obj.rectangle491:setHeight(40);
+    obj.rectangle491:setColor("#49244F");
+    obj.rectangle491:setName("rectangle491");
 
-    obj.label213 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label213:setParent(obj.rectangle507);
-    obj.label213:setLeft(340);
-    obj.label213:setTop(545);
-    obj.label213:setWidth(120);
-    obj.label213:setFontSize(20);
-    obj.label213:setHorzTextAlign("center");
-    obj.label213:setText("Inconsciente");
-    obj.label213:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label213, "fontStyle", "bold");
-    obj.label213:setHitTest(true);
-    obj.label213:setCursor("handPoint");
-    obj.label213:setName("label213");
+    obj.label214 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label214:setParent(obj.rectangle470);
+    obj.label214:setLeft(340);
+    obj.label214:setTop(545);
+    obj.label214:setWidth(120);
+    obj.label214:setFontSize(20);
+    obj.label214:setHorzTextAlign("center");
+    obj.label214:setText("Inconsciente");
+    obj.label214:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label214, "fontStyle", "bold");
+    obj.label214:setHitTest(true);
+    obj.label214:setCursor("handPoint");
+    obj.label214:setHint("Enviar no Chat");
+    obj.label214:setName("label214");
 
     obj.checkBox18 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox18:setParent(obj.rectangle507);
+    obj.checkBox18:setParent(obj.rectangle470);
     obj.checkBox18:setField("Inconsciente");
     obj.checkBox18:setLeft(492);
     obj.checkBox18:setTop(547);
     obj.checkBox18:setName("checkBox18");
 
-    obj.rectangle529 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle529:setParent(obj.rectangle507);
-    obj.rectangle529:setLeft(560);
-    obj.rectangle529:setTop(535);
-    obj.rectangle529:setWidth(200);
-    obj.rectangle529:setHeight(40);
-    obj.rectangle529:setColor("#49244F");
-    obj.rectangle529:setName("rectangle529");
+    obj.rectangle492 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle492:setParent(obj.rectangle470);
+    obj.rectangle492:setLeft(560);
+    obj.rectangle492:setTop(535);
+    obj.rectangle492:setWidth(200);
+    obj.rectangle492:setHeight(40);
+    obj.rectangle492:setColor("#49244F");
+    obj.rectangle492:setName("rectangle492");
 
-    obj.label214 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label214:setParent(obj.rectangle507);
-    obj.label214:setLeft(570);
-    obj.label214:setTop(545);
-    obj.label214:setWidth(70);
-    obj.label214:setFontSize(20);
-    obj.label214:setHorzTextAlign("center");
-    obj.label214:setText("Lento");
-    obj.label214:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label214, "fontStyle", "bold");
-    obj.label214:setHitTest(true);
-    obj.label214:setCursor("handPoint");
-    obj.label214:setName("label214");
+    obj.label215 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label215:setParent(obj.rectangle470);
+    obj.label215:setLeft(570);
+    obj.label215:setTop(545);
+    obj.label215:setWidth(70);
+    obj.label215:setFontSize(20);
+    obj.label215:setHorzTextAlign("center");
+    obj.label215:setText("Lento");
+    obj.label215:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label215, "fontStyle", "bold");
+    obj.label215:setHitTest(true);
+    obj.label215:setCursor("handPoint");
+    obj.label215:setHint("Enviar no Chat");
+    obj.label215:setName("label215");
 
     obj.checkBox19 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox19:setParent(obj.rectangle507);
+    obj.checkBox19:setParent(obj.rectangle470);
     obj.checkBox19:setField("Lento");
     obj.checkBox19:setLeft(730);
     obj.checkBox19:setTop(547);
     obj.checkBox19:setName("checkBox19");
 
-    obj.rectangle530 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle530:setParent(obj.rectangle507);
-    obj.rectangle530:setLeft(80);
-    obj.rectangle530:setTop(595);
-    obj.rectangle530:setWidth(200);
-    obj.rectangle530:setHeight(40);
-    obj.rectangle530:setColor("#49244F");
-    obj.rectangle530:setName("rectangle530");
+    obj.rectangle493 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle493:setParent(obj.rectangle470);
+    obj.rectangle493:setLeft(80);
+    obj.rectangle493:setTop(595);
+    obj.rectangle493:setWidth(200);
+    obj.rectangle493:setHeight(40);
+    obj.rectangle493:setColor("#49244F");
+    obj.rectangle493:setName("rectangle493");
 
-    obj.label215 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label215:setParent(obj.rectangle507);
-    obj.label215:setLeft(95);
-    obj.label215:setTop(605);
-    obj.label215:setWidth(120);
-    obj.label215:setFontSize(20);
-    obj.label215:setHorzTextAlign("center");
-    obj.label215:setText("Restringido");
-    obj.label215:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label215, "fontStyle", "bold");
-    obj.label215:setHitTest(true);
-    obj.label215:setCursor("handPoint");
-    obj.label215:setName("label215");
+    obj.label216 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label216:setParent(obj.rectangle470);
+    obj.label216:setLeft(95);
+    obj.label216:setTop(605);
+    obj.label216:setWidth(120);
+    obj.label216:setFontSize(20);
+    obj.label216:setHorzTextAlign("center");
+    obj.label216:setText("Restringido");
+    obj.label216:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label216, "fontStyle", "bold");
+    obj.label216:setHitTest(true);
+    obj.label216:setCursor("handPoint");
+    obj.label216:setHint("Enviar no Chat");
+    obj.label216:setName("label216");
 
     obj.checkBox20 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox20:setParent(obj.rectangle507);
+    obj.checkBox20:setParent(obj.rectangle470);
     obj.checkBox20:setField("Restringido");
     obj.checkBox20:setLeft(250);
     obj.checkBox20:setTop(607);
     obj.checkBox20:setName("checkBox20");
 
-    obj.rectangle531 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle531:setParent(obj.rectangle507);
-    obj.rectangle531:setLeft(322);
-    obj.rectangle531:setTop(595);
-    obj.rectangle531:setWidth(200);
-    obj.rectangle531:setHeight(40);
-    obj.rectangle531:setColor("#49244F");
-    obj.rectangle531:setName("rectangle531");
+    obj.rectangle494 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle494:setParent(obj.rectangle470);
+    obj.rectangle494:setLeft(322);
+    obj.rectangle494:setTop(595);
+    obj.rectangle494:setWidth(200);
+    obj.rectangle494:setHeight(40);
+    obj.rectangle494:setColor("#49244F");
+    obj.rectangle494:setName("rectangle494");
 
-    obj.label216 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label216:setParent(obj.rectangle507);
-    obj.label216:setLeft(334);
-    obj.label216:setTop(605);
-    obj.label216:setWidth(70);
-    obj.label216:setFontSize(20);
-    obj.label216:setHorzTextAlign("center");
-    obj.label216:setText("Surdo");
-    obj.label216:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label216, "fontStyle", "bold");
-    obj.label216:setHitTest(true);
-    obj.label216:setCursor("handPoint");
-    obj.label216:setName("label216");
+    obj.label217 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label217:setParent(obj.rectangle470);
+    obj.label217:setLeft(334);
+    obj.label217:setTop(605);
+    obj.label217:setWidth(70);
+    obj.label217:setFontSize(20);
+    obj.label217:setHorzTextAlign("center");
+    obj.label217:setText("Surdo");
+    obj.label217:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label217, "fontStyle", "bold");
+    obj.label217:setHitTest(true);
+    obj.label217:setCursor("handPoint");
+    obj.label217:setHint("Enviar no Chat");
+    obj.label217:setName("label217");
 
     obj.checkBox21 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox21:setParent(obj.rectangle507);
+    obj.checkBox21:setParent(obj.rectangle470);
     obj.checkBox21:setField("Surdo");
     obj.checkBox21:setLeft(492);
     obj.checkBox21:setTop(607);
     obj.checkBox21:setName("checkBox21");
 
-    obj.rectangle532 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle532:setParent(obj.rectangle507);
-    obj.rectangle532:setLeft(560);
-    obj.rectangle532:setTop(595);
-    obj.rectangle532:setWidth(200);
-    obj.rectangle532:setHeight(40);
-    obj.rectangle532:setColor("#49244F");
-    obj.rectangle532:setName("rectangle532");
+    obj.rectangle495 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle495:setParent(obj.rectangle470);
+    obj.rectangle495:setLeft(560);
+    obj.rectangle495:setTop(595);
+    obj.rectangle495:setWidth(200);
+    obj.rectangle495:setHeight(40);
+    obj.rectangle495:setColor("#49244F");
+    obj.rectangle495:setName("rectangle495");
 
-    obj.label217 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label217:setParent(obj.rectangle507);
-    obj.label217:setLeft(573);
-    obj.label217:setTop(605);
-    obj.label217:setWidth(110);
-    obj.label217:setFontSize(20);
-    obj.label217:setHorzTextAlign("center");
-    obj.label217:setText("Vulnerável");
-    obj.label217:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label217, "fontStyle", "bold");
-    obj.label217:setHitTest(true);
-    obj.label217:setCursor("handPoint");
-    obj.label217:setName("label217");
+    obj.label218 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label218:setParent(obj.rectangle470);
+    obj.label218:setLeft(573);
+    obj.label218:setTop(605);
+    obj.label218:setWidth(110);
+    obj.label218:setFontSize(20);
+    obj.label218:setHorzTextAlign("center");
+    obj.label218:setText("Vulnerável");
+    obj.label218:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label218, "fontStyle", "bold");
+    obj.label218:setHitTest(true);
+    obj.label218:setCursor("handPoint");
+    obj.label218:setHint("Enviar no Chat");
+    obj.label218:setName("label218");
 
     obj.checkBox22 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox22:setParent(obj.rectangle507);
+    obj.checkBox22:setParent(obj.rectangle470);
     obj.checkBox22:setField("Vulnerável");
     obj.checkBox22:setLeft(730);
     obj.checkBox22:setTop(607);
     obj.checkBox22:setName("checkBox22");
 
-    obj.rectangle533 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle533:setParent(obj.rectangle507);
-    obj.rectangle533:setLeft(65);
-    obj.rectangle533:setTop(690);
-    obj.rectangle533:setWidth(712);
-    obj.rectangle533:setHeight(1);
-    obj.rectangle533:setColor("#49244F");
-    obj.rectangle533:setName("rectangle533");
+    obj.rectangle496 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle496:setParent(obj.rectangle470);
+    obj.rectangle496:setLeft(65);
+    obj.rectangle496:setTop(690);
+    obj.rectangle496:setWidth(712);
+    obj.rectangle496:setHeight(1);
+    obj.rectangle496:setColor("#49244F");
+    obj.rectangle496:setName("rectangle496");
 
-    obj.rectangle534 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle534:setParent(obj.rectangle507);
-    obj.rectangle534:setLeft(65);
-    obj.rectangle534:setTop(695);
-    obj.rectangle534:setWidth(712);
-    obj.rectangle534:setHeight(1);
-    obj.rectangle534:setColor("#49244F");
-    obj.rectangle534:setName("rectangle534");
+    obj.rectangle497 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle497:setParent(obj.rectangle470);
+    obj.rectangle497:setLeft(65);
+    obj.rectangle497:setTop(695);
+    obj.rectangle497:setWidth(712);
+    obj.rectangle497:setHeight(1);
+    obj.rectangle497:setColor("#49244F");
+    obj.rectangle497:setName("rectangle497");
 
-    obj.rectangle535 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle535:setParent(obj.rectangle507);
-    obj.rectangle535:setLeft(65);
-    obj.rectangle535:setTop(700);
-    obj.rectangle535:setWidth(712);
-    obj.rectangle535:setHeight(1);
-    obj.rectangle535:setColor("#49244F");
-    obj.rectangle535:setName("rectangle535");
+    obj.rectangle498 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle498:setParent(obj.rectangle470);
+    obj.rectangle498:setLeft(65);
+    obj.rectangle498:setTop(700);
+    obj.rectangle498:setWidth(712);
+    obj.rectangle498:setHeight(1);
+    obj.rectangle498:setColor("#49244F");
+    obj.rectangle498:setName("rectangle498");
 
-    obj.rectangle536 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle536:setParent(obj.rectangle507);
-    obj.rectangle536:setLeft(65);
-    obj.rectangle536:setTop(705);
-    obj.rectangle536:setWidth(712);
-    obj.rectangle536:setHeight(1);
-    obj.rectangle536:setColor("#49244F");
-    obj.rectangle536:setName("rectangle536");
+    obj.rectangle499 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle499:setParent(obj.rectangle470);
+    obj.rectangle499:setLeft(65);
+    obj.rectangle499:setTop(705);
+    obj.rectangle499:setWidth(712);
+    obj.rectangle499:setHeight(1);
+    obj.rectangle499:setColor("#49244F");
+    obj.rectangle499:setName("rectangle499");
 
-    obj.rectangle537 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle537:setParent(obj.rectangle507);
-    obj.rectangle537:setLeft(65);
-    obj.rectangle537:setTop(710);
-    obj.rectangle537:setWidth(712);
-    obj.rectangle537:setHeight(1);
-    obj.rectangle537:setColor("#49244F");
-    obj.rectangle537:setName("rectangle537");
+    obj.rectangle500 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle500:setParent(obj.rectangle470);
+    obj.rectangle500:setLeft(65);
+    obj.rectangle500:setTop(710);
+    obj.rectangle500:setWidth(712);
+    obj.rectangle500:setHeight(1);
+    obj.rectangle500:setColor("#49244F");
+    obj.rectangle500:setName("rectangle500");
 
-    obj.rectangle538 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle538:setParent(obj.rectangle507);
-    obj.rectangle538:setLeft(65);
-    obj.rectangle538:setTop(715);
-    obj.rectangle538:setWidth(712);
-    obj.rectangle538:setHeight(1);
-    obj.rectangle538:setColor("#49244F");
-    obj.rectangle538:setName("rectangle538");
+    obj.rectangle501 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle501:setParent(obj.rectangle470);
+    obj.rectangle501:setLeft(65);
+    obj.rectangle501:setTop(715);
+    obj.rectangle501:setWidth(712);
+    obj.rectangle501:setHeight(1);
+    obj.rectangle501:setColor("#49244F");
+    obj.rectangle501:setName("rectangle501");
 
-    obj.rectangle539 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle539:setParent(obj.rectangle507);
-    obj.rectangle539:setLeft(65);
-    obj.rectangle539:setTop(720);
-    obj.rectangle539:setWidth(712);
-    obj.rectangle539:setHeight(1);
-    obj.rectangle539:setColor("#49244F");
-    obj.rectangle539:setName("rectangle539");
+    obj.rectangle502 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle502:setParent(obj.rectangle470);
+    obj.rectangle502:setLeft(65);
+    obj.rectangle502:setTop(720);
+    obj.rectangle502:setWidth(712);
+    obj.rectangle502:setHeight(1);
+    obj.rectangle502:setColor("#49244F");
+    obj.rectangle502:setName("rectangle502");
 
-    obj.rectangle540 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle540:setParent(obj.rectangle507);
-    obj.rectangle540:setLeft(65);
-    obj.rectangle540:setTop(725);
-    obj.rectangle540:setWidth(712);
-    obj.rectangle540:setHeight(1);
-    obj.rectangle540:setColor("#49244F");
-    obj.rectangle540:setName("rectangle540");
+    obj.rectangle503 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle503:setParent(obj.rectangle470);
+    obj.rectangle503:setLeft(65);
+    obj.rectangle503:setTop(725);
+    obj.rectangle503:setWidth(712);
+    obj.rectangle503:setHeight(1);
+    obj.rectangle503:setColor("#49244F");
+    obj.rectangle503:setName("rectangle503");
 
-    obj.rectangle541 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle541:setParent(obj.rectangle507);
-    obj.rectangle541:setLeft(65);
-    obj.rectangle541:setTop(730);
-    obj.rectangle541:setWidth(712);
-    obj.rectangle541:setHeight(1);
-    obj.rectangle541:setColor("#49244F");
-    obj.rectangle541:setName("rectangle541");
+    obj.rectangle504 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle504:setParent(obj.rectangle470);
+    obj.rectangle504:setLeft(65);
+    obj.rectangle504:setTop(730);
+    obj.rectangle504:setWidth(712);
+    obj.rectangle504:setHeight(1);
+    obj.rectangle504:setColor("#49244F");
+    obj.rectangle504:setName("rectangle504");
 
-    obj.rectangle542 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle542:setParent(obj.rectangle507);
-    obj.rectangle542:setLeft(65);
-    obj.rectangle542:setTop(735);
-    obj.rectangle542:setWidth(712);
-    obj.rectangle542:setHeight(1);
-    obj.rectangle542:setColor("#49244F");
-    obj.rectangle542:setName("rectangle542");
+    obj.rectangle505 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle505:setParent(obj.rectangle470);
+    obj.rectangle505:setLeft(65);
+    obj.rectangle505:setTop(735);
+    obj.rectangle505:setWidth(712);
+    obj.rectangle505:setHeight(1);
+    obj.rectangle505:setColor("#49244F");
+    obj.rectangle505:setName("rectangle505");
 
     obj.image53 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image53:setParent(obj.rectangle507);
+    obj.image53:setParent(obj.rectangle470);
     obj.image53:setLeft(83);
     obj.image53:setTop(755);
     obj.image53:setWidth(672);
@@ -12071,58 +11381,58 @@ local function constructNew_frmWeirdWizard()
     obj.layout12:setHeight(825);
     obj.layout12:setName("layout12");
 
-    obj.rectangle543 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle543:setParent(obj.layout12);
-    obj.rectangle543:setLeft(0);
-    obj.rectangle543:setTop(0);
-    obj.rectangle543:setWidth(799);
-    obj.rectangle543:setHeight(825);
-    obj.rectangle543:setColor("#D5D5D5");
-    obj.rectangle543:setName("rectangle543");
+    obj.rectangle506 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle506:setParent(obj.layout12);
+    obj.rectangle506:setLeft(0);
+    obj.rectangle506:setTop(0);
+    obj.rectangle506:setWidth(799);
+    obj.rectangle506:setHeight(825);
+    obj.rectangle506:setColor("#D5D5D5");
+    obj.rectangle506:setName("rectangle506");
 
-    obj.rectangle544 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle544:setParent(obj.rectangle543);
-    obj.rectangle544:setLeft(60);
-    obj.rectangle544:setTop(55);
-    obj.rectangle544:setWidth(720);
-    obj.rectangle544:setHeight(755);
-    obj.rectangle544:setColor("#D5D5D5");
-    obj.rectangle544:setStrokeColor("#49244F");
-    obj.rectangle544:setStrokeSize(3);
-    obj.rectangle544:setName("rectangle544");
+    obj.rectangle507 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle507:setParent(obj.rectangle506);
+    obj.rectangle507:setLeft(60);
+    obj.rectangle507:setTop(55);
+    obj.rectangle507:setWidth(720);
+    obj.rectangle507:setHeight(755);
+    obj.rectangle507:setColor("#D5D5D5");
+    obj.rectangle507:setStrokeColor("#49244F");
+    obj.rectangle507:setStrokeSize(3);
+    obj.rectangle507:setName("rectangle507");
 
-    obj.rectangle545 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle545:setParent(obj.rectangle543);
-    obj.rectangle545:setLeft(60);
-    obj.rectangle545:setTop(55);
-    obj.rectangle545:setWidth(720);
-    obj.rectangle545:setHeight(50);
-    obj.rectangle545:setColor("#49244F");
-    obj.rectangle545:setName("rectangle545");
+    obj.rectangle508 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle508:setParent(obj.rectangle506);
+    obj.rectangle508:setLeft(60);
+    obj.rectangle508:setTop(55);
+    obj.rectangle508:setWidth(720);
+    obj.rectangle508:setHeight(50);
+    obj.rectangle508:setColor("#49244F");
+    obj.rectangle508:setName("rectangle508");
 
-    obj.label218 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label218:setParent(obj.rectangle543);
-    obj.label218:setLeft(180);
-    obj.label218:setTop(70);
-    obj.label218:setWidth(480);
-    obj.label218:setFontSize(24);
-    obj.label218:setHorzTextAlign("center");
-    obj.label218:setText("ANOTAÇÕES");
-    obj.label218:setFontColor("#D5D5D5");
-    lfm_setPropAsString(obj.label218, "fontStyle", "bold");
-    obj.label218:setName("label218");
+    obj.label219 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label219:setParent(obj.rectangle506);
+    obj.label219:setLeft(180);
+    obj.label219:setTop(70);
+    obj.label219:setWidth(480);
+    obj.label219:setFontSize(24);
+    obj.label219:setHorzTextAlign("center");
+    obj.label219:setText("ANOTAÇÕES");
+    obj.label219:setFontColor("#D5D5D5");
+    lfm_setPropAsString(obj.label219, "fontStyle", "bold");
+    obj.label219:setName("label219");
 
-    obj.textEditor37 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor37:setParent(obj.rectangle543);
-    obj.textEditor37:setLeft(68);
-    obj.textEditor37:setTop(100);
-    obj.textEditor37:setWidth(710);
-    obj.textEditor37:setFontSize(18);
-    obj.textEditor37:setHeight(710);
-    obj.textEditor37:setFontColor("#49244F");
-    obj.textEditor37:setTransparent(true);
-    obj.textEditor37:setField("Anotacoes");
-    obj.textEditor37:setName("textEditor37");
+    obj.textEditor22 = GUI.fromHandle(_obj_newObject("textEditor"));
+    obj.textEditor22:setParent(obj.rectangle506);
+    obj.textEditor22:setLeft(68);
+    obj.textEditor22:setTop(100);
+    obj.textEditor22:setWidth(710);
+    obj.textEditor22:setFontSize(18);
+    obj.textEditor22:setHeight(710);
+    obj.textEditor22:setFontColor("#49244F");
+    obj.textEditor22:setTransparent(true);
+    obj.textEditor22:setField("Anotacoes");
+    obj.textEditor22:setName("textEditor22");
 
     obj.image55 = GUI.fromHandle(_obj_newObject("image"));
     obj.image55:setParent(obj.layout12);
@@ -12148,437 +11458,437 @@ local function constructNew_frmWeirdWizard()
     obj.popFrmPrincipal:setWidth(791);
     obj.popFrmPrincipal:setHeight(745);
 
-    obj.rectangle546 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle546:setParent(obj.popFrmPrincipal);
-    obj.rectangle546:setColor("#D5D5D5");
-    obj.rectangle546:setWidth(781);
-    obj.rectangle546:setHeight(735);
-    obj.rectangle546:setLeft(5);
-    obj.rectangle546:setTop(5);
-    obj.rectangle546:setXradius(10);
-    obj.rectangle546:setYradius(10);
-    obj.rectangle546:setCornerType("round");
-    obj.rectangle546:setName("rectangle546");
+    obj.rectangle509 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle509:setParent(obj.popFrmPrincipal);
+    obj.rectangle509:setColor("#D5D5D5");
+    obj.rectangle509:setWidth(781);
+    obj.rectangle509:setHeight(735);
+    obj.rectangle509:setLeft(5);
+    obj.rectangle509:setTop(5);
+    obj.rectangle509:setXradius(10);
+    obj.rectangle509:setYradius(10);
+    obj.rectangle509:setCornerType("round");
+    obj.rectangle509:setName("rectangle509");
 
-    obj.rectangle547 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle547:setParent(obj.popFrmPrincipal);
-    obj.rectangle547:setLeft(395);
-    obj.rectangle547:setTop(70);
-    obj.rectangle547:setWidth(1);
-    obj.rectangle547:setHeight(600);
-    obj.rectangle547:setColor("#49244F");
-    obj.rectangle547:setName("rectangle547");
+    obj.rectangle510 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle510:setParent(obj.popFrmPrincipal);
+    obj.rectangle510:setLeft(395);
+    obj.rectangle510:setTop(70);
+    obj.rectangle510:setWidth(1);
+    obj.rectangle510:setHeight(600);
+    obj.rectangle510:setColor("#49244F");
+    obj.rectangle510:setName("rectangle510");
 
-    obj.rectangle548 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle548:setParent(obj.popFrmPrincipal);
-    obj.rectangle548:setLeft(401);
-    obj.rectangle548:setTop(455);
-    obj.rectangle548:setWidth(380);
-    obj.rectangle548:setHeight(210);
-    obj.rectangle548:setColor("#49244F");
-    obj.rectangle548:setName("rectangle548");
+    obj.rectangle511 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle511:setParent(obj.popFrmPrincipal);
+    obj.rectangle511:setLeft(401);
+    obj.rectangle511:setTop(455);
+    obj.rectangle511:setWidth(380);
+    obj.rectangle511:setHeight(210);
+    obj.rectangle511:setColor("#49244F");
+    obj.rectangle511:setName("rectangle511");
 
-    obj.rectangle549 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle549:setParent(obj.popFrmPrincipal);
-    obj.rectangle549:setLeft(590);
-    obj.rectangle549:setTop(455);
-    obj.rectangle549:setWidth(3);
-    obj.rectangle549:setHeight(210);
-    obj.rectangle549:setColor("#D5D5D5");
-    obj.rectangle549:setName("rectangle549");
+    obj.rectangle512 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle512:setParent(obj.popFrmPrincipal);
+    obj.rectangle512:setLeft(590);
+    obj.rectangle512:setTop(455);
+    obj.rectangle512:setWidth(3);
+    obj.rectangle512:setHeight(210);
+    obj.rectangle512:setColor("#D5D5D5");
+    obj.rectangle512:setName("rectangle512");
 
-    obj.rectangle550 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle550:setParent(obj.popFrmPrincipal);
-    obj.rectangle550:setLeft(590);
-    obj.rectangle550:setTop(465);
-    obj.rectangle550:setWidth(190);
-    obj.rectangle550:setHeight(1);
-    obj.rectangle550:setColor("#D5D5D5");
-    obj.rectangle550:setName("rectangle550");
+    obj.rectangle513 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle513:setParent(obj.popFrmPrincipal);
+    obj.rectangle513:setLeft(590);
+    obj.rectangle513:setTop(465);
+    obj.rectangle513:setWidth(190);
+    obj.rectangle513:setHeight(1);
+    obj.rectangle513:setColor("#D5D5D5");
+    obj.rectangle513:setName("rectangle513");
 
-    obj.rectangle551 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle551:setParent(obj.popFrmPrincipal);
-    obj.rectangle551:setLeft(590);
-    obj.rectangle551:setTop(475);
-    obj.rectangle551:setWidth(190);
-    obj.rectangle551:setHeight(1);
-    obj.rectangle551:setColor("#D5D5D5");
-    obj.rectangle551:setName("rectangle551");
+    obj.rectangle514 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle514:setParent(obj.popFrmPrincipal);
+    obj.rectangle514:setLeft(590);
+    obj.rectangle514:setTop(475);
+    obj.rectangle514:setWidth(190);
+    obj.rectangle514:setHeight(1);
+    obj.rectangle514:setColor("#D5D5D5");
+    obj.rectangle514:setName("rectangle514");
 
-    obj.rectangle552 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle552:setParent(obj.popFrmPrincipal);
-    obj.rectangle552:setLeft(590);
-    obj.rectangle552:setTop(485);
-    obj.rectangle552:setWidth(190);
-    obj.rectangle552:setHeight(1);
-    obj.rectangle552:setColor("#D5D5D5");
-    obj.rectangle552:setName("rectangle552");
+    obj.rectangle515 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle515:setParent(obj.popFrmPrincipal);
+    obj.rectangle515:setLeft(590);
+    obj.rectangle515:setTop(485);
+    obj.rectangle515:setWidth(190);
+    obj.rectangle515:setHeight(1);
+    obj.rectangle515:setColor("#D5D5D5");
+    obj.rectangle515:setName("rectangle515");
 
-    obj.rectangle553 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle553:setParent(obj.popFrmPrincipal);
-    obj.rectangle553:setLeft(590);
-    obj.rectangle553:setTop(495);
-    obj.rectangle553:setWidth(190);
-    obj.rectangle553:setHeight(1);
-    obj.rectangle553:setColor("#D5D5D5");
-    obj.rectangle553:setName("rectangle553");
+    obj.rectangle516 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle516:setParent(obj.popFrmPrincipal);
+    obj.rectangle516:setLeft(590);
+    obj.rectangle516:setTop(495);
+    obj.rectangle516:setWidth(190);
+    obj.rectangle516:setHeight(1);
+    obj.rectangle516:setColor("#D5D5D5");
+    obj.rectangle516:setName("rectangle516");
 
-    obj.rectangle554 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle554:setParent(obj.popFrmPrincipal);
-    obj.rectangle554:setLeft(590);
-    obj.rectangle554:setTop(505);
-    obj.rectangle554:setWidth(190);
-    obj.rectangle554:setHeight(1);
-    obj.rectangle554:setColor("#D5D5D5");
-    obj.rectangle554:setName("rectangle554");
+    obj.rectangle517 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle517:setParent(obj.popFrmPrincipal);
+    obj.rectangle517:setLeft(590);
+    obj.rectangle517:setTop(505);
+    obj.rectangle517:setWidth(190);
+    obj.rectangle517:setHeight(1);
+    obj.rectangle517:setColor("#D5D5D5");
+    obj.rectangle517:setName("rectangle517");
 
-    obj.rectangle555 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle555:setParent(obj.popFrmPrincipal);
-    obj.rectangle555:setLeft(590);
-    obj.rectangle555:setTop(515);
-    obj.rectangle555:setWidth(190);
-    obj.rectangle555:setHeight(1);
-    obj.rectangle555:setColor("#D5D5D5");
-    obj.rectangle555:setName("rectangle555");
+    obj.rectangle518 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle518:setParent(obj.popFrmPrincipal);
+    obj.rectangle518:setLeft(590);
+    obj.rectangle518:setTop(515);
+    obj.rectangle518:setWidth(190);
+    obj.rectangle518:setHeight(1);
+    obj.rectangle518:setColor("#D5D5D5");
+    obj.rectangle518:setName("rectangle518");
 
-    obj.rectangle556 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle556:setParent(obj.popFrmPrincipal);
-    obj.rectangle556:setLeft(590);
-    obj.rectangle556:setTop(525);
-    obj.rectangle556:setWidth(190);
-    obj.rectangle556:setHeight(1);
-    obj.rectangle556:setColor("#D5D5D5");
-    obj.rectangle556:setName("rectangle556");
+    obj.rectangle519 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle519:setParent(obj.popFrmPrincipal);
+    obj.rectangle519:setLeft(590);
+    obj.rectangle519:setTop(525);
+    obj.rectangle519:setWidth(190);
+    obj.rectangle519:setHeight(1);
+    obj.rectangle519:setColor("#D5D5D5");
+    obj.rectangle519:setName("rectangle519");
 
-    obj.rectangle557 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle557:setParent(obj.popFrmPrincipal);
-    obj.rectangle557:setLeft(590);
-    obj.rectangle557:setTop(535);
-    obj.rectangle557:setWidth(190);
-    obj.rectangle557:setHeight(1);
-    obj.rectangle557:setColor("#D5D5D5");
-    obj.rectangle557:setName("rectangle557");
+    obj.rectangle520 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle520:setParent(obj.popFrmPrincipal);
+    obj.rectangle520:setLeft(590);
+    obj.rectangle520:setTop(535);
+    obj.rectangle520:setWidth(190);
+    obj.rectangle520:setHeight(1);
+    obj.rectangle520:setColor("#D5D5D5");
+    obj.rectangle520:setName("rectangle520");
 
-    obj.rectangle558 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle558:setParent(obj.popFrmPrincipal);
-    obj.rectangle558:setLeft(590);
-    obj.rectangle558:setTop(545);
-    obj.rectangle558:setWidth(190);
-    obj.rectangle558:setHeight(1);
-    obj.rectangle558:setColor("#D5D5D5");
-    obj.rectangle558:setName("rectangle558");
+    obj.rectangle521 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle521:setParent(obj.popFrmPrincipal);
+    obj.rectangle521:setLeft(590);
+    obj.rectangle521:setTop(545);
+    obj.rectangle521:setWidth(190);
+    obj.rectangle521:setHeight(1);
+    obj.rectangle521:setColor("#D5D5D5");
+    obj.rectangle521:setName("rectangle521");
 
-    obj.rectangle559 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle559:setParent(obj.popFrmPrincipal);
-    obj.rectangle559:setLeft(590);
-    obj.rectangle559:setTop(555);
-    obj.rectangle559:setWidth(190);
-    obj.rectangle559:setHeight(1);
-    obj.rectangle559:setColor("#D5D5D5");
-    obj.rectangle559:setName("rectangle559");
+    obj.rectangle522 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle522:setParent(obj.popFrmPrincipal);
+    obj.rectangle522:setLeft(590);
+    obj.rectangle522:setTop(555);
+    obj.rectangle522:setWidth(190);
+    obj.rectangle522:setHeight(1);
+    obj.rectangle522:setColor("#D5D5D5");
+    obj.rectangle522:setName("rectangle522");
 
-    obj.rectangle560 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle560:setParent(obj.popFrmPrincipal);
-    obj.rectangle560:setLeft(590);
-    obj.rectangle560:setTop(565);
-    obj.rectangle560:setWidth(190);
-    obj.rectangle560:setHeight(1);
-    obj.rectangle560:setColor("#D5D5D5");
-    obj.rectangle560:setName("rectangle560");
+    obj.rectangle523 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle523:setParent(obj.popFrmPrincipal);
+    obj.rectangle523:setLeft(590);
+    obj.rectangle523:setTop(565);
+    obj.rectangle523:setWidth(190);
+    obj.rectangle523:setHeight(1);
+    obj.rectangle523:setColor("#D5D5D5");
+    obj.rectangle523:setName("rectangle523");
 
-    obj.rectangle561 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle561:setParent(obj.popFrmPrincipal);
-    obj.rectangle561:setLeft(590);
-    obj.rectangle561:setTop(575);
-    obj.rectangle561:setWidth(190);
-    obj.rectangle561:setHeight(1);
-    obj.rectangle561:setColor("#D5D5D5");
-    obj.rectangle561:setName("rectangle561");
+    obj.rectangle524 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle524:setParent(obj.popFrmPrincipal);
+    obj.rectangle524:setLeft(590);
+    obj.rectangle524:setTop(575);
+    obj.rectangle524:setWidth(190);
+    obj.rectangle524:setHeight(1);
+    obj.rectangle524:setColor("#D5D5D5");
+    obj.rectangle524:setName("rectangle524");
 
-    obj.rectangle562 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle562:setParent(obj.popFrmPrincipal);
-    obj.rectangle562:setLeft(590);
-    obj.rectangle562:setTop(585);
-    obj.rectangle562:setWidth(190);
-    obj.rectangle562:setHeight(1);
-    obj.rectangle562:setColor("#D5D5D5");
-    obj.rectangle562:setName("rectangle562");
+    obj.rectangle525 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle525:setParent(obj.popFrmPrincipal);
+    obj.rectangle525:setLeft(590);
+    obj.rectangle525:setTop(585);
+    obj.rectangle525:setWidth(190);
+    obj.rectangle525:setHeight(1);
+    obj.rectangle525:setColor("#D5D5D5");
+    obj.rectangle525:setName("rectangle525");
 
-    obj.rectangle563 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle563:setParent(obj.popFrmPrincipal);
-    obj.rectangle563:setLeft(590);
-    obj.rectangle563:setTop(595);
-    obj.rectangle563:setWidth(190);
-    obj.rectangle563:setHeight(1);
-    obj.rectangle563:setColor("#D5D5D5");
-    obj.rectangle563:setName("rectangle563");
+    obj.rectangle526 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle526:setParent(obj.popFrmPrincipal);
+    obj.rectangle526:setLeft(590);
+    obj.rectangle526:setTop(595);
+    obj.rectangle526:setWidth(190);
+    obj.rectangle526:setHeight(1);
+    obj.rectangle526:setColor("#D5D5D5");
+    obj.rectangle526:setName("rectangle526");
 
-    obj.rectangle564 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle564:setParent(obj.popFrmPrincipal);
-    obj.rectangle564:setLeft(590);
-    obj.rectangle564:setTop(605);
-    obj.rectangle564:setWidth(190);
-    obj.rectangle564:setHeight(1);
-    obj.rectangle564:setColor("#D5D5D5");
-    obj.rectangle564:setName("rectangle564");
+    obj.rectangle527 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle527:setParent(obj.popFrmPrincipal);
+    obj.rectangle527:setLeft(590);
+    obj.rectangle527:setTop(605);
+    obj.rectangle527:setWidth(190);
+    obj.rectangle527:setHeight(1);
+    obj.rectangle527:setColor("#D5D5D5");
+    obj.rectangle527:setName("rectangle527");
 
-    obj.rectangle565 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle565:setParent(obj.popFrmPrincipal);
-    obj.rectangle565:setLeft(590);
-    obj.rectangle565:setTop(615);
-    obj.rectangle565:setWidth(190);
-    obj.rectangle565:setHeight(1);
-    obj.rectangle565:setColor("#D5D5D5");
-    obj.rectangle565:setName("rectangle565");
+    obj.rectangle528 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle528:setParent(obj.popFrmPrincipal);
+    obj.rectangle528:setLeft(590);
+    obj.rectangle528:setTop(615);
+    obj.rectangle528:setWidth(190);
+    obj.rectangle528:setHeight(1);
+    obj.rectangle528:setColor("#D5D5D5");
+    obj.rectangle528:setName("rectangle528");
 
-    obj.rectangle566 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle566:setParent(obj.popFrmPrincipal);
-    obj.rectangle566:setLeft(590);
-    obj.rectangle566:setTop(625);
-    obj.rectangle566:setWidth(190);
-    obj.rectangle566:setHeight(1);
-    obj.rectangle566:setColor("#D5D5D5");
-    obj.rectangle566:setName("rectangle566");
+    obj.rectangle529 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle529:setParent(obj.popFrmPrincipal);
+    obj.rectangle529:setLeft(590);
+    obj.rectangle529:setTop(625);
+    obj.rectangle529:setWidth(190);
+    obj.rectangle529:setHeight(1);
+    obj.rectangle529:setColor("#D5D5D5");
+    obj.rectangle529:setName("rectangle529");
 
-    obj.rectangle567 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle567:setParent(obj.popFrmPrincipal);
-    obj.rectangle567:setLeft(590);
-    obj.rectangle567:setTop(635);
-    obj.rectangle567:setWidth(190);
-    obj.rectangle567:setHeight(1);
-    obj.rectangle567:setColor("#D5D5D5");
-    obj.rectangle567:setName("rectangle567");
+    obj.rectangle530 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle530:setParent(obj.popFrmPrincipal);
+    obj.rectangle530:setLeft(590);
+    obj.rectangle530:setTop(635);
+    obj.rectangle530:setWidth(190);
+    obj.rectangle530:setHeight(1);
+    obj.rectangle530:setColor("#D5D5D5");
+    obj.rectangle530:setName("rectangle530");
 
-    obj.rectangle568 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle568:setParent(obj.popFrmPrincipal);
-    obj.rectangle568:setLeft(590);
-    obj.rectangle568:setTop(645);
-    obj.rectangle568:setWidth(190);
-    obj.rectangle568:setHeight(1);
-    obj.rectangle568:setColor("#D5D5D5");
-    obj.rectangle568:setName("rectangle568");
+    obj.rectangle531 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle531:setParent(obj.popFrmPrincipal);
+    obj.rectangle531:setLeft(590);
+    obj.rectangle531:setTop(645);
+    obj.rectangle531:setWidth(190);
+    obj.rectangle531:setHeight(1);
+    obj.rectangle531:setColor("#D5D5D5");
+    obj.rectangle531:setName("rectangle531");
 
-    obj.rectangle569 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle569:setParent(obj.popFrmPrincipal);
-    obj.rectangle569:setLeft(590);
-    obj.rectangle569:setTop(655);
-    obj.rectangle569:setWidth(190);
-    obj.rectangle569:setHeight(1);
-    obj.rectangle569:setColor("#D5D5D5");
-    obj.rectangle569:setName("rectangle569");
+    obj.rectangle532 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle532:setParent(obj.popFrmPrincipal);
+    obj.rectangle532:setLeft(590);
+    obj.rectangle532:setTop(655);
+    obj.rectangle532:setWidth(190);
+    obj.rectangle532:setHeight(1);
+    obj.rectangle532:setColor("#D5D5D5");
+    obj.rectangle532:setName("rectangle532");
 
-    obj.rectangle570 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle570:setParent(obj.popFrmPrincipal);
-    obj.rectangle570:setLeft(622);
-    obj.rectangle570:setTop(336);
-    obj.rectangle570:setWidth(130);
-    obj.rectangle570:setHeight(230);
-    obj.rectangle570:setColor("#D5D5D5");
-    obj.rectangle570:setXradius(170);
-    obj.rectangle570:setYradius(170);
-    obj.rectangle570:setCornerType("bevel");
-    obj.rectangle570:setName("rectangle570");
+    obj.rectangle533 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle533:setParent(obj.popFrmPrincipal);
+    obj.rectangle533:setLeft(622);
+    obj.rectangle533:setTop(336);
+    obj.rectangle533:setWidth(130);
+    obj.rectangle533:setHeight(230);
+    obj.rectangle533:setColor("#D5D5D5");
+    obj.rectangle533:setXradius(170);
+    obj.rectangle533:setYradius(170);
+    obj.rectangle533:setCornerType("bevel");
+    obj.rectangle533:setName("rectangle533");
 
-    obj.rectangle571 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle571:setParent(obj.popFrmPrincipal);
-    obj.rectangle571:setLeft(401);
-    obj.rectangle571:setTop(445);
-    obj.rectangle571:setWidth(380);
-    obj.rectangle571:setHeight(1);
-    obj.rectangle571:setColor("#49244F");
-    obj.rectangle571:setName("rectangle571");
+    obj.rectangle534 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle534:setParent(obj.popFrmPrincipal);
+    obj.rectangle534:setLeft(401);
+    obj.rectangle534:setTop(445);
+    obj.rectangle534:setWidth(380);
+    obj.rectangle534:setHeight(1);
+    obj.rectangle534:setColor("#49244F");
+    obj.rectangle534:setName("rectangle534");
 
-    obj.rectangle572 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle572:setParent(obj.popFrmPrincipal);
-    obj.rectangle572:setLeft(10);
-    obj.rectangle572:setTop(680);
-    obj.rectangle572:setColor("#49244F");
-    obj.rectangle572:setWidth(771);
-    obj.rectangle572:setHeight(55);
-    obj.rectangle572:setXradius(5);
-    obj.rectangle572:setYradius(5);
-    obj.rectangle572:setHitTest(true);
-    obj.rectangle572:setCursor("handPoint");
-    obj.rectangle572:setHint("Salvar Alterações");
-    obj.rectangle572:setName("rectangle572");
-
-    obj.label219 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label219:setParent(obj.popFrmPrincipal);
-    obj.label219:setLeft(10);
-    obj.label219:setTop(680);
-    obj.label219:setFontColor("#D5D5D5");
-    obj.label219:setWidth(771);
-    obj.label219:setHeight(55);
-    obj.label219:setText("SALVAR");
-    lfm_setPropAsString(obj.label219, "fontStyle", "bold");
-    obj.label219:setFontSize(18);
-    obj.label219:setHorzTextAlign("center");
-    obj.label219:setName("label219");
+    obj.rectangle535 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle535:setParent(obj.popFrmPrincipal);
+    obj.rectangle535:setLeft(10);
+    obj.rectangle535:setTop(680);
+    obj.rectangle535:setColor("#49244F");
+    obj.rectangle535:setWidth(771);
+    obj.rectangle535:setHeight(55);
+    obj.rectangle535:setXradius(5);
+    obj.rectangle535:setYradius(5);
+    obj.rectangle535:setHitTest(true);
+    obj.rectangle535:setCursor("handPoint");
+    obj.rectangle535:setHint("Salvar Alterações");
+    obj.rectangle535:setName("rectangle535");
 
     obj.label220 = GUI.fromHandle(_obj_newObject("label"));
     obj.label220:setParent(obj.popFrmPrincipal);
-    obj.label220:setLeft(330);
-    obj.label220:setTop(30);
-    obj.label220:setText("PERSONAGEM");
-    obj.label220:setWidth(150);
-    obj.label220:setFontSize(20);
+    obj.label220:setLeft(10);
+    obj.label220:setTop(680);
+    obj.label220:setFontColor("#D5D5D5");
+    obj.label220:setWidth(771);
+    obj.label220:setHeight(55);
+    obj.label220:setText("SALVAR");
     lfm_setPropAsString(obj.label220, "fontStyle", "bold");
-    obj.label220:setFontColor("#49244F");
+    obj.label220:setFontSize(18);
+    obj.label220:setHorzTextAlign("center");
     obj.label220:setName("label220");
-
-    obj.rectangle573 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle573:setParent(obj.popFrmPrincipal);
-    obj.rectangle573:setLeft(5);
-    obj.rectangle573:setTop(70);
-    obj.rectangle573:setWidth(781);
-    obj.rectangle573:setHeight(3);
-    obj.rectangle573:setColor("#49244F");
-    obj.rectangle573:setName("rectangle573");
-
-    obj.rectangle574 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle574:setParent(obj.popFrmPrincipal);
-    obj.rectangle574:setLeft(5);
-    obj.rectangle574:setTop(670);
-    obj.rectangle574:setWidth(781);
-    obj.rectangle574:setHeight(3);
-    obj.rectangle574:setColor("#49244F");
-    obj.rectangle574:setName("rectangle574");
 
     obj.label221 = GUI.fromHandle(_obj_newObject("label"));
     obj.label221:setParent(obj.popFrmPrincipal);
-    obj.label221:setLeft(10);
-    obj.label221:setTop(90);
-    obj.label221:setText("NOME");
+    obj.label221:setLeft(330);
+    obj.label221:setTop(30);
+    obj.label221:setText("PERSONAGEM");
+    obj.label221:setWidth(150);
     obj.label221:setFontSize(20);
     lfm_setPropAsString(obj.label221, "fontStyle", "bold");
     obj.label221:setFontColor("#49244F");
     obj.label221:setName("label221");
 
-    obj.rectangle575 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle575:setParent(obj.popFrmPrincipal);
-    obj.rectangle575:setLeft(10);
-    obj.rectangle575:setTop(115);
-    obj.rectangle575:setWidth(380);
-    obj.rectangle575:setHeight(50);
-    obj.rectangle575:setColor("#49244F");
-    obj.rectangle575:setName("rectangle575");
+    obj.rectangle536 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle536:setParent(obj.popFrmPrincipal);
+    obj.rectangle536:setLeft(5);
+    obj.rectangle536:setTop(70);
+    obj.rectangle536:setWidth(781);
+    obj.rectangle536:setHeight(3);
+    obj.rectangle536:setColor("#49244F");
+    obj.rectangle536:setName("rectangle536");
 
-    obj.edit198 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit198:setParent(obj.popFrmPrincipal);
-    obj.edit198:setField("frmNome");
-    obj.edit198:setLeft(10);
-    obj.edit198:setTop(115);
-    obj.edit198:setWidth(380);
-    obj.edit198:setHeight(50);
-    obj.edit198:setTransparent(true);
-    obj.edit198:setName("edit198");
+    obj.rectangle537 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle537:setParent(obj.popFrmPrincipal);
+    obj.rectangle537:setLeft(5);
+    obj.rectangle537:setTop(670);
+    obj.rectangle537:setWidth(781);
+    obj.rectangle537:setHeight(3);
+    obj.rectangle537:setColor("#49244F");
+    obj.rectangle537:setName("rectangle537");
 
     obj.label222 = GUI.fromHandle(_obj_newObject("label"));
     obj.label222:setParent(obj.popFrmPrincipal);
-    obj.label222:setLeft(280);
-    obj.label222:setTop(130);
-    obj.label222:setText("NÍVEL");
+    obj.label222:setLeft(10);
+    obj.label222:setTop(90);
+    obj.label222:setText("NOME");
     obj.label222:setFontSize(20);
     lfm_setPropAsString(obj.label222, "fontStyle", "bold");
+    obj.label222:setFontColor("#49244F");
     obj.label222:setName("label222");
 
-    obj.rectangle576 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle576:setParent(obj.popFrmPrincipal);
-    obj.rectangle576:setLeft(340);
-    obj.rectangle576:setTop(118);
-    obj.rectangle576:setWidth(45);
-    obj.rectangle576:setHeight(45);
-    obj.rectangle576:setColor("#D5D5D5");
-    obj.rectangle576:setXradius(20);
-    obj.rectangle576:setYradius(20);
-    obj.rectangle576:setCornerType("round");
-    obj.rectangle576:setStrokeColor("#49244F");
-    obj.rectangle576:setStrokeSize(3);
-    obj.rectangle576:setName("rectangle576");
+    obj.rectangle538 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle538:setParent(obj.popFrmPrincipal);
+    obj.rectangle538:setLeft(10);
+    obj.rectangle538:setTop(115);
+    obj.rectangle538:setWidth(380);
+    obj.rectangle538:setHeight(50);
+    obj.rectangle538:setColor("#49244F");
+    obj.rectangle538:setName("rectangle538");
 
-    obj.edit199 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit199:setParent(obj.popFrmPrincipal);
-    obj.edit199:setField("frmNivel");
-    obj.edit199:setLeft(351);
-    obj.edit199:setTop(125);
-    obj.edit199:setWidth(23);
-    obj.edit199:setType("number");
-    obj.edit199:setMin(0);
-    obj.edit199:setMax(10);
-    obj.edit199:setFontColor("#49244F");
-    obj.edit199:setTransparent(true);
-    obj.edit199:setHorzTextAlign("center");
-    obj.edit199:setName("edit199");
+    obj.edit183 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit183:setParent(obj.popFrmPrincipal);
+    obj.edit183:setField("frmNome");
+    obj.edit183:setLeft(10);
+    obj.edit183:setTop(115);
+    obj.edit183:setWidth(380);
+    obj.edit183:setHeight(50);
+    obj.edit183:setTransparent(true);
+    obj.edit183:setName("edit183");
 
     obj.label223 = GUI.fromHandle(_obj_newObject("label"));
     obj.label223:setParent(obj.popFrmPrincipal);
-    obj.label223:setLeft(10);
-    obj.label223:setTop(180);
-    obj.label223:setText("ANCESTRALIDADE");
+    obj.label223:setLeft(280);
+    obj.label223:setTop(130);
+    obj.label223:setText("NÍVEL");
     obj.label223:setFontSize(20);
     lfm_setPropAsString(obj.label223, "fontStyle", "bold");
-    obj.label223:setFontColor("#49244F");
-    obj.label223:setWidth(180);
     obj.label223:setName("label223");
 
-    obj.rectangle577 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle577:setParent(obj.popFrmPrincipal);
-    obj.rectangle577:setLeft(10);
-    obj.rectangle577:setTop(205);
-    obj.rectangle577:setWidth(380);
-    obj.rectangle577:setHeight(50);
-    obj.rectangle577:setColor("#49244F");
-    obj.rectangle577:setName("rectangle577");
+    obj.rectangle539 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle539:setParent(obj.popFrmPrincipal);
+    obj.rectangle539:setLeft(340);
+    obj.rectangle539:setTop(118);
+    obj.rectangle539:setWidth(45);
+    obj.rectangle539:setHeight(45);
+    obj.rectangle539:setColor("#D5D5D5");
+    obj.rectangle539:setXradius(20);
+    obj.rectangle539:setYradius(20);
+    obj.rectangle539:setCornerType("round");
+    obj.rectangle539:setStrokeColor("#49244F");
+    obj.rectangle539:setStrokeSize(3);
+    obj.rectangle539:setName("rectangle539");
 
-    obj.edit200 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit200:setParent(obj.popFrmPrincipal);
-    obj.edit200:setField("frmAncestralidade");
-    obj.edit200:setLeft(10);
-    obj.edit200:setTop(205);
-    obj.edit200:setWidth(380);
-    obj.edit200:setHeight(50);
-    obj.edit200:setTransparent(true);
-    obj.edit200:setHorzTextAlign("center");
-    obj.edit200:setName("edit200");
+    obj.edit184 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit184:setParent(obj.popFrmPrincipal);
+    obj.edit184:setField("frmNivel");
+    obj.edit184:setLeft(351);
+    obj.edit184:setTop(125);
+    obj.edit184:setWidth(23);
+    obj.edit184:setType("number");
+    obj.edit184:setMin(0);
+    obj.edit184:setMax(10);
+    obj.edit184:setFontColor("#49244F");
+    obj.edit184:setTransparent(true);
+    obj.edit184:setHorzTextAlign("center");
+    obj.edit184:setName("edit184");
 
     obj.label224 = GUI.fromHandle(_obj_newObject("label"));
     obj.label224:setParent(obj.popFrmPrincipal);
     obj.label224:setLeft(10);
-    obj.label224:setTop(270);
-    obj.label224:setText("DESCRIÇÃO");
+    obj.label224:setTop(180);
+    obj.label224:setText("ANCESTRALIDADE");
     obj.label224:setFontSize(20);
     lfm_setPropAsString(obj.label224, "fontStyle", "bold");
     obj.label224:setFontColor("#49244F");
     obj.label224:setWidth(180);
     obj.label224:setName("label224");
 
-    obj.rectangle578 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle578:setParent(obj.popFrmPrincipal);
-    obj.rectangle578:setLeft(10);
-    obj.rectangle578:setTop(295);
-    obj.rectangle578:setWidth(380);
-    obj.rectangle578:setHeight(100);
-    obj.rectangle578:setColor("#49244F");
-    obj.rectangle578:setName("rectangle578");
+    obj.rectangle540 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle540:setParent(obj.popFrmPrincipal);
+    obj.rectangle540:setLeft(10);
+    obj.rectangle540:setTop(205);
+    obj.rectangle540:setWidth(380);
+    obj.rectangle540:setHeight(50);
+    obj.rectangle540:setColor("#49244F");
+    obj.rectangle540:setName("rectangle540");
 
-    obj.rectangle579 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle579:setParent(obj.popFrmPrincipal);
-    obj.rectangle579:setLeft(195);
-    obj.rectangle579:setTop(295);
-    obj.rectangle579:setWidth(3);
-    obj.rectangle579:setHeight(100);
-    obj.rectangle579:setColor("#D5D5D5");
-    obj.rectangle579:setName("rectangle579");
+    obj.edit185 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit185:setParent(obj.popFrmPrincipal);
+    obj.edit185:setField("frmAncestralidade");
+    obj.edit185:setLeft(10);
+    obj.edit185:setTop(205);
+    obj.edit185:setWidth(380);
+    obj.edit185:setHeight(50);
+    obj.edit185:setTransparent(true);
+    obj.edit185:setHorzTextAlign("center");
+    obj.edit185:setName("edit185");
 
     obj.label225 = GUI.fromHandle(_obj_newObject("label"));
     obj.label225:setParent(obj.popFrmPrincipal);
-    obj.label225:setLeft(15);
-    obj.label225:setTop(305);
-    obj.label225:setText("Gênero:");
-    obj.label225:setFontSize(18);
+    obj.label225:setLeft(10);
+    obj.label225:setTop(270);
+    obj.label225:setText("DESCRIÇÃO");
+    obj.label225:setFontSize(20);
     lfm_setPropAsString(obj.label225, "fontStyle", "bold");
+    obj.label225:setFontColor("#49244F");
     obj.label225:setWidth(180);
     obj.label225:setName("label225");
+
+    obj.rectangle541 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle541:setParent(obj.popFrmPrincipal);
+    obj.rectangle541:setLeft(10);
+    obj.rectangle541:setTop(295);
+    obj.rectangle541:setWidth(380);
+    obj.rectangle541:setHeight(100);
+    obj.rectangle541:setColor("#49244F");
+    obj.rectangle541:setName("rectangle541");
+
+    obj.rectangle542 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle542:setParent(obj.popFrmPrincipal);
+    obj.rectangle542:setLeft(195);
+    obj.rectangle542:setTop(295);
+    obj.rectangle542:setWidth(3);
+    obj.rectangle542:setHeight(100);
+    obj.rectangle542:setColor("#D5D5D5");
+    obj.rectangle542:setName("rectangle542");
+
+    obj.label226 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label226:setParent(obj.popFrmPrincipal);
+    obj.label226:setLeft(15);
+    obj.label226:setTop(305);
+    obj.label226:setText("Gênero:");
+    obj.label226:setFontSize(18);
+    lfm_setPropAsString(obj.label226, "fontStyle", "bold");
+    obj.label226:setWidth(180);
+    obj.label226:setName("label226");
 
     obj.comboBox43 = GUI.fromHandle(_obj_newObject("comboBox"));
     obj.comboBox43:setParent(obj.popFrmPrincipal);
@@ -12589,673 +11899,673 @@ local function constructNew_frmWeirdWizard()
     obj.comboBox43:setField("frmGenero");
     obj.comboBox43:setName("comboBox43");
 
-    obj.label226 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label226:setParent(obj.popFrmPrincipal);
-    obj.label226:setLeft(206);
-    obj.label226:setTop(305);
-    obj.label226:setText("Idade:");
-    obj.label226:setFontSize(18);
-    lfm_setPropAsString(obj.label226, "fontStyle", "bold");
-    obj.label226:setWidth(180);
-    obj.label226:setName("label226");
-
-    obj.edit201 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit201:setParent(obj.popFrmPrincipal);
-    obj.edit201:setLeft(265);
-    obj.edit201:setTop(300);
-    obj.edit201:setWidth(110);
-    obj.edit201:setTransparent(true);
-    obj.edit201:setField("frmIdade");
-    obj.edit201:setName("edit201");
-
     obj.label227 = GUI.fromHandle(_obj_newObject("label"));
     obj.label227:setParent(obj.popFrmPrincipal);
-    obj.label227:setLeft(15);
-    obj.label227:setTop(335);
-    obj.label227:setText("Olhos:");
+    obj.label227:setLeft(206);
+    obj.label227:setTop(305);
+    obj.label227:setText("Idade:");
     obj.label227:setFontSize(18);
     lfm_setPropAsString(obj.label227, "fontStyle", "bold");
     obj.label227:setWidth(180);
     obj.label227:setName("label227");
 
-    obj.edit202 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit202:setParent(obj.popFrmPrincipal);
-    obj.edit202:setLeft(75);
-    obj.edit202:setTop(330);
-    obj.edit202:setWidth(110);
-    obj.edit202:setTransparent(true);
-    obj.edit202:setField("frmOlhos");
-    obj.edit202:setName("edit202");
+    obj.edit186 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit186:setParent(obj.popFrmPrincipal);
+    obj.edit186:setLeft(265);
+    obj.edit186:setTop(300);
+    obj.edit186:setWidth(110);
+    obj.edit186:setTransparent(true);
+    obj.edit186:setField("frmIdade");
+    obj.edit186:setName("edit186");
 
     obj.label228 = GUI.fromHandle(_obj_newObject("label"));
     obj.label228:setParent(obj.popFrmPrincipal);
-    obj.label228:setLeft(206);
+    obj.label228:setLeft(15);
     obj.label228:setTop(335);
-    obj.label228:setText("Cabelos:");
+    obj.label228:setText("Olhos:");
     obj.label228:setFontSize(18);
     lfm_setPropAsString(obj.label228, "fontStyle", "bold");
     obj.label228:setWidth(180);
     obj.label228:setName("label228");
 
-    obj.edit203 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit203:setParent(obj.popFrmPrincipal);
-    obj.edit203:setLeft(285);
-    obj.edit203:setTop(330);
-    obj.edit203:setWidth(95);
-    obj.edit203:setTransparent(true);
-    obj.edit203:setField("frmCabelos");
-    obj.edit203:setName("edit203");
+    obj.edit187 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit187:setParent(obj.popFrmPrincipal);
+    obj.edit187:setLeft(75);
+    obj.edit187:setTop(330);
+    obj.edit187:setWidth(110);
+    obj.edit187:setTransparent(true);
+    obj.edit187:setField("frmOlhos");
+    obj.edit187:setName("edit187");
 
     obj.label229 = GUI.fromHandle(_obj_newObject("label"));
     obj.label229:setParent(obj.popFrmPrincipal);
-    obj.label229:setLeft(15);
-    obj.label229:setTop(365);
-    obj.label229:setText("Altura:");
+    obj.label229:setLeft(206);
+    obj.label229:setTop(335);
+    obj.label229:setText("Cabelos:");
     obj.label229:setFontSize(18);
     lfm_setPropAsString(obj.label229, "fontStyle", "bold");
     obj.label229:setWidth(180);
     obj.label229:setName("label229");
 
-    obj.edit204 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit204:setParent(obj.popFrmPrincipal);
-    obj.edit204:setLeft(75);
-    obj.edit204:setTop(360);
-    obj.edit204:setWidth(110);
-    obj.edit204:setTransparent(true);
-    obj.edit204:setField("frmAltura");
-    obj.edit204:setName("edit204");
+    obj.edit188 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit188:setParent(obj.popFrmPrincipal);
+    obj.edit188:setLeft(285);
+    obj.edit188:setTop(330);
+    obj.edit188:setWidth(95);
+    obj.edit188:setTransparent(true);
+    obj.edit188:setField("frmCabelos");
+    obj.edit188:setName("edit188");
 
     obj.label230 = GUI.fromHandle(_obj_newObject("label"));
     obj.label230:setParent(obj.popFrmPrincipal);
-    obj.label230:setLeft(206);
+    obj.label230:setLeft(15);
     obj.label230:setTop(365);
-    obj.label230:setText("Peso:");
+    obj.label230:setText("Altura:");
     obj.label230:setFontSize(18);
     lfm_setPropAsString(obj.label230, "fontStyle", "bold");
     obj.label230:setWidth(180);
     obj.label230:setName("label230");
 
-    obj.edit205 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit205:setParent(obj.popFrmPrincipal);
-    obj.edit205:setLeft(255);
-    obj.edit205:setTop(360);
-    obj.edit205:setWidth(95);
-    obj.edit205:setTransparent(true);
-    obj.edit205:setField("frmPeso");
-    obj.edit205:setName("edit205");
+    obj.edit189 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit189:setParent(obj.popFrmPrincipal);
+    obj.edit189:setLeft(75);
+    obj.edit189:setTop(360);
+    obj.edit189:setWidth(110);
+    obj.edit189:setTransparent(true);
+    obj.edit189:setField("frmAltura");
+    obj.edit189:setName("edit189");
 
     obj.label231 = GUI.fromHandle(_obj_newObject("label"));
     obj.label231:setParent(obj.popFrmPrincipal);
-    obj.label231:setLeft(10);
-    obj.label231:setTop(410);
-    obj.label231:setWidth(380);
-    obj.label231:setText("IDIOMAS");
-    obj.label231:setFontSize(20);
+    obj.label231:setLeft(206);
+    obj.label231:setTop(365);
+    obj.label231:setText("Peso:");
+    obj.label231:setFontSize(18);
     lfm_setPropAsString(obj.label231, "fontStyle", "bold");
-    obj.label231:setFontColor("#49244F");
+    obj.label231:setWidth(180);
     obj.label231:setName("label231");
 
-    obj.rectangle580 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle580:setParent(obj.popFrmPrincipal);
-    obj.rectangle580:setLeft(10);
-    obj.rectangle580:setTop(435);
-    obj.rectangle580:setWidth(380);
-    obj.rectangle580:setHeight(50);
-    obj.rectangle580:setColor("#49244F");
-    obj.rectangle580:setName("rectangle580");
-
-    obj.edit206 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit206:setParent(obj.popFrmPrincipal);
-    obj.edit206:setField("frmIdiomas");
-    obj.edit206:setLeft(10);
-    obj.edit206:setTop(435);
-    obj.edit206:setHeight(50);
-    obj.edit206:setWidth(380);
-    obj.edit206:setTransparent(true);
-    obj.edit206:setHorzTextAlign("center");
-    obj.edit206:setName("edit206");
+    obj.edit190 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit190:setParent(obj.popFrmPrincipal);
+    obj.edit190:setLeft(255);
+    obj.edit190:setTop(360);
+    obj.edit190:setWidth(95);
+    obj.edit190:setTransparent(true);
+    obj.edit190:setField("frmPeso");
+    obj.edit190:setName("edit190");
 
     obj.label232 = GUI.fromHandle(_obj_newObject("label"));
     obj.label232:setParent(obj.popFrmPrincipal);
     obj.label232:setLeft(10);
-    obj.label232:setTop(500);
+    obj.label232:setTop(410);
     obj.label232:setWidth(380);
-    obj.label232:setText("PROFISSÕES");
+    obj.label232:setText("IDIOMAS");
     obj.label232:setFontSize(20);
     lfm_setPropAsString(obj.label232, "fontStyle", "bold");
     obj.label232:setFontColor("#49244F");
     obj.label232:setName("label232");
 
-    obj.rectangle581 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle581:setParent(obj.popFrmPrincipal);
-    obj.rectangle581:setLeft(10);
-    obj.rectangle581:setTop(525);
-    obj.rectangle581:setWidth(380);
-    obj.rectangle581:setHeight(50);
-    obj.rectangle581:setColor("#49244F");
-    obj.rectangle581:setName("rectangle581");
+    obj.rectangle543 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle543:setParent(obj.popFrmPrincipal);
+    obj.rectangle543:setLeft(10);
+    obj.rectangle543:setTop(435);
+    obj.rectangle543:setWidth(380);
+    obj.rectangle543:setHeight(50);
+    obj.rectangle543:setColor("#49244F");
+    obj.rectangle543:setName("rectangle543");
 
-    obj.edit207 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit207:setParent(obj.popFrmPrincipal);
-    obj.edit207:setField("frmProfissoes");
-    obj.edit207:setLeft(10);
-    obj.edit207:setTop(525);
-    obj.edit207:setHeight(50);
-    obj.edit207:setWidth(380);
-    obj.edit207:setTransparent(true);
-    obj.edit207:setHorzTextAlign("center");
-    obj.edit207:setName("edit207");
+    obj.edit191 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit191:setParent(obj.popFrmPrincipal);
+    obj.edit191:setField("frmIdiomas");
+    obj.edit191:setLeft(10);
+    obj.edit191:setTop(435);
+    obj.edit191:setHeight(50);
+    obj.edit191:setWidth(380);
+    obj.edit191:setTransparent(true);
+    obj.edit191:setHorzTextAlign("center");
+    obj.edit191:setName("edit191");
 
     obj.label233 = GUI.fromHandle(_obj_newObject("label"));
     obj.label233:setParent(obj.popFrmPrincipal);
     obj.label233:setLeft(10);
-    obj.label233:setTop(590);
+    obj.label233:setTop(500);
     obj.label233:setWidth(380);
-    obj.label233:setText("RELIGIÃO");
+    obj.label233:setText("PROFISSÕES");
     obj.label233:setFontSize(20);
     lfm_setPropAsString(obj.label233, "fontStyle", "bold");
     obj.label233:setFontColor("#49244F");
     obj.label233:setName("label233");
 
-    obj.rectangle582 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle582:setParent(obj.popFrmPrincipal);
-    obj.rectangle582:setLeft(10);
-    obj.rectangle582:setTop(615);
-    obj.rectangle582:setWidth(380);
-    obj.rectangle582:setHeight(50);
-    obj.rectangle582:setColor("#49244F");
-    obj.rectangle582:setName("rectangle582");
+    obj.rectangle544 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle544:setParent(obj.popFrmPrincipal);
+    obj.rectangle544:setLeft(10);
+    obj.rectangle544:setTop(525);
+    obj.rectangle544:setWidth(380);
+    obj.rectangle544:setHeight(50);
+    obj.rectangle544:setColor("#49244F");
+    obj.rectangle544:setName("rectangle544");
 
-    obj.edit208 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit208:setParent(obj.popFrmPrincipal);
-    obj.edit208:setField("frmReligiao");
-    obj.edit208:setLeft(10);
-    obj.edit208:setTop(615);
-    obj.edit208:setHeight(50);
-    obj.edit208:setWidth(380);
-    obj.edit208:setTransparent(true);
-    obj.edit208:setHorzTextAlign("center");
-    obj.edit208:setName("edit208");
-
-    obj.rectangle583 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle583:setParent(obj.popFrmPrincipal);
-    obj.rectangle583:setLeft(401);
-    obj.rectangle583:setTop(115);
-    obj.rectangle583:setWidth(380);
-    obj.rectangle583:setHeight(50);
-    obj.rectangle583:setColor("#49244F");
-    obj.rectangle583:setName("rectangle583");
+    obj.edit192 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit192:setParent(obj.popFrmPrincipal);
+    obj.edit192:setField("frmProfissoes");
+    obj.edit192:setLeft(10);
+    obj.edit192:setTop(525);
+    obj.edit192:setHeight(50);
+    obj.edit192:setWidth(380);
+    obj.edit192:setTransparent(true);
+    obj.edit192:setHorzTextAlign("center");
+    obj.edit192:setName("edit192");
 
     obj.label234 = GUI.fromHandle(_obj_newObject("label"));
     obj.label234:setParent(obj.popFrmPrincipal);
-    obj.label234:setLeft(406);
-    obj.label234:setTop(130);
-    obj.label234:setText("TAMANHO");
+    obj.label234:setLeft(10);
+    obj.label234:setTop(590);
+    obj.label234:setWidth(380);
+    obj.label234:setText("RELIGIÃO");
     obj.label234:setFontSize(20);
     lfm_setPropAsString(obj.label234, "fontStyle", "bold");
+    obj.label234:setFontColor("#49244F");
     obj.label234:setName("label234");
 
-    obj.rectangle584 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle584:setParent(obj.popFrmPrincipal);
-    obj.rectangle584:setLeft(515);
-    obj.rectangle584:setTop(118);
-    obj.rectangle584:setWidth(45);
-    obj.rectangle584:setHeight(45);
-    obj.rectangle584:setColor("#D5D5D5");
-    obj.rectangle584:setXradius(20);
-    obj.rectangle584:setYradius(20);
-    obj.rectangle584:setCornerType("round");
-    obj.rectangle584:setStrokeColor("#49244F");
-    obj.rectangle584:setStrokeSize(3);
-    obj.rectangle584:setName("rectangle584");
+    obj.rectangle545 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle545:setParent(obj.popFrmPrincipal);
+    obj.rectangle545:setLeft(10);
+    obj.rectangle545:setTop(615);
+    obj.rectangle545:setWidth(380);
+    obj.rectangle545:setHeight(50);
+    obj.rectangle545:setColor("#49244F");
+    obj.rectangle545:setName("rectangle545");
 
-    obj.edit209 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit209:setParent(obj.popFrmPrincipal);
-    obj.edit209:setField("frmTamanho");
-    obj.edit209:setLeft(523);
-    obj.edit209:setTop(125);
-    obj.edit209:setWidth(28);
-    obj.edit209:setFontColor("#49244F");
-    obj.edit209:setTransparent(true);
-    obj.edit209:setHorzTextAlign("center");
-    obj.edit209:setName("edit209");
+    obj.edit193 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit193:setParent(obj.popFrmPrincipal);
+    obj.edit193:setField("frmReligiao");
+    obj.edit193:setLeft(10);
+    obj.edit193:setTop(615);
+    obj.edit193:setHeight(50);
+    obj.edit193:setWidth(380);
+    obj.edit193:setTransparent(true);
+    obj.edit193:setHorzTextAlign("center");
+    obj.edit193:setName("edit193");
+
+    obj.rectangle546 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle546:setParent(obj.popFrmPrincipal);
+    obj.rectangle546:setLeft(401);
+    obj.rectangle546:setTop(115);
+    obj.rectangle546:setWidth(380);
+    obj.rectangle546:setHeight(50);
+    obj.rectangle546:setColor("#49244F");
+    obj.rectangle546:setName("rectangle546");
 
     obj.label235 = GUI.fromHandle(_obj_newObject("label"));
     obj.label235:setParent(obj.popFrmPrincipal);
-    obj.label235:setLeft(605);
+    obj.label235:setLeft(406);
     obj.label235:setTop(130);
-    obj.label235:setWidth(150);
-    obj.label235:setText("VELOCIDADE");
+    obj.label235:setText("TAMANHO");
     obj.label235:setFontSize(20);
     lfm_setPropAsString(obj.label235, "fontStyle", "bold");
     obj.label235:setName("label235");
 
-    obj.rectangle585 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle585:setParent(obj.popFrmPrincipal);
-    obj.rectangle585:setLeft(730);
-    obj.rectangle585:setTop(118);
-    obj.rectangle585:setWidth(45);
-    obj.rectangle585:setHeight(45);
-    obj.rectangle585:setColor("#D5D5D5");
-    obj.rectangle585:setXradius(20);
-    obj.rectangle585:setYradius(20);
-    obj.rectangle585:setCornerType("round");
-    obj.rectangle585:setStrokeColor("#49244F");
-    obj.rectangle585:setStrokeSize(3);
-    obj.rectangle585:setName("rectangle585");
+    obj.rectangle547 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle547:setParent(obj.popFrmPrincipal);
+    obj.rectangle547:setLeft(515);
+    obj.rectangle547:setTop(118);
+    obj.rectangle547:setWidth(45);
+    obj.rectangle547:setHeight(45);
+    obj.rectangle547:setColor("#D5D5D5");
+    obj.rectangle547:setXradius(20);
+    obj.rectangle547:setYradius(20);
+    obj.rectangle547:setCornerType("round");
+    obj.rectangle547:setStrokeColor("#49244F");
+    obj.rectangle547:setStrokeSize(3);
+    obj.rectangle547:setName("rectangle547");
 
-    obj.edit210 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit210:setParent(obj.popFrmPrincipal);
-    obj.edit210:setField("frmVelocidade");
-    obj.edit210:setLeft(738);
-    obj.edit210:setTop(125);
-    obj.edit210:setWidth(28);
-    obj.edit210:setFontColor("#49244F");
-    obj.edit210:setType("number");
-    obj.edit210:setMin(0);
-    obj.edit210:setMax(20);
-    obj.edit210:setTransparent(true);
-    obj.edit210:setHorzTextAlign("center");
-    obj.edit210:setName("edit210");
+    obj.edit194 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit194:setParent(obj.popFrmPrincipal);
+    obj.edit194:setField("frmTamanho");
+    obj.edit194:setLeft(523);
+    obj.edit194:setTop(125);
+    obj.edit194:setWidth(28);
+    obj.edit194:setFontColor("#49244F");
+    obj.edit194:setTransparent(true);
+    obj.edit194:setHorzTextAlign("center");
+    obj.edit194:setName("edit194");
 
     obj.label236 = GUI.fromHandle(_obj_newObject("label"));
     obj.label236:setParent(obj.popFrmPrincipal);
-    obj.label236:setLeft(401);
-    obj.label236:setTop(180);
-    obj.label236:setWidth(300);
-    obj.label236:setText("CAMINHO DE NOVATO");
+    obj.label236:setLeft(605);
+    obj.label236:setTop(130);
+    obj.label236:setWidth(150);
+    obj.label236:setText("VELOCIDADE");
     obj.label236:setFontSize(20);
     lfm_setPropAsString(obj.label236, "fontStyle", "bold");
-    obj.label236:setFontColor("#49244F");
     obj.label236:setName("label236");
 
-    obj.rectangle586 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle586:setParent(obj.popFrmPrincipal);
-    obj.rectangle586:setLeft(401);
-    obj.rectangle586:setTop(205);
-    obj.rectangle586:setWidth(380);
-    obj.rectangle586:setHeight(50);
-    obj.rectangle586:setColor("#49244F");
-    obj.rectangle586:setName("rectangle586");
+    obj.rectangle548 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle548:setParent(obj.popFrmPrincipal);
+    obj.rectangle548:setLeft(730);
+    obj.rectangle548:setTop(118);
+    obj.rectangle548:setWidth(45);
+    obj.rectangle548:setHeight(45);
+    obj.rectangle548:setColor("#D5D5D5");
+    obj.rectangle548:setXradius(20);
+    obj.rectangle548:setYradius(20);
+    obj.rectangle548:setCornerType("round");
+    obj.rectangle548:setStrokeColor("#49244F");
+    obj.rectangle548:setStrokeSize(3);
+    obj.rectangle548:setName("rectangle548");
 
-    obj.edit211 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit211:setParent(obj.popFrmPrincipal);
-    obj.edit211:setField("frmAprendiz");
-    obj.edit211:setLeft(401);
-    obj.edit211:setTop(205);
-    obj.edit211:setWidth(380);
-    obj.edit211:setHeight(50);
-    obj.edit211:setTransparent(true);
-    obj.edit211:setHorzTextAlign("center");
-    obj.edit211:setName("edit211");
+    obj.edit195 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit195:setParent(obj.popFrmPrincipal);
+    obj.edit195:setField("frmVelocidade");
+    obj.edit195:setLeft(738);
+    obj.edit195:setTop(125);
+    obj.edit195:setWidth(28);
+    obj.edit195:setFontColor("#49244F");
+    obj.edit195:setType("number");
+    obj.edit195:setMin(0);
+    obj.edit195:setMax(20);
+    obj.edit195:setTransparent(true);
+    obj.edit195:setHorzTextAlign("center");
+    obj.edit195:setName("edit195");
 
     obj.label237 = GUI.fromHandle(_obj_newObject("label"));
     obj.label237:setParent(obj.popFrmPrincipal);
     obj.label237:setLeft(401);
-    obj.label237:setTop(270);
+    obj.label237:setTop(180);
     obj.label237:setWidth(300);
-    obj.label237:setText("CAMINHO DE ESPECIALISTA");
+    obj.label237:setText("CAMINHO DE NOVATO");
     obj.label237:setFontSize(20);
     lfm_setPropAsString(obj.label237, "fontStyle", "bold");
     obj.label237:setFontColor("#49244F");
     obj.label237:setName("label237");
 
-    obj.rectangle587 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle587:setParent(obj.popFrmPrincipal);
-    obj.rectangle587:setLeft(401);
-    obj.rectangle587:setTop(295);
-    obj.rectangle587:setWidth(380);
-    obj.rectangle587:setHeight(50);
-    obj.rectangle587:setColor("#49244F");
-    obj.rectangle587:setName("rectangle587");
+    obj.rectangle549 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle549:setParent(obj.popFrmPrincipal);
+    obj.rectangle549:setLeft(401);
+    obj.rectangle549:setTop(205);
+    obj.rectangle549:setWidth(380);
+    obj.rectangle549:setHeight(50);
+    obj.rectangle549:setColor("#49244F");
+    obj.rectangle549:setName("rectangle549");
 
-    obj.edit212 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit212:setParent(obj.popFrmPrincipal);
-    obj.edit212:setField("frmEspecialista");
-    obj.edit212:setLeft(401);
-    obj.edit212:setTop(295);
-    obj.edit212:setWidth(380);
-    obj.edit212:setHeight(50);
-    obj.edit212:setTransparent(true);
-    obj.edit212:setHorzTextAlign("center");
-    obj.edit212:setName("edit212");
+    obj.edit196 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit196:setParent(obj.popFrmPrincipal);
+    obj.edit196:setField("frmAprendiz");
+    obj.edit196:setLeft(401);
+    obj.edit196:setTop(205);
+    obj.edit196:setWidth(380);
+    obj.edit196:setHeight(50);
+    obj.edit196:setTransparent(true);
+    obj.edit196:setHorzTextAlign("center");
+    obj.edit196:setName("edit196");
 
     obj.label238 = GUI.fromHandle(_obj_newObject("label"));
     obj.label238:setParent(obj.popFrmPrincipal);
     obj.label238:setLeft(401);
-    obj.label238:setTop(360);
+    obj.label238:setTop(270);
     obj.label238:setWidth(300);
-    obj.label238:setText("CAMINHO DE MESTRE");
+    obj.label238:setText("CAMINHO DE ESPECIALISTA");
     obj.label238:setFontSize(20);
     lfm_setPropAsString(obj.label238, "fontStyle", "bold");
     obj.label238:setFontColor("#49244F");
     obj.label238:setName("label238");
 
-    obj.rectangle588 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle588:setParent(obj.popFrmPrincipal);
-    obj.rectangle588:setLeft(401);
-    obj.rectangle588:setTop(385);
-    obj.rectangle588:setWidth(380);
-    obj.rectangle588:setHeight(50);
-    obj.rectangle588:setColor("#49244F");
-    obj.rectangle588:setName("rectangle588");
+    obj.rectangle550 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle550:setParent(obj.popFrmPrincipal);
+    obj.rectangle550:setLeft(401);
+    obj.rectangle550:setTop(295);
+    obj.rectangle550:setWidth(380);
+    obj.rectangle550:setHeight(50);
+    obj.rectangle550:setColor("#49244F");
+    obj.rectangle550:setName("rectangle550");
 
-    obj.edit213 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit213:setParent(obj.popFrmPrincipal);
-    obj.edit213:setField("frmMestre");
-    obj.edit213:setLeft(401);
-    obj.edit213:setTop(385);
-    obj.edit213:setWidth(380);
-    obj.edit213:setHeight(50);
-    obj.edit213:setTransparent(true);
-    obj.edit213:setHorzTextAlign("center");
-    obj.edit213:setName("edit213");
+    obj.edit197 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit197:setParent(obj.popFrmPrincipal);
+    obj.edit197:setField("frmEspecialista");
+    obj.edit197:setLeft(401);
+    obj.edit197:setTop(295);
+    obj.edit197:setWidth(380);
+    obj.edit197:setHeight(50);
+    obj.edit197:setTransparent(true);
+    obj.edit197:setHorzTextAlign("center");
+    obj.edit197:setName("edit197");
 
     obj.label239 = GUI.fromHandle(_obj_newObject("label"));
     obj.label239:setParent(obj.popFrmPrincipal);
-    obj.label239:setLeft(460);
-    obj.label239:setTop(475);
-    obj.label239:setText("Força");
+    obj.label239:setLeft(401);
+    obj.label239:setTop(360);
+    obj.label239:setWidth(300);
+    obj.label239:setText("CAMINHO DE MESTRE");
     obj.label239:setFontSize(20);
     lfm_setPropAsString(obj.label239, "fontStyle", "bold");
+    obj.label239:setFontColor("#49244F");
     obj.label239:setName("label239");
 
-    obj.rectangle589 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle589:setParent(obj.popFrmPrincipal);
-    obj.rectangle589:setLeft(406);
-    obj.rectangle589:setTop(463);
-    obj.rectangle589:setWidth(45);
-    obj.rectangle589:setHeight(45);
-    obj.rectangle589:setColor("#D5D5D5");
-    obj.rectangle589:setXradius(20);
-    obj.rectangle589:setYradius(20);
-    obj.rectangle589:setCornerType("round");
-    obj.rectangle589:setStrokeColor("#49244F");
-    obj.rectangle589:setStrokeSize(3);
-    obj.rectangle589:setName("rectangle589");
+    obj.rectangle551 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle551:setParent(obj.popFrmPrincipal);
+    obj.rectangle551:setLeft(401);
+    obj.rectangle551:setTop(385);
+    obj.rectangle551:setWidth(380);
+    obj.rectangle551:setHeight(50);
+    obj.rectangle551:setColor("#49244F");
+    obj.rectangle551:setName("rectangle551");
 
-    obj.edit214 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit214:setParent(obj.popFrmPrincipal);
-    obj.edit214:setField("frmForca");
-    obj.edit214:setLeft(414);
-    obj.edit214:setTop(470);
-    obj.edit214:setWidth(28);
-    obj.edit214:setFontColor("#49244F");
-    obj.edit214:setType("number");
-    obj.edit214:setMin(0);
-    obj.edit214:setMax(25);
-    obj.edit214:setTransparent(true);
-    obj.edit214:setHorzTextAlign("center");
-    obj.edit214:setName("edit214");
+    obj.edit198 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit198:setParent(obj.popFrmPrincipal);
+    obj.edit198:setField("frmMestre");
+    obj.edit198:setLeft(401);
+    obj.edit198:setTop(385);
+    obj.edit198:setWidth(380);
+    obj.edit198:setHeight(50);
+    obj.edit198:setTransparent(true);
+    obj.edit198:setHorzTextAlign("center");
+    obj.edit198:setName("edit198");
 
     obj.label240 = GUI.fromHandle(_obj_newObject("label"));
     obj.label240:setParent(obj.popFrmPrincipal);
     obj.label240:setLeft(460);
-    obj.label240:setTop(525);
-    obj.label240:setText("Agilidade");
+    obj.label240:setTop(475);
+    obj.label240:setText("Força");
     obj.label240:setFontSize(20);
     lfm_setPropAsString(obj.label240, "fontStyle", "bold");
     obj.label240:setName("label240");
 
-    obj.rectangle590 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle590:setParent(obj.popFrmPrincipal);
-    obj.rectangle590:setLeft(406);
-    obj.rectangle590:setTop(513);
-    obj.rectangle590:setWidth(45);
-    obj.rectangle590:setHeight(45);
-    obj.rectangle590:setColor("#D5D5D5");
-    obj.rectangle590:setXradius(20);
-    obj.rectangle590:setYradius(20);
-    obj.rectangle590:setCornerType("round");
-    obj.rectangle590:setStrokeColor("#49244F");
-    obj.rectangle590:setStrokeSize(3);
-    obj.rectangle590:setName("rectangle590");
+    obj.rectangle552 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle552:setParent(obj.popFrmPrincipal);
+    obj.rectangle552:setLeft(406);
+    obj.rectangle552:setTop(463);
+    obj.rectangle552:setWidth(45);
+    obj.rectangle552:setHeight(45);
+    obj.rectangle552:setColor("#D5D5D5");
+    obj.rectangle552:setXradius(20);
+    obj.rectangle552:setYradius(20);
+    obj.rectangle552:setCornerType("round");
+    obj.rectangle552:setStrokeColor("#49244F");
+    obj.rectangle552:setStrokeSize(3);
+    obj.rectangle552:setName("rectangle552");
 
-    obj.edit215 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit215:setParent(obj.popFrmPrincipal);
-    obj.edit215:setField("frmAgilidade");
-    obj.edit215:setLeft(414);
-    obj.edit215:setTop(520);
-    obj.edit215:setWidth(28);
-    obj.edit215:setFontColor("#49244F");
-    obj.edit215:setType("number");
-    obj.edit215:setMin(0);
-    obj.edit215:setMax(25);
-    obj.edit215:setTransparent(true);
-    obj.edit215:setHorzTextAlign("center");
-    obj.edit215:setName("edit215");
+    obj.edit199 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit199:setParent(obj.popFrmPrincipal);
+    obj.edit199:setField("frmForca");
+    obj.edit199:setLeft(414);
+    obj.edit199:setTop(470);
+    obj.edit199:setWidth(28);
+    obj.edit199:setFontColor("#49244F");
+    obj.edit199:setType("number");
+    obj.edit199:setMin(0);
+    obj.edit199:setMax(25);
+    obj.edit199:setTransparent(true);
+    obj.edit199:setHorzTextAlign("center");
+    obj.edit199:setName("edit199");
 
     obj.label241 = GUI.fromHandle(_obj_newObject("label"));
     obj.label241:setParent(obj.popFrmPrincipal);
     obj.label241:setLeft(460);
-    obj.label241:setTop(575);
-    obj.label241:setText("Intelecto");
+    obj.label241:setTop(525);
+    obj.label241:setText("Agilidade");
     obj.label241:setFontSize(20);
     lfm_setPropAsString(obj.label241, "fontStyle", "bold");
     obj.label241:setName("label241");
 
-    obj.rectangle591 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle591:setParent(obj.popFrmPrincipal);
-    obj.rectangle591:setLeft(406);
-    obj.rectangle591:setTop(563);
-    obj.rectangle591:setWidth(45);
-    obj.rectangle591:setHeight(45);
-    obj.rectangle591:setColor("#D5D5D5");
-    obj.rectangle591:setXradius(20);
-    obj.rectangle591:setYradius(20);
-    obj.rectangle591:setCornerType("round");
-    obj.rectangle591:setStrokeColor("#49244F");
-    obj.rectangle591:setStrokeSize(3);
-    obj.rectangle591:setName("rectangle591");
+    obj.rectangle553 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle553:setParent(obj.popFrmPrincipal);
+    obj.rectangle553:setLeft(406);
+    obj.rectangle553:setTop(513);
+    obj.rectangle553:setWidth(45);
+    obj.rectangle553:setHeight(45);
+    obj.rectangle553:setColor("#D5D5D5");
+    obj.rectangle553:setXradius(20);
+    obj.rectangle553:setYradius(20);
+    obj.rectangle553:setCornerType("round");
+    obj.rectangle553:setStrokeColor("#49244F");
+    obj.rectangle553:setStrokeSize(3);
+    obj.rectangle553:setName("rectangle553");
 
-    obj.edit216 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit216:setParent(obj.popFrmPrincipal);
-    obj.edit216:setField("frmIntelecto");
-    obj.edit216:setLeft(414);
-    obj.edit216:setTop(570);
-    obj.edit216:setWidth(28);
-    obj.edit216:setFontColor("#49244F");
-    obj.edit216:setType("number");
-    obj.edit216:setMin(0);
-    obj.edit216:setMax(25);
-    obj.edit216:setTransparent(true);
-    obj.edit216:setHorzTextAlign("center");
-    obj.edit216:setName("edit216");
+    obj.edit200 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit200:setParent(obj.popFrmPrincipal);
+    obj.edit200:setField("frmAgilidade");
+    obj.edit200:setLeft(414);
+    obj.edit200:setTop(520);
+    obj.edit200:setWidth(28);
+    obj.edit200:setFontColor("#49244F");
+    obj.edit200:setType("number");
+    obj.edit200:setMin(0);
+    obj.edit200:setMax(25);
+    obj.edit200:setTransparent(true);
+    obj.edit200:setHorzTextAlign("center");
+    obj.edit200:setName("edit200");
 
     obj.label242 = GUI.fromHandle(_obj_newObject("label"));
     obj.label242:setParent(obj.popFrmPrincipal);
     obj.label242:setLeft(460);
-    obj.label242:setTop(625);
-    obj.label242:setText("Vontade");
+    obj.label242:setTop(575);
+    obj.label242:setText("Intelecto");
     obj.label242:setFontSize(20);
     lfm_setPropAsString(obj.label242, "fontStyle", "bold");
     obj.label242:setName("label242");
 
-    obj.rectangle592 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle592:setParent(obj.popFrmPrincipal);
-    obj.rectangle592:setLeft(406);
-    obj.rectangle592:setTop(613);
-    obj.rectangle592:setWidth(45);
-    obj.rectangle592:setHeight(45);
-    obj.rectangle592:setColor("#D5D5D5");
-    obj.rectangle592:setXradius(20);
-    obj.rectangle592:setYradius(20);
-    obj.rectangle592:setCornerType("round");
-    obj.rectangle592:setStrokeColor("#49244F");
-    obj.rectangle592:setStrokeSize(3);
-    obj.rectangle592:setName("rectangle592");
+    obj.rectangle554 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle554:setParent(obj.popFrmPrincipal);
+    obj.rectangle554:setLeft(406);
+    obj.rectangle554:setTop(563);
+    obj.rectangle554:setWidth(45);
+    obj.rectangle554:setHeight(45);
+    obj.rectangle554:setColor("#D5D5D5");
+    obj.rectangle554:setXradius(20);
+    obj.rectangle554:setYradius(20);
+    obj.rectangle554:setCornerType("round");
+    obj.rectangle554:setStrokeColor("#49244F");
+    obj.rectangle554:setStrokeSize(3);
+    obj.rectangle554:setName("rectangle554");
 
-    obj.edit217 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit217:setParent(obj.popFrmPrincipal);
-    obj.edit217:setField("frmVontade");
-    obj.edit217:setLeft(414);
-    obj.edit217:setTop(620);
-    obj.edit217:setWidth(28);
-    obj.edit217:setFontColor("#49244F");
-    obj.edit217:setType("number");
-    obj.edit217:setMin(0);
-    obj.edit217:setMax(25);
-    obj.edit217:setTransparent(true);
-    obj.edit217:setHorzTextAlign("center");
-    obj.edit217:setName("edit217");
+    obj.edit201 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit201:setParent(obj.popFrmPrincipal);
+    obj.edit201:setField("frmIntelecto");
+    obj.edit201:setLeft(414);
+    obj.edit201:setTop(570);
+    obj.edit201:setWidth(28);
+    obj.edit201:setFontColor("#49244F");
+    obj.edit201:setType("number");
+    obj.edit201:setMin(0);
+    obj.edit201:setMax(25);
+    obj.edit201:setTransparent(true);
+    obj.edit201:setHorzTextAlign("center");
+    obj.edit201:setName("edit201");
 
     obj.label243 = GUI.fromHandle(_obj_newObject("label"));
     obj.label243:setParent(obj.popFrmPrincipal);
-    obj.label243:setLeft(651);
-    obj.label243:setTop(455);
-    obj.label243:setText("Defesas");
+    obj.label243:setLeft(460);
+    obj.label243:setTop(625);
+    obj.label243:setText("Vontade");
     obj.label243:setFontSize(20);
     lfm_setPropAsString(obj.label243, "fontStyle", "bold");
-    obj.label243:setFontColor("#49244F");
     obj.label243:setName("label243");
 
-    obj.rectangle593 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle593:setParent(obj.popFrmPrincipal);
-    obj.rectangle593:setLeft(593);
-    obj.rectangle593:setTop(477);
-    obj.rectangle593:setWidth(175);
-    obj.rectangle593:setHeight(25);
-    obj.rectangle593:setColor("#49244F");
-    obj.rectangle593:setStrokeColor("#49244F");
-    obj.rectangle593:setStrokeSize(3);
-    obj.rectangle593:setName("rectangle593");
+    obj.rectangle555 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle555:setParent(obj.popFrmPrincipal);
+    obj.rectangle555:setLeft(406);
+    obj.rectangle555:setTop(613);
+    obj.rectangle555:setWidth(45);
+    obj.rectangle555:setHeight(45);
+    obj.rectangle555:setColor("#D5D5D5");
+    obj.rectangle555:setXradius(20);
+    obj.rectangle555:setYradius(20);
+    obj.rectangle555:setCornerType("round");
+    obj.rectangle555:setStrokeColor("#49244F");
+    obj.rectangle555:setStrokeSize(3);
+    obj.rectangle555:setName("rectangle555");
 
-    obj.rectangle594 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle594:setParent(obj.popFrmPrincipal);
-    obj.rectangle594:setLeft(737);
-    obj.rectangle594:setTop(468);
-    obj.rectangle594:setWidth(45);
-    obj.rectangle594:setHeight(45);
-    obj.rectangle594:setColor("#D5D5D5");
-    obj.rectangle594:setXradius(20);
-    obj.rectangle594:setYradius(20);
-    obj.rectangle594:setCornerType("round");
-    obj.rectangle594:setStrokeColor("#49244F");
-    obj.rectangle594:setStrokeSize(3);
-    obj.rectangle594:setName("rectangle594");
+    obj.edit202 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit202:setParent(obj.popFrmPrincipal);
+    obj.edit202:setField("frmVontade");
+    obj.edit202:setLeft(414);
+    obj.edit202:setTop(620);
+    obj.edit202:setWidth(28);
+    obj.edit202:setFontColor("#49244F");
+    obj.edit202:setType("number");
+    obj.edit202:setMin(0);
+    obj.edit202:setMax(25);
+    obj.edit202:setTransparent(true);
+    obj.edit202:setHorzTextAlign("center");
+    obj.edit202:setName("edit202");
 
     obj.label244 = GUI.fromHandle(_obj_newObject("label"));
     obj.label244:setParent(obj.popFrmPrincipal);
-    obj.label244:setLeft(665);
-    obj.label244:setTop(480);
-    obj.label244:setText("Natural");
-    obj.label244:setFontSize(14);
-    obj.label244:setFontColor("#D5D5D5");
+    obj.label244:setLeft(651);
+    obj.label244:setTop(455);
+    obj.label244:setText("Defesas");
+    obj.label244:setFontSize(20);
+    lfm_setPropAsString(obj.label244, "fontStyle", "bold");
+    obj.label244:setFontColor("#49244F");
     obj.label244:setName("label244");
 
-    obj.edit218 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit218:setParent(obj.popFrmPrincipal);
-    obj.edit218:setField("frmDefesa");
-    obj.edit218:setLeft(745);
-    obj.edit218:setTop(475);
-    obj.edit218:setWidth(28);
-    obj.edit218:setFontColor("#49244F");
-    obj.edit218:setType("number");
-    obj.edit218:setMin(0);
-    obj.edit218:setMax(35);
-    obj.edit218:setTransparent(true);
-    obj.edit218:setHorzTextAlign("center");
-    obj.edit218:setName("edit218");
+    obj.rectangle556 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle556:setParent(obj.popFrmPrincipal);
+    obj.rectangle556:setLeft(593);
+    obj.rectangle556:setTop(477);
+    obj.rectangle556:setWidth(175);
+    obj.rectangle556:setHeight(25);
+    obj.rectangle556:setColor("#49244F");
+    obj.rectangle556:setStrokeColor("#49244F");
+    obj.rectangle556:setStrokeSize(3);
+    obj.rectangle556:setName("rectangle556");
 
-    obj.rectangle595 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle595:setParent(obj.popFrmPrincipal);
-    obj.rectangle595:setLeft(593);
-    obj.rectangle595:setTop(527);
-    obj.rectangle595:setWidth(175);
-    obj.rectangle595:setHeight(25);
-    obj.rectangle595:setColor("#49244F");
-    obj.rectangle595:setStrokeColor("#49244F");
-    obj.rectangle595:setStrokeSize(3);
-    obj.rectangle595:setName("rectangle595");
-
-    obj.rectangle596 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle596:setParent(obj.popFrmPrincipal);
-    obj.rectangle596:setLeft(737);
-    obj.rectangle596:setTop(518);
-    obj.rectangle596:setWidth(45);
-    obj.rectangle596:setHeight(45);
-    obj.rectangle596:setColor("#D5D5D5");
-    obj.rectangle596:setXradius(20);
-    obj.rectangle596:setYradius(20);
-    obj.rectangle596:setCornerType("round");
-    obj.rectangle596:setStrokeColor("#49244F");
-    obj.rectangle596:setStrokeSize(3);
-    obj.rectangle596:setName("rectangle596");
+    obj.rectangle557 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle557:setParent(obj.popFrmPrincipal);
+    obj.rectangle557:setLeft(737);
+    obj.rectangle557:setTop(468);
+    obj.rectangle557:setWidth(45);
+    obj.rectangle557:setHeight(45);
+    obj.rectangle557:setColor("#D5D5D5");
+    obj.rectangle557:setXradius(20);
+    obj.rectangle557:setYradius(20);
+    obj.rectangle557:setCornerType("round");
+    obj.rectangle557:setStrokeColor("#49244F");
+    obj.rectangle557:setStrokeSize(3);
+    obj.rectangle557:setName("rectangle557");
 
     obj.label245 = GUI.fromHandle(_obj_newObject("label"));
     obj.label245:setParent(obj.popFrmPrincipal);
-    obj.label245:setLeft(658);
-    obj.label245:setTop(532);
-    obj.label245:setText("Armadura");
+    obj.label245:setLeft(665);
+    obj.label245:setTop(480);
+    obj.label245:setText("Natural");
     obj.label245:setFontSize(14);
     obj.label245:setFontColor("#D5D5D5");
     obj.label245:setName("label245");
 
-    obj.edit219 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit219:setParent(obj.popFrmPrincipal);
-    obj.edit219:setField("frmDefesaBlin");
-    obj.edit219:setLeft(745);
-    obj.edit219:setTop(525);
-    obj.edit219:setWidth(28);
-    obj.edit219:setFontColor("#49244F");
-    obj.edit219:setType("number");
-    obj.edit219:setMin(0);
-    obj.edit219:setMax(35);
-    obj.edit219:setTransparent(true);
-    obj.edit219:setHorzTextAlign("center");
-    obj.edit219:setName("edit219");
+    obj.edit203 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit203:setParent(obj.popFrmPrincipal);
+    obj.edit203:setField("frmDefesa");
+    obj.edit203:setLeft(745);
+    obj.edit203:setTop(475);
+    obj.edit203:setWidth(28);
+    obj.edit203:setFontColor("#49244F");
+    obj.edit203:setType("number");
+    obj.edit203:setMin(0);
+    obj.edit203:setMax(35);
+    obj.edit203:setTransparent(true);
+    obj.edit203:setHorzTextAlign("center");
+    obj.edit203:setName("edit203");
 
-    obj.rectangle597 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle597:setParent(obj.popFrmPrincipal);
-    obj.rectangle597:setLeft(642);
-    obj.rectangle597:setTop(565);
-    obj.rectangle597:setWidth(95);
-    obj.rectangle597:setHeight(95);
-    obj.rectangle597:setColor("#D5D5D5");
-    obj.rectangle597:setXradius(47);
-    obj.rectangle597:setYradius(47);
-    obj.rectangle597:setCornerType("round");
-    obj.rectangle597:setStrokeColor("#49244F");
-    obj.rectangle597:setStrokeSize(3);
-    obj.rectangle597:setName("rectangle597");
+    obj.rectangle558 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle558:setParent(obj.popFrmPrincipal);
+    obj.rectangle558:setLeft(593);
+    obj.rectangle558:setTop(527);
+    obj.rectangle558:setWidth(175);
+    obj.rectangle558:setHeight(25);
+    obj.rectangle558:setColor("#49244F");
+    obj.rectangle558:setStrokeColor("#49244F");
+    obj.rectangle558:setStrokeSize(3);
+    obj.rectangle558:setName("rectangle558");
 
-    obj.rectangle598 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle598:setParent(obj.popFrmPrincipal);
-    obj.rectangle598:setLeft(665);
-    obj.rectangle598:setTop(570);
-    obj.rectangle598:setWidth(45);
-    obj.rectangle598:setHeight(45);
-    obj.rectangle598:setColor("#49244F");
-    obj.rectangle598:setXradius(20);
-    obj.rectangle598:setYradius(20);
-    obj.rectangle598:setCornerType("round");
-    obj.rectangle598:setStrokeColor("#49244F");
-    obj.rectangle598:setStrokeSize(3);
-    obj.rectangle598:setName("rectangle598");
-
-    obj.edit220 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit220:setParent(obj.popFrmPrincipal);
-    obj.edit220:setField("frmVida");
-    obj.edit220:setLeft(673);
-    obj.edit220:setTop(575);
-    obj.edit220:setWidth(28);
-    obj.edit220:setFontColor("#D5D5D5");
-    obj.edit220:setType("number");
-    obj.edit220:setMin(0);
-    obj.edit220:setMax(1000);
-    obj.edit220:setTransparent(true);
-    obj.edit220:setHorzTextAlign("center");
-    obj.edit220:setName("edit220");
+    obj.rectangle559 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle559:setParent(obj.popFrmPrincipal);
+    obj.rectangle559:setLeft(737);
+    obj.rectangle559:setTop(518);
+    obj.rectangle559:setWidth(45);
+    obj.rectangle559:setHeight(45);
+    obj.rectangle559:setColor("#D5D5D5");
+    obj.rectangle559:setXradius(20);
+    obj.rectangle559:setYradius(20);
+    obj.rectangle559:setCornerType("round");
+    obj.rectangle559:setStrokeColor("#49244F");
+    obj.rectangle559:setStrokeSize(3);
+    obj.rectangle559:setName("rectangle559");
 
     obj.label246 = GUI.fromHandle(_obj_newObject("label"));
     obj.label246:setParent(obj.popFrmPrincipal);
-    obj.label246:setLeft(668);
-    obj.label246:setTop(625);
-    obj.label246:setText("Vida");
-    obj.label246:setFontSize(20);
-    lfm_setPropAsString(obj.label246, "fontStyle", "bold");
-    obj.label246:setFontColor("#49244F");
+    obj.label246:setLeft(658);
+    obj.label246:setTop(532);
+    obj.label246:setText("Armadura");
+    obj.label246:setFontSize(14);
+    obj.label246:setFontColor("#D5D5D5");
     obj.label246:setName("label246");
+
+    obj.edit204 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit204:setParent(obj.popFrmPrincipal);
+    obj.edit204:setField("frmDefesaBlin");
+    obj.edit204:setLeft(745);
+    obj.edit204:setTop(525);
+    obj.edit204:setWidth(28);
+    obj.edit204:setFontColor("#49244F");
+    obj.edit204:setType("number");
+    obj.edit204:setMin(0);
+    obj.edit204:setMax(35);
+    obj.edit204:setTransparent(true);
+    obj.edit204:setHorzTextAlign("center");
+    obj.edit204:setName("edit204");
+
+    obj.rectangle560 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle560:setParent(obj.popFrmPrincipal);
+    obj.rectangle560:setLeft(642);
+    obj.rectangle560:setTop(565);
+    obj.rectangle560:setWidth(95);
+    obj.rectangle560:setHeight(95);
+    obj.rectangle560:setColor("#D5D5D5");
+    obj.rectangle560:setXradius(47);
+    obj.rectangle560:setYradius(47);
+    obj.rectangle560:setCornerType("round");
+    obj.rectangle560:setStrokeColor("#49244F");
+    obj.rectangle560:setStrokeSize(3);
+    obj.rectangle560:setName("rectangle560");
+
+    obj.rectangle561 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle561:setParent(obj.popFrmPrincipal);
+    obj.rectangle561:setLeft(665);
+    obj.rectangle561:setTop(570);
+    obj.rectangle561:setWidth(45);
+    obj.rectangle561:setHeight(45);
+    obj.rectangle561:setColor("#49244F");
+    obj.rectangle561:setXradius(20);
+    obj.rectangle561:setYradius(20);
+    obj.rectangle561:setCornerType("round");
+    obj.rectangle561:setStrokeColor("#49244F");
+    obj.rectangle561:setStrokeSize(3);
+    obj.rectangle561:setName("rectangle561");
+
+    obj.edit205 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit205:setParent(obj.popFrmPrincipal);
+    obj.edit205:setField("frmVida");
+    obj.edit205:setLeft(673);
+    obj.edit205:setTop(575);
+    obj.edit205:setWidth(28);
+    obj.edit205:setFontColor("#D5D5D5");
+    obj.edit205:setType("number");
+    obj.edit205:setMin(0);
+    obj.edit205:setMax(1000);
+    obj.edit205:setTransparent(true);
+    obj.edit205:setHorzTextAlign("center");
+    obj.edit205:setName("edit205");
+
+    obj.label247 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label247:setParent(obj.popFrmPrincipal);
+    obj.label247:setLeft(668);
+    obj.label247:setTop(625);
+    obj.label247:setText("Vida");
+    obj.label247:setFontSize(20);
+    lfm_setPropAsString(obj.label247, "fontStyle", "bold");
+    obj.label247:setFontColor("#49244F");
+    obj.label247:setName("label247");
 
     obj.popDadivaReves = GUI.fromHandle(_obj_newObject("popup"));
     obj.popDadivaReves:setParent(obj);
@@ -13264,34 +12574,34 @@ local function constructNew_frmWeirdWizard()
     obj.popDadivaReves:setHeight(200);
     obj.popDadivaReves:setBackOpacity(0.5);
 
-    obj.rectangle599 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle599:setParent(obj.popDadivaReves);
-    obj.rectangle599:setAlign("client");
-    obj.rectangle599:setColor("black");
-    lfm_setPropAsString(obj.rectangle599, "corners", "");
-    obj.rectangle599:setXradius(25);
-    obj.rectangle599:setYradius(25);
-    obj.rectangle599:setCornerType("round");
-    obj.rectangle599:setName("rectangle599");
+    obj.rectangle562 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle562:setParent(obj.popDadivaReves);
+    obj.rectangle562:setAlign("client");
+    obj.rectangle562:setColor("black");
+    lfm_setPropAsString(obj.rectangle562, "corners", "");
+    obj.rectangle562:setXradius(25);
+    obj.rectangle562:setYradius(25);
+    obj.rectangle562:setCornerType("round");
+    obj.rectangle562:setName("rectangle562");
 
-    obj.label247 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label247:setParent(obj.popDadivaReves);
-    obj.label247:setText("   DÁDIVA / REVÉS ");
-    obj.label247:setAlign("left");
-    obj.label247:setLeft(180);
-    obj.label247:setTop(-100);
-    obj.label247:setName("label247");
+    obj.label248 = GUI.fromHandle(_obj_newObject("label"));
+    obj.label248:setParent(obj.popDadivaReves);
+    obj.label248:setText("   DÁDIVA / REVÉS ");
+    obj.label248:setAlign("left");
+    obj.label248:setLeft(180);
+    obj.label248:setTop(-100);
+    obj.label248:setName("label248");
 
-    obj.edit221 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit221:setParent(obj.popDadivaReves);
-    obj.edit221:setField("dadivaReves");
-    obj.edit221:setAlign("top");
-    obj.edit221:setWidth(100);
-    obj.edit221:setHeight(100);
-    obj.edit221:setType("number");
-    obj.edit221:setHorzTextAlign("center");
-    obj.edit221:setFontSize(40);
-    obj.edit221:setName("edit221");
+    obj.edit206 = GUI.fromHandle(_obj_newObject("edit"));
+    obj.edit206:setParent(obj.popDadivaReves);
+    obj.edit206:setField("dadivaReves");
+    obj.edit206:setAlign("top");
+    obj.edit206:setWidth(100);
+    obj.edit206:setHeight(100);
+    obj.edit206:setType("number");
+    obj.edit206:setHorzTextAlign("center");
+    obj.edit206:setFontSize(40);
+    obj.edit206:setName("edit206");
 
     obj.button1 = GUI.fromHandle(_obj_newObject("button"));
     obj.button1:setParent(obj.popDadivaReves);
@@ -16149,187 +15459,12 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event120 = obj.edit60:addEventListener("onChange",
-        function ()
-            if sheet.Talento01 == nil then
-                                                      sheet.Talento01 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento01 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento01
-                                                      sheet.Talento01 = string.sub(sheet.Talento01, 1, delCaracteres)
-                                                end
+    obj._e_event120 = obj.label88:addEventListener("onClick",
+        function (event)
+            self.rclTalentos:append();
         end);
 
-    obj._e_event121 = obj.edit61:addEventListener("onChange",
-        function ()
-            if sheet.Talento02 == nil then
-                                                      sheet.Talento02 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento02 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento02
-                                                      sheet.Talento02 = string.sub(sheet.Talento02, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event122 = obj.edit62:addEventListener("onChange",
-        function ()
-            if sheet.Talento03 == nil then
-                                                      sheet.Talento03 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento03 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento03
-                                                      sheet.Talento03 = string.sub(sheet.Talento03, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event123 = obj.edit63:addEventListener("onChange",
-        function ()
-            if sheet.Talento04 == nil then
-                                                      sheet.Talento04 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento04 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento04
-                                                      sheet.Talento04 = string.sub(sheet.Talento04, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event124 = obj.edit64:addEventListener("onChange",
-        function ()
-            if sheet.Talento05 == nil then
-                                                      sheet.Talento05 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento05 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento05
-                                                      sheet.Talento05 = string.sub(sheet.Talento05, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event125 = obj.edit65:addEventListener("onChange",
-        function ()
-            if sheet.Talento06 == nil then
-                                                      sheet.Talento06 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento06 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento06
-                                                      sheet.Talento06 = string.sub(sheet.Talento06, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event126 = obj.edit66:addEventListener("onChange",
-        function ()
-            if sheet.Talento07 == nil then
-                                                      sheet.Talento07 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento07 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento07
-                                                      sheet.Talento07 = string.sub(sheet.Talento07, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event127 = obj.edit67:addEventListener("onChange",
-        function ()
-            if sheet.Talento08 == nil then
-                                                      sheet.Talento08 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento08 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento08
-                                                      sheet.Talento08 = string.sub(sheet.Talento08, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event128 = obj.edit68:addEventListener("onChange",
-        function ()
-            if sheet.Talento09 == nil then
-                                                      sheet.Talento09 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento09 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento09
-                                                      sheet.Talento09 = string.sub(sheet.Talento09, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event129 = obj.edit69:addEventListener("onChange",
-        function ()
-            if sheet.Talento10 == nil then
-                                                      sheet.Talento10 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento10 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento10
-                                                      sheet.Talento10 = string.sub(sheet.Talento10, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event130 = obj.edit70:addEventListener("onChange",
-        function ()
-            if sheet.Talento11 == nil then
-                                                      sheet.Talento11 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento11 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento11
-                                                      sheet.Talento11 = string.sub(sheet.Talento11, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event131 = obj.edit71:addEventListener("onChange",
-        function ()
-            if sheet.Talento12 == nil then
-                                                      sheet.Talento12 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento12 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento12
-                                                      sheet.Talento12 = string.sub(sheet.Talento12, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event132 = obj.edit72:addEventListener("onChange",
-        function ()
-            if sheet.Talento13 == nil then
-                                                      sheet.Talento13 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento13 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento13
-                                                      sheet.Talento13 = string.sub(sheet.Talento13, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event133 = obj.edit73:addEventListener("onChange",
-        function ()
-            if sheet.Talento14 == nil then
-                                                      sheet.Talento14 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento14 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento14
-                                                      sheet.Talento14 = string.sub(sheet.Talento14, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event134 = obj.edit74:addEventListener("onChange",
-        function ()
-            if sheet.Talento15 == nil then
-                                                      sheet.Talento15 = "Talento"
-                                                end
-                                                
-                                                if #sheet.Talento15 > 65 then
-                                                      local delCaracteres = 64 - #sheet.Talento15
-                                                      sheet.Talento15 = string.sub(sheet.Talento15, 1, delCaracteres)
-                                                end
-        end);
-
-    obj._e_event135 = obj.edit75:addEventListener("onChange",
+    obj._e_event121 = obj.edit60:addEventListener("onChange",
         function ()
             if sheet.pCobre == nil then
                                                       sheet.pCobre = "0"
@@ -16341,7 +15476,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event136 = obj.edit76:addEventListener("onChange",
+    obj._e_event122 = obj.edit61:addEventListener("onChange",
         function ()
             if sheet.pPrata == nil then
                                                       sheet.pPrata = "0"
@@ -16353,7 +15488,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event137 = obj.edit77:addEventListener("onChange",
+    obj._e_event123 = obj.edit62:addEventListener("onChange",
         function ()
             if sheet.pOuro == nil then
                                                       sheet.pOuro = "0"
@@ -16365,7 +15500,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event138 = obj.edit78:addEventListener("onChange",
+    obj._e_event124 = obj.edit63:addEventListener("onChange",
         function ()
             if sheet.Magia01 == nil then
                                                       sheet.Magia01 = "--"
@@ -16377,7 +15512,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event139 = obj.edit79:addEventListener("onChange",
+    obj._e_event125 = obj.edit64:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia01 == nil then
                                                       sheet.tradicaoMagia01 = "--"
@@ -16389,7 +15524,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event140 = obj.edit80:addEventListener("onChange",
+    obj._e_event126 = obj.edit65:addEventListener("onChange",
         function ()
             if sheet.alvoMagia01 == nil then
                                                       sheet.alvoMagia01 = "--"
@@ -16401,7 +15536,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event141 = obj.edit81:addEventListener("onChange",
+    obj._e_event127 = obj.edit66:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia01 == nil then
                                                       sheet.duracaoMagia01 = "--"
@@ -16413,7 +15548,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event142 = obj.rectangle305:addEventListener("onClick",
+    obj._e_event128 = obj.rectangle268:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia01 ~= nil and sheet.qtdMagia01 ~= "--"  then
                                                       if sheet.Magia01 == nil then
@@ -16433,7 +15568,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event143 = obj.edit82:addEventListener("onChange",
+    obj._e_event129 = obj.edit67:addEventListener("onChange",
         function ()
             if sheet.qtdMagia01 == nil then
                                                       sheet.qtdMagia01 = "--"
@@ -16445,7 +15580,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event144 = obj.edit83:addEventListener("onChange",
+    obj._e_event130 = obj.edit68:addEventListener("onChange",
         function ()
             if sheet.maxMagia01 == nil then
                                                       sheet.maxMagia01 = "--"
@@ -16457,7 +15592,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event145 = obj.edit84:addEventListener("onChange",
+    obj._e_event131 = obj.edit69:addEventListener("onChange",
         function ()
             if sheet.Magia02 == nil then
                                                       sheet.Magia02 = "--"
@@ -16469,7 +15604,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event146 = obj.edit85:addEventListener("onChange",
+    obj._e_event132 = obj.edit70:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia02 == nil then
                                                       sheet.tradicaoMagia02 = "--"
@@ -16481,7 +15616,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event147 = obj.edit86:addEventListener("onChange",
+    obj._e_event133 = obj.edit71:addEventListener("onChange",
         function ()
             if sheet.alvoMagia02 == nil then
                                                       sheet.alvoMagia02 = "--"
@@ -16493,7 +15628,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event148 = obj.edit87:addEventListener("onChange",
+    obj._e_event134 = obj.edit72:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia02 == nil then
                                                       sheet.duracaoMagia02 = "--"
@@ -16505,7 +15640,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event149 = obj.rectangle315:addEventListener("onClick",
+    obj._e_event135 = obj.rectangle278:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia02 ~= nil and sheet.qtdMagia02 ~= "--"  then
                                                       if sheet.Magia02 == nil then
@@ -16525,7 +15660,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event150 = obj.edit88:addEventListener("onChange",
+    obj._e_event136 = obj.edit73:addEventListener("onChange",
         function ()
             if sheet.qtdMagia02 == nil then
                                                       sheet.qtdMagia02 = "--"
@@ -16537,7 +15672,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event151 = obj.edit89:addEventListener("onChange",
+    obj._e_event137 = obj.edit74:addEventListener("onChange",
         function ()
             if sheet.maxMagia02 == nil then
                                                       sheet.maxMagia02 = "--"
@@ -16549,7 +15684,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event152 = obj.edit90:addEventListener("onChange",
+    obj._e_event138 = obj.edit75:addEventListener("onChange",
         function ()
             if sheet.Magia03 == nil then
                                                       sheet.Magia03 = "--"
@@ -16561,7 +15696,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event153 = obj.edit91:addEventListener("onChange",
+    obj._e_event139 = obj.edit76:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia03 == nil then
                                                       sheet.tradicaoMagia03 = "--"
@@ -16573,7 +15708,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event154 = obj.edit92:addEventListener("onChange",
+    obj._e_event140 = obj.edit77:addEventListener("onChange",
         function ()
             if sheet.alvoMagia03 == nil then
                                                       sheet.alvoMagia03 = "--"
@@ -16585,7 +15720,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event155 = obj.edit93:addEventListener("onChange",
+    obj._e_event141 = obj.edit78:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia03 == nil then
                                                       sheet.duracaoMagia03 = "--"
@@ -16597,7 +15732,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event156 = obj.rectangle325:addEventListener("onClick",
+    obj._e_event142 = obj.rectangle288:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia03 ~= nil and sheet.qtdMagia03 ~= "--"  then
                                                       if sheet.Magia03 == nil then
@@ -16617,7 +15752,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event157 = obj.edit94:addEventListener("onChange",
+    obj._e_event143 = obj.edit79:addEventListener("onChange",
         function ()
             if sheet.qtdMagia03 == nil then
                                                       sheet.qtdMagia03 = "--"
@@ -16629,7 +15764,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event158 = obj.edit95:addEventListener("onChange",
+    obj._e_event144 = obj.edit80:addEventListener("onChange",
         function ()
             if sheet.maxMagia03 == nil then
                                                       sheet.maxMagia03 = "--"
@@ -16641,7 +15776,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event159 = obj.edit96:addEventListener("onChange",
+    obj._e_event145 = obj.edit81:addEventListener("onChange",
         function ()
             if sheet.Magia04 == nil then
                                                       sheet.Magia04 = "--"
@@ -16653,7 +15788,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event160 = obj.edit97:addEventListener("onChange",
+    obj._e_event146 = obj.edit82:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia04 == nil then
                                                       sheet.tradicaoMagia04 = "--"
@@ -16665,7 +15800,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event161 = obj.edit98:addEventListener("onChange",
+    obj._e_event147 = obj.edit83:addEventListener("onChange",
         function ()
             if sheet.alvoMagia04 == nil then
                                                       sheet.alvoMagia04 = "--"
@@ -16677,7 +15812,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event162 = obj.edit99:addEventListener("onChange",
+    obj._e_event148 = obj.edit84:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia04 == nil then
                                                       sheet.duracaoMagia04 = "--"
@@ -16689,7 +15824,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event163 = obj.rectangle335:addEventListener("onClick",
+    obj._e_event149 = obj.rectangle298:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia04 ~= nil and sheet.qtdMagia04 ~= "--"  then
                                                       if sheet.Magia04 == nil then
@@ -16709,7 +15844,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event164 = obj.edit100:addEventListener("onChange",
+    obj._e_event150 = obj.edit85:addEventListener("onChange",
         function ()
             if sheet.qtdMagia04 == nil then
                                                       sheet.qtdMagia04 = "--"
@@ -16721,7 +15856,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event165 = obj.edit101:addEventListener("onChange",
+    obj._e_event151 = obj.edit86:addEventListener("onChange",
         function ()
             if sheet.maxMagia04 == nil then
                                                       sheet.maxMagia04 = "--"
@@ -16733,7 +15868,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event166 = obj.edit102:addEventListener("onChange",
+    obj._e_event152 = obj.edit87:addEventListener("onChange",
         function ()
             if sheet.Magia05 == nil then
                                                       sheet.Magia05 = "--"
@@ -16745,7 +15880,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event167 = obj.edit103:addEventListener("onChange",
+    obj._e_event153 = obj.edit88:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia05 == nil then
                                                       sheet.tradicaoMagia05 = "--"
@@ -16757,7 +15892,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event168 = obj.edit104:addEventListener("onChange",
+    obj._e_event154 = obj.edit89:addEventListener("onChange",
         function ()
             if sheet.alvoMagia05 == nil then
                                                       sheet.alvoMagia05 = "--"
@@ -16769,7 +15904,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event169 = obj.edit105:addEventListener("onChange",
+    obj._e_event155 = obj.edit90:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia05 == nil then
                                                       sheet.duracaoMagia05 = "--"
@@ -16781,7 +15916,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event170 = obj.rectangle345:addEventListener("onClick",
+    obj._e_event156 = obj.rectangle308:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia05 ~= nil and sheet.qtdMagia05 ~= "--"  then
                                                       if sheet.Magia05 == nil then
@@ -16801,7 +15936,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event171 = obj.edit106:addEventListener("onChange",
+    obj._e_event157 = obj.edit91:addEventListener("onChange",
         function ()
             if sheet.qtdMagia05 == nil then
                                                       sheet.qtdMagia05 = "--"
@@ -16813,7 +15948,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event172 = obj.edit107:addEventListener("onChange",
+    obj._e_event158 = obj.edit92:addEventListener("onChange",
         function ()
             if sheet.maxMagia05 == nil then
                                                       sheet.maxMagia05 = "--"
@@ -16825,7 +15960,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event173 = obj.edit108:addEventListener("onChange",
+    obj._e_event159 = obj.edit93:addEventListener("onChange",
         function ()
             if sheet.Magia06 == nil then
                                                       sheet.Magia06 = "--"
@@ -16837,7 +15972,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event174 = obj.edit109:addEventListener("onChange",
+    obj._e_event160 = obj.edit94:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia06 == nil then
                                                       sheet.tradicaoMagia06 = "--"
@@ -16849,7 +15984,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event175 = obj.edit110:addEventListener("onChange",
+    obj._e_event161 = obj.edit95:addEventListener("onChange",
         function ()
             if sheet.alvoMagia06 == nil then
                                                       sheet.alvoMagia06 = "--"
@@ -16861,7 +15996,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event176 = obj.edit111:addEventListener("onChange",
+    obj._e_event162 = obj.edit96:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia06 == nil then
                                                       sheet.duracaoMagia06 = "--"
@@ -16873,7 +16008,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event177 = obj.rectangle355:addEventListener("onClick",
+    obj._e_event163 = obj.rectangle318:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia06 ~= nil and sheet.qtdMagia06 ~= "--"  then
                                                       if sheet.Magia06 == nil then
@@ -16893,7 +16028,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event178 = obj.edit112:addEventListener("onChange",
+    obj._e_event164 = obj.edit97:addEventListener("onChange",
         function ()
             if sheet.qtdMagia06 == nil then
                                                       sheet.qtdMagia06 = "--"
@@ -16905,7 +16040,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event179 = obj.edit113:addEventListener("onChange",
+    obj._e_event165 = obj.edit98:addEventListener("onChange",
         function ()
             if sheet.maxMagia06 == nil then
                                                       sheet.maxMagia06 = "--"
@@ -16917,7 +16052,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event180 = obj.edit114:addEventListener("onChange",
+    obj._e_event166 = obj.edit99:addEventListener("onChange",
         function ()
             if sheet.Magia07 == nil then
                                                       sheet.Magia07 = "--"
@@ -16929,7 +16064,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event181 = obj.edit115:addEventListener("onChange",
+    obj._e_event167 = obj.edit100:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia07 == nil then
                                                       sheet.tradicaoMagia07 = "--"
@@ -16941,7 +16076,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event182 = obj.edit116:addEventListener("onChange",
+    obj._e_event168 = obj.edit101:addEventListener("onChange",
         function ()
             if sheet.alvoMagia07 == nil then
                                                       sheet.alvoMagia07 = "--"
@@ -16953,7 +16088,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event183 = obj.edit117:addEventListener("onChange",
+    obj._e_event169 = obj.edit102:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia07 == nil then
                                                       sheet.duracaoMagia07 = "--"
@@ -16965,7 +16100,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event184 = obj.rectangle365:addEventListener("onClick",
+    obj._e_event170 = obj.rectangle328:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia07 ~= nil and sheet.qtdMagia07 ~= "--"  then
                                                       if sheet.Magia07 == nil then
@@ -16985,7 +16120,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event185 = obj.edit118:addEventListener("onChange",
+    obj._e_event171 = obj.edit103:addEventListener("onChange",
         function ()
             if sheet.qtdMagia07 == nil then
                                                       sheet.qtdMagia07 = "--"
@@ -16997,7 +16132,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event186 = obj.edit119:addEventListener("onChange",
+    obj._e_event172 = obj.edit104:addEventListener("onChange",
         function ()
             if sheet.maxMagia07 == nil then
                                                       sheet.maxMagia07 = "--"
@@ -17009,7 +16144,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event187 = obj.edit120:addEventListener("onChange",
+    obj._e_event173 = obj.edit105:addEventListener("onChange",
         function ()
             if sheet.Magia08 == nil then
                                                       sheet.Magia08 = "--"
@@ -17021,7 +16156,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event188 = obj.edit121:addEventListener("onChange",
+    obj._e_event174 = obj.edit106:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia08 == nil then
                                                       sheet.tradicaoMagia08 = "--"
@@ -17033,7 +16168,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event189 = obj.edit122:addEventListener("onChange",
+    obj._e_event175 = obj.edit107:addEventListener("onChange",
         function ()
             if sheet.alvoMagia08 == nil then
                                                       sheet.alvoMagia08 = "--"
@@ -17045,7 +16180,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event190 = obj.edit123:addEventListener("onChange",
+    obj._e_event176 = obj.edit108:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia08 == nil then
                                                       sheet.duracaoMagia08 = "--"
@@ -17057,7 +16192,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event191 = obj.rectangle375:addEventListener("onClick",
+    obj._e_event177 = obj.rectangle338:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia08 ~= nil and sheet.qtdMagia08 ~= "--"  then
                                                       if sheet.Magia08 == nil then
@@ -17077,7 +16212,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event192 = obj.edit124:addEventListener("onChange",
+    obj._e_event178 = obj.edit109:addEventListener("onChange",
         function ()
             if sheet.qtdMagia08 == nil then
                                                       sheet.qtdMagia08 = "--"
@@ -17089,7 +16224,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event193 = obj.edit125:addEventListener("onChange",
+    obj._e_event179 = obj.edit110:addEventListener("onChange",
         function ()
             if sheet.maxMagia08 == nil then
                                                       sheet.maxMagia08 = "--"
@@ -17101,7 +16236,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event194 = obj.edit126:addEventListener("onChange",
+    obj._e_event180 = obj.edit111:addEventListener("onChange",
         function ()
             if sheet.Magia09 == nil then
                                                       sheet.Magia09 = "--"
@@ -17113,7 +16248,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event195 = obj.edit127:addEventListener("onChange",
+    obj._e_event181 = obj.edit112:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia09 == nil then
                                                       sheet.tradicaoMagia09 = "--"
@@ -17125,7 +16260,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event196 = obj.edit128:addEventListener("onChange",
+    obj._e_event182 = obj.edit113:addEventListener("onChange",
         function ()
             if sheet.alvoMagia09 == nil then
                                                       sheet.alvoMagia09 = "--"
@@ -17137,7 +16272,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event197 = obj.edit129:addEventListener("onChange",
+    obj._e_event183 = obj.edit114:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia09 == nil then
                                                       sheet.duracaoMagia09 = "--"
@@ -17149,7 +16284,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event198 = obj.rectangle385:addEventListener("onClick",
+    obj._e_event184 = obj.rectangle348:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia09 ~= nil and sheet.qtdMagia09 ~= "--"  then
                                                       if sheet.Magia09 == nil then
@@ -17169,7 +16304,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event199 = obj.edit130:addEventListener("onChange",
+    obj._e_event185 = obj.edit115:addEventListener("onChange",
         function ()
             if sheet.qtdMagia09 == nil then
                                                       sheet.qtdMagia09 = "--"
@@ -17181,7 +16316,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event200 = obj.edit131:addEventListener("onChange",
+    obj._e_event186 = obj.edit116:addEventListener("onChange",
         function ()
             if sheet.maxMagia09 == nil then
                                                       sheet.maxMagia09 = "--"
@@ -17193,7 +16328,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event201 = obj.edit132:addEventListener("onChange",
+    obj._e_event187 = obj.edit117:addEventListener("onChange",
         function ()
             if sheet.Magia10 == nil then
                                                       sheet.Magia10 = "--"
@@ -17205,7 +16340,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event202 = obj.edit133:addEventListener("onChange",
+    obj._e_event188 = obj.edit118:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia10 == nil then
                                                       sheet.tradicaoMagia10 = "--"
@@ -17217,7 +16352,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event203 = obj.edit134:addEventListener("onChange",
+    obj._e_event189 = obj.edit119:addEventListener("onChange",
         function ()
             if sheet.alvoMagia10 == nil then
                                                       sheet.alvoMagia10 = "--"
@@ -17229,7 +16364,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event204 = obj.edit135:addEventListener("onChange",
+    obj._e_event190 = obj.edit120:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia10 == nil then
                                                       sheet.duracaoMagia10 = "--"
@@ -17241,7 +16376,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event205 = obj.rectangle395:addEventListener("onClick",
+    obj._e_event191 = obj.rectangle358:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia10 ~= nil and sheet.qtdMagia10 ~= "--"  then
                                                       if sheet.Magia10 == nil then
@@ -17261,7 +16396,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event206 = obj.edit136:addEventListener("onChange",
+    obj._e_event192 = obj.edit121:addEventListener("onChange",
         function ()
             if sheet.qtdMagia10 == nil then
                                                       sheet.qtdMagia10 = "--"
@@ -17273,7 +16408,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event207 = obj.edit137:addEventListener("onChange",
+    obj._e_event193 = obj.edit122:addEventListener("onChange",
         function ()
             if sheet.maxMagia10 == nil then
                                                       sheet.maxMagia10 = "--"
@@ -17285,7 +16420,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event208 = obj.edit138:addEventListener("onChange",
+    obj._e_event194 = obj.edit123:addEventListener("onChange",
         function ()
             if sheet.Magia11 == nil then
                                                       sheet.Magia11 = "--"
@@ -17297,7 +16432,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event209 = obj.edit139:addEventListener("onChange",
+    obj._e_event195 = obj.edit124:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia11 == nil then
                                                       sheet.tradicaoMagia11 = "--"
@@ -17309,7 +16444,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event210 = obj.edit140:addEventListener("onChange",
+    obj._e_event196 = obj.edit125:addEventListener("onChange",
         function ()
             if sheet.alvoMagia11 == nil then
                                                       sheet.alvoMagia11 = "--"
@@ -17321,7 +16456,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event211 = obj.edit141:addEventListener("onChange",
+    obj._e_event197 = obj.edit126:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia11 == nil then
                                                       sheet.duracaoMagia11 = "--"
@@ -17333,7 +16468,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event212 = obj.rectangle410:addEventListener("onClick",
+    obj._e_event198 = obj.rectangle373:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia11 ~= nil and sheet.qtdMagia11 ~= "--"  then
                                                       if sheet.Magia11 == nil then
@@ -17353,7 +16488,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event213 = obj.edit142:addEventListener("onChange",
+    obj._e_event199 = obj.edit127:addEventListener("onChange",
         function ()
             if sheet.qtdMagia11 == nil then
                                                       sheet.qtdMagia11 = "--"
@@ -17365,7 +16500,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event214 = obj.edit143:addEventListener("onChange",
+    obj._e_event200 = obj.edit128:addEventListener("onChange",
         function ()
             if sheet.maxMagia11 == nil then
                                                       sheet.maxMagia11 = "--"
@@ -17377,7 +16512,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event215 = obj.edit144:addEventListener("onChange",
+    obj._e_event201 = obj.edit129:addEventListener("onChange",
         function ()
             if sheet.Magia12 == nil then
                                                       sheet.Magia12 = "--"
@@ -17389,7 +16524,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event216 = obj.edit145:addEventListener("onChange",
+    obj._e_event202 = obj.edit130:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia12 == nil then
                                                       sheet.tradicaoMagia12 = "--"
@@ -17401,7 +16536,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event217 = obj.edit146:addEventListener("onChange",
+    obj._e_event203 = obj.edit131:addEventListener("onChange",
         function ()
             if sheet.alvoMagia12 == nil then
                                                       sheet.alvoMagia12 = "--"
@@ -17413,7 +16548,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event218 = obj.edit147:addEventListener("onChange",
+    obj._e_event204 = obj.edit132:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia12 == nil then
                                                       sheet.duracaoMagia12 = "--"
@@ -17425,7 +16560,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event219 = obj.rectangle420:addEventListener("onClick",
+    obj._e_event205 = obj.rectangle383:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia12 ~= nil and sheet.qtdMagia12 ~= "--"  then
                                                       if sheet.Magia12 == nil then
@@ -17445,7 +16580,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event220 = obj.edit148:addEventListener("onChange",
+    obj._e_event206 = obj.edit133:addEventListener("onChange",
         function ()
             if sheet.qtdMagia12 == nil then
                                                       sheet.qtdMagia12 = "--"
@@ -17457,7 +16592,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event221 = obj.edit149:addEventListener("onChange",
+    obj._e_event207 = obj.edit134:addEventListener("onChange",
         function ()
             if sheet.maxMagia12 == nil then
                                                       sheet.maxMagia12 = "--"
@@ -17469,7 +16604,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event222 = obj.edit150:addEventListener("onChange",
+    obj._e_event208 = obj.edit135:addEventListener("onChange",
         function ()
             if sheet.Magia13 == nil then
                                                       sheet.Magia13 = "--"
@@ -17481,7 +16616,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event223 = obj.edit151:addEventListener("onChange",
+    obj._e_event209 = obj.edit136:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia13 == nil then
                                                       sheet.tradicaoMagia13 = "--"
@@ -17493,7 +16628,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event224 = obj.edit152:addEventListener("onChange",
+    obj._e_event210 = obj.edit137:addEventListener("onChange",
         function ()
             if sheet.alvoMagia13 == nil then
                                                       sheet.alvoMagia13 = "--"
@@ -17505,7 +16640,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event225 = obj.edit153:addEventListener("onChange",
+    obj._e_event211 = obj.edit138:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia13 == nil then
                                                       sheet.duracaoMagia13 = "--"
@@ -17517,7 +16652,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event226 = obj.rectangle430:addEventListener("onClick",
+    obj._e_event212 = obj.rectangle393:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia13 ~= nil and sheet.qtdMagia13 ~= "--"  then
                                                       if sheet.Magia13 == nil then
@@ -17537,7 +16672,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event227 = obj.edit154:addEventListener("onChange",
+    obj._e_event213 = obj.edit139:addEventListener("onChange",
         function ()
             if sheet.qtdMagia13 == nil then
                                                       sheet.qtdMagia13 = "--"
@@ -17549,7 +16684,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event228 = obj.edit155:addEventListener("onChange",
+    obj._e_event214 = obj.edit140:addEventListener("onChange",
         function ()
             if sheet.maxMagia13 == nil then
                                                       sheet.maxMagia13 = "--"
@@ -17561,7 +16696,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event229 = obj.edit156:addEventListener("onChange",
+    obj._e_event215 = obj.edit141:addEventListener("onChange",
         function ()
             if sheet.Magia14 == nil then
                                                       sheet.Magia14 = "--"
@@ -17573,7 +16708,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event230 = obj.edit157:addEventListener("onChange",
+    obj._e_event216 = obj.edit142:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia14 == nil then
                                                       sheet.tradicaoMagia14 = "--"
@@ -17585,7 +16720,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event231 = obj.edit158:addEventListener("onChange",
+    obj._e_event217 = obj.edit143:addEventListener("onChange",
         function ()
             if sheet.alvoMagia14 == nil then
                                                       sheet.alvoMagia14 = "--"
@@ -17597,7 +16732,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event232 = obj.edit159:addEventListener("onChange",
+    obj._e_event218 = obj.edit144:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia14 == nil then
                                                       sheet.duracaoMagia14 = "--"
@@ -17609,7 +16744,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event233 = obj.rectangle440:addEventListener("onClick",
+    obj._e_event219 = obj.rectangle403:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia14 ~= nil and sheet.qtdMagia14 ~= "--"  then
                                                       if sheet.Magia14 == nil then
@@ -17629,7 +16764,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event234 = obj.edit160:addEventListener("onChange",
+    obj._e_event220 = obj.edit145:addEventListener("onChange",
         function ()
             if sheet.qtdMagia14 == nil then
                                                       sheet.qtdMagia14 = "--"
@@ -17641,7 +16776,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event235 = obj.edit161:addEventListener("onChange",
+    obj._e_event221 = obj.edit146:addEventListener("onChange",
         function ()
             if sheet.maxMagia14 == nil then
                                                       sheet.maxMagia14 = "--"
@@ -17653,7 +16788,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event236 = obj.edit162:addEventListener("onChange",
+    obj._e_event222 = obj.edit147:addEventListener("onChange",
         function ()
             if sheet.Magia15 == nil then
                                                       sheet.Magia15 = "--"
@@ -17665,7 +16800,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event237 = obj.edit163:addEventListener("onChange",
+    obj._e_event223 = obj.edit148:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia15 == nil then
                                                       sheet.tradicaoMagia15 = "--"
@@ -17677,7 +16812,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event238 = obj.edit164:addEventListener("onChange",
+    obj._e_event224 = obj.edit149:addEventListener("onChange",
         function ()
             if sheet.alvoMagia15 == nil then
                                                       sheet.alvoMagia15 = "--"
@@ -17689,7 +16824,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event239 = obj.edit165:addEventListener("onChange",
+    obj._e_event225 = obj.edit150:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia15 == nil then
                                                       sheet.duracaoMagia15 = "--"
@@ -17701,7 +16836,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event240 = obj.rectangle450:addEventListener("onClick",
+    obj._e_event226 = obj.rectangle413:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia15 ~= nil and sheet.qtdMagia15 ~= "--"  then
                                                       if sheet.Magia15 == nil then
@@ -17721,7 +16856,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event241 = obj.edit166:addEventListener("onChange",
+    obj._e_event227 = obj.edit151:addEventListener("onChange",
         function ()
             if sheet.qtdMagia15 == nil then
                                                       sheet.qtdMagia15 = "--"
@@ -17733,7 +16868,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event242 = obj.edit167:addEventListener("onChange",
+    obj._e_event228 = obj.edit152:addEventListener("onChange",
         function ()
             if sheet.maxMagia15 == nil then
                                                       sheet.maxMagia15 = "--"
@@ -17745,7 +16880,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event243 = obj.edit168:addEventListener("onChange",
+    obj._e_event229 = obj.edit153:addEventListener("onChange",
         function ()
             if sheet.Magia16 == nil then
                                                       sheet.Magia16 = "--"
@@ -17757,7 +16892,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event244 = obj.edit169:addEventListener("onChange",
+    obj._e_event230 = obj.edit154:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia16 == nil then
                                                       sheet.tradicaoMagia16 = "--"
@@ -17769,7 +16904,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event245 = obj.edit170:addEventListener("onChange",
+    obj._e_event231 = obj.edit155:addEventListener("onChange",
         function ()
             if sheet.alvoMagia16 == nil then
                                                       sheet.alvoMagia16 = "--"
@@ -17781,7 +16916,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event246 = obj.edit171:addEventListener("onChange",
+    obj._e_event232 = obj.edit156:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia16 == nil then
                                                       sheet.duracaoMagia16 = "--"
@@ -17793,7 +16928,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event247 = obj.rectangle460:addEventListener("onClick",
+    obj._e_event233 = obj.rectangle423:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia16 ~= nil and sheet.qtdMagia16 ~= "--"  then
                                                       if sheet.Magia16 == nil then
@@ -17813,7 +16948,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event248 = obj.edit172:addEventListener("onChange",
+    obj._e_event234 = obj.edit157:addEventListener("onChange",
         function ()
             if sheet.qtdMagia16 == nil then
                                                       sheet.qtdMagia16 = "--"
@@ -17825,7 +16960,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event249 = obj.edit173:addEventListener("onChange",
+    obj._e_event235 = obj.edit158:addEventListener("onChange",
         function ()
             if sheet.maxMagia16 == nil then
                                                       sheet.maxMagia16 = "--"
@@ -17837,7 +16972,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event250 = obj.edit174:addEventListener("onChange",
+    obj._e_event236 = obj.edit159:addEventListener("onChange",
         function ()
             if sheet.Magia17 == nil then
                                                       sheet.Magia17 = "--"
@@ -17849,7 +16984,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event251 = obj.edit175:addEventListener("onChange",
+    obj._e_event237 = obj.edit160:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia17 == nil then
                                                       sheet.tradicaoMagia17 = "--"
@@ -17861,7 +16996,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event252 = obj.edit176:addEventListener("onChange",
+    obj._e_event238 = obj.edit161:addEventListener("onChange",
         function ()
             if sheet.alvoMagia17 == nil then
                                                       sheet.alvoMagia17 = "--"
@@ -17873,7 +17008,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event253 = obj.edit177:addEventListener("onChange",
+    obj._e_event239 = obj.edit162:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia17 == nil then
                                                       sheet.duracaoMagia17 = "--"
@@ -17885,7 +17020,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event254 = obj.rectangle470:addEventListener("onClick",
+    obj._e_event240 = obj.rectangle433:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia17 ~= nil and sheet.qtdMagia17 ~= "--"  then
                                                       if sheet.Magia17 == nil then
@@ -17905,7 +17040,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event255 = obj.edit178:addEventListener("onChange",
+    obj._e_event241 = obj.edit163:addEventListener("onChange",
         function ()
             if sheet.qtdMagia17 == nil then
                                                       sheet.qtdMagia17 = "--"
@@ -17917,7 +17052,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event256 = obj.edit179:addEventListener("onChange",
+    obj._e_event242 = obj.edit164:addEventListener("onChange",
         function ()
             if sheet.maxMagia17 == nil then
                                                       sheet.maxMagia17 = "--"
@@ -17929,7 +17064,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event257 = obj.edit180:addEventListener("onChange",
+    obj._e_event243 = obj.edit165:addEventListener("onChange",
         function ()
             if sheet.Magia18 == nil then
                                                       sheet.Magia18 = "--"
@@ -17941,7 +17076,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event258 = obj.edit181:addEventListener("onChange",
+    obj._e_event244 = obj.edit166:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia18 == nil then
                                                       sheet.tradicaoMagia18 = "--"
@@ -17953,7 +17088,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event259 = obj.edit182:addEventListener("onChange",
+    obj._e_event245 = obj.edit167:addEventListener("onChange",
         function ()
             if sheet.alvoMagia18 == nil then
                                                       sheet.alvoMagia18 = "--"
@@ -17965,7 +17100,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event260 = obj.edit183:addEventListener("onChange",
+    obj._e_event246 = obj.edit168:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia18 == nil then
                                                       sheet.duracaoMagia18 = "--"
@@ -17977,7 +17112,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event261 = obj.rectangle480:addEventListener("onClick",
+    obj._e_event247 = obj.rectangle443:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia18 ~= nil and sheet.qtdMagia18 ~= "--"  then
                                                       if sheet.Magia18 == nil then
@@ -17997,7 +17132,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event262 = obj.edit184:addEventListener("onChange",
+    obj._e_event248 = obj.edit169:addEventListener("onChange",
         function ()
             if sheet.qtdMagia18 == nil then
                                                       sheet.qtdMagia18 = "--"
@@ -18009,7 +17144,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event263 = obj.edit185:addEventListener("onChange",
+    obj._e_event249 = obj.edit170:addEventListener("onChange",
         function ()
             if sheet.maxMagia18 == nil then
                                                       sheet.maxMagia18 = "--"
@@ -18021,7 +17156,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event264 = obj.edit186:addEventListener("onChange",
+    obj._e_event250 = obj.edit171:addEventListener("onChange",
         function ()
             if sheet.Magia19 == nil then
                                                       sheet.Magia19 = "--"
@@ -18033,7 +17168,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event265 = obj.edit187:addEventListener("onChange",
+    obj._e_event251 = obj.edit172:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia19 == nil then
                                                       sheet.tradicaoMagia19 = "--"
@@ -18045,7 +17180,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event266 = obj.edit188:addEventListener("onChange",
+    obj._e_event252 = obj.edit173:addEventListener("onChange",
         function ()
             if sheet.alvoMagia19 == nil then
                                                       sheet.alvoMagia19 = "--"
@@ -18057,7 +17192,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event267 = obj.edit189:addEventListener("onChange",
+    obj._e_event253 = obj.edit174:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia19 == nil then
                                                       sheet.duracaoMagia19 = "--"
@@ -18069,7 +17204,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event268 = obj.rectangle490:addEventListener("onClick",
+    obj._e_event254 = obj.rectangle453:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia19 ~= nil and sheet.qtdMagia19 ~= "--"  then
                                                       if sheet.Magia19 == nil then
@@ -18089,7 +17224,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event269 = obj.edit190:addEventListener("onChange",
+    obj._e_event255 = obj.edit175:addEventListener("onChange",
         function ()
             if sheet.qtdMagia19 == nil then
                                                       sheet.qtdMagia19 = "--"
@@ -18101,7 +17236,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event270 = obj.edit191:addEventListener("onChange",
+    obj._e_event256 = obj.edit176:addEventListener("onChange",
         function ()
             if sheet.maxMagia19 == nil then
                                                       sheet.maxMagia19 = "--"
@@ -18113,7 +17248,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event271 = obj.edit192:addEventListener("onChange",
+    obj._e_event257 = obj.edit177:addEventListener("onChange",
         function ()
             if sheet.Magia20 == nil then
                                                       sheet.Magia20 = "--"
@@ -18125,7 +17260,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event272 = obj.edit193:addEventListener("onChange",
+    obj._e_event258 = obj.edit178:addEventListener("onChange",
         function ()
             if sheet.tradicaoMagia20 == nil then
                                                       sheet.tradicaoMagia20 = "--"
@@ -18137,7 +17272,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event273 = obj.edit194:addEventListener("onChange",
+    obj._e_event259 = obj.edit179:addEventListener("onChange",
         function ()
             if sheet.alvoMagia20 == nil then
                                                       sheet.alvoMagia20 = "--"
@@ -18149,7 +17284,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event274 = obj.edit195:addEventListener("onChange",
+    obj._e_event260 = obj.edit180:addEventListener("onChange",
         function ()
             if sheet.duracaoMagia20 == nil then
                                                       sheet.duracaoMagia20 = "--"
@@ -18161,7 +17296,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event275 = obj.rectangle500:addEventListener("onClick",
+    obj._e_event261 = obj.rectangle463:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia20 ~= nil and sheet.qtdMagia20 ~= "--"  then
                                                       if sheet.Magia20 == nil then
@@ -18181,7 +17316,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event276 = obj.edit196:addEventListener("onChange",
+    obj._e_event262 = obj.edit181:addEventListener("onChange",
         function ()
             if sheet.qtdMagia20 == nil then
                                                       sheet.qtdMagia20 = "--"
@@ -18193,7 +17328,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event277 = obj.edit197:addEventListener("onChange",
+    obj._e_event263 = obj.edit182:addEventListener("onChange",
         function ()
             if sheet.maxMagia20 == nil then
                                                       sheet.maxMagia20 = "--"
@@ -18205,7 +17340,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event278 = obj.label196:addEventListener("onClick",
+    obj._e_event264 = obj.label197:addEventListener("onClick",
         function (event)
             local msg = "Força Debilitada: Você faz teste de força com 1 revés, e você concede 1 dádiva em jogadas contra sua força."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18213,7 +17348,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event279 = obj.label197:addEventListener("onClick",
+    obj._e_event265 = obj.label198:addEventListener("onClick",
         function (event)
             local msg = "Agilidade Debilitada: Você faz teste de agilidade com 1 revés, e você concede 1 dádiva em jogadas contra sua agilidade."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18221,7 +17356,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event280 = obj.label198:addEventListener("onClick",
+    obj._e_event266 = obj.label199:addEventListener("onClick",
         function (event)
             local msg = "Intelecto Debilitado: Você faz teste de intelecto com 1 revés, e você concede 1 dádiva em jogadas contra seu intelecto."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18229,7 +17364,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event281 = obj.label199:addEventListener("onClick",
+    obj._e_event267 = obj.label200:addEventListener("onClick",
         function (event)
             local msg = "Vontade Debilitada: Você faz teste de vontade com 1 revés, e você concede 1 dádiva em jogadas contra sua vontade."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18237,7 +17372,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event282 = obj.label200:addEventListener("onClick",
+    obj._e_event268 = obj.label201:addEventListener("onClick",
         function (event)
             local msg = "Adormecido: Se você estiver inconsciente por estar dormindo naturalmente, você deixa de estar inconsciente quando uma criatura usar uma ação para chacoalhar você, chutá-lo ou fazer outra coisa para acordar você. Um barulho alto pode remover a aflição se você tiver sucesso em uma rolagem de sorte. O tempo passado dormindo conta como repouso para os propósitos de curar dano. Se o seu sono não for interrompido, você acorda naturalmente quando quiser."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18245,7 +17380,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event283 = obj.label201:addEventListener("onClick",
+    obj._e_event269 = obj.label202:addEventListener("onClick",
         function (event)
             local msg = "Amaldiçoado: Você faz rolagens de sorte com 1 revés."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18253,7 +17388,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event284 = obj.label202:addEventListener("onClick",
+    obj._e_event270 = obj.label203:addEventListener("onClick",
         function (event)
             local msg = "Amedrontado: Você teme a fonte desta aflição — uma criatura, um objeto, um espaço ou alguma outra coisa. Enquanto você tiver linha de visão para a fonte do seu medo, você faz rolagens de atributo com 1 revés e concede 1 dádiva em rolagens de atributo contra você."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18261,7 +17396,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event285 = obj.label203:addEventListener("onClick",
+    obj._e_event271 = obj.label204:addEventListener("onClick",
         function (event)
             local msg = "Atordoado: Você não pode usar ações ou reações. A sua Velocidade diminui a 0 e você não se beneficia de aumentos à Velocidade até esta aflição terminar. Você concede 2 dádivas em rolagens contra você e faz rolagens de atributo com 2 reveses."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18269,7 +17404,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event286 = obj.label204:addEventListener("onClick",
+    obj._e_event272 = obj.label205:addEventListener("onClick",
         function (event)
             local msg = "Caído: Você está deitado no chão. Você não pode usar reações. Você concede 1 dádiva em rolagens feitas para atacar você com armas corpo a corpo, mas impõe 1 revés em rolagens feitas para atacar você com armas à distância. Você somente pode usar seu movimento para rastejar ou se levantar."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18277,7 +17412,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event287 = obj.label205:addEventListener("onClick",
+    obj._e_event273 = obj.label206:addEventListener("onClick",
         function (event)
             local msg = "Cego: Você não consegue enxergar, portanto não tem linha de visão para nada. Você trata todas as criaturas e objetos como estando invisíveis. Se você quiser atacar ou interagir com alguma coisa, deve supor a localização do alvo ou localizá-lo usando outros sentidos, o que geralmente significa que você faz a rolagem com 3 reveses. Você não consegue usar reações que dependam da visão. Por fim, sua Velocidade é reduzida pela metade."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18285,7 +17420,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event288 = obj.label206:addEventListener("onClick",
+    obj._e_event274 = obj.label207:addEventListener("onClick",
         function (event)
             local msg = "Confuso: Você fica incapaz de compreender o que acontece ao seu redor. Você não pode usar reações e faz rolagens de Intelecto e Vontade com 1 revés."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18293,7 +17428,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event289 = obj.label207:addEventListener("onClick",
+    obj._e_event275 = obj.label208:addEventListener("onClick",
         function (event)
             local msg = "Controlado: Você fica sob o controle da fonte desta aflição. Seu turno acontece junto com o do seu controlador e ele decide o que você faz, usando os seus traços, talentos e feitiços. Se você já tiver feito um turno ao receber esta aflição, você faz um turno como descrito na rodada seguinte. Enquanto controlado, você trata a fonte desta aflição como um aliado."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18301,7 +17436,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event290 = obj.label208:addEventListener("onClick",
+    obj._e_event276 = obj.label209:addEventListener("onClick",
         function (event)
             local msg = "Enfraquecido: Você faz rolagens de Força e de Agilidade com 1 revés, e você concede 1 dádiva em rolagens contra sua Força e Agilidade. Além disso, a sua Velocidade é reduzida pela metade e você não se beneficia de aumentos à Velocidade."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18309,7 +17444,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event291 = obj.label209:addEventListener("onClick",
+    obj._e_event277 = obj.label210:addEventListener("onClick",
         function (event)
             local msg = "Envenenado: Você foi submetido a uma peçonha, veneno ou outro tipo de toxina. Você faz rolagens de atributo com 1 revés e concede 1 dádiva em rolagens contra você. Além disso, você perde 1d6 de Vida ao final de cada rodada."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18317,7 +17452,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event292 = obj.label210:addEventListener("onClick",
+    obj._e_event278 = obj.label211:addEventListener("onClick",
         function (event)
             local msg = "Ferido: Normalmente, você não sofre efeitos por estar ferido, mas certos talentos, magias e outros efeitos usados contra você podem colocá-lo em desvantagem porquê você está ferido."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18325,7 +17460,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event293 = obj.label211:addEventListener("onClick",
+    obj._e_event279 = obj.label212:addEventListener("onClick",
         function (event)
             local msg = "Incapacitado: Se você sofrer dano enquanto estiver incapacitado, você perderá Vida igual à quantidade de dano que você receberia. No final da rodada, você perde 1d6 de Vida e faz um teste de sorte. Em um sucesso, você cura 1 de dano. Em uma falha, você permanece incapacitado."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18333,7 +17468,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event294 = obj.label212:addEventListener("onClick",
+    obj._e_event280 = obj.label213:addEventListener("onClick",
         function (event)
             local msg = "Incendiado: Um efeito pode fazer você pegar fogo. Você sofre 1d6 de dano ao final de cada rodada até o fogo ser apagado, normalmente com uma rolagem bem-sucedida de sorte. Você pode apagar as chamas com água, ou sufocá-las com um cobertor ou objeto similar. Uma criatura que ficar caída antes de tentar superar as chamas faz a rolagem com 1 dádiva."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18341,7 +17476,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event295 = obj.label213:addEventListener("onClick",
+    obj._e_event281 = obj.label214:addEventListener("onClick",
         function (event)
             local msg = "Inconsciente: Você não pode usar ações ou reações. A sua Velocidade diminui a 0 e você não se beneficia de aumentos à Velocidade. Você não recebe informações sensoriais. Você concede 3 dádivas em rolagens contra você e você fracassa automaticamente em todas as rolagens de atributo."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18349,7 +17484,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event296 = obj.label214:addEventListener("onClick",
+    obj._e_event282 = obj.label215:addEventListener("onClick",
         function (event)
             local msg = "Lento: Se sua Velocidade for maior que 2, ela reduz a 2. Essa aflição não aumenta a Velocidade."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18357,7 +17492,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event297 = obj.label215:addEventListener("onClick",
+    obj._e_event283 = obj.label216:addEventListener("onClick",
         function (event)
             local msg = "Restringido: A sua Velocidade diminui a 0 e você não se beneficia de aumentos à Velocidade até esta aflição terminar. Além disso, criaturas que fizerem rolagens contra a sua Agilidade recebem um sucesso automático."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18365,7 +17500,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event298 = obj.label216:addEventListener("onClick",
+    obj._e_event284 = obj.label217:addEventListener("onClick",
         function (event)
             local msg = "Surdo: Você não consegue ouvir. Você não pode fazer reações que dependam da audição e não é afetado por efeitos que dependam da audição."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18373,7 +17508,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event299 = obj.label217:addEventListener("onClick",
+    obj._e_event285 = obj.label218:addEventListener("onClick",
         function (event)
             local msg = "Vulnerável: Você concede 1 dádiva em rolagens para atacar você e em rolagens feitas contra os seus atributos."
                                                 local mesaDeRPG = Firecast.getMesaDe(sheet)
@@ -18381,12 +17516,12 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event300 = obj.rectangle572:addEventListener("onClick",
+    obj._e_event286 = obj.rectangle535:addEventListener("onClick",
         function (event)
             self.popFrmPrincipal:close()
         end);
 
-    obj._e_event301 = obj.edit198:addEventListener("onUserChange",
+    obj._e_event287 = obj.edit183:addEventListener("onUserChange",
         function ()
             if sheet.frmNome == nil then
                                     sheet.frmNome = "--"
@@ -18398,7 +17533,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event302 = obj.edit200:addEventListener("onUserChange",
+    obj._e_event288 = obj.edit185:addEventListener("onUserChange",
         function ()
             if sheet.frmAncestralidade == nil then
                                     sheet.frmAncestralidade = "--"
@@ -18410,7 +17545,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event303 = obj.edit201:addEventListener("onUserChange",
+    obj._e_event289 = obj.edit186:addEventListener("onUserChange",
         function ()
             if sheet.frmIdade == nil then
                                     sheet.frmIdade = "--"
@@ -18422,7 +17557,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event304 = obj.edit202:addEventListener("onUserChange",
+    obj._e_event290 = obj.edit187:addEventListener("onUserChange",
         function ()
             if sheet.frmOlhos == nil then
                                     sheet.frmOlhos = "--"
@@ -18434,7 +17569,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event305 = obj.edit203:addEventListener("onUserChange",
+    obj._e_event291 = obj.edit188:addEventListener("onUserChange",
         function ()
             if sheet.frmCabelos == nil then
                                     sheet.frmCabelos = "--"
@@ -18445,7 +17580,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event306 = obj.edit204:addEventListener("onUserChange",
+    obj._e_event292 = obj.edit189:addEventListener("onUserChange",
         function ()
             if sheet.frmAltura == nil then
                                     sheet.frmAltura = "--"
@@ -18456,7 +17591,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event307 = obj.edit205:addEventListener("onUserChange",
+    obj._e_event293 = obj.edit190:addEventListener("onUserChange",
         function ()
             if sheet.frmPeso == nil then
                                     sheet.frmPeso = "--"
@@ -18467,7 +17602,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event308 = obj.edit206:addEventListener("onUserChange",
+    obj._e_event294 = obj.edit191:addEventListener("onUserChange",
         function ()
             if sheet.frmIdiomas == nil then
                                     sheet.frmIdiomas = "--"
@@ -18478,7 +17613,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event309 = obj.edit207:addEventListener("onUserChange",
+    obj._e_event295 = obj.edit192:addEventListener("onUserChange",
         function ()
             if sheet.frmProfissoes == nil then
                                     sheet.frmProfissoes = "--"
@@ -18489,7 +17624,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event310 = obj.edit208:addEventListener("onUserChange",
+    obj._e_event296 = obj.edit193:addEventListener("onUserChange",
         function ()
             if sheet.frmReligiao == nil then
                                     sheet.frmReligiao = "--"
@@ -18500,7 +17635,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event311 = obj.edit209:addEventListener("onUserChange",
+    obj._e_event297 = obj.edit194:addEventListener("onUserChange",
         function ()
             if sheet.frmTamanho == nil then
                                     sheet.frmTamanho = "--"
@@ -18511,7 +17646,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event312 = obj.edit211:addEventListener("onUserChange",
+    obj._e_event298 = obj.edit196:addEventListener("onUserChange",
         function ()
             if sheet.frmAprendiz == nil then
                                     sheet.frmAprendiz = "--"
@@ -18522,7 +17657,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event313 = obj.edit212:addEventListener("onUserChange",
+    obj._e_event299 = obj.edit197:addEventListener("onUserChange",
         function ()
             if sheet.frmEspecialista == nil then
                                     sheet.frmEspecialista = "--"
@@ -18533,7 +17668,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event314 = obj.edit213:addEventListener("onUserChange",
+    obj._e_event300 = obj.edit198:addEventListener("onUserChange",
         function ()
             if sheet.frmMestre == nil then
                                     sheet.frmMestre = "--"
@@ -18544,7 +17679,7 @@ local function constructNew_frmWeirdWizard()
                               end
         end);
 
-    obj._e_event315 = obj.button1:addEventListener("onClick",
+    obj._e_event301 = obj.button1:addEventListener("onClick",
         function (event)
             if sheet.dadivaReves == nil then
                                           sheet.dadivaReves = 0
@@ -18572,20 +17707,6 @@ local function constructNew_frmWeirdWizard()
         end);
 
     function obj:_releaseEvents()
-        __o_rrpgObjs.removeEventListenerById(self._e_event315);
-        __o_rrpgObjs.removeEventListenerById(self._e_event314);
-        __o_rrpgObjs.removeEventListenerById(self._e_event313);
-        __o_rrpgObjs.removeEventListenerById(self._e_event312);
-        __o_rrpgObjs.removeEventListenerById(self._e_event311);
-        __o_rrpgObjs.removeEventListenerById(self._e_event310);
-        __o_rrpgObjs.removeEventListenerById(self._e_event309);
-        __o_rrpgObjs.removeEventListenerById(self._e_event308);
-        __o_rrpgObjs.removeEventListenerById(self._e_event307);
-        __o_rrpgObjs.removeEventListenerById(self._e_event306);
-        __o_rrpgObjs.removeEventListenerById(self._e_event305);
-        __o_rrpgObjs.removeEventListenerById(self._e_event304);
-        __o_rrpgObjs.removeEventListenerById(self._e_event303);
-        __o_rrpgObjs.removeEventListenerById(self._e_event302);
         __o_rrpgObjs.removeEventListenerById(self._e_event301);
         __o_rrpgObjs.removeEventListenerById(self._e_event300);
         __o_rrpgObjs.removeEventListenerById(self._e_event299);
@@ -18902,7 +18023,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit77 ~= nil then self.edit77:destroy(); self.edit77 = nil; end;
         if self.edit47 ~= nil then self.edit47:destroy(); self.edit47 = nil; end;
         if self.edit200 ~= nil then self.edit200:destroy(); self.edit200 = nil; end;
-        if self.edit216 ~= nil then self.edit216:destroy(); self.edit216 = nil; end;
         if self.rectangle193 ~= nil then self.rectangle193:destroy(); self.rectangle193 = nil; end;
         if self.edit119 ~= nil then self.edit119:destroy(); self.edit119 = nil; end;
         if self.label112 ~= nil then self.label112:destroy(); self.label112 = nil; end;
@@ -18911,7 +18031,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit95 ~= nil then self.edit95:destroy(); self.edit95 = nil; end;
         if self.comboBox14 ~= nil then self.comboBox14:destroy(); self.comboBox14 = nil; end;
         if self.rectangle71 ~= nil then self.rectangle71:destroy(); self.rectangle71 = nil; end;
-        if self.rectangle585 ~= nil then self.rectangle585:destroy(); self.rectangle585 = nil; end;
         if self.rectangle90 ~= nil then self.rectangle90:destroy(); self.rectangle90 = nil; end;
         if self.rectangle82 ~= nil then self.rectangle82:destroy(); self.rectangle82 = nil; end;
         if self.edit153 ~= nil then self.edit153:destroy(); self.edit153 = nil; end;
@@ -18973,7 +18092,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle295 ~= nil then self.rectangle295:destroy(); self.rectangle295 = nil; end;
         if self.rectangle285 ~= nil then self.rectangle285:destroy(); self.rectangle285 = nil; end;
         if self.rectangle538 ~= nil then self.rectangle538:destroy(); self.rectangle538 = nil; end;
-        if self.textEditor25 ~= nil then self.textEditor25:destroy(); self.textEditor25 = nil; end;
         if self.image27 ~= nil then self.image27:destroy(); self.image27 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
         if self.rectangle560 ~= nil then self.rectangle560:destroy(); self.rectangle560 = nil; end;
@@ -19010,7 +18128,6 @@ local function constructNew_frmWeirdWizard()
         if self.label195 ~= nil then self.label195:destroy(); self.label195 = nil; end;
         if self.label231 ~= nil then self.label231:destroy(); self.label231 = nil; end;
         if self.rectangle55 ~= nil then self.rectangle55:destroy(); self.rectangle55 = nil; end;
-        if self.rectangle595 ~= nil then self.rectangle595:destroy(); self.rectangle595 = nil; end;
         if self.edit143 ~= nil then self.edit143:destroy(); self.edit143 = nil; end;
         if self.label146 ~= nil then self.label146:destroy(); self.label146 = nil; end;
         if self.dataLink15 ~= nil then self.dataLink15:destroy(); self.dataLink15 = nil; end;
@@ -19024,25 +18141,23 @@ local function constructNew_frmWeirdWizard()
         if self.edit78 ~= nil then self.edit78:destroy(); self.edit78 = nil; end;
         if self.edit203 ~= nil then self.edit203:destroy(); self.edit203 = nil; end;
         if self.comboBox41 ~= nil then self.comboBox41:destroy(); self.comboBox41 = nil; end;
-        if self.edit213 ~= nil then self.edit213:destroy(); self.edit213 = nil; end;
         if self.rectangle168 ~= nil then self.rectangle168:destroy(); self.rectangle168 = nil; end;
         if self.rectangle190 ~= nil then self.rectangle190:destroy(); self.rectangle190 = nil; end;
         if self.rectangle249 ~= nil then self.rectangle249:destroy(); self.rectangle249 = nil; end;
         if self.edit114 ~= nil then self.edit114:destroy(); self.edit114 = nil; end;
         if self.label169 ~= nil then self.label169:destroy(); self.label169 = nil; end;
+        if self.label248 ~= nil then self.label248:destroy(); self.label248 = nil; end;
         if self.edit92 ~= nil then self.edit92:destroy(); self.edit92 = nil; end;
-        if self.rectangle580 ~= nil then self.rectangle580:destroy(); self.rectangle580 = nil; end;
         if self.rectangle97 ~= nil then self.rectangle97:destroy(); self.rectangle97 = nil; end;
         if self.rectangle87 ~= nil then self.rectangle87:destroy(); self.rectangle87 = nil; end;
         if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
         if self.label97 ~= nil then self.label97:destroy(); self.label97 = nil; end;
-        if self.rectangle424 ~= nil then self.rectangle424:destroy(); self.rectangle424 = nil; end;
         if self.edit156 ~= nil then self.edit156:destroy(); self.edit156 = nil; end;
+        if self.rectangle424 ~= nil then self.rectangle424:destroy(); self.rectangle424 = nil; end;
         if self.edit164 ~= nil then self.edit164:destroy(); self.edit164 = nil; end;
         if self.image30 ~= nil then self.image30:destroy(); self.image30 = nil; end;
         if self.rectangle527 ~= nil then self.rectangle527:destroy(); self.rectangle527 = nil; end;
         if self.rectangle340 ~= nil then self.rectangle340:destroy(); self.rectangle340 = nil; end;
-        if self.edit219 ~= nil then self.edit219:destroy(); self.edit219 = nil; end;
         if self.rectangle166 ~= nil then self.rectangle166:destroy(); self.rectangle166 = nil; end;
         if self.rectangle174 ~= nil then self.rectangle174:destroy(); self.rectangle174 = nil; end;
         if self.rectangle247 ~= nil then self.rectangle247:destroy(); self.rectangle247 = nil; end;
@@ -19060,9 +18175,9 @@ local function constructNew_frmWeirdWizard()
         if self.edit158 ~= nil then self.edit158:destroy(); self.edit158 = nil; end;
         if self.rectangle488 ~= nil then self.rectangle488:destroy(); self.rectangle488 = nil; end;
         if self.rectangle371 ~= nil then self.rectangle371:destroy(); self.rectangle371 = nil; end;
-        if self.rectangle496 ~= nil then self.rectangle496:destroy(); self.rectangle496 = nil; end;
-        if self.rectangle153 ~= nil then self.rectangle153:destroy(); self.rectangle153 = nil; end;
         if self.checkBox16 ~= nil then self.checkBox16:destroy(); self.checkBox16 = nil; end;
+        if self.rectangle153 ~= nil then self.rectangle153:destroy(); self.rectangle153 = nil; end;
+        if self.rectangle496 ~= nil then self.rectangle496:destroy(); self.rectangle496 = nil; end;
         if self.rectangle30 ~= nil then self.rectangle30:destroy(); self.rectangle30 = nil; end;
         if self.rectangle445 ~= nil then self.rectangle445:destroy(); self.rectangle445 = nil; end;
         if self.rectangle431 ~= nil then self.rectangle431:destroy(); self.rectangle431 = nil; end;
@@ -19098,8 +18213,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle354 ~= nil then self.rectangle354:destroy(); self.rectangle354 = nil; end;
         if self.image8 ~= nil then self.image8:destroy(); self.image8 = nil; end;
         if self.layout5 ~= nil then self.layout5:destroy(); self.layout5 = nil; end;
-        if self.rectangle563 ~= nil then self.rectangle563:destroy(); self.rectangle563 = nil; end;
-        if self.rectangle573 ~= nil then self.rectangle573:destroy(); self.rectangle573 = nil; end;
         if self.label49 ~= nil then self.label49:destroy(); self.label49 = nil; end;
         if self.rectangle452 ~= nil then self.rectangle452:destroy(); self.rectangle452 = nil; end;
         if self.edit18 ~= nil then self.edit18:destroy(); self.edit18 = nil; end;
@@ -19116,13 +18229,11 @@ local function constructNew_frmWeirdWizard()
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
         if self.rectangle556 ~= nil then self.rectangle556:destroy(); self.rectangle556 = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
-        if self.rectangle579 ~= nil then self.rectangle579:destroy(); self.rectangle579 = nil; end;
         if self.edit191 ~= nil then self.edit191:destroy(); self.edit191 = nil; end;
         if self.edit181 ~= nil then self.edit181:destroy(); self.edit181 = nil; end;
         if self.edit12 ~= nil then self.edit12:destroy(); self.edit12 = nil; end;
         if self.edit87 ~= nil then self.edit87:destroy(); self.edit87 = nil; end;
         if self.rectangle318 ~= nil then self.rectangle318:destroy(); self.rectangle318 = nil; end;
-        if self.rectangle598 ~= nil then self.rectangle598:destroy(); self.rectangle598 = nil; end;
         if self.rectangle475 ~= nil then self.rectangle475:destroy(); self.rectangle475 = nil; end;
         if self.label17 ~= nil then self.label17:destroy(); self.label17 = nil; end;
         if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
@@ -19136,7 +18247,6 @@ local function constructNew_frmWeirdWizard()
         if self.label55 ~= nil then self.label55:destroy(); self.label55 = nil; end;
         if self.label190 ~= nil then self.label190:destroy(); self.label190 = nil; end;
         if self.rectangle50 ~= nil then self.rectangle50:destroy(); self.rectangle50 = nil; end;
-        if self.rectangle592 ~= nil then self.rectangle592:destroy(); self.rectangle592 = nil; end;
         if self.edit140 ~= nil then self.edit140:destroy(); self.edit140 = nil; end;
         if self.edit136 ~= nil then self.edit136:destroy(); self.edit136 = nil; end;
         if self.image51 ~= nil then self.image51:destroy(); self.image51 = nil; end;
@@ -19147,7 +18257,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle146 ~= nil then self.rectangle146:destroy(); self.rectangle146 = nil; end;
         if self.label74 ~= nil then self.label74:destroy(); self.label74 = nil; end;
         if self.rectangle267 ~= nil then self.rectangle267:destroy(); self.rectangle267 = nil; end;
-        if self.textEditor34 ~= nil then self.textEditor34:destroy(); self.textEditor34 = nil; end;
         if self.label238 ~= nil then self.label238:destroy(); self.label238 = nil; end;
         if self.rectangle195 ~= nil then self.rectangle195:destroy(); self.rectangle195 = nil; end;
         if self.edit113 ~= nil then self.edit113:destroy(); self.edit113 = nil; end;
@@ -19157,10 +18266,10 @@ local function constructNew_frmWeirdWizard()
         if self.edit155 ~= nil then self.edit155:destroy(); self.edit155 = nil; end;
         if self.label90 ~= nil then self.label90:destroy(); self.label90 = nil; end;
         if self.rectangle421 ~= nil then self.rectangle421:destroy(); self.rectangle421 = nil; end;
-        if self.rectangle522 ~= nil then self.rectangle522:destroy(); self.rectangle522 = nil; end;
+        if self.label217 ~= nil then self.label217:destroy(); self.label217 = nil; end;
         if self.edit73 ~= nil then self.edit73:destroy(); self.edit73 = nil; end;
         if self.edit43 ~= nil then self.edit43:destroy(); self.edit43 = nil; end;
-        if self.label217 ~= nil then self.label217:destroy(); self.label217 = nil; end;
+        if self.rectangle522 ~= nil then self.rectangle522:destroy(); self.rectangle522 = nil; end;
         if self.rectangle343 ~= nil then self.rectangle343:destroy(); self.rectangle343 = nil; end;
         if self.edit204 ~= nil then self.edit204:destroy(); self.edit204 = nil; end;
         if self.rectangle161 ~= nil then self.rectangle161:destroy(); self.rectangle161 = nil; end;
@@ -19180,7 +18289,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit20 ~= nil then self.edit20:destroy(); self.edit20 = nil; end;
         if self.rectangle495 ~= nil then self.rectangle495:destroy(); self.rectangle495 = nil; end;
         if self.rectangle485 ~= nil then self.rectangle485:destroy(); self.rectangle485 = nil; end;
-        if self.rectangle589 ~= nil then self.rectangle589:destroy(); self.rectangle589 = nil; end;
         if self.rectangle150 ~= nil then self.rectangle150:destroy(); self.rectangle150 = nil; end;
         if self.rectangle33 ~= nil then self.rectangle33:destroy(); self.rectangle33 = nil; end;
         if self.rectangle549 ~= nil then self.rectangle549:destroy(); self.rectangle549 = nil; end;
@@ -19212,17 +18320,14 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle536 ~= nil then self.rectangle536:destroy(); self.rectangle536 = nil; end;
         if self.rectangle417 ~= nil then self.rectangle417:destroy(); self.rectangle417 = nil; end;
         if self.edit178 ~= nil then self.edit178:destroy(); self.edit178 = nil; end;
-        if self.textEditor23 ~= nil then self.textEditor23:destroy(); self.textEditor23 = nil; end;
         if self.image21 ~= nil then self.image21:destroy(); self.image21 = nil; end;
         if self.rectangle351 ~= nil then self.rectangle351:destroy(); self.rectangle351 = nil; end;
         if self.image5 ~= nil then self.image5:destroy(); self.image5 = nil; end;
         if self.rectangle48 ~= nil then self.rectangle48:destroy(); self.rectangle48 = nil; end;
         if self.layout8 ~= nil then self.layout8:destroy(); self.layout8 = nil; end;
-        if self.rectangle566 ~= nil then self.rectangle566:destroy(); self.rectangle566 = nil; end;
         if self.rectangle465 ~= nil then self.rectangle465:destroy(); self.rectangle465 = nil; end;
         if self.rectangle451 ~= nil then self.rectangle451:destroy(); self.rectangle451 = nil; end;
         if self.rectangle67 ~= nil then self.rectangle67:destroy(); self.rectangle67 = nil; end;
-        if self.rectangle574 ~= nil then self.rectangle574:destroy(); self.rectangle574 = nil; end;
         if self.label37 ~= nil then self.label37:destroy(); self.label37 = nil; end;
         if self.rectangle307 ~= nil then self.rectangle307:destroy(); self.rectangle307 = nil; end;
         if self.edit88 ~= nil then self.edit88:destroy(); self.edit88 = nil; end;
@@ -19250,8 +18355,8 @@ local function constructNew_frmWeirdWizard()
         if self.edit196 ~= nil then self.edit196:destroy(); self.edit196 = nil; end;
         if self.rectangle4 ~= nil then self.rectangle4:destroy(); self.rectangle4 = nil; end;
         if self.label56 ~= nil then self.label56:destroy(); self.label56 = nil; end;
-        if self.edit188 ~= nil then self.edit188:destroy(); self.edit188 = nil; end;
         if self.label193 ~= nil then self.label193:destroy(); self.label193 = nil; end;
+        if self.edit188 ~= nil then self.edit188:destroy(); self.edit188 = nil; end;
         if self.checkBox20 ~= nil then self.checkBox20:destroy(); self.checkBox20 = nil; end;
         if self.edit145 ~= nil then self.edit145:destroy(); self.edit145 = nil; end;
         if self.edit131 ~= nil then self.edit131:destroy(); self.edit131 = nil; end;
@@ -19263,14 +18368,12 @@ local function constructNew_frmWeirdWizard()
         if self.edit53 ~= nil then self.edit53:destroy(); self.edit53 = nil; end;
         if self.popDadivaReves ~= nil then self.popDadivaReves:destroy(); self.popDadivaReves = nil; end;
         if self.rectangle363 ~= nil then self.rectangle363:destroy(); self.rectangle363 = nil; end;
-        if self.textEditor31 ~= nil then self.textEditor31:destroy(); self.textEditor31 = nil; end;
         if self.rectangle145 ~= nil then self.rectangle145:destroy(); self.rectangle145 = nil; end;
         if self.label79 ~= nil then self.label79:destroy(); self.label79 = nil; end;
         if self.rectangle264 ~= nil then self.rectangle264:destroy(); self.rectangle264 = nil; end;
         if self.label104 ~= nil then self.label104:destroy(); self.label104 = nil; end;
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.label225 ~= nil then self.label225:destroy(); self.label225 = nil; end;
-        if self.edit209 ~= nil then self.edit209:destroy(); self.edit209 = nil; end;
         if self.label235 ~= nil then self.label235:destroy(); self.label235 = nil; end;
         if self.rectangle59 ~= nil then self.rectangle59:destroy(); self.rectangle59 = nil; end;
         if self.label142 ~= nil then self.label142:destroy(); self.label142 = nil; end;
@@ -19284,8 +18387,6 @@ local function constructNew_frmWeirdWizard()
         if self.label214 ~= nil then self.label214:destroy(); self.label214 = nil; end;
         if self.edit74 ~= nil then self.edit74:destroy(); self.edit74 = nil; end;
         if self.edit46 ~= nil then self.edit46:destroy(); self.edit46 = nil; end;
-        if self.edit207 ~= nil then self.edit207:destroy(); self.edit207 = nil; end;
-        if self.edit217 ~= nil then self.edit217:destroy(); self.edit217 = nil; end;
         if self.rectangle172 ~= nil then self.rectangle172:destroy(); self.rectangle172 = nil; end;
         if self.rectangle271 ~= nil then self.rectangle271:destroy(); self.rectangle271 = nil; end;
         if self.label111 ~= nil then self.label111:destroy(); self.label111 = nil; end;
@@ -19296,7 +18397,6 @@ local function constructNew_frmWeirdWizard()
         if self.checkBox8 ~= nil then self.checkBox8:destroy(); self.checkBox8 = nil; end;
         if self.comboBox17 ~= nil then self.comboBox17:destroy(); self.comboBox17 = nil; end;
         if self.rectangle70 ~= nil then self.rectangle70:destroy(); self.rectangle70 = nil; end;
-        if self.rectangle584 ~= nil then self.rectangle584:destroy(); self.rectangle584 = nil; end;
         if self.rectangle93 ~= nil then self.rectangle93:destroy(); self.rectangle93 = nil; end;
         if self.rectangle83 ~= nil then self.rectangle83:destroy(); self.rectangle83 = nil; end;
         if self.progressBar1 ~= nil then self.progressBar1:destroy(); self.progressBar1 = nil; end;
@@ -19344,7 +18444,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle352 ~= nil then self.rectangle352:destroy(); self.rectangle352 = nil; end;
         if self.image6 ~= nil then self.image6:destroy(); self.image6 = nil; end;
         if self.rectangle339 ~= nil then self.rectangle339:destroy(); self.rectangle339 = nil; end;
-        if self.rectangle569 ~= nil then self.rectangle569:destroy(); self.rectangle569 = nil; end;
         if self.rectangle466 ~= nil then self.rectangle466:destroy(); self.rectangle466 = nil; end;
         if self.rectangle454 ~= nil then self.rectangle454:destroy(); self.rectangle454 = nil; end;
         if self.rectangle60 ~= nil then self.rectangle60:destroy(); self.rectangle60 = nil; end;
@@ -19357,7 +18456,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle294 ~= nil then self.rectangle294:destroy(); self.rectangle294 = nil; end;
         if self.rectangle282 ~= nil then self.rectangle282:destroy(); self.rectangle282 = nil; end;
         if self.rectangle539 ~= nil then self.rectangle539:destroy(); self.rectangle539 = nil; end;
-        if self.textEditor24 ~= nil then self.textEditor24:destroy(); self.textEditor24 = nil; end;
         if self.label3 ~= nil then self.label3:destroy(); self.label3 = nil; end;
         if self.image28 ~= nil then self.image28:destroy(); self.image28 = nil; end;
         if self.rectangle358 ~= nil then self.rectangle358:destroy(); self.rectangle358 = nil; end;
@@ -19382,7 +18480,6 @@ local function constructNew_frmWeirdWizard()
         if self.dataLink23 ~= nil then self.dataLink23:destroy(); self.dataLink23 = nil; end;
         if self.edit50 ~= nil then self.edit50:destroy(); self.edit50 = nil; end;
         if self.rectangle212 ~= nil then self.rectangle212:destroy(); self.rectangle212 = nil; end;
-        if self.textEditor32 ~= nil then self.textEditor32:destroy(); self.textEditor32 = nil; end;
         if self.rectangle140 ~= nil then self.rectangle140:destroy(); self.rectangle140 = nil; end;
         if self.rectangle261 ~= nil then self.rectangle261:destroy(); self.rectangle261 = nil; end;
         if self.label101 ~= nil then self.label101:destroy(); self.label101 = nil; end;
@@ -19393,7 +18490,6 @@ local function constructNew_frmWeirdWizard()
         if self.label51 ~= nil then self.label51:destroy(); self.label51 = nil; end;
         if self.label194 ~= nil then self.label194:destroy(); self.label194 = nil; end;
         if self.rectangle54 ~= nil then self.rectangle54:destroy(); self.rectangle54 = nil; end;
-        if self.rectangle596 ~= nil then self.rectangle596:destroy(); self.rectangle596 = nil; end;
         if self.label147 ~= nil then self.label147:destroy(); self.label147 = nil; end;
         if self.dataLink16 ~= nil then self.dataLink16:destroy(); self.dataLink16 = nil; end;
         if self.rectangle218 ~= nil then self.rectangle218:destroy(); self.rectangle218 = nil; end;
@@ -19410,18 +18506,16 @@ local function constructNew_frmWeirdWizard()
         if self.edit202 ~= nil then self.edit202:destroy(); self.edit202 = nil; end;
         if self.rectangle191 ~= nil then self.rectangle191:destroy(); self.rectangle191 = nil; end;
         if self.edit117 ~= nil then self.edit117:destroy(); self.edit117 = nil; end;
-        if self.edit210 ~= nil then self.edit210:destroy(); self.edit210 = nil; end;
         if self.edit93 ~= nil then self.edit93:destroy(); self.edit93 = nil; end;
         if self.dataLink18 ~= nil then self.dataLink18:destroy(); self.dataLink18 = nil; end;
         if self.rectangle73 ~= nil then self.rectangle73:destroy(); self.rectangle73 = nil; end;
         if self.rectangle509 ~= nil then self.rectangle509:destroy(); self.rectangle509 = nil; end;
-        if self.rectangle583 ~= nil then self.rectangle583:destroy(); self.rectangle583 = nil; end;
         if self.rectangle96 ~= nil then self.rectangle96:destroy(); self.rectangle96 = nil; end;
         if self.rectangle80 ~= nil then self.rectangle80:destroy(); self.rectangle80 = nil; end;
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
-        if self.rectangle425 ~= nil then self.rectangle425:destroy(); self.rectangle425 = nil; end;
         if self.edit151 ~= nil then self.edit151:destroy(); self.edit151 = nil; end;
+        if self.rectangle425 ~= nil then self.rectangle425:destroy(); self.rectangle425 = nil; end;
         if self.edit165 ~= nil then self.edit165:destroy(); self.edit165 = nil; end;
         if self.image33 ~= nil then self.image33:destroy(); self.image33 = nil; end;
         if self.rectangle526 ~= nil then self.rectangle526:destroy(); self.rectangle526 = nil; end;
@@ -19461,7 +18555,6 @@ local function constructNew_frmWeirdWizard()
         if self.comboBox33 ~= nil then self.comboBox33:destroy(); self.comboBox33 = nil; end;
         if self.comboBox23 ~= nil then self.comboBox23:destroy(); self.comboBox23 = nil; end;
         if self.rectangle411 ~= nil then self.rectangle411:destroy(); self.rectangle411 = nil; end;
-        if self.textEditor29 ~= nil then self.textEditor29:destroy(); self.textEditor29 = nil; end;
         if self.edit4 ~= nil then self.edit4:destroy(); self.edit4 = nil; end;
         if self.edit105 ~= nil then self.edit105:destroy(); self.edit105 = nil; end;
         if self.image14 ~= nil then self.image14:destroy(); self.image14 = nil; end;
@@ -19475,13 +18568,11 @@ local function constructNew_frmWeirdWizard()
         if self.comboBox29 ~= nil then self.comboBox29:destroy(); self.comboBox29 = nil; end;
         if self.rectangle297 ~= nil then self.rectangle297:destroy(); self.rectangle297 = nil; end;
         if self.rectangle287 ~= nil then self.rectangle287:destroy(); self.rectangle287 = nil; end;
-        if self.textEditor27 ~= nil then self.textEditor27:destroy(); self.textEditor27 = nil; end;
         if self.image25 ~= nil then self.image25:destroy(); self.image25 = nil; end;
         if self.rectangle355 ~= nil then self.rectangle355:destroy(); self.rectangle355 = nil; end;
         if self.image9 ~= nil then self.image9:destroy(); self.image9 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
         if self.rectangle562 ~= nil then self.rectangle562:destroy(); self.rectangle562 = nil; end;
-        if self.rectangle570 ~= nil then self.rectangle570:destroy(); self.rectangle570 = nil; end;
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
         if self.edit122 ~= nil then self.edit122:destroy(); self.edit122 = nil; end;
         if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
@@ -19505,7 +18596,6 @@ local function constructNew_frmWeirdWizard()
         if self.label199 ~= nil then self.label199:destroy(); self.label199 = nil; end;
         if self.edit86 ~= nil then self.edit86:destroy(); self.edit86 = nil; end;
         if self.rectangle319 ~= nil then self.rectangle319:destroy(); self.rectangle319 = nil; end;
-        if self.rectangle599 ~= nil then self.rectangle599:destroy(); self.rectangle599 = nil; end;
         if self.rectangle474 ~= nil then self.rectangle474:destroy(); self.rectangle474 = nil; end;
         if self.label14 ~= nil then self.label14:destroy(); self.label14 = nil; end;
         if self.label26 ~= nil then self.label26:destroy(); self.label26 = nil; end;
@@ -19521,17 +18611,15 @@ local function constructNew_frmWeirdWizard()
         if self.label52 ~= nil then self.label52:destroy(); self.label52 = nil; end;
         if self.label197 ~= nil then self.label197:destroy(); self.label197 = nil; end;
         if self.rectangle53 ~= nil then self.rectangle53:destroy(); self.rectangle53 = nil; end;
-        if self.rectangle593 ~= nil then self.rectangle593:destroy(); self.rectangle593 = nil; end;
         if self.edit141 ~= nil then self.edit141:destroy(); self.edit141 = nil; end;
-        if self.edit135 ~= nil then self.edit135:destroy(); self.edit135 = nil; end;
         if self.label148 ~= nil then self.label148:destroy(); self.label148 = nil; end;
+        if self.edit135 ~= nil then self.edit135:destroy(); self.edit135 = nil; end;
         if self.image50 ~= nil then self.image50:destroy(); self.image50 = nil; end;
         if self.rectangle367 ~= nil then self.rectangle367:destroy(); self.rectangle367 = nil; end;
         if self.rectangle29 ~= nil then self.rectangle29:destroy(); self.rectangle29 = nil; end;
         if self.rectangle15 ~= nil then self.rectangle15:destroy(); self.rectangle15 = nil; end;
         if self.label75 ~= nil then self.label75:destroy(); self.label75 = nil; end;
         if self.rectangle428 ~= nil then self.rectangle428:destroy(); self.rectangle428 = nil; end;
-        if self.textEditor35 ~= nil then self.textEditor35:destroy(); self.textEditor35 = nil; end;
         if self.label239 ~= nil then self.label239:destroy(); self.label239 = nil; end;
         if self.rectangle196 ~= nil then self.rectangle196:destroy(); self.rectangle196 = nil; end;
         if self.edit112 ~= nil then self.edit112:destroy(); self.edit112 = nil; end;
@@ -19545,9 +18633,9 @@ local function constructNew_frmWeirdWizard()
         if self.edit166 ~= nil then self.edit166:destroy(); self.edit166 = nil; end;
         if self.edit70 ~= nil then self.edit70:destroy(); self.edit70 = nil; end;
         if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
-        if self.rectangle521 ~= nil then self.rectangle521:destroy(); self.rectangle521 = nil; end;
-        if self.rectangle342 ~= nil then self.rectangle342:destroy(); self.rectangle342 = nil; end;
         if self.label218 ~= nil then self.label218:destroy(); self.label218 = nil; end;
+        if self.rectangle342 ~= nil then self.rectangle342:destroy(); self.rectangle342 = nil; end;
+        if self.rectangle521 ~= nil then self.rectangle521:destroy(); self.rectangle521 = nil; end;
         if self.rectangle160 ~= nil then self.rectangle160:destroy(); self.rectangle160 = nil; end;
         if self.rectangle176 ~= nil then self.rectangle176:destroy(); self.rectangle176 = nil; end;
         if self.rectangle241 ~= nil then self.rectangle241:destroy(); self.rectangle241 = nil; end;
@@ -19565,7 +18653,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit27 ~= nil then self.edit27:destroy(); self.edit27 = nil; end;
         if self.rectangle494 ~= nil then self.rectangle494:destroy(); self.rectangle494 = nil; end;
         if self.rectangle486 ~= nil then self.rectangle486:destroy(); self.rectangle486 = nil; end;
-        if self.rectangle588 ~= nil then self.rectangle588:destroy(); self.rectangle588 = nil; end;
         if self.rectangle151 ~= nil then self.rectangle151:destroy(); self.rectangle151 = nil; end;
         if self.rectangle32 ~= nil then self.rectangle32:destroy(); self.rectangle32 = nil; end;
         if self.rectangle548 ~= nil then self.rectangle548:destroy(); self.rectangle548 = nil; end;
@@ -19598,15 +18685,13 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle537 ~= nil then self.rectangle537:destroy(); self.rectangle537 = nil; end;
         if self.rectangle416 ~= nil then self.rectangle416:destroy(); self.rectangle416 = nil; end;
         if self.label128 ~= nil then self.label128:destroy(); self.label128 = nil; end;
-        if self.textEditor22 ~= nil then self.textEditor22:destroy(); self.textEditor22 = nil; end;
+        if self.label209 ~= nil then self.label209:destroy(); self.label209 = nil; end;
         if self.label9 ~= nil then self.label9:destroy(); self.label9 = nil; end;
         if self.image22 ~= nil then self.image22:destroy(); self.image22 = nil; end;
         if self.rectangle356 ~= nil then self.rectangle356:destroy(); self.rectangle356 = nil; end;
-        if self.label209 ~= nil then self.label209:destroy(); self.label209 = nil; end;
+        if self.textEditor22 ~= nil then self.textEditor22:destroy(); self.textEditor22 = nil; end;
         if self.layout7 ~= nil then self.layout7:destroy(); self.layout7 = nil; end;
         if self.rectangle49 ~= nil then self.rectangle49:destroy(); self.rectangle49 = nil; end;
-        if self.rectangle565 ~= nil then self.rectangle565:destroy(); self.rectangle565 = nil; end;
-        if self.rectangle575 ~= nil then self.rectangle575:destroy(); self.rectangle575 = nil; end;
         if self.rectangle462 ~= nil then self.rectangle462:destroy(); self.rectangle462 = nil; end;
         if self.rectangle450 ~= nil then self.rectangle450:destroy(); self.rectangle450 = nil; end;
         if self.rectangle64 ~= nil then self.rectangle64:destroy(); self.rectangle64 = nil; end;
@@ -19631,28 +18716,25 @@ local function constructNew_frmWeirdWizard()
         if self.label11 ~= nil then self.label11:destroy(); self.label11 = nil; end;
         if self.label25 ~= nil then self.label25:destroy(); self.label25 = nil; end;
         if self.label84 ~= nil then self.label84:destroy(); self.label84 = nil; end;
-        if self.edit221 ~= nil then self.edit221:destroy(); self.edit221 = nil; end;
         if self.rectangle368 ~= nil then self.rectangle368:destroy(); self.rectangle368 = nil; end;
         if self.rectangle5 ~= nil then self.rectangle5:destroy(); self.rectangle5 = nil; end;
         if self.label57 ~= nil then self.label57:destroy(); self.label57 = nil; end;
-        if self.edit189 ~= nil then self.edit189:destroy(); self.edit189 = nil; end;
         if self.label192 ~= nil then self.label192:destroy(); self.label192 = nil; end;
+        if self.edit189 ~= nil then self.edit189:destroy(); self.edit189 = nil; end;
         if self.checkBox21 ~= nil then self.checkBox21:destroy(); self.checkBox21 = nil; end;
-        if self.rectangle590 ~= nil then self.rectangle590:destroy(); self.rectangle590 = nil; end;
         if self.edit146 ~= nil then self.edit146:destroy(); self.edit146 = nil; end;
         if self.edit130 ~= nil then self.edit130:destroy(); self.edit130 = nil; end;
         if self.image53 ~= nil then self.image53:destroy(); self.image53 = nil; end;
         if self.image43 ~= nil then self.image43:destroy(); self.image43 = nil; end;
         if self.rectangle406 ~= nil then self.rectangle406:destroy(); self.rectangle406 = nil; end;
         if self.textEditor6 ~= nil then self.textEditor6:destroy(); self.textEditor6 = nil; end;
+        if self.rclTalentos ~= nil then self.rclTalentos:destroy(); self.rclTalentos = nil; end;
         if self.rectangle362 ~= nil then self.rectangle362:destroy(); self.rectangle362 = nil; end;
-        if self.textEditor36 ~= nil then self.textEditor36:destroy(); self.textEditor36 = nil; end;
         if self.rectangle144 ~= nil then self.rectangle144:destroy(); self.rectangle144 = nil; end;
         if self.rectangle265 ~= nil then self.rectangle265:destroy(); self.rectangle265 = nil; end;
         if self.label105 ~= nil then self.label105:destroy(); self.label105 = nil; end;
         if self.label139 ~= nil then self.label139:destroy(); self.label139 = nil; end;
         if self.label224 ~= nil then self.label224:destroy(); self.label224 = nil; end;
-        if self.edit208 ~= nil then self.edit208:destroy(); self.edit208 = nil; end;
         if self.edit111 ~= nil then self.edit111:destroy(); self.edit111 = nil; end;
         if self.rectangle58 ~= nil then self.rectangle58:destroy(); self.rectangle58 = nil; end;
         if self.label143 ~= nil then self.label143:destroy(); self.label143 = nil; end;
@@ -19663,12 +18745,11 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
         if self.label92 ~= nil then self.label92:destroy(); self.label92 = nil; end;
         if self.rectangle423 ~= nil then self.rectangle423:destroy(); self.rectangle423 = nil; end;
-        if self.rectangle499 ~= nil then self.rectangle499:destroy(); self.rectangle499 = nil; end;
+        if self.label215 ~= nil then self.label215:destroy(); self.label215 = nil; end;
         if self.edit75 ~= nil then self.edit75:destroy(); self.edit75 = nil; end;
         if self.edit41 ~= nil then self.edit41:destroy(); self.edit41 = nil; end;
-        if self.label215 ~= nil then self.label215:destroy(); self.label215 = nil; end;
+        if self.rectangle499 ~= nil then self.rectangle499:destroy(); self.rectangle499 = nil; end;
         if self.edit206 ~= nil then self.edit206:destroy(); self.edit206 = nil; end;
-        if self.edit214 ~= nil then self.edit214:destroy(); self.edit214 = nil; end;
         if self.rectangle163 ~= nil then self.rectangle163:destroy(); self.rectangle163 = nil; end;
         if self.rectangle173 ~= nil then self.rectangle173:destroy(); self.rectangle173 = nil; end;
         if self.rectangle242 ~= nil then self.rectangle242:destroy(); self.rectangle242 = nil; end;
@@ -19689,7 +18770,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle483 ~= nil then self.rectangle483:destroy(); self.rectangle483 = nil; end;
         if self.rectangle493 ~= nil then self.rectangle493:destroy(); self.rectangle493 = nil; end;
         if self.image37 ~= nil then self.image37:destroy(); self.image37 = nil; end;
-        if self.rectangle587 ~= nil then self.rectangle587:destroy(); self.rectangle587 = nil; end;
         if self.rectangle35 ~= nil then self.rectangle35:destroy(); self.rectangle35 = nil; end;
         if self.rectangle179 ~= nil then self.rectangle179:destroy(); self.rectangle179 = nil; end;
         if self.label61 ~= nil then self.label61:destroy(); self.label61 = nil; end;
@@ -19723,8 +18803,6 @@ local function constructNew_frmWeirdWizard()
         if self.button1 ~= nil then self.button1:destroy(); self.button1 = nil; end;
         if self.dataLink9 ~= nil then self.dataLink9:destroy(); self.dataLink9 = nil; end;
         if self.image7 ~= nil then self.image7:destroy(); self.image7 = nil; end;
-        if self.rectangle568 ~= nil then self.rectangle568:destroy(); self.rectangle568 = nil; end;
-        if self.rectangle576 ~= nil then self.rectangle576:destroy(); self.rectangle576 = nil; end;
         if self.rectangle467 ~= nil then self.rectangle467:destroy(); self.rectangle467 = nil; end;
         if self.edit128 ~= nil then self.edit128:destroy(); self.edit128 = nil; end;
         if self.rectangle61 ~= nil then self.rectangle61:destroy(); self.rectangle61 = nil; end;
@@ -19770,7 +18848,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit51 ~= nil then self.edit51:destroy(); self.edit51 = nil; end;
         if self.rectangle211 ~= nil then self.rectangle211:destroy(); self.rectangle211 = nil; end;
         if self.rectangle361 ~= nil then self.rectangle361:destroy(); self.rectangle361 = nil; end;
-        if self.textEditor33 ~= nil then self.textEditor33:destroy(); self.textEditor33 = nil; end;
         if self.rectangle143 ~= nil then self.rectangle143:destroy(); self.rectangle143 = nil; end;
         if self.rectangle262 ~= nil then self.rectangle262:destroy(); self.rectangle262 = nil; end;
         if self.label106 ~= nil then self.label106:destroy(); self.label106 = nil; end;
@@ -19780,7 +18857,6 @@ local function constructNew_frmWeirdWizard()
         if self.label237 ~= nil then self.label237:destroy(); self.label237 = nil; end;
         if self.rectangle198 ~= nil then self.rectangle198:destroy(); self.rectangle198 = nil; end;
         if self.rectangle57 ~= nil then self.rectangle57:destroy(); self.rectangle57 = nil; end;
-        if self.rectangle597 ~= nil then self.rectangle597:destroy(); self.rectangle597 = nil; end;
         if self.label144 ~= nil then self.label144:destroy(); self.label144 = nil; end;
         if self.dataLink17 ~= nil then self.dataLink17:destroy(); self.dataLink17 = nil; end;
         if self.edit139 ~= nil then self.edit139:destroy(); self.edit139 = nil; end;
@@ -19797,13 +18873,11 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle192 ~= nil then self.rectangle192:destroy(); self.rectangle192 = nil; end;
         if self.edit116 ~= nil then self.edit116:destroy(); self.edit116 = nil; end;
         if self.label113 ~= nil then self.label113:destroy(); self.label113 = nil; end;
-        if self.edit211 ~= nil then self.edit211:destroy(); self.edit211 = nil; end;
         if self.edit94 ~= nil then self.edit94:destroy(); self.edit94 = nil; end;
         if self.dataLink19 ~= nil then self.dataLink19:destroy(); self.dataLink19 = nil; end;
         if self.comboBox15 ~= nil then self.comboBox15:destroy(); self.comboBox15 = nil; end;
         if self.rectangle72 ~= nil then self.rectangle72:destroy(); self.rectangle72 = nil; end;
         if self.rectangle508 ~= nil then self.rectangle508:destroy(); self.rectangle508 = nil; end;
-        if self.rectangle582 ~= nil then self.rectangle582:destroy(); self.rectangle582 = nil; end;
         if self.rectangle91 ~= nil then self.rectangle91:destroy(); self.rectangle91 = nil; end;
         if self.rectangle81 ~= nil then self.rectangle81:destroy(); self.rectangle81 = nil; end;
         if self.edit150 ~= nil then self.edit150:destroy(); self.edit150 = nil; end;
@@ -19848,7 +18922,6 @@ local function constructNew_frmWeirdWizard()
         if self.comboBox32 ~= nil then self.comboBox32:destroy(); self.comboBox32 = nil; end;
         if self.comboBox20 ~= nil then self.comboBox20:destroy(); self.comboBox20 = nil; end;
         if self.rectangle410 ~= nil then self.rectangle410:destroy(); self.rectangle410 = nil; end;
-        if self.textEditor28 ~= nil then self.textEditor28:destroy(); self.textEditor28 = nil; end;
         if self.edit7 ~= nil then self.edit7:destroy(); self.edit7 = nil; end;
         if self.edit106 ~= nil then self.edit106:destroy(); self.edit106 = nil; end;
         if self.rectangle119 ~= nil then self.rectangle119:destroy(); self.rectangle119 = nil; end;
@@ -19861,11 +18934,9 @@ local function constructNew_frmWeirdWizard()
         if self.label157 ~= nil then self.label157:destroy(); self.label157 = nil; end;
         if self.rectangle296 ~= nil then self.rectangle296:destroy(); self.rectangle296 = nil; end;
         if self.rectangle284 ~= nil then self.rectangle284:destroy(); self.rectangle284 = nil; end;
-        if self.textEditor26 ~= nil then self.textEditor26:destroy(); self.textEditor26 = nil; end;
         if self.image26 ~= nil then self.image26:destroy(); self.image26 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
         if self.rectangle561 ~= nil then self.rectangle561:destroy(); self.rectangle561 = nil; end;
-        if self.rectangle571 ~= nil then self.rectangle571:destroy(); self.rectangle571 = nil; end;
         if self.edit199 ~= nil then self.edit199:destroy(); self.edit199 = nil; end;
         if self.edit123 ~= nil then self.edit123:destroy(); self.edit123 = nil; end;
         if self.rectangle302 ~= nil then self.rectangle302:destroy(); self.rectangle302 = nil; end;
@@ -19879,9 +18950,9 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle550 ~= nil then self.rectangle550:destroy(); self.rectangle550 = nil; end;
         if self.rectangle47 ~= nil then self.rectangle47:destroy(); self.rectangle47 = nil; end;
         if self.edit193 ~= nil then self.edit193:destroy(); self.edit193 = nil; end;
-        if self.edit183 ~= nil then self.edit183:destroy(); self.edit183 = nil; end;
-        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
         if self.label198 ~= nil then self.label198:destroy(); self.label198 = nil; end;
+        if self.edit14 ~= nil then self.edit14:destroy(); self.edit14 = nil; end;
+        if self.edit183 ~= nil then self.edit183:destroy(); self.edit183 = nil; end;
         if self.edit148 ~= nil then self.edit148:destroy(); self.edit148 = nil; end;
         if self.rectangle473 ~= nil then self.rectangle473:destroy(); self.rectangle473 = nil; end;
         if self.label15 ~= nil then self.label15:destroy(); self.label15 = nil; end;
@@ -19898,11 +18969,10 @@ local function constructNew_frmWeirdWizard()
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
         if self.label196 ~= nil then self.label196:destroy(); self.label196 = nil; end;
         if self.rectangle52 ~= nil then self.rectangle52:destroy(); self.rectangle52 = nil; end;
-        if self.rectangle594 ~= nil then self.rectangle594:destroy(); self.rectangle594 = nil; end;
         if self.edit142 ~= nil then self.edit142:destroy(); self.edit142 = nil; end;
-        if self.edit134 ~= nil then self.edit134:destroy(); self.edit134 = nil; end;
-        if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
         if self.label149 ~= nil then self.label149:destroy(); self.label149 = nil; end;
+        if self.dataLink14 ~= nil then self.dataLink14:destroy(); self.dataLink14 = nil; end;
+        if self.edit134 ~= nil then self.edit134:destroy(); self.edit134 = nil; end;
         if self.rectangle479 ~= nil then self.rectangle479:destroy(); self.rectangle479 = nil; end;
         if self.rectangle366 ~= nil then self.rectangle366:destroy(); self.rectangle366 = nil; end;
         if self.rectangle26 ~= nil then self.rectangle26:destroy(); self.rectangle26 = nil; end;
@@ -19910,7 +18980,6 @@ local function constructNew_frmWeirdWizard()
         if self.label76 ~= nil then self.label76:destroy(); self.label76 = nil; end;
         if self.rectangle429 ~= nil then self.rectangle429:destroy(); self.rectangle429 = nil; end;
         if self.comboBox40 ~= nil then self.comboBox40:destroy(); self.comboBox40 = nil; end;
-        if self.edit212 ~= nil then self.edit212:destroy(); self.edit212 = nil; end;
         if self.rectangle169 ~= nil then self.rectangle169:destroy(); self.rectangle169 = nil; end;
         if self.rectangle197 ~= nil then self.rectangle197:destroy(); self.rectangle197 = nil; end;
         if self.rectangle248 ~= nil then self.rectangle248:destroy(); self.rectangle248 = nil; end;
@@ -19918,7 +18987,6 @@ local function constructNew_frmWeirdWizard()
         if self.label168 ~= nil then self.label168:destroy(); self.label168 = nil; end;
         if self.edit91 ~= nil then self.edit91:destroy(); self.edit91 = nil; end;
         if self.comboBox18 ~= nil then self.comboBox18:destroy(); self.comboBox18 = nil; end;
-        if self.rectangle581 ~= nil then self.rectangle581:destroy(); self.rectangle581 = nil; end;
         if self.rectangle94 ~= nil then self.rectangle94:destroy(); self.rectangle94 = nil; end;
         if self.rectangle86 ~= nil then self.rectangle86:destroy(); self.rectangle86 = nil; end;
         if self.edit157 ~= nil then self.edit157:destroy(); self.edit157 = nil; end;
@@ -19927,9 +18995,9 @@ local function constructNew_frmWeirdWizard()
         if self.edit167 ~= nil then self.edit167:destroy(); self.edit167 = nil; end;
         if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
         if self.image31 ~= nil then self.image31:destroy(); self.image31 = nil; end;
-        if self.rectangle520 ~= nil then self.rectangle520:destroy(); self.rectangle520 = nil; end;
-        if self.rectangle341 ~= nil then self.rectangle341:destroy(); self.rectangle341 = nil; end;
         if self.label219 ~= nil then self.label219:destroy(); self.label219 = nil; end;
+        if self.rectangle341 ~= nil then self.rectangle341:destroy(); self.rectangle341 = nil; end;
+        if self.rectangle520 ~= nil then self.rectangle520:destroy(); self.rectangle520 = nil; end;
         if self.rectangle167 ~= nil then self.rectangle167:destroy(); self.rectangle167 = nil; end;
         if self.rectangle177 ~= nil then self.rectangle177:destroy(); self.rectangle177 = nil; end;
         if self.rectangle246 ~= nil then self.rectangle246:destroy(); self.rectangle246 = nil; end;
@@ -19939,7 +19007,6 @@ local function constructNew_frmWeirdWizard()
         if self.label243 ~= nil then self.label243:destroy(); self.label243 = nil; end;
         if self.checkBox5 ~= nil then self.checkBox5:destroy(); self.checkBox5 = nil; end;
         if self.tabControl1 ~= nil then self.tabControl1:destroy(); self.tabControl1 = nil; end;
-        if self.edit218 ~= nil then self.edit218:destroy(); self.edit218 = nil; end;
         if self.comboBox12 ~= nil then self.comboBox12:destroy(); self.comboBox12 = nil; end;
         if self.rectangle501 ~= nil then self.rectangle501:destroy(); self.rectangle501 = nil; end;
         if self.rectangle511 ~= nil then self.rectangle511:destroy(); self.rectangle511 = nil; end;
@@ -19952,8 +19019,8 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle370 ~= nil then self.rectangle370:destroy(); self.rectangle370 = nil; end;
         if self.rectangle487 ~= nil then self.rectangle487:destroy(); self.rectangle487 = nil; end;
         if self.rectangle152 ~= nil then self.rectangle152:destroy(); self.rectangle152 = nil; end;
-        if self.rectangle497 ~= nil then self.rectangle497:destroy(); self.rectangle497 = nil; end;
         if self.checkBox17 ~= nil then self.checkBox17:destroy(); self.checkBox17 = nil; end;
+        if self.rectangle497 ~= nil then self.rectangle497:destroy(); self.rectangle497 = nil; end;
         if self.rectangle31 ~= nil then self.rectangle31:destroy(); self.rectangle31 = nil; end;
         if self.rectangle444 ~= nil then self.rectangle444:destroy(); self.rectangle444 = nil; end;
         if self.edit8 ~= nil then self.edit8:destroy(); self.edit8 = nil; end;
@@ -19993,8 +19060,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle357 ~= nil then self.rectangle357:destroy(); self.rectangle357 = nil; end;
         if self.label208 ~= nil then self.label208:destroy(); self.label208 = nil; end;
         if self.layout6 ~= nil then self.layout6:destroy(); self.layout6 = nil; end;
-        if self.rectangle564 ~= nil then self.rectangle564:destroy(); self.rectangle564 = nil; end;
-        if self.rectangle572 ~= nil then self.rectangle572:destroy(); self.rectangle572 = nil; end;
         if self.rectangle463 ~= nil then self.rectangle463:destroy(); self.rectangle463 = nil; end;
         if self.rectangle453 ~= nil then self.rectangle453:destroy(); self.rectangle453 = nil; end;
         if self.rectangle65 ~= nil then self.rectangle65:destroy(); self.rectangle65 = nil; end;
@@ -20011,7 +19076,6 @@ local function constructNew_frmWeirdWizard()
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
         if self.rectangle555 ~= nil then self.rectangle555:destroy(); self.rectangle555 = nil; end;
         if self.rectangle44 ~= nil then self.rectangle44:destroy(); self.rectangle44 = nil; end;
-        if self.rectangle578 ~= nil then self.rectangle578:destroy(); self.rectangle578 = nil; end;
         if self.edit180 ~= nil then self.edit180:destroy(); self.edit180 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
         if self.edit84 ~= nil then self.edit84:destroy(); self.edit84 = nil; end;
@@ -20020,14 +19084,12 @@ local function constructNew_frmWeirdWizard()
         if self.label16 ~= nil then self.label16:destroy(); self.label16 = nil; end;
         if self.label24 ~= nil then self.label24:destroy(); self.label24 = nil; end;
         if self.rectangle217 ~= nil then self.rectangle217:destroy(); self.rectangle217 = nil; end;
-        if self.edit220 ~= nil then self.edit220:destroy(); self.edit220 = nil; end;
         if self.scrollBox5 ~= nil then self.scrollBox5:destroy(); self.scrollBox5 = nil; end;
         if self.rectangle6 ~= nil then self.rectangle6:destroy(); self.rectangle6 = nil; end;
         if self.label54 ~= nil then self.label54:destroy(); self.label54 = nil; end;
         if self.label191 ~= nil then self.label191:destroy(); self.label191 = nil; end;
         if self.checkBox22 ~= nil then self.checkBox22:destroy(); self.checkBox22 = nil; end;
         if self.rectangle51 ~= nil then self.rectangle51:destroy(); self.rectangle51 = nil; end;
-        if self.rectangle591 ~= nil then self.rectangle591:destroy(); self.rectangle591 = nil; end;
         if self.edit147 ~= nil then self.edit147:destroy(); self.edit147 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
         if self.image52 ~= nil then self.image52:destroy(); self.image52 = nil; end;
@@ -20035,7 +19097,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle407 ~= nil then self.rectangle407:destroy(); self.rectangle407 = nil; end;
         if self.textEditor9 ~= nil then self.textEditor9:destroy(); self.textEditor9 = nil; end;
         if self.rectangle365 ~= nil then self.rectangle365:destroy(); self.rectangle365 = nil; end;
-        if self.textEditor37 ~= nil then self.textEditor37:destroy(); self.textEditor37 = nil; end;
         if self.rectangle147 ~= nil then self.rectangle147:destroy(); self.rectangle147 = nil; end;
         if self.rectangle266 ~= nil then self.rectangle266:destroy(); self.rectangle266 = nil; end;
         if self.label138 ~= nil then self.label138:destroy(); self.label138 = nil; end;
@@ -20045,15 +19106,14 @@ local function constructNew_frmWeirdWizard()
         if self.dataLink13 ~= nil then self.dataLink13:destroy(); self.dataLink13 = nil; end;
         if self.edit168 ~= nil then self.edit168:destroy(); self.edit168 = nil; end;
         if self.rectangle21 ~= nil then self.rectangle21:destroy(); self.rectangle21 = nil; end;
-        if self.rectangle523 ~= nil then self.rectangle523:destroy(); self.rectangle523 = nil; end;
+        if self.label216 ~= nil then self.label216:destroy(); self.label216 = nil; end;
         if self.label93 ~= nil then self.label93:destroy(); self.label93 = nil; end;
         if self.rectangle420 ~= nil then self.rectangle420:destroy(); self.rectangle420 = nil; end;
         if self.rectangle498 ~= nil then self.rectangle498:destroy(); self.rectangle498 = nil; end;
         if self.edit72 ~= nil then self.edit72:destroy(); self.edit72 = nil; end;
         if self.edit40 ~= nil then self.edit40:destroy(); self.edit40 = nil; end;
-        if self.label216 ~= nil then self.label216:destroy(); self.label216 = nil; end;
+        if self.rectangle523 ~= nil then self.rectangle523:destroy(); self.rectangle523 = nil; end;
         if self.edit205 ~= nil then self.edit205:destroy(); self.edit205 = nil; end;
-        if self.edit215 ~= nil then self.edit215:destroy(); self.edit215 = nil; end;
         if self.rectangle162 ~= nil then self.rectangle162:destroy(); self.rectangle162 = nil; end;
         if self.rectangle170 ~= nil then self.rectangle170:destroy(); self.rectangle170 = nil; end;
         if self.rectangle243 ~= nil then self.rectangle243:destroy(); self.rectangle243 = nil; end;
@@ -20072,7 +19132,6 @@ local function constructNew_frmWeirdWizard()
         if self.label99 ~= nil then self.label99:destroy(); self.label99 = nil; end;
         if self.rectangle484 ~= nil then self.rectangle484:destroy(); self.rectangle484 = nil; end;
         if self.rectangle492 ~= nil then self.rectangle492:destroy(); self.rectangle492 = nil; end;
-        if self.rectangle586 ~= nil then self.rectangle586:destroy(); self.rectangle586 = nil; end;
         if self.image36 ~= nil then self.image36:destroy(); self.image36 = nil; end;
         if self.rectangle34 ~= nil then self.rectangle34:destroy(); self.rectangle34 = nil; end;
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
@@ -20114,19 +19173,17 @@ local function constructNew_frmWeirdWizard()
         if self.dataLink8 ~= nil then self.dataLink8:destroy(); self.dataLink8 = nil; end;
         if self.image4 ~= nil then self.image4:destroy(); self.image4 = nil; end;
         if self.layout9 ~= nil then self.layout9:destroy(); self.layout9 = nil; end;
-        if self.rectangle567 ~= nil then self.rectangle567:destroy(); self.rectangle567 = nil; end;
-        if self.rectangle577 ~= nil then self.rectangle577:destroy(); self.rectangle577 = nil; end;
         if self.rectangle464 ~= nil then self.rectangle464:destroy(); self.rectangle464 = nil; end;
         if self.edit129 ~= nil then self.edit129:destroy(); self.edit129 = nil; end;
         if self.rectangle66 ~= nil then self.rectangle66:destroy(); self.rectangle66 = nil; end;
         if self.rectangle456 ~= nil then self.rectangle456:destroy(); self.rectangle456 = nil; end;
         if self.label36 ~= nil then self.label36:destroy(); self.label36 = nil; end;
         if self.rectangle308 ~= nil then self.rectangle308:destroy(); self.rectangle308 = nil; end;
-        if self.rectangle316 ~= nil then self.rectangle316:destroy(); self.rectangle316 = nil; end;
+        if self.edit89 ~= nil then self.edit89:destroy(); self.edit89 = nil; end;
         if self.edit33 ~= nil then self.edit33:destroy(); self.edit33 = nil; end;
         if self.rectangle134 ~= nil then self.rectangle134:destroy(); self.rectangle134 = nil; end;
         if self.rectangle237 ~= nil then self.rectangle237:destroy(); self.rectangle237 = nil; end;
-        if self.edit89 ~= nil then self.edit89:destroy(); self.edit89 = nil; end;
+        if self.rectangle316 ~= nil then self.rectangle316:destroy(); self.rectangle316 = nil; end;
         if self.rectangle292 ~= nil then self.rectangle292:destroy(); self.rectangle292 = nil; end;
         if self.rectangle280 ~= nil then self.rectangle280:destroy(); self.rectangle280 = nil; end;
         if self.label153 ~= nil then self.label153:destroy(); self.label153 = nil; end;
@@ -20163,7 +19220,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit52 ~= nil then self.edit52:destroy(); self.edit52 = nil; end;
         if self.rectangle210 ~= nil then self.rectangle210:destroy(); self.rectangle210 = nil; end;
         if self.rectangle360 ~= nil then self.rectangle360:destroy(); self.rectangle360 = nil; end;
-        if self.textEditor30 ~= nil then self.textEditor30:destroy(); self.textEditor30 = nil; end;
         if self.rectangle142 ~= nil then self.rectangle142:destroy(); self.rectangle142 = nil; end;
         if self.label78 ~= nil then self.label78:destroy(); self.label78 = nil; end;
         if self.rectangle263 ~= nil then self.rectangle263:destroy(); self.rectangle263 = nil; end;
@@ -20174,9 +19230,9 @@ local function constructNew_frmWeirdWizard()
         if self.label234 ~= nil then self.label234:destroy(); self.label234 = nil; end;
         if self.rectangle199 ~= nil then self.rectangle199:destroy(); self.rectangle199 = nil; end;
         if self.rectangle56 ~= nil then self.rectangle56:destroy(); self.rectangle56 = nil; end;
-        if self.edit138 ~= nil then self.edit138:destroy(); self.edit138 = nil; end;
-        if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
         if self.label145 ~= nil then self.label145:destroy(); self.label145 = nil; end;
+        if self.dataLink10 ~= nil then self.dataLink10:destroy(); self.dataLink10 = nil; end;
+        if self.edit138 ~= nil then self.edit138:destroy(); self.edit138 = nil; end;
         if self.label213 ~= nil then self.label213:destroy(); self.label213 = nil; end;
         if self.rectangle22 ~= nil then self.rectangle22:destroy(); self.rectangle22 = nil; end;
         if self.rectangle10 ~= nil then self.rectangle10:destroy(); self.rectangle10 = nil; end;

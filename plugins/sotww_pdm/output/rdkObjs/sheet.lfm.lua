@@ -12,7 +12,7 @@ local function constructNew_frmFichaPDM()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
+    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -486,7 +486,7 @@ local function constructNew_frmFichaPDM()
     obj.rectangle6:setParent(obj.popBoonBane);
     obj.rectangle6:setAlign("client");
     obj.rectangle6:setColor("black");
-    lfm_setPropAsString(obj.rectangle6, "corners",  "");
+    lfm_setPropAsString(obj.rectangle6, "corners", "");
     obj.rectangle6:setXradius(25);
     obj.rectangle6:setYradius(25);
     obj.rectangle6:setCornerType("round");
@@ -740,64 +740,64 @@ local function constructNew_frmFichaPDM()
 
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
-        function (_)
+        function (event)
             ligarForca()
-        end, obj);
+        end);
 
     obj._e_event1 = obj.dataLink1:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
+        function (field, oldValue, newValue)
             sheet.modForca = math.floor(sheet.Forca - 10);
-        end, obj);
+        end);
 
     obj._e_event2 = obj.button2:addEventListener("onClick",
-        function (_)
+        function (event)
             ligarAgilidade()
-        end, obj);
+        end);
 
     obj._e_event3 = obj.dataLink2:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
+        function (field, oldValue, newValue)
             sheet.modAgilidade = math.floor(sheet.Agilidade - 10);
-        end, obj);
+        end);
 
     obj._e_event4 = obj.button3:addEventListener("onClick",
-        function (_)
+        function (event)
             ligarIntelecto()
-        end, obj);
+        end);
 
     obj._e_event5 = obj.dataLink3:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
+        function (field, oldValue, newValue)
             sheet.modIntelecto = math.floor(sheet.Intelecto - 10);
-        end, obj);
+        end);
 
     obj._e_event6 = obj.button4:addEventListener("onClick",
-        function (_)
+        function (event)
             ligarVontade()
-        end, obj);
+        end);
 
     obj._e_event7 = obj.dataLink4:addEventListener("onChange",
-        function (_, field, oldValue, newValue)
+        function (field, oldValue, newValue)
             sheet.modVontade = math.floor(sheet.Vontade - 10);
-        end, obj);
+        end);
 
     obj._e_event8 = obj.button5:addEventListener("onClick",
-        function (_)
+        function (event)
             self.rclTracos:append();
-        end, obj);
+        end);
 
     obj._e_event9 = obj.button6:addEventListener("onClick",
-        function (_)
+        function (event)
             self.rclAtaque:append();
-        end, obj);
+        end);
 
     obj._e_event10 = obj.button7:addEventListener("onClick",
-        function (_)
+        function (event)
             self.rclMagia:append();
-        end, obj);
+        end);
 
     obj._e_event11 = obj.button8:addEventListener("onClick",
-        function (_)
+        function (event)
             confirmarBoonBane()
-        end, obj);
+        end);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event11);
@@ -914,6 +914,7 @@ local _frmFichaPDM = {
     dataType = "br.com.czagalo.SotWW_Monsters_and_NPCs", 
     formType = "sheetTemplate", 
     formComponentName = "form", 
+    cacheMode = "none", 
     title = "SotWW - Monsters and NPCs", 
     description=""};
 

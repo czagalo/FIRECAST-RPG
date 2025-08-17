@@ -12,7 +12,7 @@ local function constructNew_frmAtaque()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
+    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -165,7 +165,7 @@ local function constructNew_frmAtaque()
     obj.rectangle1:setParent(obj.popBoonBaneAtaque);
     obj.rectangle1:setAlign("client");
     obj.rectangle1:setColor("black");
-    lfm_setPropAsString(obj.rectangle1, "corners",  "");
+    lfm_setPropAsString(obj.rectangle1, "corners", "");
     obj.rectangle1:setXradius(25);
     obj.rectangle1:setYradius(25);
     obj.rectangle1:setCornerType("round");
@@ -545,24 +545,24 @@ local function constructNew_frmAtaque()
 
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
-        function (_)
+        function (event)
             ligarAtaque()
-        end, obj);
+        end);
 
     obj._e_event1 = obj.comboBox1:addEventListener("onChange",
-        function (_)
+        function ()
             escolherAtributo()
-        end, obj);
+        end);
 
     obj._e_event2 = obj.button2:addEventListener("onClick",
-        function (_)
+        function (event)
             NDB.deleteNode(sheet);
-        end, obj);
+        end);
 
     obj._e_event3 = obj.button3:addEventListener("onClick",
-        function (_)
+        function (event)
             confirmarBoonBane()
-        end, obj);
+        end);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event3);
@@ -631,6 +631,7 @@ local _frmAtaque = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
+    cacheMode = "none", 
     title = "", 
     description=""};
 

@@ -12,7 +12,7 @@ local function constructNew_frmMagia()
     local self = obj;
     local sheet = nil;
 
-    rawset(obj, "_oldSetNodeObjectFunction", rawget(obj, "setNodeObject"));
+    rawset(obj, "_oldSetNodeObjectFunction", obj.setNodeObject);
 
     function obj:setNodeObject(nodeObject)
         sheet = nodeObject;
@@ -292,14 +292,14 @@ local function constructNew_frmMagia()
 
 
     obj._e_event0 = obj.button1:addEventListener("onClick",
-        function (_)
+        function (event)
             ligarMagia()
-        end, obj);
+        end);
 
     obj._e_event1 = obj.button2:addEventListener("onClick",
-        function (_)
+        function (event)
             NDB.deleteNode(sheet);
-        end, obj);
+        end);
 
     function obj:_releaseEvents()
         __o_rrpgObjs.removeEventListenerById(self._e_event1);
@@ -372,6 +372,7 @@ local _frmMagia = {
     dataType = "", 
     formType = "undefined", 
     formComponentName = "form", 
+    cacheMode = "none", 
     title = "", 
     description=""};
 
