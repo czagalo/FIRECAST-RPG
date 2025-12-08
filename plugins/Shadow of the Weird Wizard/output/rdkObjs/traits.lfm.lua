@@ -166,7 +166,6 @@ local function constructNew_frmTalentos()
                                                 if sheet.talentoBeneficio ~= nil and sheet.descricaoTalentoBeneficio ~= nil then
                                                       mesaDeRPG.chat:enviarMensagem("---")
                                                       mesaDeRPG.chat:enviarMensagem("[§K2][§B]"..talento)
-                                                      mesaDeRPG.chat:enviarMensagem("---")
                                                       mesaDeRPG.chat:enviarMensagem(descricao)
                                                       mesaDeRPG.chat:enviarMensagem("---")
                                                 end

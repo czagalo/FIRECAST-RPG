@@ -33,10 +33,7 @@ local function constructNew_frmWeirdWizard()
 
     obj.scrollBox1 = GUI.fromHandle(_obj_newObject("scrollBox"));
     obj.scrollBox1:setParent(obj);
-    obj.scrollBox1:setLeft(0);
-    obj.scrollBox1:setTop(0);
-    obj.scrollBox1:setWidth(827);
-    obj.scrollBox1:setHeight(880);
+    obj.scrollBox1:setAlign("client");
     obj.scrollBox1:setName("scrollBox1");
 
     obj.tabControl1 = GUI.fromHandle(_obj_newObject("tabControl"));
@@ -44,7 +41,7 @@ local function constructNew_frmWeirdWizard()
     obj.tabControl1:setLeft(0);
     obj.tabControl1:setTop(0);
     obj.tabControl1:setWidth(811);
-    obj.tabControl1:setHeight(1129);
+    obj.tabControl1:setHeight(870);
     obj.tabControl1:setName("tabControl1");
 
     obj.tab1 = GUI.fromHandle(_obj_newObject("tab"));
@@ -1460,15 +1457,6 @@ local function constructNew_frmWeirdWizard()
     obj.image6:setHint("Editar planilha");
     obj.image6:setName("image6");
 
-    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image7:setParent(obj.tab1);
-    obj.image7:setLeft(69);
-    obj.image7:setTop(875);
-    obj.image7:setWidth(676);
-    obj.image7:setHeight(194);
-    obj.image7:setSRC("/img/logo.png");
-    obj.image7:setName("image7");
-
     obj.tab2 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab2:setParent(obj.tabControl1);
     obj.tab2:setTitle("Combate");
@@ -1588,17 +1576,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle60:setColor("#D5D5D5");
     obj.rectangle60:setName("rectangle60");
 
-    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image8:setParent(obj.rectangle56);
-    obj.image8:setLeft(694);
-    obj.image8:setTop(103);
-    obj.image8:setWidth(27);
-    obj.image8:setHeight(33);
-    obj.image8:setSRC("/img/d20.png");
-    obj.image8:setHitTest(true);
-    obj.image8:setCursor("handPoint");
-    obj.image8:setHint("Ataque");
-    obj.image8:setName("image8");
+    obj.image7 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image7:setParent(obj.rectangle56);
+    obj.image7:setLeft(694);
+    obj.image7:setTop(103);
+    obj.image7:setWidth(27);
+    obj.image7:setHeight(33);
+    obj.image7:setSRC("/img/d20.png");
+    obj.image7:setHitTest(true);
+    obj.image7:setCursor("handPoint");
+    obj.image7:setHint("Ataque");
+    obj.image7:setName("image7");
 
     obj.rectangle61 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle61:setParent(obj.rectangle56);
@@ -1609,17 +1597,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle61:setColor("#D5D5D5");
     obj.rectangle61:setName("rectangle61");
 
-    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image9:setParent(obj.rectangle56);
-    obj.image9:setLeft(741);
-    obj.image9:setTop(107);
-    obj.image9:setWidth(28);
-    obj.image9:setHeight(28);
-    obj.image9:setSRC("/img/d6.png");
-    obj.image9:setHitTest(true);
-    obj.image9:setCursor("handPoint");
-    obj.image9:setHint("Dano");
-    obj.image9:setName("image9");
+    obj.image8 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image8:setParent(obj.rectangle56);
+    obj.image8:setLeft(741);
+    obj.image8:setTop(107);
+    obj.image8:setWidth(28);
+    obj.image8:setHeight(28);
+    obj.image8:setSRC("/img/d6.png");
+    obj.image8:setHitTest(true);
+    obj.image8:setCursor("handPoint");
+    obj.image8:setHint("Dano");
+    obj.image8:setName("image8");
 
     obj.rectangle62 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle62:setParent(obj.rectangle56);
@@ -1815,17 +1803,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle71:setColor("#D5D5D5");
     obj.rectangle71:setName("rectangle71");
 
-    obj.image10 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image10:setParent(obj.rectangle56);
-    obj.image10:setLeft(694);
-    obj.image10:setTop(228);
-    obj.image10:setWidth(27);
-    obj.image10:setHeight(33);
-    obj.image10:setSRC("/img/d20.png");
-    obj.image10:setHitTest(true);
-    obj.image10:setCursor("handPoint");
-    obj.image10:setHint("Ataque");
-    obj.image10:setName("image10");
+    obj.image9 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image9:setParent(obj.rectangle56);
+    obj.image9:setLeft(694);
+    obj.image9:setTop(228);
+    obj.image9:setWidth(27);
+    obj.image9:setHeight(33);
+    obj.image9:setSRC("/img/d20.png");
+    obj.image9:setHitTest(true);
+    obj.image9:setCursor("handPoint");
+    obj.image9:setHint("Ataque");
+    obj.image9:setName("image9");
 
     obj.rectangle72 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle72:setParent(obj.rectangle56);
@@ -1836,17 +1824,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle72:setColor("#D5D5D5");
     obj.rectangle72:setName("rectangle72");
 
-    obj.image11 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image11:setParent(obj.rectangle56);
-    obj.image11:setLeft(741);
-    obj.image11:setTop(232);
-    obj.image11:setWidth(28);
-    obj.image11:setHeight(28);
-    obj.image11:setSRC("/img/d6.png");
-    obj.image11:setHitTest(true);
-    obj.image11:setCursor("handPoint");
-    obj.image11:setHint("Dano");
-    obj.image11:setName("image11");
+    obj.image10 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image10:setParent(obj.rectangle56);
+    obj.image10:setLeft(741);
+    obj.image10:setTop(232);
+    obj.image10:setWidth(28);
+    obj.image10:setHeight(28);
+    obj.image10:setSRC("/img/d6.png");
+    obj.image10:setHitTest(true);
+    obj.image10:setCursor("handPoint");
+    obj.image10:setHint("Dano");
+    obj.image10:setName("image10");
 
     obj.rectangle73 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle73:setParent(obj.rectangle56);
@@ -2042,17 +2030,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle82:setColor("#D5D5D5");
     obj.rectangle82:setName("rectangle82");
 
-    obj.image12 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image12:setParent(obj.rectangle56);
-    obj.image12:setLeft(694);
-    obj.image12:setTop(353);
-    obj.image12:setWidth(27);
-    obj.image12:setHeight(33);
-    obj.image12:setSRC("/img/d20.png");
-    obj.image12:setHitTest(true);
-    obj.image12:setCursor("handPoint");
-    obj.image12:setHint("Ataque");
-    obj.image12:setName("image12");
+    obj.image11 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image11:setParent(obj.rectangle56);
+    obj.image11:setLeft(694);
+    obj.image11:setTop(353);
+    obj.image11:setWidth(27);
+    obj.image11:setHeight(33);
+    obj.image11:setSRC("/img/d20.png");
+    obj.image11:setHitTest(true);
+    obj.image11:setCursor("handPoint");
+    obj.image11:setHint("Ataque");
+    obj.image11:setName("image11");
 
     obj.rectangle83 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle83:setParent(obj.rectangle56);
@@ -2063,17 +2051,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle83:setColor("#D5D5D5");
     obj.rectangle83:setName("rectangle83");
 
-    obj.image13 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image13:setParent(obj.rectangle56);
-    obj.image13:setLeft(741);
-    obj.image13:setTop(357);
-    obj.image13:setWidth(28);
-    obj.image13:setHeight(28);
-    obj.image13:setSRC("/img/d6.png");
-    obj.image13:setHitTest(true);
-    obj.image13:setCursor("handPoint");
-    obj.image13:setHint("Dano");
-    obj.image13:setName("image13");
+    obj.image12 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image12:setParent(obj.rectangle56);
+    obj.image12:setLeft(741);
+    obj.image12:setTop(357);
+    obj.image12:setWidth(28);
+    obj.image12:setHeight(28);
+    obj.image12:setSRC("/img/d6.png");
+    obj.image12:setHitTest(true);
+    obj.image12:setCursor("handPoint");
+    obj.image12:setHint("Dano");
+    obj.image12:setName("image12");
 
     obj.rectangle84 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle84:setParent(obj.rectangle56);
@@ -2260,17 +2248,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle92:setColor("#D5D5D5");
     obj.rectangle92:setName("rectangle92");
 
-    obj.image14 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image14:setParent(obj.rectangle56);
-    obj.image14:setLeft(694);
-    obj.image14:setTop(478);
-    obj.image14:setWidth(27);
-    obj.image14:setHeight(33);
-    obj.image14:setSRC("/img/d20.png");
-    obj.image14:setHitTest(true);
-    obj.image14:setCursor("handPoint");
-    obj.image14:setHint("Ataque");
-    obj.image14:setName("image14");
+    obj.image13 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image13:setParent(obj.rectangle56);
+    obj.image13:setLeft(694);
+    obj.image13:setTop(478);
+    obj.image13:setWidth(27);
+    obj.image13:setHeight(33);
+    obj.image13:setSRC("/img/d20.png");
+    obj.image13:setHitTest(true);
+    obj.image13:setCursor("handPoint");
+    obj.image13:setHint("Ataque");
+    obj.image13:setName("image13");
 
     obj.rectangle93 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle93:setParent(obj.rectangle56);
@@ -2281,17 +2269,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle93:setColor("#D5D5D5");
     obj.rectangle93:setName("rectangle93");
 
-    obj.image15 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image15:setParent(obj.rectangle56);
-    obj.image15:setLeft(741);
-    obj.image15:setTop(482);
-    obj.image15:setWidth(28);
-    obj.image15:setHeight(28);
-    obj.image15:setSRC("/img/d6.png");
-    obj.image15:setHitTest(true);
-    obj.image15:setCursor("handPoint");
-    obj.image15:setHint("Dano");
-    obj.image15:setName("image15");
+    obj.image14 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image14:setParent(obj.rectangle56);
+    obj.image14:setLeft(741);
+    obj.image14:setTop(482);
+    obj.image14:setWidth(28);
+    obj.image14:setHeight(28);
+    obj.image14:setSRC("/img/d6.png");
+    obj.image14:setHitTest(true);
+    obj.image14:setCursor("handPoint");
+    obj.image14:setHint("Dano");
+    obj.image14:setName("image14");
 
     obj.rectangle94 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle94:setParent(obj.rectangle56);
@@ -2478,17 +2466,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle102:setColor("#D5D5D5");
     obj.rectangle102:setName("rectangle102");
 
-    obj.image16 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image16:setParent(obj.rectangle56);
-    obj.image16:setLeft(694);
-    obj.image16:setTop(603);
-    obj.image16:setWidth(27);
-    obj.image16:setHeight(33);
-    obj.image16:setSRC("/img/d20.png");
-    obj.image16:setHitTest(true);
-    obj.image16:setCursor("handPoint");
-    obj.image16:setHint("Ataque");
-    obj.image16:setName("image16");
+    obj.image15 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image15:setParent(obj.rectangle56);
+    obj.image15:setLeft(694);
+    obj.image15:setTop(603);
+    obj.image15:setWidth(27);
+    obj.image15:setHeight(33);
+    obj.image15:setSRC("/img/d20.png");
+    obj.image15:setHitTest(true);
+    obj.image15:setCursor("handPoint");
+    obj.image15:setHint("Ataque");
+    obj.image15:setName("image15");
 
     obj.rectangle103 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle103:setParent(obj.rectangle56);
@@ -2499,17 +2487,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle103:setColor("#D5D5D5");
     obj.rectangle103:setName("rectangle103");
 
-    obj.image17 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image17:setParent(obj.rectangle56);
-    obj.image17:setLeft(741);
-    obj.image17:setTop(607);
-    obj.image17:setWidth(28);
-    obj.image17:setHeight(28);
-    obj.image17:setSRC("/img/d6.png");
-    obj.image17:setHitTest(true);
-    obj.image17:setCursor("handPoint");
-    obj.image17:setHint("Dano");
-    obj.image17:setName("image17");
+    obj.image16 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image16:setParent(obj.rectangle56);
+    obj.image16:setLeft(741);
+    obj.image16:setTop(607);
+    obj.image16:setWidth(28);
+    obj.image16:setHeight(28);
+    obj.image16:setSRC("/img/d6.png");
+    obj.image16:setHitTest(true);
+    obj.image16:setCursor("handPoint");
+    obj.image16:setHint("Dano");
+    obj.image16:setName("image16");
 
     obj.rectangle104 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle104:setParent(obj.rectangle56);
@@ -2696,17 +2684,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle112:setColor("#D5D5D5");
     obj.rectangle112:setName("rectangle112");
 
-    obj.image18 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image18:setParent(obj.rectangle56);
-    obj.image18:setLeft(694);
-    obj.image18:setTop(728);
-    obj.image18:setWidth(27);
-    obj.image18:setHeight(33);
-    obj.image18:setSRC("/img/d20.png");
-    obj.image18:setHitTest(true);
-    obj.image18:setCursor("handPoint");
-    obj.image18:setHint("Ataque");
-    obj.image18:setName("image18");
+    obj.image17 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image17:setParent(obj.rectangle56);
+    obj.image17:setLeft(694);
+    obj.image17:setTop(728);
+    obj.image17:setWidth(27);
+    obj.image17:setHeight(33);
+    obj.image17:setSRC("/img/d20.png");
+    obj.image17:setHitTest(true);
+    obj.image17:setCursor("handPoint");
+    obj.image17:setHint("Ataque");
+    obj.image17:setName("image17");
 
     obj.rectangle113 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle113:setParent(obj.rectangle56);
@@ -2717,17 +2705,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle113:setColor("#D5D5D5");
     obj.rectangle113:setName("rectangle113");
 
-    obj.image19 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image19:setParent(obj.rectangle56);
-    obj.image19:setLeft(741);
-    obj.image19:setTop(732);
-    obj.image19:setWidth(28);
-    obj.image19:setHeight(28);
-    obj.image19:setSRC("/img/d6.png");
-    obj.image19:setHitTest(true);
-    obj.image19:setCursor("handPoint");
-    obj.image19:setHint("Dano");
-    obj.image19:setName("image19");
+    obj.image18 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image18:setParent(obj.rectangle56);
+    obj.image18:setLeft(741);
+    obj.image18:setTop(732);
+    obj.image18:setWidth(28);
+    obj.image18:setHeight(28);
+    obj.image18:setSRC("/img/d6.png");
+    obj.image18:setHitTest(true);
+    obj.image18:setCursor("handPoint");
+    obj.image18:setHint("Dano");
+    obj.image18:setName("image18");
 
     obj.rectangle114 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle114:setParent(obj.rectangle56);
@@ -2914,17 +2902,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle122:setColor("#D5D5D5");
     obj.rectangle122:setName("rectangle122");
 
-    obj.image20 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image20:setParent(obj.rectangle56);
-    obj.image20:setLeft(694);
-    obj.image20:setTop(853);
-    obj.image20:setWidth(27);
-    obj.image20:setHeight(33);
-    obj.image20:setSRC("/img/d20.png");
-    obj.image20:setHitTest(true);
-    obj.image20:setCursor("handPoint");
-    obj.image20:setHint("Ataque");
-    obj.image20:setName("image20");
+    obj.image19 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image19:setParent(obj.rectangle56);
+    obj.image19:setLeft(694);
+    obj.image19:setTop(853);
+    obj.image19:setWidth(27);
+    obj.image19:setHeight(33);
+    obj.image19:setSRC("/img/d20.png");
+    obj.image19:setHitTest(true);
+    obj.image19:setCursor("handPoint");
+    obj.image19:setHint("Ataque");
+    obj.image19:setName("image19");
 
     obj.rectangle123 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle123:setParent(obj.rectangle56);
@@ -2935,17 +2923,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle123:setColor("#D5D5D5");
     obj.rectangle123:setName("rectangle123");
 
-    obj.image21 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image21:setParent(obj.rectangle56);
-    obj.image21:setLeft(741);
-    obj.image21:setTop(857);
-    obj.image21:setWidth(28);
-    obj.image21:setHeight(28);
-    obj.image21:setSRC("/img/d6.png");
-    obj.image21:setHitTest(true);
-    obj.image21:setCursor("handPoint");
-    obj.image21:setHint("Dano");
-    obj.image21:setName("image21");
+    obj.image20 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image20:setParent(obj.rectangle56);
+    obj.image20:setLeft(741);
+    obj.image20:setTop(857);
+    obj.image20:setWidth(28);
+    obj.image20:setHeight(28);
+    obj.image20:setSRC("/img/d6.png");
+    obj.image20:setHitTest(true);
+    obj.image20:setCursor("handPoint");
+    obj.image20:setHint("Dano");
+    obj.image20:setName("image20");
 
     obj.rectangle124 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle124:setParent(obj.rectangle56);
@@ -3132,17 +3120,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle132:setColor("#D5D5D5");
     obj.rectangle132:setName("rectangle132");
 
-    obj.image22 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image22:setParent(obj.rectangle56);
-    obj.image22:setLeft(694);
-    obj.image22:setTop(978);
-    obj.image22:setWidth(27);
-    obj.image22:setHeight(33);
-    obj.image22:setSRC("/img/d20.png");
-    obj.image22:setHitTest(true);
-    obj.image22:setCursor("handPoint");
-    obj.image22:setHint("Ataque");
-    obj.image22:setName("image22");
+    obj.image21 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image21:setParent(obj.rectangle56);
+    obj.image21:setLeft(694);
+    obj.image21:setTop(978);
+    obj.image21:setWidth(27);
+    obj.image21:setHeight(33);
+    obj.image21:setSRC("/img/d20.png");
+    obj.image21:setHitTest(true);
+    obj.image21:setCursor("handPoint");
+    obj.image21:setHint("Ataque");
+    obj.image21:setName("image21");
 
     obj.rectangle133 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle133:setParent(obj.rectangle56);
@@ -3153,17 +3141,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle133:setColor("#D5D5D5");
     obj.rectangle133:setName("rectangle133");
 
-    obj.image23 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image23:setParent(obj.rectangle56);
-    obj.image23:setLeft(741);
-    obj.image23:setTop(982);
-    obj.image23:setWidth(28);
-    obj.image23:setHeight(28);
-    obj.image23:setSRC("/img/d6.png");
-    obj.image23:setHitTest(true);
-    obj.image23:setCursor("handPoint");
-    obj.image23:setHint("Dano");
-    obj.image23:setName("image23");
+    obj.image22 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image22:setParent(obj.rectangle56);
+    obj.image22:setLeft(741);
+    obj.image22:setTop(982);
+    obj.image22:setWidth(28);
+    obj.image22:setHeight(28);
+    obj.image22:setSRC("/img/d6.png");
+    obj.image22:setHitTest(true);
+    obj.image22:setCursor("handPoint");
+    obj.image22:setHint("Dano");
+    obj.image22:setName("image22");
 
     obj.rectangle134 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle134:setParent(obj.rectangle56);
@@ -3350,17 +3338,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle142:setColor("#D5D5D5");
     obj.rectangle142:setName("rectangle142");
 
-    obj.image24 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image24:setParent(obj.rectangle56);
-    obj.image24:setLeft(694);
-    obj.image24:setTop(1103);
-    obj.image24:setWidth(27);
-    obj.image24:setHeight(33);
-    obj.image24:setSRC("/img/d20.png");
-    obj.image24:setHitTest(true);
-    obj.image24:setCursor("handPoint");
-    obj.image24:setHint("Ataque");
-    obj.image24:setName("image24");
+    obj.image23 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image23:setParent(obj.rectangle56);
+    obj.image23:setLeft(694);
+    obj.image23:setTop(1103);
+    obj.image23:setWidth(27);
+    obj.image23:setHeight(33);
+    obj.image23:setSRC("/img/d20.png");
+    obj.image23:setHitTest(true);
+    obj.image23:setCursor("handPoint");
+    obj.image23:setHint("Ataque");
+    obj.image23:setName("image23");
 
     obj.rectangle143 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle143:setParent(obj.rectangle56);
@@ -3371,17 +3359,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle143:setColor("#D5D5D5");
     obj.rectangle143:setName("rectangle143");
 
-    obj.image25 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image25:setParent(obj.rectangle56);
-    obj.image25:setLeft(741);
-    obj.image25:setTop(1107);
-    obj.image25:setWidth(28);
-    obj.image25:setHeight(28);
-    obj.image25:setSRC("/img/d6.png");
-    obj.image25:setHitTest(true);
-    obj.image25:setCursor("handPoint");
-    obj.image25:setHint("Dano");
-    obj.image25:setName("image25");
+    obj.image24 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image24:setParent(obj.rectangle56);
+    obj.image24:setLeft(741);
+    obj.image24:setTop(1107);
+    obj.image24:setWidth(28);
+    obj.image24:setHeight(28);
+    obj.image24:setSRC("/img/d6.png");
+    obj.image24:setHitTest(true);
+    obj.image24:setCursor("handPoint");
+    obj.image24:setHint("Dano");
+    obj.image24:setName("image24");
 
     obj.rectangle144 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle144:setParent(obj.rectangle56);
@@ -3568,17 +3556,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle152:setColor("#D5D5D5");
     obj.rectangle152:setName("rectangle152");
 
-    obj.image26 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image26:setParent(obj.rectangle56);
-    obj.image26:setLeft(694);
-    obj.image26:setTop(1228);
-    obj.image26:setWidth(27);
-    obj.image26:setHeight(33);
-    obj.image26:setSRC("/img/d20.png");
-    obj.image26:setHitTest(true);
-    obj.image26:setCursor("handPoint");
-    obj.image26:setHint("Ataque");
-    obj.image26:setName("image26");
+    obj.image25 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image25:setParent(obj.rectangle56);
+    obj.image25:setLeft(694);
+    obj.image25:setTop(1228);
+    obj.image25:setWidth(27);
+    obj.image25:setHeight(33);
+    obj.image25:setSRC("/img/d20.png");
+    obj.image25:setHitTest(true);
+    obj.image25:setCursor("handPoint");
+    obj.image25:setHint("Ataque");
+    obj.image25:setName("image25");
 
     obj.rectangle153 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle153:setParent(obj.rectangle56);
@@ -3589,17 +3577,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle153:setColor("#D5D5D5");
     obj.rectangle153:setName("rectangle153");
 
-    obj.image27 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image27:setParent(obj.rectangle56);
-    obj.image27:setLeft(741);
-    obj.image27:setTop(1232);
-    obj.image27:setWidth(28);
-    obj.image27:setHeight(28);
-    obj.image27:setSRC("/img/d6.png");
-    obj.image27:setHitTest(true);
-    obj.image27:setCursor("handPoint");
-    obj.image27:setHint("Dano");
-    obj.image27:setName("image27");
+    obj.image26 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image26:setParent(obj.rectangle56);
+    obj.image26:setLeft(741);
+    obj.image26:setTop(1232);
+    obj.image26:setWidth(28);
+    obj.image26:setHeight(28);
+    obj.image26:setSRC("/img/d6.png");
+    obj.image26:setHitTest(true);
+    obj.image26:setCursor("handPoint");
+    obj.image26:setHint("Dano");
+    obj.image26:setName("image26");
 
     obj.rectangle154 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle154:setParent(obj.rectangle56);
@@ -3786,17 +3774,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle162:setColor("#D5D5D5");
     obj.rectangle162:setName("rectangle162");
 
-    obj.image28 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image28:setParent(obj.rectangle56);
-    obj.image28:setLeft(694);
-    obj.image28:setTop(1353);
-    obj.image28:setWidth(27);
-    obj.image28:setHeight(33);
-    obj.image28:setSRC("/img/d20.png");
-    obj.image28:setHitTest(true);
-    obj.image28:setCursor("handPoint");
-    obj.image28:setHint("Ataque");
-    obj.image28:setName("image28");
+    obj.image27 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image27:setParent(obj.rectangle56);
+    obj.image27:setLeft(694);
+    obj.image27:setTop(1353);
+    obj.image27:setWidth(27);
+    obj.image27:setHeight(33);
+    obj.image27:setSRC("/img/d20.png");
+    obj.image27:setHitTest(true);
+    obj.image27:setCursor("handPoint");
+    obj.image27:setHint("Ataque");
+    obj.image27:setName("image27");
 
     obj.rectangle163 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle163:setParent(obj.rectangle56);
@@ -3807,17 +3795,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle163:setColor("#D5D5D5");
     obj.rectangle163:setName("rectangle163");
 
-    obj.image29 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image29:setParent(obj.rectangle56);
-    obj.image29:setLeft(741);
-    obj.image29:setTop(1357);
-    obj.image29:setWidth(28);
-    obj.image29:setHeight(28);
-    obj.image29:setSRC("/img/d6.png");
-    obj.image29:setHitTest(true);
-    obj.image29:setCursor("handPoint");
-    obj.image29:setHint("Dano");
-    obj.image29:setName("image29");
+    obj.image28 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image28:setParent(obj.rectangle56);
+    obj.image28:setLeft(741);
+    obj.image28:setTop(1357);
+    obj.image28:setWidth(28);
+    obj.image28:setHeight(28);
+    obj.image28:setSRC("/img/d6.png");
+    obj.image28:setHitTest(true);
+    obj.image28:setCursor("handPoint");
+    obj.image28:setHint("Dano");
+    obj.image28:setName("image28");
 
     obj.rectangle164 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle164:setParent(obj.rectangle56);
@@ -4004,17 +3992,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle172:setColor("#D5D5D5");
     obj.rectangle172:setName("rectangle172");
 
-    obj.image30 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image30:setParent(obj.rectangle56);
-    obj.image30:setLeft(694);
-    obj.image30:setTop(1478);
-    obj.image30:setWidth(27);
-    obj.image30:setHeight(33);
-    obj.image30:setSRC("/img/d20.png");
-    obj.image30:setHitTest(true);
-    obj.image30:setCursor("handPoint");
-    obj.image30:setHint("Ataque");
-    obj.image30:setName("image30");
+    obj.image29 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image29:setParent(obj.rectangle56);
+    obj.image29:setLeft(694);
+    obj.image29:setTop(1478);
+    obj.image29:setWidth(27);
+    obj.image29:setHeight(33);
+    obj.image29:setSRC("/img/d20.png");
+    obj.image29:setHitTest(true);
+    obj.image29:setCursor("handPoint");
+    obj.image29:setHint("Ataque");
+    obj.image29:setName("image29");
 
     obj.rectangle173 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle173:setParent(obj.rectangle56);
@@ -4025,17 +4013,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle173:setColor("#D5D5D5");
     obj.rectangle173:setName("rectangle173");
 
-    obj.image31 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image31:setParent(obj.rectangle56);
-    obj.image31:setLeft(741);
-    obj.image31:setTop(1482);
-    obj.image31:setWidth(28);
-    obj.image31:setHeight(28);
-    obj.image31:setSRC("/img/d6.png");
-    obj.image31:setHitTest(true);
-    obj.image31:setCursor("handPoint");
-    obj.image31:setHint("Dano");
-    obj.image31:setName("image31");
+    obj.image30 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image30:setParent(obj.rectangle56);
+    obj.image30:setLeft(741);
+    obj.image30:setTop(1482);
+    obj.image30:setWidth(28);
+    obj.image30:setHeight(28);
+    obj.image30:setSRC("/img/d6.png");
+    obj.image30:setHitTest(true);
+    obj.image30:setCursor("handPoint");
+    obj.image30:setHint("Dano");
+    obj.image30:setName("image30");
 
     obj.rectangle174 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle174:setParent(obj.rectangle56);
@@ -4222,17 +4210,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle182:setColor("#D5D5D5");
     obj.rectangle182:setName("rectangle182");
 
-    obj.image32 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image32:setParent(obj.rectangle56);
-    obj.image32:setLeft(694);
-    obj.image32:setTop(1603);
-    obj.image32:setWidth(27);
-    obj.image32:setHeight(33);
-    obj.image32:setSRC("/img/d20.png");
-    obj.image32:setHitTest(true);
-    obj.image32:setCursor("handPoint");
-    obj.image32:setHint("Ataque");
-    obj.image32:setName("image32");
+    obj.image31 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image31:setParent(obj.rectangle56);
+    obj.image31:setLeft(694);
+    obj.image31:setTop(1603);
+    obj.image31:setWidth(27);
+    obj.image31:setHeight(33);
+    obj.image31:setSRC("/img/d20.png");
+    obj.image31:setHitTest(true);
+    obj.image31:setCursor("handPoint");
+    obj.image31:setHint("Ataque");
+    obj.image31:setName("image31");
 
     obj.rectangle183 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle183:setParent(obj.rectangle56);
@@ -4243,17 +4231,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle183:setColor("#D5D5D5");
     obj.rectangle183:setName("rectangle183");
 
-    obj.image33 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image33:setParent(obj.rectangle56);
-    obj.image33:setLeft(741);
-    obj.image33:setTop(1607);
-    obj.image33:setWidth(28);
-    obj.image33:setHeight(28);
-    obj.image33:setSRC("/img/d6.png");
-    obj.image33:setHitTest(true);
-    obj.image33:setCursor("handPoint");
-    obj.image33:setHint("Dano");
-    obj.image33:setName("image33");
+    obj.image32 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image32:setParent(obj.rectangle56);
+    obj.image32:setLeft(741);
+    obj.image32:setTop(1607);
+    obj.image32:setWidth(28);
+    obj.image32:setHeight(28);
+    obj.image32:setSRC("/img/d6.png");
+    obj.image32:setHitTest(true);
+    obj.image32:setCursor("handPoint");
+    obj.image32:setHint("Dano");
+    obj.image32:setName("image32");
 
     obj.rectangle184 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle184:setParent(obj.rectangle56);
@@ -4440,17 +4428,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle192:setColor("#D5D5D5");
     obj.rectangle192:setName("rectangle192");
 
-    obj.image34 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image34:setParent(obj.rectangle56);
-    obj.image34:setLeft(694);
-    obj.image34:setTop(1728);
-    obj.image34:setWidth(27);
-    obj.image34:setHeight(33);
-    obj.image34:setSRC("/img/d20.png");
-    obj.image34:setHitTest(true);
-    obj.image34:setCursor("handPoint");
-    obj.image34:setHint("Ataque");
-    obj.image34:setName("image34");
+    obj.image33 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image33:setParent(obj.rectangle56);
+    obj.image33:setLeft(694);
+    obj.image33:setTop(1728);
+    obj.image33:setWidth(27);
+    obj.image33:setHeight(33);
+    obj.image33:setSRC("/img/d20.png");
+    obj.image33:setHitTest(true);
+    obj.image33:setCursor("handPoint");
+    obj.image33:setHint("Ataque");
+    obj.image33:setName("image33");
 
     obj.rectangle193 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle193:setParent(obj.rectangle56);
@@ -4461,17 +4449,17 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle193:setColor("#D5D5D5");
     obj.rectangle193:setName("rectangle193");
 
-    obj.image35 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image35:setParent(obj.rectangle56);
-    obj.image35:setLeft(741);
-    obj.image35:setTop(1732);
-    obj.image35:setWidth(28);
-    obj.image35:setHeight(28);
-    obj.image35:setSRC("/img/d6.png");
-    obj.image35:setHitTest(true);
-    obj.image35:setCursor("handPoint");
-    obj.image35:setHint("Dano");
-    obj.image35:setName("image35");
+    obj.image34 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image34:setParent(obj.rectangle56);
+    obj.image34:setLeft(741);
+    obj.image34:setTop(1732);
+    obj.image34:setWidth(28);
+    obj.image34:setHeight(28);
+    obj.image34:setSRC("/img/d6.png");
+    obj.image34:setHitTest(true);
+    obj.image34:setCursor("handPoint");
+    obj.image34:setHint("Dano");
+    obj.image34:setName("image34");
 
     obj.rectangle194 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle194:setParent(obj.rectangle56);
@@ -4701,23 +4689,14 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle205:setColor("#D5D5D5");
     obj.rectangle205:setName("rectangle205");
 
-    obj.image36 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image36:setParent(obj.layout3);
-    obj.image36:setLeft(0);
-    obj.image36:setTop(0);
-    obj.image36:setWidth(799);
-    obj.image36:setHeight(825);
-    obj.image36:setSRC("/img/borda.png");
-    obj.image36:setName("image36");
-
-    obj.image37 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image37:setParent(obj.tab2);
-    obj.image37:setLeft(69);
-    obj.image37:setTop(875);
-    obj.image37:setWidth(676);
-    obj.image37:setHeight(194);
-    obj.image37:setSRC("/img/logo.png");
-    obj.image37:setName("image37");
+    obj.image35 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image35:setParent(obj.layout3);
+    obj.image35:setLeft(0);
+    obj.image35:setTop(0);
+    obj.image35:setWidth(799);
+    obj.image35:setHeight(825);
+    obj.image35:setSRC("/img/borda.png");
+    obj.image35:setName("image35");
 
     obj.tab3 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab3:setParent(obj.tabControl1);
@@ -4849,203 +4828,32 @@ local function constructNew_frmWeirdWizard()
     obj.rectangle212:setColor("#D5D5D5");
     obj.rectangle212:setName("rectangle212");
 
+    obj.image36 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image36:setParent(obj.layout5);
+    obj.image36:setLeft(260);
+    obj.image36:setTop(745);
+    obj.image36:setWidth(324);
+    obj.image36:setHeight(72);
+    obj.image36:setSRC("/img/libelula.png");
+    obj.image36:setName("image36");
+
     obj.rectangle213 = GUI.fromHandle(_obj_newObject("rectangle"));
     obj.rectangle213:setParent(obj.layout5);
-    obj.rectangle213:setLeft(65);
-    obj.rectangle213:setTop(650);
-    obj.rectangle213:setWidth(712);
-    obj.rectangle213:setHeight(1);
-    obj.rectangle213:setColor("#49244F");
+    obj.rectangle213:setLeft(0);
+    obj.rectangle213:setTop(0);
+    obj.rectangle213:setWidth(799);
+    obj.rectangle213:setHeight(5);
+    obj.rectangle213:setColor("#D5D5D5");
     obj.rectangle213:setName("rectangle213");
 
-    obj.rectangle214 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle214:setParent(obj.layout5);
-    obj.rectangle214:setLeft(65);
-    obj.rectangle214:setTop(655);
-    obj.rectangle214:setWidth(712);
-    obj.rectangle214:setHeight(1);
-    obj.rectangle214:setColor("#49244F");
-    obj.rectangle214:setName("rectangle214");
-
-    obj.rectangle215 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle215:setParent(obj.layout5);
-    obj.rectangle215:setLeft(65);
-    obj.rectangle215:setTop(660);
-    obj.rectangle215:setWidth(712);
-    obj.rectangle215:setHeight(1);
-    obj.rectangle215:setColor("#49244F");
-    obj.rectangle215:setName("rectangle215");
-
-    obj.rectangle216 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle216:setParent(obj.layout5);
-    obj.rectangle216:setLeft(65);
-    obj.rectangle216:setTop(665);
-    obj.rectangle216:setWidth(712);
-    obj.rectangle216:setHeight(1);
-    obj.rectangle216:setColor("#49244F");
-    obj.rectangle216:setName("rectangle216");
-
-    obj.rectangle217 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle217:setParent(obj.layout5);
-    obj.rectangle217:setLeft(65);
-    obj.rectangle217:setTop(670);
-    obj.rectangle217:setWidth(712);
-    obj.rectangle217:setHeight(1);
-    obj.rectangle217:setColor("#49244F");
-    obj.rectangle217:setName("rectangle217");
-
-    obj.rectangle218 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle218:setParent(obj.layout5);
-    obj.rectangle218:setLeft(65);
-    obj.rectangle218:setTop(675);
-    obj.rectangle218:setWidth(712);
-    obj.rectangle218:setHeight(1);
-    obj.rectangle218:setColor("#49244F");
-    obj.rectangle218:setName("rectangle218");
-
-    obj.rectangle219 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle219:setParent(obj.layout5);
-    obj.rectangle219:setLeft(65);
-    obj.rectangle219:setTop(680);
-    obj.rectangle219:setWidth(712);
-    obj.rectangle219:setHeight(1);
-    obj.rectangle219:setColor("#49244F");
-    obj.rectangle219:setName("rectangle219");
-
-    obj.rectangle220 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle220:setParent(obj.layout5);
-    obj.rectangle220:setLeft(65);
-    obj.rectangle220:setTop(685);
-    obj.rectangle220:setWidth(712);
-    obj.rectangle220:setHeight(1);
-    obj.rectangle220:setColor("#49244F");
-    obj.rectangle220:setName("rectangle220");
-
-    obj.rectangle221 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle221:setParent(obj.layout5);
-    obj.rectangle221:setLeft(65);
-    obj.rectangle221:setTop(690);
-    obj.rectangle221:setWidth(712);
-    obj.rectangle221:setHeight(1);
-    obj.rectangle221:setColor("#49244F");
-    obj.rectangle221:setName("rectangle221");
-
-    obj.rectangle222 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle222:setParent(obj.layout5);
-    obj.rectangle222:setLeft(65);
-    obj.rectangle222:setTop(695);
-    obj.rectangle222:setWidth(712);
-    obj.rectangle222:setHeight(1);
-    obj.rectangle222:setColor("#49244F");
-    obj.rectangle222:setName("rectangle222");
-
-    obj.rectangle223 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle223:setParent(obj.layout5);
-    obj.rectangle223:setLeft(65);
-    obj.rectangle223:setTop(700);
-    obj.rectangle223:setWidth(712);
-    obj.rectangle223:setHeight(1);
-    obj.rectangle223:setColor("#49244F");
-    obj.rectangle223:setName("rectangle223");
-
-    obj.rectangle224 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle224:setParent(obj.layout5);
-    obj.rectangle224:setLeft(65);
-    obj.rectangle224:setTop(705);
-    obj.rectangle224:setWidth(712);
-    obj.rectangle224:setHeight(1);
-    obj.rectangle224:setColor("#49244F");
-    obj.rectangle224:setName("rectangle224");
-
-    obj.rectangle225 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle225:setParent(obj.layout5);
-    obj.rectangle225:setLeft(65);
-    obj.rectangle225:setTop(710);
-    obj.rectangle225:setWidth(712);
-    obj.rectangle225:setHeight(1);
-    obj.rectangle225:setColor("#49244F");
-    obj.rectangle225:setName("rectangle225");
-
-    obj.rectangle226 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle226:setParent(obj.layout5);
-    obj.rectangle226:setLeft(65);
-    obj.rectangle226:setTop(715);
-    obj.rectangle226:setWidth(712);
-    obj.rectangle226:setHeight(1);
-    obj.rectangle226:setColor("#49244F");
-    obj.rectangle226:setName("rectangle226");
-
-    obj.rectangle227 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle227:setParent(obj.layout5);
-    obj.rectangle227:setLeft(65);
-    obj.rectangle227:setTop(720);
-    obj.rectangle227:setWidth(712);
-    obj.rectangle227:setHeight(1);
-    obj.rectangle227:setColor("#49244F");
-    obj.rectangle227:setName("rectangle227");
-
-    obj.rectangle228 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle228:setParent(obj.layout5);
-    obj.rectangle228:setLeft(65);
-    obj.rectangle228:setTop(725);
-    obj.rectangle228:setWidth(712);
-    obj.rectangle228:setHeight(1);
-    obj.rectangle228:setColor("#49244F");
-    obj.rectangle228:setName("rectangle228");
-
-    obj.rectangle229 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle229:setParent(obj.layout5);
-    obj.rectangle229:setLeft(65);
-    obj.rectangle229:setTop(730);
-    obj.rectangle229:setWidth(712);
-    obj.rectangle229:setHeight(1);
-    obj.rectangle229:setColor("#49244F");
-    obj.rectangle229:setName("rectangle229");
-
-    obj.rectangle230 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle230:setParent(obj.layout5);
-    obj.rectangle230:setLeft(65);
-    obj.rectangle230:setTop(735);
-    obj.rectangle230:setWidth(712);
-    obj.rectangle230:setHeight(1);
-    obj.rectangle230:setColor("#49244F");
-    obj.rectangle230:setName("rectangle230");
-
-    obj.image38 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image38:setParent(obj.layout5);
-    obj.image38:setLeft(260);
-    obj.image38:setTop(745);
-    obj.image38:setWidth(324);
-    obj.image38:setHeight(72);
-    obj.image38:setSRC("/img/libelula.png");
-    obj.image38:setName("image38");
-
-    obj.rectangle231 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle231:setParent(obj.layout5);
-    obj.rectangle231:setLeft(0);
-    obj.rectangle231:setTop(0);
-    obj.rectangle231:setWidth(799);
-    obj.rectangle231:setHeight(5);
-    obj.rectangle231:setColor("#D5D5D5");
-    obj.rectangle231:setName("rectangle231");
-
-    obj.image39 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image39:setParent(obj.layout5);
-    obj.image39:setLeft(0);
-    obj.image39:setTop(0);
-    obj.image39:setWidth(799);
-    obj.image39:setHeight(825);
-    obj.image39:setSRC("/img/borda.png");
-    obj.image39:setName("image39");
-
-    obj.image40 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image40:setParent(obj.tab3);
-    obj.image40:setLeft(69);
-    obj.image40:setTop(875);
-    obj.image40:setWidth(676);
-    obj.image40:setHeight(194);
-    obj.image40:setSRC("/img/logo.png");
-    obj.image40:setName("image40");
+    obj.image37 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image37:setParent(obj.layout5);
+    obj.image37:setLeft(0);
+    obj.image37:setTop(0);
+    obj.image37:setWidth(799);
+    obj.image37:setHeight(825);
+    obj.image37:setSRC("/img/borda.png");
+    obj.image37:setName("image37");
 
     obj.tab4 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab4:setParent(obj.tabControl1);
@@ -5060,17 +4868,17 @@ local function constructNew_frmWeirdWizard()
     obj.layout6:setHeight(825);
     obj.layout6:setName("layout6");
 
-    obj.rectangle232 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle232:setParent(obj.layout6);
-    obj.rectangle232:setLeft(0);
-    obj.rectangle232:setTop(0);
-    obj.rectangle232:setWidth(799);
-    obj.rectangle232:setHeight(825);
-    obj.rectangle232:setColor("#D5D5D5");
-    obj.rectangle232:setName("rectangle232");
+    obj.rectangle214 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle214:setParent(obj.layout6);
+    obj.rectangle214:setLeft(0);
+    obj.rectangle214:setTop(0);
+    obj.rectangle214:setWidth(799);
+    obj.rectangle214:setHeight(825);
+    obj.rectangle214:setColor("#D5D5D5");
+    obj.rectangle214:setName("rectangle214");
 
     obj.label89 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label89:setParent(obj.rectangle232);
+    obj.label89:setParent(obj.rectangle214);
     obj.label89:setLeft(180);
     obj.label89:setTop(60);
     obj.label89:setWidth(480);
@@ -5081,28 +4889,28 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label89, "fontStyle", "bold");
     obj.label89:setName("label89");
 
-    obj.rectangle233 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle233:setParent(obj.rectangle232);
-    obj.rectangle233:setLeft(60);
-    obj.rectangle233:setTop(95);
-    obj.rectangle233:setWidth(720);
-    obj.rectangle233:setHeight(631);
-    obj.rectangle233:setColor("#D5D5D5");
-    obj.rectangle233:setStrokeColor("#49244F");
-    obj.rectangle233:setStrokeSize(3);
-    obj.rectangle233:setName("rectangle233");
+    obj.rectangle215 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle215:setParent(obj.rectangle214);
+    obj.rectangle215:setLeft(60);
+    obj.rectangle215:setTop(95);
+    obj.rectangle215:setWidth(720);
+    obj.rectangle215:setHeight(631);
+    obj.rectangle215:setColor("#D5D5D5");
+    obj.rectangle215:setStrokeColor("#49244F");
+    obj.rectangle215:setStrokeSize(3);
+    obj.rectangle215:setName("rectangle215");
 
-    obj.rectangle234 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle234:setParent(obj.rectangle232);
-    obj.rectangle234:setLeft(60);
-    obj.rectangle234:setTop(95);
-    obj.rectangle234:setWidth(720);
-    obj.rectangle234:setHeight(50);
-    obj.rectangle234:setColor("#49244F");
-    obj.rectangle234:setName("rectangle234");
+    obj.rectangle216 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle216:setParent(obj.rectangle214);
+    obj.rectangle216:setLeft(60);
+    obj.rectangle216:setTop(95);
+    obj.rectangle216:setWidth(720);
+    obj.rectangle216:setHeight(50);
+    obj.rectangle216:setColor("#49244F");
+    obj.rectangle216:setName("rectangle216");
 
     obj.label90 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label90:setParent(obj.rectangle232);
+    obj.label90:setParent(obj.rectangle214);
     obj.label90:setLeft(70);
     obj.label90:setTop(110);
     obj.label90:setWidth(100);
@@ -5113,7 +4921,7 @@ local function constructNew_frmWeirdWizard()
     obj.label90:setName("label90");
 
     obj.textEditor1 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor1:setParent(obj.rectangle232);
+    obj.textEditor1:setParent(obj.rectangle214);
     obj.textEditor1:setLeft(68);
     obj.textEditor1:setTop(143);
     obj.textEditor1:setWidth(710);
@@ -5124,242 +4932,242 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor1:setField("Itens");
     obj.textEditor1:setName("textEditor1");
 
+    obj.rectangle217 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle217:setParent(obj.rectangle214);
+    obj.rectangle217:setLeft(70);
+    obj.rectangle217:setTop(168);
+    obj.rectangle217:setWidth(700);
+    obj.rectangle217:setHeight(1);
+    obj.rectangle217:setColor("#49244F");
+    obj.rectangle217:setName("rectangle217");
+
+    obj.rectangle218 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle218:setParent(obj.rectangle214);
+    obj.rectangle218:setLeft(70);
+    obj.rectangle218:setTop(191);
+    obj.rectangle218:setWidth(700);
+    obj.rectangle218:setHeight(1);
+    obj.rectangle218:setColor("#49244F");
+    obj.rectangle218:setName("rectangle218");
+
+    obj.rectangle219 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle219:setParent(obj.rectangle214);
+    obj.rectangle219:setLeft(70);
+    obj.rectangle219:setTop(214);
+    obj.rectangle219:setWidth(700);
+    obj.rectangle219:setHeight(1);
+    obj.rectangle219:setColor("#49244F");
+    obj.rectangle219:setName("rectangle219");
+
+    obj.rectangle220 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle220:setParent(obj.rectangle214);
+    obj.rectangle220:setLeft(70);
+    obj.rectangle220:setTop(237);
+    obj.rectangle220:setWidth(700);
+    obj.rectangle220:setHeight(1);
+    obj.rectangle220:setColor("#49244F");
+    obj.rectangle220:setName("rectangle220");
+
+    obj.rectangle221 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle221:setParent(obj.rectangle214);
+    obj.rectangle221:setLeft(70);
+    obj.rectangle221:setTop(262);
+    obj.rectangle221:setWidth(700);
+    obj.rectangle221:setHeight(1);
+    obj.rectangle221:setColor("#49244F");
+    obj.rectangle221:setName("rectangle221");
+
+    obj.rectangle222 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle222:setParent(obj.rectangle214);
+    obj.rectangle222:setLeft(70);
+    obj.rectangle222:setTop(285);
+    obj.rectangle222:setWidth(700);
+    obj.rectangle222:setHeight(1);
+    obj.rectangle222:setColor("#49244F");
+    obj.rectangle222:setName("rectangle222");
+
+    obj.rectangle223 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle223:setParent(obj.rectangle214);
+    obj.rectangle223:setLeft(70);
+    obj.rectangle223:setTop(310);
+    obj.rectangle223:setWidth(700);
+    obj.rectangle223:setHeight(1);
+    obj.rectangle223:setColor("#49244F");
+    obj.rectangle223:setName("rectangle223");
+
+    obj.rectangle224 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle224:setParent(obj.rectangle214);
+    obj.rectangle224:setLeft(70);
+    obj.rectangle224:setTop(334);
+    obj.rectangle224:setWidth(700);
+    obj.rectangle224:setHeight(1);
+    obj.rectangle224:setColor("#49244F");
+    obj.rectangle224:setName("rectangle224");
+
+    obj.rectangle225 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle225:setParent(obj.rectangle214);
+    obj.rectangle225:setLeft(70);
+    obj.rectangle225:setTop(359);
+    obj.rectangle225:setWidth(700);
+    obj.rectangle225:setHeight(1);
+    obj.rectangle225:setColor("#49244F");
+    obj.rectangle225:setName("rectangle225");
+
+    obj.rectangle226 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle226:setParent(obj.rectangle214);
+    obj.rectangle226:setLeft(70);
+    obj.rectangle226:setTop(382);
+    obj.rectangle226:setWidth(700);
+    obj.rectangle226:setHeight(1);
+    obj.rectangle226:setColor("#49244F");
+    obj.rectangle226:setName("rectangle226");
+
+    obj.rectangle227 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle227:setParent(obj.rectangle214);
+    obj.rectangle227:setLeft(70);
+    obj.rectangle227:setTop(407);
+    obj.rectangle227:setWidth(700);
+    obj.rectangle227:setHeight(1);
+    obj.rectangle227:setColor("#49244F");
+    obj.rectangle227:setName("rectangle227");
+
+    obj.rectangle228 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle228:setParent(obj.rectangle214);
+    obj.rectangle228:setLeft(70);
+    obj.rectangle228:setTop(432);
+    obj.rectangle228:setWidth(700);
+    obj.rectangle228:setHeight(1);
+    obj.rectangle228:setColor("#49244F");
+    obj.rectangle228:setName("rectangle228");
+
+    obj.rectangle229 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle229:setParent(obj.rectangle214);
+    obj.rectangle229:setLeft(70);
+    obj.rectangle229:setTop(457);
+    obj.rectangle229:setWidth(700);
+    obj.rectangle229:setHeight(1);
+    obj.rectangle229:setColor("#49244F");
+    obj.rectangle229:setName("rectangle229");
+
+    obj.rectangle230 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle230:setParent(obj.rectangle214);
+    obj.rectangle230:setLeft(70);
+    obj.rectangle230:setTop(481);
+    obj.rectangle230:setWidth(700);
+    obj.rectangle230:setHeight(1);
+    obj.rectangle230:setColor("#49244F");
+    obj.rectangle230:setName("rectangle230");
+
+    obj.rectangle231 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle231:setParent(obj.rectangle214);
+    obj.rectangle231:setLeft(70);
+    obj.rectangle231:setTop(505);
+    obj.rectangle231:setWidth(700);
+    obj.rectangle231:setHeight(1);
+    obj.rectangle231:setColor("#49244F");
+    obj.rectangle231:setName("rectangle231");
+
+    obj.rectangle232 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle232:setParent(obj.rectangle214);
+    obj.rectangle232:setLeft(70);
+    obj.rectangle232:setTop(529);
+    obj.rectangle232:setWidth(700);
+    obj.rectangle232:setHeight(1);
+    obj.rectangle232:setColor("#49244F");
+    obj.rectangle232:setName("rectangle232");
+
+    obj.rectangle233 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle233:setParent(obj.rectangle214);
+    obj.rectangle233:setLeft(70);
+    obj.rectangle233:setTop(553);
+    obj.rectangle233:setWidth(700);
+    obj.rectangle233:setHeight(1);
+    obj.rectangle233:setColor("#49244F");
+    obj.rectangle233:setName("rectangle233");
+
+    obj.rectangle234 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle234:setParent(obj.rectangle214);
+    obj.rectangle234:setLeft(70);
+    obj.rectangle234:setTop(576);
+    obj.rectangle234:setWidth(700);
+    obj.rectangle234:setHeight(1);
+    obj.rectangle234:setColor("#49244F");
+    obj.rectangle234:setName("rectangle234");
+
     obj.rectangle235 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle235:setParent(obj.rectangle232);
+    obj.rectangle235:setParent(obj.rectangle214);
     obj.rectangle235:setLeft(70);
-    obj.rectangle235:setTop(168);
+    obj.rectangle235:setTop(599);
     obj.rectangle235:setWidth(700);
     obj.rectangle235:setHeight(1);
     obj.rectangle235:setColor("#49244F");
     obj.rectangle235:setName("rectangle235");
 
     obj.rectangle236 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle236:setParent(obj.rectangle232);
+    obj.rectangle236:setParent(obj.rectangle214);
     obj.rectangle236:setLeft(70);
-    obj.rectangle236:setTop(191);
+    obj.rectangle236:setTop(622);
     obj.rectangle236:setWidth(700);
     obj.rectangle236:setHeight(1);
     obj.rectangle236:setColor("#49244F");
     obj.rectangle236:setName("rectangle236");
 
     obj.rectangle237 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle237:setParent(obj.rectangle232);
+    obj.rectangle237:setParent(obj.rectangle214);
     obj.rectangle237:setLeft(70);
-    obj.rectangle237:setTop(214);
+    obj.rectangle237:setTop(646);
     obj.rectangle237:setWidth(700);
     obj.rectangle237:setHeight(1);
     obj.rectangle237:setColor("#49244F");
     obj.rectangle237:setName("rectangle237");
 
     obj.rectangle238 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle238:setParent(obj.rectangle232);
+    obj.rectangle238:setParent(obj.rectangle214);
     obj.rectangle238:setLeft(70);
-    obj.rectangle238:setTop(237);
+    obj.rectangle238:setTop(670);
     obj.rectangle238:setWidth(700);
     obj.rectangle238:setHeight(1);
     obj.rectangle238:setColor("#49244F");
     obj.rectangle238:setName("rectangle238");
 
     obj.rectangle239 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle239:setParent(obj.rectangle232);
+    obj.rectangle239:setParent(obj.rectangle214);
     obj.rectangle239:setLeft(70);
-    obj.rectangle239:setTop(262);
+    obj.rectangle239:setTop(694);
     obj.rectangle239:setWidth(700);
     obj.rectangle239:setHeight(1);
     obj.rectangle239:setColor("#49244F");
     obj.rectangle239:setName("rectangle239");
 
     obj.rectangle240 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle240:setParent(obj.rectangle232);
-    obj.rectangle240:setLeft(70);
-    obj.rectangle240:setTop(285);
-    obj.rectangle240:setWidth(700);
+    obj.rectangle240:setParent(obj.rectangle214);
+    obj.rectangle240:setLeft(65);
+    obj.rectangle240:setTop(730);
+    obj.rectangle240:setWidth(712);
     obj.rectangle240:setHeight(1);
     obj.rectangle240:setColor("#49244F");
     obj.rectangle240:setName("rectangle240");
 
     obj.rectangle241 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle241:setParent(obj.rectangle232);
-    obj.rectangle241:setLeft(70);
-    obj.rectangle241:setTop(310);
-    obj.rectangle241:setWidth(700);
+    obj.rectangle241:setParent(obj.rectangle214);
+    obj.rectangle241:setLeft(65);
+    obj.rectangle241:setTop(735);
+    obj.rectangle241:setWidth(712);
     obj.rectangle241:setHeight(1);
     obj.rectangle241:setColor("#49244F");
     obj.rectangle241:setName("rectangle241");
 
-    obj.rectangle242 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle242:setParent(obj.rectangle232);
-    obj.rectangle242:setLeft(70);
-    obj.rectangle242:setTop(334);
-    obj.rectangle242:setWidth(700);
-    obj.rectangle242:setHeight(1);
-    obj.rectangle242:setColor("#49244F");
-    obj.rectangle242:setName("rectangle242");
-
-    obj.rectangle243 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle243:setParent(obj.rectangle232);
-    obj.rectangle243:setLeft(70);
-    obj.rectangle243:setTop(359);
-    obj.rectangle243:setWidth(700);
-    obj.rectangle243:setHeight(1);
-    obj.rectangle243:setColor("#49244F");
-    obj.rectangle243:setName("rectangle243");
-
-    obj.rectangle244 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle244:setParent(obj.rectangle232);
-    obj.rectangle244:setLeft(70);
-    obj.rectangle244:setTop(382);
-    obj.rectangle244:setWidth(700);
-    obj.rectangle244:setHeight(1);
-    obj.rectangle244:setColor("#49244F");
-    obj.rectangle244:setName("rectangle244");
-
-    obj.rectangle245 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle245:setParent(obj.rectangle232);
-    obj.rectangle245:setLeft(70);
-    obj.rectangle245:setTop(407);
-    obj.rectangle245:setWidth(700);
-    obj.rectangle245:setHeight(1);
-    obj.rectangle245:setColor("#49244F");
-    obj.rectangle245:setName("rectangle245");
-
-    obj.rectangle246 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle246:setParent(obj.rectangle232);
-    obj.rectangle246:setLeft(70);
-    obj.rectangle246:setTop(432);
-    obj.rectangle246:setWidth(700);
-    obj.rectangle246:setHeight(1);
-    obj.rectangle246:setColor("#49244F");
-    obj.rectangle246:setName("rectangle246");
-
-    obj.rectangle247 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle247:setParent(obj.rectangle232);
-    obj.rectangle247:setLeft(70);
-    obj.rectangle247:setTop(457);
-    obj.rectangle247:setWidth(700);
-    obj.rectangle247:setHeight(1);
-    obj.rectangle247:setColor("#49244F");
-    obj.rectangle247:setName("rectangle247");
-
-    obj.rectangle248 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle248:setParent(obj.rectangle232);
-    obj.rectangle248:setLeft(70);
-    obj.rectangle248:setTop(481);
-    obj.rectangle248:setWidth(700);
-    obj.rectangle248:setHeight(1);
-    obj.rectangle248:setColor("#49244F");
-    obj.rectangle248:setName("rectangle248");
-
-    obj.rectangle249 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle249:setParent(obj.rectangle232);
-    obj.rectangle249:setLeft(70);
-    obj.rectangle249:setTop(505);
-    obj.rectangle249:setWidth(700);
-    obj.rectangle249:setHeight(1);
-    obj.rectangle249:setColor("#49244F");
-    obj.rectangle249:setName("rectangle249");
-
-    obj.rectangle250 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle250:setParent(obj.rectangle232);
-    obj.rectangle250:setLeft(70);
-    obj.rectangle250:setTop(529);
-    obj.rectangle250:setWidth(700);
-    obj.rectangle250:setHeight(1);
-    obj.rectangle250:setColor("#49244F");
-    obj.rectangle250:setName("rectangle250");
-
-    obj.rectangle251 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle251:setParent(obj.rectangle232);
-    obj.rectangle251:setLeft(70);
-    obj.rectangle251:setTop(553);
-    obj.rectangle251:setWidth(700);
-    obj.rectangle251:setHeight(1);
-    obj.rectangle251:setColor("#49244F");
-    obj.rectangle251:setName("rectangle251");
-
-    obj.rectangle252 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle252:setParent(obj.rectangle232);
-    obj.rectangle252:setLeft(70);
-    obj.rectangle252:setTop(576);
-    obj.rectangle252:setWidth(700);
-    obj.rectangle252:setHeight(1);
-    obj.rectangle252:setColor("#49244F");
-    obj.rectangle252:setName("rectangle252");
-
-    obj.rectangle253 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle253:setParent(obj.rectangle232);
-    obj.rectangle253:setLeft(70);
-    obj.rectangle253:setTop(599);
-    obj.rectangle253:setWidth(700);
-    obj.rectangle253:setHeight(1);
-    obj.rectangle253:setColor("#49244F");
-    obj.rectangle253:setName("rectangle253");
-
-    obj.rectangle254 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle254:setParent(obj.rectangle232);
-    obj.rectangle254:setLeft(70);
-    obj.rectangle254:setTop(622);
-    obj.rectangle254:setWidth(700);
-    obj.rectangle254:setHeight(1);
-    obj.rectangle254:setColor("#49244F");
-    obj.rectangle254:setName("rectangle254");
-
-    obj.rectangle255 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle255:setParent(obj.rectangle232);
-    obj.rectangle255:setLeft(70);
-    obj.rectangle255:setTop(646);
-    obj.rectangle255:setWidth(700);
-    obj.rectangle255:setHeight(1);
-    obj.rectangle255:setColor("#49244F");
-    obj.rectangle255:setName("rectangle255");
-
-    obj.rectangle256 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle256:setParent(obj.rectangle232);
-    obj.rectangle256:setLeft(70);
-    obj.rectangle256:setTop(670);
-    obj.rectangle256:setWidth(700);
-    obj.rectangle256:setHeight(1);
-    obj.rectangle256:setColor("#49244F");
-    obj.rectangle256:setName("rectangle256");
-
-    obj.rectangle257 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle257:setParent(obj.rectangle232);
-    obj.rectangle257:setLeft(70);
-    obj.rectangle257:setTop(694);
-    obj.rectangle257:setWidth(700);
-    obj.rectangle257:setHeight(1);
-    obj.rectangle257:setColor("#49244F");
-    obj.rectangle257:setName("rectangle257");
-
-    obj.rectangle258 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle258:setParent(obj.rectangle232);
-    obj.rectangle258:setLeft(65);
-    obj.rectangle258:setTop(730);
-    obj.rectangle258:setWidth(712);
-    obj.rectangle258:setHeight(1);
-    obj.rectangle258:setColor("#49244F");
-    obj.rectangle258:setName("rectangle258");
-
-    obj.rectangle259 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle259:setParent(obj.rectangle232);
-    obj.rectangle259:setLeft(65);
-    obj.rectangle259:setTop(735);
-    obj.rectangle259:setWidth(712);
-    obj.rectangle259:setHeight(1);
-    obj.rectangle259:setColor("#49244F");
-    obj.rectangle259:setName("rectangle259");
-
-    obj.image41 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image41:setParent(obj.rectangle232);
-    obj.image41:setLeft(305);
-    obj.image41:setTop(745);
-    obj.image41:setWidth(43);
-    obj.image41:setHeight(40);
-    obj.image41:setSRC("/img/pc.png");
-    obj.image41:setName("image41");
+    obj.image38 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image38:setParent(obj.rectangle214);
+    obj.image38:setLeft(305);
+    obj.image38:setTop(745);
+    obj.image38:setWidth(43);
+    obj.image38:setHeight(40);
+    obj.image38:setSRC("/img/pc.png");
+    obj.image38:setName("image38");
 
     obj.label91 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label91:setParent(obj.rectangle232);
+    obj.label91:setParent(obj.rectangle214);
     obj.label91:setLeft(275);
     obj.label91:setTop(795);
     obj.label91:setText("PC _______");
@@ -5369,7 +5177,7 @@ local function constructNew_frmWeirdWizard()
     obj.label91:setName("label91");
 
     obj.edit60 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit60:setParent(obj.rectangle232);
+    obj.edit60:setParent(obj.rectangle214);
     obj.edit60:setLeft(297);
     obj.edit60:setTop(785);
     obj.edit60:setFontColor("#49244F");
@@ -5380,17 +5188,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit60:setWidth(60);
     obj.edit60:setName("edit60");
 
-    obj.image42 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image42:setParent(obj.rectangle232);
-    obj.image42:setLeft(405);
-    obj.image42:setTop(745);
-    obj.image42:setWidth(43);
-    obj.image42:setHeight(40);
-    obj.image42:setSRC("/img/pp.png");
-    obj.image42:setName("image42");
+    obj.image39 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image39:setParent(obj.rectangle214);
+    obj.image39:setLeft(405);
+    obj.image39:setTop(745);
+    obj.image39:setWidth(43);
+    obj.image39:setHeight(40);
+    obj.image39:setSRC("/img/pp.png");
+    obj.image39:setName("image39");
 
     obj.label92 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label92:setParent(obj.rectangle232);
+    obj.label92:setParent(obj.rectangle214);
     obj.label92:setLeft(375);
     obj.label92:setTop(795);
     obj.label92:setText("PP _______");
@@ -5400,7 +5208,7 @@ local function constructNew_frmWeirdWizard()
     obj.label92:setName("label92");
 
     obj.edit61 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit61:setParent(obj.rectangle232);
+    obj.edit61:setParent(obj.rectangle214);
     obj.edit61:setLeft(397);
     obj.edit61:setTop(785);
     obj.edit61:setFontColor("#49244F");
@@ -5411,17 +5219,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit61:setWidth(60);
     obj.edit61:setName("edit61");
 
-    obj.image43 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image43:setParent(obj.rectangle232);
-    obj.image43:setLeft(505);
-    obj.image43:setTop(745);
-    obj.image43:setWidth(43);
-    obj.image43:setHeight(40);
-    obj.image43:setSRC("/img/po.png");
-    obj.image43:setName("image43");
+    obj.image40 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image40:setParent(obj.rectangle214);
+    obj.image40:setLeft(505);
+    obj.image40:setTop(745);
+    obj.image40:setWidth(43);
+    obj.image40:setHeight(40);
+    obj.image40:setSRC("/img/po.png");
+    obj.image40:setName("image40");
 
     obj.label93 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label93:setParent(obj.rectangle232);
+    obj.label93:setParent(obj.rectangle214);
     obj.label93:setLeft(475);
     obj.label93:setTop(795);
     obj.label93:setText("PO _______");
@@ -5431,7 +5239,7 @@ local function constructNew_frmWeirdWizard()
     obj.label93:setName("label93");
 
     obj.edit62 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit62:setParent(obj.rectangle232);
+    obj.edit62:setParent(obj.rectangle214);
     obj.edit62:setLeft(497);
     obj.edit62:setTop(785);
     obj.edit62:setFontColor("#49244F");
@@ -5442,23 +5250,14 @@ local function constructNew_frmWeirdWizard()
     obj.edit62:setWidth(60);
     obj.edit62:setName("edit62");
 
-    obj.image44 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image44:setParent(obj.layout6);
-    obj.image44:setLeft(0);
-    obj.image44:setTop(0);
-    obj.image44:setWidth(799);
-    obj.image44:setHeight(825);
-    obj.image44:setSRC("/img/borda.png");
-    obj.image44:setName("image44");
-
-    obj.image45 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image45:setParent(obj.tab4);
-    obj.image45:setLeft(69);
-    obj.image45:setTop(875);
-    obj.image45:setWidth(676);
-    obj.image45:setHeight(194);
-    obj.image45:setSRC("/img/logo.png");
-    obj.image45:setName("image45");
+    obj.image41 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image41:setParent(obj.layout6);
+    obj.image41:setLeft(0);
+    obj.image41:setTop(0);
+    obj.image41:setWidth(799);
+    obj.image41:setHeight(825);
+    obj.image41:setSRC("/img/borda.png");
+    obj.image41:setName("image41");
 
     obj.tab5 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab5:setParent(obj.tabControl1);
@@ -5481,17 +5280,17 @@ local function constructNew_frmWeirdWizard()
     obj.layout7:setHeight(1790);
     obj.layout7:setName("layout7");
 
-    obj.rectangle260 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle260:setParent(obj.layout7);
-    obj.rectangle260:setLeft(0);
-    obj.rectangle260:setTop(0);
-    obj.rectangle260:setWidth(799);
-    obj.rectangle260:setHeight(1790);
-    obj.rectangle260:setColor("#D5D5D5");
-    obj.rectangle260:setName("rectangle260");
+    obj.rectangle242 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle242:setParent(obj.layout7);
+    obj.rectangle242:setLeft(0);
+    obj.rectangle242:setTop(0);
+    obj.rectangle242:setWidth(799);
+    obj.rectangle242:setHeight(1790);
+    obj.rectangle242:setColor("#D5D5D5");
+    obj.rectangle242:setName("rectangle242");
 
     obj.label94 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label94:setParent(obj.rectangle260);
+    obj.label94:setParent(obj.rectangle242);
     obj.label94:setLeft(270);
     obj.label94:setTop(60);
     obj.label94:setWidth(280);
@@ -5502,28 +5301,28 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label94, "fontStyle", "bold");
     obj.label94:setName("label94");
 
-    obj.rectangle261 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle261:setParent(obj.rectangle260);
-    obj.rectangle261:setLeft(60);
-    obj.rectangle261:setTop(95);
-    obj.rectangle261:setWidth(350);
-    obj.rectangle261:setHeight(318);
-    obj.rectangle261:setColor("#D5D5D5");
-    obj.rectangle261:setStrokeColor("#49244F");
-    obj.rectangle261:setStrokeSize(3);
-    obj.rectangle261:setName("rectangle261");
+    obj.rectangle243 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle243:setParent(obj.rectangle242);
+    obj.rectangle243:setLeft(60);
+    obj.rectangle243:setTop(95);
+    obj.rectangle243:setWidth(350);
+    obj.rectangle243:setHeight(318);
+    obj.rectangle243:setColor("#D5D5D5");
+    obj.rectangle243:setStrokeColor("#49244F");
+    obj.rectangle243:setStrokeSize(3);
+    obj.rectangle243:setName("rectangle243");
 
-    obj.rectangle262 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle262:setParent(obj.rectangle260);
-    obj.rectangle262:setLeft(60);
-    obj.rectangle262:setTop(95);
-    obj.rectangle262:setWidth(350);
-    obj.rectangle262:setHeight(50);
-    obj.rectangle262:setColor("#49244F");
-    obj.rectangle262:setName("rectangle262");
+    obj.rectangle244 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle244:setParent(obj.rectangle242);
+    obj.rectangle244:setLeft(60);
+    obj.rectangle244:setTop(95);
+    obj.rectangle244:setWidth(350);
+    obj.rectangle244:setHeight(50);
+    obj.rectangle244:setColor("#49244F");
+    obj.rectangle244:setName("rectangle244");
 
     obj.edit63 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit63:setParent(obj.rectangle260);
+    obj.edit63:setParent(obj.rectangle242);
     obj.edit63:setLeft(65);
     obj.edit63:setTop(103);
     obj.edit63:setWidth(340);
@@ -5535,17 +5334,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit63:setField("Magia01");
     obj.edit63:setName("edit63");
 
-    obj.rectangle263 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle263:setParent(obj.rectangle260);
-    obj.rectangle263:setLeft(60);
-    obj.rectangle263:setTop(176);
-    obj.rectangle263:setWidth(350);
-    obj.rectangle263:setHeight(1);
-    obj.rectangle263:setColor("#49244F");
-    obj.rectangle263:setName("rectangle263");
+    obj.rectangle245 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle245:setParent(obj.rectangle242);
+    obj.rectangle245:setLeft(60);
+    obj.rectangle245:setTop(176);
+    obj.rectangle245:setWidth(350);
+    obj.rectangle245:setHeight(1);
+    obj.rectangle245:setColor("#49244F");
+    obj.rectangle245:setName("rectangle245");
 
     obj.label95 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label95:setParent(obj.rectangle260);
+    obj.label95:setParent(obj.rectangle242);
     obj.label95:setLeft(70);
     obj.label95:setTop(149);
     obj.label95:setWidth(280);
@@ -5556,7 +5355,7 @@ local function constructNew_frmWeirdWizard()
     obj.label95:setName("label95");
 
     obj.edit64 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit64:setParent(obj.rectangle260);
+    obj.edit64:setParent(obj.rectangle242);
     obj.edit64:setLeft(150);
     obj.edit64:setTop(143);
     obj.edit64:setWidth(260);
@@ -5566,17 +5365,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit64:setField("tradicaoMagia01");
     obj.edit64:setName("edit64");
 
-    obj.rectangle264 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle264:setParent(obj.rectangle260);
-    obj.rectangle264:setLeft(60);
-    obj.rectangle264:setTop(211);
-    obj.rectangle264:setWidth(350);
-    obj.rectangle264:setHeight(1);
-    obj.rectangle264:setColor("#49244F");
-    obj.rectangle264:setName("rectangle264");
+    obj.rectangle246 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle246:setParent(obj.rectangle242);
+    obj.rectangle246:setLeft(60);
+    obj.rectangle246:setTop(211);
+    obj.rectangle246:setWidth(350);
+    obj.rectangle246:setHeight(1);
+    obj.rectangle246:setColor("#49244F");
+    obj.rectangle246:setName("rectangle246");
 
     obj.label96 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label96:setParent(obj.rectangle260);
+    obj.label96:setParent(obj.rectangle242);
     obj.label96:setLeft(70);
     obj.label96:setTop(184);
     obj.label96:setWidth(280);
@@ -5587,7 +5386,7 @@ local function constructNew_frmWeirdWizard()
     obj.label96:setName("label96");
 
     obj.edit65 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit65:setParent(obj.rectangle260);
+    obj.edit65:setParent(obj.rectangle242);
     obj.edit65:setLeft(115);
     obj.edit65:setTop(178);
     obj.edit65:setWidth(295);
@@ -5597,17 +5396,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit65:setField("alvoMagia01");
     obj.edit65:setName("edit65");
 
-    obj.rectangle265 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle265:setParent(obj.rectangle260);
-    obj.rectangle265:setLeft(60);
-    obj.rectangle265:setTop(246);
-    obj.rectangle265:setWidth(350);
-    obj.rectangle265:setHeight(3);
-    obj.rectangle265:setColor("#49244F");
-    obj.rectangle265:setName("rectangle265");
+    obj.rectangle247 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle247:setParent(obj.rectangle242);
+    obj.rectangle247:setLeft(60);
+    obj.rectangle247:setTop(246);
+    obj.rectangle247:setWidth(350);
+    obj.rectangle247:setHeight(3);
+    obj.rectangle247:setColor("#49244F");
+    obj.rectangle247:setName("rectangle247");
 
     obj.label97 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label97:setParent(obj.rectangle260);
+    obj.label97:setParent(obj.rectangle242);
     obj.label97:setLeft(70);
     obj.label97:setTop(219);
     obj.label97:setWidth(280);
@@ -5618,7 +5417,7 @@ local function constructNew_frmWeirdWizard()
     obj.label97:setName("label97");
 
     obj.edit66 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit66:setParent(obj.rectangle260);
+    obj.edit66:setParent(obj.rectangle242);
     obj.edit66:setLeft(150);
     obj.edit66:setTop(213);
     obj.edit66:setWidth(260);
@@ -5628,17 +5427,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit66:setField("duracaoMagia01");
     obj.edit66:setName("edit66");
 
-    obj.rectangle266 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle266:setParent(obj.rectangle260);
-    obj.rectangle266:setLeft(60);
-    obj.rectangle266:setTop(246);
-    obj.rectangle266:setWidth(350);
-    obj.rectangle266:setHeight(125);
-    obj.rectangle266:setColor("#49244F");
-    obj.rectangle266:setName("rectangle266");
+    obj.rectangle248 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle248:setParent(obj.rectangle242);
+    obj.rectangle248:setLeft(60);
+    obj.rectangle248:setTop(246);
+    obj.rectangle248:setWidth(350);
+    obj.rectangle248:setHeight(125);
+    obj.rectangle248:setColor("#49244F");
+    obj.rectangle248:setName("rectangle248");
 
     obj.textEditor2 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor2:setParent(obj.rectangle260);
+    obj.textEditor2:setParent(obj.rectangle242);
     obj.textEditor2:setLeft(65);
     obj.textEditor2:setTop(251);
     obj.textEditor2:setWidth(340);
@@ -5649,28 +5448,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor2:setFontSize(18);
     obj.textEditor2:setName("textEditor2");
 
-    obj.rectangle267 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle267:setParent(obj.rectangle260);
-    obj.rectangle267:setLeft(60);
-    obj.rectangle267:setTop(371);
-    obj.rectangle267:setWidth(350);
-    obj.rectangle267:setHeight(3);
-    obj.rectangle267:setColor("#49244F");
-    obj.rectangle267:setName("rectangle267");
+    obj.rectangle249 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle249:setParent(obj.rectangle242);
+    obj.rectangle249:setLeft(60);
+    obj.rectangle249:setTop(371);
+    obj.rectangle249:setWidth(350);
+    obj.rectangle249:setHeight(3);
+    obj.rectangle249:setColor("#49244F");
+    obj.rectangle249:setName("rectangle249");
 
-    obj.rectangle268 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle268:setParent(obj.rectangle260);
-    obj.rectangle268:setLeft(64);
-    obj.rectangle268:setTop(378);
-    obj.rectangle268:setWidth(135);
-    obj.rectangle268:setHeight(29);
-    obj.rectangle268:setColor("#49244F");
-    obj.rectangle268:setHitTest(true);
-    obj.rectangle268:setCursor("handPoint");
-    obj.rectangle268:setName("rectangle268");
+    obj.rectangle250 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle250:setParent(obj.rectangle242);
+    obj.rectangle250:setLeft(64);
+    obj.rectangle250:setTop(378);
+    obj.rectangle250:setWidth(135);
+    obj.rectangle250:setHeight(29);
+    obj.rectangle250:setColor("#49244F");
+    obj.rectangle250:setHitTest(true);
+    obj.rectangle250:setCursor("handPoint");
+    obj.rectangle250:setName("rectangle250");
 
     obj.label98 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label98:setParent(obj.rectangle260);
+    obj.label98:setParent(obj.rectangle242);
     obj.label98:setLeft(70);
     obj.label98:setTop(382);
     obj.label98:setWidth(280);
@@ -5679,20 +5478,20 @@ local function constructNew_frmWeirdWizard()
     obj.label98:setFontColor("#D5D5D5");
     obj.label98:setName("label98");
 
-    obj.rectangle269 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle269:setParent(obj.rectangle260);
-    obj.rectangle269:setLeft(324);
-    obj.rectangle269:setTop(378);
-    obj.rectangle269:setWidth(29);
-    obj.rectangle269:setHeight(29);
-    obj.rectangle269:setColor("#49244F");
-    obj.rectangle269:setCornerType("round");
-    obj.rectangle269:setXradius(15);
-    obj.rectangle269:setYradius(15);
-    obj.rectangle269:setName("rectangle269");
+    obj.rectangle251 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle251:setParent(obj.rectangle242);
+    obj.rectangle251:setLeft(324);
+    obj.rectangle251:setTop(378);
+    obj.rectangle251:setWidth(29);
+    obj.rectangle251:setHeight(29);
+    obj.rectangle251:setColor("#49244F");
+    obj.rectangle251:setCornerType("round");
+    obj.rectangle251:setXradius(15);
+    obj.rectangle251:setYradius(15);
+    obj.rectangle251:setName("rectangle251");
 
     obj.edit67 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit67:setParent(obj.rectangle260);
+    obj.edit67:setParent(obj.rectangle242);
     obj.edit67:setLeft(318);
     obj.edit67:setTop(375);
     obj.edit67:setWidth(40);
@@ -5707,7 +5506,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit67:setName("edit67");
 
     obj.label99 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label99:setParent(obj.rectangle260);
+    obj.label99:setParent(obj.rectangle242);
     obj.label99:setLeft(360);
     obj.label99:setTop(382);
     obj.label99:setWidth(280);
@@ -5716,20 +5515,20 @@ local function constructNew_frmWeirdWizard()
     obj.label99:setFontColor("#49244F");
     obj.label99:setName("label99");
 
-    obj.rectangle270 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle270:setParent(obj.rectangle260);
-    obj.rectangle270:setLeft(374);
-    obj.rectangle270:setTop(376);
-    obj.rectangle270:setWidth(29);
-    obj.rectangle270:setHeight(29);
-    obj.rectangle270:setColor("#49244F");
-    obj.rectangle270:setCornerType("round");
-    obj.rectangle270:setXradius(15);
-    obj.rectangle270:setYradius(15);
-    obj.rectangle270:setName("rectangle270");
+    obj.rectangle252 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle252:setParent(obj.rectangle242);
+    obj.rectangle252:setLeft(374);
+    obj.rectangle252:setTop(376);
+    obj.rectangle252:setWidth(29);
+    obj.rectangle252:setHeight(29);
+    obj.rectangle252:setColor("#49244F");
+    obj.rectangle252:setCornerType("round");
+    obj.rectangle252:setXradius(15);
+    obj.rectangle252:setYradius(15);
+    obj.rectangle252:setName("rectangle252");
 
     obj.edit68 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit68:setParent(obj.rectangle260);
+    obj.edit68:setParent(obj.rectangle242);
     obj.edit68:setLeft(368);
     obj.edit68:setTop(375);
     obj.edit68:setWidth(40);
@@ -5743,28 +5542,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit68:setHint("Total");
     obj.edit68:setName("edit68");
 
-    obj.rectangle271 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle271:setParent(obj.rectangle260);
-    obj.rectangle271:setLeft(434);
-    obj.rectangle271:setTop(95);
-    obj.rectangle271:setWidth(350);
-    obj.rectangle271:setHeight(318);
-    obj.rectangle271:setColor("#D5D5D5");
-    obj.rectangle271:setStrokeColor("#49244F");
-    obj.rectangle271:setStrokeSize(3);
-    obj.rectangle271:setName("rectangle271");
+    obj.rectangle253 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle253:setParent(obj.rectangle242);
+    obj.rectangle253:setLeft(434);
+    obj.rectangle253:setTop(95);
+    obj.rectangle253:setWidth(350);
+    obj.rectangle253:setHeight(318);
+    obj.rectangle253:setColor("#D5D5D5");
+    obj.rectangle253:setStrokeColor("#49244F");
+    obj.rectangle253:setStrokeSize(3);
+    obj.rectangle253:setName("rectangle253");
 
-    obj.rectangle272 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle272:setParent(obj.rectangle260);
-    obj.rectangle272:setLeft(434);
-    obj.rectangle272:setTop(95);
-    obj.rectangle272:setWidth(350);
-    obj.rectangle272:setHeight(50);
-    obj.rectangle272:setColor("#49244F");
-    obj.rectangle272:setName("rectangle272");
+    obj.rectangle254 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle254:setParent(obj.rectangle242);
+    obj.rectangle254:setLeft(434);
+    obj.rectangle254:setTop(95);
+    obj.rectangle254:setWidth(350);
+    obj.rectangle254:setHeight(50);
+    obj.rectangle254:setColor("#49244F");
+    obj.rectangle254:setName("rectangle254");
 
     obj.edit69 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit69:setParent(obj.rectangle260);
+    obj.edit69:setParent(obj.rectangle242);
     obj.edit69:setLeft(439);
     obj.edit69:setTop(103);
     obj.edit69:setWidth(340);
@@ -5776,17 +5575,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit69:setField("Magia02");
     obj.edit69:setName("edit69");
 
-    obj.rectangle273 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle273:setParent(obj.rectangle260);
-    obj.rectangle273:setLeft(434);
-    obj.rectangle273:setTop(176);
-    obj.rectangle273:setWidth(350);
-    obj.rectangle273:setHeight(1);
-    obj.rectangle273:setColor("#49244F");
-    obj.rectangle273:setName("rectangle273");
+    obj.rectangle255 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle255:setParent(obj.rectangle242);
+    obj.rectangle255:setLeft(434);
+    obj.rectangle255:setTop(176);
+    obj.rectangle255:setWidth(350);
+    obj.rectangle255:setHeight(1);
+    obj.rectangle255:setColor("#49244F");
+    obj.rectangle255:setName("rectangle255");
 
     obj.label100 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label100:setParent(obj.rectangle260);
+    obj.label100:setParent(obj.rectangle242);
     obj.label100:setLeft(444);
     obj.label100:setTop(149);
     obj.label100:setWidth(280);
@@ -5797,7 +5596,7 @@ local function constructNew_frmWeirdWizard()
     obj.label100:setName("label100");
 
     obj.edit70 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit70:setParent(obj.rectangle260);
+    obj.edit70:setParent(obj.rectangle242);
     obj.edit70:setLeft(524);
     obj.edit70:setTop(143);
     obj.edit70:setWidth(260);
@@ -5807,17 +5606,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit70:setField("tradicaoMagia02");
     obj.edit70:setName("edit70");
 
-    obj.rectangle274 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle274:setParent(obj.rectangle260);
-    obj.rectangle274:setLeft(434);
-    obj.rectangle274:setTop(211);
-    obj.rectangle274:setWidth(350);
-    obj.rectangle274:setHeight(1);
-    obj.rectangle274:setColor("#49244F");
-    obj.rectangle274:setName("rectangle274");
+    obj.rectangle256 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle256:setParent(obj.rectangle242);
+    obj.rectangle256:setLeft(434);
+    obj.rectangle256:setTop(211);
+    obj.rectangle256:setWidth(350);
+    obj.rectangle256:setHeight(1);
+    obj.rectangle256:setColor("#49244F");
+    obj.rectangle256:setName("rectangle256");
 
     obj.label101 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label101:setParent(obj.rectangle260);
+    obj.label101:setParent(obj.rectangle242);
     obj.label101:setLeft(444);
     obj.label101:setTop(184);
     obj.label101:setWidth(280);
@@ -5828,7 +5627,7 @@ local function constructNew_frmWeirdWizard()
     obj.label101:setName("label101");
 
     obj.edit71 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit71:setParent(obj.rectangle260);
+    obj.edit71:setParent(obj.rectangle242);
     obj.edit71:setLeft(489);
     obj.edit71:setTop(178);
     obj.edit71:setWidth(295);
@@ -5838,17 +5637,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit71:setField("alvoMagia02");
     obj.edit71:setName("edit71");
 
-    obj.rectangle275 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle275:setParent(obj.rectangle260);
-    obj.rectangle275:setLeft(434);
-    obj.rectangle275:setTop(246);
-    obj.rectangle275:setWidth(350);
-    obj.rectangle275:setHeight(3);
-    obj.rectangle275:setColor("#49244F");
-    obj.rectangle275:setName("rectangle275");
+    obj.rectangle257 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle257:setParent(obj.rectangle242);
+    obj.rectangle257:setLeft(434);
+    obj.rectangle257:setTop(246);
+    obj.rectangle257:setWidth(350);
+    obj.rectangle257:setHeight(3);
+    obj.rectangle257:setColor("#49244F");
+    obj.rectangle257:setName("rectangle257");
 
     obj.label102 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label102:setParent(obj.rectangle260);
+    obj.label102:setParent(obj.rectangle242);
     obj.label102:setLeft(444);
     obj.label102:setTop(219);
     obj.label102:setWidth(280);
@@ -5859,7 +5658,7 @@ local function constructNew_frmWeirdWizard()
     obj.label102:setName("label102");
 
     obj.edit72 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit72:setParent(obj.rectangle260);
+    obj.edit72:setParent(obj.rectangle242);
     obj.edit72:setLeft(524);
     obj.edit72:setTop(213);
     obj.edit72:setWidth(260);
@@ -5869,17 +5668,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit72:setField("duracaoMagia02");
     obj.edit72:setName("edit72");
 
-    obj.rectangle276 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle276:setParent(obj.rectangle260);
-    obj.rectangle276:setLeft(434);
-    obj.rectangle276:setTop(246);
-    obj.rectangle276:setWidth(350);
-    obj.rectangle276:setHeight(125);
-    obj.rectangle276:setColor("#49244F");
-    obj.rectangle276:setName("rectangle276");
+    obj.rectangle258 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle258:setParent(obj.rectangle242);
+    obj.rectangle258:setLeft(434);
+    obj.rectangle258:setTop(246);
+    obj.rectangle258:setWidth(350);
+    obj.rectangle258:setHeight(125);
+    obj.rectangle258:setColor("#49244F");
+    obj.rectangle258:setName("rectangle258");
 
     obj.textEditor3 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor3:setParent(obj.rectangle260);
+    obj.textEditor3:setParent(obj.rectangle242);
     obj.textEditor3:setLeft(439);
     obj.textEditor3:setTop(251);
     obj.textEditor3:setWidth(340);
@@ -5890,28 +5689,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor3:setFontSize(18);
     obj.textEditor3:setName("textEditor3");
 
-    obj.rectangle277 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle277:setParent(obj.rectangle260);
-    obj.rectangle277:setLeft(434);
-    obj.rectangle277:setTop(371);
-    obj.rectangle277:setWidth(350);
-    obj.rectangle277:setHeight(3);
-    obj.rectangle277:setColor("#49244F");
-    obj.rectangle277:setName("rectangle277");
+    obj.rectangle259 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle259:setParent(obj.rectangle242);
+    obj.rectangle259:setLeft(434);
+    obj.rectangle259:setTop(371);
+    obj.rectangle259:setWidth(350);
+    obj.rectangle259:setHeight(3);
+    obj.rectangle259:setColor("#49244F");
+    obj.rectangle259:setName("rectangle259");
 
-    obj.rectangle278 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle278:setParent(obj.rectangle260);
-    obj.rectangle278:setLeft(438);
-    obj.rectangle278:setTop(378);
-    obj.rectangle278:setWidth(135);
-    obj.rectangle278:setHeight(29);
-    obj.rectangle278:setColor("#49244F");
-    obj.rectangle278:setHitTest(true);
-    obj.rectangle278:setCursor("handPoint");
-    obj.rectangle278:setName("rectangle278");
+    obj.rectangle260 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle260:setParent(obj.rectangle242);
+    obj.rectangle260:setLeft(438);
+    obj.rectangle260:setTop(378);
+    obj.rectangle260:setWidth(135);
+    obj.rectangle260:setHeight(29);
+    obj.rectangle260:setColor("#49244F");
+    obj.rectangle260:setHitTest(true);
+    obj.rectangle260:setCursor("handPoint");
+    obj.rectangle260:setName("rectangle260");
 
     obj.label103 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label103:setParent(obj.rectangle260);
+    obj.label103:setParent(obj.rectangle242);
     obj.label103:setLeft(444);
     obj.label103:setTop(382);
     obj.label103:setWidth(280);
@@ -5920,20 +5719,20 @@ local function constructNew_frmWeirdWizard()
     obj.label103:setFontColor("#D5D5D5");
     obj.label103:setName("label103");
 
-    obj.rectangle279 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle279:setParent(obj.rectangle260);
-    obj.rectangle279:setLeft(698);
-    obj.rectangle279:setTop(378);
-    obj.rectangle279:setWidth(29);
-    obj.rectangle279:setHeight(29);
-    obj.rectangle279:setColor("#49244F");
-    obj.rectangle279:setCornerType("round");
-    obj.rectangle279:setXradius(15);
-    obj.rectangle279:setYradius(15);
-    obj.rectangle279:setName("rectangle279");
+    obj.rectangle261 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle261:setParent(obj.rectangle242);
+    obj.rectangle261:setLeft(698);
+    obj.rectangle261:setTop(378);
+    obj.rectangle261:setWidth(29);
+    obj.rectangle261:setHeight(29);
+    obj.rectangle261:setColor("#49244F");
+    obj.rectangle261:setCornerType("round");
+    obj.rectangle261:setXradius(15);
+    obj.rectangle261:setYradius(15);
+    obj.rectangle261:setName("rectangle261");
 
     obj.edit73 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit73:setParent(obj.rectangle260);
+    obj.edit73:setParent(obj.rectangle242);
     obj.edit73:setLeft(692);
     obj.edit73:setTop(375);
     obj.edit73:setWidth(40);
@@ -5948,7 +5747,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit73:setName("edit73");
 
     obj.label104 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label104:setParent(obj.rectangle260);
+    obj.label104:setParent(obj.rectangle242);
     obj.label104:setLeft(734);
     obj.label104:setTop(382);
     obj.label104:setWidth(280);
@@ -5957,20 +5756,20 @@ local function constructNew_frmWeirdWizard()
     obj.label104:setFontColor("#49244F");
     obj.label104:setName("label104");
 
-    obj.rectangle280 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle280:setParent(obj.rectangle260);
-    obj.rectangle280:setLeft(748);
-    obj.rectangle280:setTop(376);
-    obj.rectangle280:setWidth(29);
-    obj.rectangle280:setHeight(29);
-    obj.rectangle280:setColor("#49244F");
-    obj.rectangle280:setCornerType("round");
-    obj.rectangle280:setXradius(15);
-    obj.rectangle280:setYradius(15);
-    obj.rectangle280:setName("rectangle280");
+    obj.rectangle262 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle262:setParent(obj.rectangle242);
+    obj.rectangle262:setLeft(748);
+    obj.rectangle262:setTop(376);
+    obj.rectangle262:setWidth(29);
+    obj.rectangle262:setHeight(29);
+    obj.rectangle262:setColor("#49244F");
+    obj.rectangle262:setCornerType("round");
+    obj.rectangle262:setXradius(15);
+    obj.rectangle262:setYradius(15);
+    obj.rectangle262:setName("rectangle262");
 
     obj.edit74 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit74:setParent(obj.rectangle260);
+    obj.edit74:setParent(obj.rectangle242);
     obj.edit74:setLeft(743);
     obj.edit74:setTop(375);
     obj.edit74:setWidth(40);
@@ -5984,28 +5783,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit74:setHint("Total");
     obj.edit74:setName("edit74");
 
-    obj.rectangle281 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle281:setParent(obj.rectangle260);
-    obj.rectangle281:setLeft(60);
-    obj.rectangle281:setTop(435);
-    obj.rectangle281:setWidth(350);
-    obj.rectangle281:setHeight(318);
-    obj.rectangle281:setColor("#D5D5D5");
-    obj.rectangle281:setStrokeColor("#49244F");
-    obj.rectangle281:setStrokeSize(3);
-    obj.rectangle281:setName("rectangle281");
+    obj.rectangle263 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle263:setParent(obj.rectangle242);
+    obj.rectangle263:setLeft(60);
+    obj.rectangle263:setTop(435);
+    obj.rectangle263:setWidth(350);
+    obj.rectangle263:setHeight(318);
+    obj.rectangle263:setColor("#D5D5D5");
+    obj.rectangle263:setStrokeColor("#49244F");
+    obj.rectangle263:setStrokeSize(3);
+    obj.rectangle263:setName("rectangle263");
 
-    obj.rectangle282 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle282:setParent(obj.rectangle260);
-    obj.rectangle282:setLeft(60);
-    obj.rectangle282:setTop(435);
-    obj.rectangle282:setWidth(350);
-    obj.rectangle282:setHeight(50);
-    obj.rectangle282:setColor("#49244F");
-    obj.rectangle282:setName("rectangle282");
+    obj.rectangle264 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle264:setParent(obj.rectangle242);
+    obj.rectangle264:setLeft(60);
+    obj.rectangle264:setTop(435);
+    obj.rectangle264:setWidth(350);
+    obj.rectangle264:setHeight(50);
+    obj.rectangle264:setColor("#49244F");
+    obj.rectangle264:setName("rectangle264");
 
     obj.edit75 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit75:setParent(obj.rectangle260);
+    obj.edit75:setParent(obj.rectangle242);
     obj.edit75:setLeft(65);
     obj.edit75:setTop(443);
     obj.edit75:setWidth(340);
@@ -6017,17 +5816,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit75:setField("Magia03");
     obj.edit75:setName("edit75");
 
-    obj.rectangle283 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle283:setParent(obj.rectangle260);
-    obj.rectangle283:setLeft(60);
-    obj.rectangle283:setTop(516);
-    obj.rectangle283:setWidth(350);
-    obj.rectangle283:setHeight(1);
-    obj.rectangle283:setColor("#49244F");
-    obj.rectangle283:setName("rectangle283");
+    obj.rectangle265 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle265:setParent(obj.rectangle242);
+    obj.rectangle265:setLeft(60);
+    obj.rectangle265:setTop(516);
+    obj.rectangle265:setWidth(350);
+    obj.rectangle265:setHeight(1);
+    obj.rectangle265:setColor("#49244F");
+    obj.rectangle265:setName("rectangle265");
 
     obj.label105 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label105:setParent(obj.rectangle260);
+    obj.label105:setParent(obj.rectangle242);
     obj.label105:setLeft(70);
     obj.label105:setTop(489);
     obj.label105:setWidth(280);
@@ -6038,7 +5837,7 @@ local function constructNew_frmWeirdWizard()
     obj.label105:setName("label105");
 
     obj.edit76 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit76:setParent(obj.rectangle260);
+    obj.edit76:setParent(obj.rectangle242);
     obj.edit76:setLeft(150);
     obj.edit76:setTop(483);
     obj.edit76:setWidth(260);
@@ -6048,17 +5847,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit76:setField("tradicaoMagia03");
     obj.edit76:setName("edit76");
 
-    obj.rectangle284 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle284:setParent(obj.rectangle260);
-    obj.rectangle284:setLeft(60);
-    obj.rectangle284:setTop(551);
-    obj.rectangle284:setWidth(350);
-    obj.rectangle284:setHeight(1);
-    obj.rectangle284:setColor("#49244F");
-    obj.rectangle284:setName("rectangle284");
+    obj.rectangle266 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle266:setParent(obj.rectangle242);
+    obj.rectangle266:setLeft(60);
+    obj.rectangle266:setTop(551);
+    obj.rectangle266:setWidth(350);
+    obj.rectangle266:setHeight(1);
+    obj.rectangle266:setColor("#49244F");
+    obj.rectangle266:setName("rectangle266");
 
     obj.label106 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label106:setParent(obj.rectangle260);
+    obj.label106:setParent(obj.rectangle242);
     obj.label106:setLeft(70);
     obj.label106:setTop(524);
     obj.label106:setWidth(280);
@@ -6069,7 +5868,7 @@ local function constructNew_frmWeirdWizard()
     obj.label106:setName("label106");
 
     obj.edit77 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit77:setParent(obj.rectangle260);
+    obj.edit77:setParent(obj.rectangle242);
     obj.edit77:setLeft(115);
     obj.edit77:setTop(518);
     obj.edit77:setWidth(295);
@@ -6079,17 +5878,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit77:setField("alvoMagia03");
     obj.edit77:setName("edit77");
 
-    obj.rectangle285 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle285:setParent(obj.rectangle260);
-    obj.rectangle285:setLeft(60);
-    obj.rectangle285:setTop(586);
-    obj.rectangle285:setWidth(350);
-    obj.rectangle285:setHeight(3);
-    obj.rectangle285:setColor("#49244F");
-    obj.rectangle285:setName("rectangle285");
+    obj.rectangle267 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle267:setParent(obj.rectangle242);
+    obj.rectangle267:setLeft(60);
+    obj.rectangle267:setTop(586);
+    obj.rectangle267:setWidth(350);
+    obj.rectangle267:setHeight(3);
+    obj.rectangle267:setColor("#49244F");
+    obj.rectangle267:setName("rectangle267");
 
     obj.label107 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label107:setParent(obj.rectangle260);
+    obj.label107:setParent(obj.rectangle242);
     obj.label107:setLeft(70);
     obj.label107:setTop(559);
     obj.label107:setWidth(280);
@@ -6100,7 +5899,7 @@ local function constructNew_frmWeirdWizard()
     obj.label107:setName("label107");
 
     obj.edit78 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit78:setParent(obj.rectangle260);
+    obj.edit78:setParent(obj.rectangle242);
     obj.edit78:setLeft(150);
     obj.edit78:setTop(553);
     obj.edit78:setWidth(260);
@@ -6110,17 +5909,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit78:setField("duracaoMagia03");
     obj.edit78:setName("edit78");
 
-    obj.rectangle286 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle286:setParent(obj.rectangle260);
-    obj.rectangle286:setLeft(60);
-    obj.rectangle286:setTop(586);
-    obj.rectangle286:setWidth(350);
-    obj.rectangle286:setHeight(125);
-    obj.rectangle286:setColor("#49244F");
-    obj.rectangle286:setName("rectangle286");
+    obj.rectangle268 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle268:setParent(obj.rectangle242);
+    obj.rectangle268:setLeft(60);
+    obj.rectangle268:setTop(586);
+    obj.rectangle268:setWidth(350);
+    obj.rectangle268:setHeight(125);
+    obj.rectangle268:setColor("#49244F");
+    obj.rectangle268:setName("rectangle268");
 
     obj.textEditor4 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor4:setParent(obj.rectangle260);
+    obj.textEditor4:setParent(obj.rectangle242);
     obj.textEditor4:setLeft(65);
     obj.textEditor4:setTop(591);
     obj.textEditor4:setWidth(340);
@@ -6131,28 +5930,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor4:setFontSize(18);
     obj.textEditor4:setName("textEditor4");
 
-    obj.rectangle287 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle287:setParent(obj.rectangle260);
-    obj.rectangle287:setLeft(60);
-    obj.rectangle287:setTop(711);
-    obj.rectangle287:setWidth(350);
-    obj.rectangle287:setHeight(3);
-    obj.rectangle287:setColor("#49244F");
-    obj.rectangle287:setName("rectangle287");
+    obj.rectangle269 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle269:setParent(obj.rectangle242);
+    obj.rectangle269:setLeft(60);
+    obj.rectangle269:setTop(711);
+    obj.rectangle269:setWidth(350);
+    obj.rectangle269:setHeight(3);
+    obj.rectangle269:setColor("#49244F");
+    obj.rectangle269:setName("rectangle269");
 
-    obj.rectangle288 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle288:setParent(obj.rectangle260);
-    obj.rectangle288:setLeft(64);
-    obj.rectangle288:setTop(718);
-    obj.rectangle288:setWidth(135);
-    obj.rectangle288:setHeight(29);
-    obj.rectangle288:setColor("#49244F");
-    obj.rectangle288:setHitTest(true);
-    obj.rectangle288:setCursor("handPoint");
-    obj.rectangle288:setName("rectangle288");
+    obj.rectangle270 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle270:setParent(obj.rectangle242);
+    obj.rectangle270:setLeft(64);
+    obj.rectangle270:setTop(718);
+    obj.rectangle270:setWidth(135);
+    obj.rectangle270:setHeight(29);
+    obj.rectangle270:setColor("#49244F");
+    obj.rectangle270:setHitTest(true);
+    obj.rectangle270:setCursor("handPoint");
+    obj.rectangle270:setName("rectangle270");
 
     obj.label108 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label108:setParent(obj.rectangle260);
+    obj.label108:setParent(obj.rectangle242);
     obj.label108:setLeft(70);
     obj.label108:setTop(722);
     obj.label108:setWidth(280);
@@ -6161,20 +5960,20 @@ local function constructNew_frmWeirdWizard()
     obj.label108:setFontColor("#D5D5D5");
     obj.label108:setName("label108");
 
-    obj.rectangle289 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle289:setParent(obj.rectangle260);
-    obj.rectangle289:setLeft(324);
-    obj.rectangle289:setTop(718);
-    obj.rectangle289:setWidth(29);
-    obj.rectangle289:setHeight(29);
-    obj.rectangle289:setColor("#49244F");
-    obj.rectangle289:setCornerType("round");
-    obj.rectangle289:setXradius(15);
-    obj.rectangle289:setYradius(15);
-    obj.rectangle289:setName("rectangle289");
+    obj.rectangle271 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle271:setParent(obj.rectangle242);
+    obj.rectangle271:setLeft(324);
+    obj.rectangle271:setTop(718);
+    obj.rectangle271:setWidth(29);
+    obj.rectangle271:setHeight(29);
+    obj.rectangle271:setColor("#49244F");
+    obj.rectangle271:setCornerType("round");
+    obj.rectangle271:setXradius(15);
+    obj.rectangle271:setYradius(15);
+    obj.rectangle271:setName("rectangle271");
 
     obj.edit79 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit79:setParent(obj.rectangle260);
+    obj.edit79:setParent(obj.rectangle242);
     obj.edit79:setLeft(318);
     obj.edit79:setTop(715);
     obj.edit79:setWidth(40);
@@ -6189,7 +5988,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit79:setName("edit79");
 
     obj.label109 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label109:setParent(obj.rectangle260);
+    obj.label109:setParent(obj.rectangle242);
     obj.label109:setLeft(360);
     obj.label109:setTop(722);
     obj.label109:setWidth(280);
@@ -6198,20 +5997,20 @@ local function constructNew_frmWeirdWizard()
     obj.label109:setFontColor("#49244F");
     obj.label109:setName("label109");
 
-    obj.rectangle290 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle290:setParent(obj.rectangle260);
-    obj.rectangle290:setLeft(374);
-    obj.rectangle290:setTop(716);
-    obj.rectangle290:setWidth(29);
-    obj.rectangle290:setHeight(29);
-    obj.rectangle290:setColor("#49244F");
-    obj.rectangle290:setCornerType("round");
-    obj.rectangle290:setXradius(15);
-    obj.rectangle290:setYradius(15);
-    obj.rectangle290:setName("rectangle290");
+    obj.rectangle272 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle272:setParent(obj.rectangle242);
+    obj.rectangle272:setLeft(374);
+    obj.rectangle272:setTop(716);
+    obj.rectangle272:setWidth(29);
+    obj.rectangle272:setHeight(29);
+    obj.rectangle272:setColor("#49244F");
+    obj.rectangle272:setCornerType("round");
+    obj.rectangle272:setXradius(15);
+    obj.rectangle272:setYradius(15);
+    obj.rectangle272:setName("rectangle272");
 
     obj.edit80 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit80:setParent(obj.rectangle260);
+    obj.edit80:setParent(obj.rectangle242);
     obj.edit80:setLeft(368);
     obj.edit80:setTop(715);
     obj.edit80:setWidth(40);
@@ -6225,28 +6024,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit80:setHint("Total");
     obj.edit80:setName("edit80");
 
-    obj.rectangle291 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle291:setParent(obj.rectangle260);
-    obj.rectangle291:setLeft(434);
-    obj.rectangle291:setTop(435);
-    obj.rectangle291:setWidth(350);
-    obj.rectangle291:setHeight(318);
-    obj.rectangle291:setColor("#D5D5D5");
-    obj.rectangle291:setStrokeColor("#49244F");
-    obj.rectangle291:setStrokeSize(3);
-    obj.rectangle291:setName("rectangle291");
+    obj.rectangle273 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle273:setParent(obj.rectangle242);
+    obj.rectangle273:setLeft(434);
+    obj.rectangle273:setTop(435);
+    obj.rectangle273:setWidth(350);
+    obj.rectangle273:setHeight(318);
+    obj.rectangle273:setColor("#D5D5D5");
+    obj.rectangle273:setStrokeColor("#49244F");
+    obj.rectangle273:setStrokeSize(3);
+    obj.rectangle273:setName("rectangle273");
 
-    obj.rectangle292 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle292:setParent(obj.rectangle260);
-    obj.rectangle292:setLeft(434);
-    obj.rectangle292:setTop(435);
-    obj.rectangle292:setWidth(350);
-    obj.rectangle292:setHeight(50);
-    obj.rectangle292:setColor("#49244F");
-    obj.rectangle292:setName("rectangle292");
+    obj.rectangle274 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle274:setParent(obj.rectangle242);
+    obj.rectangle274:setLeft(434);
+    obj.rectangle274:setTop(435);
+    obj.rectangle274:setWidth(350);
+    obj.rectangle274:setHeight(50);
+    obj.rectangle274:setColor("#49244F");
+    obj.rectangle274:setName("rectangle274");
 
     obj.edit81 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit81:setParent(obj.rectangle260);
+    obj.edit81:setParent(obj.rectangle242);
     obj.edit81:setLeft(439);
     obj.edit81:setTop(443);
     obj.edit81:setWidth(340);
@@ -6258,17 +6057,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit81:setField("Magia04");
     obj.edit81:setName("edit81");
 
-    obj.rectangle293 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle293:setParent(obj.rectangle260);
-    obj.rectangle293:setLeft(434);
-    obj.rectangle293:setTop(516);
-    obj.rectangle293:setWidth(350);
-    obj.rectangle293:setHeight(1);
-    obj.rectangle293:setColor("#49244F");
-    obj.rectangle293:setName("rectangle293");
+    obj.rectangle275 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle275:setParent(obj.rectangle242);
+    obj.rectangle275:setLeft(434);
+    obj.rectangle275:setTop(516);
+    obj.rectangle275:setWidth(350);
+    obj.rectangle275:setHeight(1);
+    obj.rectangle275:setColor("#49244F");
+    obj.rectangle275:setName("rectangle275");
 
     obj.label110 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label110:setParent(obj.rectangle260);
+    obj.label110:setParent(obj.rectangle242);
     obj.label110:setLeft(444);
     obj.label110:setTop(489);
     obj.label110:setWidth(280);
@@ -6279,7 +6078,7 @@ local function constructNew_frmWeirdWizard()
     obj.label110:setName("label110");
 
     obj.edit82 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit82:setParent(obj.rectangle260);
+    obj.edit82:setParent(obj.rectangle242);
     obj.edit82:setLeft(524);
     obj.edit82:setTop(483);
     obj.edit82:setWidth(260);
@@ -6289,17 +6088,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit82:setField("tradicaoMagia04");
     obj.edit82:setName("edit82");
 
-    obj.rectangle294 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle294:setParent(obj.rectangle260);
-    obj.rectangle294:setLeft(434);
-    obj.rectangle294:setTop(551);
-    obj.rectangle294:setWidth(350);
-    obj.rectangle294:setHeight(1);
-    obj.rectangle294:setColor("#49244F");
-    obj.rectangle294:setName("rectangle294");
+    obj.rectangle276 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle276:setParent(obj.rectangle242);
+    obj.rectangle276:setLeft(434);
+    obj.rectangle276:setTop(551);
+    obj.rectangle276:setWidth(350);
+    obj.rectangle276:setHeight(1);
+    obj.rectangle276:setColor("#49244F");
+    obj.rectangle276:setName("rectangle276");
 
     obj.label111 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label111:setParent(obj.rectangle260);
+    obj.label111:setParent(obj.rectangle242);
     obj.label111:setLeft(444);
     obj.label111:setTop(524);
     obj.label111:setWidth(280);
@@ -6310,7 +6109,7 @@ local function constructNew_frmWeirdWizard()
     obj.label111:setName("label111");
 
     obj.edit83 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit83:setParent(obj.rectangle260);
+    obj.edit83:setParent(obj.rectangle242);
     obj.edit83:setLeft(489);
     obj.edit83:setTop(518);
     obj.edit83:setWidth(295);
@@ -6320,17 +6119,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit83:setField("alvoMagia04");
     obj.edit83:setName("edit83");
 
-    obj.rectangle295 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle295:setParent(obj.rectangle260);
-    obj.rectangle295:setLeft(434);
-    obj.rectangle295:setTop(586);
-    obj.rectangle295:setWidth(350);
-    obj.rectangle295:setHeight(3);
-    obj.rectangle295:setColor("#49244F");
-    obj.rectangle295:setName("rectangle295");
+    obj.rectangle277 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle277:setParent(obj.rectangle242);
+    obj.rectangle277:setLeft(434);
+    obj.rectangle277:setTop(586);
+    obj.rectangle277:setWidth(350);
+    obj.rectangle277:setHeight(3);
+    obj.rectangle277:setColor("#49244F");
+    obj.rectangle277:setName("rectangle277");
 
     obj.label112 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label112:setParent(obj.rectangle260);
+    obj.label112:setParent(obj.rectangle242);
     obj.label112:setLeft(444);
     obj.label112:setTop(559);
     obj.label112:setWidth(280);
@@ -6341,7 +6140,7 @@ local function constructNew_frmWeirdWizard()
     obj.label112:setName("label112");
 
     obj.edit84 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit84:setParent(obj.rectangle260);
+    obj.edit84:setParent(obj.rectangle242);
     obj.edit84:setLeft(524);
     obj.edit84:setTop(553);
     obj.edit84:setWidth(260);
@@ -6351,17 +6150,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit84:setField("duracaoMagia04");
     obj.edit84:setName("edit84");
 
-    obj.rectangle296 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle296:setParent(obj.rectangle260);
-    obj.rectangle296:setLeft(434);
-    obj.rectangle296:setTop(586);
-    obj.rectangle296:setWidth(350);
-    obj.rectangle296:setHeight(125);
-    obj.rectangle296:setColor("#49244F");
-    obj.rectangle296:setName("rectangle296");
+    obj.rectangle278 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle278:setParent(obj.rectangle242);
+    obj.rectangle278:setLeft(434);
+    obj.rectangle278:setTop(586);
+    obj.rectangle278:setWidth(350);
+    obj.rectangle278:setHeight(125);
+    obj.rectangle278:setColor("#49244F");
+    obj.rectangle278:setName("rectangle278");
 
     obj.textEditor5 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor5:setParent(obj.rectangle260);
+    obj.textEditor5:setParent(obj.rectangle242);
     obj.textEditor5:setLeft(439);
     obj.textEditor5:setTop(591);
     obj.textEditor5:setWidth(340);
@@ -6372,28 +6171,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor5:setFontSize(18);
     obj.textEditor5:setName("textEditor5");
 
-    obj.rectangle297 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle297:setParent(obj.rectangle260);
-    obj.rectangle297:setLeft(434);
-    obj.rectangle297:setTop(711);
-    obj.rectangle297:setWidth(350);
-    obj.rectangle297:setHeight(3);
-    obj.rectangle297:setColor("#49244F");
-    obj.rectangle297:setName("rectangle297");
+    obj.rectangle279 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle279:setParent(obj.rectangle242);
+    obj.rectangle279:setLeft(434);
+    obj.rectangle279:setTop(711);
+    obj.rectangle279:setWidth(350);
+    obj.rectangle279:setHeight(3);
+    obj.rectangle279:setColor("#49244F");
+    obj.rectangle279:setName("rectangle279");
 
-    obj.rectangle298 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle298:setParent(obj.rectangle260);
-    obj.rectangle298:setLeft(438);
-    obj.rectangle298:setTop(718);
-    obj.rectangle298:setWidth(135);
-    obj.rectangle298:setHeight(29);
-    obj.rectangle298:setColor("#49244F");
-    obj.rectangle298:setHitTest(true);
-    obj.rectangle298:setCursor("handPoint");
-    obj.rectangle298:setName("rectangle298");
+    obj.rectangle280 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle280:setParent(obj.rectangle242);
+    obj.rectangle280:setLeft(438);
+    obj.rectangle280:setTop(718);
+    obj.rectangle280:setWidth(135);
+    obj.rectangle280:setHeight(29);
+    obj.rectangle280:setColor("#49244F");
+    obj.rectangle280:setHitTest(true);
+    obj.rectangle280:setCursor("handPoint");
+    obj.rectangle280:setName("rectangle280");
 
     obj.label113 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label113:setParent(obj.rectangle260);
+    obj.label113:setParent(obj.rectangle242);
     obj.label113:setLeft(444);
     obj.label113:setTop(722);
     obj.label113:setWidth(280);
@@ -6402,20 +6201,20 @@ local function constructNew_frmWeirdWizard()
     obj.label113:setFontColor("#D5D5D5");
     obj.label113:setName("label113");
 
-    obj.rectangle299 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle299:setParent(obj.rectangle260);
-    obj.rectangle299:setLeft(698);
-    obj.rectangle299:setTop(718);
-    obj.rectangle299:setWidth(29);
-    obj.rectangle299:setHeight(29);
-    obj.rectangle299:setColor("#49244F");
-    obj.rectangle299:setCornerType("round");
-    obj.rectangle299:setXradius(15);
-    obj.rectangle299:setYradius(15);
-    obj.rectangle299:setName("rectangle299");
+    obj.rectangle281 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle281:setParent(obj.rectangle242);
+    obj.rectangle281:setLeft(698);
+    obj.rectangle281:setTop(718);
+    obj.rectangle281:setWidth(29);
+    obj.rectangle281:setHeight(29);
+    obj.rectangle281:setColor("#49244F");
+    obj.rectangle281:setCornerType("round");
+    obj.rectangle281:setXradius(15);
+    obj.rectangle281:setYradius(15);
+    obj.rectangle281:setName("rectangle281");
 
     obj.edit85 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit85:setParent(obj.rectangle260);
+    obj.edit85:setParent(obj.rectangle242);
     obj.edit85:setLeft(692);
     obj.edit85:setTop(715);
     obj.edit85:setWidth(40);
@@ -6430,7 +6229,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit85:setName("edit85");
 
     obj.label114 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label114:setParent(obj.rectangle260);
+    obj.label114:setParent(obj.rectangle242);
     obj.label114:setLeft(734);
     obj.label114:setTop(722);
     obj.label114:setWidth(280);
@@ -6439,20 +6238,20 @@ local function constructNew_frmWeirdWizard()
     obj.label114:setFontColor("#49244F");
     obj.label114:setName("label114");
 
-    obj.rectangle300 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle300:setParent(obj.rectangle260);
-    obj.rectangle300:setLeft(748);
-    obj.rectangle300:setTop(716);
-    obj.rectangle300:setWidth(29);
-    obj.rectangle300:setHeight(29);
-    obj.rectangle300:setColor("#49244F");
-    obj.rectangle300:setCornerType("round");
-    obj.rectangle300:setXradius(15);
-    obj.rectangle300:setYradius(15);
-    obj.rectangle300:setName("rectangle300");
+    obj.rectangle282 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle282:setParent(obj.rectangle242);
+    obj.rectangle282:setLeft(748);
+    obj.rectangle282:setTop(716);
+    obj.rectangle282:setWidth(29);
+    obj.rectangle282:setHeight(29);
+    obj.rectangle282:setColor("#49244F");
+    obj.rectangle282:setCornerType("round");
+    obj.rectangle282:setXradius(15);
+    obj.rectangle282:setYradius(15);
+    obj.rectangle282:setName("rectangle282");
 
     obj.edit86 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit86:setParent(obj.rectangle260);
+    obj.edit86:setParent(obj.rectangle242);
     obj.edit86:setLeft(743);
     obj.edit86:setTop(715);
     obj.edit86:setWidth(40);
@@ -6466,28 +6265,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit86:setHint("Total");
     obj.edit86:setName("edit86");
 
-    obj.rectangle301 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle301:setParent(obj.rectangle260);
-    obj.rectangle301:setLeft(60);
-    obj.rectangle301:setTop(775);
-    obj.rectangle301:setWidth(350);
-    obj.rectangle301:setHeight(318);
-    obj.rectangle301:setColor("#D5D5D5");
-    obj.rectangle301:setStrokeColor("#49244F");
-    obj.rectangle301:setStrokeSize(3);
-    obj.rectangle301:setName("rectangle301");
+    obj.rectangle283 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle283:setParent(obj.rectangle242);
+    obj.rectangle283:setLeft(60);
+    obj.rectangle283:setTop(775);
+    obj.rectangle283:setWidth(350);
+    obj.rectangle283:setHeight(318);
+    obj.rectangle283:setColor("#D5D5D5");
+    obj.rectangle283:setStrokeColor("#49244F");
+    obj.rectangle283:setStrokeSize(3);
+    obj.rectangle283:setName("rectangle283");
 
-    obj.rectangle302 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle302:setParent(obj.rectangle260);
-    obj.rectangle302:setLeft(60);
-    obj.rectangle302:setTop(775);
-    obj.rectangle302:setWidth(350);
-    obj.rectangle302:setHeight(50);
-    obj.rectangle302:setColor("#49244F");
-    obj.rectangle302:setName("rectangle302");
+    obj.rectangle284 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle284:setParent(obj.rectangle242);
+    obj.rectangle284:setLeft(60);
+    obj.rectangle284:setTop(775);
+    obj.rectangle284:setWidth(350);
+    obj.rectangle284:setHeight(50);
+    obj.rectangle284:setColor("#49244F");
+    obj.rectangle284:setName("rectangle284");
 
     obj.edit87 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit87:setParent(obj.rectangle260);
+    obj.edit87:setParent(obj.rectangle242);
     obj.edit87:setLeft(65);
     obj.edit87:setTop(783);
     obj.edit87:setWidth(340);
@@ -6499,17 +6298,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit87:setField("Magia05");
     obj.edit87:setName("edit87");
 
-    obj.rectangle303 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle303:setParent(obj.rectangle260);
-    obj.rectangle303:setLeft(60);
-    obj.rectangle303:setTop(856);
-    obj.rectangle303:setWidth(350);
-    obj.rectangle303:setHeight(1);
-    obj.rectangle303:setColor("#49244F");
-    obj.rectangle303:setName("rectangle303");
+    obj.rectangle285 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle285:setParent(obj.rectangle242);
+    obj.rectangle285:setLeft(60);
+    obj.rectangle285:setTop(856);
+    obj.rectangle285:setWidth(350);
+    obj.rectangle285:setHeight(1);
+    obj.rectangle285:setColor("#49244F");
+    obj.rectangle285:setName("rectangle285");
 
     obj.label115 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label115:setParent(obj.rectangle260);
+    obj.label115:setParent(obj.rectangle242);
     obj.label115:setLeft(70);
     obj.label115:setTop(829);
     obj.label115:setWidth(280);
@@ -6520,7 +6319,7 @@ local function constructNew_frmWeirdWizard()
     obj.label115:setName("label115");
 
     obj.edit88 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit88:setParent(obj.rectangle260);
+    obj.edit88:setParent(obj.rectangle242);
     obj.edit88:setLeft(150);
     obj.edit88:setTop(823);
     obj.edit88:setWidth(260);
@@ -6530,17 +6329,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit88:setField("tradicaoMagia05");
     obj.edit88:setName("edit88");
 
-    obj.rectangle304 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle304:setParent(obj.rectangle260);
-    obj.rectangle304:setLeft(60);
-    obj.rectangle304:setTop(891);
-    obj.rectangle304:setWidth(350);
-    obj.rectangle304:setHeight(1);
-    obj.rectangle304:setColor("#49244F");
-    obj.rectangle304:setName("rectangle304");
+    obj.rectangle286 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle286:setParent(obj.rectangle242);
+    obj.rectangle286:setLeft(60);
+    obj.rectangle286:setTop(891);
+    obj.rectangle286:setWidth(350);
+    obj.rectangle286:setHeight(1);
+    obj.rectangle286:setColor("#49244F");
+    obj.rectangle286:setName("rectangle286");
 
     obj.label116 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label116:setParent(obj.rectangle260);
+    obj.label116:setParent(obj.rectangle242);
     obj.label116:setLeft(70);
     obj.label116:setTop(864);
     obj.label116:setWidth(280);
@@ -6551,7 +6350,7 @@ local function constructNew_frmWeirdWizard()
     obj.label116:setName("label116");
 
     obj.edit89 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit89:setParent(obj.rectangle260);
+    obj.edit89:setParent(obj.rectangle242);
     obj.edit89:setLeft(115);
     obj.edit89:setTop(858);
     obj.edit89:setWidth(295);
@@ -6561,17 +6360,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit89:setField("alvoMagia05");
     obj.edit89:setName("edit89");
 
-    obj.rectangle305 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle305:setParent(obj.rectangle260);
-    obj.rectangle305:setLeft(60);
-    obj.rectangle305:setTop(926);
-    obj.rectangle305:setWidth(350);
-    obj.rectangle305:setHeight(3);
-    obj.rectangle305:setColor("#49244F");
-    obj.rectangle305:setName("rectangle305");
+    obj.rectangle287 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle287:setParent(obj.rectangle242);
+    obj.rectangle287:setLeft(60);
+    obj.rectangle287:setTop(926);
+    obj.rectangle287:setWidth(350);
+    obj.rectangle287:setHeight(3);
+    obj.rectangle287:setColor("#49244F");
+    obj.rectangle287:setName("rectangle287");
 
     obj.label117 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label117:setParent(obj.rectangle260);
+    obj.label117:setParent(obj.rectangle242);
     obj.label117:setLeft(70);
     obj.label117:setTop(899);
     obj.label117:setWidth(280);
@@ -6582,7 +6381,7 @@ local function constructNew_frmWeirdWizard()
     obj.label117:setName("label117");
 
     obj.edit90 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit90:setParent(obj.rectangle260);
+    obj.edit90:setParent(obj.rectangle242);
     obj.edit90:setLeft(150);
     obj.edit90:setTop(893);
     obj.edit90:setWidth(260);
@@ -6592,17 +6391,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit90:setField("duracaoMagia05");
     obj.edit90:setName("edit90");
 
-    obj.rectangle306 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle306:setParent(obj.rectangle260);
-    obj.rectangle306:setLeft(60);
-    obj.rectangle306:setTop(926);
-    obj.rectangle306:setWidth(350);
-    obj.rectangle306:setHeight(125);
-    obj.rectangle306:setColor("#49244F");
-    obj.rectangle306:setName("rectangle306");
+    obj.rectangle288 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle288:setParent(obj.rectangle242);
+    obj.rectangle288:setLeft(60);
+    obj.rectangle288:setTop(926);
+    obj.rectangle288:setWidth(350);
+    obj.rectangle288:setHeight(125);
+    obj.rectangle288:setColor("#49244F");
+    obj.rectangle288:setName("rectangle288");
 
     obj.textEditor6 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor6:setParent(obj.rectangle260);
+    obj.textEditor6:setParent(obj.rectangle242);
     obj.textEditor6:setLeft(65);
     obj.textEditor6:setTop(931);
     obj.textEditor6:setWidth(340);
@@ -6613,28 +6412,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor6:setFontSize(18);
     obj.textEditor6:setName("textEditor6");
 
-    obj.rectangle307 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle307:setParent(obj.rectangle260);
-    obj.rectangle307:setLeft(60);
-    obj.rectangle307:setTop(1051);
-    obj.rectangle307:setWidth(350);
-    obj.rectangle307:setHeight(3);
-    obj.rectangle307:setColor("#49244F");
-    obj.rectangle307:setName("rectangle307");
+    obj.rectangle289 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle289:setParent(obj.rectangle242);
+    obj.rectangle289:setLeft(60);
+    obj.rectangle289:setTop(1051);
+    obj.rectangle289:setWidth(350);
+    obj.rectangle289:setHeight(3);
+    obj.rectangle289:setColor("#49244F");
+    obj.rectangle289:setName("rectangle289");
 
-    obj.rectangle308 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle308:setParent(obj.rectangle260);
-    obj.rectangle308:setLeft(64);
-    obj.rectangle308:setTop(1058);
-    obj.rectangle308:setWidth(135);
-    obj.rectangle308:setHeight(29);
-    obj.rectangle308:setColor("#49244F");
-    obj.rectangle308:setHitTest(true);
-    obj.rectangle308:setCursor("handPoint");
-    obj.rectangle308:setName("rectangle308");
+    obj.rectangle290 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle290:setParent(obj.rectangle242);
+    obj.rectangle290:setLeft(64);
+    obj.rectangle290:setTop(1058);
+    obj.rectangle290:setWidth(135);
+    obj.rectangle290:setHeight(29);
+    obj.rectangle290:setColor("#49244F");
+    obj.rectangle290:setHitTest(true);
+    obj.rectangle290:setCursor("handPoint");
+    obj.rectangle290:setName("rectangle290");
 
     obj.label118 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label118:setParent(obj.rectangle260);
+    obj.label118:setParent(obj.rectangle242);
     obj.label118:setLeft(70);
     obj.label118:setTop(1062);
     obj.label118:setWidth(280);
@@ -6643,20 +6442,20 @@ local function constructNew_frmWeirdWizard()
     obj.label118:setFontColor("#D5D5D5");
     obj.label118:setName("label118");
 
-    obj.rectangle309 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle309:setParent(obj.rectangle260);
-    obj.rectangle309:setLeft(324);
-    obj.rectangle309:setTop(1058);
-    obj.rectangle309:setWidth(29);
-    obj.rectangle309:setHeight(29);
-    obj.rectangle309:setColor("#49244F");
-    obj.rectangle309:setCornerType("round");
-    obj.rectangle309:setXradius(15);
-    obj.rectangle309:setYradius(15);
-    obj.rectangle309:setName("rectangle309");
+    obj.rectangle291 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle291:setParent(obj.rectangle242);
+    obj.rectangle291:setLeft(324);
+    obj.rectangle291:setTop(1058);
+    obj.rectangle291:setWidth(29);
+    obj.rectangle291:setHeight(29);
+    obj.rectangle291:setColor("#49244F");
+    obj.rectangle291:setCornerType("round");
+    obj.rectangle291:setXradius(15);
+    obj.rectangle291:setYradius(15);
+    obj.rectangle291:setName("rectangle291");
 
     obj.edit91 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit91:setParent(obj.rectangle260);
+    obj.edit91:setParent(obj.rectangle242);
     obj.edit91:setLeft(318);
     obj.edit91:setTop(1055);
     obj.edit91:setWidth(40);
@@ -6671,7 +6470,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit91:setName("edit91");
 
     obj.label119 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label119:setParent(obj.rectangle260);
+    obj.label119:setParent(obj.rectangle242);
     obj.label119:setLeft(360);
     obj.label119:setTop(1062);
     obj.label119:setWidth(280);
@@ -6680,20 +6479,20 @@ local function constructNew_frmWeirdWizard()
     obj.label119:setFontColor("#49244F");
     obj.label119:setName("label119");
 
-    obj.rectangle310 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle310:setParent(obj.rectangle260);
-    obj.rectangle310:setLeft(374);
-    obj.rectangle310:setTop(1056);
-    obj.rectangle310:setWidth(29);
-    obj.rectangle310:setHeight(29);
-    obj.rectangle310:setColor("#49244F");
-    obj.rectangle310:setCornerType("round");
-    obj.rectangle310:setXradius(15);
-    obj.rectangle310:setYradius(15);
-    obj.rectangle310:setName("rectangle310");
+    obj.rectangle292 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle292:setParent(obj.rectangle242);
+    obj.rectangle292:setLeft(374);
+    obj.rectangle292:setTop(1056);
+    obj.rectangle292:setWidth(29);
+    obj.rectangle292:setHeight(29);
+    obj.rectangle292:setColor("#49244F");
+    obj.rectangle292:setCornerType("round");
+    obj.rectangle292:setXradius(15);
+    obj.rectangle292:setYradius(15);
+    obj.rectangle292:setName("rectangle292");
 
     obj.edit92 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit92:setParent(obj.rectangle260);
+    obj.edit92:setParent(obj.rectangle242);
     obj.edit92:setLeft(368);
     obj.edit92:setTop(1055);
     obj.edit92:setWidth(40);
@@ -6707,28 +6506,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit92:setHint("Total");
     obj.edit92:setName("edit92");
 
-    obj.rectangle311 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle311:setParent(obj.rectangle260);
-    obj.rectangle311:setLeft(434);
-    obj.rectangle311:setTop(775);
-    obj.rectangle311:setWidth(350);
-    obj.rectangle311:setHeight(318);
-    obj.rectangle311:setColor("#D5D5D5");
-    obj.rectangle311:setStrokeColor("#49244F");
-    obj.rectangle311:setStrokeSize(3);
-    obj.rectangle311:setName("rectangle311");
+    obj.rectangle293 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle293:setParent(obj.rectangle242);
+    obj.rectangle293:setLeft(434);
+    obj.rectangle293:setTop(775);
+    obj.rectangle293:setWidth(350);
+    obj.rectangle293:setHeight(318);
+    obj.rectangle293:setColor("#D5D5D5");
+    obj.rectangle293:setStrokeColor("#49244F");
+    obj.rectangle293:setStrokeSize(3);
+    obj.rectangle293:setName("rectangle293");
 
-    obj.rectangle312 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle312:setParent(obj.rectangle260);
-    obj.rectangle312:setLeft(434);
-    obj.rectangle312:setTop(775);
-    obj.rectangle312:setWidth(350);
-    obj.rectangle312:setHeight(50);
-    obj.rectangle312:setColor("#49244F");
-    obj.rectangle312:setName("rectangle312");
+    obj.rectangle294 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle294:setParent(obj.rectangle242);
+    obj.rectangle294:setLeft(434);
+    obj.rectangle294:setTop(775);
+    obj.rectangle294:setWidth(350);
+    obj.rectangle294:setHeight(50);
+    obj.rectangle294:setColor("#49244F");
+    obj.rectangle294:setName("rectangle294");
 
     obj.edit93 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit93:setParent(obj.rectangle260);
+    obj.edit93:setParent(obj.rectangle242);
     obj.edit93:setLeft(439);
     obj.edit93:setTop(783);
     obj.edit93:setWidth(340);
@@ -6740,17 +6539,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit93:setField("Magia06");
     obj.edit93:setName("edit93");
 
-    obj.rectangle313 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle313:setParent(obj.rectangle260);
-    obj.rectangle313:setLeft(434);
-    obj.rectangle313:setTop(856);
-    obj.rectangle313:setWidth(350);
-    obj.rectangle313:setHeight(1);
-    obj.rectangle313:setColor("#49244F");
-    obj.rectangle313:setName("rectangle313");
+    obj.rectangle295 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle295:setParent(obj.rectangle242);
+    obj.rectangle295:setLeft(434);
+    obj.rectangle295:setTop(856);
+    obj.rectangle295:setWidth(350);
+    obj.rectangle295:setHeight(1);
+    obj.rectangle295:setColor("#49244F");
+    obj.rectangle295:setName("rectangle295");
 
     obj.label120 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label120:setParent(obj.rectangle260);
+    obj.label120:setParent(obj.rectangle242);
     obj.label120:setLeft(444);
     obj.label120:setTop(829);
     obj.label120:setWidth(280);
@@ -6761,7 +6560,7 @@ local function constructNew_frmWeirdWizard()
     obj.label120:setName("label120");
 
     obj.edit94 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit94:setParent(obj.rectangle260);
+    obj.edit94:setParent(obj.rectangle242);
     obj.edit94:setLeft(524);
     obj.edit94:setTop(823);
     obj.edit94:setWidth(260);
@@ -6771,17 +6570,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit94:setField("tradicaoMagia06");
     obj.edit94:setName("edit94");
 
-    obj.rectangle314 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle314:setParent(obj.rectangle260);
-    obj.rectangle314:setLeft(434);
-    obj.rectangle314:setTop(891);
-    obj.rectangle314:setWidth(350);
-    obj.rectangle314:setHeight(1);
-    obj.rectangle314:setColor("#49244F");
-    obj.rectangle314:setName("rectangle314");
+    obj.rectangle296 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle296:setParent(obj.rectangle242);
+    obj.rectangle296:setLeft(434);
+    obj.rectangle296:setTop(891);
+    obj.rectangle296:setWidth(350);
+    obj.rectangle296:setHeight(1);
+    obj.rectangle296:setColor("#49244F");
+    obj.rectangle296:setName("rectangle296");
 
     obj.label121 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label121:setParent(obj.rectangle260);
+    obj.label121:setParent(obj.rectangle242);
     obj.label121:setLeft(444);
     obj.label121:setTop(864);
     obj.label121:setWidth(280);
@@ -6792,7 +6591,7 @@ local function constructNew_frmWeirdWizard()
     obj.label121:setName("label121");
 
     obj.edit95 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit95:setParent(obj.rectangle260);
+    obj.edit95:setParent(obj.rectangle242);
     obj.edit95:setLeft(489);
     obj.edit95:setTop(858);
     obj.edit95:setWidth(295);
@@ -6802,17 +6601,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit95:setField("alvoMagia06");
     obj.edit95:setName("edit95");
 
-    obj.rectangle315 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle315:setParent(obj.rectangle260);
-    obj.rectangle315:setLeft(434);
-    obj.rectangle315:setTop(926);
-    obj.rectangle315:setWidth(350);
-    obj.rectangle315:setHeight(3);
-    obj.rectangle315:setColor("#49244F");
-    obj.rectangle315:setName("rectangle315");
+    obj.rectangle297 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle297:setParent(obj.rectangle242);
+    obj.rectangle297:setLeft(434);
+    obj.rectangle297:setTop(926);
+    obj.rectangle297:setWidth(350);
+    obj.rectangle297:setHeight(3);
+    obj.rectangle297:setColor("#49244F");
+    obj.rectangle297:setName("rectangle297");
 
     obj.label122 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label122:setParent(obj.rectangle260);
+    obj.label122:setParent(obj.rectangle242);
     obj.label122:setLeft(444);
     obj.label122:setTop(899);
     obj.label122:setWidth(280);
@@ -6823,7 +6622,7 @@ local function constructNew_frmWeirdWizard()
     obj.label122:setName("label122");
 
     obj.edit96 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit96:setParent(obj.rectangle260);
+    obj.edit96:setParent(obj.rectangle242);
     obj.edit96:setLeft(524);
     obj.edit96:setTop(893);
     obj.edit96:setWidth(260);
@@ -6833,17 +6632,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit96:setField("duracaoMagia06");
     obj.edit96:setName("edit96");
 
-    obj.rectangle316 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle316:setParent(obj.rectangle260);
-    obj.rectangle316:setLeft(434);
-    obj.rectangle316:setTop(926);
-    obj.rectangle316:setWidth(350);
-    obj.rectangle316:setHeight(125);
-    obj.rectangle316:setColor("#49244F");
-    obj.rectangle316:setName("rectangle316");
+    obj.rectangle298 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle298:setParent(obj.rectangle242);
+    obj.rectangle298:setLeft(434);
+    obj.rectangle298:setTop(926);
+    obj.rectangle298:setWidth(350);
+    obj.rectangle298:setHeight(125);
+    obj.rectangle298:setColor("#49244F");
+    obj.rectangle298:setName("rectangle298");
 
     obj.textEditor7 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor7:setParent(obj.rectangle260);
+    obj.textEditor7:setParent(obj.rectangle242);
     obj.textEditor7:setLeft(439);
     obj.textEditor7:setTop(931);
     obj.textEditor7:setWidth(340);
@@ -6854,28 +6653,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor7:setFontSize(18);
     obj.textEditor7:setName("textEditor7");
 
-    obj.rectangle317 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle317:setParent(obj.rectangle260);
-    obj.rectangle317:setLeft(434);
-    obj.rectangle317:setTop(1051);
-    obj.rectangle317:setWidth(350);
-    obj.rectangle317:setHeight(3);
-    obj.rectangle317:setColor("#49244F");
-    obj.rectangle317:setName("rectangle317");
+    obj.rectangle299 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle299:setParent(obj.rectangle242);
+    obj.rectangle299:setLeft(434);
+    obj.rectangle299:setTop(1051);
+    obj.rectangle299:setWidth(350);
+    obj.rectangle299:setHeight(3);
+    obj.rectangle299:setColor("#49244F");
+    obj.rectangle299:setName("rectangle299");
 
-    obj.rectangle318 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle318:setParent(obj.rectangle260);
-    obj.rectangle318:setLeft(438);
-    obj.rectangle318:setTop(1058);
-    obj.rectangle318:setWidth(135);
-    obj.rectangle318:setHeight(29);
-    obj.rectangle318:setColor("#49244F");
-    obj.rectangle318:setHitTest(true);
-    obj.rectangle318:setCursor("handPoint");
-    obj.rectangle318:setName("rectangle318");
+    obj.rectangle300 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle300:setParent(obj.rectangle242);
+    obj.rectangle300:setLeft(438);
+    obj.rectangle300:setTop(1058);
+    obj.rectangle300:setWidth(135);
+    obj.rectangle300:setHeight(29);
+    obj.rectangle300:setColor("#49244F");
+    obj.rectangle300:setHitTest(true);
+    obj.rectangle300:setCursor("handPoint");
+    obj.rectangle300:setName("rectangle300");
 
     obj.label123 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label123:setParent(obj.rectangle260);
+    obj.label123:setParent(obj.rectangle242);
     obj.label123:setLeft(444);
     obj.label123:setTop(1062);
     obj.label123:setWidth(280);
@@ -6884,20 +6683,20 @@ local function constructNew_frmWeirdWizard()
     obj.label123:setFontColor("#D5D5D5");
     obj.label123:setName("label123");
 
-    obj.rectangle319 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle319:setParent(obj.rectangle260);
-    obj.rectangle319:setLeft(698);
-    obj.rectangle319:setTop(1058);
-    obj.rectangle319:setWidth(29);
-    obj.rectangle319:setHeight(29);
-    obj.rectangle319:setColor("#49244F");
-    obj.rectangle319:setCornerType("round");
-    obj.rectangle319:setXradius(15);
-    obj.rectangle319:setYradius(15);
-    obj.rectangle319:setName("rectangle319");
+    obj.rectangle301 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle301:setParent(obj.rectangle242);
+    obj.rectangle301:setLeft(698);
+    obj.rectangle301:setTop(1058);
+    obj.rectangle301:setWidth(29);
+    obj.rectangle301:setHeight(29);
+    obj.rectangle301:setColor("#49244F");
+    obj.rectangle301:setCornerType("round");
+    obj.rectangle301:setXradius(15);
+    obj.rectangle301:setYradius(15);
+    obj.rectangle301:setName("rectangle301");
 
     obj.edit97 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit97:setParent(obj.rectangle260);
+    obj.edit97:setParent(obj.rectangle242);
     obj.edit97:setLeft(692);
     obj.edit97:setTop(1055);
     obj.edit97:setWidth(40);
@@ -6912,7 +6711,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit97:setName("edit97");
 
     obj.label124 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label124:setParent(obj.rectangle260);
+    obj.label124:setParent(obj.rectangle242);
     obj.label124:setLeft(734);
     obj.label124:setTop(1062);
     obj.label124:setWidth(280);
@@ -6921,20 +6720,20 @@ local function constructNew_frmWeirdWizard()
     obj.label124:setFontColor("#49244F");
     obj.label124:setName("label124");
 
-    obj.rectangle320 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle320:setParent(obj.rectangle260);
-    obj.rectangle320:setLeft(748);
-    obj.rectangle320:setTop(1056);
-    obj.rectangle320:setWidth(29);
-    obj.rectangle320:setHeight(29);
-    obj.rectangle320:setColor("#49244F");
-    obj.rectangle320:setCornerType("round");
-    obj.rectangle320:setXradius(15);
-    obj.rectangle320:setYradius(15);
-    obj.rectangle320:setName("rectangle320");
+    obj.rectangle302 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle302:setParent(obj.rectangle242);
+    obj.rectangle302:setLeft(748);
+    obj.rectangle302:setTop(1056);
+    obj.rectangle302:setWidth(29);
+    obj.rectangle302:setHeight(29);
+    obj.rectangle302:setColor("#49244F");
+    obj.rectangle302:setCornerType("round");
+    obj.rectangle302:setXradius(15);
+    obj.rectangle302:setYradius(15);
+    obj.rectangle302:setName("rectangle302");
 
     obj.edit98 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit98:setParent(obj.rectangle260);
+    obj.edit98:setParent(obj.rectangle242);
     obj.edit98:setLeft(743);
     obj.edit98:setTop(1055);
     obj.edit98:setWidth(40);
@@ -6948,28 +6747,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit98:setHint("Total");
     obj.edit98:setName("edit98");
 
-    obj.rectangle321 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle321:setParent(obj.rectangle260);
-    obj.rectangle321:setLeft(60);
-    obj.rectangle321:setTop(1115);
-    obj.rectangle321:setWidth(350);
-    obj.rectangle321:setHeight(318);
-    obj.rectangle321:setColor("#D5D5D5");
-    obj.rectangle321:setStrokeColor("#49244F");
-    obj.rectangle321:setStrokeSize(3);
-    obj.rectangle321:setName("rectangle321");
+    obj.rectangle303 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle303:setParent(obj.rectangle242);
+    obj.rectangle303:setLeft(60);
+    obj.rectangle303:setTop(1115);
+    obj.rectangle303:setWidth(350);
+    obj.rectangle303:setHeight(318);
+    obj.rectangle303:setColor("#D5D5D5");
+    obj.rectangle303:setStrokeColor("#49244F");
+    obj.rectangle303:setStrokeSize(3);
+    obj.rectangle303:setName("rectangle303");
 
-    obj.rectangle322 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle322:setParent(obj.rectangle260);
-    obj.rectangle322:setLeft(60);
-    obj.rectangle322:setTop(1115);
-    obj.rectangle322:setWidth(350);
-    obj.rectangle322:setHeight(50);
-    obj.rectangle322:setColor("#49244F");
-    obj.rectangle322:setName("rectangle322");
+    obj.rectangle304 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle304:setParent(obj.rectangle242);
+    obj.rectangle304:setLeft(60);
+    obj.rectangle304:setTop(1115);
+    obj.rectangle304:setWidth(350);
+    obj.rectangle304:setHeight(50);
+    obj.rectangle304:setColor("#49244F");
+    obj.rectangle304:setName("rectangle304");
 
     obj.edit99 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit99:setParent(obj.rectangle260);
+    obj.edit99:setParent(obj.rectangle242);
     obj.edit99:setLeft(65);
     obj.edit99:setTop(1123);
     obj.edit99:setWidth(340);
@@ -6981,17 +6780,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit99:setField("Magia07");
     obj.edit99:setName("edit99");
 
-    obj.rectangle323 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle323:setParent(obj.rectangle260);
-    obj.rectangle323:setLeft(60);
-    obj.rectangle323:setTop(1196);
-    obj.rectangle323:setWidth(350);
-    obj.rectangle323:setHeight(1);
-    obj.rectangle323:setColor("#49244F");
-    obj.rectangle323:setName("rectangle323");
+    obj.rectangle305 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle305:setParent(obj.rectangle242);
+    obj.rectangle305:setLeft(60);
+    obj.rectangle305:setTop(1196);
+    obj.rectangle305:setWidth(350);
+    obj.rectangle305:setHeight(1);
+    obj.rectangle305:setColor("#49244F");
+    obj.rectangle305:setName("rectangle305");
 
     obj.label125 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label125:setParent(obj.rectangle260);
+    obj.label125:setParent(obj.rectangle242);
     obj.label125:setLeft(70);
     obj.label125:setTop(1169);
     obj.label125:setWidth(280);
@@ -7002,7 +6801,7 @@ local function constructNew_frmWeirdWizard()
     obj.label125:setName("label125");
 
     obj.edit100 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit100:setParent(obj.rectangle260);
+    obj.edit100:setParent(obj.rectangle242);
     obj.edit100:setLeft(150);
     obj.edit100:setTop(1163);
     obj.edit100:setWidth(260);
@@ -7012,17 +6811,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit100:setField("tradicaoMagia07");
     obj.edit100:setName("edit100");
 
-    obj.rectangle324 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle324:setParent(obj.rectangle260);
-    obj.rectangle324:setLeft(60);
-    obj.rectangle324:setTop(1231);
-    obj.rectangle324:setWidth(350);
-    obj.rectangle324:setHeight(1);
-    obj.rectangle324:setColor("#49244F");
-    obj.rectangle324:setName("rectangle324");
+    obj.rectangle306 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle306:setParent(obj.rectangle242);
+    obj.rectangle306:setLeft(60);
+    obj.rectangle306:setTop(1231);
+    obj.rectangle306:setWidth(350);
+    obj.rectangle306:setHeight(1);
+    obj.rectangle306:setColor("#49244F");
+    obj.rectangle306:setName("rectangle306");
 
     obj.label126 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label126:setParent(obj.rectangle260);
+    obj.label126:setParent(obj.rectangle242);
     obj.label126:setLeft(70);
     obj.label126:setTop(1204);
     obj.label126:setWidth(280);
@@ -7033,7 +6832,7 @@ local function constructNew_frmWeirdWizard()
     obj.label126:setName("label126");
 
     obj.edit101 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit101:setParent(obj.rectangle260);
+    obj.edit101:setParent(obj.rectangle242);
     obj.edit101:setLeft(115);
     obj.edit101:setTop(1198);
     obj.edit101:setWidth(295);
@@ -7043,17 +6842,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit101:setField("alvoMagia07");
     obj.edit101:setName("edit101");
 
-    obj.rectangle325 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle325:setParent(obj.rectangle260);
-    obj.rectangle325:setLeft(60);
-    obj.rectangle325:setTop(1266);
-    obj.rectangle325:setWidth(350);
-    obj.rectangle325:setHeight(3);
-    obj.rectangle325:setColor("#49244F");
-    obj.rectangle325:setName("rectangle325");
+    obj.rectangle307 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle307:setParent(obj.rectangle242);
+    obj.rectangle307:setLeft(60);
+    obj.rectangle307:setTop(1266);
+    obj.rectangle307:setWidth(350);
+    obj.rectangle307:setHeight(3);
+    obj.rectangle307:setColor("#49244F");
+    obj.rectangle307:setName("rectangle307");
 
     obj.label127 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label127:setParent(obj.rectangle260);
+    obj.label127:setParent(obj.rectangle242);
     obj.label127:setLeft(70);
     obj.label127:setTop(1239);
     obj.label127:setWidth(280);
@@ -7064,7 +6863,7 @@ local function constructNew_frmWeirdWizard()
     obj.label127:setName("label127");
 
     obj.edit102 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit102:setParent(obj.rectangle260);
+    obj.edit102:setParent(obj.rectangle242);
     obj.edit102:setLeft(150);
     obj.edit102:setTop(1233);
     obj.edit102:setWidth(260);
@@ -7074,17 +6873,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit102:setField("duracaoMagia07");
     obj.edit102:setName("edit102");
 
-    obj.rectangle326 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle326:setParent(obj.rectangle260);
-    obj.rectangle326:setLeft(60);
-    obj.rectangle326:setTop(1266);
-    obj.rectangle326:setWidth(350);
-    obj.rectangle326:setHeight(125);
-    obj.rectangle326:setColor("#49244F");
-    obj.rectangle326:setName("rectangle326");
+    obj.rectangle308 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle308:setParent(obj.rectangle242);
+    obj.rectangle308:setLeft(60);
+    obj.rectangle308:setTop(1266);
+    obj.rectangle308:setWidth(350);
+    obj.rectangle308:setHeight(125);
+    obj.rectangle308:setColor("#49244F");
+    obj.rectangle308:setName("rectangle308");
 
     obj.textEditor8 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor8:setParent(obj.rectangle260);
+    obj.textEditor8:setParent(obj.rectangle242);
     obj.textEditor8:setLeft(65);
     obj.textEditor8:setTop(1271);
     obj.textEditor8:setWidth(340);
@@ -7095,28 +6894,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor8:setFontSize(18);
     obj.textEditor8:setName("textEditor8");
 
-    obj.rectangle327 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle327:setParent(obj.rectangle260);
-    obj.rectangle327:setLeft(60);
-    obj.rectangle327:setTop(1391);
-    obj.rectangle327:setWidth(350);
-    obj.rectangle327:setHeight(3);
-    obj.rectangle327:setColor("#49244F");
-    obj.rectangle327:setName("rectangle327");
+    obj.rectangle309 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle309:setParent(obj.rectangle242);
+    obj.rectangle309:setLeft(60);
+    obj.rectangle309:setTop(1391);
+    obj.rectangle309:setWidth(350);
+    obj.rectangle309:setHeight(3);
+    obj.rectangle309:setColor("#49244F");
+    obj.rectangle309:setName("rectangle309");
 
-    obj.rectangle328 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle328:setParent(obj.rectangle260);
-    obj.rectangle328:setLeft(64);
-    obj.rectangle328:setTop(1398);
-    obj.rectangle328:setWidth(135);
-    obj.rectangle328:setHeight(29);
-    obj.rectangle328:setColor("#49244F");
-    obj.rectangle328:setHitTest(true);
-    obj.rectangle328:setCursor("handPoint");
-    obj.rectangle328:setName("rectangle328");
+    obj.rectangle310 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle310:setParent(obj.rectangle242);
+    obj.rectangle310:setLeft(64);
+    obj.rectangle310:setTop(1398);
+    obj.rectangle310:setWidth(135);
+    obj.rectangle310:setHeight(29);
+    obj.rectangle310:setColor("#49244F");
+    obj.rectangle310:setHitTest(true);
+    obj.rectangle310:setCursor("handPoint");
+    obj.rectangle310:setName("rectangle310");
 
     obj.label128 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label128:setParent(obj.rectangle260);
+    obj.label128:setParent(obj.rectangle242);
     obj.label128:setLeft(70);
     obj.label128:setTop(1402);
     obj.label128:setWidth(280);
@@ -7125,20 +6924,20 @@ local function constructNew_frmWeirdWizard()
     obj.label128:setFontColor("#D5D5D5");
     obj.label128:setName("label128");
 
-    obj.rectangle329 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle329:setParent(obj.rectangle260);
-    obj.rectangle329:setLeft(324);
-    obj.rectangle329:setTop(1398);
-    obj.rectangle329:setWidth(29);
-    obj.rectangle329:setHeight(29);
-    obj.rectangle329:setColor("#49244F");
-    obj.rectangle329:setCornerType("round");
-    obj.rectangle329:setXradius(15);
-    obj.rectangle329:setYradius(15);
-    obj.rectangle329:setName("rectangle329");
+    obj.rectangle311 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle311:setParent(obj.rectangle242);
+    obj.rectangle311:setLeft(324);
+    obj.rectangle311:setTop(1398);
+    obj.rectangle311:setWidth(29);
+    obj.rectangle311:setHeight(29);
+    obj.rectangle311:setColor("#49244F");
+    obj.rectangle311:setCornerType("round");
+    obj.rectangle311:setXradius(15);
+    obj.rectangle311:setYradius(15);
+    obj.rectangle311:setName("rectangle311");
 
     obj.edit103 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit103:setParent(obj.rectangle260);
+    obj.edit103:setParent(obj.rectangle242);
     obj.edit103:setLeft(318);
     obj.edit103:setTop(1395);
     obj.edit103:setWidth(40);
@@ -7153,7 +6952,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit103:setName("edit103");
 
     obj.label129 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label129:setParent(obj.rectangle260);
+    obj.label129:setParent(obj.rectangle242);
     obj.label129:setLeft(360);
     obj.label129:setTop(1402);
     obj.label129:setWidth(280);
@@ -7162,20 +6961,20 @@ local function constructNew_frmWeirdWizard()
     obj.label129:setFontColor("#49244F");
     obj.label129:setName("label129");
 
-    obj.rectangle330 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle330:setParent(obj.rectangle260);
-    obj.rectangle330:setLeft(374);
-    obj.rectangle330:setTop(1396);
-    obj.rectangle330:setWidth(29);
-    obj.rectangle330:setHeight(29);
-    obj.rectangle330:setColor("#49244F");
-    obj.rectangle330:setCornerType("round");
-    obj.rectangle330:setXradius(15);
-    obj.rectangle330:setYradius(15);
-    obj.rectangle330:setName("rectangle330");
+    obj.rectangle312 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle312:setParent(obj.rectangle242);
+    obj.rectangle312:setLeft(374);
+    obj.rectangle312:setTop(1396);
+    obj.rectangle312:setWidth(29);
+    obj.rectangle312:setHeight(29);
+    obj.rectangle312:setColor("#49244F");
+    obj.rectangle312:setCornerType("round");
+    obj.rectangle312:setXradius(15);
+    obj.rectangle312:setYradius(15);
+    obj.rectangle312:setName("rectangle312");
 
     obj.edit104 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit104:setParent(obj.rectangle260);
+    obj.edit104:setParent(obj.rectangle242);
     obj.edit104:setLeft(368);
     obj.edit104:setTop(1395);
     obj.edit104:setWidth(40);
@@ -7189,28 +6988,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit104:setHint("Total");
     obj.edit104:setName("edit104");
 
-    obj.rectangle331 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle331:setParent(obj.rectangle260);
-    obj.rectangle331:setLeft(434);
-    obj.rectangle331:setTop(1115);
-    obj.rectangle331:setWidth(350);
-    obj.rectangle331:setHeight(318);
-    obj.rectangle331:setColor("#D5D5D5");
-    obj.rectangle331:setStrokeColor("#49244F");
-    obj.rectangle331:setStrokeSize(3);
-    obj.rectangle331:setName("rectangle331");
+    obj.rectangle313 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle313:setParent(obj.rectangle242);
+    obj.rectangle313:setLeft(434);
+    obj.rectangle313:setTop(1115);
+    obj.rectangle313:setWidth(350);
+    obj.rectangle313:setHeight(318);
+    obj.rectangle313:setColor("#D5D5D5");
+    obj.rectangle313:setStrokeColor("#49244F");
+    obj.rectangle313:setStrokeSize(3);
+    obj.rectangle313:setName("rectangle313");
 
-    obj.rectangle332 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle332:setParent(obj.rectangle260);
-    obj.rectangle332:setLeft(434);
-    obj.rectangle332:setTop(1115);
-    obj.rectangle332:setWidth(350);
-    obj.rectangle332:setHeight(50);
-    obj.rectangle332:setColor("#49244F");
-    obj.rectangle332:setName("rectangle332");
+    obj.rectangle314 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle314:setParent(obj.rectangle242);
+    obj.rectangle314:setLeft(434);
+    obj.rectangle314:setTop(1115);
+    obj.rectangle314:setWidth(350);
+    obj.rectangle314:setHeight(50);
+    obj.rectangle314:setColor("#49244F");
+    obj.rectangle314:setName("rectangle314");
 
     obj.edit105 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit105:setParent(obj.rectangle260);
+    obj.edit105:setParent(obj.rectangle242);
     obj.edit105:setLeft(439);
     obj.edit105:setTop(1123);
     obj.edit105:setWidth(340);
@@ -7222,17 +7021,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit105:setField("Magia08");
     obj.edit105:setName("edit105");
 
-    obj.rectangle333 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle333:setParent(obj.rectangle260);
-    obj.rectangle333:setLeft(434);
-    obj.rectangle333:setTop(1196);
-    obj.rectangle333:setWidth(350);
-    obj.rectangle333:setHeight(1);
-    obj.rectangle333:setColor("#49244F");
-    obj.rectangle333:setName("rectangle333");
+    obj.rectangle315 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle315:setParent(obj.rectangle242);
+    obj.rectangle315:setLeft(434);
+    obj.rectangle315:setTop(1196);
+    obj.rectangle315:setWidth(350);
+    obj.rectangle315:setHeight(1);
+    obj.rectangle315:setColor("#49244F");
+    obj.rectangle315:setName("rectangle315");
 
     obj.label130 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label130:setParent(obj.rectangle260);
+    obj.label130:setParent(obj.rectangle242);
     obj.label130:setLeft(444);
     obj.label130:setTop(1169);
     obj.label130:setWidth(280);
@@ -7243,7 +7042,7 @@ local function constructNew_frmWeirdWizard()
     obj.label130:setName("label130");
 
     obj.edit106 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit106:setParent(obj.rectangle260);
+    obj.edit106:setParent(obj.rectangle242);
     obj.edit106:setLeft(524);
     obj.edit106:setTop(1163);
     obj.edit106:setWidth(260);
@@ -7253,17 +7052,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit106:setField("tradicaoMagia08");
     obj.edit106:setName("edit106");
 
-    obj.rectangle334 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle334:setParent(obj.rectangle260);
-    obj.rectangle334:setLeft(434);
-    obj.rectangle334:setTop(1231);
-    obj.rectangle334:setWidth(350);
-    obj.rectangle334:setHeight(1);
-    obj.rectangle334:setColor("#49244F");
-    obj.rectangle334:setName("rectangle334");
+    obj.rectangle316 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle316:setParent(obj.rectangle242);
+    obj.rectangle316:setLeft(434);
+    obj.rectangle316:setTop(1231);
+    obj.rectangle316:setWidth(350);
+    obj.rectangle316:setHeight(1);
+    obj.rectangle316:setColor("#49244F");
+    obj.rectangle316:setName("rectangle316");
 
     obj.label131 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label131:setParent(obj.rectangle260);
+    obj.label131:setParent(obj.rectangle242);
     obj.label131:setLeft(444);
     obj.label131:setTop(1204);
     obj.label131:setWidth(280);
@@ -7274,7 +7073,7 @@ local function constructNew_frmWeirdWizard()
     obj.label131:setName("label131");
 
     obj.edit107 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit107:setParent(obj.rectangle260);
+    obj.edit107:setParent(obj.rectangle242);
     obj.edit107:setLeft(489);
     obj.edit107:setTop(1198);
     obj.edit107:setWidth(295);
@@ -7284,17 +7083,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit107:setField("alvoMagia08");
     obj.edit107:setName("edit107");
 
-    obj.rectangle335 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle335:setParent(obj.rectangle260);
-    obj.rectangle335:setLeft(434);
-    obj.rectangle335:setTop(1266);
-    obj.rectangle335:setWidth(350);
-    obj.rectangle335:setHeight(3);
-    obj.rectangle335:setColor("#49244F");
-    obj.rectangle335:setName("rectangle335");
+    obj.rectangle317 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle317:setParent(obj.rectangle242);
+    obj.rectangle317:setLeft(434);
+    obj.rectangle317:setTop(1266);
+    obj.rectangle317:setWidth(350);
+    obj.rectangle317:setHeight(3);
+    obj.rectangle317:setColor("#49244F");
+    obj.rectangle317:setName("rectangle317");
 
     obj.label132 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label132:setParent(obj.rectangle260);
+    obj.label132:setParent(obj.rectangle242);
     obj.label132:setLeft(444);
     obj.label132:setTop(1239);
     obj.label132:setWidth(280);
@@ -7305,7 +7104,7 @@ local function constructNew_frmWeirdWizard()
     obj.label132:setName("label132");
 
     obj.edit108 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit108:setParent(obj.rectangle260);
+    obj.edit108:setParent(obj.rectangle242);
     obj.edit108:setLeft(524);
     obj.edit108:setTop(1233);
     obj.edit108:setWidth(260);
@@ -7315,17 +7114,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit108:setField("duracaoMagia08");
     obj.edit108:setName("edit108");
 
-    obj.rectangle336 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle336:setParent(obj.rectangle260);
-    obj.rectangle336:setLeft(434);
-    obj.rectangle336:setTop(1266);
-    obj.rectangle336:setWidth(350);
-    obj.rectangle336:setHeight(125);
-    obj.rectangle336:setColor("#49244F");
-    obj.rectangle336:setName("rectangle336");
+    obj.rectangle318 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle318:setParent(obj.rectangle242);
+    obj.rectangle318:setLeft(434);
+    obj.rectangle318:setTop(1266);
+    obj.rectangle318:setWidth(350);
+    obj.rectangle318:setHeight(125);
+    obj.rectangle318:setColor("#49244F");
+    obj.rectangle318:setName("rectangle318");
 
     obj.textEditor9 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor9:setParent(obj.rectangle260);
+    obj.textEditor9:setParent(obj.rectangle242);
     obj.textEditor9:setLeft(439);
     obj.textEditor9:setTop(1271);
     obj.textEditor9:setWidth(340);
@@ -7336,28 +7135,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor9:setFontSize(18);
     obj.textEditor9:setName("textEditor9");
 
-    obj.rectangle337 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle337:setParent(obj.rectangle260);
-    obj.rectangle337:setLeft(434);
-    obj.rectangle337:setTop(1391);
-    obj.rectangle337:setWidth(350);
-    obj.rectangle337:setHeight(3);
-    obj.rectangle337:setColor("#49244F");
-    obj.rectangle337:setName("rectangle337");
+    obj.rectangle319 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle319:setParent(obj.rectangle242);
+    obj.rectangle319:setLeft(434);
+    obj.rectangle319:setTop(1391);
+    obj.rectangle319:setWidth(350);
+    obj.rectangle319:setHeight(3);
+    obj.rectangle319:setColor("#49244F");
+    obj.rectangle319:setName("rectangle319");
 
-    obj.rectangle338 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle338:setParent(obj.rectangle260);
-    obj.rectangle338:setLeft(438);
-    obj.rectangle338:setTop(1398);
-    obj.rectangle338:setWidth(135);
-    obj.rectangle338:setHeight(29);
-    obj.rectangle338:setColor("#49244F");
-    obj.rectangle338:setHitTest(true);
-    obj.rectangle338:setCursor("handPoint");
-    obj.rectangle338:setName("rectangle338");
+    obj.rectangle320 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle320:setParent(obj.rectangle242);
+    obj.rectangle320:setLeft(438);
+    obj.rectangle320:setTop(1398);
+    obj.rectangle320:setWidth(135);
+    obj.rectangle320:setHeight(29);
+    obj.rectangle320:setColor("#49244F");
+    obj.rectangle320:setHitTest(true);
+    obj.rectangle320:setCursor("handPoint");
+    obj.rectangle320:setName("rectangle320");
 
     obj.label133 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label133:setParent(obj.rectangle260);
+    obj.label133:setParent(obj.rectangle242);
     obj.label133:setLeft(444);
     obj.label133:setTop(1402);
     obj.label133:setWidth(280);
@@ -7366,20 +7165,20 @@ local function constructNew_frmWeirdWizard()
     obj.label133:setFontColor("#D5D5D5");
     obj.label133:setName("label133");
 
-    obj.rectangle339 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle339:setParent(obj.rectangle260);
-    obj.rectangle339:setLeft(698);
-    obj.rectangle339:setTop(1398);
-    obj.rectangle339:setWidth(29);
-    obj.rectangle339:setHeight(29);
-    obj.rectangle339:setColor("#49244F");
-    obj.rectangle339:setCornerType("round");
-    obj.rectangle339:setXradius(15);
-    obj.rectangle339:setYradius(15);
-    obj.rectangle339:setName("rectangle339");
+    obj.rectangle321 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle321:setParent(obj.rectangle242);
+    obj.rectangle321:setLeft(698);
+    obj.rectangle321:setTop(1398);
+    obj.rectangle321:setWidth(29);
+    obj.rectangle321:setHeight(29);
+    obj.rectangle321:setColor("#49244F");
+    obj.rectangle321:setCornerType("round");
+    obj.rectangle321:setXradius(15);
+    obj.rectangle321:setYradius(15);
+    obj.rectangle321:setName("rectangle321");
 
     obj.edit109 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit109:setParent(obj.rectangle260);
+    obj.edit109:setParent(obj.rectangle242);
     obj.edit109:setLeft(692);
     obj.edit109:setTop(1395);
     obj.edit109:setWidth(40);
@@ -7394,7 +7193,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit109:setName("edit109");
 
     obj.label134 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label134:setParent(obj.rectangle260);
+    obj.label134:setParent(obj.rectangle242);
     obj.label134:setLeft(734);
     obj.label134:setTop(1402);
     obj.label134:setWidth(280);
@@ -7403,20 +7202,20 @@ local function constructNew_frmWeirdWizard()
     obj.label134:setFontColor("#49244F");
     obj.label134:setName("label134");
 
-    obj.rectangle340 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle340:setParent(obj.rectangle260);
-    obj.rectangle340:setLeft(748);
-    obj.rectangle340:setTop(1396);
-    obj.rectangle340:setWidth(29);
-    obj.rectangle340:setHeight(29);
-    obj.rectangle340:setColor("#49244F");
-    obj.rectangle340:setCornerType("round");
-    obj.rectangle340:setXradius(15);
-    obj.rectangle340:setYradius(15);
-    obj.rectangle340:setName("rectangle340");
+    obj.rectangle322 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle322:setParent(obj.rectangle242);
+    obj.rectangle322:setLeft(748);
+    obj.rectangle322:setTop(1396);
+    obj.rectangle322:setWidth(29);
+    obj.rectangle322:setHeight(29);
+    obj.rectangle322:setColor("#49244F");
+    obj.rectangle322:setCornerType("round");
+    obj.rectangle322:setXradius(15);
+    obj.rectangle322:setYradius(15);
+    obj.rectangle322:setName("rectangle322");
 
     obj.edit110 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit110:setParent(obj.rectangle260);
+    obj.edit110:setParent(obj.rectangle242);
     obj.edit110:setLeft(743);
     obj.edit110:setTop(1395);
     obj.edit110:setWidth(40);
@@ -7430,28 +7229,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit110:setHint("Total");
     obj.edit110:setName("edit110");
 
-    obj.rectangle341 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle341:setParent(obj.rectangle260);
-    obj.rectangle341:setLeft(60);
-    obj.rectangle341:setTop(1455);
-    obj.rectangle341:setWidth(350);
-    obj.rectangle341:setHeight(318);
-    obj.rectangle341:setColor("#D5D5D5");
-    obj.rectangle341:setStrokeColor("#49244F");
-    obj.rectangle341:setStrokeSize(3);
-    obj.rectangle341:setName("rectangle341");
+    obj.rectangle323 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle323:setParent(obj.rectangle242);
+    obj.rectangle323:setLeft(60);
+    obj.rectangle323:setTop(1455);
+    obj.rectangle323:setWidth(350);
+    obj.rectangle323:setHeight(318);
+    obj.rectangle323:setColor("#D5D5D5");
+    obj.rectangle323:setStrokeColor("#49244F");
+    obj.rectangle323:setStrokeSize(3);
+    obj.rectangle323:setName("rectangle323");
 
-    obj.rectangle342 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle342:setParent(obj.rectangle260);
-    obj.rectangle342:setLeft(60);
-    obj.rectangle342:setTop(1455);
-    obj.rectangle342:setWidth(350);
-    obj.rectangle342:setHeight(50);
-    obj.rectangle342:setColor("#49244F");
-    obj.rectangle342:setName("rectangle342");
+    obj.rectangle324 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle324:setParent(obj.rectangle242);
+    obj.rectangle324:setLeft(60);
+    obj.rectangle324:setTop(1455);
+    obj.rectangle324:setWidth(350);
+    obj.rectangle324:setHeight(50);
+    obj.rectangle324:setColor("#49244F");
+    obj.rectangle324:setName("rectangle324");
 
     obj.edit111 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit111:setParent(obj.rectangle260);
+    obj.edit111:setParent(obj.rectangle242);
     obj.edit111:setLeft(65);
     obj.edit111:setTop(1463);
     obj.edit111:setWidth(340);
@@ -7463,17 +7262,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit111:setField("Magia09");
     obj.edit111:setName("edit111");
 
-    obj.rectangle343 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle343:setParent(obj.rectangle260);
-    obj.rectangle343:setLeft(60);
-    obj.rectangle343:setTop(1536);
-    obj.rectangle343:setWidth(350);
-    obj.rectangle343:setHeight(1);
-    obj.rectangle343:setColor("#49244F");
-    obj.rectangle343:setName("rectangle343");
+    obj.rectangle325 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle325:setParent(obj.rectangle242);
+    obj.rectangle325:setLeft(60);
+    obj.rectangle325:setTop(1536);
+    obj.rectangle325:setWidth(350);
+    obj.rectangle325:setHeight(1);
+    obj.rectangle325:setColor("#49244F");
+    obj.rectangle325:setName("rectangle325");
 
     obj.label135 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label135:setParent(obj.rectangle260);
+    obj.label135:setParent(obj.rectangle242);
     obj.label135:setLeft(70);
     obj.label135:setTop(1509);
     obj.label135:setWidth(280);
@@ -7484,7 +7283,7 @@ local function constructNew_frmWeirdWizard()
     obj.label135:setName("label135");
 
     obj.edit112 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit112:setParent(obj.rectangle260);
+    obj.edit112:setParent(obj.rectangle242);
     obj.edit112:setLeft(150);
     obj.edit112:setTop(1503);
     obj.edit112:setWidth(260);
@@ -7494,17 +7293,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit112:setField("tradicaoMagia09");
     obj.edit112:setName("edit112");
 
-    obj.rectangle344 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle344:setParent(obj.rectangle260);
-    obj.rectangle344:setLeft(60);
-    obj.rectangle344:setTop(1571);
-    obj.rectangle344:setWidth(350);
-    obj.rectangle344:setHeight(1);
-    obj.rectangle344:setColor("#49244F");
-    obj.rectangle344:setName("rectangle344");
+    obj.rectangle326 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle326:setParent(obj.rectangle242);
+    obj.rectangle326:setLeft(60);
+    obj.rectangle326:setTop(1571);
+    obj.rectangle326:setWidth(350);
+    obj.rectangle326:setHeight(1);
+    obj.rectangle326:setColor("#49244F");
+    obj.rectangle326:setName("rectangle326");
 
     obj.label136 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label136:setParent(obj.rectangle260);
+    obj.label136:setParent(obj.rectangle242);
     obj.label136:setLeft(70);
     obj.label136:setTop(1544);
     obj.label136:setWidth(280);
@@ -7515,7 +7314,7 @@ local function constructNew_frmWeirdWizard()
     obj.label136:setName("label136");
 
     obj.edit113 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit113:setParent(obj.rectangle260);
+    obj.edit113:setParent(obj.rectangle242);
     obj.edit113:setLeft(115);
     obj.edit113:setTop(1538);
     obj.edit113:setWidth(295);
@@ -7525,17 +7324,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit113:setField("alvoMagia09");
     obj.edit113:setName("edit113");
 
-    obj.rectangle345 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle345:setParent(obj.rectangle260);
-    obj.rectangle345:setLeft(60);
-    obj.rectangle345:setTop(1606);
-    obj.rectangle345:setWidth(350);
-    obj.rectangle345:setHeight(3);
-    obj.rectangle345:setColor("#49244F");
-    obj.rectangle345:setName("rectangle345");
+    obj.rectangle327 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle327:setParent(obj.rectangle242);
+    obj.rectangle327:setLeft(60);
+    obj.rectangle327:setTop(1606);
+    obj.rectangle327:setWidth(350);
+    obj.rectangle327:setHeight(3);
+    obj.rectangle327:setColor("#49244F");
+    obj.rectangle327:setName("rectangle327");
 
     obj.label137 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label137:setParent(obj.rectangle260);
+    obj.label137:setParent(obj.rectangle242);
     obj.label137:setLeft(70);
     obj.label137:setTop(1579);
     obj.label137:setWidth(280);
@@ -7546,7 +7345,7 @@ local function constructNew_frmWeirdWizard()
     obj.label137:setName("label137");
 
     obj.edit114 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit114:setParent(obj.rectangle260);
+    obj.edit114:setParent(obj.rectangle242);
     obj.edit114:setLeft(150);
     obj.edit114:setTop(1573);
     obj.edit114:setWidth(260);
@@ -7556,17 +7355,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit114:setField("duracaoMagia09");
     obj.edit114:setName("edit114");
 
-    obj.rectangle346 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle346:setParent(obj.rectangle260);
-    obj.rectangle346:setLeft(60);
-    obj.rectangle346:setTop(1606);
-    obj.rectangle346:setWidth(350);
-    obj.rectangle346:setHeight(125);
-    obj.rectangle346:setColor("#49244F");
-    obj.rectangle346:setName("rectangle346");
+    obj.rectangle328 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle328:setParent(obj.rectangle242);
+    obj.rectangle328:setLeft(60);
+    obj.rectangle328:setTop(1606);
+    obj.rectangle328:setWidth(350);
+    obj.rectangle328:setHeight(125);
+    obj.rectangle328:setColor("#49244F");
+    obj.rectangle328:setName("rectangle328");
 
     obj.textEditor10 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor10:setParent(obj.rectangle260);
+    obj.textEditor10:setParent(obj.rectangle242);
     obj.textEditor10:setLeft(65);
     obj.textEditor10:setTop(1611);
     obj.textEditor10:setWidth(340);
@@ -7577,28 +7376,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor10:setFontSize(18);
     obj.textEditor10:setName("textEditor10");
 
-    obj.rectangle347 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle347:setParent(obj.rectangle260);
-    obj.rectangle347:setLeft(60);
-    obj.rectangle347:setTop(1731);
-    obj.rectangle347:setWidth(350);
-    obj.rectangle347:setHeight(3);
-    obj.rectangle347:setColor("#49244F");
-    obj.rectangle347:setName("rectangle347");
+    obj.rectangle329 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle329:setParent(obj.rectangle242);
+    obj.rectangle329:setLeft(60);
+    obj.rectangle329:setTop(1731);
+    obj.rectangle329:setWidth(350);
+    obj.rectangle329:setHeight(3);
+    obj.rectangle329:setColor("#49244F");
+    obj.rectangle329:setName("rectangle329");
 
-    obj.rectangle348 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle348:setParent(obj.rectangle260);
-    obj.rectangle348:setLeft(64);
-    obj.rectangle348:setTop(1738);
-    obj.rectangle348:setWidth(135);
-    obj.rectangle348:setHeight(29);
-    obj.rectangle348:setColor("#49244F");
-    obj.rectangle348:setHitTest(true);
-    obj.rectangle348:setCursor("handPoint");
-    obj.rectangle348:setName("rectangle348");
+    obj.rectangle330 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle330:setParent(obj.rectangle242);
+    obj.rectangle330:setLeft(64);
+    obj.rectangle330:setTop(1738);
+    obj.rectangle330:setWidth(135);
+    obj.rectangle330:setHeight(29);
+    obj.rectangle330:setColor("#49244F");
+    obj.rectangle330:setHitTest(true);
+    obj.rectangle330:setCursor("handPoint");
+    obj.rectangle330:setName("rectangle330");
 
     obj.label138 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label138:setParent(obj.rectangle260);
+    obj.label138:setParent(obj.rectangle242);
     obj.label138:setLeft(70);
     obj.label138:setTop(1742);
     obj.label138:setWidth(280);
@@ -7607,20 +7406,20 @@ local function constructNew_frmWeirdWizard()
     obj.label138:setFontColor("#D5D5D5");
     obj.label138:setName("label138");
 
-    obj.rectangle349 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle349:setParent(obj.rectangle260);
-    obj.rectangle349:setLeft(324);
-    obj.rectangle349:setTop(1738);
-    obj.rectangle349:setWidth(29);
-    obj.rectangle349:setHeight(29);
-    obj.rectangle349:setColor("#49244F");
-    obj.rectangle349:setCornerType("round");
-    obj.rectangle349:setXradius(15);
-    obj.rectangle349:setYradius(15);
-    obj.rectangle349:setName("rectangle349");
+    obj.rectangle331 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle331:setParent(obj.rectangle242);
+    obj.rectangle331:setLeft(324);
+    obj.rectangle331:setTop(1738);
+    obj.rectangle331:setWidth(29);
+    obj.rectangle331:setHeight(29);
+    obj.rectangle331:setColor("#49244F");
+    obj.rectangle331:setCornerType("round");
+    obj.rectangle331:setXradius(15);
+    obj.rectangle331:setYradius(15);
+    obj.rectangle331:setName("rectangle331");
 
     obj.edit115 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit115:setParent(obj.rectangle260);
+    obj.edit115:setParent(obj.rectangle242);
     obj.edit115:setLeft(318);
     obj.edit115:setTop(1735);
     obj.edit115:setWidth(40);
@@ -7635,7 +7434,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit115:setName("edit115");
 
     obj.label139 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label139:setParent(obj.rectangle260);
+    obj.label139:setParent(obj.rectangle242);
     obj.label139:setLeft(360);
     obj.label139:setTop(1742);
     obj.label139:setWidth(280);
@@ -7644,20 +7443,20 @@ local function constructNew_frmWeirdWizard()
     obj.label139:setFontColor("#49244F");
     obj.label139:setName("label139");
 
-    obj.rectangle350 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle350:setParent(obj.rectangle260);
-    obj.rectangle350:setLeft(374);
-    obj.rectangle350:setTop(1736);
-    obj.rectangle350:setWidth(29);
-    obj.rectangle350:setHeight(29);
-    obj.rectangle350:setColor("#49244F");
-    obj.rectangle350:setCornerType("round");
-    obj.rectangle350:setXradius(15);
-    obj.rectangle350:setYradius(15);
-    obj.rectangle350:setName("rectangle350");
+    obj.rectangle332 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle332:setParent(obj.rectangle242);
+    obj.rectangle332:setLeft(374);
+    obj.rectangle332:setTop(1736);
+    obj.rectangle332:setWidth(29);
+    obj.rectangle332:setHeight(29);
+    obj.rectangle332:setColor("#49244F");
+    obj.rectangle332:setCornerType("round");
+    obj.rectangle332:setXradius(15);
+    obj.rectangle332:setYradius(15);
+    obj.rectangle332:setName("rectangle332");
 
     obj.edit116 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit116:setParent(obj.rectangle260);
+    obj.edit116:setParent(obj.rectangle242);
     obj.edit116:setLeft(368);
     obj.edit116:setTop(1735);
     obj.edit116:setWidth(40);
@@ -7671,28 +7470,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit116:setHint("Total");
     obj.edit116:setName("edit116");
 
-    obj.rectangle351 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle351:setParent(obj.rectangle260);
-    obj.rectangle351:setLeft(434);
-    obj.rectangle351:setTop(1455);
-    obj.rectangle351:setWidth(350);
-    obj.rectangle351:setHeight(318);
-    obj.rectangle351:setColor("#D5D5D5");
-    obj.rectangle351:setStrokeColor("#49244F");
-    obj.rectangle351:setStrokeSize(3);
-    obj.rectangle351:setName("rectangle351");
+    obj.rectangle333 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle333:setParent(obj.rectangle242);
+    obj.rectangle333:setLeft(434);
+    obj.rectangle333:setTop(1455);
+    obj.rectangle333:setWidth(350);
+    obj.rectangle333:setHeight(318);
+    obj.rectangle333:setColor("#D5D5D5");
+    obj.rectangle333:setStrokeColor("#49244F");
+    obj.rectangle333:setStrokeSize(3);
+    obj.rectangle333:setName("rectangle333");
 
-    obj.rectangle352 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle352:setParent(obj.rectangle260);
-    obj.rectangle352:setLeft(434);
-    obj.rectangle352:setTop(1455);
-    obj.rectangle352:setWidth(350);
-    obj.rectangle352:setHeight(50);
-    obj.rectangle352:setColor("#49244F");
-    obj.rectangle352:setName("rectangle352");
+    obj.rectangle334 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle334:setParent(obj.rectangle242);
+    obj.rectangle334:setLeft(434);
+    obj.rectangle334:setTop(1455);
+    obj.rectangle334:setWidth(350);
+    obj.rectangle334:setHeight(50);
+    obj.rectangle334:setColor("#49244F");
+    obj.rectangle334:setName("rectangle334");
 
     obj.edit117 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit117:setParent(obj.rectangle260);
+    obj.edit117:setParent(obj.rectangle242);
     obj.edit117:setLeft(439);
     obj.edit117:setTop(1463);
     obj.edit117:setWidth(340);
@@ -7704,17 +7503,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit117:setField("Magia10");
     obj.edit117:setName("edit117");
 
-    obj.rectangle353 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle353:setParent(obj.rectangle260);
-    obj.rectangle353:setLeft(434);
-    obj.rectangle353:setTop(1536);
-    obj.rectangle353:setWidth(350);
-    obj.rectangle353:setHeight(1);
-    obj.rectangle353:setColor("#49244F");
-    obj.rectangle353:setName("rectangle353");
+    obj.rectangle335 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle335:setParent(obj.rectangle242);
+    obj.rectangle335:setLeft(434);
+    obj.rectangle335:setTop(1536);
+    obj.rectangle335:setWidth(350);
+    obj.rectangle335:setHeight(1);
+    obj.rectangle335:setColor("#49244F");
+    obj.rectangle335:setName("rectangle335");
 
     obj.label140 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label140:setParent(obj.rectangle260);
+    obj.label140:setParent(obj.rectangle242);
     obj.label140:setLeft(444);
     obj.label140:setTop(1509);
     obj.label140:setWidth(280);
@@ -7725,7 +7524,7 @@ local function constructNew_frmWeirdWizard()
     obj.label140:setName("label140");
 
     obj.edit118 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit118:setParent(obj.rectangle260);
+    obj.edit118:setParent(obj.rectangle242);
     obj.edit118:setLeft(524);
     obj.edit118:setTop(1503);
     obj.edit118:setWidth(260);
@@ -7735,17 +7534,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit118:setField("tradicaoMagia10");
     obj.edit118:setName("edit118");
 
-    obj.rectangle354 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle354:setParent(obj.rectangle260);
-    obj.rectangle354:setLeft(434);
-    obj.rectangle354:setTop(1571);
-    obj.rectangle354:setWidth(350);
-    obj.rectangle354:setHeight(1);
-    obj.rectangle354:setColor("#49244F");
-    obj.rectangle354:setName("rectangle354");
+    obj.rectangle336 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle336:setParent(obj.rectangle242);
+    obj.rectangle336:setLeft(434);
+    obj.rectangle336:setTop(1571);
+    obj.rectangle336:setWidth(350);
+    obj.rectangle336:setHeight(1);
+    obj.rectangle336:setColor("#49244F");
+    obj.rectangle336:setName("rectangle336");
 
     obj.label141 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label141:setParent(obj.rectangle260);
+    obj.label141:setParent(obj.rectangle242);
     obj.label141:setLeft(444);
     obj.label141:setTop(1544);
     obj.label141:setWidth(280);
@@ -7756,7 +7555,7 @@ local function constructNew_frmWeirdWizard()
     obj.label141:setName("label141");
 
     obj.edit119 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit119:setParent(obj.rectangle260);
+    obj.edit119:setParent(obj.rectangle242);
     obj.edit119:setLeft(489);
     obj.edit119:setTop(1538);
     obj.edit119:setWidth(295);
@@ -7766,17 +7565,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit119:setField("alvoMagia10");
     obj.edit119:setName("edit119");
 
-    obj.rectangle355 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle355:setParent(obj.rectangle260);
-    obj.rectangle355:setLeft(434);
-    obj.rectangle355:setTop(1606);
-    obj.rectangle355:setWidth(350);
-    obj.rectangle355:setHeight(3);
-    obj.rectangle355:setColor("#49244F");
-    obj.rectangle355:setName("rectangle355");
+    obj.rectangle337 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle337:setParent(obj.rectangle242);
+    obj.rectangle337:setLeft(434);
+    obj.rectangle337:setTop(1606);
+    obj.rectangle337:setWidth(350);
+    obj.rectangle337:setHeight(3);
+    obj.rectangle337:setColor("#49244F");
+    obj.rectangle337:setName("rectangle337");
 
     obj.label142 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label142:setParent(obj.rectangle260);
+    obj.label142:setParent(obj.rectangle242);
     obj.label142:setLeft(444);
     obj.label142:setTop(1579);
     obj.label142:setWidth(280);
@@ -7787,7 +7586,7 @@ local function constructNew_frmWeirdWizard()
     obj.label142:setName("label142");
 
     obj.edit120 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit120:setParent(obj.rectangle260);
+    obj.edit120:setParent(obj.rectangle242);
     obj.edit120:setLeft(524);
     obj.edit120:setTop(1573);
     obj.edit120:setWidth(260);
@@ -7797,17 +7596,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit120:setField("duracaoMagia10");
     obj.edit120:setName("edit120");
 
-    obj.rectangle356 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle356:setParent(obj.rectangle260);
-    obj.rectangle356:setLeft(434);
-    obj.rectangle356:setTop(1606);
-    obj.rectangle356:setWidth(350);
-    obj.rectangle356:setHeight(125);
-    obj.rectangle356:setColor("#49244F");
-    obj.rectangle356:setName("rectangle356");
+    obj.rectangle338 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle338:setParent(obj.rectangle242);
+    obj.rectangle338:setLeft(434);
+    obj.rectangle338:setTop(1606);
+    obj.rectangle338:setWidth(350);
+    obj.rectangle338:setHeight(125);
+    obj.rectangle338:setColor("#49244F");
+    obj.rectangle338:setName("rectangle338");
 
     obj.textEditor11 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor11:setParent(obj.rectangle260);
+    obj.textEditor11:setParent(obj.rectangle242);
     obj.textEditor11:setLeft(439);
     obj.textEditor11:setTop(1611);
     obj.textEditor11:setWidth(340);
@@ -7818,28 +7617,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor11:setFontSize(18);
     obj.textEditor11:setName("textEditor11");
 
-    obj.rectangle357 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle357:setParent(obj.rectangle260);
-    obj.rectangle357:setLeft(434);
-    obj.rectangle357:setTop(1731);
-    obj.rectangle357:setWidth(350);
-    obj.rectangle357:setHeight(3);
-    obj.rectangle357:setColor("#49244F");
-    obj.rectangle357:setName("rectangle357");
+    obj.rectangle339 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle339:setParent(obj.rectangle242);
+    obj.rectangle339:setLeft(434);
+    obj.rectangle339:setTop(1731);
+    obj.rectangle339:setWidth(350);
+    obj.rectangle339:setHeight(3);
+    obj.rectangle339:setColor("#49244F");
+    obj.rectangle339:setName("rectangle339");
 
-    obj.rectangle358 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle358:setParent(obj.rectangle260);
-    obj.rectangle358:setLeft(438);
-    obj.rectangle358:setTop(1738);
-    obj.rectangle358:setWidth(135);
-    obj.rectangle358:setHeight(29);
-    obj.rectangle358:setColor("#49244F");
-    obj.rectangle358:setHitTest(true);
-    obj.rectangle358:setCursor("handPoint");
-    obj.rectangle358:setName("rectangle358");
+    obj.rectangle340 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle340:setParent(obj.rectangle242);
+    obj.rectangle340:setLeft(438);
+    obj.rectangle340:setTop(1738);
+    obj.rectangle340:setWidth(135);
+    obj.rectangle340:setHeight(29);
+    obj.rectangle340:setColor("#49244F");
+    obj.rectangle340:setHitTest(true);
+    obj.rectangle340:setCursor("handPoint");
+    obj.rectangle340:setName("rectangle340");
 
     obj.label143 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label143:setParent(obj.rectangle260);
+    obj.label143:setParent(obj.rectangle242);
     obj.label143:setLeft(444);
     obj.label143:setTop(1742);
     obj.label143:setWidth(280);
@@ -7848,20 +7647,20 @@ local function constructNew_frmWeirdWizard()
     obj.label143:setFontColor("#D5D5D5");
     obj.label143:setName("label143");
 
-    obj.rectangle359 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle359:setParent(obj.rectangle260);
-    obj.rectangle359:setLeft(698);
-    obj.rectangle359:setTop(1738);
-    obj.rectangle359:setWidth(29);
-    obj.rectangle359:setHeight(29);
-    obj.rectangle359:setColor("#49244F");
-    obj.rectangle359:setCornerType("round");
-    obj.rectangle359:setXradius(15);
-    obj.rectangle359:setYradius(15);
-    obj.rectangle359:setName("rectangle359");
+    obj.rectangle341 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle341:setParent(obj.rectangle242);
+    obj.rectangle341:setLeft(698);
+    obj.rectangle341:setTop(1738);
+    obj.rectangle341:setWidth(29);
+    obj.rectangle341:setHeight(29);
+    obj.rectangle341:setColor("#49244F");
+    obj.rectangle341:setCornerType("round");
+    obj.rectangle341:setXradius(15);
+    obj.rectangle341:setYradius(15);
+    obj.rectangle341:setName("rectangle341");
 
     obj.edit121 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit121:setParent(obj.rectangle260);
+    obj.edit121:setParent(obj.rectangle242);
     obj.edit121:setLeft(692);
     obj.edit121:setTop(1735);
     obj.edit121:setWidth(40);
@@ -7876,7 +7675,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit121:setName("edit121");
 
     obj.label144 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label144:setParent(obj.rectangle260);
+    obj.label144:setParent(obj.rectangle242);
     obj.label144:setLeft(734);
     obj.label144:setTop(1742);
     obj.label144:setWidth(280);
@@ -7885,20 +7684,20 @@ local function constructNew_frmWeirdWizard()
     obj.label144:setFontColor("#49244F");
     obj.label144:setName("label144");
 
-    obj.rectangle360 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle360:setParent(obj.rectangle260);
-    obj.rectangle360:setLeft(748);
-    obj.rectangle360:setTop(1736);
-    obj.rectangle360:setWidth(29);
-    obj.rectangle360:setHeight(29);
-    obj.rectangle360:setColor("#49244F");
-    obj.rectangle360:setCornerType("round");
-    obj.rectangle360:setXradius(15);
-    obj.rectangle360:setYradius(15);
-    obj.rectangle360:setName("rectangle360");
+    obj.rectangle342 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle342:setParent(obj.rectangle242);
+    obj.rectangle342:setLeft(748);
+    obj.rectangle342:setTop(1736);
+    obj.rectangle342:setWidth(29);
+    obj.rectangle342:setHeight(29);
+    obj.rectangle342:setColor("#49244F");
+    obj.rectangle342:setCornerType("round");
+    obj.rectangle342:setXradius(15);
+    obj.rectangle342:setYradius(15);
+    obj.rectangle342:setName("rectangle342");
 
     obj.edit122 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit122:setParent(obj.rectangle260);
+    obj.edit122:setParent(obj.rectangle242);
     obj.edit122:setLeft(743);
     obj.edit122:setTop(1735);
     obj.edit122:setWidth(40);
@@ -7920,68 +7719,59 @@ local function constructNew_frmWeirdWizard()
     obj.layout8:setHeight(825);
     obj.layout8:setName("layout8");
 
-    obj.rectangle361 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle361:setParent(obj.layout8);
-    obj.rectangle361:setLeft(0);
-    obj.rectangle361:setTop(725);
-    obj.rectangle361:setWidth(799);
-    obj.rectangle361:setHeight(105);
-    obj.rectangle361:setColor("#D5D5D5");
-    obj.rectangle361:setName("rectangle361");
+    obj.rectangle343 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle343:setParent(obj.layout8);
+    obj.rectangle343:setLeft(0);
+    obj.rectangle343:setTop(725);
+    obj.rectangle343:setWidth(799);
+    obj.rectangle343:setHeight(105);
+    obj.rectangle343:setColor("#D5D5D5");
+    obj.rectangle343:setName("rectangle343");
 
-    obj.rectangle362 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle362:setParent(obj.layout8);
-    obj.rectangle362:setLeft(65);
-    obj.rectangle362:setTop(730);
-    obj.rectangle362:setWidth(712);
-    obj.rectangle362:setHeight(1);
-    obj.rectangle362:setColor("#49244F");
-    obj.rectangle362:setName("rectangle362");
+    obj.rectangle344 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle344:setParent(obj.layout8);
+    obj.rectangle344:setLeft(65);
+    obj.rectangle344:setTop(730);
+    obj.rectangle344:setWidth(712);
+    obj.rectangle344:setHeight(1);
+    obj.rectangle344:setColor("#49244F");
+    obj.rectangle344:setName("rectangle344");
 
-    obj.rectangle363 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle363:setParent(obj.layout8);
-    obj.rectangle363:setLeft(65);
-    obj.rectangle363:setTop(735);
-    obj.rectangle363:setWidth(712);
-    obj.rectangle363:setHeight(1);
-    obj.rectangle363:setColor("#49244F");
-    obj.rectangle363:setName("rectangle363");
+    obj.rectangle345 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle345:setParent(obj.layout8);
+    obj.rectangle345:setLeft(65);
+    obj.rectangle345:setTop(735);
+    obj.rectangle345:setWidth(712);
+    obj.rectangle345:setHeight(1);
+    obj.rectangle345:setColor("#49244F");
+    obj.rectangle345:setName("rectangle345");
 
-    obj.image46 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image46:setParent(obj.layout8);
-    obj.image46:setLeft(270);
-    obj.image46:setTop(750);
-    obj.image46:setWidth(288);
-    obj.image46:setHeight(56);
-    obj.image46:setSRC("/img/livrosMagicos.png");
-    obj.image46:setName("image46");
+    obj.image42 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image42:setParent(obj.layout8);
+    obj.image42:setLeft(270);
+    obj.image42:setTop(750);
+    obj.image42:setWidth(288);
+    obj.image42:setHeight(56);
+    obj.image42:setSRC("/img/livrosMagicos.png");
+    obj.image42:setName("image42");
 
-    obj.rectangle364 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle364:setParent(obj.layout8);
-    obj.rectangle364:setLeft(0);
-    obj.rectangle364:setTop(0);
-    obj.rectangle364:setWidth(799);
-    obj.rectangle364:setHeight(5);
-    obj.rectangle364:setColor("#D5D5D5");
-    obj.rectangle364:setName("rectangle364");
+    obj.rectangle346 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle346:setParent(obj.layout8);
+    obj.rectangle346:setLeft(0);
+    obj.rectangle346:setTop(0);
+    obj.rectangle346:setWidth(799);
+    obj.rectangle346:setHeight(5);
+    obj.rectangle346:setColor("#D5D5D5");
+    obj.rectangle346:setName("rectangle346");
 
-    obj.image47 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image47:setParent(obj.layout8);
-    obj.image47:setLeft(0);
-    obj.image47:setTop(0);
-    obj.image47:setWidth(799);
-    obj.image47:setHeight(825);
-    obj.image47:setSRC("/img/borda.png");
-    obj.image47:setName("image47");
-
-    obj.image48 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image48:setParent(obj.tab5);
-    obj.image48:setLeft(69);
-    obj.image48:setTop(875);
-    obj.image48:setWidth(676);
-    obj.image48:setHeight(194);
-    obj.image48:setSRC("/img/logo.png");
-    obj.image48:setName("image48");
+    obj.image43 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image43:setParent(obj.layout8);
+    obj.image43:setLeft(0);
+    obj.image43:setTop(0);
+    obj.image43:setWidth(799);
+    obj.image43:setHeight(825);
+    obj.image43:setSRC("/img/borda.png");
+    obj.image43:setName("image43");
 
     obj.tab6 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab6:setParent(obj.tabControl1);
@@ -8004,17 +7794,17 @@ local function constructNew_frmWeirdWizard()
     obj.layout9:setHeight(1790);
     obj.layout9:setName("layout9");
 
-    obj.rectangle365 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle365:setParent(obj.layout9);
-    obj.rectangle365:setLeft(0);
-    obj.rectangle365:setTop(0);
-    obj.rectangle365:setWidth(799);
-    obj.rectangle365:setHeight(1790);
-    obj.rectangle365:setColor("#D5D5D5");
-    obj.rectangle365:setName("rectangle365");
+    obj.rectangle347 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle347:setParent(obj.layout9);
+    obj.rectangle347:setLeft(0);
+    obj.rectangle347:setTop(0);
+    obj.rectangle347:setWidth(799);
+    obj.rectangle347:setHeight(1790);
+    obj.rectangle347:setColor("#D5D5D5");
+    obj.rectangle347:setName("rectangle347");
 
     obj.label145 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label145:setParent(obj.rectangle365);
+    obj.label145:setParent(obj.rectangle347);
     obj.label145:setLeft(270);
     obj.label145:setTop(60);
     obj.label145:setWidth(280);
@@ -8025,28 +7815,28 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label145, "fontStyle", "bold");
     obj.label145:setName("label145");
 
-    obj.rectangle366 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle366:setParent(obj.rectangle365);
-    obj.rectangle366:setLeft(60);
-    obj.rectangle366:setTop(95);
-    obj.rectangle366:setWidth(350);
-    obj.rectangle366:setHeight(318);
-    obj.rectangle366:setColor("#D5D5D5");
-    obj.rectangle366:setStrokeColor("#49244F");
-    obj.rectangle366:setStrokeSize(3);
-    obj.rectangle366:setName("rectangle366");
+    obj.rectangle348 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle348:setParent(obj.rectangle347);
+    obj.rectangle348:setLeft(60);
+    obj.rectangle348:setTop(95);
+    obj.rectangle348:setWidth(350);
+    obj.rectangle348:setHeight(318);
+    obj.rectangle348:setColor("#D5D5D5");
+    obj.rectangle348:setStrokeColor("#49244F");
+    obj.rectangle348:setStrokeSize(3);
+    obj.rectangle348:setName("rectangle348");
 
-    obj.rectangle367 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle367:setParent(obj.rectangle365);
-    obj.rectangle367:setLeft(60);
-    obj.rectangle367:setTop(95);
-    obj.rectangle367:setWidth(350);
-    obj.rectangle367:setHeight(50);
-    obj.rectangle367:setColor("#49244F");
-    obj.rectangle367:setName("rectangle367");
+    obj.rectangle349 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle349:setParent(obj.rectangle347);
+    obj.rectangle349:setLeft(60);
+    obj.rectangle349:setTop(95);
+    obj.rectangle349:setWidth(350);
+    obj.rectangle349:setHeight(50);
+    obj.rectangle349:setColor("#49244F");
+    obj.rectangle349:setName("rectangle349");
 
     obj.edit123 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit123:setParent(obj.rectangle365);
+    obj.edit123:setParent(obj.rectangle347);
     obj.edit123:setLeft(65);
     obj.edit123:setTop(103);
     obj.edit123:setWidth(340);
@@ -8058,17 +7848,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit123:setField("Magia11");
     obj.edit123:setName("edit123");
 
-    obj.rectangle368 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle368:setParent(obj.rectangle365);
-    obj.rectangle368:setLeft(60);
-    obj.rectangle368:setTop(176);
-    obj.rectangle368:setWidth(350);
-    obj.rectangle368:setHeight(1);
-    obj.rectangle368:setColor("#49244F");
-    obj.rectangle368:setName("rectangle368");
+    obj.rectangle350 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle350:setParent(obj.rectangle347);
+    obj.rectangle350:setLeft(60);
+    obj.rectangle350:setTop(176);
+    obj.rectangle350:setWidth(350);
+    obj.rectangle350:setHeight(1);
+    obj.rectangle350:setColor("#49244F");
+    obj.rectangle350:setName("rectangle350");
 
     obj.label146 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label146:setParent(obj.rectangle365);
+    obj.label146:setParent(obj.rectangle347);
     obj.label146:setLeft(70);
     obj.label146:setTop(149);
     obj.label146:setWidth(280);
@@ -8079,7 +7869,7 @@ local function constructNew_frmWeirdWizard()
     obj.label146:setName("label146");
 
     obj.edit124 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit124:setParent(obj.rectangle365);
+    obj.edit124:setParent(obj.rectangle347);
     obj.edit124:setLeft(150);
     obj.edit124:setTop(143);
     obj.edit124:setWidth(260);
@@ -8089,17 +7879,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit124:setField("tradicaoMagia11");
     obj.edit124:setName("edit124");
 
-    obj.rectangle369 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle369:setParent(obj.rectangle365);
-    obj.rectangle369:setLeft(60);
-    obj.rectangle369:setTop(211);
-    obj.rectangle369:setWidth(350);
-    obj.rectangle369:setHeight(1);
-    obj.rectangle369:setColor("#49244F");
-    obj.rectangle369:setName("rectangle369");
+    obj.rectangle351 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle351:setParent(obj.rectangle347);
+    obj.rectangle351:setLeft(60);
+    obj.rectangle351:setTop(211);
+    obj.rectangle351:setWidth(350);
+    obj.rectangle351:setHeight(1);
+    obj.rectangle351:setColor("#49244F");
+    obj.rectangle351:setName("rectangle351");
 
     obj.label147 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label147:setParent(obj.rectangle365);
+    obj.label147:setParent(obj.rectangle347);
     obj.label147:setLeft(70);
     obj.label147:setTop(184);
     obj.label147:setWidth(280);
@@ -8110,7 +7900,7 @@ local function constructNew_frmWeirdWizard()
     obj.label147:setName("label147");
 
     obj.edit125 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit125:setParent(obj.rectangle365);
+    obj.edit125:setParent(obj.rectangle347);
     obj.edit125:setLeft(115);
     obj.edit125:setTop(178);
     obj.edit125:setWidth(295);
@@ -8120,17 +7910,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit125:setField("alvoMagia11");
     obj.edit125:setName("edit125");
 
-    obj.rectangle370 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle370:setParent(obj.rectangle365);
-    obj.rectangle370:setLeft(60);
-    obj.rectangle370:setTop(246);
-    obj.rectangle370:setWidth(350);
-    obj.rectangle370:setHeight(3);
-    obj.rectangle370:setColor("#49244F");
-    obj.rectangle370:setName("rectangle370");
+    obj.rectangle352 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle352:setParent(obj.rectangle347);
+    obj.rectangle352:setLeft(60);
+    obj.rectangle352:setTop(246);
+    obj.rectangle352:setWidth(350);
+    obj.rectangle352:setHeight(3);
+    obj.rectangle352:setColor("#49244F");
+    obj.rectangle352:setName("rectangle352");
 
     obj.label148 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label148:setParent(obj.rectangle365);
+    obj.label148:setParent(obj.rectangle347);
     obj.label148:setLeft(70);
     obj.label148:setTop(219);
     obj.label148:setWidth(280);
@@ -8141,7 +7931,7 @@ local function constructNew_frmWeirdWizard()
     obj.label148:setName("label148");
 
     obj.edit126 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit126:setParent(obj.rectangle365);
+    obj.edit126:setParent(obj.rectangle347);
     obj.edit126:setLeft(150);
     obj.edit126:setTop(213);
     obj.edit126:setWidth(260);
@@ -8151,17 +7941,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit126:setField("duracaoMagia11");
     obj.edit126:setName("edit126");
 
-    obj.rectangle371 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle371:setParent(obj.rectangle365);
-    obj.rectangle371:setLeft(60);
-    obj.rectangle371:setTop(246);
-    obj.rectangle371:setWidth(350);
-    obj.rectangle371:setHeight(125);
-    obj.rectangle371:setColor("#49244F");
-    obj.rectangle371:setName("rectangle371");
+    obj.rectangle353 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle353:setParent(obj.rectangle347);
+    obj.rectangle353:setLeft(60);
+    obj.rectangle353:setTop(246);
+    obj.rectangle353:setWidth(350);
+    obj.rectangle353:setHeight(125);
+    obj.rectangle353:setColor("#49244F");
+    obj.rectangle353:setName("rectangle353");
 
     obj.textEditor12 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor12:setParent(obj.rectangle365);
+    obj.textEditor12:setParent(obj.rectangle347);
     obj.textEditor12:setLeft(65);
     obj.textEditor12:setTop(251);
     obj.textEditor12:setWidth(340);
@@ -8172,28 +7962,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor12:setFontSize(18);
     obj.textEditor12:setName("textEditor12");
 
-    obj.rectangle372 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle372:setParent(obj.rectangle365);
-    obj.rectangle372:setLeft(60);
-    obj.rectangle372:setTop(371);
-    obj.rectangle372:setWidth(350);
-    obj.rectangle372:setHeight(3);
-    obj.rectangle372:setColor("#49244F");
-    obj.rectangle372:setName("rectangle372");
+    obj.rectangle354 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle354:setParent(obj.rectangle347);
+    obj.rectangle354:setLeft(60);
+    obj.rectangle354:setTop(371);
+    obj.rectangle354:setWidth(350);
+    obj.rectangle354:setHeight(3);
+    obj.rectangle354:setColor("#49244F");
+    obj.rectangle354:setName("rectangle354");
 
-    obj.rectangle373 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle373:setParent(obj.rectangle365);
-    obj.rectangle373:setLeft(64);
-    obj.rectangle373:setTop(378);
-    obj.rectangle373:setWidth(135);
-    obj.rectangle373:setHeight(29);
-    obj.rectangle373:setColor("#49244F");
-    obj.rectangle373:setHitTest(true);
-    obj.rectangle373:setCursor("handPoint");
-    obj.rectangle373:setName("rectangle373");
+    obj.rectangle355 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle355:setParent(obj.rectangle347);
+    obj.rectangle355:setLeft(64);
+    obj.rectangle355:setTop(378);
+    obj.rectangle355:setWidth(135);
+    obj.rectangle355:setHeight(29);
+    obj.rectangle355:setColor("#49244F");
+    obj.rectangle355:setHitTest(true);
+    obj.rectangle355:setCursor("handPoint");
+    obj.rectangle355:setName("rectangle355");
 
     obj.label149 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label149:setParent(obj.rectangle365);
+    obj.label149:setParent(obj.rectangle347);
     obj.label149:setLeft(70);
     obj.label149:setTop(382);
     obj.label149:setWidth(280);
@@ -8202,20 +7992,20 @@ local function constructNew_frmWeirdWizard()
     obj.label149:setFontColor("#D5D5D5");
     obj.label149:setName("label149");
 
-    obj.rectangle374 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle374:setParent(obj.rectangle365);
-    obj.rectangle374:setLeft(324);
-    obj.rectangle374:setTop(378);
-    obj.rectangle374:setWidth(29);
-    obj.rectangle374:setHeight(29);
-    obj.rectangle374:setColor("#49244F");
-    obj.rectangle374:setCornerType("round");
-    obj.rectangle374:setXradius(15);
-    obj.rectangle374:setYradius(15);
-    obj.rectangle374:setName("rectangle374");
+    obj.rectangle356 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle356:setParent(obj.rectangle347);
+    obj.rectangle356:setLeft(324);
+    obj.rectangle356:setTop(378);
+    obj.rectangle356:setWidth(29);
+    obj.rectangle356:setHeight(29);
+    obj.rectangle356:setColor("#49244F");
+    obj.rectangle356:setCornerType("round");
+    obj.rectangle356:setXradius(15);
+    obj.rectangle356:setYradius(15);
+    obj.rectangle356:setName("rectangle356");
 
     obj.edit127 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit127:setParent(obj.rectangle365);
+    obj.edit127:setParent(obj.rectangle347);
     obj.edit127:setLeft(318);
     obj.edit127:setTop(375);
     obj.edit127:setWidth(40);
@@ -8230,7 +8020,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit127:setName("edit127");
 
     obj.label150 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label150:setParent(obj.rectangle365);
+    obj.label150:setParent(obj.rectangle347);
     obj.label150:setLeft(360);
     obj.label150:setTop(382);
     obj.label150:setWidth(280);
@@ -8239,20 +8029,20 @@ local function constructNew_frmWeirdWizard()
     obj.label150:setFontColor("#49244F");
     obj.label150:setName("label150");
 
-    obj.rectangle375 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle375:setParent(obj.rectangle365);
-    obj.rectangle375:setLeft(374);
-    obj.rectangle375:setTop(376);
-    obj.rectangle375:setWidth(29);
-    obj.rectangle375:setHeight(29);
-    obj.rectangle375:setColor("#49244F");
-    obj.rectangle375:setCornerType("round");
-    obj.rectangle375:setXradius(15);
-    obj.rectangle375:setYradius(15);
-    obj.rectangle375:setName("rectangle375");
+    obj.rectangle357 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle357:setParent(obj.rectangle347);
+    obj.rectangle357:setLeft(374);
+    obj.rectangle357:setTop(376);
+    obj.rectangle357:setWidth(29);
+    obj.rectangle357:setHeight(29);
+    obj.rectangle357:setColor("#49244F");
+    obj.rectangle357:setCornerType("round");
+    obj.rectangle357:setXradius(15);
+    obj.rectangle357:setYradius(15);
+    obj.rectangle357:setName("rectangle357");
 
     obj.edit128 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit128:setParent(obj.rectangle365);
+    obj.edit128:setParent(obj.rectangle347);
     obj.edit128:setLeft(368);
     obj.edit128:setTop(375);
     obj.edit128:setWidth(40);
@@ -8266,28 +8056,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit128:setHint("Total");
     obj.edit128:setName("edit128");
 
-    obj.rectangle376 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle376:setParent(obj.rectangle365);
-    obj.rectangle376:setLeft(434);
-    obj.rectangle376:setTop(95);
-    obj.rectangle376:setWidth(350);
-    obj.rectangle376:setHeight(318);
-    obj.rectangle376:setColor("#D5D5D5");
-    obj.rectangle376:setStrokeColor("#49244F");
-    obj.rectangle376:setStrokeSize(3);
-    obj.rectangle376:setName("rectangle376");
+    obj.rectangle358 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle358:setParent(obj.rectangle347);
+    obj.rectangle358:setLeft(434);
+    obj.rectangle358:setTop(95);
+    obj.rectangle358:setWidth(350);
+    obj.rectangle358:setHeight(318);
+    obj.rectangle358:setColor("#D5D5D5");
+    obj.rectangle358:setStrokeColor("#49244F");
+    obj.rectangle358:setStrokeSize(3);
+    obj.rectangle358:setName("rectangle358");
 
-    obj.rectangle377 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle377:setParent(obj.rectangle365);
-    obj.rectangle377:setLeft(434);
-    obj.rectangle377:setTop(95);
-    obj.rectangle377:setWidth(350);
-    obj.rectangle377:setHeight(50);
-    obj.rectangle377:setColor("#49244F");
-    obj.rectangle377:setName("rectangle377");
+    obj.rectangle359 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle359:setParent(obj.rectangle347);
+    obj.rectangle359:setLeft(434);
+    obj.rectangle359:setTop(95);
+    obj.rectangle359:setWidth(350);
+    obj.rectangle359:setHeight(50);
+    obj.rectangle359:setColor("#49244F");
+    obj.rectangle359:setName("rectangle359");
 
     obj.edit129 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit129:setParent(obj.rectangle365);
+    obj.edit129:setParent(obj.rectangle347);
     obj.edit129:setLeft(439);
     obj.edit129:setTop(103);
     obj.edit129:setWidth(340);
@@ -8299,17 +8089,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit129:setField("Magia12");
     obj.edit129:setName("edit129");
 
-    obj.rectangle378 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle378:setParent(obj.rectangle365);
-    obj.rectangle378:setLeft(434);
-    obj.rectangle378:setTop(176);
-    obj.rectangle378:setWidth(350);
-    obj.rectangle378:setHeight(1);
-    obj.rectangle378:setColor("#49244F");
-    obj.rectangle378:setName("rectangle378");
+    obj.rectangle360 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle360:setParent(obj.rectangle347);
+    obj.rectangle360:setLeft(434);
+    obj.rectangle360:setTop(176);
+    obj.rectangle360:setWidth(350);
+    obj.rectangle360:setHeight(1);
+    obj.rectangle360:setColor("#49244F");
+    obj.rectangle360:setName("rectangle360");
 
     obj.label151 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label151:setParent(obj.rectangle365);
+    obj.label151:setParent(obj.rectangle347);
     obj.label151:setLeft(444);
     obj.label151:setTop(149);
     obj.label151:setWidth(280);
@@ -8320,7 +8110,7 @@ local function constructNew_frmWeirdWizard()
     obj.label151:setName("label151");
 
     obj.edit130 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit130:setParent(obj.rectangle365);
+    obj.edit130:setParent(obj.rectangle347);
     obj.edit130:setLeft(524);
     obj.edit130:setTop(143);
     obj.edit130:setWidth(260);
@@ -8330,17 +8120,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit130:setField("tradicaoMagia12");
     obj.edit130:setName("edit130");
 
-    obj.rectangle379 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle379:setParent(obj.rectangle365);
-    obj.rectangle379:setLeft(434);
-    obj.rectangle379:setTop(211);
-    obj.rectangle379:setWidth(350);
-    obj.rectangle379:setHeight(1);
-    obj.rectangle379:setColor("#49244F");
-    obj.rectangle379:setName("rectangle379");
+    obj.rectangle361 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle361:setParent(obj.rectangle347);
+    obj.rectangle361:setLeft(434);
+    obj.rectangle361:setTop(211);
+    obj.rectangle361:setWidth(350);
+    obj.rectangle361:setHeight(1);
+    obj.rectangle361:setColor("#49244F");
+    obj.rectangle361:setName("rectangle361");
 
     obj.label152 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label152:setParent(obj.rectangle365);
+    obj.label152:setParent(obj.rectangle347);
     obj.label152:setLeft(444);
     obj.label152:setTop(184);
     obj.label152:setWidth(280);
@@ -8351,7 +8141,7 @@ local function constructNew_frmWeirdWizard()
     obj.label152:setName("label152");
 
     obj.edit131 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit131:setParent(obj.rectangle365);
+    obj.edit131:setParent(obj.rectangle347);
     obj.edit131:setLeft(489);
     obj.edit131:setTop(178);
     obj.edit131:setWidth(295);
@@ -8361,17 +8151,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit131:setField("alvoMagia12");
     obj.edit131:setName("edit131");
 
-    obj.rectangle380 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle380:setParent(obj.rectangle365);
-    obj.rectangle380:setLeft(434);
-    obj.rectangle380:setTop(246);
-    obj.rectangle380:setWidth(350);
-    obj.rectangle380:setHeight(3);
-    obj.rectangle380:setColor("#49244F");
-    obj.rectangle380:setName("rectangle380");
+    obj.rectangle362 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle362:setParent(obj.rectangle347);
+    obj.rectangle362:setLeft(434);
+    obj.rectangle362:setTop(246);
+    obj.rectangle362:setWidth(350);
+    obj.rectangle362:setHeight(3);
+    obj.rectangle362:setColor("#49244F");
+    obj.rectangle362:setName("rectangle362");
 
     obj.label153 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label153:setParent(obj.rectangle365);
+    obj.label153:setParent(obj.rectangle347);
     obj.label153:setLeft(444);
     obj.label153:setTop(219);
     obj.label153:setWidth(280);
@@ -8382,7 +8172,7 @@ local function constructNew_frmWeirdWizard()
     obj.label153:setName("label153");
 
     obj.edit132 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit132:setParent(obj.rectangle365);
+    obj.edit132:setParent(obj.rectangle347);
     obj.edit132:setLeft(524);
     obj.edit132:setTop(213);
     obj.edit132:setWidth(260);
@@ -8392,17 +8182,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit132:setField("duracaoMagia12");
     obj.edit132:setName("edit132");
 
-    obj.rectangle381 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle381:setParent(obj.rectangle365);
-    obj.rectangle381:setLeft(434);
-    obj.rectangle381:setTop(246);
-    obj.rectangle381:setWidth(350);
-    obj.rectangle381:setHeight(125);
-    obj.rectangle381:setColor("#49244F");
-    obj.rectangle381:setName("rectangle381");
+    obj.rectangle363 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle363:setParent(obj.rectangle347);
+    obj.rectangle363:setLeft(434);
+    obj.rectangle363:setTop(246);
+    obj.rectangle363:setWidth(350);
+    obj.rectangle363:setHeight(125);
+    obj.rectangle363:setColor("#49244F");
+    obj.rectangle363:setName("rectangle363");
 
     obj.textEditor13 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor13:setParent(obj.rectangle365);
+    obj.textEditor13:setParent(obj.rectangle347);
     obj.textEditor13:setLeft(439);
     obj.textEditor13:setTop(251);
     obj.textEditor13:setWidth(340);
@@ -8413,28 +8203,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor13:setFontSize(18);
     obj.textEditor13:setName("textEditor13");
 
-    obj.rectangle382 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle382:setParent(obj.rectangle365);
-    obj.rectangle382:setLeft(434);
-    obj.rectangle382:setTop(371);
-    obj.rectangle382:setWidth(350);
-    obj.rectangle382:setHeight(3);
-    obj.rectangle382:setColor("#49244F");
-    obj.rectangle382:setName("rectangle382");
+    obj.rectangle364 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle364:setParent(obj.rectangle347);
+    obj.rectangle364:setLeft(434);
+    obj.rectangle364:setTop(371);
+    obj.rectangle364:setWidth(350);
+    obj.rectangle364:setHeight(3);
+    obj.rectangle364:setColor("#49244F");
+    obj.rectangle364:setName("rectangle364");
 
-    obj.rectangle383 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle383:setParent(obj.rectangle365);
-    obj.rectangle383:setLeft(438);
-    obj.rectangle383:setTop(378);
-    obj.rectangle383:setWidth(135);
-    obj.rectangle383:setHeight(29);
-    obj.rectangle383:setColor("#49244F");
-    obj.rectangle383:setHitTest(true);
-    obj.rectangle383:setCursor("handPoint");
-    obj.rectangle383:setName("rectangle383");
+    obj.rectangle365 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle365:setParent(obj.rectangle347);
+    obj.rectangle365:setLeft(438);
+    obj.rectangle365:setTop(378);
+    obj.rectangle365:setWidth(135);
+    obj.rectangle365:setHeight(29);
+    obj.rectangle365:setColor("#49244F");
+    obj.rectangle365:setHitTest(true);
+    obj.rectangle365:setCursor("handPoint");
+    obj.rectangle365:setName("rectangle365");
 
     obj.label154 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label154:setParent(obj.rectangle365);
+    obj.label154:setParent(obj.rectangle347);
     obj.label154:setLeft(444);
     obj.label154:setTop(382);
     obj.label154:setWidth(280);
@@ -8443,20 +8233,20 @@ local function constructNew_frmWeirdWizard()
     obj.label154:setFontColor("#D5D5D5");
     obj.label154:setName("label154");
 
-    obj.rectangle384 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle384:setParent(obj.rectangle365);
-    obj.rectangle384:setLeft(698);
-    obj.rectangle384:setTop(378);
-    obj.rectangle384:setWidth(29);
-    obj.rectangle384:setHeight(29);
-    obj.rectangle384:setColor("#49244F");
-    obj.rectangle384:setCornerType("round");
-    obj.rectangle384:setXradius(15);
-    obj.rectangle384:setYradius(15);
-    obj.rectangle384:setName("rectangle384");
+    obj.rectangle366 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle366:setParent(obj.rectangle347);
+    obj.rectangle366:setLeft(698);
+    obj.rectangle366:setTop(378);
+    obj.rectangle366:setWidth(29);
+    obj.rectangle366:setHeight(29);
+    obj.rectangle366:setColor("#49244F");
+    obj.rectangle366:setCornerType("round");
+    obj.rectangle366:setXradius(15);
+    obj.rectangle366:setYradius(15);
+    obj.rectangle366:setName("rectangle366");
 
     obj.edit133 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit133:setParent(obj.rectangle365);
+    obj.edit133:setParent(obj.rectangle347);
     obj.edit133:setLeft(692);
     obj.edit133:setTop(375);
     obj.edit133:setWidth(40);
@@ -8471,7 +8261,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit133:setName("edit133");
 
     obj.label155 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label155:setParent(obj.rectangle365);
+    obj.label155:setParent(obj.rectangle347);
     obj.label155:setLeft(734);
     obj.label155:setTop(382);
     obj.label155:setWidth(280);
@@ -8480,20 +8270,20 @@ local function constructNew_frmWeirdWizard()
     obj.label155:setFontColor("#49244F");
     obj.label155:setName("label155");
 
-    obj.rectangle385 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle385:setParent(obj.rectangle365);
-    obj.rectangle385:setLeft(748);
-    obj.rectangle385:setTop(376);
-    obj.rectangle385:setWidth(29);
-    obj.rectangle385:setHeight(29);
-    obj.rectangle385:setColor("#49244F");
-    obj.rectangle385:setCornerType("round");
-    obj.rectangle385:setXradius(15);
-    obj.rectangle385:setYradius(15);
-    obj.rectangle385:setName("rectangle385");
+    obj.rectangle367 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle367:setParent(obj.rectangle347);
+    obj.rectangle367:setLeft(748);
+    obj.rectangle367:setTop(376);
+    obj.rectangle367:setWidth(29);
+    obj.rectangle367:setHeight(29);
+    obj.rectangle367:setColor("#49244F");
+    obj.rectangle367:setCornerType("round");
+    obj.rectangle367:setXradius(15);
+    obj.rectangle367:setYradius(15);
+    obj.rectangle367:setName("rectangle367");
 
     obj.edit134 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit134:setParent(obj.rectangle365);
+    obj.edit134:setParent(obj.rectangle347);
     obj.edit134:setLeft(743);
     obj.edit134:setTop(375);
     obj.edit134:setWidth(40);
@@ -8507,28 +8297,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit134:setHint("Total");
     obj.edit134:setName("edit134");
 
-    obj.rectangle386 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle386:setParent(obj.rectangle365);
-    obj.rectangle386:setLeft(60);
-    obj.rectangle386:setTop(435);
-    obj.rectangle386:setWidth(350);
-    obj.rectangle386:setHeight(318);
-    obj.rectangle386:setColor("#D5D5D5");
-    obj.rectangle386:setStrokeColor("#49244F");
-    obj.rectangle386:setStrokeSize(3);
-    obj.rectangle386:setName("rectangle386");
+    obj.rectangle368 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle368:setParent(obj.rectangle347);
+    obj.rectangle368:setLeft(60);
+    obj.rectangle368:setTop(435);
+    obj.rectangle368:setWidth(350);
+    obj.rectangle368:setHeight(318);
+    obj.rectangle368:setColor("#D5D5D5");
+    obj.rectangle368:setStrokeColor("#49244F");
+    obj.rectangle368:setStrokeSize(3);
+    obj.rectangle368:setName("rectangle368");
 
-    obj.rectangle387 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle387:setParent(obj.rectangle365);
-    obj.rectangle387:setLeft(60);
-    obj.rectangle387:setTop(435);
-    obj.rectangle387:setWidth(350);
-    obj.rectangle387:setHeight(50);
-    obj.rectangle387:setColor("#49244F");
-    obj.rectangle387:setName("rectangle387");
+    obj.rectangle369 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle369:setParent(obj.rectangle347);
+    obj.rectangle369:setLeft(60);
+    obj.rectangle369:setTop(435);
+    obj.rectangle369:setWidth(350);
+    obj.rectangle369:setHeight(50);
+    obj.rectangle369:setColor("#49244F");
+    obj.rectangle369:setName("rectangle369");
 
     obj.edit135 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit135:setParent(obj.rectangle365);
+    obj.edit135:setParent(obj.rectangle347);
     obj.edit135:setLeft(65);
     obj.edit135:setTop(443);
     obj.edit135:setWidth(340);
@@ -8540,17 +8330,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit135:setField("Magia13");
     obj.edit135:setName("edit135");
 
-    obj.rectangle388 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle388:setParent(obj.rectangle365);
-    obj.rectangle388:setLeft(60);
-    obj.rectangle388:setTop(516);
-    obj.rectangle388:setWidth(350);
-    obj.rectangle388:setHeight(1);
-    obj.rectangle388:setColor("#49244F");
-    obj.rectangle388:setName("rectangle388");
+    obj.rectangle370 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle370:setParent(obj.rectangle347);
+    obj.rectangle370:setLeft(60);
+    obj.rectangle370:setTop(516);
+    obj.rectangle370:setWidth(350);
+    obj.rectangle370:setHeight(1);
+    obj.rectangle370:setColor("#49244F");
+    obj.rectangle370:setName("rectangle370");
 
     obj.label156 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label156:setParent(obj.rectangle365);
+    obj.label156:setParent(obj.rectangle347);
     obj.label156:setLeft(70);
     obj.label156:setTop(489);
     obj.label156:setWidth(280);
@@ -8561,7 +8351,7 @@ local function constructNew_frmWeirdWizard()
     obj.label156:setName("label156");
 
     obj.edit136 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit136:setParent(obj.rectangle365);
+    obj.edit136:setParent(obj.rectangle347);
     obj.edit136:setLeft(150);
     obj.edit136:setTop(483);
     obj.edit136:setWidth(260);
@@ -8571,17 +8361,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit136:setField("tradicaoMagia13");
     obj.edit136:setName("edit136");
 
-    obj.rectangle389 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle389:setParent(obj.rectangle365);
-    obj.rectangle389:setLeft(60);
-    obj.rectangle389:setTop(551);
-    obj.rectangle389:setWidth(350);
-    obj.rectangle389:setHeight(1);
-    obj.rectangle389:setColor("#49244F");
-    obj.rectangle389:setName("rectangle389");
+    obj.rectangle371 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle371:setParent(obj.rectangle347);
+    obj.rectangle371:setLeft(60);
+    obj.rectangle371:setTop(551);
+    obj.rectangle371:setWidth(350);
+    obj.rectangle371:setHeight(1);
+    obj.rectangle371:setColor("#49244F");
+    obj.rectangle371:setName("rectangle371");
 
     obj.label157 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label157:setParent(obj.rectangle365);
+    obj.label157:setParent(obj.rectangle347);
     obj.label157:setLeft(70);
     obj.label157:setTop(524);
     obj.label157:setWidth(280);
@@ -8592,7 +8382,7 @@ local function constructNew_frmWeirdWizard()
     obj.label157:setName("label157");
 
     obj.edit137 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit137:setParent(obj.rectangle365);
+    obj.edit137:setParent(obj.rectangle347);
     obj.edit137:setLeft(115);
     obj.edit137:setTop(518);
     obj.edit137:setWidth(295);
@@ -8602,17 +8392,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit137:setField("alvoMagia13");
     obj.edit137:setName("edit137");
 
-    obj.rectangle390 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle390:setParent(obj.rectangle365);
-    obj.rectangle390:setLeft(60);
-    obj.rectangle390:setTop(586);
-    obj.rectangle390:setWidth(350);
-    obj.rectangle390:setHeight(3);
-    obj.rectangle390:setColor("#49244F");
-    obj.rectangle390:setName("rectangle390");
+    obj.rectangle372 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle372:setParent(obj.rectangle347);
+    obj.rectangle372:setLeft(60);
+    obj.rectangle372:setTop(586);
+    obj.rectangle372:setWidth(350);
+    obj.rectangle372:setHeight(3);
+    obj.rectangle372:setColor("#49244F");
+    obj.rectangle372:setName("rectangle372");
 
     obj.label158 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label158:setParent(obj.rectangle365);
+    obj.label158:setParent(obj.rectangle347);
     obj.label158:setLeft(70);
     obj.label158:setTop(559);
     obj.label158:setWidth(280);
@@ -8623,7 +8413,7 @@ local function constructNew_frmWeirdWizard()
     obj.label158:setName("label158");
 
     obj.edit138 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit138:setParent(obj.rectangle365);
+    obj.edit138:setParent(obj.rectangle347);
     obj.edit138:setLeft(150);
     obj.edit138:setTop(553);
     obj.edit138:setWidth(260);
@@ -8633,17 +8423,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit138:setField("duracaoMagia13");
     obj.edit138:setName("edit138");
 
-    obj.rectangle391 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle391:setParent(obj.rectangle365);
-    obj.rectangle391:setLeft(60);
-    obj.rectangle391:setTop(586);
-    obj.rectangle391:setWidth(350);
-    obj.rectangle391:setHeight(125);
-    obj.rectangle391:setColor("#49244F");
-    obj.rectangle391:setName("rectangle391");
+    obj.rectangle373 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle373:setParent(obj.rectangle347);
+    obj.rectangle373:setLeft(60);
+    obj.rectangle373:setTop(586);
+    obj.rectangle373:setWidth(350);
+    obj.rectangle373:setHeight(125);
+    obj.rectangle373:setColor("#49244F");
+    obj.rectangle373:setName("rectangle373");
 
     obj.textEditor14 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor14:setParent(obj.rectangle365);
+    obj.textEditor14:setParent(obj.rectangle347);
     obj.textEditor14:setLeft(65);
     obj.textEditor14:setTop(591);
     obj.textEditor14:setWidth(340);
@@ -8654,28 +8444,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor14:setFontSize(18);
     obj.textEditor14:setName("textEditor14");
 
-    obj.rectangle392 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle392:setParent(obj.rectangle365);
-    obj.rectangle392:setLeft(60);
-    obj.rectangle392:setTop(711);
-    obj.rectangle392:setWidth(350);
-    obj.rectangle392:setHeight(3);
-    obj.rectangle392:setColor("#49244F");
-    obj.rectangle392:setName("rectangle392");
+    obj.rectangle374 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle374:setParent(obj.rectangle347);
+    obj.rectangle374:setLeft(60);
+    obj.rectangle374:setTop(711);
+    obj.rectangle374:setWidth(350);
+    obj.rectangle374:setHeight(3);
+    obj.rectangle374:setColor("#49244F");
+    obj.rectangle374:setName("rectangle374");
 
-    obj.rectangle393 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle393:setParent(obj.rectangle365);
-    obj.rectangle393:setLeft(64);
-    obj.rectangle393:setTop(718);
-    obj.rectangle393:setWidth(135);
-    obj.rectangle393:setHeight(29);
-    obj.rectangle393:setColor("#49244F");
-    obj.rectangle393:setHitTest(true);
-    obj.rectangle393:setCursor("handPoint");
-    obj.rectangle393:setName("rectangle393");
+    obj.rectangle375 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle375:setParent(obj.rectangle347);
+    obj.rectangle375:setLeft(64);
+    obj.rectangle375:setTop(718);
+    obj.rectangle375:setWidth(135);
+    obj.rectangle375:setHeight(29);
+    obj.rectangle375:setColor("#49244F");
+    obj.rectangle375:setHitTest(true);
+    obj.rectangle375:setCursor("handPoint");
+    obj.rectangle375:setName("rectangle375");
 
     obj.label159 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label159:setParent(obj.rectangle365);
+    obj.label159:setParent(obj.rectangle347);
     obj.label159:setLeft(70);
     obj.label159:setTop(722);
     obj.label159:setWidth(280);
@@ -8684,20 +8474,20 @@ local function constructNew_frmWeirdWizard()
     obj.label159:setFontColor("#D5D5D5");
     obj.label159:setName("label159");
 
-    obj.rectangle394 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle394:setParent(obj.rectangle365);
-    obj.rectangle394:setLeft(324);
-    obj.rectangle394:setTop(718);
-    obj.rectangle394:setWidth(29);
-    obj.rectangle394:setHeight(29);
-    obj.rectangle394:setColor("#49244F");
-    obj.rectangle394:setCornerType("round");
-    obj.rectangle394:setXradius(15);
-    obj.rectangle394:setYradius(15);
-    obj.rectangle394:setName("rectangle394");
+    obj.rectangle376 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle376:setParent(obj.rectangle347);
+    obj.rectangle376:setLeft(324);
+    obj.rectangle376:setTop(718);
+    obj.rectangle376:setWidth(29);
+    obj.rectangle376:setHeight(29);
+    obj.rectangle376:setColor("#49244F");
+    obj.rectangle376:setCornerType("round");
+    obj.rectangle376:setXradius(15);
+    obj.rectangle376:setYradius(15);
+    obj.rectangle376:setName("rectangle376");
 
     obj.edit139 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit139:setParent(obj.rectangle365);
+    obj.edit139:setParent(obj.rectangle347);
     obj.edit139:setLeft(318);
     obj.edit139:setTop(715);
     obj.edit139:setWidth(40);
@@ -8712,7 +8502,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit139:setName("edit139");
 
     obj.label160 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label160:setParent(obj.rectangle365);
+    obj.label160:setParent(obj.rectangle347);
     obj.label160:setLeft(360);
     obj.label160:setTop(722);
     obj.label160:setWidth(280);
@@ -8721,20 +8511,20 @@ local function constructNew_frmWeirdWizard()
     obj.label160:setFontColor("#49244F");
     obj.label160:setName("label160");
 
-    obj.rectangle395 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle395:setParent(obj.rectangle365);
-    obj.rectangle395:setLeft(374);
-    obj.rectangle395:setTop(716);
-    obj.rectangle395:setWidth(29);
-    obj.rectangle395:setHeight(29);
-    obj.rectangle395:setColor("#49244F");
-    obj.rectangle395:setCornerType("round");
-    obj.rectangle395:setXradius(15);
-    obj.rectangle395:setYradius(15);
-    obj.rectangle395:setName("rectangle395");
+    obj.rectangle377 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle377:setParent(obj.rectangle347);
+    obj.rectangle377:setLeft(374);
+    obj.rectangle377:setTop(716);
+    obj.rectangle377:setWidth(29);
+    obj.rectangle377:setHeight(29);
+    obj.rectangle377:setColor("#49244F");
+    obj.rectangle377:setCornerType("round");
+    obj.rectangle377:setXradius(15);
+    obj.rectangle377:setYradius(15);
+    obj.rectangle377:setName("rectangle377");
 
     obj.edit140 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit140:setParent(obj.rectangle365);
+    obj.edit140:setParent(obj.rectangle347);
     obj.edit140:setLeft(368);
     obj.edit140:setTop(715);
     obj.edit140:setWidth(40);
@@ -8748,28 +8538,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit140:setHint("Total");
     obj.edit140:setName("edit140");
 
-    obj.rectangle396 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle396:setParent(obj.rectangle365);
-    obj.rectangle396:setLeft(434);
-    obj.rectangle396:setTop(435);
-    obj.rectangle396:setWidth(350);
-    obj.rectangle396:setHeight(318);
-    obj.rectangle396:setColor("#D5D5D5");
-    obj.rectangle396:setStrokeColor("#49244F");
-    obj.rectangle396:setStrokeSize(3);
-    obj.rectangle396:setName("rectangle396");
+    obj.rectangle378 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle378:setParent(obj.rectangle347);
+    obj.rectangle378:setLeft(434);
+    obj.rectangle378:setTop(435);
+    obj.rectangle378:setWidth(350);
+    obj.rectangle378:setHeight(318);
+    obj.rectangle378:setColor("#D5D5D5");
+    obj.rectangle378:setStrokeColor("#49244F");
+    obj.rectangle378:setStrokeSize(3);
+    obj.rectangle378:setName("rectangle378");
 
-    obj.rectangle397 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle397:setParent(obj.rectangle365);
-    obj.rectangle397:setLeft(434);
-    obj.rectangle397:setTop(435);
-    obj.rectangle397:setWidth(350);
-    obj.rectangle397:setHeight(50);
-    obj.rectangle397:setColor("#49244F");
-    obj.rectangle397:setName("rectangle397");
+    obj.rectangle379 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle379:setParent(obj.rectangle347);
+    obj.rectangle379:setLeft(434);
+    obj.rectangle379:setTop(435);
+    obj.rectangle379:setWidth(350);
+    obj.rectangle379:setHeight(50);
+    obj.rectangle379:setColor("#49244F");
+    obj.rectangle379:setName("rectangle379");
 
     obj.edit141 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit141:setParent(obj.rectangle365);
+    obj.edit141:setParent(obj.rectangle347);
     obj.edit141:setLeft(439);
     obj.edit141:setTop(443);
     obj.edit141:setWidth(340);
@@ -8781,17 +8571,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit141:setField("Magia14");
     obj.edit141:setName("edit141");
 
-    obj.rectangle398 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle398:setParent(obj.rectangle365);
-    obj.rectangle398:setLeft(434);
-    obj.rectangle398:setTop(516);
-    obj.rectangle398:setWidth(350);
-    obj.rectangle398:setHeight(1);
-    obj.rectangle398:setColor("#49244F");
-    obj.rectangle398:setName("rectangle398");
+    obj.rectangle380 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle380:setParent(obj.rectangle347);
+    obj.rectangle380:setLeft(434);
+    obj.rectangle380:setTop(516);
+    obj.rectangle380:setWidth(350);
+    obj.rectangle380:setHeight(1);
+    obj.rectangle380:setColor("#49244F");
+    obj.rectangle380:setName("rectangle380");
 
     obj.label161 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label161:setParent(obj.rectangle365);
+    obj.label161:setParent(obj.rectangle347);
     obj.label161:setLeft(444);
     obj.label161:setTop(489);
     obj.label161:setWidth(280);
@@ -8802,7 +8592,7 @@ local function constructNew_frmWeirdWizard()
     obj.label161:setName("label161");
 
     obj.edit142 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit142:setParent(obj.rectangle365);
+    obj.edit142:setParent(obj.rectangle347);
     obj.edit142:setLeft(524);
     obj.edit142:setTop(483);
     obj.edit142:setWidth(260);
@@ -8812,17 +8602,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit142:setField("tradicaoMagia14");
     obj.edit142:setName("edit142");
 
-    obj.rectangle399 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle399:setParent(obj.rectangle365);
-    obj.rectangle399:setLeft(434);
-    obj.rectangle399:setTop(551);
-    obj.rectangle399:setWidth(350);
-    obj.rectangle399:setHeight(1);
-    obj.rectangle399:setColor("#49244F");
-    obj.rectangle399:setName("rectangle399");
+    obj.rectangle381 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle381:setParent(obj.rectangle347);
+    obj.rectangle381:setLeft(434);
+    obj.rectangle381:setTop(551);
+    obj.rectangle381:setWidth(350);
+    obj.rectangle381:setHeight(1);
+    obj.rectangle381:setColor("#49244F");
+    obj.rectangle381:setName("rectangle381");
 
     obj.label162 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label162:setParent(obj.rectangle365);
+    obj.label162:setParent(obj.rectangle347);
     obj.label162:setLeft(444);
     obj.label162:setTop(524);
     obj.label162:setWidth(280);
@@ -8833,7 +8623,7 @@ local function constructNew_frmWeirdWizard()
     obj.label162:setName("label162");
 
     obj.edit143 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit143:setParent(obj.rectangle365);
+    obj.edit143:setParent(obj.rectangle347);
     obj.edit143:setLeft(489);
     obj.edit143:setTop(518);
     obj.edit143:setWidth(295);
@@ -8843,17 +8633,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit143:setField("alvoMagia14");
     obj.edit143:setName("edit143");
 
-    obj.rectangle400 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle400:setParent(obj.rectangle365);
-    obj.rectangle400:setLeft(434);
-    obj.rectangle400:setTop(586);
-    obj.rectangle400:setWidth(350);
-    obj.rectangle400:setHeight(3);
-    obj.rectangle400:setColor("#49244F");
-    obj.rectangle400:setName("rectangle400");
+    obj.rectangle382 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle382:setParent(obj.rectangle347);
+    obj.rectangle382:setLeft(434);
+    obj.rectangle382:setTop(586);
+    obj.rectangle382:setWidth(350);
+    obj.rectangle382:setHeight(3);
+    obj.rectangle382:setColor("#49244F");
+    obj.rectangle382:setName("rectangle382");
 
     obj.label163 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label163:setParent(obj.rectangle365);
+    obj.label163:setParent(obj.rectangle347);
     obj.label163:setLeft(444);
     obj.label163:setTop(559);
     obj.label163:setWidth(280);
@@ -8864,7 +8654,7 @@ local function constructNew_frmWeirdWizard()
     obj.label163:setName("label163");
 
     obj.edit144 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit144:setParent(obj.rectangle365);
+    obj.edit144:setParent(obj.rectangle347);
     obj.edit144:setLeft(524);
     obj.edit144:setTop(553);
     obj.edit144:setWidth(260);
@@ -8874,17 +8664,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit144:setField("duracaoMagia14");
     obj.edit144:setName("edit144");
 
-    obj.rectangle401 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle401:setParent(obj.rectangle365);
-    obj.rectangle401:setLeft(434);
-    obj.rectangle401:setTop(586);
-    obj.rectangle401:setWidth(350);
-    obj.rectangle401:setHeight(125);
-    obj.rectangle401:setColor("#49244F");
-    obj.rectangle401:setName("rectangle401");
+    obj.rectangle383 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle383:setParent(obj.rectangle347);
+    obj.rectangle383:setLeft(434);
+    obj.rectangle383:setTop(586);
+    obj.rectangle383:setWidth(350);
+    obj.rectangle383:setHeight(125);
+    obj.rectangle383:setColor("#49244F");
+    obj.rectangle383:setName("rectangle383");
 
     obj.textEditor15 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor15:setParent(obj.rectangle365);
+    obj.textEditor15:setParent(obj.rectangle347);
     obj.textEditor15:setLeft(439);
     obj.textEditor15:setTop(591);
     obj.textEditor15:setWidth(340);
@@ -8895,28 +8685,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor15:setFontSize(18);
     obj.textEditor15:setName("textEditor15");
 
-    obj.rectangle402 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle402:setParent(obj.rectangle365);
-    obj.rectangle402:setLeft(434);
-    obj.rectangle402:setTop(711);
-    obj.rectangle402:setWidth(350);
-    obj.rectangle402:setHeight(3);
-    obj.rectangle402:setColor("#49244F");
-    obj.rectangle402:setName("rectangle402");
+    obj.rectangle384 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle384:setParent(obj.rectangle347);
+    obj.rectangle384:setLeft(434);
+    obj.rectangle384:setTop(711);
+    obj.rectangle384:setWidth(350);
+    obj.rectangle384:setHeight(3);
+    obj.rectangle384:setColor("#49244F");
+    obj.rectangle384:setName("rectangle384");
 
-    obj.rectangle403 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle403:setParent(obj.rectangle365);
-    obj.rectangle403:setLeft(438);
-    obj.rectangle403:setTop(718);
-    obj.rectangle403:setWidth(135);
-    obj.rectangle403:setHeight(29);
-    obj.rectangle403:setColor("#49244F");
-    obj.rectangle403:setHitTest(true);
-    obj.rectangle403:setCursor("handPoint");
-    obj.rectangle403:setName("rectangle403");
+    obj.rectangle385 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle385:setParent(obj.rectangle347);
+    obj.rectangle385:setLeft(438);
+    obj.rectangle385:setTop(718);
+    obj.rectangle385:setWidth(135);
+    obj.rectangle385:setHeight(29);
+    obj.rectangle385:setColor("#49244F");
+    obj.rectangle385:setHitTest(true);
+    obj.rectangle385:setCursor("handPoint");
+    obj.rectangle385:setName("rectangle385");
 
     obj.label164 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label164:setParent(obj.rectangle365);
+    obj.label164:setParent(obj.rectangle347);
     obj.label164:setLeft(444);
     obj.label164:setTop(722);
     obj.label164:setWidth(280);
@@ -8925,20 +8715,20 @@ local function constructNew_frmWeirdWizard()
     obj.label164:setFontColor("#D5D5D5");
     obj.label164:setName("label164");
 
-    obj.rectangle404 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle404:setParent(obj.rectangle365);
-    obj.rectangle404:setLeft(698);
-    obj.rectangle404:setTop(718);
-    obj.rectangle404:setWidth(29);
-    obj.rectangle404:setHeight(29);
-    obj.rectangle404:setColor("#49244F");
-    obj.rectangle404:setCornerType("round");
-    obj.rectangle404:setXradius(15);
-    obj.rectangle404:setYradius(15);
-    obj.rectangle404:setName("rectangle404");
+    obj.rectangle386 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle386:setParent(obj.rectangle347);
+    obj.rectangle386:setLeft(698);
+    obj.rectangle386:setTop(718);
+    obj.rectangle386:setWidth(29);
+    obj.rectangle386:setHeight(29);
+    obj.rectangle386:setColor("#49244F");
+    obj.rectangle386:setCornerType("round");
+    obj.rectangle386:setXradius(15);
+    obj.rectangle386:setYradius(15);
+    obj.rectangle386:setName("rectangle386");
 
     obj.edit145 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit145:setParent(obj.rectangle365);
+    obj.edit145:setParent(obj.rectangle347);
     obj.edit145:setLeft(692);
     obj.edit145:setTop(715);
     obj.edit145:setWidth(40);
@@ -8953,7 +8743,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit145:setName("edit145");
 
     obj.label165 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label165:setParent(obj.rectangle365);
+    obj.label165:setParent(obj.rectangle347);
     obj.label165:setLeft(734);
     obj.label165:setTop(722);
     obj.label165:setWidth(280);
@@ -8962,20 +8752,20 @@ local function constructNew_frmWeirdWizard()
     obj.label165:setFontColor("#49244F");
     obj.label165:setName("label165");
 
-    obj.rectangle405 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle405:setParent(obj.rectangle365);
-    obj.rectangle405:setLeft(748);
-    obj.rectangle405:setTop(716);
-    obj.rectangle405:setWidth(29);
-    obj.rectangle405:setHeight(29);
-    obj.rectangle405:setColor("#49244F");
-    obj.rectangle405:setCornerType("round");
-    obj.rectangle405:setXradius(15);
-    obj.rectangle405:setYradius(15);
-    obj.rectangle405:setName("rectangle405");
+    obj.rectangle387 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle387:setParent(obj.rectangle347);
+    obj.rectangle387:setLeft(748);
+    obj.rectangle387:setTop(716);
+    obj.rectangle387:setWidth(29);
+    obj.rectangle387:setHeight(29);
+    obj.rectangle387:setColor("#49244F");
+    obj.rectangle387:setCornerType("round");
+    obj.rectangle387:setXradius(15);
+    obj.rectangle387:setYradius(15);
+    obj.rectangle387:setName("rectangle387");
 
     obj.edit146 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit146:setParent(obj.rectangle365);
+    obj.edit146:setParent(obj.rectangle347);
     obj.edit146:setLeft(743);
     obj.edit146:setTop(715);
     obj.edit146:setWidth(40);
@@ -8989,28 +8779,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit146:setHint("Total");
     obj.edit146:setName("edit146");
 
-    obj.rectangle406 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle406:setParent(obj.rectangle365);
-    obj.rectangle406:setLeft(60);
-    obj.rectangle406:setTop(775);
-    obj.rectangle406:setWidth(350);
-    obj.rectangle406:setHeight(318);
-    obj.rectangle406:setColor("#D5D5D5");
-    obj.rectangle406:setStrokeColor("#49244F");
-    obj.rectangle406:setStrokeSize(3);
-    obj.rectangle406:setName("rectangle406");
+    obj.rectangle388 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle388:setParent(obj.rectangle347);
+    obj.rectangle388:setLeft(60);
+    obj.rectangle388:setTop(775);
+    obj.rectangle388:setWidth(350);
+    obj.rectangle388:setHeight(318);
+    obj.rectangle388:setColor("#D5D5D5");
+    obj.rectangle388:setStrokeColor("#49244F");
+    obj.rectangle388:setStrokeSize(3);
+    obj.rectangle388:setName("rectangle388");
 
-    obj.rectangle407 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle407:setParent(obj.rectangle365);
-    obj.rectangle407:setLeft(60);
-    obj.rectangle407:setTop(775);
-    obj.rectangle407:setWidth(350);
-    obj.rectangle407:setHeight(50);
-    obj.rectangle407:setColor("#49244F");
-    obj.rectangle407:setName("rectangle407");
+    obj.rectangle389 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle389:setParent(obj.rectangle347);
+    obj.rectangle389:setLeft(60);
+    obj.rectangle389:setTop(775);
+    obj.rectangle389:setWidth(350);
+    obj.rectangle389:setHeight(50);
+    obj.rectangle389:setColor("#49244F");
+    obj.rectangle389:setName("rectangle389");
 
     obj.edit147 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit147:setParent(obj.rectangle365);
+    obj.edit147:setParent(obj.rectangle347);
     obj.edit147:setLeft(65);
     obj.edit147:setTop(783);
     obj.edit147:setWidth(340);
@@ -9022,17 +8812,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit147:setField("Magia15");
     obj.edit147:setName("edit147");
 
-    obj.rectangle408 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle408:setParent(obj.rectangle365);
-    obj.rectangle408:setLeft(60);
-    obj.rectangle408:setTop(856);
-    obj.rectangle408:setWidth(350);
-    obj.rectangle408:setHeight(1);
-    obj.rectangle408:setColor("#49244F");
-    obj.rectangle408:setName("rectangle408");
+    obj.rectangle390 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle390:setParent(obj.rectangle347);
+    obj.rectangle390:setLeft(60);
+    obj.rectangle390:setTop(856);
+    obj.rectangle390:setWidth(350);
+    obj.rectangle390:setHeight(1);
+    obj.rectangle390:setColor("#49244F");
+    obj.rectangle390:setName("rectangle390");
 
     obj.label166 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label166:setParent(obj.rectangle365);
+    obj.label166:setParent(obj.rectangle347);
     obj.label166:setLeft(70);
     obj.label166:setTop(829);
     obj.label166:setWidth(280);
@@ -9043,7 +8833,7 @@ local function constructNew_frmWeirdWizard()
     obj.label166:setName("label166");
 
     obj.edit148 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit148:setParent(obj.rectangle365);
+    obj.edit148:setParent(obj.rectangle347);
     obj.edit148:setLeft(150);
     obj.edit148:setTop(823);
     obj.edit148:setWidth(260);
@@ -9053,17 +8843,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit148:setField("tradicaoMagia15");
     obj.edit148:setName("edit148");
 
-    obj.rectangle409 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle409:setParent(obj.rectangle365);
-    obj.rectangle409:setLeft(60);
-    obj.rectangle409:setTop(891);
-    obj.rectangle409:setWidth(350);
-    obj.rectangle409:setHeight(1);
-    obj.rectangle409:setColor("#49244F");
-    obj.rectangle409:setName("rectangle409");
+    obj.rectangle391 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle391:setParent(obj.rectangle347);
+    obj.rectangle391:setLeft(60);
+    obj.rectangle391:setTop(891);
+    obj.rectangle391:setWidth(350);
+    obj.rectangle391:setHeight(1);
+    obj.rectangle391:setColor("#49244F");
+    obj.rectangle391:setName("rectangle391");
 
     obj.label167 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label167:setParent(obj.rectangle365);
+    obj.label167:setParent(obj.rectangle347);
     obj.label167:setLeft(70);
     obj.label167:setTop(864);
     obj.label167:setWidth(280);
@@ -9074,7 +8864,7 @@ local function constructNew_frmWeirdWizard()
     obj.label167:setName("label167");
 
     obj.edit149 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit149:setParent(obj.rectangle365);
+    obj.edit149:setParent(obj.rectangle347);
     obj.edit149:setLeft(115);
     obj.edit149:setTop(858);
     obj.edit149:setWidth(295);
@@ -9084,17 +8874,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit149:setField("alvoMagia15");
     obj.edit149:setName("edit149");
 
-    obj.rectangle410 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle410:setParent(obj.rectangle365);
-    obj.rectangle410:setLeft(60);
-    obj.rectangle410:setTop(926);
-    obj.rectangle410:setWidth(350);
-    obj.rectangle410:setHeight(3);
-    obj.rectangle410:setColor("#49244F");
-    obj.rectangle410:setName("rectangle410");
+    obj.rectangle392 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle392:setParent(obj.rectangle347);
+    obj.rectangle392:setLeft(60);
+    obj.rectangle392:setTop(926);
+    obj.rectangle392:setWidth(350);
+    obj.rectangle392:setHeight(3);
+    obj.rectangle392:setColor("#49244F");
+    obj.rectangle392:setName("rectangle392");
 
     obj.label168 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label168:setParent(obj.rectangle365);
+    obj.label168:setParent(obj.rectangle347);
     obj.label168:setLeft(70);
     obj.label168:setTop(899);
     obj.label168:setWidth(280);
@@ -9105,7 +8895,7 @@ local function constructNew_frmWeirdWizard()
     obj.label168:setName("label168");
 
     obj.edit150 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit150:setParent(obj.rectangle365);
+    obj.edit150:setParent(obj.rectangle347);
     obj.edit150:setLeft(150);
     obj.edit150:setTop(893);
     obj.edit150:setWidth(260);
@@ -9115,17 +8905,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit150:setField("duracaoMagia15");
     obj.edit150:setName("edit150");
 
-    obj.rectangle411 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle411:setParent(obj.rectangle365);
-    obj.rectangle411:setLeft(60);
-    obj.rectangle411:setTop(926);
-    obj.rectangle411:setWidth(350);
-    obj.rectangle411:setHeight(125);
-    obj.rectangle411:setColor("#49244F");
-    obj.rectangle411:setName("rectangle411");
+    obj.rectangle393 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle393:setParent(obj.rectangle347);
+    obj.rectangle393:setLeft(60);
+    obj.rectangle393:setTop(926);
+    obj.rectangle393:setWidth(350);
+    obj.rectangle393:setHeight(125);
+    obj.rectangle393:setColor("#49244F");
+    obj.rectangle393:setName("rectangle393");
 
     obj.textEditor16 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor16:setParent(obj.rectangle365);
+    obj.textEditor16:setParent(obj.rectangle347);
     obj.textEditor16:setLeft(65);
     obj.textEditor16:setTop(931);
     obj.textEditor16:setWidth(340);
@@ -9136,28 +8926,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor16:setFontSize(18);
     obj.textEditor16:setName("textEditor16");
 
-    obj.rectangle412 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle412:setParent(obj.rectangle365);
-    obj.rectangle412:setLeft(60);
-    obj.rectangle412:setTop(1051);
-    obj.rectangle412:setWidth(350);
-    obj.rectangle412:setHeight(3);
-    obj.rectangle412:setColor("#49244F");
-    obj.rectangle412:setName("rectangle412");
+    obj.rectangle394 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle394:setParent(obj.rectangle347);
+    obj.rectangle394:setLeft(60);
+    obj.rectangle394:setTop(1051);
+    obj.rectangle394:setWidth(350);
+    obj.rectangle394:setHeight(3);
+    obj.rectangle394:setColor("#49244F");
+    obj.rectangle394:setName("rectangle394");
 
-    obj.rectangle413 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle413:setParent(obj.rectangle365);
-    obj.rectangle413:setLeft(64);
-    obj.rectangle413:setTop(1058);
-    obj.rectangle413:setWidth(135);
-    obj.rectangle413:setHeight(29);
-    obj.rectangle413:setColor("#49244F");
-    obj.rectangle413:setHitTest(true);
-    obj.rectangle413:setCursor("handPoint");
-    obj.rectangle413:setName("rectangle413");
+    obj.rectangle395 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle395:setParent(obj.rectangle347);
+    obj.rectangle395:setLeft(64);
+    obj.rectangle395:setTop(1058);
+    obj.rectangle395:setWidth(135);
+    obj.rectangle395:setHeight(29);
+    obj.rectangle395:setColor("#49244F");
+    obj.rectangle395:setHitTest(true);
+    obj.rectangle395:setCursor("handPoint");
+    obj.rectangle395:setName("rectangle395");
 
     obj.label169 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label169:setParent(obj.rectangle365);
+    obj.label169:setParent(obj.rectangle347);
     obj.label169:setLeft(70);
     obj.label169:setTop(1062);
     obj.label169:setWidth(280);
@@ -9166,20 +8956,20 @@ local function constructNew_frmWeirdWizard()
     obj.label169:setFontColor("#D5D5D5");
     obj.label169:setName("label169");
 
-    obj.rectangle414 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle414:setParent(obj.rectangle365);
-    obj.rectangle414:setLeft(324);
-    obj.rectangle414:setTop(1058);
-    obj.rectangle414:setWidth(29);
-    obj.rectangle414:setHeight(29);
-    obj.rectangle414:setColor("#49244F");
-    obj.rectangle414:setCornerType("round");
-    obj.rectangle414:setXradius(15);
-    obj.rectangle414:setYradius(15);
-    obj.rectangle414:setName("rectangle414");
+    obj.rectangle396 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle396:setParent(obj.rectangle347);
+    obj.rectangle396:setLeft(324);
+    obj.rectangle396:setTop(1058);
+    obj.rectangle396:setWidth(29);
+    obj.rectangle396:setHeight(29);
+    obj.rectangle396:setColor("#49244F");
+    obj.rectangle396:setCornerType("round");
+    obj.rectangle396:setXradius(15);
+    obj.rectangle396:setYradius(15);
+    obj.rectangle396:setName("rectangle396");
 
     obj.edit151 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit151:setParent(obj.rectangle365);
+    obj.edit151:setParent(obj.rectangle347);
     obj.edit151:setLeft(318);
     obj.edit151:setTop(1055);
     obj.edit151:setWidth(40);
@@ -9194,7 +8984,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit151:setName("edit151");
 
     obj.label170 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label170:setParent(obj.rectangle365);
+    obj.label170:setParent(obj.rectangle347);
     obj.label170:setLeft(360);
     obj.label170:setTop(1062);
     obj.label170:setWidth(280);
@@ -9203,20 +8993,20 @@ local function constructNew_frmWeirdWizard()
     obj.label170:setFontColor("#49244F");
     obj.label170:setName("label170");
 
-    obj.rectangle415 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle415:setParent(obj.rectangle365);
-    obj.rectangle415:setLeft(374);
-    obj.rectangle415:setTop(1056);
-    obj.rectangle415:setWidth(29);
-    obj.rectangle415:setHeight(29);
-    obj.rectangle415:setColor("#49244F");
-    obj.rectangle415:setCornerType("round");
-    obj.rectangle415:setXradius(15);
-    obj.rectangle415:setYradius(15);
-    obj.rectangle415:setName("rectangle415");
+    obj.rectangle397 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle397:setParent(obj.rectangle347);
+    obj.rectangle397:setLeft(374);
+    obj.rectangle397:setTop(1056);
+    obj.rectangle397:setWidth(29);
+    obj.rectangle397:setHeight(29);
+    obj.rectangle397:setColor("#49244F");
+    obj.rectangle397:setCornerType("round");
+    obj.rectangle397:setXradius(15);
+    obj.rectangle397:setYradius(15);
+    obj.rectangle397:setName("rectangle397");
 
     obj.edit152 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit152:setParent(obj.rectangle365);
+    obj.edit152:setParent(obj.rectangle347);
     obj.edit152:setLeft(368);
     obj.edit152:setTop(1055);
     obj.edit152:setWidth(40);
@@ -9230,28 +9020,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit152:setHint("Total");
     obj.edit152:setName("edit152");
 
-    obj.rectangle416 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle416:setParent(obj.rectangle365);
-    obj.rectangle416:setLeft(434);
-    obj.rectangle416:setTop(775);
-    obj.rectangle416:setWidth(350);
-    obj.rectangle416:setHeight(318);
-    obj.rectangle416:setColor("#D5D5D5");
-    obj.rectangle416:setStrokeColor("#49244F");
-    obj.rectangle416:setStrokeSize(3);
-    obj.rectangle416:setName("rectangle416");
+    obj.rectangle398 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle398:setParent(obj.rectangle347);
+    obj.rectangle398:setLeft(434);
+    obj.rectangle398:setTop(775);
+    obj.rectangle398:setWidth(350);
+    obj.rectangle398:setHeight(318);
+    obj.rectangle398:setColor("#D5D5D5");
+    obj.rectangle398:setStrokeColor("#49244F");
+    obj.rectangle398:setStrokeSize(3);
+    obj.rectangle398:setName("rectangle398");
 
-    obj.rectangle417 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle417:setParent(obj.rectangle365);
-    obj.rectangle417:setLeft(434);
-    obj.rectangle417:setTop(775);
-    obj.rectangle417:setWidth(350);
-    obj.rectangle417:setHeight(50);
-    obj.rectangle417:setColor("#49244F");
-    obj.rectangle417:setName("rectangle417");
+    obj.rectangle399 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle399:setParent(obj.rectangle347);
+    obj.rectangle399:setLeft(434);
+    obj.rectangle399:setTop(775);
+    obj.rectangle399:setWidth(350);
+    obj.rectangle399:setHeight(50);
+    obj.rectangle399:setColor("#49244F");
+    obj.rectangle399:setName("rectangle399");
 
     obj.edit153 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit153:setParent(obj.rectangle365);
+    obj.edit153:setParent(obj.rectangle347);
     obj.edit153:setLeft(439);
     obj.edit153:setTop(783);
     obj.edit153:setWidth(340);
@@ -9263,17 +9053,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit153:setField("Magia16");
     obj.edit153:setName("edit153");
 
-    obj.rectangle418 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle418:setParent(obj.rectangle365);
-    obj.rectangle418:setLeft(434);
-    obj.rectangle418:setTop(856);
-    obj.rectangle418:setWidth(350);
-    obj.rectangle418:setHeight(1);
-    obj.rectangle418:setColor("#49244F");
-    obj.rectangle418:setName("rectangle418");
+    obj.rectangle400 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle400:setParent(obj.rectangle347);
+    obj.rectangle400:setLeft(434);
+    obj.rectangle400:setTop(856);
+    obj.rectangle400:setWidth(350);
+    obj.rectangle400:setHeight(1);
+    obj.rectangle400:setColor("#49244F");
+    obj.rectangle400:setName("rectangle400");
 
     obj.label171 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label171:setParent(obj.rectangle365);
+    obj.label171:setParent(obj.rectangle347);
     obj.label171:setLeft(444);
     obj.label171:setTop(829);
     obj.label171:setWidth(280);
@@ -9284,7 +9074,7 @@ local function constructNew_frmWeirdWizard()
     obj.label171:setName("label171");
 
     obj.edit154 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit154:setParent(obj.rectangle365);
+    obj.edit154:setParent(obj.rectangle347);
     obj.edit154:setLeft(524);
     obj.edit154:setTop(823);
     obj.edit154:setWidth(260);
@@ -9294,17 +9084,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit154:setField("tradicaoMagia16");
     obj.edit154:setName("edit154");
 
-    obj.rectangle419 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle419:setParent(obj.rectangle365);
-    obj.rectangle419:setLeft(434);
-    obj.rectangle419:setTop(891);
-    obj.rectangle419:setWidth(350);
-    obj.rectangle419:setHeight(1);
-    obj.rectangle419:setColor("#49244F");
-    obj.rectangle419:setName("rectangle419");
+    obj.rectangle401 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle401:setParent(obj.rectangle347);
+    obj.rectangle401:setLeft(434);
+    obj.rectangle401:setTop(891);
+    obj.rectangle401:setWidth(350);
+    obj.rectangle401:setHeight(1);
+    obj.rectangle401:setColor("#49244F");
+    obj.rectangle401:setName("rectangle401");
 
     obj.label172 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label172:setParent(obj.rectangle365);
+    obj.label172:setParent(obj.rectangle347);
     obj.label172:setLeft(444);
     obj.label172:setTop(864);
     obj.label172:setWidth(280);
@@ -9315,7 +9105,7 @@ local function constructNew_frmWeirdWizard()
     obj.label172:setName("label172");
 
     obj.edit155 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit155:setParent(obj.rectangle365);
+    obj.edit155:setParent(obj.rectangle347);
     obj.edit155:setLeft(489);
     obj.edit155:setTop(858);
     obj.edit155:setWidth(295);
@@ -9325,17 +9115,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit155:setField("alvoMagia16");
     obj.edit155:setName("edit155");
 
-    obj.rectangle420 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle420:setParent(obj.rectangle365);
-    obj.rectangle420:setLeft(434);
-    obj.rectangle420:setTop(926);
-    obj.rectangle420:setWidth(350);
-    obj.rectangle420:setHeight(3);
-    obj.rectangle420:setColor("#49244F");
-    obj.rectangle420:setName("rectangle420");
+    obj.rectangle402 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle402:setParent(obj.rectangle347);
+    obj.rectangle402:setLeft(434);
+    obj.rectangle402:setTop(926);
+    obj.rectangle402:setWidth(350);
+    obj.rectangle402:setHeight(3);
+    obj.rectangle402:setColor("#49244F");
+    obj.rectangle402:setName("rectangle402");
 
     obj.label173 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label173:setParent(obj.rectangle365);
+    obj.label173:setParent(obj.rectangle347);
     obj.label173:setLeft(444);
     obj.label173:setTop(899);
     obj.label173:setWidth(280);
@@ -9346,7 +9136,7 @@ local function constructNew_frmWeirdWizard()
     obj.label173:setName("label173");
 
     obj.edit156 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit156:setParent(obj.rectangle365);
+    obj.edit156:setParent(obj.rectangle347);
     obj.edit156:setLeft(524);
     obj.edit156:setTop(893);
     obj.edit156:setWidth(260);
@@ -9356,17 +9146,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit156:setField("duracaoMagia16");
     obj.edit156:setName("edit156");
 
-    obj.rectangle421 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle421:setParent(obj.rectangle365);
-    obj.rectangle421:setLeft(434);
-    obj.rectangle421:setTop(926);
-    obj.rectangle421:setWidth(350);
-    obj.rectangle421:setHeight(125);
-    obj.rectangle421:setColor("#49244F");
-    obj.rectangle421:setName("rectangle421");
+    obj.rectangle403 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle403:setParent(obj.rectangle347);
+    obj.rectangle403:setLeft(434);
+    obj.rectangle403:setTop(926);
+    obj.rectangle403:setWidth(350);
+    obj.rectangle403:setHeight(125);
+    obj.rectangle403:setColor("#49244F");
+    obj.rectangle403:setName("rectangle403");
 
     obj.textEditor17 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor17:setParent(obj.rectangle365);
+    obj.textEditor17:setParent(obj.rectangle347);
     obj.textEditor17:setLeft(439);
     obj.textEditor17:setTop(931);
     obj.textEditor17:setWidth(340);
@@ -9377,28 +9167,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor17:setFontSize(18);
     obj.textEditor17:setName("textEditor17");
 
-    obj.rectangle422 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle422:setParent(obj.rectangle365);
-    obj.rectangle422:setLeft(434);
-    obj.rectangle422:setTop(1051);
-    obj.rectangle422:setWidth(350);
-    obj.rectangle422:setHeight(3);
-    obj.rectangle422:setColor("#49244F");
-    obj.rectangle422:setName("rectangle422");
+    obj.rectangle404 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle404:setParent(obj.rectangle347);
+    obj.rectangle404:setLeft(434);
+    obj.rectangle404:setTop(1051);
+    obj.rectangle404:setWidth(350);
+    obj.rectangle404:setHeight(3);
+    obj.rectangle404:setColor("#49244F");
+    obj.rectangle404:setName("rectangle404");
 
-    obj.rectangle423 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle423:setParent(obj.rectangle365);
-    obj.rectangle423:setLeft(438);
-    obj.rectangle423:setTop(1058);
-    obj.rectangle423:setWidth(135);
-    obj.rectangle423:setHeight(29);
-    obj.rectangle423:setColor("#49244F");
-    obj.rectangle423:setHitTest(true);
-    obj.rectangle423:setCursor("handPoint");
-    obj.rectangle423:setName("rectangle423");
+    obj.rectangle405 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle405:setParent(obj.rectangle347);
+    obj.rectangle405:setLeft(438);
+    obj.rectangle405:setTop(1058);
+    obj.rectangle405:setWidth(135);
+    obj.rectangle405:setHeight(29);
+    obj.rectangle405:setColor("#49244F");
+    obj.rectangle405:setHitTest(true);
+    obj.rectangle405:setCursor("handPoint");
+    obj.rectangle405:setName("rectangle405");
 
     obj.label174 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label174:setParent(obj.rectangle365);
+    obj.label174:setParent(obj.rectangle347);
     obj.label174:setLeft(444);
     obj.label174:setTop(1062);
     obj.label174:setWidth(280);
@@ -9407,20 +9197,20 @@ local function constructNew_frmWeirdWizard()
     obj.label174:setFontColor("#D5D5D5");
     obj.label174:setName("label174");
 
-    obj.rectangle424 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle424:setParent(obj.rectangle365);
-    obj.rectangle424:setLeft(698);
-    obj.rectangle424:setTop(1058);
-    obj.rectangle424:setWidth(29);
-    obj.rectangle424:setHeight(29);
-    obj.rectangle424:setColor("#49244F");
-    obj.rectangle424:setCornerType("round");
-    obj.rectangle424:setXradius(15);
-    obj.rectangle424:setYradius(15);
-    obj.rectangle424:setName("rectangle424");
+    obj.rectangle406 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle406:setParent(obj.rectangle347);
+    obj.rectangle406:setLeft(698);
+    obj.rectangle406:setTop(1058);
+    obj.rectangle406:setWidth(29);
+    obj.rectangle406:setHeight(29);
+    obj.rectangle406:setColor("#49244F");
+    obj.rectangle406:setCornerType("round");
+    obj.rectangle406:setXradius(15);
+    obj.rectangle406:setYradius(15);
+    obj.rectangle406:setName("rectangle406");
 
     obj.edit157 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit157:setParent(obj.rectangle365);
+    obj.edit157:setParent(obj.rectangle347);
     obj.edit157:setLeft(692);
     obj.edit157:setTop(1055);
     obj.edit157:setWidth(40);
@@ -9435,7 +9225,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit157:setName("edit157");
 
     obj.label175 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label175:setParent(obj.rectangle365);
+    obj.label175:setParent(obj.rectangle347);
     obj.label175:setLeft(734);
     obj.label175:setTop(1062);
     obj.label175:setWidth(280);
@@ -9444,20 +9234,20 @@ local function constructNew_frmWeirdWizard()
     obj.label175:setFontColor("#49244F");
     obj.label175:setName("label175");
 
-    obj.rectangle425 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle425:setParent(obj.rectangle365);
-    obj.rectangle425:setLeft(748);
-    obj.rectangle425:setTop(1056);
-    obj.rectangle425:setWidth(29);
-    obj.rectangle425:setHeight(29);
-    obj.rectangle425:setColor("#49244F");
-    obj.rectangle425:setCornerType("round");
-    obj.rectangle425:setXradius(15);
-    obj.rectangle425:setYradius(15);
-    obj.rectangle425:setName("rectangle425");
+    obj.rectangle407 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle407:setParent(obj.rectangle347);
+    obj.rectangle407:setLeft(748);
+    obj.rectangle407:setTop(1056);
+    obj.rectangle407:setWidth(29);
+    obj.rectangle407:setHeight(29);
+    obj.rectangle407:setColor("#49244F");
+    obj.rectangle407:setCornerType("round");
+    obj.rectangle407:setXradius(15);
+    obj.rectangle407:setYradius(15);
+    obj.rectangle407:setName("rectangle407");
 
     obj.edit158 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit158:setParent(obj.rectangle365);
+    obj.edit158:setParent(obj.rectangle347);
     obj.edit158:setLeft(743);
     obj.edit158:setTop(1055);
     obj.edit158:setWidth(40);
@@ -9471,28 +9261,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit158:setHint("Total");
     obj.edit158:setName("edit158");
 
-    obj.rectangle426 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle426:setParent(obj.rectangle365);
-    obj.rectangle426:setLeft(60);
-    obj.rectangle426:setTop(1115);
-    obj.rectangle426:setWidth(350);
-    obj.rectangle426:setHeight(318);
-    obj.rectangle426:setColor("#D5D5D5");
-    obj.rectangle426:setStrokeColor("#49244F");
-    obj.rectangle426:setStrokeSize(3);
-    obj.rectangle426:setName("rectangle426");
+    obj.rectangle408 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle408:setParent(obj.rectangle347);
+    obj.rectangle408:setLeft(60);
+    obj.rectangle408:setTop(1115);
+    obj.rectangle408:setWidth(350);
+    obj.rectangle408:setHeight(318);
+    obj.rectangle408:setColor("#D5D5D5");
+    obj.rectangle408:setStrokeColor("#49244F");
+    obj.rectangle408:setStrokeSize(3);
+    obj.rectangle408:setName("rectangle408");
 
-    obj.rectangle427 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle427:setParent(obj.rectangle365);
-    obj.rectangle427:setLeft(60);
-    obj.rectangle427:setTop(1115);
-    obj.rectangle427:setWidth(350);
-    obj.rectangle427:setHeight(50);
-    obj.rectangle427:setColor("#49244F");
-    obj.rectangle427:setName("rectangle427");
+    obj.rectangle409 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle409:setParent(obj.rectangle347);
+    obj.rectangle409:setLeft(60);
+    obj.rectangle409:setTop(1115);
+    obj.rectangle409:setWidth(350);
+    obj.rectangle409:setHeight(50);
+    obj.rectangle409:setColor("#49244F");
+    obj.rectangle409:setName("rectangle409");
 
     obj.edit159 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit159:setParent(obj.rectangle365);
+    obj.edit159:setParent(obj.rectangle347);
     obj.edit159:setLeft(65);
     obj.edit159:setTop(1123);
     obj.edit159:setWidth(340);
@@ -9504,17 +9294,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit159:setField("Magia17");
     obj.edit159:setName("edit159");
 
-    obj.rectangle428 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle428:setParent(obj.rectangle365);
-    obj.rectangle428:setLeft(60);
-    obj.rectangle428:setTop(1196);
-    obj.rectangle428:setWidth(350);
-    obj.rectangle428:setHeight(1);
-    obj.rectangle428:setColor("#49244F");
-    obj.rectangle428:setName("rectangle428");
+    obj.rectangle410 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle410:setParent(obj.rectangle347);
+    obj.rectangle410:setLeft(60);
+    obj.rectangle410:setTop(1196);
+    obj.rectangle410:setWidth(350);
+    obj.rectangle410:setHeight(1);
+    obj.rectangle410:setColor("#49244F");
+    obj.rectangle410:setName("rectangle410");
 
     obj.label176 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label176:setParent(obj.rectangle365);
+    obj.label176:setParent(obj.rectangle347);
     obj.label176:setLeft(70);
     obj.label176:setTop(1169);
     obj.label176:setWidth(280);
@@ -9525,7 +9315,7 @@ local function constructNew_frmWeirdWizard()
     obj.label176:setName("label176");
 
     obj.edit160 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit160:setParent(obj.rectangle365);
+    obj.edit160:setParent(obj.rectangle347);
     obj.edit160:setLeft(150);
     obj.edit160:setTop(1163);
     obj.edit160:setWidth(260);
@@ -9535,17 +9325,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit160:setField("tradicaoMagia17");
     obj.edit160:setName("edit160");
 
-    obj.rectangle429 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle429:setParent(obj.rectangle365);
-    obj.rectangle429:setLeft(60);
-    obj.rectangle429:setTop(1231);
-    obj.rectangle429:setWidth(350);
-    obj.rectangle429:setHeight(1);
-    obj.rectangle429:setColor("#49244F");
-    obj.rectangle429:setName("rectangle429");
+    obj.rectangle411 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle411:setParent(obj.rectangle347);
+    obj.rectangle411:setLeft(60);
+    obj.rectangle411:setTop(1231);
+    obj.rectangle411:setWidth(350);
+    obj.rectangle411:setHeight(1);
+    obj.rectangle411:setColor("#49244F");
+    obj.rectangle411:setName("rectangle411");
 
     obj.label177 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label177:setParent(obj.rectangle365);
+    obj.label177:setParent(obj.rectangle347);
     obj.label177:setLeft(70);
     obj.label177:setTop(1204);
     obj.label177:setWidth(280);
@@ -9556,7 +9346,7 @@ local function constructNew_frmWeirdWizard()
     obj.label177:setName("label177");
 
     obj.edit161 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit161:setParent(obj.rectangle365);
+    obj.edit161:setParent(obj.rectangle347);
     obj.edit161:setLeft(115);
     obj.edit161:setTop(1198);
     obj.edit161:setWidth(295);
@@ -9566,17 +9356,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit161:setField("alvoMagia17");
     obj.edit161:setName("edit161");
 
-    obj.rectangle430 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle430:setParent(obj.rectangle365);
-    obj.rectangle430:setLeft(60);
-    obj.rectangle430:setTop(1266);
-    obj.rectangle430:setWidth(350);
-    obj.rectangle430:setHeight(3);
-    obj.rectangle430:setColor("#49244F");
-    obj.rectangle430:setName("rectangle430");
+    obj.rectangle412 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle412:setParent(obj.rectangle347);
+    obj.rectangle412:setLeft(60);
+    obj.rectangle412:setTop(1266);
+    obj.rectangle412:setWidth(350);
+    obj.rectangle412:setHeight(3);
+    obj.rectangle412:setColor("#49244F");
+    obj.rectangle412:setName("rectangle412");
 
     obj.label178 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label178:setParent(obj.rectangle365);
+    obj.label178:setParent(obj.rectangle347);
     obj.label178:setLeft(70);
     obj.label178:setTop(1239);
     obj.label178:setWidth(280);
@@ -9587,7 +9377,7 @@ local function constructNew_frmWeirdWizard()
     obj.label178:setName("label178");
 
     obj.edit162 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit162:setParent(obj.rectangle365);
+    obj.edit162:setParent(obj.rectangle347);
     obj.edit162:setLeft(150);
     obj.edit162:setTop(1233);
     obj.edit162:setWidth(260);
@@ -9597,17 +9387,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit162:setField("duracaoMagia17");
     obj.edit162:setName("edit162");
 
-    obj.rectangle431 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle431:setParent(obj.rectangle365);
-    obj.rectangle431:setLeft(60);
-    obj.rectangle431:setTop(1266);
-    obj.rectangle431:setWidth(350);
-    obj.rectangle431:setHeight(125);
-    obj.rectangle431:setColor("#49244F");
-    obj.rectangle431:setName("rectangle431");
+    obj.rectangle413 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle413:setParent(obj.rectangle347);
+    obj.rectangle413:setLeft(60);
+    obj.rectangle413:setTop(1266);
+    obj.rectangle413:setWidth(350);
+    obj.rectangle413:setHeight(125);
+    obj.rectangle413:setColor("#49244F");
+    obj.rectangle413:setName("rectangle413");
 
     obj.textEditor18 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor18:setParent(obj.rectangle365);
+    obj.textEditor18:setParent(obj.rectangle347);
     obj.textEditor18:setLeft(65);
     obj.textEditor18:setTop(1271);
     obj.textEditor18:setWidth(340);
@@ -9618,28 +9408,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor18:setFontSize(18);
     obj.textEditor18:setName("textEditor18");
 
-    obj.rectangle432 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle432:setParent(obj.rectangle365);
-    obj.rectangle432:setLeft(60);
-    obj.rectangle432:setTop(1391);
-    obj.rectangle432:setWidth(350);
-    obj.rectangle432:setHeight(3);
-    obj.rectangle432:setColor("#49244F");
-    obj.rectangle432:setName("rectangle432");
+    obj.rectangle414 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle414:setParent(obj.rectangle347);
+    obj.rectangle414:setLeft(60);
+    obj.rectangle414:setTop(1391);
+    obj.rectangle414:setWidth(350);
+    obj.rectangle414:setHeight(3);
+    obj.rectangle414:setColor("#49244F");
+    obj.rectangle414:setName("rectangle414");
 
-    obj.rectangle433 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle433:setParent(obj.rectangle365);
-    obj.rectangle433:setLeft(64);
-    obj.rectangle433:setTop(1398);
-    obj.rectangle433:setWidth(135);
-    obj.rectangle433:setHeight(29);
-    obj.rectangle433:setColor("#49244F");
-    obj.rectangle433:setHitTest(true);
-    obj.rectangle433:setCursor("handPoint");
-    obj.rectangle433:setName("rectangle433");
+    obj.rectangle415 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle415:setParent(obj.rectangle347);
+    obj.rectangle415:setLeft(64);
+    obj.rectangle415:setTop(1398);
+    obj.rectangle415:setWidth(135);
+    obj.rectangle415:setHeight(29);
+    obj.rectangle415:setColor("#49244F");
+    obj.rectangle415:setHitTest(true);
+    obj.rectangle415:setCursor("handPoint");
+    obj.rectangle415:setName("rectangle415");
 
     obj.label179 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label179:setParent(obj.rectangle365);
+    obj.label179:setParent(obj.rectangle347);
     obj.label179:setLeft(70);
     obj.label179:setTop(1402);
     obj.label179:setWidth(280);
@@ -9648,20 +9438,20 @@ local function constructNew_frmWeirdWizard()
     obj.label179:setFontColor("#D5D5D5");
     obj.label179:setName("label179");
 
-    obj.rectangle434 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle434:setParent(obj.rectangle365);
-    obj.rectangle434:setLeft(324);
-    obj.rectangle434:setTop(1398);
-    obj.rectangle434:setWidth(29);
-    obj.rectangle434:setHeight(29);
-    obj.rectangle434:setColor("#49244F");
-    obj.rectangle434:setCornerType("round");
-    obj.rectangle434:setXradius(15);
-    obj.rectangle434:setYradius(15);
-    obj.rectangle434:setName("rectangle434");
+    obj.rectangle416 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle416:setParent(obj.rectangle347);
+    obj.rectangle416:setLeft(324);
+    obj.rectangle416:setTop(1398);
+    obj.rectangle416:setWidth(29);
+    obj.rectangle416:setHeight(29);
+    obj.rectangle416:setColor("#49244F");
+    obj.rectangle416:setCornerType("round");
+    obj.rectangle416:setXradius(15);
+    obj.rectangle416:setYradius(15);
+    obj.rectangle416:setName("rectangle416");
 
     obj.edit163 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit163:setParent(obj.rectangle365);
+    obj.edit163:setParent(obj.rectangle347);
     obj.edit163:setLeft(318);
     obj.edit163:setTop(1395);
     obj.edit163:setWidth(40);
@@ -9676,7 +9466,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit163:setName("edit163");
 
     obj.label180 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label180:setParent(obj.rectangle365);
+    obj.label180:setParent(obj.rectangle347);
     obj.label180:setLeft(360);
     obj.label180:setTop(1402);
     obj.label180:setWidth(280);
@@ -9685,20 +9475,20 @@ local function constructNew_frmWeirdWizard()
     obj.label180:setFontColor("#49244F");
     obj.label180:setName("label180");
 
-    obj.rectangle435 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle435:setParent(obj.rectangle365);
-    obj.rectangle435:setLeft(374);
-    obj.rectangle435:setTop(1396);
-    obj.rectangle435:setWidth(29);
-    obj.rectangle435:setHeight(29);
-    obj.rectangle435:setColor("#49244F");
-    obj.rectangle435:setCornerType("round");
-    obj.rectangle435:setXradius(15);
-    obj.rectangle435:setYradius(15);
-    obj.rectangle435:setName("rectangle435");
+    obj.rectangle417 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle417:setParent(obj.rectangle347);
+    obj.rectangle417:setLeft(374);
+    obj.rectangle417:setTop(1396);
+    obj.rectangle417:setWidth(29);
+    obj.rectangle417:setHeight(29);
+    obj.rectangle417:setColor("#49244F");
+    obj.rectangle417:setCornerType("round");
+    obj.rectangle417:setXradius(15);
+    obj.rectangle417:setYradius(15);
+    obj.rectangle417:setName("rectangle417");
 
     obj.edit164 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit164:setParent(obj.rectangle365);
+    obj.edit164:setParent(obj.rectangle347);
     obj.edit164:setLeft(368);
     obj.edit164:setTop(1395);
     obj.edit164:setWidth(40);
@@ -9712,28 +9502,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit164:setHint("Total");
     obj.edit164:setName("edit164");
 
-    obj.rectangle436 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle436:setParent(obj.rectangle365);
-    obj.rectangle436:setLeft(434);
-    obj.rectangle436:setTop(1115);
-    obj.rectangle436:setWidth(350);
-    obj.rectangle436:setHeight(318);
-    obj.rectangle436:setColor("#D5D5D5");
-    obj.rectangle436:setStrokeColor("#49244F");
-    obj.rectangle436:setStrokeSize(3);
-    obj.rectangle436:setName("rectangle436");
+    obj.rectangle418 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle418:setParent(obj.rectangle347);
+    obj.rectangle418:setLeft(434);
+    obj.rectangle418:setTop(1115);
+    obj.rectangle418:setWidth(350);
+    obj.rectangle418:setHeight(318);
+    obj.rectangle418:setColor("#D5D5D5");
+    obj.rectangle418:setStrokeColor("#49244F");
+    obj.rectangle418:setStrokeSize(3);
+    obj.rectangle418:setName("rectangle418");
 
-    obj.rectangle437 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle437:setParent(obj.rectangle365);
-    obj.rectangle437:setLeft(434);
-    obj.rectangle437:setTop(1115);
-    obj.rectangle437:setWidth(350);
-    obj.rectangle437:setHeight(50);
-    obj.rectangle437:setColor("#49244F");
-    obj.rectangle437:setName("rectangle437");
+    obj.rectangle419 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle419:setParent(obj.rectangle347);
+    obj.rectangle419:setLeft(434);
+    obj.rectangle419:setTop(1115);
+    obj.rectangle419:setWidth(350);
+    obj.rectangle419:setHeight(50);
+    obj.rectangle419:setColor("#49244F");
+    obj.rectangle419:setName("rectangle419");
 
     obj.edit165 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit165:setParent(obj.rectangle365);
+    obj.edit165:setParent(obj.rectangle347);
     obj.edit165:setLeft(439);
     obj.edit165:setTop(1123);
     obj.edit165:setWidth(340);
@@ -9745,17 +9535,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit165:setField("Magia18");
     obj.edit165:setName("edit165");
 
-    obj.rectangle438 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle438:setParent(obj.rectangle365);
-    obj.rectangle438:setLeft(434);
-    obj.rectangle438:setTop(1196);
-    obj.rectangle438:setWidth(350);
-    obj.rectangle438:setHeight(1);
-    obj.rectangle438:setColor("#49244F");
-    obj.rectangle438:setName("rectangle438");
+    obj.rectangle420 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle420:setParent(obj.rectangle347);
+    obj.rectangle420:setLeft(434);
+    obj.rectangle420:setTop(1196);
+    obj.rectangle420:setWidth(350);
+    obj.rectangle420:setHeight(1);
+    obj.rectangle420:setColor("#49244F");
+    obj.rectangle420:setName("rectangle420");
 
     obj.label181 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label181:setParent(obj.rectangle365);
+    obj.label181:setParent(obj.rectangle347);
     obj.label181:setLeft(444);
     obj.label181:setTop(1169);
     obj.label181:setWidth(280);
@@ -9766,7 +9556,7 @@ local function constructNew_frmWeirdWizard()
     obj.label181:setName("label181");
 
     obj.edit166 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit166:setParent(obj.rectangle365);
+    obj.edit166:setParent(obj.rectangle347);
     obj.edit166:setLeft(524);
     obj.edit166:setTop(1163);
     obj.edit166:setWidth(260);
@@ -9776,17 +9566,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit166:setField("tradicaoMagia18");
     obj.edit166:setName("edit166");
 
-    obj.rectangle439 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle439:setParent(obj.rectangle365);
-    obj.rectangle439:setLeft(434);
-    obj.rectangle439:setTop(1231);
-    obj.rectangle439:setWidth(350);
-    obj.rectangle439:setHeight(1);
-    obj.rectangle439:setColor("#49244F");
-    obj.rectangle439:setName("rectangle439");
+    obj.rectangle421 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle421:setParent(obj.rectangle347);
+    obj.rectangle421:setLeft(434);
+    obj.rectangle421:setTop(1231);
+    obj.rectangle421:setWidth(350);
+    obj.rectangle421:setHeight(1);
+    obj.rectangle421:setColor("#49244F");
+    obj.rectangle421:setName("rectangle421");
 
     obj.label182 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label182:setParent(obj.rectangle365);
+    obj.label182:setParent(obj.rectangle347);
     obj.label182:setLeft(444);
     obj.label182:setTop(1204);
     obj.label182:setWidth(280);
@@ -9797,7 +9587,7 @@ local function constructNew_frmWeirdWizard()
     obj.label182:setName("label182");
 
     obj.edit167 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit167:setParent(obj.rectangle365);
+    obj.edit167:setParent(obj.rectangle347);
     obj.edit167:setLeft(489);
     obj.edit167:setTop(1198);
     obj.edit167:setWidth(295);
@@ -9807,17 +9597,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit167:setField("alvoMagia18");
     obj.edit167:setName("edit167");
 
-    obj.rectangle440 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle440:setParent(obj.rectangle365);
-    obj.rectangle440:setLeft(434);
-    obj.rectangle440:setTop(1266);
-    obj.rectangle440:setWidth(350);
-    obj.rectangle440:setHeight(3);
-    obj.rectangle440:setColor("#49244F");
-    obj.rectangle440:setName("rectangle440");
+    obj.rectangle422 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle422:setParent(obj.rectangle347);
+    obj.rectangle422:setLeft(434);
+    obj.rectangle422:setTop(1266);
+    obj.rectangle422:setWidth(350);
+    obj.rectangle422:setHeight(3);
+    obj.rectangle422:setColor("#49244F");
+    obj.rectangle422:setName("rectangle422");
 
     obj.label183 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label183:setParent(obj.rectangle365);
+    obj.label183:setParent(obj.rectangle347);
     obj.label183:setLeft(444);
     obj.label183:setTop(1239);
     obj.label183:setWidth(280);
@@ -9828,7 +9618,7 @@ local function constructNew_frmWeirdWizard()
     obj.label183:setName("label183");
 
     obj.edit168 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit168:setParent(obj.rectangle365);
+    obj.edit168:setParent(obj.rectangle347);
     obj.edit168:setLeft(524);
     obj.edit168:setTop(1233);
     obj.edit168:setWidth(260);
@@ -9838,17 +9628,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit168:setField("duracaoMagia18");
     obj.edit168:setName("edit168");
 
-    obj.rectangle441 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle441:setParent(obj.rectangle365);
-    obj.rectangle441:setLeft(434);
-    obj.rectangle441:setTop(1266);
-    obj.rectangle441:setWidth(350);
-    obj.rectangle441:setHeight(125);
-    obj.rectangle441:setColor("#49244F");
-    obj.rectangle441:setName("rectangle441");
+    obj.rectangle423 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle423:setParent(obj.rectangle347);
+    obj.rectangle423:setLeft(434);
+    obj.rectangle423:setTop(1266);
+    obj.rectangle423:setWidth(350);
+    obj.rectangle423:setHeight(125);
+    obj.rectangle423:setColor("#49244F");
+    obj.rectangle423:setName("rectangle423");
 
     obj.textEditor19 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor19:setParent(obj.rectangle365);
+    obj.textEditor19:setParent(obj.rectangle347);
     obj.textEditor19:setLeft(439);
     obj.textEditor19:setTop(1271);
     obj.textEditor19:setWidth(340);
@@ -9859,28 +9649,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor19:setFontSize(18);
     obj.textEditor19:setName("textEditor19");
 
-    obj.rectangle442 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle442:setParent(obj.rectangle365);
-    obj.rectangle442:setLeft(434);
-    obj.rectangle442:setTop(1391);
-    obj.rectangle442:setWidth(350);
-    obj.rectangle442:setHeight(3);
-    obj.rectangle442:setColor("#49244F");
-    obj.rectangle442:setName("rectangle442");
+    obj.rectangle424 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle424:setParent(obj.rectangle347);
+    obj.rectangle424:setLeft(434);
+    obj.rectangle424:setTop(1391);
+    obj.rectangle424:setWidth(350);
+    obj.rectangle424:setHeight(3);
+    obj.rectangle424:setColor("#49244F");
+    obj.rectangle424:setName("rectangle424");
 
-    obj.rectangle443 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle443:setParent(obj.rectangle365);
-    obj.rectangle443:setLeft(438);
-    obj.rectangle443:setTop(1398);
-    obj.rectangle443:setWidth(135);
-    obj.rectangle443:setHeight(29);
-    obj.rectangle443:setColor("#49244F");
-    obj.rectangle443:setHitTest(true);
-    obj.rectangle443:setCursor("handPoint");
-    obj.rectangle443:setName("rectangle443");
+    obj.rectangle425 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle425:setParent(obj.rectangle347);
+    obj.rectangle425:setLeft(438);
+    obj.rectangle425:setTop(1398);
+    obj.rectangle425:setWidth(135);
+    obj.rectangle425:setHeight(29);
+    obj.rectangle425:setColor("#49244F");
+    obj.rectangle425:setHitTest(true);
+    obj.rectangle425:setCursor("handPoint");
+    obj.rectangle425:setName("rectangle425");
 
     obj.label184 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label184:setParent(obj.rectangle365);
+    obj.label184:setParent(obj.rectangle347);
     obj.label184:setLeft(444);
     obj.label184:setTop(1402);
     obj.label184:setWidth(280);
@@ -9889,20 +9679,20 @@ local function constructNew_frmWeirdWizard()
     obj.label184:setFontColor("#D5D5D5");
     obj.label184:setName("label184");
 
-    obj.rectangle444 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle444:setParent(obj.rectangle365);
-    obj.rectangle444:setLeft(698);
-    obj.rectangle444:setTop(1398);
-    obj.rectangle444:setWidth(29);
-    obj.rectangle444:setHeight(29);
-    obj.rectangle444:setColor("#49244F");
-    obj.rectangle444:setCornerType("round");
-    obj.rectangle444:setXradius(15);
-    obj.rectangle444:setYradius(15);
-    obj.rectangle444:setName("rectangle444");
+    obj.rectangle426 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle426:setParent(obj.rectangle347);
+    obj.rectangle426:setLeft(698);
+    obj.rectangle426:setTop(1398);
+    obj.rectangle426:setWidth(29);
+    obj.rectangle426:setHeight(29);
+    obj.rectangle426:setColor("#49244F");
+    obj.rectangle426:setCornerType("round");
+    obj.rectangle426:setXradius(15);
+    obj.rectangle426:setYradius(15);
+    obj.rectangle426:setName("rectangle426");
 
     obj.edit169 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit169:setParent(obj.rectangle365);
+    obj.edit169:setParent(obj.rectangle347);
     obj.edit169:setLeft(692);
     obj.edit169:setTop(1395);
     obj.edit169:setWidth(40);
@@ -9917,7 +9707,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit169:setName("edit169");
 
     obj.label185 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label185:setParent(obj.rectangle365);
+    obj.label185:setParent(obj.rectangle347);
     obj.label185:setLeft(734);
     obj.label185:setTop(1402);
     obj.label185:setWidth(280);
@@ -9926,20 +9716,20 @@ local function constructNew_frmWeirdWizard()
     obj.label185:setFontColor("#49244F");
     obj.label185:setName("label185");
 
-    obj.rectangle445 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle445:setParent(obj.rectangle365);
-    obj.rectangle445:setLeft(748);
-    obj.rectangle445:setTop(1396);
-    obj.rectangle445:setWidth(29);
-    obj.rectangle445:setHeight(29);
-    obj.rectangle445:setColor("#49244F");
-    obj.rectangle445:setCornerType("round");
-    obj.rectangle445:setXradius(15);
-    obj.rectangle445:setYradius(15);
-    obj.rectangle445:setName("rectangle445");
+    obj.rectangle427 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle427:setParent(obj.rectangle347);
+    obj.rectangle427:setLeft(748);
+    obj.rectangle427:setTop(1396);
+    obj.rectangle427:setWidth(29);
+    obj.rectangle427:setHeight(29);
+    obj.rectangle427:setColor("#49244F");
+    obj.rectangle427:setCornerType("round");
+    obj.rectangle427:setXradius(15);
+    obj.rectangle427:setYradius(15);
+    obj.rectangle427:setName("rectangle427");
 
     obj.edit170 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit170:setParent(obj.rectangle365);
+    obj.edit170:setParent(obj.rectangle347);
     obj.edit170:setLeft(743);
     obj.edit170:setTop(1395);
     obj.edit170:setWidth(40);
@@ -9953,28 +9743,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit170:setHint("Total");
     obj.edit170:setName("edit170");
 
-    obj.rectangle446 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle446:setParent(obj.rectangle365);
-    obj.rectangle446:setLeft(60);
-    obj.rectangle446:setTop(1455);
-    obj.rectangle446:setWidth(350);
-    obj.rectangle446:setHeight(318);
-    obj.rectangle446:setColor("#D5D5D5");
-    obj.rectangle446:setStrokeColor("#49244F");
-    obj.rectangle446:setStrokeSize(3);
-    obj.rectangle446:setName("rectangle446");
+    obj.rectangle428 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle428:setParent(obj.rectangle347);
+    obj.rectangle428:setLeft(60);
+    obj.rectangle428:setTop(1455);
+    obj.rectangle428:setWidth(350);
+    obj.rectangle428:setHeight(318);
+    obj.rectangle428:setColor("#D5D5D5");
+    obj.rectangle428:setStrokeColor("#49244F");
+    obj.rectangle428:setStrokeSize(3);
+    obj.rectangle428:setName("rectangle428");
 
-    obj.rectangle447 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle447:setParent(obj.rectangle365);
-    obj.rectangle447:setLeft(60);
-    obj.rectangle447:setTop(1455);
-    obj.rectangle447:setWidth(350);
-    obj.rectangle447:setHeight(50);
-    obj.rectangle447:setColor("#49244F");
-    obj.rectangle447:setName("rectangle447");
+    obj.rectangle429 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle429:setParent(obj.rectangle347);
+    obj.rectangle429:setLeft(60);
+    obj.rectangle429:setTop(1455);
+    obj.rectangle429:setWidth(350);
+    obj.rectangle429:setHeight(50);
+    obj.rectangle429:setColor("#49244F");
+    obj.rectangle429:setName("rectangle429");
 
     obj.edit171 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit171:setParent(obj.rectangle365);
+    obj.edit171:setParent(obj.rectangle347);
     obj.edit171:setLeft(65);
     obj.edit171:setTop(1463);
     obj.edit171:setWidth(340);
@@ -9986,17 +9776,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit171:setField("Magia19");
     obj.edit171:setName("edit171");
 
-    obj.rectangle448 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle448:setParent(obj.rectangle365);
-    obj.rectangle448:setLeft(60);
-    obj.rectangle448:setTop(1536);
-    obj.rectangle448:setWidth(350);
-    obj.rectangle448:setHeight(1);
-    obj.rectangle448:setColor("#49244F");
-    obj.rectangle448:setName("rectangle448");
+    obj.rectangle430 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle430:setParent(obj.rectangle347);
+    obj.rectangle430:setLeft(60);
+    obj.rectangle430:setTop(1536);
+    obj.rectangle430:setWidth(350);
+    obj.rectangle430:setHeight(1);
+    obj.rectangle430:setColor("#49244F");
+    obj.rectangle430:setName("rectangle430");
 
     obj.label186 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label186:setParent(obj.rectangle365);
+    obj.label186:setParent(obj.rectangle347);
     obj.label186:setLeft(70);
     obj.label186:setTop(1509);
     obj.label186:setWidth(280);
@@ -10007,7 +9797,7 @@ local function constructNew_frmWeirdWizard()
     obj.label186:setName("label186");
 
     obj.edit172 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit172:setParent(obj.rectangle365);
+    obj.edit172:setParent(obj.rectangle347);
     obj.edit172:setLeft(150);
     obj.edit172:setTop(1503);
     obj.edit172:setWidth(260);
@@ -10017,17 +9807,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit172:setField("tradicaoMagia19");
     obj.edit172:setName("edit172");
 
-    obj.rectangle449 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle449:setParent(obj.rectangle365);
-    obj.rectangle449:setLeft(60);
-    obj.rectangle449:setTop(1571);
-    obj.rectangle449:setWidth(350);
-    obj.rectangle449:setHeight(1);
-    obj.rectangle449:setColor("#49244F");
-    obj.rectangle449:setName("rectangle449");
+    obj.rectangle431 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle431:setParent(obj.rectangle347);
+    obj.rectangle431:setLeft(60);
+    obj.rectangle431:setTop(1571);
+    obj.rectangle431:setWidth(350);
+    obj.rectangle431:setHeight(1);
+    obj.rectangle431:setColor("#49244F");
+    obj.rectangle431:setName("rectangle431");
 
     obj.label187 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label187:setParent(obj.rectangle365);
+    obj.label187:setParent(obj.rectangle347);
     obj.label187:setLeft(70);
     obj.label187:setTop(1544);
     obj.label187:setWidth(280);
@@ -10038,7 +9828,7 @@ local function constructNew_frmWeirdWizard()
     obj.label187:setName("label187");
 
     obj.edit173 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit173:setParent(obj.rectangle365);
+    obj.edit173:setParent(obj.rectangle347);
     obj.edit173:setLeft(115);
     obj.edit173:setTop(1538);
     obj.edit173:setWidth(295);
@@ -10048,17 +9838,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit173:setField("alvoMagia19");
     obj.edit173:setName("edit173");
 
-    obj.rectangle450 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle450:setParent(obj.rectangle365);
-    obj.rectangle450:setLeft(60);
-    obj.rectangle450:setTop(1606);
-    obj.rectangle450:setWidth(350);
-    obj.rectangle450:setHeight(3);
-    obj.rectangle450:setColor("#49244F");
-    obj.rectangle450:setName("rectangle450");
+    obj.rectangle432 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle432:setParent(obj.rectangle347);
+    obj.rectangle432:setLeft(60);
+    obj.rectangle432:setTop(1606);
+    obj.rectangle432:setWidth(350);
+    obj.rectangle432:setHeight(3);
+    obj.rectangle432:setColor("#49244F");
+    obj.rectangle432:setName("rectangle432");
 
     obj.label188 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label188:setParent(obj.rectangle365);
+    obj.label188:setParent(obj.rectangle347);
     obj.label188:setLeft(70);
     obj.label188:setTop(1579);
     obj.label188:setWidth(280);
@@ -10069,7 +9859,7 @@ local function constructNew_frmWeirdWizard()
     obj.label188:setName("label188");
 
     obj.edit174 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit174:setParent(obj.rectangle365);
+    obj.edit174:setParent(obj.rectangle347);
     obj.edit174:setLeft(150);
     obj.edit174:setTop(1573);
     obj.edit174:setWidth(260);
@@ -10079,17 +9869,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit174:setField("duracaoMagia19");
     obj.edit174:setName("edit174");
 
-    obj.rectangle451 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle451:setParent(obj.rectangle365);
-    obj.rectangle451:setLeft(60);
-    obj.rectangle451:setTop(1606);
-    obj.rectangle451:setWidth(350);
-    obj.rectangle451:setHeight(125);
-    obj.rectangle451:setColor("#49244F");
-    obj.rectangle451:setName("rectangle451");
+    obj.rectangle433 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle433:setParent(obj.rectangle347);
+    obj.rectangle433:setLeft(60);
+    obj.rectangle433:setTop(1606);
+    obj.rectangle433:setWidth(350);
+    obj.rectangle433:setHeight(125);
+    obj.rectangle433:setColor("#49244F");
+    obj.rectangle433:setName("rectangle433");
 
     obj.textEditor20 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor20:setParent(obj.rectangle365);
+    obj.textEditor20:setParent(obj.rectangle347);
     obj.textEditor20:setLeft(65);
     obj.textEditor20:setTop(1611);
     obj.textEditor20:setWidth(340);
@@ -10100,28 +9890,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor20:setFontSize(18);
     obj.textEditor20:setName("textEditor20");
 
-    obj.rectangle452 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle452:setParent(obj.rectangle365);
-    obj.rectangle452:setLeft(60);
-    obj.rectangle452:setTop(1731);
-    obj.rectangle452:setWidth(350);
-    obj.rectangle452:setHeight(3);
-    obj.rectangle452:setColor("#49244F");
-    obj.rectangle452:setName("rectangle452");
+    obj.rectangle434 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle434:setParent(obj.rectangle347);
+    obj.rectangle434:setLeft(60);
+    obj.rectangle434:setTop(1731);
+    obj.rectangle434:setWidth(350);
+    obj.rectangle434:setHeight(3);
+    obj.rectangle434:setColor("#49244F");
+    obj.rectangle434:setName("rectangle434");
 
-    obj.rectangle453 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle453:setParent(obj.rectangle365);
-    obj.rectangle453:setLeft(64);
-    obj.rectangle453:setTop(1738);
-    obj.rectangle453:setWidth(135);
-    obj.rectangle453:setHeight(29);
-    obj.rectangle453:setColor("#49244F");
-    obj.rectangle453:setHitTest(true);
-    obj.rectangle453:setCursor("handPoint");
-    obj.rectangle453:setName("rectangle453");
+    obj.rectangle435 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle435:setParent(obj.rectangle347);
+    obj.rectangle435:setLeft(64);
+    obj.rectangle435:setTop(1738);
+    obj.rectangle435:setWidth(135);
+    obj.rectangle435:setHeight(29);
+    obj.rectangle435:setColor("#49244F");
+    obj.rectangle435:setHitTest(true);
+    obj.rectangle435:setCursor("handPoint");
+    obj.rectangle435:setName("rectangle435");
 
     obj.label189 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label189:setParent(obj.rectangle365);
+    obj.label189:setParent(obj.rectangle347);
     obj.label189:setLeft(70);
     obj.label189:setTop(1742);
     obj.label189:setWidth(280);
@@ -10130,20 +9920,20 @@ local function constructNew_frmWeirdWizard()
     obj.label189:setFontColor("#D5D5D5");
     obj.label189:setName("label189");
 
-    obj.rectangle454 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle454:setParent(obj.rectangle365);
-    obj.rectangle454:setLeft(324);
-    obj.rectangle454:setTop(1738);
-    obj.rectangle454:setWidth(29);
-    obj.rectangle454:setHeight(29);
-    obj.rectangle454:setColor("#49244F");
-    obj.rectangle454:setCornerType("round");
-    obj.rectangle454:setXradius(15);
-    obj.rectangle454:setYradius(15);
-    obj.rectangle454:setName("rectangle454");
+    obj.rectangle436 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle436:setParent(obj.rectangle347);
+    obj.rectangle436:setLeft(324);
+    obj.rectangle436:setTop(1738);
+    obj.rectangle436:setWidth(29);
+    obj.rectangle436:setHeight(29);
+    obj.rectangle436:setColor("#49244F");
+    obj.rectangle436:setCornerType("round");
+    obj.rectangle436:setXradius(15);
+    obj.rectangle436:setYradius(15);
+    obj.rectangle436:setName("rectangle436");
 
     obj.edit175 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit175:setParent(obj.rectangle365);
+    obj.edit175:setParent(obj.rectangle347);
     obj.edit175:setLeft(318);
     obj.edit175:setTop(1735);
     obj.edit175:setWidth(40);
@@ -10158,7 +9948,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit175:setName("edit175");
 
     obj.label190 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label190:setParent(obj.rectangle365);
+    obj.label190:setParent(obj.rectangle347);
     obj.label190:setLeft(360);
     obj.label190:setTop(1742);
     obj.label190:setWidth(280);
@@ -10167,20 +9957,20 @@ local function constructNew_frmWeirdWizard()
     obj.label190:setFontColor("#49244F");
     obj.label190:setName("label190");
 
-    obj.rectangle455 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle455:setParent(obj.rectangle365);
-    obj.rectangle455:setLeft(374);
-    obj.rectangle455:setTop(1736);
-    obj.rectangle455:setWidth(29);
-    obj.rectangle455:setHeight(29);
-    obj.rectangle455:setColor("#49244F");
-    obj.rectangle455:setCornerType("round");
-    obj.rectangle455:setXradius(15);
-    obj.rectangle455:setYradius(15);
-    obj.rectangle455:setName("rectangle455");
+    obj.rectangle437 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle437:setParent(obj.rectangle347);
+    obj.rectangle437:setLeft(374);
+    obj.rectangle437:setTop(1736);
+    obj.rectangle437:setWidth(29);
+    obj.rectangle437:setHeight(29);
+    obj.rectangle437:setColor("#49244F");
+    obj.rectangle437:setCornerType("round");
+    obj.rectangle437:setXradius(15);
+    obj.rectangle437:setYradius(15);
+    obj.rectangle437:setName("rectangle437");
 
     obj.edit176 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit176:setParent(obj.rectangle365);
+    obj.edit176:setParent(obj.rectangle347);
     obj.edit176:setLeft(368);
     obj.edit176:setTop(1735);
     obj.edit176:setWidth(40);
@@ -10194,28 +9984,28 @@ local function constructNew_frmWeirdWizard()
     obj.edit176:setHint("Total");
     obj.edit176:setName("edit176");
 
-    obj.rectangle456 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle456:setParent(obj.rectangle365);
-    obj.rectangle456:setLeft(434);
-    obj.rectangle456:setTop(1455);
-    obj.rectangle456:setWidth(350);
-    obj.rectangle456:setHeight(318);
-    obj.rectangle456:setColor("#D5D5D5");
-    obj.rectangle456:setStrokeColor("#49244F");
-    obj.rectangle456:setStrokeSize(3);
-    obj.rectangle456:setName("rectangle456");
+    obj.rectangle438 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle438:setParent(obj.rectangle347);
+    obj.rectangle438:setLeft(434);
+    obj.rectangle438:setTop(1455);
+    obj.rectangle438:setWidth(350);
+    obj.rectangle438:setHeight(318);
+    obj.rectangle438:setColor("#D5D5D5");
+    obj.rectangle438:setStrokeColor("#49244F");
+    obj.rectangle438:setStrokeSize(3);
+    obj.rectangle438:setName("rectangle438");
 
-    obj.rectangle457 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle457:setParent(obj.rectangle365);
-    obj.rectangle457:setLeft(434);
-    obj.rectangle457:setTop(1455);
-    obj.rectangle457:setWidth(350);
-    obj.rectangle457:setHeight(50);
-    obj.rectangle457:setColor("#49244F");
-    obj.rectangle457:setName("rectangle457");
+    obj.rectangle439 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle439:setParent(obj.rectangle347);
+    obj.rectangle439:setLeft(434);
+    obj.rectangle439:setTop(1455);
+    obj.rectangle439:setWidth(350);
+    obj.rectangle439:setHeight(50);
+    obj.rectangle439:setColor("#49244F");
+    obj.rectangle439:setName("rectangle439");
 
     obj.edit177 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit177:setParent(obj.rectangle365);
+    obj.edit177:setParent(obj.rectangle347);
     obj.edit177:setLeft(439);
     obj.edit177:setTop(1463);
     obj.edit177:setWidth(340);
@@ -10227,17 +10017,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit177:setField("Magia20");
     obj.edit177:setName("edit177");
 
-    obj.rectangle458 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle458:setParent(obj.rectangle365);
-    obj.rectangle458:setLeft(434);
-    obj.rectangle458:setTop(1536);
-    obj.rectangle458:setWidth(350);
-    obj.rectangle458:setHeight(1);
-    obj.rectangle458:setColor("#49244F");
-    obj.rectangle458:setName("rectangle458");
+    obj.rectangle440 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle440:setParent(obj.rectangle347);
+    obj.rectangle440:setLeft(434);
+    obj.rectangle440:setTop(1536);
+    obj.rectangle440:setWidth(350);
+    obj.rectangle440:setHeight(1);
+    obj.rectangle440:setColor("#49244F");
+    obj.rectangle440:setName("rectangle440");
 
     obj.label191 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label191:setParent(obj.rectangle365);
+    obj.label191:setParent(obj.rectangle347);
     obj.label191:setLeft(444);
     obj.label191:setTop(1509);
     obj.label191:setWidth(280);
@@ -10248,7 +10038,7 @@ local function constructNew_frmWeirdWizard()
     obj.label191:setName("label191");
 
     obj.edit178 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit178:setParent(obj.rectangle365);
+    obj.edit178:setParent(obj.rectangle347);
     obj.edit178:setLeft(524);
     obj.edit178:setTop(1503);
     obj.edit178:setWidth(260);
@@ -10258,17 +10048,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit178:setField("tradicaoMagia20");
     obj.edit178:setName("edit178");
 
-    obj.rectangle459 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle459:setParent(obj.rectangle365);
-    obj.rectangle459:setLeft(434);
-    obj.rectangle459:setTop(1571);
-    obj.rectangle459:setWidth(350);
-    obj.rectangle459:setHeight(1);
-    obj.rectangle459:setColor("#49244F");
-    obj.rectangle459:setName("rectangle459");
+    obj.rectangle441 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle441:setParent(obj.rectangle347);
+    obj.rectangle441:setLeft(434);
+    obj.rectangle441:setTop(1571);
+    obj.rectangle441:setWidth(350);
+    obj.rectangle441:setHeight(1);
+    obj.rectangle441:setColor("#49244F");
+    obj.rectangle441:setName("rectangle441");
 
     obj.label192 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label192:setParent(obj.rectangle365);
+    obj.label192:setParent(obj.rectangle347);
     obj.label192:setLeft(444);
     obj.label192:setTop(1544);
     obj.label192:setWidth(280);
@@ -10279,7 +10069,7 @@ local function constructNew_frmWeirdWizard()
     obj.label192:setName("label192");
 
     obj.edit179 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit179:setParent(obj.rectangle365);
+    obj.edit179:setParent(obj.rectangle347);
     obj.edit179:setLeft(489);
     obj.edit179:setTop(1538);
     obj.edit179:setWidth(295);
@@ -10289,17 +10079,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit179:setField("alvoMagia20");
     obj.edit179:setName("edit179");
 
-    obj.rectangle460 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle460:setParent(obj.rectangle365);
-    obj.rectangle460:setLeft(434);
-    obj.rectangle460:setTop(1606);
-    obj.rectangle460:setWidth(350);
-    obj.rectangle460:setHeight(3);
-    obj.rectangle460:setColor("#49244F");
-    obj.rectangle460:setName("rectangle460");
+    obj.rectangle442 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle442:setParent(obj.rectangle347);
+    obj.rectangle442:setLeft(434);
+    obj.rectangle442:setTop(1606);
+    obj.rectangle442:setWidth(350);
+    obj.rectangle442:setHeight(3);
+    obj.rectangle442:setColor("#49244F");
+    obj.rectangle442:setName("rectangle442");
 
     obj.label193 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label193:setParent(obj.rectangle365);
+    obj.label193:setParent(obj.rectangle347);
     obj.label193:setLeft(444);
     obj.label193:setTop(1579);
     obj.label193:setWidth(280);
@@ -10310,7 +10100,7 @@ local function constructNew_frmWeirdWizard()
     obj.label193:setName("label193");
 
     obj.edit180 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit180:setParent(obj.rectangle365);
+    obj.edit180:setParent(obj.rectangle347);
     obj.edit180:setLeft(524);
     obj.edit180:setTop(1573);
     obj.edit180:setWidth(260);
@@ -10320,17 +10110,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit180:setField("duracaoMagia20");
     obj.edit180:setName("edit180");
 
-    obj.rectangle461 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle461:setParent(obj.rectangle365);
-    obj.rectangle461:setLeft(434);
-    obj.rectangle461:setTop(1606);
-    obj.rectangle461:setWidth(350);
-    obj.rectangle461:setHeight(125);
-    obj.rectangle461:setColor("#49244F");
-    obj.rectangle461:setName("rectangle461");
+    obj.rectangle443 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle443:setParent(obj.rectangle347);
+    obj.rectangle443:setLeft(434);
+    obj.rectangle443:setTop(1606);
+    obj.rectangle443:setWidth(350);
+    obj.rectangle443:setHeight(125);
+    obj.rectangle443:setColor("#49244F");
+    obj.rectangle443:setName("rectangle443");
 
     obj.textEditor21 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor21:setParent(obj.rectangle365);
+    obj.textEditor21:setParent(obj.rectangle347);
     obj.textEditor21:setLeft(439);
     obj.textEditor21:setTop(1611);
     obj.textEditor21:setWidth(340);
@@ -10341,28 +10131,28 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor21:setFontSize(18);
     obj.textEditor21:setName("textEditor21");
 
-    obj.rectangle462 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle462:setParent(obj.rectangle365);
-    obj.rectangle462:setLeft(434);
-    obj.rectangle462:setTop(1731);
-    obj.rectangle462:setWidth(350);
-    obj.rectangle462:setHeight(3);
-    obj.rectangle462:setColor("#49244F");
-    obj.rectangle462:setName("rectangle462");
+    obj.rectangle444 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle444:setParent(obj.rectangle347);
+    obj.rectangle444:setLeft(434);
+    obj.rectangle444:setTop(1731);
+    obj.rectangle444:setWidth(350);
+    obj.rectangle444:setHeight(3);
+    obj.rectangle444:setColor("#49244F");
+    obj.rectangle444:setName("rectangle444");
 
-    obj.rectangle463 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle463:setParent(obj.rectangle365);
-    obj.rectangle463:setLeft(438);
-    obj.rectangle463:setTop(1738);
-    obj.rectangle463:setWidth(135);
-    obj.rectangle463:setHeight(29);
-    obj.rectangle463:setColor("#49244F");
-    obj.rectangle463:setHitTest(true);
-    obj.rectangle463:setCursor("handPoint");
-    obj.rectangle463:setName("rectangle463");
+    obj.rectangle445 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle445:setParent(obj.rectangle347);
+    obj.rectangle445:setLeft(438);
+    obj.rectangle445:setTop(1738);
+    obj.rectangle445:setWidth(135);
+    obj.rectangle445:setHeight(29);
+    obj.rectangle445:setColor("#49244F");
+    obj.rectangle445:setHitTest(true);
+    obj.rectangle445:setCursor("handPoint");
+    obj.rectangle445:setName("rectangle445");
 
     obj.label194 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label194:setParent(obj.rectangle365);
+    obj.label194:setParent(obj.rectangle347);
     obj.label194:setLeft(444);
     obj.label194:setTop(1742);
     obj.label194:setWidth(280);
@@ -10371,20 +10161,20 @@ local function constructNew_frmWeirdWizard()
     obj.label194:setFontColor("#D5D5D5");
     obj.label194:setName("label194");
 
-    obj.rectangle464 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle464:setParent(obj.rectangle365);
-    obj.rectangle464:setLeft(698);
-    obj.rectangle464:setTop(1738);
-    obj.rectangle464:setWidth(29);
-    obj.rectangle464:setHeight(29);
-    obj.rectangle464:setColor("#49244F");
-    obj.rectangle464:setCornerType("round");
-    obj.rectangle464:setXradius(15);
-    obj.rectangle464:setYradius(15);
-    obj.rectangle464:setName("rectangle464");
+    obj.rectangle446 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle446:setParent(obj.rectangle347);
+    obj.rectangle446:setLeft(698);
+    obj.rectangle446:setTop(1738);
+    obj.rectangle446:setWidth(29);
+    obj.rectangle446:setHeight(29);
+    obj.rectangle446:setColor("#49244F");
+    obj.rectangle446:setCornerType("round");
+    obj.rectangle446:setXradius(15);
+    obj.rectangle446:setYradius(15);
+    obj.rectangle446:setName("rectangle446");
 
     obj.edit181 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit181:setParent(obj.rectangle365);
+    obj.edit181:setParent(obj.rectangle347);
     obj.edit181:setLeft(692);
     obj.edit181:setTop(1735);
     obj.edit181:setWidth(40);
@@ -10399,7 +10189,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit181:setName("edit181");
 
     obj.label195 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label195:setParent(obj.rectangle365);
+    obj.label195:setParent(obj.rectangle347);
     obj.label195:setLeft(734);
     obj.label195:setTop(1742);
     obj.label195:setWidth(280);
@@ -10408,20 +10198,20 @@ local function constructNew_frmWeirdWizard()
     obj.label195:setFontColor("#49244F");
     obj.label195:setName("label195");
 
-    obj.rectangle465 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle465:setParent(obj.rectangle365);
-    obj.rectangle465:setLeft(748);
-    obj.rectangle465:setTop(1736);
-    obj.rectangle465:setWidth(29);
-    obj.rectangle465:setHeight(29);
-    obj.rectangle465:setColor("#49244F");
-    obj.rectangle465:setCornerType("round");
-    obj.rectangle465:setXradius(15);
-    obj.rectangle465:setYradius(15);
-    obj.rectangle465:setName("rectangle465");
+    obj.rectangle447 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle447:setParent(obj.rectangle347);
+    obj.rectangle447:setLeft(748);
+    obj.rectangle447:setTop(1736);
+    obj.rectangle447:setWidth(29);
+    obj.rectangle447:setHeight(29);
+    obj.rectangle447:setColor("#49244F");
+    obj.rectangle447:setCornerType("round");
+    obj.rectangle447:setXradius(15);
+    obj.rectangle447:setYradius(15);
+    obj.rectangle447:setName("rectangle447");
 
     obj.edit182 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit182:setParent(obj.rectangle365);
+    obj.edit182:setParent(obj.rectangle347);
     obj.edit182:setLeft(743);
     obj.edit182:setTop(1735);
     obj.edit182:setWidth(40);
@@ -10443,68 +10233,59 @@ local function constructNew_frmWeirdWizard()
     obj.layout10:setHeight(825);
     obj.layout10:setName("layout10");
 
-    obj.rectangle466 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle466:setParent(obj.layout10);
-    obj.rectangle466:setLeft(0);
-    obj.rectangle466:setTop(725);
-    obj.rectangle466:setWidth(799);
-    obj.rectangle466:setHeight(105);
-    obj.rectangle466:setColor("#D5D5D5");
-    obj.rectangle466:setName("rectangle466");
+    obj.rectangle448 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle448:setParent(obj.layout10);
+    obj.rectangle448:setLeft(0);
+    obj.rectangle448:setTop(725);
+    obj.rectangle448:setWidth(799);
+    obj.rectangle448:setHeight(105);
+    obj.rectangle448:setColor("#D5D5D5");
+    obj.rectangle448:setName("rectangle448");
 
-    obj.rectangle467 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle467:setParent(obj.layout10);
-    obj.rectangle467:setLeft(65);
-    obj.rectangle467:setTop(730);
-    obj.rectangle467:setWidth(712);
-    obj.rectangle467:setHeight(1);
-    obj.rectangle467:setColor("#49244F");
-    obj.rectangle467:setName("rectangle467");
+    obj.rectangle449 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle449:setParent(obj.layout10);
+    obj.rectangle449:setLeft(65);
+    obj.rectangle449:setTop(730);
+    obj.rectangle449:setWidth(712);
+    obj.rectangle449:setHeight(1);
+    obj.rectangle449:setColor("#49244F");
+    obj.rectangle449:setName("rectangle449");
 
-    obj.rectangle468 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle468:setParent(obj.layout10);
-    obj.rectangle468:setLeft(65);
-    obj.rectangle468:setTop(735);
-    obj.rectangle468:setWidth(712);
-    obj.rectangle468:setHeight(1);
-    obj.rectangle468:setColor("#49244F");
-    obj.rectangle468:setName("rectangle468");
+    obj.rectangle450 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle450:setParent(obj.layout10);
+    obj.rectangle450:setLeft(65);
+    obj.rectangle450:setTop(735);
+    obj.rectangle450:setWidth(712);
+    obj.rectangle450:setHeight(1);
+    obj.rectangle450:setColor("#49244F");
+    obj.rectangle450:setName("rectangle450");
 
-    obj.image49 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image49:setParent(obj.layout10);
-    obj.image49:setLeft(270);
-    obj.image49:setTop(750);
-    obj.image49:setWidth(288);
-    obj.image49:setHeight(56);
-    obj.image49:setSRC("/img/livrosMagicos.png");
-    obj.image49:setName("image49");
+    obj.image44 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image44:setParent(obj.layout10);
+    obj.image44:setLeft(270);
+    obj.image44:setTop(750);
+    obj.image44:setWidth(288);
+    obj.image44:setHeight(56);
+    obj.image44:setSRC("/img/livrosMagicos.png");
+    obj.image44:setName("image44");
 
-    obj.rectangle469 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle469:setParent(obj.layout10);
-    obj.rectangle469:setLeft(0);
-    obj.rectangle469:setTop(0);
-    obj.rectangle469:setWidth(799);
-    obj.rectangle469:setHeight(5);
-    obj.rectangle469:setColor("#D5D5D5");
-    obj.rectangle469:setName("rectangle469");
+    obj.rectangle451 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle451:setParent(obj.layout10);
+    obj.rectangle451:setLeft(0);
+    obj.rectangle451:setTop(0);
+    obj.rectangle451:setWidth(799);
+    obj.rectangle451:setHeight(5);
+    obj.rectangle451:setColor("#D5D5D5");
+    obj.rectangle451:setName("rectangle451");
 
-    obj.image50 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image50:setParent(obj.layout10);
-    obj.image50:setLeft(0);
-    obj.image50:setTop(0);
-    obj.image50:setWidth(799);
-    obj.image50:setHeight(825);
-    obj.image50:setSRC("/img/borda.png");
-    obj.image50:setName("image50");
-
-    obj.image51 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image51:setParent(obj.tab6);
-    obj.image51:setLeft(69);
-    obj.image51:setTop(875);
-    obj.image51:setWidth(676);
-    obj.image51:setHeight(194);
-    obj.image51:setSRC("/img/logo.png");
-    obj.image51:setName("image51");
+    obj.image45 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image45:setParent(obj.layout10);
+    obj.image45:setLeft(0);
+    obj.image45:setTop(0);
+    obj.image45:setWidth(799);
+    obj.image45:setHeight(825);
+    obj.image45:setSRC("/img/borda.png");
+    obj.image45:setName("image45");
 
     obj.tab7 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab7:setParent(obj.tabControl1);
@@ -10513,61 +10294,58 @@ local function constructNew_frmWeirdWizard()
 
     obj.layout11 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout11:setParent(obj.tab7);
-    obj.layout11:setLeft(0);
-    obj.layout11:setTop(10);
-    obj.layout11:setWidth(815);
-    obj.layout11:setHeight(825);
+    obj.layout11:setAlign("client");
     obj.layout11:setName("layout11");
 
-    obj.rectangle470 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle470:setParent(obj.layout11);
-    obj.rectangle470:setLeft(0);
-    obj.rectangle470:setTop(0);
-    obj.rectangle470:setWidth(799);
-    obj.rectangle470:setHeight(825);
-    obj.rectangle470:setColor("#D5D5D5");
-    obj.rectangle470:setName("rectangle470");
+    obj.rectangle452 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle452:setParent(obj.layout11);
+    obj.rectangle452:setLeft(0);
+    obj.rectangle452:setTop(0);
+    obj.rectangle452:setWidth(799);
+    obj.rectangle452:setHeight(825);
+    obj.rectangle452:setColor("#D5D5D5");
+    obj.rectangle452:setName("rectangle452");
 
-    obj.image52 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image52:setParent(obj.rectangle470);
-    obj.image52:setLeft(0);
-    obj.image52:setTop(0);
-    obj.image52:setWidth(799);
-    obj.image52:setHeight(825);
-    obj.image52:setSRC("/img/borda.png");
-    obj.image52:setName("image52");
+    obj.image46 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image46:setParent(obj.rectangle452);
+    obj.image46:setLeft(0);
+    obj.image46:setTop(0);
+    obj.image46:setWidth(799);
+    obj.image46:setHeight(825);
+    obj.image46:setSRC("/img/borda.png");
+    obj.image46:setName("image46");
 
-    obj.rectangle471 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle471:setParent(obj.rectangle470);
-    obj.rectangle471:setLeft(60);
-    obj.rectangle471:setTop(95);
-    obj.rectangle471:setWidth(720);
-    obj.rectangle471:setHeight(575);
-    obj.rectangle471:setColor("#D5D5D5");
-    obj.rectangle471:setStrokeColor("#49244F");
-    obj.rectangle471:setStrokeSize(3);
-    obj.rectangle471:setName("rectangle471");
+    obj.rectangle453 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle453:setParent(obj.rectangle452);
+    obj.rectangle453:setLeft(60);
+    obj.rectangle453:setTop(95);
+    obj.rectangle453:setWidth(720);
+    obj.rectangle453:setHeight(575);
+    obj.rectangle453:setColor("#D5D5D5");
+    obj.rectangle453:setStrokeColor("#49244F");
+    obj.rectangle453:setStrokeSize(3);
+    obj.rectangle453:setName("rectangle453");
 
-    obj.rectangle472 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle472:setParent(obj.rectangle470);
-    obj.rectangle472:setLeft(418);
-    obj.rectangle472:setTop(130);
-    obj.rectangle472:setWidth(3);
-    obj.rectangle472:setHeight(100);
-    obj.rectangle472:setColor("#49244F");
-    obj.rectangle472:setName("rectangle472");
+    obj.rectangle454 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle454:setParent(obj.rectangle452);
+    obj.rectangle454:setLeft(418);
+    obj.rectangle454:setTop(130);
+    obj.rectangle454:setWidth(3);
+    obj.rectangle454:setHeight(100);
+    obj.rectangle454:setColor("#49244F");
+    obj.rectangle454:setName("rectangle454");
 
-    obj.rectangle473 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle473:setParent(obj.rectangle470);
-    obj.rectangle473:setLeft(80);
-    obj.rectangle473:setTop(260);
-    obj.rectangle473:setWidth(680);
-    obj.rectangle473:setHeight(3);
-    obj.rectangle473:setColor("#49244F");
-    obj.rectangle473:setName("rectangle473");
+    obj.rectangle455 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle455:setParent(obj.rectangle452);
+    obj.rectangle455:setLeft(80);
+    obj.rectangle455:setTop(260);
+    obj.rectangle455:setWidth(680);
+    obj.rectangle455:setHeight(3);
+    obj.rectangle455:setColor("#49244F");
+    obj.rectangle455:setName("rectangle455");
 
     obj.label196 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label196:setParent(obj.rectangle470);
+    obj.label196:setParent(obj.rectangle452);
     obj.label196:setLeft(325);
     obj.label196:setTop(60);
     obj.label196:setWidth(180);
@@ -10578,17 +10356,17 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label196, "fontStyle", "bold");
     obj.label196:setName("label196");
 
-    obj.rectangle474 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle474:setParent(obj.rectangle470);
-    obj.rectangle474:setLeft(80);
-    obj.rectangle474:setTop(130);
-    obj.rectangle474:setWidth(320);
-    obj.rectangle474:setHeight(40);
-    obj.rectangle474:setColor("#49244F");
-    obj.rectangle474:setName("rectangle474");
+    obj.rectangle456 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle456:setParent(obj.rectangle452);
+    obj.rectangle456:setLeft(80);
+    obj.rectangle456:setTop(130);
+    obj.rectangle456:setWidth(320);
+    obj.rectangle456:setHeight(40);
+    obj.rectangle456:setColor("#49244F");
+    obj.rectangle456:setName("rectangle456");
 
     obj.label197 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label197:setParent(obj.rectangle470);
+    obj.label197:setParent(obj.rectangle452);
     obj.label197:setLeft(75);
     obj.label197:setTop(140);
     obj.label197:setWidth(210);
@@ -10603,23 +10381,23 @@ local function constructNew_frmWeirdWizard()
     obj.label197:setName("label197");
 
     obj.checkBox1 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox1:setParent(obj.rectangle470);
+    obj.checkBox1:setParent(obj.rectangle452);
     obj.checkBox1:setField("ForçaDebilitada");
     obj.checkBox1:setLeft(370);
     obj.checkBox1:setTop(142);
     obj.checkBox1:setName("checkBox1");
 
-    obj.rectangle475 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle475:setParent(obj.rectangle470);
-    obj.rectangle475:setLeft(440);
-    obj.rectangle475:setTop(130);
-    obj.rectangle475:setWidth(320);
-    obj.rectangle475:setHeight(40);
-    obj.rectangle475:setColor("#49244F");
-    obj.rectangle475:setName("rectangle475");
+    obj.rectangle457 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle457:setParent(obj.rectangle452);
+    obj.rectangle457:setLeft(440);
+    obj.rectangle457:setTop(130);
+    obj.rectangle457:setWidth(320);
+    obj.rectangle457:setHeight(40);
+    obj.rectangle457:setColor("#49244F");
+    obj.rectangle457:setName("rectangle457");
 
     obj.label198 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label198:setParent(obj.rectangle470);
+    obj.label198:setParent(obj.rectangle452);
     obj.label198:setLeft(455);
     obj.label198:setTop(140);
     obj.label198:setWidth(210);
@@ -10634,23 +10412,23 @@ local function constructNew_frmWeirdWizard()
     obj.label198:setName("label198");
 
     obj.checkBox2 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox2:setParent(obj.rectangle470);
+    obj.checkBox2:setParent(obj.rectangle452);
     obj.checkBox2:setField("AgilidadeDebilitada");
     obj.checkBox2:setLeft(730);
     obj.checkBox2:setTop(142);
     obj.checkBox2:setName("checkBox2");
 
-    obj.rectangle476 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle476:setParent(obj.rectangle470);
-    obj.rectangle476:setLeft(80);
-    obj.rectangle476:setTop(190);
-    obj.rectangle476:setWidth(320);
-    obj.rectangle476:setHeight(40);
-    obj.rectangle476:setColor("#49244F");
-    obj.rectangle476:setName("rectangle476");
+    obj.rectangle458 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle458:setParent(obj.rectangle452);
+    obj.rectangle458:setLeft(80);
+    obj.rectangle458:setTop(190);
+    obj.rectangle458:setWidth(320);
+    obj.rectangle458:setHeight(40);
+    obj.rectangle458:setColor("#49244F");
+    obj.rectangle458:setName("rectangle458");
 
     obj.label199 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label199:setParent(obj.rectangle470);
+    obj.label199:setParent(obj.rectangle452);
     obj.label199:setLeft(90);
     obj.label199:setTop(200);
     obj.label199:setWidth(210);
@@ -10665,23 +10443,23 @@ local function constructNew_frmWeirdWizard()
     obj.label199:setName("label199");
 
     obj.checkBox3 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox3:setParent(obj.rectangle470);
+    obj.checkBox3:setParent(obj.rectangle452);
     obj.checkBox3:setField("IntelectoDebilitado");
     obj.checkBox3:setLeft(370);
     obj.checkBox3:setTop(202);
     obj.checkBox3:setName("checkBox3");
 
-    obj.rectangle477 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle477:setParent(obj.rectangle470);
-    obj.rectangle477:setLeft(440);
-    obj.rectangle477:setTop(190);
-    obj.rectangle477:setWidth(320);
-    obj.rectangle477:setHeight(40);
-    obj.rectangle477:setColor("#49244F");
-    obj.rectangle477:setName("rectangle477");
+    obj.rectangle459 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle459:setParent(obj.rectangle452);
+    obj.rectangle459:setLeft(440);
+    obj.rectangle459:setTop(190);
+    obj.rectangle459:setWidth(320);
+    obj.rectangle459:setHeight(40);
+    obj.rectangle459:setColor("#49244F");
+    obj.rectangle459:setName("rectangle459");
 
     obj.label200 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label200:setParent(obj.rectangle470);
+    obj.label200:setParent(obj.rectangle452);
     obj.label200:setLeft(450);
     obj.label200:setTop(200);
     obj.label200:setWidth(210);
@@ -10696,23 +10474,23 @@ local function constructNew_frmWeirdWizard()
     obj.label200:setName("label200");
 
     obj.checkBox4 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox4:setParent(obj.rectangle470);
+    obj.checkBox4:setParent(obj.rectangle452);
     obj.checkBox4:setField("VontadeDebilitada");
     obj.checkBox4:setLeft(730);
     obj.checkBox4:setTop(202);
     obj.checkBox4:setName("checkBox4");
 
-    obj.rectangle478 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle478:setParent(obj.rectangle470);
-    obj.rectangle478:setLeft(80);
-    obj.rectangle478:setTop(295);
-    obj.rectangle478:setWidth(200);
-    obj.rectangle478:setHeight(40);
-    obj.rectangle478:setColor("#49244F");
-    obj.rectangle478:setName("rectangle478");
+    obj.rectangle460 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle460:setParent(obj.rectangle452);
+    obj.rectangle460:setLeft(80);
+    obj.rectangle460:setTop(295);
+    obj.rectangle460:setWidth(200);
+    obj.rectangle460:setHeight(40);
+    obj.rectangle460:setColor("#49244F");
+    obj.rectangle460:setName("rectangle460");
 
     obj.label201 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label201:setParent(obj.rectangle470);
+    obj.label201:setParent(obj.rectangle452);
     obj.label201:setLeft(85);
     obj.label201:setTop(305);
     obj.label201:setWidth(150);
@@ -10727,23 +10505,23 @@ local function constructNew_frmWeirdWizard()
     obj.label201:setName("label201");
 
     obj.checkBox5 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox5:setParent(obj.rectangle470);
+    obj.checkBox5:setParent(obj.rectangle452);
     obj.checkBox5:setField("Adormecido");
     obj.checkBox5:setLeft(250);
     obj.checkBox5:setTop(307);
     obj.checkBox5:setName("checkBox5");
 
-    obj.rectangle479 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle479:setParent(obj.rectangle470);
-    obj.rectangle479:setLeft(322);
-    obj.rectangle479:setTop(295);
-    obj.rectangle479:setWidth(200);
-    obj.rectangle479:setHeight(40);
-    obj.rectangle479:setColor("#49244F");
-    obj.rectangle479:setName("rectangle479");
+    obj.rectangle461 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle461:setParent(obj.rectangle452);
+    obj.rectangle461:setLeft(322);
+    obj.rectangle461:setTop(295);
+    obj.rectangle461:setWidth(200);
+    obj.rectangle461:setHeight(40);
+    obj.rectangle461:setColor("#49244F");
+    obj.rectangle461:setName("rectangle461");
 
     obj.label202 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label202:setParent(obj.rectangle470);
+    obj.label202:setParent(obj.rectangle452);
     obj.label202:setLeft(327);
     obj.label202:setTop(305);
     obj.label202:setWidth(150);
@@ -10758,23 +10536,23 @@ local function constructNew_frmWeirdWizard()
     obj.label202:setName("label202");
 
     obj.checkBox6 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox6:setParent(obj.rectangle470);
+    obj.checkBox6:setParent(obj.rectangle452);
     obj.checkBox6:setField("Amaldicoado");
     obj.checkBox6:setLeft(492);
     obj.checkBox6:setTop(307);
     obj.checkBox6:setName("checkBox6");
 
-    obj.rectangle480 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle480:setParent(obj.rectangle470);
-    obj.rectangle480:setLeft(560);
-    obj.rectangle480:setTop(295);
-    obj.rectangle480:setWidth(200);
-    obj.rectangle480:setHeight(40);
-    obj.rectangle480:setColor("#49244F");
-    obj.rectangle480:setName("rectangle480");
+    obj.rectangle462 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle462:setParent(obj.rectangle452);
+    obj.rectangle462:setLeft(560);
+    obj.rectangle462:setTop(295);
+    obj.rectangle462:setWidth(200);
+    obj.rectangle462:setHeight(40);
+    obj.rectangle462:setColor("#49244F");
+    obj.rectangle462:setName("rectangle462");
 
     obj.label203 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label203:setParent(obj.rectangle470);
+    obj.label203:setParent(obj.rectangle452);
     obj.label203:setLeft(565);
     obj.label203:setTop(305);
     obj.label203:setWidth(150);
@@ -10789,23 +10567,23 @@ local function constructNew_frmWeirdWizard()
     obj.label203:setName("label203");
 
     obj.checkBox7 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox7:setParent(obj.rectangle470);
+    obj.checkBox7:setParent(obj.rectangle452);
     obj.checkBox7:setField("Amedrontado");
     obj.checkBox7:setLeft(730);
     obj.checkBox7:setTop(307);
     obj.checkBox7:setName("checkBox7");
 
-    obj.rectangle481 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle481:setParent(obj.rectangle470);
-    obj.rectangle481:setLeft(80);
-    obj.rectangle481:setTop(355);
-    obj.rectangle481:setWidth(200);
-    obj.rectangle481:setHeight(40);
-    obj.rectangle481:setColor("#49244F");
-    obj.rectangle481:setName("rectangle481");
+    obj.rectangle463 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle463:setParent(obj.rectangle452);
+    obj.rectangle463:setLeft(80);
+    obj.rectangle463:setTop(355);
+    obj.rectangle463:setWidth(200);
+    obj.rectangle463:setHeight(40);
+    obj.rectangle463:setColor("#49244F");
+    obj.rectangle463:setName("rectangle463");
 
     obj.label204 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label204:setParent(obj.rectangle470);
+    obj.label204:setParent(obj.rectangle452);
     obj.label204:setLeft(90);
     obj.label204:setTop(365);
     obj.label204:setWidth(120);
@@ -10820,23 +10598,23 @@ local function constructNew_frmWeirdWizard()
     obj.label204:setName("label204");
 
     obj.checkBox8 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox8:setParent(obj.rectangle470);
+    obj.checkBox8:setParent(obj.rectangle452);
     obj.checkBox8:setField("Atordoado");
     obj.checkBox8:setLeft(250);
     obj.checkBox8:setTop(367);
     obj.checkBox8:setName("checkBox8");
 
-    obj.rectangle482 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle482:setParent(obj.rectangle470);
-    obj.rectangle482:setLeft(322);
-    obj.rectangle482:setTop(355);
-    obj.rectangle482:setWidth(200);
-    obj.rectangle482:setHeight(40);
-    obj.rectangle482:setColor("#49244F");
-    obj.rectangle482:setName("rectangle482");
+    obj.rectangle464 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle464:setParent(obj.rectangle452);
+    obj.rectangle464:setLeft(322);
+    obj.rectangle464:setTop(355);
+    obj.rectangle464:setWidth(200);
+    obj.rectangle464:setHeight(40);
+    obj.rectangle464:setColor("#49244F");
+    obj.rectangle464:setName("rectangle464");
 
     obj.label205 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label205:setParent(obj.rectangle470);
+    obj.label205:setParent(obj.rectangle452);
     obj.label205:setLeft(327);
     obj.label205:setTop(365);
     obj.label205:setWidth(80);
@@ -10851,23 +10629,23 @@ local function constructNew_frmWeirdWizard()
     obj.label205:setName("label205");
 
     obj.checkBox9 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox9:setParent(obj.rectangle470);
+    obj.checkBox9:setParent(obj.rectangle452);
     obj.checkBox9:setField("Caido");
     obj.checkBox9:setLeft(492);
     obj.checkBox9:setTop(367);
     obj.checkBox9:setName("checkBox9");
 
-    obj.rectangle483 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle483:setParent(obj.rectangle470);
-    obj.rectangle483:setLeft(560);
-    obj.rectangle483:setTop(355);
-    obj.rectangle483:setWidth(200);
-    obj.rectangle483:setHeight(40);
-    obj.rectangle483:setColor("#49244F");
-    obj.rectangle483:setName("rectangle483");
+    obj.rectangle465 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle465:setParent(obj.rectangle452);
+    obj.rectangle465:setLeft(560);
+    obj.rectangle465:setTop(355);
+    obj.rectangle465:setWidth(200);
+    obj.rectangle465:setHeight(40);
+    obj.rectangle465:setColor("#49244F");
+    obj.rectangle465:setName("rectangle465");
 
     obj.label206 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label206:setParent(obj.rectangle470);
+    obj.label206:setParent(obj.rectangle452);
     obj.label206:setLeft(560);
     obj.label206:setTop(365);
     obj.label206:setWidth(80);
@@ -10882,23 +10660,23 @@ local function constructNew_frmWeirdWizard()
     obj.label206:setName("label206");
 
     obj.checkBox10 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox10:setParent(obj.rectangle470);
+    obj.checkBox10:setParent(obj.rectangle452);
     obj.checkBox10:setField("Cego");
     obj.checkBox10:setLeft(730);
     obj.checkBox10:setTop(367);
     obj.checkBox10:setName("checkBox10");
 
-    obj.rectangle484 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle484:setParent(obj.rectangle470);
-    obj.rectangle484:setLeft(80);
-    obj.rectangle484:setTop(415);
-    obj.rectangle484:setWidth(200);
-    obj.rectangle484:setHeight(40);
-    obj.rectangle484:setColor("#49244F");
-    obj.rectangle484:setName("rectangle484");
+    obj.rectangle466 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle466:setParent(obj.rectangle452);
+    obj.rectangle466:setLeft(80);
+    obj.rectangle466:setTop(415);
+    obj.rectangle466:setWidth(200);
+    obj.rectangle466:setHeight(40);
+    obj.rectangle466:setColor("#49244F");
+    obj.rectangle466:setName("rectangle466");
 
     obj.label207 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label207:setParent(obj.rectangle470);
+    obj.label207:setParent(obj.rectangle452);
     obj.label207:setLeft(80);
     obj.label207:setTop(425);
     obj.label207:setWidth(120);
@@ -10913,23 +10691,23 @@ local function constructNew_frmWeirdWizard()
     obj.label207:setName("label207");
 
     obj.checkBox11 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox11:setParent(obj.rectangle470);
+    obj.checkBox11:setParent(obj.rectangle452);
     obj.checkBox11:setField("Confuso");
     obj.checkBox11:setLeft(250);
     obj.checkBox11:setTop(427);
     obj.checkBox11:setName("checkBox11");
 
-    obj.rectangle485 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle485:setParent(obj.rectangle470);
-    obj.rectangle485:setLeft(322);
-    obj.rectangle485:setTop(415);
-    obj.rectangle485:setWidth(200);
-    obj.rectangle485:setHeight(40);
-    obj.rectangle485:setColor("#49244F");
-    obj.rectangle485:setName("rectangle485");
+    obj.rectangle467 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle467:setParent(obj.rectangle452);
+    obj.rectangle467:setLeft(322);
+    obj.rectangle467:setTop(415);
+    obj.rectangle467:setWidth(200);
+    obj.rectangle467:setHeight(40);
+    obj.rectangle467:setColor("#49244F");
+    obj.rectangle467:setName("rectangle467");
 
     obj.label208 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label208:setParent(obj.rectangle470);
+    obj.label208:setParent(obj.rectangle452);
     obj.label208:setLeft(332);
     obj.label208:setTop(425);
     obj.label208:setWidth(120);
@@ -10944,23 +10722,23 @@ local function constructNew_frmWeirdWizard()
     obj.label208:setName("label208");
 
     obj.checkBox12 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox12:setParent(obj.rectangle470);
+    obj.checkBox12:setParent(obj.rectangle452);
     obj.checkBox12:setField("Controlado");
     obj.checkBox12:setLeft(492);
     obj.checkBox12:setTop(427);
     obj.checkBox12:setName("checkBox12");
 
-    obj.rectangle486 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle486:setParent(obj.rectangle470);
-    obj.rectangle486:setLeft(560);
-    obj.rectangle486:setTop(415);
-    obj.rectangle486:setWidth(200);
-    obj.rectangle486:setHeight(40);
-    obj.rectangle486:setColor("#49244F");
-    obj.rectangle486:setName("rectangle486");
+    obj.rectangle468 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle468:setParent(obj.rectangle452);
+    obj.rectangle468:setLeft(560);
+    obj.rectangle468:setTop(415);
+    obj.rectangle468:setWidth(200);
+    obj.rectangle468:setHeight(40);
+    obj.rectangle468:setColor("#49244F");
+    obj.rectangle468:setName("rectangle468");
 
     obj.label209 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label209:setParent(obj.rectangle470);
+    obj.label209:setParent(obj.rectangle452);
     obj.label209:setLeft(563);
     obj.label209:setTop(425);
     obj.label209:setWidth(150);
@@ -10975,23 +10753,23 @@ local function constructNew_frmWeirdWizard()
     obj.label209:setName("label209");
 
     obj.checkBox13 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox13:setParent(obj.rectangle470);
+    obj.checkBox13:setParent(obj.rectangle452);
     obj.checkBox13:setField("Enfraquecido");
     obj.checkBox13:setLeft(730);
     obj.checkBox13:setTop(427);
     obj.checkBox13:setName("checkBox13");
 
-    obj.rectangle487 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle487:setParent(obj.rectangle470);
-    obj.rectangle487:setLeft(80);
-    obj.rectangle487:setTop(475);
-    obj.rectangle487:setWidth(200);
-    obj.rectangle487:setHeight(40);
-    obj.rectangle487:setColor("#49244F");
-    obj.rectangle487:setName("rectangle487");
+    obj.rectangle469 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle469:setParent(obj.rectangle452);
+    obj.rectangle469:setLeft(80);
+    obj.rectangle469:setTop(475);
+    obj.rectangle469:setWidth(200);
+    obj.rectangle469:setHeight(40);
+    obj.rectangle469:setColor("#49244F");
+    obj.rectangle469:setName("rectangle469");
 
     obj.label210 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label210:setParent(obj.rectangle470);
+    obj.label210:setParent(obj.rectangle452);
     obj.label210:setLeft(97);
     obj.label210:setTop(485);
     obj.label210:setWidth(120);
@@ -11006,23 +10784,23 @@ local function constructNew_frmWeirdWizard()
     obj.label210:setName("label210");
 
     obj.checkBox14 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox14:setParent(obj.rectangle470);
+    obj.checkBox14:setParent(obj.rectangle452);
     obj.checkBox14:setField("Envenenado");
     obj.checkBox14:setLeft(250);
     obj.checkBox14:setTop(487);
     obj.checkBox14:setName("checkBox14");
 
-    obj.rectangle488 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle488:setParent(obj.rectangle470);
-    obj.rectangle488:setLeft(322);
-    obj.rectangle488:setTop(475);
-    obj.rectangle488:setWidth(200);
-    obj.rectangle488:setHeight(40);
-    obj.rectangle488:setColor("#49244F");
-    obj.rectangle488:setName("rectangle488");
+    obj.rectangle470 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle470:setParent(obj.rectangle452);
+    obj.rectangle470:setLeft(322);
+    obj.rectangle470:setTop(475);
+    obj.rectangle470:setWidth(200);
+    obj.rectangle470:setHeight(40);
+    obj.rectangle470:setColor("#49244F");
+    obj.rectangle470:setName("rectangle470");
 
     obj.label211 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label211:setParent(obj.rectangle470);
+    obj.label211:setParent(obj.rectangle452);
     obj.label211:setLeft(330);
     obj.label211:setTop(485);
     obj.label211:setWidth(80);
@@ -11037,23 +10815,23 @@ local function constructNew_frmWeirdWizard()
     obj.label211:setName("label211");
 
     obj.checkBox15 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox15:setParent(obj.rectangle470);
+    obj.checkBox15:setParent(obj.rectangle452);
     obj.checkBox15:setField("Ferido");
     obj.checkBox15:setLeft(492);
     obj.checkBox15:setTop(487);
     obj.checkBox15:setName("checkBox15");
 
-    obj.rectangle489 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle489:setParent(obj.rectangle470);
-    obj.rectangle489:setLeft(560);
-    obj.rectangle489:setTop(475);
-    obj.rectangle489:setWidth(200);
-    obj.rectangle489:setHeight(40);
-    obj.rectangle489:setColor("#49244F");
-    obj.rectangle489:setName("rectangle489");
+    obj.rectangle471 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle471:setParent(obj.rectangle452);
+    obj.rectangle471:setLeft(560);
+    obj.rectangle471:setTop(475);
+    obj.rectangle471:setWidth(200);
+    obj.rectangle471:setHeight(40);
+    obj.rectangle471:setColor("#49244F");
+    obj.rectangle471:setName("rectangle471");
 
     obj.label212 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label212:setParent(obj.rectangle470);
+    obj.label212:setParent(obj.rectangle452);
     obj.label212:setLeft(567);
     obj.label212:setTop(485);
     obj.label212:setWidth(140);
@@ -11068,23 +10846,23 @@ local function constructNew_frmWeirdWizard()
     obj.label212:setName("label212");
 
     obj.checkBox16 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox16:setParent(obj.rectangle470);
+    obj.checkBox16:setParent(obj.rectangle452);
     obj.checkBox16:setField("Incapacitado");
     obj.checkBox16:setLeft(730);
     obj.checkBox16:setTop(487);
     obj.checkBox16:setName("checkBox16");
 
-    obj.rectangle490 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle490:setParent(obj.rectangle470);
-    obj.rectangle490:setLeft(80);
-    obj.rectangle490:setTop(535);
-    obj.rectangle490:setWidth(200);
-    obj.rectangle490:setHeight(40);
-    obj.rectangle490:setColor("#49244F");
-    obj.rectangle490:setName("rectangle490");
+    obj.rectangle472 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle472:setParent(obj.rectangle452);
+    obj.rectangle472:setLeft(80);
+    obj.rectangle472:setTop(535);
+    obj.rectangle472:setWidth(200);
+    obj.rectangle472:setHeight(40);
+    obj.rectangle472:setColor("#49244F");
+    obj.rectangle472:setName("rectangle472");
 
     obj.label213 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label213:setParent(obj.rectangle470);
+    obj.label213:setParent(obj.rectangle452);
     obj.label213:setLeft(93);
     obj.label213:setTop(545);
     obj.label213:setWidth(120);
@@ -11099,23 +10877,23 @@ local function constructNew_frmWeirdWizard()
     obj.label213:setName("label213");
 
     obj.checkBox17 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox17:setParent(obj.rectangle470);
+    obj.checkBox17:setParent(obj.rectangle452);
     obj.checkBox17:setField("Incendiado");
     obj.checkBox17:setLeft(250);
     obj.checkBox17:setTop(547);
     obj.checkBox17:setName("checkBox17");
 
-    obj.rectangle491 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle491:setParent(obj.rectangle470);
-    obj.rectangle491:setLeft(322);
-    obj.rectangle491:setTop(535);
-    obj.rectangle491:setWidth(200);
-    obj.rectangle491:setHeight(40);
-    obj.rectangle491:setColor("#49244F");
-    obj.rectangle491:setName("rectangle491");
+    obj.rectangle473 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle473:setParent(obj.rectangle452);
+    obj.rectangle473:setLeft(322);
+    obj.rectangle473:setTop(535);
+    obj.rectangle473:setWidth(200);
+    obj.rectangle473:setHeight(40);
+    obj.rectangle473:setColor("#49244F");
+    obj.rectangle473:setName("rectangle473");
 
     obj.label214 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label214:setParent(obj.rectangle470);
+    obj.label214:setParent(obj.rectangle452);
     obj.label214:setLeft(340);
     obj.label214:setTop(545);
     obj.label214:setWidth(120);
@@ -11130,23 +10908,23 @@ local function constructNew_frmWeirdWizard()
     obj.label214:setName("label214");
 
     obj.checkBox18 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox18:setParent(obj.rectangle470);
+    obj.checkBox18:setParent(obj.rectangle452);
     obj.checkBox18:setField("Inconsciente");
     obj.checkBox18:setLeft(492);
     obj.checkBox18:setTop(547);
     obj.checkBox18:setName("checkBox18");
 
-    obj.rectangle492 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle492:setParent(obj.rectangle470);
-    obj.rectangle492:setLeft(560);
-    obj.rectangle492:setTop(535);
-    obj.rectangle492:setWidth(200);
-    obj.rectangle492:setHeight(40);
-    obj.rectangle492:setColor("#49244F");
-    obj.rectangle492:setName("rectangle492");
+    obj.rectangle474 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle474:setParent(obj.rectangle452);
+    obj.rectangle474:setLeft(560);
+    obj.rectangle474:setTop(535);
+    obj.rectangle474:setWidth(200);
+    obj.rectangle474:setHeight(40);
+    obj.rectangle474:setColor("#49244F");
+    obj.rectangle474:setName("rectangle474");
 
     obj.label215 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label215:setParent(obj.rectangle470);
+    obj.label215:setParent(obj.rectangle452);
     obj.label215:setLeft(570);
     obj.label215:setTop(545);
     obj.label215:setWidth(70);
@@ -11161,23 +10939,23 @@ local function constructNew_frmWeirdWizard()
     obj.label215:setName("label215");
 
     obj.checkBox19 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox19:setParent(obj.rectangle470);
+    obj.checkBox19:setParent(obj.rectangle452);
     obj.checkBox19:setField("Lento");
     obj.checkBox19:setLeft(730);
     obj.checkBox19:setTop(547);
     obj.checkBox19:setName("checkBox19");
 
-    obj.rectangle493 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle493:setParent(obj.rectangle470);
-    obj.rectangle493:setLeft(80);
-    obj.rectangle493:setTop(595);
-    obj.rectangle493:setWidth(200);
-    obj.rectangle493:setHeight(40);
-    obj.rectangle493:setColor("#49244F");
-    obj.rectangle493:setName("rectangle493");
+    obj.rectangle475 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle475:setParent(obj.rectangle452);
+    obj.rectangle475:setLeft(80);
+    obj.rectangle475:setTop(595);
+    obj.rectangle475:setWidth(200);
+    obj.rectangle475:setHeight(40);
+    obj.rectangle475:setColor("#49244F");
+    obj.rectangle475:setName("rectangle475");
 
     obj.label216 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label216:setParent(obj.rectangle470);
+    obj.label216:setParent(obj.rectangle452);
     obj.label216:setLeft(95);
     obj.label216:setTop(605);
     obj.label216:setWidth(120);
@@ -11192,23 +10970,23 @@ local function constructNew_frmWeirdWizard()
     obj.label216:setName("label216");
 
     obj.checkBox20 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox20:setParent(obj.rectangle470);
+    obj.checkBox20:setParent(obj.rectangle452);
     obj.checkBox20:setField("Restringido");
     obj.checkBox20:setLeft(250);
     obj.checkBox20:setTop(607);
     obj.checkBox20:setName("checkBox20");
 
-    obj.rectangle494 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle494:setParent(obj.rectangle470);
-    obj.rectangle494:setLeft(322);
-    obj.rectangle494:setTop(595);
-    obj.rectangle494:setWidth(200);
-    obj.rectangle494:setHeight(40);
-    obj.rectangle494:setColor("#49244F");
-    obj.rectangle494:setName("rectangle494");
+    obj.rectangle476 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle476:setParent(obj.rectangle452);
+    obj.rectangle476:setLeft(322);
+    obj.rectangle476:setTop(595);
+    obj.rectangle476:setWidth(200);
+    obj.rectangle476:setHeight(40);
+    obj.rectangle476:setColor("#49244F");
+    obj.rectangle476:setName("rectangle476");
 
     obj.label217 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label217:setParent(obj.rectangle470);
+    obj.label217:setParent(obj.rectangle452);
     obj.label217:setLeft(334);
     obj.label217:setTop(605);
     obj.label217:setWidth(70);
@@ -11223,23 +11001,23 @@ local function constructNew_frmWeirdWizard()
     obj.label217:setName("label217");
 
     obj.checkBox21 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox21:setParent(obj.rectangle470);
+    obj.checkBox21:setParent(obj.rectangle452);
     obj.checkBox21:setField("Surdo");
     obj.checkBox21:setLeft(492);
     obj.checkBox21:setTop(607);
     obj.checkBox21:setName("checkBox21");
 
-    obj.rectangle495 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle495:setParent(obj.rectangle470);
-    obj.rectangle495:setLeft(560);
-    obj.rectangle495:setTop(595);
-    obj.rectangle495:setWidth(200);
-    obj.rectangle495:setHeight(40);
-    obj.rectangle495:setColor("#49244F");
-    obj.rectangle495:setName("rectangle495");
+    obj.rectangle477 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle477:setParent(obj.rectangle452);
+    obj.rectangle477:setLeft(560);
+    obj.rectangle477:setTop(595);
+    obj.rectangle477:setWidth(200);
+    obj.rectangle477:setHeight(40);
+    obj.rectangle477:setColor("#49244F");
+    obj.rectangle477:setName("rectangle477");
 
     obj.label218 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label218:setParent(obj.rectangle470);
+    obj.label218:setParent(obj.rectangle452);
     obj.label218:setLeft(573);
     obj.label218:setTop(605);
     obj.label218:setWidth(110);
@@ -11254,119 +11032,110 @@ local function constructNew_frmWeirdWizard()
     obj.label218:setName("label218");
 
     obj.checkBox22 = GUI.fromHandle(_obj_newObject("checkBox"));
-    obj.checkBox22:setParent(obj.rectangle470);
+    obj.checkBox22:setParent(obj.rectangle452);
     obj.checkBox22:setField("Vulnerável");
     obj.checkBox22:setLeft(730);
     obj.checkBox22:setTop(607);
     obj.checkBox22:setName("checkBox22");
 
-    obj.rectangle496 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle496:setParent(obj.rectangle470);
-    obj.rectangle496:setLeft(65);
-    obj.rectangle496:setTop(690);
-    obj.rectangle496:setWidth(712);
-    obj.rectangle496:setHeight(1);
-    obj.rectangle496:setColor("#49244F");
-    obj.rectangle496:setName("rectangle496");
+    obj.rectangle478 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle478:setParent(obj.rectangle452);
+    obj.rectangle478:setLeft(65);
+    obj.rectangle478:setTop(690);
+    obj.rectangle478:setWidth(712);
+    obj.rectangle478:setHeight(1);
+    obj.rectangle478:setColor("#49244F");
+    obj.rectangle478:setName("rectangle478");
 
-    obj.rectangle497 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle497:setParent(obj.rectangle470);
-    obj.rectangle497:setLeft(65);
-    obj.rectangle497:setTop(695);
-    obj.rectangle497:setWidth(712);
-    obj.rectangle497:setHeight(1);
-    obj.rectangle497:setColor("#49244F");
-    obj.rectangle497:setName("rectangle497");
+    obj.rectangle479 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle479:setParent(obj.rectangle452);
+    obj.rectangle479:setLeft(65);
+    obj.rectangle479:setTop(695);
+    obj.rectangle479:setWidth(712);
+    obj.rectangle479:setHeight(1);
+    obj.rectangle479:setColor("#49244F");
+    obj.rectangle479:setName("rectangle479");
 
-    obj.rectangle498 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle498:setParent(obj.rectangle470);
-    obj.rectangle498:setLeft(65);
-    obj.rectangle498:setTop(700);
-    obj.rectangle498:setWidth(712);
-    obj.rectangle498:setHeight(1);
-    obj.rectangle498:setColor("#49244F");
-    obj.rectangle498:setName("rectangle498");
+    obj.rectangle480 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle480:setParent(obj.rectangle452);
+    obj.rectangle480:setLeft(65);
+    obj.rectangle480:setTop(700);
+    obj.rectangle480:setWidth(712);
+    obj.rectangle480:setHeight(1);
+    obj.rectangle480:setColor("#49244F");
+    obj.rectangle480:setName("rectangle480");
 
-    obj.rectangle499 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle499:setParent(obj.rectangle470);
-    obj.rectangle499:setLeft(65);
-    obj.rectangle499:setTop(705);
-    obj.rectangle499:setWidth(712);
-    obj.rectangle499:setHeight(1);
-    obj.rectangle499:setColor("#49244F");
-    obj.rectangle499:setName("rectangle499");
+    obj.rectangle481 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle481:setParent(obj.rectangle452);
+    obj.rectangle481:setLeft(65);
+    obj.rectangle481:setTop(705);
+    obj.rectangle481:setWidth(712);
+    obj.rectangle481:setHeight(1);
+    obj.rectangle481:setColor("#49244F");
+    obj.rectangle481:setName("rectangle481");
 
-    obj.rectangle500 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle500:setParent(obj.rectangle470);
-    obj.rectangle500:setLeft(65);
-    obj.rectangle500:setTop(710);
-    obj.rectangle500:setWidth(712);
-    obj.rectangle500:setHeight(1);
-    obj.rectangle500:setColor("#49244F");
-    obj.rectangle500:setName("rectangle500");
+    obj.rectangle482 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle482:setParent(obj.rectangle452);
+    obj.rectangle482:setLeft(65);
+    obj.rectangle482:setTop(710);
+    obj.rectangle482:setWidth(712);
+    obj.rectangle482:setHeight(1);
+    obj.rectangle482:setColor("#49244F");
+    obj.rectangle482:setName("rectangle482");
 
-    obj.rectangle501 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle501:setParent(obj.rectangle470);
-    obj.rectangle501:setLeft(65);
-    obj.rectangle501:setTop(715);
-    obj.rectangle501:setWidth(712);
-    obj.rectangle501:setHeight(1);
-    obj.rectangle501:setColor("#49244F");
-    obj.rectangle501:setName("rectangle501");
+    obj.rectangle483 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle483:setParent(obj.rectangle452);
+    obj.rectangle483:setLeft(65);
+    obj.rectangle483:setTop(715);
+    obj.rectangle483:setWidth(712);
+    obj.rectangle483:setHeight(1);
+    obj.rectangle483:setColor("#49244F");
+    obj.rectangle483:setName("rectangle483");
 
-    obj.rectangle502 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle502:setParent(obj.rectangle470);
-    obj.rectangle502:setLeft(65);
-    obj.rectangle502:setTop(720);
-    obj.rectangle502:setWidth(712);
-    obj.rectangle502:setHeight(1);
-    obj.rectangle502:setColor("#49244F");
-    obj.rectangle502:setName("rectangle502");
+    obj.rectangle484 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle484:setParent(obj.rectangle452);
+    obj.rectangle484:setLeft(65);
+    obj.rectangle484:setTop(720);
+    obj.rectangle484:setWidth(712);
+    obj.rectangle484:setHeight(1);
+    obj.rectangle484:setColor("#49244F");
+    obj.rectangle484:setName("rectangle484");
 
-    obj.rectangle503 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle503:setParent(obj.rectangle470);
-    obj.rectangle503:setLeft(65);
-    obj.rectangle503:setTop(725);
-    obj.rectangle503:setWidth(712);
-    obj.rectangle503:setHeight(1);
-    obj.rectangle503:setColor("#49244F");
-    obj.rectangle503:setName("rectangle503");
+    obj.rectangle485 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle485:setParent(obj.rectangle452);
+    obj.rectangle485:setLeft(65);
+    obj.rectangle485:setTop(725);
+    obj.rectangle485:setWidth(712);
+    obj.rectangle485:setHeight(1);
+    obj.rectangle485:setColor("#49244F");
+    obj.rectangle485:setName("rectangle485");
 
-    obj.rectangle504 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle504:setParent(obj.rectangle470);
-    obj.rectangle504:setLeft(65);
-    obj.rectangle504:setTop(730);
-    obj.rectangle504:setWidth(712);
-    obj.rectangle504:setHeight(1);
-    obj.rectangle504:setColor("#49244F");
-    obj.rectangle504:setName("rectangle504");
+    obj.rectangle486 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle486:setParent(obj.rectangle452);
+    obj.rectangle486:setLeft(65);
+    obj.rectangle486:setTop(730);
+    obj.rectangle486:setWidth(712);
+    obj.rectangle486:setHeight(1);
+    obj.rectangle486:setColor("#49244F");
+    obj.rectangle486:setName("rectangle486");
 
-    obj.rectangle505 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle505:setParent(obj.rectangle470);
-    obj.rectangle505:setLeft(65);
-    obj.rectangle505:setTop(735);
-    obj.rectangle505:setWidth(712);
-    obj.rectangle505:setHeight(1);
-    obj.rectangle505:setColor("#49244F");
-    obj.rectangle505:setName("rectangle505");
+    obj.rectangle487 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle487:setParent(obj.rectangle452);
+    obj.rectangle487:setLeft(65);
+    obj.rectangle487:setTop(735);
+    obj.rectangle487:setWidth(712);
+    obj.rectangle487:setHeight(1);
+    obj.rectangle487:setColor("#49244F");
+    obj.rectangle487:setName("rectangle487");
 
-    obj.image53 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image53:setParent(obj.rectangle470);
-    obj.image53:setLeft(83);
-    obj.image53:setTop(755);
-    obj.image53:setWidth(672);
-    obj.image53:setHeight(65);
-    obj.image53:setSRC("/img/dragao.png");
-    obj.image53:setName("image53");
-
-    obj.image54 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image54:setParent(obj.tab7);
-    obj.image54:setLeft(69);
-    obj.image54:setTop(875);
-    obj.image54:setWidth(676);
-    obj.image54:setHeight(194);
-    obj.image54:setSRC("/img/logo.png");
-    obj.image54:setName("image54");
+    obj.image47 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image47:setParent(obj.rectangle452);
+    obj.image47:setLeft(83);
+    obj.image47:setTop(755);
+    obj.image47:setWidth(672);
+    obj.image47:setHeight(65);
+    obj.image47:setSRC("/img/dragao.png");
+    obj.image47:setName("image47");
 
     obj.tab8 = GUI.fromHandle(_obj_newObject("tab"));
     obj.tab8:setParent(obj.tabControl1);
@@ -11375,43 +11144,40 @@ local function constructNew_frmWeirdWizard()
 
     obj.layout12 = GUI.fromHandle(_obj_newObject("layout"));
     obj.layout12:setParent(obj.tab8);
-    obj.layout12:setLeft(0);
-    obj.layout12:setTop(10);
-    obj.layout12:setWidth(799);
-    obj.layout12:setHeight(825);
+    obj.layout12:setAlign("client");
     obj.layout12:setName("layout12");
 
-    obj.rectangle506 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle506:setParent(obj.layout12);
-    obj.rectangle506:setLeft(0);
-    obj.rectangle506:setTop(0);
-    obj.rectangle506:setWidth(799);
-    obj.rectangle506:setHeight(825);
-    obj.rectangle506:setColor("#D5D5D5");
-    obj.rectangle506:setName("rectangle506");
+    obj.rectangle488 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle488:setParent(obj.layout12);
+    obj.rectangle488:setLeft(0);
+    obj.rectangle488:setTop(0);
+    obj.rectangle488:setWidth(799);
+    obj.rectangle488:setHeight(825);
+    obj.rectangle488:setColor("#D5D5D5");
+    obj.rectangle488:setName("rectangle488");
 
-    obj.rectangle507 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle507:setParent(obj.rectangle506);
-    obj.rectangle507:setLeft(60);
-    obj.rectangle507:setTop(55);
-    obj.rectangle507:setWidth(720);
-    obj.rectangle507:setHeight(755);
-    obj.rectangle507:setColor("#D5D5D5");
-    obj.rectangle507:setStrokeColor("#49244F");
-    obj.rectangle507:setStrokeSize(3);
-    obj.rectangle507:setName("rectangle507");
+    obj.rectangle489 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle489:setParent(obj.rectangle488);
+    obj.rectangle489:setLeft(60);
+    obj.rectangle489:setTop(55);
+    obj.rectangle489:setWidth(720);
+    obj.rectangle489:setHeight(755);
+    obj.rectangle489:setColor("#D5D5D5");
+    obj.rectangle489:setStrokeColor("#49244F");
+    obj.rectangle489:setStrokeSize(3);
+    obj.rectangle489:setName("rectangle489");
 
-    obj.rectangle508 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle508:setParent(obj.rectangle506);
-    obj.rectangle508:setLeft(60);
-    obj.rectangle508:setTop(55);
-    obj.rectangle508:setWidth(720);
-    obj.rectangle508:setHeight(50);
-    obj.rectangle508:setColor("#49244F");
-    obj.rectangle508:setName("rectangle508");
+    obj.rectangle490 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle490:setParent(obj.rectangle488);
+    obj.rectangle490:setLeft(60);
+    obj.rectangle490:setTop(55);
+    obj.rectangle490:setWidth(720);
+    obj.rectangle490:setHeight(50);
+    obj.rectangle490:setColor("#49244F");
+    obj.rectangle490:setName("rectangle490");
 
     obj.label219 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label219:setParent(obj.rectangle506);
+    obj.label219:setParent(obj.rectangle488);
     obj.label219:setLeft(180);
     obj.label219:setTop(70);
     obj.label219:setWidth(480);
@@ -11423,7 +11189,7 @@ local function constructNew_frmWeirdWizard()
     obj.label219:setName("label219");
 
     obj.textEditor22 = GUI.fromHandle(_obj_newObject("textEditor"));
-    obj.textEditor22:setParent(obj.rectangle506);
+    obj.textEditor22:setParent(obj.rectangle488);
     obj.textEditor22:setLeft(68);
     obj.textEditor22:setTop(100);
     obj.textEditor22:setWidth(710);
@@ -11434,286 +11200,281 @@ local function constructNew_frmWeirdWizard()
     obj.textEditor22:setField("Anotacoes");
     obj.textEditor22:setName("textEditor22");
 
-    obj.image55 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image55:setParent(obj.layout12);
-    obj.image55:setLeft(0);
-    obj.image55:setTop(0);
-    obj.image55:setWidth(799);
-    obj.image55:setHeight(825);
-    obj.image55:setSRC("/img/borda.png");
-    obj.image55:setName("image55");
-
-    obj.image56 = GUI.fromHandle(_obj_newObject("image"));
-    obj.image56:setParent(obj.tab8);
-    obj.image56:setLeft(69);
-    obj.image56:setTop(875);
-    obj.image56:setWidth(676);
-    obj.image56:setHeight(194);
-    obj.image56:setSRC("/img/logo.png");
-    obj.image56:setName("image56");
+    obj.image48 = GUI.fromHandle(_obj_newObject("image"));
+    obj.image48:setParent(obj.layout12);
+    obj.image48:setLeft(0);
+    obj.image48:setTop(0);
+    obj.image48:setWidth(799);
+    obj.image48:setHeight(825);
+    obj.image48:setSRC("/img/borda.png");
+    obj.image48:setName("image48");
 
     obj.popFrmPrincipal = GUI.fromHandle(_obj_newObject("popup"));
     obj.popFrmPrincipal:setParent(obj);
     obj.popFrmPrincipal:setName("popFrmPrincipal");
-    obj.popFrmPrincipal:setWidth(791);
-    obj.popFrmPrincipal:setHeight(745);
+    obj.popFrmPrincipal:setAlign("client");
+
+    obj.scrollBox6 = GUI.fromHandle(_obj_newObject("scrollBox"));
+    obj.scrollBox6:setParent(obj.popFrmPrincipal);
+    obj.scrollBox6:setAlign("client");
+    obj.scrollBox6:setName("scrollBox6");
+
+    obj.rectangle491 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle491:setParent(obj.scrollBox6);
+    obj.rectangle491:setColor("#D5D5D5");
+    obj.rectangle491:setWidth(781);
+    obj.rectangle491:setHeight(735);
+    obj.rectangle491:setLeft(5);
+    obj.rectangle491:setTop(5);
+    obj.rectangle491:setXradius(10);
+    obj.rectangle491:setYradius(10);
+    obj.rectangle491:setCornerType("round");
+    obj.rectangle491:setName("rectangle491");
+
+    obj.rectangle492 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle492:setParent(obj.scrollBox6);
+    obj.rectangle492:setLeft(395);
+    obj.rectangle492:setTop(70);
+    obj.rectangle492:setWidth(1);
+    obj.rectangle492:setHeight(600);
+    obj.rectangle492:setColor("#49244F");
+    obj.rectangle492:setName("rectangle492");
+
+    obj.rectangle493 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle493:setParent(obj.scrollBox6);
+    obj.rectangle493:setLeft(401);
+    obj.rectangle493:setTop(455);
+    obj.rectangle493:setWidth(380);
+    obj.rectangle493:setHeight(210);
+    obj.rectangle493:setColor("#49244F");
+    obj.rectangle493:setName("rectangle493");
+
+    obj.rectangle494 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle494:setParent(obj.scrollBox6);
+    obj.rectangle494:setLeft(590);
+    obj.rectangle494:setTop(455);
+    obj.rectangle494:setWidth(3);
+    obj.rectangle494:setHeight(210);
+    obj.rectangle494:setColor("#D5D5D5");
+    obj.rectangle494:setName("rectangle494");
+
+    obj.rectangle495 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle495:setParent(obj.scrollBox6);
+    obj.rectangle495:setLeft(590);
+    obj.rectangle495:setTop(465);
+    obj.rectangle495:setWidth(190);
+    obj.rectangle495:setHeight(1);
+    obj.rectangle495:setColor("#D5D5D5");
+    obj.rectangle495:setName("rectangle495");
+
+    obj.rectangle496 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle496:setParent(obj.scrollBox6);
+    obj.rectangle496:setLeft(590);
+    obj.rectangle496:setTop(475);
+    obj.rectangle496:setWidth(190);
+    obj.rectangle496:setHeight(1);
+    obj.rectangle496:setColor("#D5D5D5");
+    obj.rectangle496:setName("rectangle496");
+
+    obj.rectangle497 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle497:setParent(obj.scrollBox6);
+    obj.rectangle497:setLeft(590);
+    obj.rectangle497:setTop(485);
+    obj.rectangle497:setWidth(190);
+    obj.rectangle497:setHeight(1);
+    obj.rectangle497:setColor("#D5D5D5");
+    obj.rectangle497:setName("rectangle497");
+
+    obj.rectangle498 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle498:setParent(obj.scrollBox6);
+    obj.rectangle498:setLeft(590);
+    obj.rectangle498:setTop(495);
+    obj.rectangle498:setWidth(190);
+    obj.rectangle498:setHeight(1);
+    obj.rectangle498:setColor("#D5D5D5");
+    obj.rectangle498:setName("rectangle498");
+
+    obj.rectangle499 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle499:setParent(obj.scrollBox6);
+    obj.rectangle499:setLeft(590);
+    obj.rectangle499:setTop(505);
+    obj.rectangle499:setWidth(190);
+    obj.rectangle499:setHeight(1);
+    obj.rectangle499:setColor("#D5D5D5");
+    obj.rectangle499:setName("rectangle499");
+
+    obj.rectangle500 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle500:setParent(obj.scrollBox6);
+    obj.rectangle500:setLeft(590);
+    obj.rectangle500:setTop(515);
+    obj.rectangle500:setWidth(190);
+    obj.rectangle500:setHeight(1);
+    obj.rectangle500:setColor("#D5D5D5");
+    obj.rectangle500:setName("rectangle500");
+
+    obj.rectangle501 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle501:setParent(obj.scrollBox6);
+    obj.rectangle501:setLeft(590);
+    obj.rectangle501:setTop(525);
+    obj.rectangle501:setWidth(190);
+    obj.rectangle501:setHeight(1);
+    obj.rectangle501:setColor("#D5D5D5");
+    obj.rectangle501:setName("rectangle501");
+
+    obj.rectangle502 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle502:setParent(obj.scrollBox6);
+    obj.rectangle502:setLeft(590);
+    obj.rectangle502:setTop(535);
+    obj.rectangle502:setWidth(190);
+    obj.rectangle502:setHeight(1);
+    obj.rectangle502:setColor("#D5D5D5");
+    obj.rectangle502:setName("rectangle502");
+
+    obj.rectangle503 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle503:setParent(obj.scrollBox6);
+    obj.rectangle503:setLeft(590);
+    obj.rectangle503:setTop(545);
+    obj.rectangle503:setWidth(190);
+    obj.rectangle503:setHeight(1);
+    obj.rectangle503:setColor("#D5D5D5");
+    obj.rectangle503:setName("rectangle503");
+
+    obj.rectangle504 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle504:setParent(obj.scrollBox6);
+    obj.rectangle504:setLeft(590);
+    obj.rectangle504:setTop(555);
+    obj.rectangle504:setWidth(190);
+    obj.rectangle504:setHeight(1);
+    obj.rectangle504:setColor("#D5D5D5");
+    obj.rectangle504:setName("rectangle504");
+
+    obj.rectangle505 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle505:setParent(obj.scrollBox6);
+    obj.rectangle505:setLeft(590);
+    obj.rectangle505:setTop(565);
+    obj.rectangle505:setWidth(190);
+    obj.rectangle505:setHeight(1);
+    obj.rectangle505:setColor("#D5D5D5");
+    obj.rectangle505:setName("rectangle505");
+
+    obj.rectangle506 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle506:setParent(obj.scrollBox6);
+    obj.rectangle506:setLeft(590);
+    obj.rectangle506:setTop(575);
+    obj.rectangle506:setWidth(190);
+    obj.rectangle506:setHeight(1);
+    obj.rectangle506:setColor("#D5D5D5");
+    obj.rectangle506:setName("rectangle506");
+
+    obj.rectangle507 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle507:setParent(obj.scrollBox6);
+    obj.rectangle507:setLeft(590);
+    obj.rectangle507:setTop(585);
+    obj.rectangle507:setWidth(190);
+    obj.rectangle507:setHeight(1);
+    obj.rectangle507:setColor("#D5D5D5");
+    obj.rectangle507:setName("rectangle507");
+
+    obj.rectangle508 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle508:setParent(obj.scrollBox6);
+    obj.rectangle508:setLeft(590);
+    obj.rectangle508:setTop(595);
+    obj.rectangle508:setWidth(190);
+    obj.rectangle508:setHeight(1);
+    obj.rectangle508:setColor("#D5D5D5");
+    obj.rectangle508:setName("rectangle508");
 
     obj.rectangle509 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle509:setParent(obj.popFrmPrincipal);
+    obj.rectangle509:setParent(obj.scrollBox6);
+    obj.rectangle509:setLeft(590);
+    obj.rectangle509:setTop(605);
+    obj.rectangle509:setWidth(190);
+    obj.rectangle509:setHeight(1);
     obj.rectangle509:setColor("#D5D5D5");
-    obj.rectangle509:setWidth(781);
-    obj.rectangle509:setHeight(735);
-    obj.rectangle509:setLeft(5);
-    obj.rectangle509:setTop(5);
-    obj.rectangle509:setXradius(10);
-    obj.rectangle509:setYradius(10);
-    obj.rectangle509:setCornerType("round");
     obj.rectangle509:setName("rectangle509");
 
     obj.rectangle510 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle510:setParent(obj.popFrmPrincipal);
-    obj.rectangle510:setLeft(395);
-    obj.rectangle510:setTop(70);
-    obj.rectangle510:setWidth(1);
-    obj.rectangle510:setHeight(600);
-    obj.rectangle510:setColor("#49244F");
+    obj.rectangle510:setParent(obj.scrollBox6);
+    obj.rectangle510:setLeft(590);
+    obj.rectangle510:setTop(615);
+    obj.rectangle510:setWidth(190);
+    obj.rectangle510:setHeight(1);
+    obj.rectangle510:setColor("#D5D5D5");
     obj.rectangle510:setName("rectangle510");
 
     obj.rectangle511 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle511:setParent(obj.popFrmPrincipal);
-    obj.rectangle511:setLeft(401);
-    obj.rectangle511:setTop(455);
-    obj.rectangle511:setWidth(380);
-    obj.rectangle511:setHeight(210);
-    obj.rectangle511:setColor("#49244F");
+    obj.rectangle511:setParent(obj.scrollBox6);
+    obj.rectangle511:setLeft(590);
+    obj.rectangle511:setTop(625);
+    obj.rectangle511:setWidth(190);
+    obj.rectangle511:setHeight(1);
+    obj.rectangle511:setColor("#D5D5D5");
     obj.rectangle511:setName("rectangle511");
 
     obj.rectangle512 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle512:setParent(obj.popFrmPrincipal);
+    obj.rectangle512:setParent(obj.scrollBox6);
     obj.rectangle512:setLeft(590);
-    obj.rectangle512:setTop(455);
-    obj.rectangle512:setWidth(3);
-    obj.rectangle512:setHeight(210);
+    obj.rectangle512:setTop(635);
+    obj.rectangle512:setWidth(190);
+    obj.rectangle512:setHeight(1);
     obj.rectangle512:setColor("#D5D5D5");
     obj.rectangle512:setName("rectangle512");
 
     obj.rectangle513 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle513:setParent(obj.popFrmPrincipal);
+    obj.rectangle513:setParent(obj.scrollBox6);
     obj.rectangle513:setLeft(590);
-    obj.rectangle513:setTop(465);
+    obj.rectangle513:setTop(645);
     obj.rectangle513:setWidth(190);
     obj.rectangle513:setHeight(1);
     obj.rectangle513:setColor("#D5D5D5");
     obj.rectangle513:setName("rectangle513");
 
     obj.rectangle514 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle514:setParent(obj.popFrmPrincipal);
+    obj.rectangle514:setParent(obj.scrollBox6);
     obj.rectangle514:setLeft(590);
-    obj.rectangle514:setTop(475);
+    obj.rectangle514:setTop(655);
     obj.rectangle514:setWidth(190);
     obj.rectangle514:setHeight(1);
     obj.rectangle514:setColor("#D5D5D5");
     obj.rectangle514:setName("rectangle514");
 
     obj.rectangle515 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle515:setParent(obj.popFrmPrincipal);
-    obj.rectangle515:setLeft(590);
-    obj.rectangle515:setTop(485);
-    obj.rectangle515:setWidth(190);
-    obj.rectangle515:setHeight(1);
+    obj.rectangle515:setParent(obj.scrollBox6);
+    obj.rectangle515:setLeft(622);
+    obj.rectangle515:setTop(336);
+    obj.rectangle515:setWidth(130);
+    obj.rectangle515:setHeight(230);
     obj.rectangle515:setColor("#D5D5D5");
+    obj.rectangle515:setXradius(170);
+    obj.rectangle515:setYradius(170);
+    obj.rectangle515:setCornerType("bevel");
     obj.rectangle515:setName("rectangle515");
 
     obj.rectangle516 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle516:setParent(obj.popFrmPrincipal);
-    obj.rectangle516:setLeft(590);
-    obj.rectangle516:setTop(495);
-    obj.rectangle516:setWidth(190);
+    obj.rectangle516:setParent(obj.scrollBox6);
+    obj.rectangle516:setLeft(401);
+    obj.rectangle516:setTop(445);
+    obj.rectangle516:setWidth(380);
     obj.rectangle516:setHeight(1);
-    obj.rectangle516:setColor("#D5D5D5");
+    obj.rectangle516:setColor("#49244F");
     obj.rectangle516:setName("rectangle516");
 
     obj.rectangle517 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle517:setParent(obj.popFrmPrincipal);
-    obj.rectangle517:setLeft(590);
-    obj.rectangle517:setTop(505);
-    obj.rectangle517:setWidth(190);
-    obj.rectangle517:setHeight(1);
-    obj.rectangle517:setColor("#D5D5D5");
+    obj.rectangle517:setParent(obj.scrollBox6);
+    obj.rectangle517:setLeft(10);
+    obj.rectangle517:setTop(680);
+    obj.rectangle517:setColor("#49244F");
+    obj.rectangle517:setWidth(771);
+    obj.rectangle517:setHeight(55);
+    obj.rectangle517:setXradius(5);
+    obj.rectangle517:setYradius(5);
+    obj.rectangle517:setHitTest(true);
+    obj.rectangle517:setCursor("handPoint");
+    obj.rectangle517:setHint("Salvar Alterações");
     obj.rectangle517:setName("rectangle517");
 
-    obj.rectangle518 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle518:setParent(obj.popFrmPrincipal);
-    obj.rectangle518:setLeft(590);
-    obj.rectangle518:setTop(515);
-    obj.rectangle518:setWidth(190);
-    obj.rectangle518:setHeight(1);
-    obj.rectangle518:setColor("#D5D5D5");
-    obj.rectangle518:setName("rectangle518");
-
-    obj.rectangle519 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle519:setParent(obj.popFrmPrincipal);
-    obj.rectangle519:setLeft(590);
-    obj.rectangle519:setTop(525);
-    obj.rectangle519:setWidth(190);
-    obj.rectangle519:setHeight(1);
-    obj.rectangle519:setColor("#D5D5D5");
-    obj.rectangle519:setName("rectangle519");
-
-    obj.rectangle520 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle520:setParent(obj.popFrmPrincipal);
-    obj.rectangle520:setLeft(590);
-    obj.rectangle520:setTop(535);
-    obj.rectangle520:setWidth(190);
-    obj.rectangle520:setHeight(1);
-    obj.rectangle520:setColor("#D5D5D5");
-    obj.rectangle520:setName("rectangle520");
-
-    obj.rectangle521 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle521:setParent(obj.popFrmPrincipal);
-    obj.rectangle521:setLeft(590);
-    obj.rectangle521:setTop(545);
-    obj.rectangle521:setWidth(190);
-    obj.rectangle521:setHeight(1);
-    obj.rectangle521:setColor("#D5D5D5");
-    obj.rectangle521:setName("rectangle521");
-
-    obj.rectangle522 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle522:setParent(obj.popFrmPrincipal);
-    obj.rectangle522:setLeft(590);
-    obj.rectangle522:setTop(555);
-    obj.rectangle522:setWidth(190);
-    obj.rectangle522:setHeight(1);
-    obj.rectangle522:setColor("#D5D5D5");
-    obj.rectangle522:setName("rectangle522");
-
-    obj.rectangle523 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle523:setParent(obj.popFrmPrincipal);
-    obj.rectangle523:setLeft(590);
-    obj.rectangle523:setTop(565);
-    obj.rectangle523:setWidth(190);
-    obj.rectangle523:setHeight(1);
-    obj.rectangle523:setColor("#D5D5D5");
-    obj.rectangle523:setName("rectangle523");
-
-    obj.rectangle524 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle524:setParent(obj.popFrmPrincipal);
-    obj.rectangle524:setLeft(590);
-    obj.rectangle524:setTop(575);
-    obj.rectangle524:setWidth(190);
-    obj.rectangle524:setHeight(1);
-    obj.rectangle524:setColor("#D5D5D5");
-    obj.rectangle524:setName("rectangle524");
-
-    obj.rectangle525 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle525:setParent(obj.popFrmPrincipal);
-    obj.rectangle525:setLeft(590);
-    obj.rectangle525:setTop(585);
-    obj.rectangle525:setWidth(190);
-    obj.rectangle525:setHeight(1);
-    obj.rectangle525:setColor("#D5D5D5");
-    obj.rectangle525:setName("rectangle525");
-
-    obj.rectangle526 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle526:setParent(obj.popFrmPrincipal);
-    obj.rectangle526:setLeft(590);
-    obj.rectangle526:setTop(595);
-    obj.rectangle526:setWidth(190);
-    obj.rectangle526:setHeight(1);
-    obj.rectangle526:setColor("#D5D5D5");
-    obj.rectangle526:setName("rectangle526");
-
-    obj.rectangle527 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle527:setParent(obj.popFrmPrincipal);
-    obj.rectangle527:setLeft(590);
-    obj.rectangle527:setTop(605);
-    obj.rectangle527:setWidth(190);
-    obj.rectangle527:setHeight(1);
-    obj.rectangle527:setColor("#D5D5D5");
-    obj.rectangle527:setName("rectangle527");
-
-    obj.rectangle528 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle528:setParent(obj.popFrmPrincipal);
-    obj.rectangle528:setLeft(590);
-    obj.rectangle528:setTop(615);
-    obj.rectangle528:setWidth(190);
-    obj.rectangle528:setHeight(1);
-    obj.rectangle528:setColor("#D5D5D5");
-    obj.rectangle528:setName("rectangle528");
-
-    obj.rectangle529 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle529:setParent(obj.popFrmPrincipal);
-    obj.rectangle529:setLeft(590);
-    obj.rectangle529:setTop(625);
-    obj.rectangle529:setWidth(190);
-    obj.rectangle529:setHeight(1);
-    obj.rectangle529:setColor("#D5D5D5");
-    obj.rectangle529:setName("rectangle529");
-
-    obj.rectangle530 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle530:setParent(obj.popFrmPrincipal);
-    obj.rectangle530:setLeft(590);
-    obj.rectangle530:setTop(635);
-    obj.rectangle530:setWidth(190);
-    obj.rectangle530:setHeight(1);
-    obj.rectangle530:setColor("#D5D5D5");
-    obj.rectangle530:setName("rectangle530");
-
-    obj.rectangle531 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle531:setParent(obj.popFrmPrincipal);
-    obj.rectangle531:setLeft(590);
-    obj.rectangle531:setTop(645);
-    obj.rectangle531:setWidth(190);
-    obj.rectangle531:setHeight(1);
-    obj.rectangle531:setColor("#D5D5D5");
-    obj.rectangle531:setName("rectangle531");
-
-    obj.rectangle532 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle532:setParent(obj.popFrmPrincipal);
-    obj.rectangle532:setLeft(590);
-    obj.rectangle532:setTop(655);
-    obj.rectangle532:setWidth(190);
-    obj.rectangle532:setHeight(1);
-    obj.rectangle532:setColor("#D5D5D5");
-    obj.rectangle532:setName("rectangle532");
-
-    obj.rectangle533 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle533:setParent(obj.popFrmPrincipal);
-    obj.rectangle533:setLeft(622);
-    obj.rectangle533:setTop(336);
-    obj.rectangle533:setWidth(130);
-    obj.rectangle533:setHeight(230);
-    obj.rectangle533:setColor("#D5D5D5");
-    obj.rectangle533:setXradius(170);
-    obj.rectangle533:setYradius(170);
-    obj.rectangle533:setCornerType("bevel");
-    obj.rectangle533:setName("rectangle533");
-
-    obj.rectangle534 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle534:setParent(obj.popFrmPrincipal);
-    obj.rectangle534:setLeft(401);
-    obj.rectangle534:setTop(445);
-    obj.rectangle534:setWidth(380);
-    obj.rectangle534:setHeight(1);
-    obj.rectangle534:setColor("#49244F");
-    obj.rectangle534:setName("rectangle534");
-
-    obj.rectangle535 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle535:setParent(obj.popFrmPrincipal);
-    obj.rectangle535:setLeft(10);
-    obj.rectangle535:setTop(680);
-    obj.rectangle535:setColor("#49244F");
-    obj.rectangle535:setWidth(771);
-    obj.rectangle535:setHeight(55);
-    obj.rectangle535:setXradius(5);
-    obj.rectangle535:setYradius(5);
-    obj.rectangle535:setHitTest(true);
-    obj.rectangle535:setCursor("handPoint");
-    obj.rectangle535:setHint("Salvar Alterações");
-    obj.rectangle535:setName("rectangle535");
-
     obj.label220 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label220:setParent(obj.popFrmPrincipal);
+    obj.label220:setParent(obj.scrollBox6);
     obj.label220:setLeft(10);
     obj.label220:setTop(680);
     obj.label220:setFontColor("#D5D5D5");
@@ -11726,7 +11487,7 @@ local function constructNew_frmWeirdWizard()
     obj.label220:setName("label220");
 
     obj.label221 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label221:setParent(obj.popFrmPrincipal);
+    obj.label221:setParent(obj.scrollBox6);
     obj.label221:setLeft(330);
     obj.label221:setTop(30);
     obj.label221:setText("PERSONAGEM");
@@ -11736,26 +11497,26 @@ local function constructNew_frmWeirdWizard()
     obj.label221:setFontColor("#49244F");
     obj.label221:setName("label221");
 
-    obj.rectangle536 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle536:setParent(obj.popFrmPrincipal);
-    obj.rectangle536:setLeft(5);
-    obj.rectangle536:setTop(70);
-    obj.rectangle536:setWidth(781);
-    obj.rectangle536:setHeight(3);
-    obj.rectangle536:setColor("#49244F");
-    obj.rectangle536:setName("rectangle536");
+    obj.rectangle518 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle518:setParent(obj.scrollBox6);
+    obj.rectangle518:setLeft(5);
+    obj.rectangle518:setTop(70);
+    obj.rectangle518:setWidth(781);
+    obj.rectangle518:setHeight(3);
+    obj.rectangle518:setColor("#49244F");
+    obj.rectangle518:setName("rectangle518");
 
-    obj.rectangle537 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle537:setParent(obj.popFrmPrincipal);
-    obj.rectangle537:setLeft(5);
-    obj.rectangle537:setTop(670);
-    obj.rectangle537:setWidth(781);
-    obj.rectangle537:setHeight(3);
-    obj.rectangle537:setColor("#49244F");
-    obj.rectangle537:setName("rectangle537");
+    obj.rectangle519 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle519:setParent(obj.scrollBox6);
+    obj.rectangle519:setLeft(5);
+    obj.rectangle519:setTop(670);
+    obj.rectangle519:setWidth(781);
+    obj.rectangle519:setHeight(3);
+    obj.rectangle519:setColor("#49244F");
+    obj.rectangle519:setName("rectangle519");
 
     obj.label222 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label222:setParent(obj.popFrmPrincipal);
+    obj.label222:setParent(obj.scrollBox6);
     obj.label222:setLeft(10);
     obj.label222:setTop(90);
     obj.label222:setText("NOME");
@@ -11764,17 +11525,17 @@ local function constructNew_frmWeirdWizard()
     obj.label222:setFontColor("#49244F");
     obj.label222:setName("label222");
 
-    obj.rectangle538 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle538:setParent(obj.popFrmPrincipal);
-    obj.rectangle538:setLeft(10);
-    obj.rectangle538:setTop(115);
-    obj.rectangle538:setWidth(380);
-    obj.rectangle538:setHeight(50);
-    obj.rectangle538:setColor("#49244F");
-    obj.rectangle538:setName("rectangle538");
+    obj.rectangle520 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle520:setParent(obj.scrollBox6);
+    obj.rectangle520:setLeft(10);
+    obj.rectangle520:setTop(115);
+    obj.rectangle520:setWidth(380);
+    obj.rectangle520:setHeight(50);
+    obj.rectangle520:setColor("#49244F");
+    obj.rectangle520:setName("rectangle520");
 
     obj.edit183 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit183:setParent(obj.popFrmPrincipal);
+    obj.edit183:setParent(obj.scrollBox6);
     obj.edit183:setField("frmNome");
     obj.edit183:setLeft(10);
     obj.edit183:setTop(115);
@@ -11784,7 +11545,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit183:setName("edit183");
 
     obj.label223 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label223:setParent(obj.popFrmPrincipal);
+    obj.label223:setParent(obj.scrollBox6);
     obj.label223:setLeft(280);
     obj.label223:setTop(130);
     obj.label223:setText("NÍVEL");
@@ -11792,22 +11553,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label223, "fontStyle", "bold");
     obj.label223:setName("label223");
 
-    obj.rectangle539 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle539:setParent(obj.popFrmPrincipal);
-    obj.rectangle539:setLeft(340);
-    obj.rectangle539:setTop(118);
-    obj.rectangle539:setWidth(45);
-    obj.rectangle539:setHeight(45);
-    obj.rectangle539:setColor("#D5D5D5");
-    obj.rectangle539:setXradius(20);
-    obj.rectangle539:setYradius(20);
-    obj.rectangle539:setCornerType("round");
-    obj.rectangle539:setStrokeColor("#49244F");
-    obj.rectangle539:setStrokeSize(3);
-    obj.rectangle539:setName("rectangle539");
+    obj.rectangle521 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle521:setParent(obj.scrollBox6);
+    obj.rectangle521:setLeft(340);
+    obj.rectangle521:setTop(118);
+    obj.rectangle521:setWidth(45);
+    obj.rectangle521:setHeight(45);
+    obj.rectangle521:setColor("#D5D5D5");
+    obj.rectangle521:setXradius(20);
+    obj.rectangle521:setYradius(20);
+    obj.rectangle521:setCornerType("round");
+    obj.rectangle521:setStrokeColor("#49244F");
+    obj.rectangle521:setStrokeSize(3);
+    obj.rectangle521:setName("rectangle521");
 
     obj.edit184 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit184:setParent(obj.popFrmPrincipal);
+    obj.edit184:setParent(obj.scrollBox6);
     obj.edit184:setField("frmNivel");
     obj.edit184:setLeft(351);
     obj.edit184:setTop(125);
@@ -11821,7 +11582,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit184:setName("edit184");
 
     obj.label224 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label224:setParent(obj.popFrmPrincipal);
+    obj.label224:setParent(obj.scrollBox6);
     obj.label224:setLeft(10);
     obj.label224:setTop(180);
     obj.label224:setText("ANCESTRALIDADE");
@@ -11831,17 +11592,17 @@ local function constructNew_frmWeirdWizard()
     obj.label224:setWidth(180);
     obj.label224:setName("label224");
 
-    obj.rectangle540 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle540:setParent(obj.popFrmPrincipal);
-    obj.rectangle540:setLeft(10);
-    obj.rectangle540:setTop(205);
-    obj.rectangle540:setWidth(380);
-    obj.rectangle540:setHeight(50);
-    obj.rectangle540:setColor("#49244F");
-    obj.rectangle540:setName("rectangle540");
+    obj.rectangle522 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle522:setParent(obj.scrollBox6);
+    obj.rectangle522:setLeft(10);
+    obj.rectangle522:setTop(205);
+    obj.rectangle522:setWidth(380);
+    obj.rectangle522:setHeight(50);
+    obj.rectangle522:setColor("#49244F");
+    obj.rectangle522:setName("rectangle522");
 
     obj.edit185 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit185:setParent(obj.popFrmPrincipal);
+    obj.edit185:setParent(obj.scrollBox6);
     obj.edit185:setField("frmAncestralidade");
     obj.edit185:setLeft(10);
     obj.edit185:setTop(205);
@@ -11852,7 +11613,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit185:setName("edit185");
 
     obj.label225 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label225:setParent(obj.popFrmPrincipal);
+    obj.label225:setParent(obj.scrollBox6);
     obj.label225:setLeft(10);
     obj.label225:setTop(270);
     obj.label225:setText("DESCRIÇÃO");
@@ -11862,26 +11623,26 @@ local function constructNew_frmWeirdWizard()
     obj.label225:setWidth(180);
     obj.label225:setName("label225");
 
-    obj.rectangle541 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle541:setParent(obj.popFrmPrincipal);
-    obj.rectangle541:setLeft(10);
-    obj.rectangle541:setTop(295);
-    obj.rectangle541:setWidth(380);
-    obj.rectangle541:setHeight(100);
-    obj.rectangle541:setColor("#49244F");
-    obj.rectangle541:setName("rectangle541");
+    obj.rectangle523 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle523:setParent(obj.scrollBox6);
+    obj.rectangle523:setLeft(10);
+    obj.rectangle523:setTop(295);
+    obj.rectangle523:setWidth(380);
+    obj.rectangle523:setHeight(100);
+    obj.rectangle523:setColor("#49244F");
+    obj.rectangle523:setName("rectangle523");
 
-    obj.rectangle542 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle542:setParent(obj.popFrmPrincipal);
-    obj.rectangle542:setLeft(195);
-    obj.rectangle542:setTop(295);
-    obj.rectangle542:setWidth(3);
-    obj.rectangle542:setHeight(100);
-    obj.rectangle542:setColor("#D5D5D5");
-    obj.rectangle542:setName("rectangle542");
+    obj.rectangle524 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle524:setParent(obj.scrollBox6);
+    obj.rectangle524:setLeft(195);
+    obj.rectangle524:setTop(295);
+    obj.rectangle524:setWidth(3);
+    obj.rectangle524:setHeight(100);
+    obj.rectangle524:setColor("#D5D5D5");
+    obj.rectangle524:setName("rectangle524");
 
     obj.label226 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label226:setParent(obj.popFrmPrincipal);
+    obj.label226:setParent(obj.scrollBox6);
     obj.label226:setLeft(15);
     obj.label226:setTop(305);
     obj.label226:setText("Gênero:");
@@ -11891,7 +11652,7 @@ local function constructNew_frmWeirdWizard()
     obj.label226:setName("label226");
 
     obj.comboBox43 = GUI.fromHandle(_obj_newObject("comboBox"));
-    obj.comboBox43:setParent(obj.popFrmPrincipal);
+    obj.comboBox43:setParent(obj.scrollBox6);
     obj.comboBox43:setLeft(85);
     obj.comboBox43:setTop(305);
     obj.comboBox43:setItems({'Feminino', 'Masculino', 'Outro'});
@@ -11900,7 +11661,7 @@ local function constructNew_frmWeirdWizard()
     obj.comboBox43:setName("comboBox43");
 
     obj.label227 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label227:setParent(obj.popFrmPrincipal);
+    obj.label227:setParent(obj.scrollBox6);
     obj.label227:setLeft(206);
     obj.label227:setTop(305);
     obj.label227:setText("Idade:");
@@ -11910,7 +11671,7 @@ local function constructNew_frmWeirdWizard()
     obj.label227:setName("label227");
 
     obj.edit186 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit186:setParent(obj.popFrmPrincipal);
+    obj.edit186:setParent(obj.scrollBox6);
     obj.edit186:setLeft(265);
     obj.edit186:setTop(300);
     obj.edit186:setWidth(110);
@@ -11919,7 +11680,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit186:setName("edit186");
 
     obj.label228 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label228:setParent(obj.popFrmPrincipal);
+    obj.label228:setParent(obj.scrollBox6);
     obj.label228:setLeft(15);
     obj.label228:setTop(335);
     obj.label228:setText("Olhos:");
@@ -11929,7 +11690,7 @@ local function constructNew_frmWeirdWizard()
     obj.label228:setName("label228");
 
     obj.edit187 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit187:setParent(obj.popFrmPrincipal);
+    obj.edit187:setParent(obj.scrollBox6);
     obj.edit187:setLeft(75);
     obj.edit187:setTop(330);
     obj.edit187:setWidth(110);
@@ -11938,7 +11699,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit187:setName("edit187");
 
     obj.label229 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label229:setParent(obj.popFrmPrincipal);
+    obj.label229:setParent(obj.scrollBox6);
     obj.label229:setLeft(206);
     obj.label229:setTop(335);
     obj.label229:setText("Cabelos:");
@@ -11948,7 +11709,7 @@ local function constructNew_frmWeirdWizard()
     obj.label229:setName("label229");
 
     obj.edit188 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit188:setParent(obj.popFrmPrincipal);
+    obj.edit188:setParent(obj.scrollBox6);
     obj.edit188:setLeft(285);
     obj.edit188:setTop(330);
     obj.edit188:setWidth(95);
@@ -11957,7 +11718,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit188:setName("edit188");
 
     obj.label230 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label230:setParent(obj.popFrmPrincipal);
+    obj.label230:setParent(obj.scrollBox6);
     obj.label230:setLeft(15);
     obj.label230:setTop(365);
     obj.label230:setText("Altura:");
@@ -11967,7 +11728,7 @@ local function constructNew_frmWeirdWizard()
     obj.label230:setName("label230");
 
     obj.edit189 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit189:setParent(obj.popFrmPrincipal);
+    obj.edit189:setParent(obj.scrollBox6);
     obj.edit189:setLeft(75);
     obj.edit189:setTop(360);
     obj.edit189:setWidth(110);
@@ -11976,7 +11737,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit189:setName("edit189");
 
     obj.label231 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label231:setParent(obj.popFrmPrincipal);
+    obj.label231:setParent(obj.scrollBox6);
     obj.label231:setLeft(206);
     obj.label231:setTop(365);
     obj.label231:setText("Peso:");
@@ -11986,7 +11747,7 @@ local function constructNew_frmWeirdWizard()
     obj.label231:setName("label231");
 
     obj.edit190 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit190:setParent(obj.popFrmPrincipal);
+    obj.edit190:setParent(obj.scrollBox6);
     obj.edit190:setLeft(255);
     obj.edit190:setTop(360);
     obj.edit190:setWidth(95);
@@ -11995,7 +11756,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit190:setName("edit190");
 
     obj.label232 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label232:setParent(obj.popFrmPrincipal);
+    obj.label232:setParent(obj.scrollBox6);
     obj.label232:setLeft(10);
     obj.label232:setTop(410);
     obj.label232:setWidth(380);
@@ -12005,17 +11766,17 @@ local function constructNew_frmWeirdWizard()
     obj.label232:setFontColor("#49244F");
     obj.label232:setName("label232");
 
-    obj.rectangle543 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle543:setParent(obj.popFrmPrincipal);
-    obj.rectangle543:setLeft(10);
-    obj.rectangle543:setTop(435);
-    obj.rectangle543:setWidth(380);
-    obj.rectangle543:setHeight(50);
-    obj.rectangle543:setColor("#49244F");
-    obj.rectangle543:setName("rectangle543");
+    obj.rectangle525 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle525:setParent(obj.scrollBox6);
+    obj.rectangle525:setLeft(10);
+    obj.rectangle525:setTop(435);
+    obj.rectangle525:setWidth(380);
+    obj.rectangle525:setHeight(50);
+    obj.rectangle525:setColor("#49244F");
+    obj.rectangle525:setName("rectangle525");
 
     obj.edit191 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit191:setParent(obj.popFrmPrincipal);
+    obj.edit191:setParent(obj.scrollBox6);
     obj.edit191:setField("frmIdiomas");
     obj.edit191:setLeft(10);
     obj.edit191:setTop(435);
@@ -12026,7 +11787,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit191:setName("edit191");
 
     obj.label233 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label233:setParent(obj.popFrmPrincipal);
+    obj.label233:setParent(obj.scrollBox6);
     obj.label233:setLeft(10);
     obj.label233:setTop(500);
     obj.label233:setWidth(380);
@@ -12036,17 +11797,17 @@ local function constructNew_frmWeirdWizard()
     obj.label233:setFontColor("#49244F");
     obj.label233:setName("label233");
 
-    obj.rectangle544 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle544:setParent(obj.popFrmPrincipal);
-    obj.rectangle544:setLeft(10);
-    obj.rectangle544:setTop(525);
-    obj.rectangle544:setWidth(380);
-    obj.rectangle544:setHeight(50);
-    obj.rectangle544:setColor("#49244F");
-    obj.rectangle544:setName("rectangle544");
+    obj.rectangle526 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle526:setParent(obj.scrollBox6);
+    obj.rectangle526:setLeft(10);
+    obj.rectangle526:setTop(525);
+    obj.rectangle526:setWidth(380);
+    obj.rectangle526:setHeight(50);
+    obj.rectangle526:setColor("#49244F");
+    obj.rectangle526:setName("rectangle526");
 
     obj.edit192 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit192:setParent(obj.popFrmPrincipal);
+    obj.edit192:setParent(obj.scrollBox6);
     obj.edit192:setField("frmProfissoes");
     obj.edit192:setLeft(10);
     obj.edit192:setTop(525);
@@ -12057,7 +11818,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit192:setName("edit192");
 
     obj.label234 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label234:setParent(obj.popFrmPrincipal);
+    obj.label234:setParent(obj.scrollBox6);
     obj.label234:setLeft(10);
     obj.label234:setTop(590);
     obj.label234:setWidth(380);
@@ -12067,17 +11828,17 @@ local function constructNew_frmWeirdWizard()
     obj.label234:setFontColor("#49244F");
     obj.label234:setName("label234");
 
-    obj.rectangle545 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle545:setParent(obj.popFrmPrincipal);
-    obj.rectangle545:setLeft(10);
-    obj.rectangle545:setTop(615);
-    obj.rectangle545:setWidth(380);
-    obj.rectangle545:setHeight(50);
-    obj.rectangle545:setColor("#49244F");
-    obj.rectangle545:setName("rectangle545");
+    obj.rectangle527 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle527:setParent(obj.scrollBox6);
+    obj.rectangle527:setLeft(10);
+    obj.rectangle527:setTop(615);
+    obj.rectangle527:setWidth(380);
+    obj.rectangle527:setHeight(50);
+    obj.rectangle527:setColor("#49244F");
+    obj.rectangle527:setName("rectangle527");
 
     obj.edit193 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit193:setParent(obj.popFrmPrincipal);
+    obj.edit193:setParent(obj.scrollBox6);
     obj.edit193:setField("frmReligiao");
     obj.edit193:setLeft(10);
     obj.edit193:setTop(615);
@@ -12087,17 +11848,17 @@ local function constructNew_frmWeirdWizard()
     obj.edit193:setHorzTextAlign("center");
     obj.edit193:setName("edit193");
 
-    obj.rectangle546 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle546:setParent(obj.popFrmPrincipal);
-    obj.rectangle546:setLeft(401);
-    obj.rectangle546:setTop(115);
-    obj.rectangle546:setWidth(380);
-    obj.rectangle546:setHeight(50);
-    obj.rectangle546:setColor("#49244F");
-    obj.rectangle546:setName("rectangle546");
+    obj.rectangle528 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle528:setParent(obj.scrollBox6);
+    obj.rectangle528:setLeft(401);
+    obj.rectangle528:setTop(115);
+    obj.rectangle528:setWidth(380);
+    obj.rectangle528:setHeight(50);
+    obj.rectangle528:setColor("#49244F");
+    obj.rectangle528:setName("rectangle528");
 
     obj.label235 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label235:setParent(obj.popFrmPrincipal);
+    obj.label235:setParent(obj.scrollBox6);
     obj.label235:setLeft(406);
     obj.label235:setTop(130);
     obj.label235:setText("TAMANHO");
@@ -12105,22 +11866,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label235, "fontStyle", "bold");
     obj.label235:setName("label235");
 
-    obj.rectangle547 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle547:setParent(obj.popFrmPrincipal);
-    obj.rectangle547:setLeft(515);
-    obj.rectangle547:setTop(118);
-    obj.rectangle547:setWidth(45);
-    obj.rectangle547:setHeight(45);
-    obj.rectangle547:setColor("#D5D5D5");
-    obj.rectangle547:setXradius(20);
-    obj.rectangle547:setYradius(20);
-    obj.rectangle547:setCornerType("round");
-    obj.rectangle547:setStrokeColor("#49244F");
-    obj.rectangle547:setStrokeSize(3);
-    obj.rectangle547:setName("rectangle547");
+    obj.rectangle529 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle529:setParent(obj.scrollBox6);
+    obj.rectangle529:setLeft(515);
+    obj.rectangle529:setTop(118);
+    obj.rectangle529:setWidth(45);
+    obj.rectangle529:setHeight(45);
+    obj.rectangle529:setColor("#D5D5D5");
+    obj.rectangle529:setXradius(20);
+    obj.rectangle529:setYradius(20);
+    obj.rectangle529:setCornerType("round");
+    obj.rectangle529:setStrokeColor("#49244F");
+    obj.rectangle529:setStrokeSize(3);
+    obj.rectangle529:setName("rectangle529");
 
     obj.edit194 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit194:setParent(obj.popFrmPrincipal);
+    obj.edit194:setParent(obj.scrollBox6);
     obj.edit194:setField("frmTamanho");
     obj.edit194:setLeft(523);
     obj.edit194:setTop(125);
@@ -12131,7 +11892,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit194:setName("edit194");
 
     obj.label236 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label236:setParent(obj.popFrmPrincipal);
+    obj.label236:setParent(obj.scrollBox6);
     obj.label236:setLeft(605);
     obj.label236:setTop(130);
     obj.label236:setWidth(150);
@@ -12140,22 +11901,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label236, "fontStyle", "bold");
     obj.label236:setName("label236");
 
-    obj.rectangle548 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle548:setParent(obj.popFrmPrincipal);
-    obj.rectangle548:setLeft(730);
-    obj.rectangle548:setTop(118);
-    obj.rectangle548:setWidth(45);
-    obj.rectangle548:setHeight(45);
-    obj.rectangle548:setColor("#D5D5D5");
-    obj.rectangle548:setXradius(20);
-    obj.rectangle548:setYradius(20);
-    obj.rectangle548:setCornerType("round");
-    obj.rectangle548:setStrokeColor("#49244F");
-    obj.rectangle548:setStrokeSize(3);
-    obj.rectangle548:setName("rectangle548");
+    obj.rectangle530 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle530:setParent(obj.scrollBox6);
+    obj.rectangle530:setLeft(730);
+    obj.rectangle530:setTop(118);
+    obj.rectangle530:setWidth(45);
+    obj.rectangle530:setHeight(45);
+    obj.rectangle530:setColor("#D5D5D5");
+    obj.rectangle530:setXradius(20);
+    obj.rectangle530:setYradius(20);
+    obj.rectangle530:setCornerType("round");
+    obj.rectangle530:setStrokeColor("#49244F");
+    obj.rectangle530:setStrokeSize(3);
+    obj.rectangle530:setName("rectangle530");
 
     obj.edit195 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit195:setParent(obj.popFrmPrincipal);
+    obj.edit195:setParent(obj.scrollBox6);
     obj.edit195:setField("frmVelocidade");
     obj.edit195:setLeft(738);
     obj.edit195:setTop(125);
@@ -12169,7 +11930,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit195:setName("edit195");
 
     obj.label237 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label237:setParent(obj.popFrmPrincipal);
+    obj.label237:setParent(obj.scrollBox6);
     obj.label237:setLeft(401);
     obj.label237:setTop(180);
     obj.label237:setWidth(300);
@@ -12179,17 +11940,17 @@ local function constructNew_frmWeirdWizard()
     obj.label237:setFontColor("#49244F");
     obj.label237:setName("label237");
 
-    obj.rectangle549 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle549:setParent(obj.popFrmPrincipal);
-    obj.rectangle549:setLeft(401);
-    obj.rectangle549:setTop(205);
-    obj.rectangle549:setWidth(380);
-    obj.rectangle549:setHeight(50);
-    obj.rectangle549:setColor("#49244F");
-    obj.rectangle549:setName("rectangle549");
+    obj.rectangle531 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle531:setParent(obj.scrollBox6);
+    obj.rectangle531:setLeft(401);
+    obj.rectangle531:setTop(205);
+    obj.rectangle531:setWidth(380);
+    obj.rectangle531:setHeight(50);
+    obj.rectangle531:setColor("#49244F");
+    obj.rectangle531:setName("rectangle531");
 
     obj.edit196 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit196:setParent(obj.popFrmPrincipal);
+    obj.edit196:setParent(obj.scrollBox6);
     obj.edit196:setField("frmAprendiz");
     obj.edit196:setLeft(401);
     obj.edit196:setTop(205);
@@ -12200,7 +11961,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit196:setName("edit196");
 
     obj.label238 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label238:setParent(obj.popFrmPrincipal);
+    obj.label238:setParent(obj.scrollBox6);
     obj.label238:setLeft(401);
     obj.label238:setTop(270);
     obj.label238:setWidth(300);
@@ -12210,17 +11971,17 @@ local function constructNew_frmWeirdWizard()
     obj.label238:setFontColor("#49244F");
     obj.label238:setName("label238");
 
-    obj.rectangle550 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle550:setParent(obj.popFrmPrincipal);
-    obj.rectangle550:setLeft(401);
-    obj.rectangle550:setTop(295);
-    obj.rectangle550:setWidth(380);
-    obj.rectangle550:setHeight(50);
-    obj.rectangle550:setColor("#49244F");
-    obj.rectangle550:setName("rectangle550");
+    obj.rectangle532 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle532:setParent(obj.scrollBox6);
+    obj.rectangle532:setLeft(401);
+    obj.rectangle532:setTop(295);
+    obj.rectangle532:setWidth(380);
+    obj.rectangle532:setHeight(50);
+    obj.rectangle532:setColor("#49244F");
+    obj.rectangle532:setName("rectangle532");
 
     obj.edit197 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit197:setParent(obj.popFrmPrincipal);
+    obj.edit197:setParent(obj.scrollBox6);
     obj.edit197:setField("frmEspecialista");
     obj.edit197:setLeft(401);
     obj.edit197:setTop(295);
@@ -12231,7 +11992,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit197:setName("edit197");
 
     obj.label239 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label239:setParent(obj.popFrmPrincipal);
+    obj.label239:setParent(obj.scrollBox6);
     obj.label239:setLeft(401);
     obj.label239:setTop(360);
     obj.label239:setWidth(300);
@@ -12241,17 +12002,17 @@ local function constructNew_frmWeirdWizard()
     obj.label239:setFontColor("#49244F");
     obj.label239:setName("label239");
 
-    obj.rectangle551 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle551:setParent(obj.popFrmPrincipal);
-    obj.rectangle551:setLeft(401);
-    obj.rectangle551:setTop(385);
-    obj.rectangle551:setWidth(380);
-    obj.rectangle551:setHeight(50);
-    obj.rectangle551:setColor("#49244F");
-    obj.rectangle551:setName("rectangle551");
+    obj.rectangle533 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle533:setParent(obj.scrollBox6);
+    obj.rectangle533:setLeft(401);
+    obj.rectangle533:setTop(385);
+    obj.rectangle533:setWidth(380);
+    obj.rectangle533:setHeight(50);
+    obj.rectangle533:setColor("#49244F");
+    obj.rectangle533:setName("rectangle533");
 
     obj.edit198 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit198:setParent(obj.popFrmPrincipal);
+    obj.edit198:setParent(obj.scrollBox6);
     obj.edit198:setField("frmMestre");
     obj.edit198:setLeft(401);
     obj.edit198:setTop(385);
@@ -12262,7 +12023,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit198:setName("edit198");
 
     obj.label240 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label240:setParent(obj.popFrmPrincipal);
+    obj.label240:setParent(obj.scrollBox6);
     obj.label240:setLeft(460);
     obj.label240:setTop(475);
     obj.label240:setText("Força");
@@ -12270,22 +12031,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label240, "fontStyle", "bold");
     obj.label240:setName("label240");
 
-    obj.rectangle552 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle552:setParent(obj.popFrmPrincipal);
-    obj.rectangle552:setLeft(406);
-    obj.rectangle552:setTop(463);
-    obj.rectangle552:setWidth(45);
-    obj.rectangle552:setHeight(45);
-    obj.rectangle552:setColor("#D5D5D5");
-    obj.rectangle552:setXradius(20);
-    obj.rectangle552:setYradius(20);
-    obj.rectangle552:setCornerType("round");
-    obj.rectangle552:setStrokeColor("#49244F");
-    obj.rectangle552:setStrokeSize(3);
-    obj.rectangle552:setName("rectangle552");
+    obj.rectangle534 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle534:setParent(obj.scrollBox6);
+    obj.rectangle534:setLeft(406);
+    obj.rectangle534:setTop(463);
+    obj.rectangle534:setWidth(45);
+    obj.rectangle534:setHeight(45);
+    obj.rectangle534:setColor("#D5D5D5");
+    obj.rectangle534:setXradius(20);
+    obj.rectangle534:setYradius(20);
+    obj.rectangle534:setCornerType("round");
+    obj.rectangle534:setStrokeColor("#49244F");
+    obj.rectangle534:setStrokeSize(3);
+    obj.rectangle534:setName("rectangle534");
 
     obj.edit199 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit199:setParent(obj.popFrmPrincipal);
+    obj.edit199:setParent(obj.scrollBox6);
     obj.edit199:setField("frmForca");
     obj.edit199:setLeft(414);
     obj.edit199:setTop(470);
@@ -12299,7 +12060,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit199:setName("edit199");
 
     obj.label241 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label241:setParent(obj.popFrmPrincipal);
+    obj.label241:setParent(obj.scrollBox6);
     obj.label241:setLeft(460);
     obj.label241:setTop(525);
     obj.label241:setText("Agilidade");
@@ -12307,22 +12068,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label241, "fontStyle", "bold");
     obj.label241:setName("label241");
 
-    obj.rectangle553 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle553:setParent(obj.popFrmPrincipal);
-    obj.rectangle553:setLeft(406);
-    obj.rectangle553:setTop(513);
-    obj.rectangle553:setWidth(45);
-    obj.rectangle553:setHeight(45);
-    obj.rectangle553:setColor("#D5D5D5");
-    obj.rectangle553:setXradius(20);
-    obj.rectangle553:setYradius(20);
-    obj.rectangle553:setCornerType("round");
-    obj.rectangle553:setStrokeColor("#49244F");
-    obj.rectangle553:setStrokeSize(3);
-    obj.rectangle553:setName("rectangle553");
+    obj.rectangle535 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle535:setParent(obj.scrollBox6);
+    obj.rectangle535:setLeft(406);
+    obj.rectangle535:setTop(513);
+    obj.rectangle535:setWidth(45);
+    obj.rectangle535:setHeight(45);
+    obj.rectangle535:setColor("#D5D5D5");
+    obj.rectangle535:setXradius(20);
+    obj.rectangle535:setYradius(20);
+    obj.rectangle535:setCornerType("round");
+    obj.rectangle535:setStrokeColor("#49244F");
+    obj.rectangle535:setStrokeSize(3);
+    obj.rectangle535:setName("rectangle535");
 
     obj.edit200 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit200:setParent(obj.popFrmPrincipal);
+    obj.edit200:setParent(obj.scrollBox6);
     obj.edit200:setField("frmAgilidade");
     obj.edit200:setLeft(414);
     obj.edit200:setTop(520);
@@ -12336,7 +12097,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit200:setName("edit200");
 
     obj.label242 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label242:setParent(obj.popFrmPrincipal);
+    obj.label242:setParent(obj.scrollBox6);
     obj.label242:setLeft(460);
     obj.label242:setTop(575);
     obj.label242:setText("Intelecto");
@@ -12344,22 +12105,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label242, "fontStyle", "bold");
     obj.label242:setName("label242");
 
-    obj.rectangle554 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle554:setParent(obj.popFrmPrincipal);
-    obj.rectangle554:setLeft(406);
-    obj.rectangle554:setTop(563);
-    obj.rectangle554:setWidth(45);
-    obj.rectangle554:setHeight(45);
-    obj.rectangle554:setColor("#D5D5D5");
-    obj.rectangle554:setXradius(20);
-    obj.rectangle554:setYradius(20);
-    obj.rectangle554:setCornerType("round");
-    obj.rectangle554:setStrokeColor("#49244F");
-    obj.rectangle554:setStrokeSize(3);
-    obj.rectangle554:setName("rectangle554");
+    obj.rectangle536 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle536:setParent(obj.scrollBox6);
+    obj.rectangle536:setLeft(406);
+    obj.rectangle536:setTop(563);
+    obj.rectangle536:setWidth(45);
+    obj.rectangle536:setHeight(45);
+    obj.rectangle536:setColor("#D5D5D5");
+    obj.rectangle536:setXradius(20);
+    obj.rectangle536:setYradius(20);
+    obj.rectangle536:setCornerType("round");
+    obj.rectangle536:setStrokeColor("#49244F");
+    obj.rectangle536:setStrokeSize(3);
+    obj.rectangle536:setName("rectangle536");
 
     obj.edit201 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit201:setParent(obj.popFrmPrincipal);
+    obj.edit201:setParent(obj.scrollBox6);
     obj.edit201:setField("frmIntelecto");
     obj.edit201:setLeft(414);
     obj.edit201:setTop(570);
@@ -12373,7 +12134,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit201:setName("edit201");
 
     obj.label243 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label243:setParent(obj.popFrmPrincipal);
+    obj.label243:setParent(obj.scrollBox6);
     obj.label243:setLeft(460);
     obj.label243:setTop(625);
     obj.label243:setText("Vontade");
@@ -12381,22 +12142,22 @@ local function constructNew_frmWeirdWizard()
     lfm_setPropAsString(obj.label243, "fontStyle", "bold");
     obj.label243:setName("label243");
 
-    obj.rectangle555 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle555:setParent(obj.popFrmPrincipal);
-    obj.rectangle555:setLeft(406);
-    obj.rectangle555:setTop(613);
-    obj.rectangle555:setWidth(45);
-    obj.rectangle555:setHeight(45);
-    obj.rectangle555:setColor("#D5D5D5");
-    obj.rectangle555:setXradius(20);
-    obj.rectangle555:setYradius(20);
-    obj.rectangle555:setCornerType("round");
-    obj.rectangle555:setStrokeColor("#49244F");
-    obj.rectangle555:setStrokeSize(3);
-    obj.rectangle555:setName("rectangle555");
+    obj.rectangle537 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle537:setParent(obj.scrollBox6);
+    obj.rectangle537:setLeft(406);
+    obj.rectangle537:setTop(613);
+    obj.rectangle537:setWidth(45);
+    obj.rectangle537:setHeight(45);
+    obj.rectangle537:setColor("#D5D5D5");
+    obj.rectangle537:setXradius(20);
+    obj.rectangle537:setYradius(20);
+    obj.rectangle537:setCornerType("round");
+    obj.rectangle537:setStrokeColor("#49244F");
+    obj.rectangle537:setStrokeSize(3);
+    obj.rectangle537:setName("rectangle537");
 
     obj.edit202 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit202:setParent(obj.popFrmPrincipal);
+    obj.edit202:setParent(obj.scrollBox6);
     obj.edit202:setField("frmVontade");
     obj.edit202:setLeft(414);
     obj.edit202:setTop(620);
@@ -12410,7 +12171,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit202:setName("edit202");
 
     obj.label244 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label244:setParent(obj.popFrmPrincipal);
+    obj.label244:setParent(obj.scrollBox6);
     obj.label244:setLeft(651);
     obj.label244:setTop(455);
     obj.label244:setText("Defesas");
@@ -12419,33 +12180,33 @@ local function constructNew_frmWeirdWizard()
     obj.label244:setFontColor("#49244F");
     obj.label244:setName("label244");
 
-    obj.rectangle556 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle556:setParent(obj.popFrmPrincipal);
-    obj.rectangle556:setLeft(593);
-    obj.rectangle556:setTop(477);
-    obj.rectangle556:setWidth(175);
-    obj.rectangle556:setHeight(25);
-    obj.rectangle556:setColor("#49244F");
-    obj.rectangle556:setStrokeColor("#49244F");
-    obj.rectangle556:setStrokeSize(3);
-    obj.rectangle556:setName("rectangle556");
+    obj.rectangle538 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle538:setParent(obj.scrollBox6);
+    obj.rectangle538:setLeft(593);
+    obj.rectangle538:setTop(477);
+    obj.rectangle538:setWidth(175);
+    obj.rectangle538:setHeight(25);
+    obj.rectangle538:setColor("#49244F");
+    obj.rectangle538:setStrokeColor("#49244F");
+    obj.rectangle538:setStrokeSize(3);
+    obj.rectangle538:setName("rectangle538");
 
-    obj.rectangle557 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle557:setParent(obj.popFrmPrincipal);
-    obj.rectangle557:setLeft(737);
-    obj.rectangle557:setTop(468);
-    obj.rectangle557:setWidth(45);
-    obj.rectangle557:setHeight(45);
-    obj.rectangle557:setColor("#D5D5D5");
-    obj.rectangle557:setXradius(20);
-    obj.rectangle557:setYradius(20);
-    obj.rectangle557:setCornerType("round");
-    obj.rectangle557:setStrokeColor("#49244F");
-    obj.rectangle557:setStrokeSize(3);
-    obj.rectangle557:setName("rectangle557");
+    obj.rectangle539 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle539:setParent(obj.scrollBox6);
+    obj.rectangle539:setLeft(737);
+    obj.rectangle539:setTop(468);
+    obj.rectangle539:setWidth(45);
+    obj.rectangle539:setHeight(45);
+    obj.rectangle539:setColor("#D5D5D5");
+    obj.rectangle539:setXradius(20);
+    obj.rectangle539:setYradius(20);
+    obj.rectangle539:setCornerType("round");
+    obj.rectangle539:setStrokeColor("#49244F");
+    obj.rectangle539:setStrokeSize(3);
+    obj.rectangle539:setName("rectangle539");
 
     obj.label245 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label245:setParent(obj.popFrmPrincipal);
+    obj.label245:setParent(obj.scrollBox6);
     obj.label245:setLeft(665);
     obj.label245:setTop(480);
     obj.label245:setText("Natural");
@@ -12454,7 +12215,7 @@ local function constructNew_frmWeirdWizard()
     obj.label245:setName("label245");
 
     obj.edit203 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit203:setParent(obj.popFrmPrincipal);
+    obj.edit203:setParent(obj.scrollBox6);
     obj.edit203:setField("frmDefesa");
     obj.edit203:setLeft(745);
     obj.edit203:setTop(475);
@@ -12467,33 +12228,33 @@ local function constructNew_frmWeirdWizard()
     obj.edit203:setHorzTextAlign("center");
     obj.edit203:setName("edit203");
 
-    obj.rectangle558 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle558:setParent(obj.popFrmPrincipal);
-    obj.rectangle558:setLeft(593);
-    obj.rectangle558:setTop(527);
-    obj.rectangle558:setWidth(175);
-    obj.rectangle558:setHeight(25);
-    obj.rectangle558:setColor("#49244F");
-    obj.rectangle558:setStrokeColor("#49244F");
-    obj.rectangle558:setStrokeSize(3);
-    obj.rectangle558:setName("rectangle558");
+    obj.rectangle540 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle540:setParent(obj.scrollBox6);
+    obj.rectangle540:setLeft(593);
+    obj.rectangle540:setTop(527);
+    obj.rectangle540:setWidth(175);
+    obj.rectangle540:setHeight(25);
+    obj.rectangle540:setColor("#49244F");
+    obj.rectangle540:setStrokeColor("#49244F");
+    obj.rectangle540:setStrokeSize(3);
+    obj.rectangle540:setName("rectangle540");
 
-    obj.rectangle559 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle559:setParent(obj.popFrmPrincipal);
-    obj.rectangle559:setLeft(737);
-    obj.rectangle559:setTop(518);
-    obj.rectangle559:setWidth(45);
-    obj.rectangle559:setHeight(45);
-    obj.rectangle559:setColor("#D5D5D5");
-    obj.rectangle559:setXradius(20);
-    obj.rectangle559:setYradius(20);
-    obj.rectangle559:setCornerType("round");
-    obj.rectangle559:setStrokeColor("#49244F");
-    obj.rectangle559:setStrokeSize(3);
-    obj.rectangle559:setName("rectangle559");
+    obj.rectangle541 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle541:setParent(obj.scrollBox6);
+    obj.rectangle541:setLeft(737);
+    obj.rectangle541:setTop(518);
+    obj.rectangle541:setWidth(45);
+    obj.rectangle541:setHeight(45);
+    obj.rectangle541:setColor("#D5D5D5");
+    obj.rectangle541:setXradius(20);
+    obj.rectangle541:setYradius(20);
+    obj.rectangle541:setCornerType("round");
+    obj.rectangle541:setStrokeColor("#49244F");
+    obj.rectangle541:setStrokeSize(3);
+    obj.rectangle541:setName("rectangle541");
 
     obj.label246 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label246:setParent(obj.popFrmPrincipal);
+    obj.label246:setParent(obj.scrollBox6);
     obj.label246:setLeft(658);
     obj.label246:setTop(532);
     obj.label246:setText("Armadura");
@@ -12502,7 +12263,7 @@ local function constructNew_frmWeirdWizard()
     obj.label246:setName("label246");
 
     obj.edit204 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit204:setParent(obj.popFrmPrincipal);
+    obj.edit204:setParent(obj.scrollBox6);
     obj.edit204:setField("frmDefesaBlin");
     obj.edit204:setLeft(745);
     obj.edit204:setTop(525);
@@ -12515,36 +12276,36 @@ local function constructNew_frmWeirdWizard()
     obj.edit204:setHorzTextAlign("center");
     obj.edit204:setName("edit204");
 
-    obj.rectangle560 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle560:setParent(obj.popFrmPrincipal);
-    obj.rectangle560:setLeft(642);
-    obj.rectangle560:setTop(565);
-    obj.rectangle560:setWidth(95);
-    obj.rectangle560:setHeight(95);
-    obj.rectangle560:setColor("#D5D5D5");
-    obj.rectangle560:setXradius(47);
-    obj.rectangle560:setYradius(47);
-    obj.rectangle560:setCornerType("round");
-    obj.rectangle560:setStrokeColor("#49244F");
-    obj.rectangle560:setStrokeSize(3);
-    obj.rectangle560:setName("rectangle560");
+    obj.rectangle542 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle542:setParent(obj.scrollBox6);
+    obj.rectangle542:setLeft(642);
+    obj.rectangle542:setTop(565);
+    obj.rectangle542:setWidth(95);
+    obj.rectangle542:setHeight(95);
+    obj.rectangle542:setColor("#D5D5D5");
+    obj.rectangle542:setXradius(47);
+    obj.rectangle542:setYradius(47);
+    obj.rectangle542:setCornerType("round");
+    obj.rectangle542:setStrokeColor("#49244F");
+    obj.rectangle542:setStrokeSize(3);
+    obj.rectangle542:setName("rectangle542");
 
-    obj.rectangle561 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle561:setParent(obj.popFrmPrincipal);
-    obj.rectangle561:setLeft(665);
-    obj.rectangle561:setTop(570);
-    obj.rectangle561:setWidth(45);
-    obj.rectangle561:setHeight(45);
-    obj.rectangle561:setColor("#49244F");
-    obj.rectangle561:setXradius(20);
-    obj.rectangle561:setYradius(20);
-    obj.rectangle561:setCornerType("round");
-    obj.rectangle561:setStrokeColor("#49244F");
-    obj.rectangle561:setStrokeSize(3);
-    obj.rectangle561:setName("rectangle561");
+    obj.rectangle543 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle543:setParent(obj.scrollBox6);
+    obj.rectangle543:setLeft(665);
+    obj.rectangle543:setTop(570);
+    obj.rectangle543:setWidth(45);
+    obj.rectangle543:setHeight(45);
+    obj.rectangle543:setColor("#49244F");
+    obj.rectangle543:setXradius(20);
+    obj.rectangle543:setYradius(20);
+    obj.rectangle543:setCornerType("round");
+    obj.rectangle543:setStrokeColor("#49244F");
+    obj.rectangle543:setStrokeSize(3);
+    obj.rectangle543:setName("rectangle543");
 
     obj.edit205 = GUI.fromHandle(_obj_newObject("edit"));
-    obj.edit205:setParent(obj.popFrmPrincipal);
+    obj.edit205:setParent(obj.scrollBox6);
     obj.edit205:setField("frmVida");
     obj.edit205:setLeft(673);
     obj.edit205:setTop(575);
@@ -12558,7 +12319,7 @@ local function constructNew_frmWeirdWizard()
     obj.edit205:setName("edit205");
 
     obj.label247 = GUI.fromHandle(_obj_newObject("label"));
-    obj.label247:setParent(obj.popFrmPrincipal);
+    obj.label247:setParent(obj.scrollBox6);
     obj.label247:setLeft(668);
     obj.label247:setTop(625);
     obj.label247:setText("Vida");
@@ -12574,15 +12335,15 @@ local function constructNew_frmWeirdWizard()
     obj.popDadivaReves:setHeight(200);
     obj.popDadivaReves:setBackOpacity(0.5);
 
-    obj.rectangle562 = GUI.fromHandle(_obj_newObject("rectangle"));
-    obj.rectangle562:setParent(obj.popDadivaReves);
-    obj.rectangle562:setAlign("client");
-    obj.rectangle562:setColor("black");
-    lfm_setPropAsString(obj.rectangle562, "corners", "");
-    obj.rectangle562:setXradius(25);
-    obj.rectangle562:setYradius(25);
-    obj.rectangle562:setCornerType("round");
-    obj.rectangle562:setName("rectangle562");
+    obj.rectangle544 = GUI.fromHandle(_obj_newObject("rectangle"));
+    obj.rectangle544:setParent(obj.popDadivaReves);
+    obj.rectangle544:setAlign("client");
+    obj.rectangle544:setColor("black");
+    lfm_setPropAsString(obj.rectangle544, "corners", "");
+    obj.rectangle544:setXradius(25);
+    obj.rectangle544:setYradius(25);
+    obj.rectangle544:setCornerType("round");
+    obj.rectangle544:setName("rectangle544");
 
     obj.label248 = GUI.fromHandle(_obj_newObject("label"));
     obj.label248:setParent(obj.popDadivaReves);
@@ -13389,7 +13150,7 @@ local function constructNew_frmWeirdWizard()
             self.popFrmPrincipal:show()
         end);
 
-    obj._e_event35 = obj.image8:addEventListener("onClick",
+    obj._e_event35 = obj.image7:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma01
                                           
@@ -13435,7 +13196,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event36 = obj.image9:addEventListener("onClick",
+    obj._e_event36 = obj.image8:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma01
                                           
@@ -13536,7 +13297,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event41 = obj.image10:addEventListener("onClick",
+    obj._e_event41 = obj.image9:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma02
                                           
@@ -13582,7 +13343,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event42 = obj.image11:addEventListener("onClick",
+    obj._e_event42 = obj.image10:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma02
                                           
@@ -13683,7 +13444,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event47 = obj.image12:addEventListener("onClick",
+    obj._e_event47 = obj.image11:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma03
                                           
@@ -13729,7 +13490,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event48 = obj.image13:addEventListener("onClick",
+    obj._e_event48 = obj.image12:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma03
                                           
@@ -13830,7 +13591,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event53 = obj.image14:addEventListener("onClick",
+    obj._e_event53 = obj.image13:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma04
                                           
@@ -13876,7 +13637,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event54 = obj.image15:addEventListener("onClick",
+    obj._e_event54 = obj.image14:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma04
                                           
@@ -13977,7 +13738,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event59 = obj.image16:addEventListener("onClick",
+    obj._e_event59 = obj.image15:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma05
                                           
@@ -14023,7 +13784,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event60 = obj.image17:addEventListener("onClick",
+    obj._e_event60 = obj.image16:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma05
                                           
@@ -14124,7 +13885,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event65 = obj.image18:addEventListener("onClick",
+    obj._e_event65 = obj.image17:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma06
                                           
@@ -14170,7 +13931,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event66 = obj.image19:addEventListener("onClick",
+    obj._e_event66 = obj.image18:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma06
                                           
@@ -14271,7 +14032,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event71 = obj.image20:addEventListener("onClick",
+    obj._e_event71 = obj.image19:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma07
                                           
@@ -14317,7 +14078,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event72 = obj.image21:addEventListener("onClick",
+    obj._e_event72 = obj.image20:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma07
                                           
@@ -14418,7 +14179,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event77 = obj.image22:addEventListener("onClick",
+    obj._e_event77 = obj.image21:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma08
                                           
@@ -14464,7 +14225,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event78 = obj.image23:addEventListener("onClick",
+    obj._e_event78 = obj.image22:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma08
                                           
@@ -14565,7 +14326,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event83 = obj.image24:addEventListener("onClick",
+    obj._e_event83 = obj.image23:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma09
                                           
@@ -14611,7 +14372,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event84 = obj.image25:addEventListener("onClick",
+    obj._e_event84 = obj.image24:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma09
                                           
@@ -14712,7 +14473,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event89 = obj.image26:addEventListener("onClick",
+    obj._e_event89 = obj.image25:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma10
                                           
@@ -14758,7 +14519,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event90 = obj.image27:addEventListener("onClick",
+    obj._e_event90 = obj.image26:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma10
                                           
@@ -14859,7 +14620,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event95 = obj.image28:addEventListener("onClick",
+    obj._e_event95 = obj.image27:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma11
                                           
@@ -14905,7 +14666,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event96 = obj.image29:addEventListener("onClick",
+    obj._e_event96 = obj.image28:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma11
                                           
@@ -15006,7 +14767,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event101 = obj.image30:addEventListener("onClick",
+    obj._e_event101 = obj.image29:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma12
                                           
@@ -15052,7 +14813,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event102 = obj.image31:addEventListener("onClick",
+    obj._e_event102 = obj.image30:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma12
                                           
@@ -15153,7 +14914,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event107 = obj.image32:addEventListener("onClick",
+    obj._e_event107 = obj.image31:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma13
                                           
@@ -15199,7 +14960,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event108 = obj.image33:addEventListener("onClick",
+    obj._e_event108 = obj.image32:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma13
                                           
@@ -15300,7 +15061,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event113 = obj.image34:addEventListener("onClick",
+    obj._e_event113 = obj.image33:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma14
                                           
@@ -15346,7 +15107,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event114 = obj.image35:addEventListener("onClick",
+    obj._e_event114 = obj.image34:addEventListener("onClick",
         function (event)
             arma = sheet.nomeArma14
                                           
@@ -15548,7 +15309,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event128 = obj.rectangle268:addEventListener("onClick",
+    obj._e_event128 = obj.rectangle250:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia01 ~= nil and sheet.qtdMagia01 ~= "--"  then
                                                       if sheet.Magia01 == nil then
@@ -15640,7 +15401,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event135 = obj.rectangle278:addEventListener("onClick",
+    obj._e_event135 = obj.rectangle260:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia02 ~= nil and sheet.qtdMagia02 ~= "--"  then
                                                       if sheet.Magia02 == nil then
@@ -15732,7 +15493,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event142 = obj.rectangle288:addEventListener("onClick",
+    obj._e_event142 = obj.rectangle270:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia03 ~= nil and sheet.qtdMagia03 ~= "--"  then
                                                       if sheet.Magia03 == nil then
@@ -15824,7 +15585,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event149 = obj.rectangle298:addEventListener("onClick",
+    obj._e_event149 = obj.rectangle280:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia04 ~= nil and sheet.qtdMagia04 ~= "--"  then
                                                       if sheet.Magia04 == nil then
@@ -15916,7 +15677,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event156 = obj.rectangle308:addEventListener("onClick",
+    obj._e_event156 = obj.rectangle290:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia05 ~= nil and sheet.qtdMagia05 ~= "--"  then
                                                       if sheet.Magia05 == nil then
@@ -16008,7 +15769,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event163 = obj.rectangle318:addEventListener("onClick",
+    obj._e_event163 = obj.rectangle300:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia06 ~= nil and sheet.qtdMagia06 ~= "--"  then
                                                       if sheet.Magia06 == nil then
@@ -16100,7 +15861,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event170 = obj.rectangle328:addEventListener("onClick",
+    obj._e_event170 = obj.rectangle310:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia07 ~= nil and sheet.qtdMagia07 ~= "--"  then
                                                       if sheet.Magia07 == nil then
@@ -16192,7 +15953,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event177 = obj.rectangle338:addEventListener("onClick",
+    obj._e_event177 = obj.rectangle320:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia08 ~= nil and sheet.qtdMagia08 ~= "--"  then
                                                       if sheet.Magia08 == nil then
@@ -16284,7 +16045,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event184 = obj.rectangle348:addEventListener("onClick",
+    obj._e_event184 = obj.rectangle330:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia09 ~= nil and sheet.qtdMagia09 ~= "--"  then
                                                       if sheet.Magia09 == nil then
@@ -16376,7 +16137,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event191 = obj.rectangle358:addEventListener("onClick",
+    obj._e_event191 = obj.rectangle340:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia10 ~= nil and sheet.qtdMagia10 ~= "--"  then
                                                       if sheet.Magia10 == nil then
@@ -16468,7 +16229,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event198 = obj.rectangle373:addEventListener("onClick",
+    obj._e_event198 = obj.rectangle355:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia11 ~= nil and sheet.qtdMagia11 ~= "--"  then
                                                       if sheet.Magia11 == nil then
@@ -16560,7 +16321,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event205 = obj.rectangle383:addEventListener("onClick",
+    obj._e_event205 = obj.rectangle365:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia12 ~= nil and sheet.qtdMagia12 ~= "--"  then
                                                       if sheet.Magia12 == nil then
@@ -16652,7 +16413,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event212 = obj.rectangle393:addEventListener("onClick",
+    obj._e_event212 = obj.rectangle375:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia13 ~= nil and sheet.qtdMagia13 ~= "--"  then
                                                       if sheet.Magia13 == nil then
@@ -16744,7 +16505,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event219 = obj.rectangle403:addEventListener("onClick",
+    obj._e_event219 = obj.rectangle385:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia14 ~= nil and sheet.qtdMagia14 ~= "--"  then
                                                       if sheet.Magia14 == nil then
@@ -16836,7 +16597,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event226 = obj.rectangle413:addEventListener("onClick",
+    obj._e_event226 = obj.rectangle395:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia15 ~= nil and sheet.qtdMagia15 ~= "--"  then
                                                       if sheet.Magia15 == nil then
@@ -16928,7 +16689,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event233 = obj.rectangle423:addEventListener("onClick",
+    obj._e_event233 = obj.rectangle405:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia16 ~= nil and sheet.qtdMagia16 ~= "--"  then
                                                       if sheet.Magia16 == nil then
@@ -17020,7 +16781,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event240 = obj.rectangle433:addEventListener("onClick",
+    obj._e_event240 = obj.rectangle415:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia17 ~= nil and sheet.qtdMagia17 ~= "--"  then
                                                       if sheet.Magia17 == nil then
@@ -17112,7 +16873,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event247 = obj.rectangle443:addEventListener("onClick",
+    obj._e_event247 = obj.rectangle425:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia18 ~= nil and sheet.qtdMagia18 ~= "--"  then
                                                       if sheet.Magia18 == nil then
@@ -17204,7 +16965,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event254 = obj.rectangle453:addEventListener("onClick",
+    obj._e_event254 = obj.rectangle435:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia19 ~= nil and sheet.qtdMagia19 ~= "--"  then
                                                       if sheet.Magia19 == nil then
@@ -17296,7 +17057,7 @@ local function constructNew_frmWeirdWizard()
                                                 end
         end);
 
-    obj._e_event261 = obj.rectangle463:addEventListener("onClick",
+    obj._e_event261 = obj.rectangle445:addEventListener("onClick",
         function (event)
             if sheet.qtdMagia20 ~= nil and sheet.qtdMagia20 ~= "--"  then
                                                       if sheet.Magia20 == nil then
@@ -17516,7 +17277,7 @@ local function constructNew_frmWeirdWizard()
                                                 mesaDeRPG.chat:enviarMensagem(msg)
         end);
 
-    obj._e_event286 = obj.rectangle535:addEventListener("onClick",
+    obj._e_event286 = obj.rectangle517:addEventListener("onClick",
         function (event)
             self.popFrmPrincipal:close()
         end);
@@ -18058,7 +17819,6 @@ local function constructNew_frmWeirdWizard()
         if self.checkBox13 ~= nil then self.checkBox13:destroy(); self.checkBox13 = nil; end;
         if self.rectangle156 ~= nil then self.rectangle156:destroy(); self.rectangle156 = nil; end;
         if self.edit176 ~= nil then self.edit176:destroy(); self.edit176 = nil; end;
-        if self.rectangle547 ~= nil then self.rectangle547:destroy(); self.rectangle547 = nil; end;
         if self.label69 ~= nil then self.label69:destroy(); self.label69 = nil; end;
         if self.rectangle436 ~= nil then self.rectangle436:destroy(); self.rectangle436 = nil; end;
         if self.rectangle440 ~= nil then self.rectangle440:destroy(); self.rectangle440 = nil; end;
@@ -18094,7 +17854,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle538 ~= nil then self.rectangle538:destroy(); self.rectangle538 = nil; end;
         if self.image27 ~= nil then self.image27:destroy(); self.image27 = nil; end;
         if self.layout2 ~= nil then self.layout2:destroy(); self.layout2 = nil; end;
-        if self.rectangle560 ~= nil then self.rectangle560:destroy(); self.rectangle560 = nil; end;
         if self.edit198 ~= nil then self.edit198:destroy(); self.edit198 = nil; end;
         if self.edit120 ~= nil then self.edit120:destroy(); self.edit120 = nil; end;
         if self.rectangle301 ~= nil then self.rectangle301:destroy(); self.rectangle301 = nil; end;
@@ -18103,7 +17862,6 @@ local function constructNew_frmWeirdWizard()
         if self.label127 ~= nil then self.label127:destroy(); self.label127 = nil; end;
         if self.label206 ~= nil then self.label206:destroy(); self.label206 = nil; end;
         if self.label81 ~= nil then self.label81:destroy(); self.label81 = nil; end;
-        if self.rectangle551 ~= nil then self.rectangle551:destroy(); self.rectangle551 = nil; end;
         if self.edit192 ~= nil then self.edit192:destroy(); self.edit192 = nil; end;
         if self.rectangle8 ~= nil then self.rectangle8:destroy(); self.rectangle8 = nil; end;
         if self.edit15 ~= nil then self.edit15:destroy(); self.edit15 = nil; end;
@@ -18153,8 +17911,8 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle19 ~= nil then self.rectangle19:destroy(); self.rectangle19 = nil; end;
         if self.label97 ~= nil then self.label97:destroy(); self.label97 = nil; end;
         if self.edit156 ~= nil then self.edit156:destroy(); self.edit156 = nil; end;
-        if self.rectangle424 ~= nil then self.rectangle424:destroy(); self.rectangle424 = nil; end;
         if self.edit164 ~= nil then self.edit164:destroy(); self.edit164 = nil; end;
+        if self.rectangle424 ~= nil then self.rectangle424:destroy(); self.rectangle424 = nil; end;
         if self.image30 ~= nil then self.image30:destroy(); self.image30 = nil; end;
         if self.rectangle527 ~= nil then self.rectangle527:destroy(); self.rectangle527 = nil; end;
         if self.rectangle340 ~= nil then self.rectangle340:destroy(); self.rectangle340 = nil; end;
@@ -18227,7 +17985,6 @@ local function constructNew_frmWeirdWizard()
         if self.label124 ~= nil then self.label124:destroy(); self.label124 = nil; end;
         if self.label205 ~= nil then self.label205:destroy(); self.label205 = nil; end;
         if self.label5 ~= nil then self.label5:destroy(); self.label5 = nil; end;
-        if self.rectangle556 ~= nil then self.rectangle556:destroy(); self.rectangle556 = nil; end;
         if self.rectangle45 ~= nil then self.rectangle45:destroy(); self.rectangle45 = nil; end;
         if self.edit191 ~= nil then self.edit191:destroy(); self.edit191 = nil; end;
         if self.edit181 ~= nil then self.edit181:destroy(); self.edit181 = nil; end;
@@ -18239,7 +17996,6 @@ local function constructNew_frmWeirdWizard()
         if self.label27 ~= nil then self.label27:destroy(); self.label27 = nil; end;
         if self.edit54 ~= nil then self.edit54:destroy(); self.edit54 = nil; end;
         if self.rectangle216 ~= nil then self.rectangle216:destroy(); self.rectangle216 = nil; end;
-        if self.rectangle558 ~= nil then self.rectangle558:destroy(); self.rectangle558 = nil; end;
         if self.label131 ~= nil then self.label131:destroy(); self.label131 = nil; end;
         if self.scrollBox4 ~= nil then self.scrollBox4:destroy(); self.scrollBox4 = nil; end;
         if self.label232 ~= nil then self.label232:destroy(); self.label232 = nil; end;
@@ -18249,7 +18005,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle50 ~= nil then self.rectangle50:destroy(); self.rectangle50 = nil; end;
         if self.edit140 ~= nil then self.edit140:destroy(); self.edit140 = nil; end;
         if self.edit136 ~= nil then self.edit136:destroy(); self.edit136 = nil; end;
-        if self.image51 ~= nil then self.image51:destroy(); self.image51 = nil; end;
         if self.image41 ~= nil then self.image41:destroy(); self.image41 = nil; end;
         if self.textEditor8 ~= nil then self.textEditor8:destroy(); self.textEditor8 = nil; end;
         if self.rectangle364 ~= nil then self.rectangle364:destroy(); self.rectangle364 = nil; end;
@@ -18291,7 +18046,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle485 ~= nil then self.rectangle485:destroy(); self.rectangle485 = nil; end;
         if self.rectangle150 ~= nil then self.rectangle150:destroy(); self.rectangle150 = nil; end;
         if self.rectangle33 ~= nil then self.rectangle33:destroy(); self.rectangle33 = nil; end;
-        if self.rectangle549 ~= nil then self.rectangle549:destroy(); self.rectangle549 = nil; end;
         if self.label63 ~= nil then self.label63:destroy(); self.label63 = nil; end;
         if self.label184 ~= nil then self.label184:destroy(); self.label184 = nil; end;
         if self.edit66 ~= nil then self.edit66:destroy(); self.edit66 = nil; end;
@@ -18360,18 +18114,17 @@ local function constructNew_frmWeirdWizard()
         if self.checkBox20 ~= nil then self.checkBox20:destroy(); self.checkBox20 = nil; end;
         if self.edit145 ~= nil then self.edit145:destroy(); self.edit145 = nil; end;
         if self.edit131 ~= nil then self.edit131:destroy(); self.edit131 = nil; end;
-        if self.image54 ~= nil then self.image54:destroy(); self.image54 = nil; end;
+        if self.popDadivaReves ~= nil then self.popDadivaReves:destroy(); self.popDadivaReves = nil; end;
         if self.image42 ~= nil then self.image42:destroy(); self.image42 = nil; end;
         if self.rectangle405 ~= nil then self.rectangle405:destroy(); self.rectangle405 = nil; end;
         if self.textEditor7 ~= nil then self.textEditor7:destroy(); self.textEditor7 = nil; end;
         if self.dataLink20 ~= nil then self.dataLink20:destroy(); self.dataLink20 = nil; end;
         if self.edit53 ~= nil then self.edit53:destroy(); self.edit53 = nil; end;
-        if self.popDadivaReves ~= nil then self.popDadivaReves:destroy(); self.popDadivaReves = nil; end;
         if self.rectangle363 ~= nil then self.rectangle363:destroy(); self.rectangle363 = nil; end;
         if self.rectangle145 ~= nil then self.rectangle145:destroy(); self.rectangle145 = nil; end;
         if self.label79 ~= nil then self.label79:destroy(); self.label79 = nil; end;
-        if self.rectangle264 ~= nil then self.rectangle264:destroy(); self.rectangle264 = nil; end;
         if self.label104 ~= nil then self.label104:destroy(); self.label104 = nil; end;
+        if self.rectangle264 ~= nil then self.rectangle264:destroy(); self.rectangle264 = nil; end;
         if self.label136 ~= nil then self.label136:destroy(); self.label136 = nil; end;
         if self.label225 ~= nil then self.label225:destroy(); self.label225 = nil; end;
         if self.label235 ~= nil then self.label235:destroy(); self.label235 = nil; end;
@@ -18424,7 +18177,6 @@ local function constructNew_frmWeirdWizard()
         if self.checkBox12 ~= nil then self.checkBox12:destroy(); self.checkBox12 = nil; end;
         if self.rectangle157 ~= nil then self.rectangle157:destroy(); self.rectangle157 = nil; end;
         if self.edit175 ~= nil then self.edit175:destroy(); self.edit175 = nil; end;
-        if self.rectangle546 ~= nil then self.rectangle546:destroy(); self.rectangle546 = nil; end;
         if self.label68 ~= nil then self.label68:destroy(); self.label68 = nil; end;
         if self.rectangle435 ~= nil then self.rectangle435:destroy(); self.rectangle435 = nil; end;
         if self.rectangle441 ~= nil then self.rectangle441:destroy(); self.rectangle441 = nil; end;
@@ -18468,7 +18220,6 @@ local function constructNew_frmWeirdWizard()
         if self.label21 ~= nil then self.label21:destroy(); self.label21 = nil; end;
         if self.rectangle408 ~= nil then self.rectangle408:destroy(); self.rectangle408 = nil; end;
         if self.label80 ~= nil then self.label80:destroy(); self.label80 = nil; end;
-        if self.rectangle552 ~= nil then self.rectangle552:destroy(); self.rectangle552 = nil; end;
         if self.edit195 ~= nil then self.edit195:destroy(); self.edit195 = nil; end;
         if self.rectangle9 ~= nil then self.rectangle9:destroy(); self.rectangle9 = nil; end;
         if self.edit16 ~= nil then self.edit16:destroy(); self.edit16 = nil; end;
@@ -18515,8 +18266,8 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle18 ~= nil then self.rectangle18:destroy(); self.rectangle18 = nil; end;
         if self.label94 ~= nil then self.label94:destroy(); self.label94 = nil; end;
         if self.edit151 ~= nil then self.edit151:destroy(); self.edit151 = nil; end;
-        if self.rectangle425 ~= nil then self.rectangle425:destroy(); self.rectangle425 = nil; end;
         if self.edit165 ~= nil then self.edit165:destroy(); self.edit165 = nil; end;
+        if self.rectangle425 ~= nil then self.rectangle425:destroy(); self.rectangle425 = nil; end;
         if self.image33 ~= nil then self.image33:destroy(); self.image33 = nil; end;
         if self.rectangle526 ~= nil then self.rectangle526:destroy(); self.rectangle526 = nil; end;
         if self.rectangle347 ~= nil then self.rectangle347:destroy(); self.rectangle347 = nil; end;
@@ -18540,10 +18291,9 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle372 ~= nil then self.rectangle372:destroy(); self.rectangle372 = nil; end;
         if self.checkBox15 ~= nil then self.checkBox15:destroy(); self.checkBox15 = nil; end;
         if self.rectangle154 ~= nil then self.rectangle154:destroy(); self.rectangle154 = nil; end;
-        if self.rectangle545 ~= nil then self.rectangle545:destroy(); self.rectangle545 = nil; end;
-        if self.rectangle446 ~= nil then self.rectangle446:destroy(); self.rectangle446 = nil; end;
-        if self.rectangle430 ~= nil then self.rectangle430:destroy(); self.rectangle430 = nil; end;
         if self.label188 ~= nil then self.label188:destroy(); self.label188 = nil; end;
+        if self.rectangle430 ~= nil then self.rectangle430:destroy(); self.rectangle430 = nil; end;
+        if self.rectangle446 ~= nil then self.rectangle446:destroy(); self.rectangle446 = nil; end;
         if self.edit62 ~= nil then self.edit62:destroy(); self.edit62 = nil; end;
         if self.rectangle334 ~= nil then self.rectangle334:destroy(); self.rectangle334 = nil; end;
         if self.rectangle104 ~= nil then self.rectangle104:destroy(); self.rectangle104 = nil; end;
@@ -18572,7 +18322,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle355 ~= nil then self.rectangle355:destroy(); self.rectangle355 = nil; end;
         if self.image9 ~= nil then self.image9:destroy(); self.image9 = nil; end;
         if self.layout4 ~= nil then self.layout4:destroy(); self.layout4 = nil; end;
-        if self.rectangle562 ~= nil then self.rectangle562:destroy(); self.rectangle562 = nil; end;
         if self.label48 ~= nil then self.label48:destroy(); self.label48 = nil; end;
         if self.edit122 ~= nil then self.edit122:destroy(); self.edit122 = nil; end;
         if self.edit19 ~= nil then self.edit19:destroy(); self.edit19 = nil; end;
@@ -18588,7 +18337,6 @@ local function constructNew_frmWeirdWizard()
         if self.label204 ~= nil then self.label204:destroy(); self.label204 = nil; end;
         if self.label4 ~= nil then self.label4:destroy(); self.label4 = nil; end;
         if self.label83 ~= nil then self.label83:destroy(); self.label83 = nil; end;
-        if self.rectangle557 ~= nil then self.rectangle557:destroy(); self.rectangle557 = nil; end;
         if self.rectangle46 ~= nil then self.rectangle46:destroy(); self.rectangle46 = nil; end;
         if self.edit190 ~= nil then self.edit190:destroy(); self.edit190 = nil; end;
         if self.edit182 ~= nil then self.edit182:destroy(); self.edit182 = nil; end;
@@ -18603,7 +18351,6 @@ local function constructNew_frmWeirdWizard()
         if self.dataLink26 ~= nil then self.dataLink26:destroy(); self.dataLink26 = nil; end;
         if self.edit55 ~= nil then self.edit55:destroy(); self.edit55 = nil; end;
         if self.rectangle215 ~= nil then self.rectangle215:destroy(); self.rectangle215 = nil; end;
-        if self.rectangle559 ~= nil then self.rectangle559:destroy(); self.rectangle559 = nil; end;
         if self.label102 ~= nil then self.label102:destroy(); self.label102 = nil; end;
         if self.label130 ~= nil then self.label130:destroy(); self.label130 = nil; end;
         if self.label223 ~= nil then self.label223:destroy(); self.label223 = nil; end;
@@ -18614,7 +18361,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit141 ~= nil then self.edit141:destroy(); self.edit141 = nil; end;
         if self.label148 ~= nil then self.label148:destroy(); self.label148 = nil; end;
         if self.edit135 ~= nil then self.edit135:destroy(); self.edit135 = nil; end;
-        if self.image50 ~= nil then self.image50:destroy(); self.image50 = nil; end;
         if self.rectangle367 ~= nil then self.rectangle367:destroy(); self.rectangle367 = nil; end;
         if self.rectangle29 ~= nil then self.rectangle29:destroy(); self.rectangle29 = nil; end;
         if self.rectangle15 ~= nil then self.rectangle15:destroy(); self.rectangle15 = nil; end;
@@ -18629,8 +18375,8 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle85 ~= nil then self.rectangle85:destroy(); self.rectangle85 = nil; end;
         if self.edit154 ~= nil then self.edit154:destroy(); self.edit154 = nil; end;
         if self.label91 ~= nil then self.label91:destroy(); self.label91 = nil; end;
-        if self.rectangle426 ~= nil then self.rectangle426:destroy(); self.rectangle426 = nil; end;
         if self.edit166 ~= nil then self.edit166:destroy(); self.edit166 = nil; end;
+        if self.rectangle426 ~= nil then self.rectangle426:destroy(); self.rectangle426 = nil; end;
         if self.edit70 ~= nil then self.edit70:destroy(); self.edit70 = nil; end;
         if self.edit42 ~= nil then self.edit42:destroy(); self.edit42 = nil; end;
         if self.label218 ~= nil then self.label218:destroy(); self.label218 = nil; end;
@@ -18655,7 +18401,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle486 ~= nil then self.rectangle486:destroy(); self.rectangle486 = nil; end;
         if self.rectangle151 ~= nil then self.rectangle151:destroy(); self.rectangle151 = nil; end;
         if self.rectangle32 ~= nil then self.rectangle32:destroy(); self.rectangle32 = nil; end;
-        if self.rectangle548 ~= nil then self.rectangle548:destroy(); self.rectangle548 = nil; end;
         if self.label62 ~= nil then self.label62:destroy(); self.label62 = nil; end;
         if self.edit9 ~= nil then self.edit9:destroy(); self.edit9 = nil; end;
         if self.edit108 ~= nil then self.edit108:destroy(); self.edit108 = nil; end;
@@ -18663,8 +18408,8 @@ local function constructNew_frmWeirdWizard()
         if self.edit65 ~= nil then self.edit65:destroy(); self.edit65 = nil; end;
         if self.rectangle329 ~= nil then self.rectangle329:destroy(); self.rectangle329 = nil; end;
         if self.rectangle393 ~= nil then self.rectangle393:destroy(); self.rectangle393 = nil; end;
-        if self.rectangle433 ~= nil then self.rectangle433:destroy(); self.rectangle433 = nil; end;
         if self.label185 ~= nil then self.label185:destroy(); self.label185 = nil; end;
+        if self.rectangle433 ~= nil then self.rectangle433:destroy(); self.rectangle433 = nil; end;
         if self.label174 ~= nil then self.label174:destroy(); self.label174 = nil; end;
         if self.comboBox8 ~= nil then self.comboBox8:destroy(); self.comboBox8 = nil; end;
         if self.comboBox36 ~= nil then self.comboBox36:destroy(); self.comboBox36 = nil; end;
@@ -18705,7 +18450,6 @@ local function constructNew_frmWeirdWizard()
         if self.label122 ~= nil then self.label122:destroy(); self.label122 = nil; end;
         if self.label203 ~= nil then self.label203:destroy(); self.label203 = nil; end;
         if self.label7 ~= nil then self.label7:destroy(); self.label7 = nil; end;
-        if self.rectangle554 ~= nil then self.rectangle554:destroy(); self.rectangle554 = nil; end;
         if self.rectangle43 ~= nil then self.rectangle43:destroy(); self.rectangle43 = nil; end;
         if self.edit125 ~= nil then self.edit125:destroy(); self.edit125 = nil; end;
         if self.edit10 ~= nil then self.edit10:destroy(); self.edit10 = nil; end;
@@ -18724,7 +18468,6 @@ local function constructNew_frmWeirdWizard()
         if self.checkBox21 ~= nil then self.checkBox21:destroy(); self.checkBox21 = nil; end;
         if self.edit146 ~= nil then self.edit146:destroy(); self.edit146 = nil; end;
         if self.edit130 ~= nil then self.edit130:destroy(); self.edit130 = nil; end;
-        if self.image53 ~= nil then self.image53:destroy(); self.image53 = nil; end;
         if self.image43 ~= nil then self.image43:destroy(); self.image43 = nil; end;
         if self.rectangle406 ~= nil then self.rectangle406:destroy(); self.rectangle406 = nil; end;
         if self.textEditor6 ~= nil then self.textEditor6:destroy(); self.textEditor6 = nil; end;
@@ -18739,7 +18482,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle58 ~= nil then self.rectangle58:destroy(); self.rectangle58 = nil; end;
         if self.label143 ~= nil then self.label143:destroy(); self.label143 = nil; end;
         if self.dataLink12 ~= nil then self.dataLink12:destroy(); self.dataLink12 = nil; end;
-        if self.image49 ~= nil then self.image49:destroy(); self.image49 = nil; end;
         if self.rectangle98 ~= nil then self.rectangle98:destroy(); self.rectangle98 = nil; end;
         if self.rectangle20 ~= nil then self.rectangle20:destroy(); self.rectangle20 = nil; end;
         if self.rectangle12 ~= nil then self.rectangle12:destroy(); self.rectangle12 = nil; end;
@@ -18773,8 +18515,8 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle35 ~= nil then self.rectangle35:destroy(); self.rectangle35 = nil; end;
         if self.rectangle179 ~= nil then self.rectangle179:destroy(); self.rectangle179 = nil; end;
         if self.label61 ~= nil then self.label61:destroy(); self.label61 = nil; end;
-        if self.rectangle448 ~= nil then self.rectangle448:destroy(); self.rectangle448 = nil; end;
         if self.label186 ~= nil then self.label186:destroy(); self.label186 = nil; end;
+        if self.rectangle448 ~= nil then self.rectangle448:destroy(); self.rectangle448 = nil; end;
         if self.rectangle394 ~= nil then self.rectangle394:destroy(); self.rectangle394 = nil; end;
         if self.rectangle180 ~= nil then self.rectangle180:destroy(); self.rectangle180 = nil; end;
         if self.rectangle507 ~= nil then self.rectangle507:destroy(); self.rectangle507 = nil; end;
@@ -18829,7 +18571,6 @@ local function constructNew_frmWeirdWizard()
         if self.label20 ~= nil then self.label20:destroy(); self.label20 = nil; end;
         if self.rectangle409 ~= nil then self.rectangle409:destroy(); self.rectangle409 = nil; end;
         if self.label87 ~= nil then self.label87:destroy(); self.label87 = nil; end;
-        if self.rectangle553 ~= nil then self.rectangle553:destroy(); self.rectangle553 = nil; end;
         if self.rectangle149 ~= nil then self.rectangle149:destroy(); self.rectangle149 = nil; end;
         if self.rectangle268 ~= nil then self.rectangle268:destroy(); self.rectangle268 = nil; end;
         if self.label108 ~= nil then self.label108:destroy(); self.label108 = nil; end;
@@ -18840,7 +18581,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit186 ~= nil then self.edit186:destroy(); self.edit186 = nil; end;
         if self.rectangle470 ~= nil then self.rectangle470:destroy(); self.rectangle470 = nil; end;
         if self.edit133 ~= nil then self.edit133:destroy(); self.edit133 = nil; end;
-        if self.image56 ~= nil then self.image56:destroy(); self.image56 = nil; end;
         if self.image44 ~= nil then self.image44:destroy(); self.image44 = nil; end;
         if self.rectangle403 ~= nil then self.rectangle403:destroy(); self.rectangle403 = nil; end;
         if self.textEditor5 ~= nil then self.textEditor5:destroy(); self.textEditor5 = nil; end;
@@ -18906,9 +18646,9 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle155 ~= nil then self.rectangle155:destroy(); self.rectangle155 = nil; end;
         if self.edit177 ~= nil then self.edit177:destroy(); self.edit177 = nil; end;
         if self.rectangle544 ~= nil then self.rectangle544:destroy(); self.rectangle544 = nil; end;
-        if self.rectangle447 ~= nil then self.rectangle447:destroy(); self.rectangle447 = nil; end;
-        if self.rectangle437 ~= nil then self.rectangle437:destroy(); self.rectangle437 = nil; end;
         if self.label189 ~= nil then self.label189:destroy(); self.label189 = nil; end;
+        if self.rectangle437 ~= nil then self.rectangle437:destroy(); self.rectangle437 = nil; end;
+        if self.rectangle447 ~= nil then self.rectangle447:destroy(); self.rectangle447 = nil; end;
         if self.edit61 ~= nil then self.edit61:destroy(); self.edit61 = nil; end;
         if self.rectangle325 ~= nil then self.rectangle325:destroy(); self.rectangle325 = nil; end;
         if self.rectangle335 ~= nil then self.rectangle335:destroy(); self.rectangle335 = nil; end;
@@ -18936,7 +18676,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle284 ~= nil then self.rectangle284:destroy(); self.rectangle284 = nil; end;
         if self.image26 ~= nil then self.image26:destroy(); self.image26 = nil; end;
         if self.layout3 ~= nil then self.layout3:destroy(); self.layout3 = nil; end;
-        if self.rectangle561 ~= nil then self.rectangle561:destroy(); self.rectangle561 = nil; end;
         if self.edit199 ~= nil then self.edit199:destroy(); self.edit199 = nil; end;
         if self.edit123 ~= nil then self.edit123:destroy(); self.edit123 = nil; end;
         if self.rectangle302 ~= nil then self.rectangle302:destroy(); self.rectangle302 = nil; end;
@@ -18947,7 +18686,6 @@ local function constructNew_frmWeirdWizard()
         if self.label126 ~= nil then self.label126:destroy(); self.label126 = nil; end;
         if self.label207 ~= nil then self.label207:destroy(); self.label207 = nil; end;
         if self.label82 ~= nil then self.label82:destroy(); self.label82 = nil; end;
-        if self.rectangle550 ~= nil then self.rectangle550:destroy(); self.rectangle550 = nil; end;
         if self.rectangle47 ~= nil then self.rectangle47:destroy(); self.rectangle47 = nil; end;
         if self.edit193 ~= nil then self.edit193:destroy(); self.edit193 = nil; end;
         if self.label198 ~= nil then self.label198:destroy(); self.label198 = nil; end;
@@ -18963,11 +18701,12 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle214 ~= nil then self.rectangle214:destroy(); self.rectangle214 = nil; end;
         if self.label103 ~= nil then self.label103:destroy(); self.label103 = nil; end;
         if self.label133 ~= nil then self.label133:destroy(); self.label133 = nil; end;
+        if self.scrollBox6 ~= nil then self.scrollBox6:destroy(); self.scrollBox6 = nil; end;
         if self.label222 ~= nil then self.label222:destroy(); self.label222 = nil; end;
-        if self.label230 ~= nil then self.label230:destroy(); self.label230 = nil; end;
         if self.rectangle1 ~= nil then self.rectangle1:destroy(); self.rectangle1 = nil; end;
         if self.label53 ~= nil then self.label53:destroy(); self.label53 = nil; end;
         if self.label196 ~= nil then self.label196:destroy(); self.label196 = nil; end;
+        if self.label230 ~= nil then self.label230:destroy(); self.label230 = nil; end;
         if self.rectangle52 ~= nil then self.rectangle52:destroy(); self.rectangle52 = nil; end;
         if self.edit142 ~= nil then self.edit142:destroy(); self.edit142 = nil; end;
         if self.label149 ~= nil then self.label149:destroy(); self.label149 = nil; end;
@@ -18991,8 +18730,8 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle86 ~= nil then self.rectangle86:destroy(); self.rectangle86 = nil; end;
         if self.edit157 ~= nil then self.edit157:destroy(); self.edit157 = nil; end;
         if self.label96 ~= nil then self.label96:destroy(); self.label96 = nil; end;
-        if self.rectangle427 ~= nil then self.rectangle427:destroy(); self.rectangle427 = nil; end;
         if self.edit167 ~= nil then self.edit167:destroy(); self.edit167 = nil; end;
+        if self.rectangle427 ~= nil then self.rectangle427:destroy(); self.rectangle427 = nil; end;
         if self.edit71 ~= nil then self.edit71:destroy(); self.edit71 = nil; end;
         if self.image31 ~= nil then self.image31:destroy(); self.image31 = nil; end;
         if self.label219 ~= nil then self.label219:destroy(); self.label219 = nil; end;
@@ -19017,9 +18756,9 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle204 ~= nil then self.rectangle204:destroy(); self.rectangle204 = nil; end;
         if self.edit159 ~= nil then self.edit159:destroy(); self.edit159 = nil; end;
         if self.rectangle370 ~= nil then self.rectangle370:destroy(); self.rectangle370 = nil; end;
-        if self.rectangle487 ~= nil then self.rectangle487:destroy(); self.rectangle487 = nil; end;
-        if self.rectangle152 ~= nil then self.rectangle152:destroy(); self.rectangle152 = nil; end;
         if self.checkBox17 ~= nil then self.checkBox17:destroy(); self.checkBox17 = nil; end;
+        if self.rectangle152 ~= nil then self.rectangle152:destroy(); self.rectangle152 = nil; end;
+        if self.rectangle487 ~= nil then self.rectangle487:destroy(); self.rectangle487 = nil; end;
         if self.rectangle497 ~= nil then self.rectangle497:destroy(); self.rectangle497 = nil; end;
         if self.rectangle31 ~= nil then self.rectangle31:destroy(); self.rectangle31 = nil; end;
         if self.rectangle444 ~= nil then self.rectangle444:destroy(); self.rectangle444 = nil; end;
@@ -19074,7 +18813,6 @@ local function constructNew_frmWeirdWizard()
         if self.label123 ~= nil then self.label123:destroy(); self.label123 = nil; end;
         if self.label202 ~= nil then self.label202:destroy(); self.label202 = nil; end;
         if self.label6 ~= nil then self.label6:destroy(); self.label6 = nil; end;
-        if self.rectangle555 ~= nil then self.rectangle555:destroy(); self.rectangle555 = nil; end;
         if self.rectangle44 ~= nil then self.rectangle44:destroy(); self.rectangle44 = nil; end;
         if self.edit180 ~= nil then self.edit180:destroy(); self.edit180 = nil; end;
         if self.edit11 ~= nil then self.edit11:destroy(); self.edit11 = nil; end;
@@ -19092,7 +18830,6 @@ local function constructNew_frmWeirdWizard()
         if self.rectangle51 ~= nil then self.rectangle51:destroy(); self.rectangle51 = nil; end;
         if self.edit147 ~= nil then self.edit147:destroy(); self.edit147 = nil; end;
         if self.edit137 ~= nil then self.edit137:destroy(); self.edit137 = nil; end;
-        if self.image52 ~= nil then self.image52:destroy(); self.image52 = nil; end;
         if self.image40 ~= nil then self.image40:destroy(); self.image40 = nil; end;
         if self.rectangle407 ~= nil then self.rectangle407:destroy(); self.rectangle407 = nil; end;
         if self.textEditor9 ~= nil then self.textEditor9:destroy(); self.textEditor9 = nil; end;
@@ -19135,8 +18872,8 @@ local function constructNew_frmWeirdWizard()
         if self.image36 ~= nil then self.image36:destroy(); self.image36 = nil; end;
         if self.rectangle34 ~= nil then self.rectangle34:destroy(); self.rectangle34 = nil; end;
         if self.label60 ~= nil then self.label60:destroy(); self.label60 = nil; end;
-        if self.rectangle449 ~= nil then self.rectangle449:destroy(); self.rectangle449 = nil; end;
         if self.label187 ~= nil then self.label187:destroy(); self.label187 = nil; end;
+        if self.rectangle449 ~= nil then self.rectangle449:destroy(); self.rectangle449 = nil; end;
         if self.edit67 ~= nil then self.edit67:destroy(); self.edit67 = nil; end;
         if self.rectangle395 ~= nil then self.rectangle395:destroy(); self.rectangle395 = nil; end;
         if self.rectangle109 ~= nil then self.rectangle109:destroy(); self.rectangle109 = nil; end;
@@ -19212,7 +18949,6 @@ local function constructNew_frmWeirdWizard()
         if self.edit187 ~= nil then self.edit187:destroy(); self.edit187 = nil; end;
         if self.edit144 ~= nil then self.edit144:destroy(); self.edit144 = nil; end;
         if self.edit132 ~= nil then self.edit132:destroy(); self.edit132 = nil; end;
-        if self.image55 ~= nil then self.image55:destroy(); self.image55 = nil; end;
         if self.image45 ~= nil then self.image45:destroy(); self.image45 = nil; end;
         if self.rectangle404 ~= nil then self.rectangle404:destroy(); self.rectangle404 = nil; end;
         if self.textEditor4 ~= nil then self.textEditor4:destroy(); self.textEditor4 = nil; end;
