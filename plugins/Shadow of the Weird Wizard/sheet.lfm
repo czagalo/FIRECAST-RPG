@@ -3,7 +3,6 @@
 <form formType="sheetTemplate" dataType="br.com.firecast.ShadowOfTheWeirdWizard" 
       title="Shadow of the Weird Wizard" name="frmWeirdWizard">
 
-<!--scrollBox left="0" top="0" width="827" height="880"-->
 <scrollBox align="client" name="scrollBox1">
 <tabControl left="0" top="0" width="811" height="870">
 <!-- Aba Personagem -->
@@ -514,6 +513,7 @@
                         <rectangle left="719" top="82" width="60" height="1" color="#49244F"/>
                         <edit left="719" top="55" width="60" horzTextAlign="center" field="totalDanoExtra"
                               transparent="true" fontColor="#49244F" fontSize="18"/>
+                        
                         <!-- Arma 01 -->
                         <rectangle left="60" top="95" width="720" height="118" color="#D5D5D5"
                               strokeColor="#49244F" strokeSize="3"/>
@@ -6025,7 +6025,6 @@
 <!-- ============================================================================================= -->
 <!-- Aba Aflições -->
       <tab title="Aflições"> 
-            <!--layout left="0" top="10" width="815" height="825"-->
             <layout align="client">
                   <rectangle left="0" top="0" width="799" height="825" color="#D5D5D5">
                         <!-- Objetos gráficos da ficha -->
@@ -6374,7 +6373,6 @@
 
 <!-- ============================================================================================= -->
 <!-- Formulário Principal -->
-<!--popup name="popFrmPrincipal" width="791" height="745"-->
 <popup name="popFrmPrincipal" align="client">
 <scrollBox align="client">
       <rectangle color="#D5D5D5" width="781" height="735" left="5" top="5"
@@ -6801,7 +6799,8 @@
             local valorAnterior = 0
             local valDadivaReves = 0
             local jogada = jogada
-            local dadivaOuReves = nil
+            local dadivaOuReves = nil 
+            
 
             local mesaDeRPG = Firecast.getMesaDe(sheet)
             
@@ -6853,7 +6852,12 @@
             end
             
             -- Jogada com Dádiva ou Revés
-            if modDadivaReves &gt; 0 and modDadivaReves &lt; 13 then
+            -- if modDadivaReves &gt; 0 and modDadivaReves &lt; 21 then
+            if modDadivaReves &lt; 21 then
+                  if modDadivaReves &lt; 0 then
+                        modDadivaReves = modDadivaReves * -1
+                  end
+
                   local cont = 0
                   for i = 1, modDadivaReves, 1 do
                         mesaDeRPG.chat:rolarDados("1d6", dadivaOuReves,
@@ -6957,7 +6961,7 @@
 
             if sheet.forcaDebilitada == true then
                   debilitado = -1
-            elseif sheet.Debilitado == false then
+            elseif sheet.forcaDebilitada == false then
                   debilitado = 0
             end
 
@@ -7029,7 +7033,7 @@
 
             if sheet.agilidadeDebilitada == true then
                   debilitado = -1
-            elseif sheet.Debilitado == false then
+            elseif sheet.agilidadeDebilitada == false then
                   debilitado = 0
             end
 

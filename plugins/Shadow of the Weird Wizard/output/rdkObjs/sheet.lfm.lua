@@ -12419,7 +12419,8 @@ local function constructNew_frmWeirdWizard()
             local valorAnterior = 0
             local valDadivaReves = 0
             local jogada = jogada
-            local dadivaOuReves = nil
+            local dadivaOuReves = nil 
+            
 
             local mesaDeRPG = Firecast.getMesaDe(sheet)
             
@@ -12449,6 +12450,7 @@ local function constructNew_frmWeirdWizard()
             if dadivaReves > 0 then
                   modDadivaReves = dadivaReves - (aflicoes * -1)
             end 
+            showMessage(modDadivaReves)
 
             -- Jogada sem Dádiva ou Revés
             if jogada == "Teste de Sorte" then
@@ -12471,7 +12473,12 @@ local function constructNew_frmWeirdWizard()
             end
             
             -- Jogada com Dádiva ou Revés
-            if modDadivaReves > 0 and modDadivaReves < 13 then
+            -- if modDadivaReves > 0 and modDadivaReves < 21 then
+            if modDadivaReves < 21 then
+                  if modDadivaReves < 0 then
+                        modDadivaReves = modDadivaReves * -1
+                  end
+                  
                   local cont = 0
                   for i = 1, modDadivaReves, 1 do
                         mesaDeRPG.chat:rolarDados("1d6", dadivaOuReves,
@@ -12575,7 +12582,7 @@ local function constructNew_frmWeirdWizard()
 
             if sheet.forcaDebilitada == true then
                   debilitado = -1
-            elseif sheet.Debilitado == false then
+            elseif sheet.forcaDebilitada == false then
                   debilitado = 0
             end
 
@@ -12647,7 +12654,7 @@ local function constructNew_frmWeirdWizard()
 
             if sheet.agilidadeDebilitada == true then
                   debilitado = -1
-            elseif sheet.Debilitado == false then
+            elseif sheet.agilidadeDebilitada == false then
                   debilitado = 0
             end
 
